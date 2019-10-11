@@ -1,3 +1,10 @@
+'''
+megabox 영화관별로 정보가져오기2
+
+영화이름, 상영등급, 상영종류, 상영관, 시작 시간, 끝나는 시간, 남은 좌석, 총 좌석 등을
+한 번에 가져와서 뿌려보기
+'''
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -12,27 +19,9 @@ driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
 
 url = 'http://megabox.co.kr/?menuId=theater-detail&region=10&cinema=1372'
 driver.get(url)
-# theaterScheduleField = driver.find_elements_by_id('theaterSchedule')
+theaterScheduleField = driver.find_elements_by_id('theaterSchedule')
 
-# 크롬에서 xpath를 이용하면 쉽게 구현할 수 있다. 
-seatPos = driver.find_element_by_xpath('//*[@id="theaterSchedule"]/div[2]/table/tbody/tr[1]/td/div[1]/a')
-driver.execute_script("arguments[0].click();", seatPos)
 
-time.sleep(3)
-seatChk = driver.find_element_by_xpath('//*[@id="messageBox7"]/div/div[3]/button')
-seatChk.send_keys('\n')
-time.sleep(3)
-print(driver.page_source)
-# time.sleep(5)
-req = driver.page_source
-bs = BeautifulSoup(req, 'html.parser')
-
-seatInfo = bs.findAll('div', {'class':'seat_wrap'})
-
- print(seatInfo)
-# print(driver.page_source)
-
-'''
 req = driver.page_source
 bs = BeautifulSoup(req, 'html.parser')
 
@@ -45,6 +34,6 @@ for theaterRoom in theaterRooms:
     print(theaterRoom)
 
 print(theaterScheduleField)
-'''
+
 
 
