@@ -1,0 +1,28 @@
+structure (Movie) {
+  description (common Movie descriptions)
+  property (movieName) {
+    type (MovieName)
+    min (Required) max (One)
+  }
+  property (duration) {
+    type (Duration)
+    min (Required) max (One)
+  }
+  property (movieRating) {
+    type (MovieRating)
+    min (Required) max (Many)
+  }
+  property (director) {
+    type (Director)
+    min (Required) max (One)
+  }
+  // actors, genre 추가
+  property (actor) {
+    type (Actor)
+    min (Required) max (Many)
+  }
+  property (genre) {
+    type (Genre)
+    min (Required) max (Many)
+  }
+}

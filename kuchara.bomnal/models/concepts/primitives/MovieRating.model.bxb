@@ -1,0 +1,6 @@
+enum (MovieRating) {
+  symbol (전체관람가)
+  symbol (12세관람가)
+  symbol (15세관람가)
+  symbol (청소년관람불가)
+}

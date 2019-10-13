@@ -1,0 +1,28 @@
+structure (Theater) {
+  description (common Theater descriptions)
+  property (theaterName) {
+    type (TheaterName)
+    min (Required) max (One)
+  }
+  property (theaterCode) {
+    type (TheaterCode)
+    min (Required) max (One)
+  }
+  property (regionCode) {
+    type (RegionCode)
+    min (Required) max (Many)
+  }
+  // pos 추가
+  // property (pos) {
+  //   type (Pos)
+  //   min (Required) max (One)
+  // }
+  property (brand) {
+    type (Brand)
+    min (Required) max (Many)
+  }
+  property(theaterFlag) {
+    type (TheaterFlag)
+    min (Required) max (Many)
+  }
+}

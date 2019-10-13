@@ -1,0 +1,5 @@
+enum (Brand) {
+  symbol (CGV)
+  symbol (Megabox)
+  symbol (Lottecinema)
+}
