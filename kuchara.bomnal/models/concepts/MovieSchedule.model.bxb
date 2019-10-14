@@ -4,7 +4,10 @@ structure (MovieSchedule) {
     type (Movie)
     min (Required) max (One)
   }
-  
+  property (timeInput) {
+    type (TimeInput)
+    min (Required) max (One)
+  }
   // property (startTime) {
   //   type (StartTime)
   //   min (Required) max (One)

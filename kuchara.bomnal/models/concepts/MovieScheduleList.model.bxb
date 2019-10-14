@@ -1,7 +1,0 @@
-structure (MovieScheduleList) {
-  description (Movie scnedule list)
-  property (movieSchedule) {
-    type (MovieSchedule)
-    min (Optional) max (Many)
-  }
-}

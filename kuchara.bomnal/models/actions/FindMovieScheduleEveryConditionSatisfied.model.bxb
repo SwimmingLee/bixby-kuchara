@@ -10,7 +10,7 @@ action (FindMovieScheduleEveryConditionSatisfied) {
       type (MovieName)
       min (Optional) max (One)
     }
-    input (startTime) {
+    input (TimeInput) {
       type (StartTime)
       min (Optional) max (One)
     }

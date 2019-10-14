@@ -1,22 +1,22 @@
 result-view {
   match {
-    MovieScheduleList (movieScheduleList) {
-      min (Required)
-      max (One)
+    MovieSchedule (movieSchedule) {
+      min (Optional)
+      max (Many)
     }
   }
 
   message {
-    if (size(movieScheduleList) > 0) {
+    if (size(movieSchedule) > 0) {
       // template("The business #{value(business.name)} is #{value(business.rating)} stars.")
-      template ("#{size(movieScheduleList)}개가 검색되었습니당!")
+      template ("#{size(movieSchedule)}개가 검색되었습니당!")
     }
   }
 
   render {
     layout-macro (tempLayout) {
-      param (movieScheduleList) {
-        expression (movieScheduleList)
+      param (movieSchedule) {
+        expression (movieSchedule)
       }
     }
   }

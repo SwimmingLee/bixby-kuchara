@@ -1,0 +1,4 @@
+train (t-9livme5l5aw20mkmpq33wxc5e) {
+  utterance ("(강남)[v:LocationalKeyword]	(CGV)[v:Brand:cgv]	에서	(7)[v:TimeInput]시 (이후에 시작하는)[v:IsStartTime:true] (조커)[v:MovieName] 시간표 찾아줘")
+  last-modified (1571057806058)
+}

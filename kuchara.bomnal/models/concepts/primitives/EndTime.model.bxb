@@ -1,4 +1,0 @@
-// structure (EndTime) {
-//   role-of (viv.time.Time)
-// }
-integer (EndTime)

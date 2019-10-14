@@ -1,6 +1,0 @@
-// structure (StartTime) {
-//   role-of (viv.time.Time)
-// }
-integer (StartTime) {
-
-}

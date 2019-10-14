@@ -1,9 +1,9 @@
 layout-macro-def(tempLayout) {
   params {
-    param (movieScheduleList) {
-      type (MovieScheduleList)
-      min (Required)
-      max (One)
+    param (movieSchedule) {
+      type (MovieSchedule)
+      min (Optional)
+      max (Many)
     }
    }
 
@@ -51,7 +51,7 @@ layout-macro-def(tempLayout) {
         single-line {
           text {
             value {
-              template ("#{value (movieScheduleList.movieSchedule.movie.movieName)}")
+              template ("#{value (movieSchedule.movie.movieName)}")
             }
           }
         }
