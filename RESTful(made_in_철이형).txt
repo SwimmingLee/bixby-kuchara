@@ -1,0 +1,36 @@
+영화이름, 영화관이름, 시작시간으로 영화시간리스트 가져오기
+/movie/searchWithMovieNameAndTheaterNameAndStartTime
+parameter: movieName, theaterName, startTime
+return: JSON movieSchedule list
+
+영화이름, 사용자현재위치로 영화시간리스트 가져오기
+// 사용자현재위치에서 5킬로미터 이내에서 가져오기 (거리는 추후 수정)
+/movie/searchWithMovieName
+parameter: movieName, pos
+return: JSON movieSchedule list
+
+영화이름, 사용자현재위치, 시작시간으로 영화시간리스트 가져오기
+// 사용자현재위치에서 5킬로미터 이내에서 가져오기
+/movie/searchWithMovieNameAndStartTime
+parameter: movieName, startTime, pos
+return: JSON movieSchedule list
+
+영화이름, 영화관이름으로 영화시간리스트 가져오기
+// 현재시간 기준
+/movie/searchWithMovieNameAndTheaterName
+parameter: movieName, TheaterName
+return: JSON movieSchedule list
+
+영화관 이름으로 영화시간리스트 가져오기
+// 예) 영통 메가박스
+/movie/searchWithTheaterName
+parameter: theaterName
+return: JSON movieSchedule list
+
+영화관 태그로 영화시간리스트 가져오기
+// 예) 왕십리 근처
+/movie/searchWithTheaterTags
+parameter: locationalKeyword
+return: JSON movieSchedule list
+
+
