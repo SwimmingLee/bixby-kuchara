@@ -1,10 +1,18 @@
 action (FindMovieScheduleEveryConditionSatisfied) {
-  description (__DESCRIPTION__)
+  description (find movie schedule when every condition id satisfied)
   collect {
-    input (__INPUT_NAME__) {
-      type (__INPUT_TYPE__)
+    input (theaterName) {
+      type (TheaterName)
+      min (Optional) max (One)
+    }
+    input (movieName) {
+      type (MovieName)
+      min (Optional) max (One)
+    }
+    input (startTime) {
+      type (StartTime)
       min (Optional) max (One)
     }
   }
-  output (__OUTPUT__)
+  output (MovieScheduleList)
 }

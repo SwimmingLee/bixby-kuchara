@@ -1,5 +1,5 @@
 enum (Brand) {
-  symbol (CGV)
-  symbol (Megabox)
-  symbol (Lottecinema)
+  symbol (cgv)
+  symbol (megabox)
+  symbol (lottecinema)
 }
