@@ -1,5 +1,6 @@
 action (FindMovieScheduleEveryConditionSatisfied) {
   description (find movie schedule when every condition id satisfied)
+  type (Search)
   collect {
     input (theaterName) {
       type (TheaterName)
@@ -14,5 +15,5 @@ action (FindMovieScheduleEveryConditionSatisfied) {
       min (Optional) max (One)
     }
   }
-  output (MovieScheduleList)
+  output (MovieSchedule)
 }

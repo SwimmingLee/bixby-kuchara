@@ -17,7 +17,7 @@ structure (Movie) {
     min (Required) max (One)
   }
   // actors, genre 추가
-  property (actor) {
+  property (actors) {
     type (Actor)
     min (Required) max (Many)
   }
