@@ -1,0 +1,5 @@
+train (t-zrxxy2iz3zzc6o7z4f8sjurl7) {
+  utterance ("[g:FindMovieWithTheater] (왕십리)[v:LocationalKeyword] 근처 (씨지비)[v:Brand:cgv] 영화상영표 보여줘")
+  plan (Y2BhkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEaTdcvMSwGrCM8syQjJSE0sSS1iEEFT5FSUmJfCoIAm6pOfnFiSmQ9keqdWlucXpTAwMzAyMAFJBiANghAAFwUA)
+  last-modified (1571138659509)
+}

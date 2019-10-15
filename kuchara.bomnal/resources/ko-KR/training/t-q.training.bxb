@@ -1,0 +1,5 @@
+train (t-qwggsx0s5ltwx17e7na90mpc8) {
+  utterance ("[g:FindMovieWithLocation] (동대문)[v:LocationalKeyword] 근처 영화시간을 알고싶어")
+  plan (Y2BmkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEGTdcvMSwGrCM8syfDJT04syczPY1BAUwWTSMzxTq0szy9KYWBiYARiBiDJyAACUD4A)
+  last-modified (1571140114624)
+}

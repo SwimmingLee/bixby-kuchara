@@ -1,0 +1,17 @@
+action (FindMovieWithTheater) {
+  description (find movie with theater brand input and OPTIONAL locational keyword input)
+  type (Search)
+  collect {
+    input (brand) {
+      type (Brand)
+      min (Required) max (One)
+    }
+    input (locationalKeyword) {
+      type (LocationalKeyword)
+      min (Optional) max (One)
+    }
+  }
+  output (MovieSchedule)
+  // output (MovieName)
+}
+  

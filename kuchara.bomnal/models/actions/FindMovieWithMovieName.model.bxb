@@ -1,0 +1,13 @@
+action (FindMovieWithMovieName) {
+  description (find movie with movie name input)
+  type (Search)
+  collect {
+    input (movieName) {
+      type (MovieName)
+      min (Required) max (One)
+    }
+  }
+  output (MovieSchedule)
+  // output (MovieName)
+}
+  

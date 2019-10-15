@@ -1,0 +1,5 @@
+train (t-f8px5re313bfw7ksevpo5rrz5) {
+  utterance ("[g:FindMovieWithTheater] (강남)[v:LocationalKeyword] (메가박스)[v:Brand:megabox] 영화시간표 보여줘")
+  plan (Y2BhkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEaTdcvMSwGrCM8syQjJSE0sSS1iEEFT5FSUmJfCoIAm6pOfnFiSmQ9keqdWlucXpTAwMzAyMAFJBiANghAAFwUA)
+  last-modified (1571137688598)
+}

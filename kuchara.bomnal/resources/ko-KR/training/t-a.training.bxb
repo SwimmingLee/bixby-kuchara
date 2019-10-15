@@ -1,0 +1,5 @@
+train (t-a7ydctj477fwd9z45nnz91h1x) {
+  utterance ("[g:FindMovieWithMovieName] (다크나이트)[v:MovieName] 몇시에 해?")
+  plan (Y2BmkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEWTdcvMSwGrCM8syQAz/BJzUxkksBkClmFiYARiBiDJyAACUD4A)
+  last-modified (1571136696257)
+}

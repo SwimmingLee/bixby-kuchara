@@ -1,6 +1,0 @@
-train (t-738m62ybwbh6rv5llwr6myi8m) {
-  utterance ("[g:FindMovieScheduleEveryConditionSatisfied] (7)[v:TimeInput]시 (씨지비)[v:TheaterName] (조커)[v:MovieName]")
-  plan (Y2BlkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllMEeTdcvMS0FR4VqWWlTpnJ+XklmSmZ8XnFiSWZyWmZrCIIHNWL/E3FQGKTSZkIzUxJLUIrAcuq6QzNxUz7yC0hIGZgZGBiYgyQCkQRACWKCiLAwMAA==)
-  enabled (false)
-  last-modified (1571135025870)
-}

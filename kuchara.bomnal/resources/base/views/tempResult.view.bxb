@@ -14,9 +14,13 @@ result-view {
   }
 
   render {
-    layout-macro (tempLayout) {
-      param (movieSchedule) {
-        expression (movieSchedule)
+    list-of (movieSchedule) {
+      where-each (item) {
+        layout-macro (tempLayout) {
+          param (movieSchedule) {
+            expression (item)
+          }
+        }
       }
     }
   }

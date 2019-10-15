@@ -1,0 +1,13 @@
+action (FindMovieWithLocation) {
+  description (find movie with locational input)
+  type (Search)
+  collect {
+    input (locationalKeyword) {
+      type (LocationalKeyword)
+      min (Required) max (One)
+    }
+  }
+  output (MovieSchedule)
+  // output (MovieName)
+}
+  

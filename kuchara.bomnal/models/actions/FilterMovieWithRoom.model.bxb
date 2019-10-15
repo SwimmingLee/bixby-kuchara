@@ -1,0 +1,17 @@
+action (FilterMovieWithRoom) {
+  description (find movie with locational input)
+  type (Search)
+  collect {
+    input (movieSchedule) {
+      type (MovieSchedule)
+      min (Required) max (Many)
+    }
+    input (room) {
+      type (Room)
+      min (Required) max (One)
+    }
+  }
+  output (MovieSchedule)
+  // output (MovieName)
+}
+  
