@@ -1,8 +1,14 @@
 endpoints {
   action-endpoints {
     action-endpoint (FindMovieScheduleEveryConditionSatisfied) {
-      accepted-inputs (movieName, theaterName, startTime)
+      accepted-inputs (movieName, theaterName, timeInput)
       local-endpoint (FindMovieScheduleEveryConditionSatisfied.js)
     }
+
+    action-endpoint (FindMovieWithFullUtterance) {
+      accepted-inputs (isStartTime, movieName, timeInput, locationalKeyword, brand)
+      local-endpoint (FindMovieScheduleEveryConditionSatisfied.js)
+    }
+
   }
 }

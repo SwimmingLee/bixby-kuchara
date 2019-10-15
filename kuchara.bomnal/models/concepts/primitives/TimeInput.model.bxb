@@ -9,7 +9,7 @@
 //   output (__OUTPUT__)
 // }
 structure (TimeInput) {
-  property (TimeStructure){
+  property (time){
     type(viv.time.Time)
   }
 }

@@ -2,7 +2,7 @@ let http = require('http');
 let config = require('config');
 let dates = require('dates');
 
-module.exports.function = function FindMovieScheduleEveryConditionSatisfied (movieName, theaterName, startTime) {
+module.exports.function = function FindMovieScheduleEveryConditionSatisfied (movieName, theaterName, timeInput) {
   let options = {
     format: "json",
     query: {

@@ -1,9 +1,9 @@
-action (FindMovieScheduleEveryConditionSatisfied) {
+action (FindMovieWithFullUtterance) {
   description (find movie schedule when every condition id satisfied)
   type (Search)
   collect {
-    input (theaterName) {
-      type (TheaterName)
+    input (isStartTime) {
+      type (IsStartTime)
       min (Optional) max (One)
     }
     input (movieName) {
@@ -14,6 +14,15 @@ action (FindMovieScheduleEveryConditionSatisfied) {
       type (TimeInput)
       min (Optional) max (One)
     }
+    input (locationalKeyword) {
+      type (LocationalKeyword)
+      min (Optional) max (One)
+    }
+    input (brand) {
+      type (Brand)
+      min (Optional) max (One)
+    }
   }
   output (MovieSchedule)
 }
+  
