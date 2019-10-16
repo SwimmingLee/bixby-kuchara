@@ -2,10 +2,17 @@ action (FindMovieWithLocation) {
   description (find movie with locational input)
   type (Search)
   collect {
-    input (locationalKeyword) {
-      type (LocationalKeyword)
-      min (Required) max (One)
+    input (namedPointStructure) {
+      type (NamedPointStructure)
+      min (Optional) max (One)
+      default-init {
+        intent {
+          goal: NamedPointStructure
+          route: geo.CurrentLocation
+        }
+      }
     }
+    
   }
   output (MovieSchedule)
   // output (MovieName)

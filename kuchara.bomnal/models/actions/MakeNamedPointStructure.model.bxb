@@ -1,0 +1,11 @@
+action (MakeNamedPointStructure) {
+  description (__DESCRIPTION__)
+  type (Search)
+  collect {
+    input (locationalKeyword) {
+      type (LocationalKeyword)
+      min (Required) max (One)
+    }
+  }
+  output (NamedPointStructure)
+}

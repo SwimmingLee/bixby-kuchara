@@ -1,9 +1,9 @@
 
 structure (TheaterFlag) {
   description (Theater specific detail features)
-  property (locationalKeyword) {
-    type (LocationalKeyword)
-    min (Required) max (Many)
+  property (namedPointStructure) {
+    type (NamedPointStructure)
+    min (Required) max (One)
   }
 
 }

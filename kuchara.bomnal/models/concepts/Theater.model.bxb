@@ -23,6 +23,6 @@ structure (Theater) {
   }
   property(theaterFlag) {
     type (TheaterFlag)
-    min (Required) max (Many)
+    min (Required) max (One)
   }
 }

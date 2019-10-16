@@ -1,1 +1,5 @@
 name(LocationalKeyword)
+// structure (LocationalKeyword) {
+//   description (named location like '명동', '홍대', '잠실', default initiate with user's current position)
+//   role-of (geo.NamedPoint)
+// }

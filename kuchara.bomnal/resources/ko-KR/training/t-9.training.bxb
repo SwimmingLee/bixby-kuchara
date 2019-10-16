@@ -1,0 +1,5 @@
+train (t-9hqes34x3t0n0vfffbvzliws3) {
+  utterance ([g:FindMovieWithLocation] 명동 근처에서 영화 뭐볼수있어)
+  plan (Y2BikMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEGTdcvMSwGrCM8syfDJT04syczPY2AEQgYoBpIA)
+  last-modified (1571215678397)
+}

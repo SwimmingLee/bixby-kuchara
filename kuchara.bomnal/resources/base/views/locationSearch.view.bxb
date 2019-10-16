@@ -1,0 +1,36 @@
+input-view {
+  // DestinationPoint has role-of geo.NamedPoint
+  match: LocationalKeyword
+
+  message ("Where would you like to go?")
+
+  render {
+    auto-complete {
+      type (geo.NamedPoint)
+      no-result-text { template ("No results") }
+      placeholder { template ("Search for locations") }
+      source {
+        collect-with (query) {
+          intent {
+            goal: geo.Autosuggest
+            value: geo.SearchTerm$expr (query)
+            // value: geo.IsFuzzyMatchAddressType(true)
+          }
+        }
+        label { template ("Search Results") }
+        where-each (place) { 
+          display {
+            primary-text { template ("[#{value(place.name)}]") }
+            secondary-text { template ("[#{value(place.address)}]") }
+          }
+          on-select {
+            intent {
+              goal: NamedPointStructure
+              value: viv.core.FormElement(place)
+            }
+          }
+        }
+      }
+    }
+  }
+}
