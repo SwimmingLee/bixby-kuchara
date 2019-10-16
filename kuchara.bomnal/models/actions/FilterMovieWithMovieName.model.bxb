@@ -1,0 +1,20 @@
+action (FilterMovieWithMovieName) {
+  description (find movie with locational input)
+  type (Search)
+  collect {
+    input (movieSchedule) {
+      type (MovieSchedule)
+      min (Required) max (Many)
+    }
+    input (movieName) {
+      type (MovieName)
+      min (Required) max (One)
+    }
+    input(exceptExpression){
+      type(ExceptExpression)
+      min (Optional) max (One)
+    }
+  }
+  output (MovieSchedule)
+}
+  

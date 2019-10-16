@@ -24,6 +24,11 @@ endpoints {
       accepted-inputs (locationalKeyword)
       local-endpoint (MakeNamedPointStructure.js)
     }
+
+     action-endpoint (FilterMovieWithMovieName) {
+      accepted-inputs (movieSchedule, movieName, exceptExpression)
+      local-endpoint (FilterMovieWithMovieName.js)
+    }
     // action-endpoint (FindMovieWithFullUtterance) {
     //   accepted-inputs (isStartTime, movieName, timeInput, locationalKeyword, brand)
     //   local-endpoint (FindMovieWithFullUtterance.js)

@@ -1,0 +1,5 @@
+train (t-1n4q6pn1z9dc2iqusybvbwdqc) {
+  utterance ("[g:FilterMovieWithMovieName:continue:MovieSchedule] (반지의제왕)[v:MovieName] (빼고)[v:ExceptExpression] 보여줘")
+  plan (Y2BlkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEeTdcvMKUktAqsJzyzJADP8EnNTGeTRFLpWJKcWlLhWFBSlFhdn5ucxSGCzB6wVvwtYGBgZmBiYgTQDkAWBMMAMlWMAAA==)
+  last-modified (1571229427220)
+}

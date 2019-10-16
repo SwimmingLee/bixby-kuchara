@@ -1,5 +1,5 @@
 train (t-ie6bjpypqq7zr5d4gwesj79vx) {
   utterance ("[g:FindMovieWithMovieName] (해리포터)[v:MovieName] 영화 시간 알려줘")
   plan (Y2BmkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEWTdcvMSwGrCM8syQAz/BJzUxkksBkClmFiYARiBiDJyAACUD4A)
-  last-modified (1571138147675)
+  last-modified (1571228641311)
 }
