@@ -1,11 +1,11 @@
 let console = require('console');
 const movieReturn = require('./sample/exampleReturn.js');
 
-module.exports.function = function findMovieWithTheater (locationalKeyword, brand) {
-  if(locationalKeyword){
-    console.log("no locational keyword")
+module.exports.function = function findMovieWithTheater (namedPointStructure, brand) {
+  if(namedPointStructure){
+    console.log("no namedPointStructure")
   } else {
-    console.log(locationalKeyword)
+    console.log(namedPointStructure)
   }
 
   let response = movieReturn;

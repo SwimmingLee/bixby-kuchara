@@ -1,5 +1,5 @@
 train (t-9hqes34x3t0n0vfffbvzliws3) {
-  utterance ("[g:FindMovieWithLocation] (명동)[v:LocationalKeyword] 근처에서 영화 뭐볼수있어")
-  plan (Y2BlkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEGTdcvMSwGrCM8syfDJT04syczPY1BCU+WXmJuaEpCfmVcSXFJUmlxSWpTKoIZuT2J2KjZ1CmjqYJYk5ninVpbnF6UwsDAwMjAxMANpBiiLEcwCASYgDRQHAA==)
-  last-modified (1571227559586)
+  utterance ("[g:FindMovieWithLocation] (명동)[v:geo.SearchTerm] 근처에서 영화 뭐볼수있어")
+  plan (bY29CsJAEITHn6i1VoKViGXewcZKRYhgvV6W3JHkFi53sfPZPQUlhCwszMx+zGKBTRmUJkfpQ2pLVXqW1nCmNOehYux616Ox+Ze4G69Posgbsdj2qAvVnF/FWJ95F5QPjrHv/6GSh7hla9q0YOmUYPXLDsFLE4qCG4/1QPh6au52ZExO6Ru7GnOMMMYEUySYRYeOT6LGfz8zjioybw==)
+  last-modified (1571292481218)
 }

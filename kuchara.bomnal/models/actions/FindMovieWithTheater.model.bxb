@@ -6,12 +6,12 @@ action (FindMovieWithTheater) {
       type (Brand)
       min (Required) max (One)
     }
-    input (locationalKeyword) {
-      type (LocationalKeyword)
-      min (Optional) max (One)
+    input (namedPointStructure) {
+      type (NamedPointStructure)
+      min (Required) max (One)
       default-init {
         intent {
-          goal: LocationalKeyword
+          goal: NamedPointStructure
           route: geo.CurrentLocation
         }
       }

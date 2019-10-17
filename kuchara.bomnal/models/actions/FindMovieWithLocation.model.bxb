@@ -4,7 +4,7 @@ action (FindMovieWithLocation) {
   collect {
     input (namedPointStructure) {
       type (NamedPointStructure)
-      min (Optional) max (One)
+      min (Required) max (One)
       default-init {
         intent {
           goal: NamedPointStructure

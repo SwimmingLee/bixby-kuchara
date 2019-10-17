@@ -6,7 +6,7 @@ endpoints {
     }
 
     action-endpoint (FindMovieWithTheater) {
-      accepted-inputs (brand, locationalKeyword)
+      accepted-inputs (brand, namedPointStructure)
       local-endpoint (FindMovieWithTheater.js)
     }
 

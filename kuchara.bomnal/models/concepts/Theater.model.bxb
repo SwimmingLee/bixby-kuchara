@@ -12,11 +12,6 @@ structure (Theater) {
     type (RegionCode)
     min (Required) max (Many)
   }
-  // pos 추가
-  // property (pos) {
-  //   type (Pos)
-  //   min (Required) max (One)
-  // }
   property (brand) {
     type (Brand)
     min (Required) max (Many)
