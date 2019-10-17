@@ -17,4 +17,3 @@ action (FilterMovieWithMovieName) {
   }
   output (MovieSchedule)
 }
-  
