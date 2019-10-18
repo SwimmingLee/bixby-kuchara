@@ -36,10 +36,11 @@ structure (MovieSchedule) {
     type (Room)
     min (Required) max (One)
   }
-  property (movieCode) {
-    type (MovieCode)
-    min (Required) max (One)
-  }
+  // 필요없으므로 제외
+  // property (movieCode) {
+  //   type (MovieCode)
+  //   min (Required) max (One)
+  // }
 }
 // MovieSchedule = {
 //     movie: Object,

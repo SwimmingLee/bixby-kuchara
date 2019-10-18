@@ -25,6 +25,16 @@ endpoints {
       local-endpoint (MakeNamedPointStructure.js)
     }
 
+    action-endpoint (MakeDateTimeExpression) {
+      accepted-inputs (timeInput)
+      local-endpoint (MakeDateTimeExpression.js)
+    }
+
+    action-endpoint (FindMovieWithTime) {
+      accepted-inputs (dateTimeExpression)
+      local-endpoint (FindMovieWithTime.js)
+    }
+
      action-endpoint (FilterMovieWithMovieName) {
       accepted-inputs (movieSchedule, movieName, exceptExpression)
       local-endpoint (FilterMovieWithMovieName.js)

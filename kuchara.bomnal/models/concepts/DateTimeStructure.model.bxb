@@ -1,0 +1,4 @@
+structure (DateTimeStructure) {
+  description (__DESCRIPTION__)
+  role-of (time.DateTimeExpression)
+}

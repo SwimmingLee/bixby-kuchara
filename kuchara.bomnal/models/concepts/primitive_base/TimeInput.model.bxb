@@ -8,8 +8,9 @@
 //   }
 //   output (__OUTPUT__)
 // }
-structure (TimeInput) {
-  property (time){
-    type(viv.time.Time)
-  }
-}
+// structure (TimeInput) {
+//   property (time){
+//     type(viv.time.Time)
+//   }
+// }
+integer (TimeInput)

@@ -1,0 +1,9 @@
+vocab (InputTimeQuery) {
+  "hour" {"hour", "시"}
+  "miniute" {"miniute", "분"}
+  "ampm" {"ampm", "오전", "오후"}
+}
+
+  // symbol (hour) 
+  // symbol (miniute) 
+  // symbol (ampm) 

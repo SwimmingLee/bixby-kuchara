@@ -1,0 +1,4 @@
+train (t-lhf96yok39er2b1n06mq83dsm) {
+  utterance ("[g:FindMovieWithTime] (7)[v:MakeDateTimeExpression](시)[v:InputTimeQuery:hour] 이후 영화 보여줘")
+  last-modified (1571317633580)
+}

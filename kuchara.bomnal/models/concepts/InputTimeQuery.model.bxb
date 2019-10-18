@@ -1,0 +1,6 @@
+enum (InputTimeQuery) {
+  description (__DESCRIPTION__)
+  symbol (hour) 
+  symbol (miniute) 
+  symbol (ampm) 
+}

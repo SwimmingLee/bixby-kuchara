@@ -1,0 +1,10 @@
+action (MakeDateTimeExpression) {
+  description (__DESCRIPTION__)
+  collect {
+    input (timeInput) {
+      type (TimeInput)
+      min (Optional) max (One)
+    }
+  }
+  output (time.DateTimeExpression)
+}
