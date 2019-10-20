@@ -1,11 +1,16 @@
 const movieReturn = require('./sample/exampleReturn.js');
+let console = require('console');
 
-module.exports.function = function findMovieWithMovieName (movieName) {
+module.exports.function = function findMovieWithMovieName (movieInput) {
   let response = movieReturn;
+
+  console.log(response);
+  console.log(movieInput);
+  
   let result = [];
-  if(movieName){
+  if(typeof movieInput != 'undefiened'){
     response.forEach(function(el){
-      if(el.movie.movieName == movieName){
+      if(el.movie.movieName == movieInput.movieName){
         result.push(el);
       }
     })

@@ -1,7 +1,7 @@
 module.exports = [
   {
     "movie": {
-      "movieName": "조커",
+      "movieName": "조커가조커가조커가조커가조커가조커가조커는조커다",
       "duration": 130,
       "movieRating": "15세관람가",
       "director": '스티븐 스필버그',

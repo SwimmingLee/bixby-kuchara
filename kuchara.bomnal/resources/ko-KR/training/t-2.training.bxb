@@ -1,5 +1,5 @@
 train (t-2rzkuhm4pmupi56uzqz2fa6jy) {
-  utterance ([g:ShowMoviePoster] 요즘 영화 뭐해)
-  plan (Y2BmUMsuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUkNyC8uSS1yyy/KZZBDUxeckV8OVgtRw6CEJu+XmJuaEpCfmVcSXFJUmlxSWpTKwMTACMQMQJKRgQFGAwA=)
-  last-modified (1571556020408)
+  utterance ([g:FindMovieWithMovieName,r:ShowMoviePoster] 요즘 영화 뭐해)
+  plan (Y2BlkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEWTdcvMSwGrCM8syQAz/BJzUxlEsBnCIIcmGpyRXw6WCcgvLkktYlBCkwcZlRKQn5lXElxSVJpcUlqUysDCwMjAxMAMpBmgLEYwCwSYgDQzAwMA)
+  last-modified (1571575800568)
 }

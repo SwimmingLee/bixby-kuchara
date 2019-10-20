@@ -12,13 +12,15 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
   let options = { 
     format: 'json',
     query: { 
-      longitude: long,
-      latitude: lat,
+      // longitude: long,
+      // latitude: lat,
+      longitude: 127.026451,
+      latitude: 37.498241
     }
   };
 
-  let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options); 
-  
+  // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options); 
+  let response = http.getUrl(config.get('remote.url') + "/movie_api/searchWithPos/", options)
   console.log(response);
 
   return response;

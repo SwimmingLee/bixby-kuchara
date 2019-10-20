@@ -4,7 +4,7 @@ train (t-s2r8t9teeagjvndvqbcddgp2h) {
   last-modified (1571484947147)
 }
 train (t-st8o37cttscqg0hkwcgfkix9o) {
-  utterance ("[g:FindMovieWithMovieName] (조커)[v:MovieName] 시간표 찾아줘")
-  plan (Y2BmkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEWTdcvMSwGrCM8syQAz/BJzUxkksBkClmFiYARiBiDJyAACUD4A)
-  last-modified (1571565748992)
+  utterance ("[g:FindMovieWithMovieName] (조커)[r:ShowMoviePoster] 시간표 찾아줘")
+  plan (Y2BlkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEWTdcvMSwGrCM8syQAz/BJzUxlEsBnCIIcmGpyRXw6WCcgvLkktYlBCkwcZlRKQn5lXElxSVJpcUlqUysDCwMjAxMAMpBmgLEYwCwSYgDQzAwMA)
+  last-modified (1571576379299)
 }

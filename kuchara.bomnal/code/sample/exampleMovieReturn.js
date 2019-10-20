@@ -10,7 +10,7 @@ module.exports = [
     "userRating":0.0,
   },
   {
-    "movieName": "조커",
+    "movieName": "조커가조커가조커가조커가조커가조커가조커는조커다조커가조커가조커가조커가조커가조커가조커는조커다",
     "duration": 130,
     "movieRating": "15세관람가",
     "director": '스티븐 스필버그',
@@ -20,7 +20,7 @@ module.exports = [
     "userRating":0.0,
   },
   {
-    "movieName": "조커",
+    "movieName": "베트맨",
     "duration": 130,
     "movieRating": "15세관람가",
     "director": '스티븐 스필버그',
@@ -30,7 +30,7 @@ module.exports = [
     "userRating":0.0,
   },
   {
-    "movieName": "말레피센트",
+    "movieName": "가나다라마",
     "duration": 130,
     "movieRating": "15세관람가",
     "director": '스티븐 스필버그',
@@ -40,7 +40,7 @@ module.exports = [
     "userRating":0.0,
   },
   {
-    "movieName": "조커",
+    "movieName": "이히리기우구추",
     "duration": 130,
     "movieRating": "15세관람가",
     "director": '스티븐 스필버그',
