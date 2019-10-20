@@ -1,5 +1,12 @@
 endpoints {
   action-endpoints {
+    // show movie poster
+    action-endpoint (ShowMoviePoster) {
+      accepted-inputs (namedPointStructure)
+      local-endpoint (ShowMoviePoster.js)
+    }
+
+    // find movie schedule
     action-endpoint (FindMovieWithMovieName) {
       accepted-inputs (movieName)
       local-endpoint (FindMovieWithMovieName.js)
@@ -15,30 +22,48 @@ endpoints {
       local-endpoint (FindMovieWithLocation.js)
     }
 
-    action-endpoint (FilterMovieWithRoom) {
-      accepted-inputs (movieSchedule, room)
-      local-endpoint (FilterMovieWithRoom.js)
-    }
-
+    // make structure
     action-endpoint (MakeNamedPointStructure) {
       accepted-inputs (locationalKeyword)
       local-endpoint (MakeNamedPointStructure.js)
     }
 
     action-endpoint (MakeDateTimeExpression) {
-      accepted-inputs (timeInput)
+      accepted-inputs (dateTimeExpression, detachedTime)
       local-endpoint (MakeDateTimeExpression.js)
     }
 
-    action-endpoint (FindMovieWithTime) {
-      accepted-inputs (dateTimeExpression)
-      local-endpoint (FindMovieWithTime.js)
+    action-endpoint (MakeTheaterStructure) {
+      accepted-inputs (brand, theaterName)
+      local-endpoint (MakeTheaterStructure.js)
     }
 
-     action-endpoint (FilterMovieWithMovieName) {
+    // filter
+    action-endpoint (FilterMovieWithRoom) {
+      accepted-inputs (movieSchedule, room)
+      local-endpoint (FilterMovieWithRoom.js)
+    }
+
+    action-endpoint (FilterMovieWithMovieName) {
       accepted-inputs (movieSchedule, movieName, exceptExpression)
       local-endpoint (FilterMovieWithMovieName.js)
     }
+
+    action-endpoint (FilterMovieWithTheaterName) {
+      accepted-inputs (movieSchedule, theaterName, exceptExpression)
+      local-endpoint (FilterMovieWithTheaterName.js)
+    }
+
+    action-endpoint (FilterMovieWithGenre) {
+      accepted-inputs (movieSchedule, genre, exceptExpression)
+      local-endpoint (FilterMovieWithGenre.js)
+    }
+
+    action-endpoint (FilterMovieWithTime) {
+      accepted-inputs (movieSchedule, dateTimeExpression, isStartTime)
+      local-endpoint (FilterMovieWithTime.js)
+    }
+
     // action-endpoint (FindMovieWithFullUtterance) {
     //   accepted-inputs (isStartTime, movieName, timeInput, locationalKeyword, brand)
     //   local-endpoint (FindMovieWithFullUtterance.js)

@@ -1,5 +1,5 @@
 action (FilterMovieWithMovieName) {
-  description (find movie with locational input)
+  description (filter movie with movie name input)
   type (Search)
   collect {
     input (movieSchedule) {

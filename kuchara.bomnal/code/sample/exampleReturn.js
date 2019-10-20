@@ -6,14 +6,16 @@ module.exports = [
       "movieRating": "15세관람가",
       "director": '스티븐 스필버그',
       "actors": ['히스레저', '조셉 고든 래빗'],
-      "genre": ['액션', '드라마'],
+      "genre": '액션, 드라마',
+      "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167635_P27_100146.jpg",
+      "userRating":0.0,
     },
     // startTime: dates.ZonedDateTime.now(),
     // endTime: dates.ZonedDateTime.now(),
     "totalSeat": 234,             // 총 좌석수
     "availableSeat": 123,             // 빈 좌석수
     "theater": {
-      "theaterName": "영통 메가박스",
+      "theaterName": "영통",
       "theaterCode": 1533,
       "regionCode": 25,
       // "pos": {
@@ -38,8 +40,7 @@ module.exports = [
       "lateNight": false,              // 심야 여부
       "morning": false,   
     },
-    "room": "1관",                 // 상영관
-    "movieCode": 123123,  
+    "room": "1관",                 // 상영관 
   },
   {
     "movie": {
@@ -48,7 +49,9 @@ module.exports = [
       "movieRating": "15세관람가",
       "director": '스티븐 스필버그',
       "actors": ['히스레저', '조셉 고든 래빗'],
-      "genre": ['액션', '드라마'],
+      "genre": '액션, 드라마',
+      "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167635_P27_100146.jpg",
+      "userRating":0.0,
     },
     // startTime: dates.ZonedDateTime.now(),
     // endTime: dates.ZonedDateTime.now(),
@@ -81,7 +84,6 @@ module.exports = [
       "morning": false,   
     },
     "room": "4관",                 // 상영관
-    "movieCode": 123123,  
   },
   {
     "movie": {
@@ -90,7 +92,9 @@ module.exports = [
       "movieRating": "15세관람가",
       "director": '스티븐 스필버그',
       "actors": ['히스레저', '조셉 고든 래빗'],
-      "genre": ['액션', '드라마'],
+      "genre": '액션, 드라마',
+      "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167635_P27_100146.jpg",
+      "userRating":0.0,
     },
     // startTime: dates.ZonedDateTime.now(),
     // endTime: dates.ZonedDateTime.now(),
@@ -123,7 +127,6 @@ module.exports = [
       "morning": false,   
     },
     "room": "mx",                 // 상영관
-    "movieCode": 123123,  
   },
   {
     "movie": {
@@ -132,7 +135,9 @@ module.exports = [
       "movieRating": "15세관람가",
       "director": '토드 스필버그',
       "actors": ['조셉 고든 래빗', '호아킨 피닉스'],
-      "genre": ['액션', '드라마'],
+      "genre": '액션, 드라마',
+      "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167635_P27_100146.jpg",
+      "userRating":0.0,
     },
     // startTime: dates.ZonedDateTime.now(),
     // endTime: dates.ZonedDateTime.now(),
@@ -165,7 +170,6 @@ module.exports = [
       "morning": false,   
     },
     "room": "7관",                 // 상영관
-    "movieCode": 234234,  
   },
   {
     "movie": {
@@ -174,7 +178,9 @@ module.exports = [
       "movieRating": "15세관람가",
       "director": '토드 스필버그',
       "actors": ['조셉 고든 래빗', '호아킨 피닉스'],
-      "genre": ['액션', '드라마'],
+      "genre": '액션, 드라마',
+      "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167635_P27_100146.jpg",
+      "userRating":0.0,
     },
     // startTime: dates.ZonedDateTime.now(),
     // endTime: dates.ZonedDateTime.now(),
@@ -207,7 +213,6 @@ module.exports = [
       "morning": false,   
     },
     "room": "7관",                 // 상영관
-    "movieCode": 234234,  
   },
   {
     "movie": {
@@ -216,7 +221,9 @@ module.exports = [
       "movieRating": "15세관람가",
       "director": '토드 스필버그',
       "actors": ['조셉 고든 래빗', '호아킨 피닉스'],
-      "genre": ['액션', '드라마'],
+      "genre": '액션, 드라마',
+      "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167635_P27_100146.jpg",
+      "userRating":0.0,
     },
     // startTime: dates.ZonedDateTime.now(),
     // endTime: dates.ZonedDateTime.now(),
@@ -245,7 +252,6 @@ module.exports = [
       "morning": false,   
     },
     "room": "7관",                 // 상영관
-    "movieCode": 234234,  
   },
   {
     "movie": {
@@ -254,7 +260,9 @@ module.exports = [
       "movieRating": "15세관람가",
       "director": '토드 스필버그',
       "actors": ['조셉 고든 래빗', '호아킨 피닉스'],
-      "genre": ['액션', '드라마'],
+      "genre": '액션, 드라마',
+      "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167635_P27_100146.jpg",
+      "userRating":0.0,
     },
     // startTime: dates.ZonedDateTime.now(),
     // endTime: dates.ZonedDateTime.now(),
@@ -287,6 +295,5 @@ module.exports = [
       "morning": false,   
     },
     "room": "7관",                 // 상영관
-    "movieCode": 234234,  
   },
 ]

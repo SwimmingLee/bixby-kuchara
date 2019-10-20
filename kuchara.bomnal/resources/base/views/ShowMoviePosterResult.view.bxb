@@ -1,0 +1,26 @@
+input-view {  
+  match{
+    Movie (this) {
+      min (Required)
+      max (Many)
+    }
+  }
+  message {
+    template (현재 주변 위치에서 상영중인 영화를 알려드릴게요)
+  }
+  render {
+    // image-picker (this) {
+    //   size (Medium)
+    // }
+    // list-of (this){
+    selection-of (this) {
+      where-each (one) {
+        layout-macro (movie-poster-card) {
+          param (movie) {
+            expression (one)
+          }
+        }
+      }
+    }
+  }
+}

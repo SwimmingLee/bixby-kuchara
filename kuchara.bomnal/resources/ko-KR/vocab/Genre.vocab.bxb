@@ -1,0 +1,77 @@
+// vocab (Genre) {
+//   "drama" {"drama", "드라마"}
+//   "fantasy" {"fantasy", "판타지"}
+//   "western" {"western", }    // 서부
+//   "horror" {"horror", }    // 공포
+//   "romans" {"romans", }    // 로맨스
+//   "adventure" {"adventure", }    // 모험
+//   "thriller" {"thriller", }    // 스릴러
+//   "noir" {"noir", }    // 느와르
+//   "cult" {"cult", }    // 컬트
+//   "documentary" {"documentary", }    // 다큐멘터리
+//   "comedy" {"comedy", }    // 코미디
+//   "family" {"family", }    // 가족
+//   "mistery" {"mistery", }    // 미스터리
+//   "war" {"war", }    // 전쟁
+//   "animation" {"animation", }    // 애니메이션
+//   "criminal" {"criminal", }    // 범죄
+//   "musical" {"musical", }    // 뮤지컬
+//   "sf" {"sf", }    // 에스에프
+//   "action" {"action", }    // 범죄
+//   "heriosm" {"heriosm", }    // 무협
+//   "erotic" {"erotic", }    // 에로
+//   "suspense" {"suspense", }    // 서스펜스
+//   "narrative" {"narrative", }    // 서사
+//   "blackComedy" {"blackComedy", }    // 블랙코미디
+//   "experimental" {"experimental", }    // 실험
+//   "cartoon" {"cartoon", }    // 영화카툰
+//   "soundtrack" {"soundtrack", }    // 영화음악
+//   "movieParaodyPoster" {"movieParaodyPoster", }    // 영화패러디포스터
+
+// }
+
+// enum (Genre) {
+//   symbol(drama)     // 드라마
+//   symbol(fantasy)     // 판타지
+//   symbol(western)     // 서부
+//   symbol(horror)     // 공포
+//   symbol(romans)     // 로맨스
+//   symbol(adventure)     // 모험
+//   symbol(thriller)     // 스릴러
+//   symbol(noir)     // 느와르
+//   symbol(cult)     // 컬트
+//   symbol(documentary)     // 다큐멘터리
+//   symbol(comedy)     // 코미디
+//   symbol(family)     // 가족
+//   symbol(mistery)     // 미스터리
+//   symbol(war)     // 전쟁
+//   symbol(animation)     // 애니메이션
+//   symbol(criminal)     // 범죄
+//   symbol(musical)     // 뮤지컬
+//   symbol(sf)     // 에스에프
+//   symbol(action)     // 범죄
+//   symbol(heriosm)     // 무협
+//   symbol(erotic)     // 에로
+//   symbol(suspense)     // 서스펜스
+//   symbol(narrative)     // 서사
+//   symbol(blackComedy)     // 블랙코미디
+//   symbol(experimental)     // 실험
+//   symbol(cartoon)     // 영화카툰
+//   symbol(soundtrack)     // 영화음악
+//   symbol(movieParaodyPoster)     // 영화패러디포스터
+// }
+
+// 1: 드라마 2: 판타지
+// 3: 서부 4: 공포
+// 5: 로맨스 6: 모험
+// 7: 스릴러 8: 느와르
+// 9: 컬트 10: 다큐멘터리
+// 11: 코미디 12: 가족
+// 13: 미스터리 14: 전쟁
+// 15: 애니메이션 16: 범죄
+// 17: 뮤지컬 18: SF
+// 19: 액션20: 무협
+// 21: 에로 22: 서스펜스
+// 23: 서사 24: 블랙코미디
+// 25: 실험 26: 영화카툰
+// 27: 영화음악 28: 영화패러디포스터

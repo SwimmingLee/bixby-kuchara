@@ -23,6 +23,14 @@ structure (Movie) {
   }
   property (genre) {
     type (Genre)
-    min (Required) max (Many)
+    min (Required) max (One)
+  }
+  property (imgUrl) {
+    type (ImgUrl)
+    min (Required) max (One)
+  }
+  property (userRating) {
+    type (UserRating)
+    min (Required) max (One)
   }
 }

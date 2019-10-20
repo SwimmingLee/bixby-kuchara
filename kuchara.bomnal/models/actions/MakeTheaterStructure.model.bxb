@@ -1,0 +1,15 @@
+action (MakeTheaterStructure) {
+  description (__DESCRIPTION__)
+  type (Search)
+  collect {
+    input (brand) {
+      type (Brand)
+      min (Optional) max (One)
+    }
+    input (theaterName) {
+      type (TheaterName)
+      min (Optional) max (One)
+    }
+  }
+  output (Theater)
+}

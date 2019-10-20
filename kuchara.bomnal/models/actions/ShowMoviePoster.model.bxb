@@ -1,0 +1,17 @@
+action (ShowMoviePoster) {
+  description (__DESCRIPTION__)
+  type(Search)
+  collect {
+    input (namedPointStructure) {
+      type (NamedPointStructure)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: NamedPointStructure
+          route: geo.CurrentLocation
+        }
+      }
+    }
+  }
+  output (Movie)
+}

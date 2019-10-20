@@ -1,4 +1,5 @@
 train (t-lhf96yok39er2b1n06mq83dsm) {
-  utterance ("[g:FindMovieWithTime] (7)[v:MakeDateTimeExpression](시)[v:InputTimeQuery:hour] 이후 영화 보여줘")
-  last-modified (1571317633580)
+  utterance ("[g:FilterMovieWithTime:continue:MovieSchedule] (7시)[v:time.DetachedTime] (이후)[v:IsStartTime:true] 영화 보여줘")
+  plan (Y2BnkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEKTdcvMKUktAqsJzyzJCMnMTWWQQlPjWRxcklhUApbDb7p0WWaZXglQnZ5LYkkqSINrRUFRanFxZn4egyq61sTsVCzKRBFmpJYkgkwGW8zGwMjAxMDMwMLACmQzAHkgCOIxMkAAhGYGqwOqAAA=)
+  last-modified (1571546057966)
 }

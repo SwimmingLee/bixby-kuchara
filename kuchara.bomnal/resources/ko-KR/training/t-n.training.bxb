@@ -1,0 +1,5 @@
+train (t-ndjds262jqup1hjhrovkipii6) {
+  utterance ("[g:MakeDateTimeExpression] (오늘)[v:time.DateTimeExpression] (오후 세시 반)[v:time.DetachedTime]")
+  plan (Y2BhkC7LLNMrycxN1XNJLEkNATJcKwqKUouLM/PzGFSzS5MzEosS9ZLyc/MSc/R8E7NTsSjDa4YoQjK1JDE5IzUFpICBmYGRgQlIMgBpEIQAuCgA)
+  last-modified (1571487308340)
+}

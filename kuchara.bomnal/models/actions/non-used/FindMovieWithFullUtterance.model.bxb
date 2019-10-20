@@ -1,0 +1,28 @@
+// action (FindMovieWithFullUtterance) {
+//   description (find movie schedule when every condition id satisfied)
+//   type (Search)
+//   collect {
+//     input (isStartTime) {
+//       type (IsStartTime)
+//       min (Optional) max (One)
+//     }
+//     input (movieName) {
+//       type (MovieName)
+//       min (Optional) max (One)
+//     }
+//     input (timeInput) {
+//       type (TimeInput)
+//       min (Optional) max (One)
+//     }
+//     input (locationalKeyword) {
+//       type (LocationalKeyword)
+//       min (Optional) max (One)
+//     }
+//     input (brand) {
+//       type (Brand)
+//       min (Optional) max (One)
+//     }
+//   }
+//   output (MovieSchedule)
+// }
+  

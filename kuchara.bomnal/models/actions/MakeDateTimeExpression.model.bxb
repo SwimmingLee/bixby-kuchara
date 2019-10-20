@@ -1,10 +1,17 @@
 action (MakeDateTimeExpression) {
+  type(Search)
   description (__DESCRIPTION__)
   collect {
-    input (timeInput) {
-      type (TimeInput)
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
       min (Optional) max (One)
     }
+    input (detachedTime) {
+      type (time.DetachedTime)
+      min (Optional) max (One)
+    }
+    // 추가할 것
+    
   }
   output (time.DateTimeExpression)
 }

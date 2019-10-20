@@ -1,5 +1,10 @@
+train (t-s2r8t9teeagjvndvqbcddgp2h) {
+  utterance ("[g:MakeDateTimeExpression] (7시 반)[v:time.DetachedTime]")
+  plan (Y2BmkC7LLNMrycxN1XNJLEkNATJcKwqKUouLM/PzGFSzS5MzEosS9ZLyc/MSc/R8E7NTsSgTRZiRWpKYnJGaAlLAwMTACMQMQJKRAQSgfAA=)
+  last-modified (1571484947147)
+}
 train (t-st8o37cttscqg0hkwcgfkix9o) {
   utterance ("[g:FindMovieWithMovieName] (조커)[v:MovieName] 시간표 찾아줘")
   plan (Y2BmkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEWTdcvMSwGrCM8syQAz/BJzUxkksBkClmFiYARiBiDJyAACUD4A)
-  last-modified (1571228685685)
+  last-modified (1571565748992)
 }

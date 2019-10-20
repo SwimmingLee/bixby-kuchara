@@ -1,0 +1,24 @@
+action (FilterMovieWithTime) {
+  description (__DESCRIPTION__)
+  type(Search)
+  collect {
+    input (movieSchedule) {
+      type (MovieSchedule)
+      min (Required) max (Many)
+    }
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
+      min (Required) max (One)
+      default-init{
+        intent {
+          goal: MakeDateTimeExpression
+        }
+      }
+    }
+    input(isStartTime){
+      type(IsStartTime)
+      min (Optional) max (One)
+    }
+  }
+  output (MovieSchedule)
+}

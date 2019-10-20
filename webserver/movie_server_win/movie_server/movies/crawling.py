@@ -22,7 +22,7 @@ import sys
 
 def WebDriverInit():
     global driver
-    driverDir = r'C:\\chromedriver_win32\\chromedriver.exe'
+    driverDir = r'/Users/youngcheolsong/Desktop/bixby-kuchara/chromedriver'
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
     driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)

@@ -1,0 +1,59 @@
+layout-macro-def (movie-poster-card) {
+ params {
+  //  param(image) {
+  //    type(Image)
+  //    min(Required) max (One)
+  //  }
+    param (movie) {
+      type (Movie)
+      min (Required)
+      max (One)
+    }
+ }
+ content {
+
+   image-card {
+    //  on-click {
+    //    intent {
+    //      goal: FindMovieWithMovieName
+    //      value: movie
+    //    }       
+    //  }
+     
+     aspect-ratio (3:4)
+     // image-url("이미지 url 주소 적기")
+     image-url ("#{value(movie.imgUrl)}")
+     text-position (Below)
+     title-area {
+       halign (Start)
+       slot1 {
+         text {
+           color (Red)
+           style (Title_S)
+           // value ("#{value(image.movieName)}")
+           value ("#{value(movie.movieName)}")
+         }
+       }
+       slot2 {
+         single-line {
+           text {
+             style(Detail_M)
+             // value ("#{value(image.genre)}")
+             value ("#{value(movie.genre)}")
+           }
+         }
+       }
+       slot3 {
+         single-line {
+           text {
+             style (Detail_M)
+             // value ("#{value(image.rating)}")
+             value ("#{value(movie.userRating)}")
+           }
+         }
+       }
+     }
+   }
+ }
+}
+

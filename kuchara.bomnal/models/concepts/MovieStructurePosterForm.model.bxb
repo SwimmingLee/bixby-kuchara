@@ -1,0 +1,56 @@
+structure (MovieSchedulePosterForm) {
+  description (Movie with theater room and exact time schedule)
+  property (movie) {
+    type (Movie)
+    min (Required) max (One)
+  }
+  // property (timeInput) {
+  //   type (TimeInput)
+  //   min (Required) max (One)
+  // }
+  // property (startTime) {
+  //   type (StartTime)
+  //   min (Required) max (One)
+  // }
+  // property (endTime) {
+  //   type (EndTime)
+  //   min (Required) max (Many)
+  // }
+  property (totalSeat) {
+    type (TotalSeat)
+    min (Required) max (One)
+  }
+  property (availableSeat) {
+    type (AvailableSeat)
+    min (Required) max (One)
+  }
+  property (theater) {
+    type (Theater)
+    min (Required) max (One)
+  }
+  property (movieScheduleFlag) {
+    type (MovieScheduleFlag)
+    min (Required) max (One)
+  }
+  property (room) {
+    type (Room)
+    min (Required) max (One)
+  }
+  // 필요없으므로 제외
+  // property (movieCode) {
+  //   type (MovieCode)
+  //   min (Required) max (One)
+  // }
+}
+// MovieSchedule = {
+//     movie: Object,
+//     startTime: DateTime(),
+//     endTime: DateTime(),
+//     totalSeat: 0,             // 총 좌석수
+//     availableSeat: 0,             // 빈 좌석수
+//     theater: Object,
+//     movieScheduleFlag: Object,
+//     room: "",                 // 상영관
+//     code: 0,                  // 각 영화사마다 조커의 코드가 달라서 movie에 안넣고 여기에 둠
+
+//   }
