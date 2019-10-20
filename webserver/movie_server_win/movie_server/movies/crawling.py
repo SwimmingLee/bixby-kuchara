@@ -31,7 +31,9 @@ def WebDriverInit():
 
 def crawl(regionCode, theaterCode):
     movieJson = ""
-     
+    movieList = []
+    movieDict = dict()
+
     region = regionCode
     cinema = theaterCode
 
@@ -41,14 +43,11 @@ def crawl(regionCode, theaterCode):
     req = driver.page_source
     bs = BeautifulSoup(req, 'html.parser')
 
-
-    #theaterSchedule > div.timetable_container
     movieScedule = bs.find('div', {'class':'timetable_container'})
-    #print(movieScedule)
     movieTableRow = movieScedule.find('tbody').findAll('tr')
 
-    # print(sys.stdout.encoding)
-    movieDict = dict()
+
+    
 
     for row in movieTableRow:
         movieName = row.find('a', {'title':'영화상세 보기'})
@@ -72,38 +71,21 @@ def crawl(regionCode, theaterCode):
         if movieTime != None:
             movieTimeStr = movieTime.text
             movieStartTimeStr, movieEndTimeStr = movieTimeStr.split('~')
-            #             = movieTimeStr.split('~')[1]
-            #print("[DEBUG] " + movieStartTimeStr + " " + movieEndTimeStr)
-        # print(movieTimeStr)
-
 
         movieTimeInfos = row.findAll('p', {'class':re.compile("time_info.*")})
         for movieTimeInfo in movieTimeInfos:
-           # movieHover = movieTimeInfo.previous_sibling
-            #if movieHover != None:
-                #rint("[Debug]:" +  movieHover.text)
-                #
-            # print(movieHover)
-        # movieTimeStr = movieHover.text
-        # print(movieTimeStr)
-           # movieStartTime = movieTimeInfo.find('span', {'class':'time'})
-           # if movieStartTime != None:
-            #    movieStartTimeStr = movieStartTime.text
-            #print(movieStartTimeStr)
             movieSeatInfo = movieTimeInfo.find('span', {'class':'seat'})
             if movieSeatInfo != None:
                 movieSeatInfoStr = movieSeatInfo.text
-            #print(movieSeatInfoStr)
+
                 movieDict['movieName'] = movieNameStr
                 movieDict['movieRating'] = movieRatingStr
                 movieDict['startTime'] = movieStartTimeStr
                 movieDict['endTime'] = movieEndTimeStr
                 movieDict['room'] = movieRoomStr
                 movieDict['seatInfo'] = movieSeatInfoStr
-                #movieJson += json.dumps(movieDict, ensure_ascii=False)
-                #print(movieDict)
-            #print(movieJson)
-
-    #return movieJson
-    return movieDict
+                movieJson = json.dumps(movieDict, ensure_ascii=False)
+                movieList.append(movieJson)
+    return movieList
+    #return movieDict
 

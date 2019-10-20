@@ -22,7 +22,7 @@ from movies.views import TheaterViewSet
 from movies.views import NamedPointStructureViewSet
 from movies.views import movie_list
 from movies.views import SearchWithPos
-
+from movies.views import UpdateTheater
 
 from movies.crawling import WebDriverInit
 
@@ -38,5 +38,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
     path('movie_api/searchWithTheaterName/', movie_list, name='movie_list'),
-    path('movie_api/searchWithPos/', SearchWithPos, name='SearchWithPos')
+    path('movie_api/searchWithPos/', SearchWithPos, name='SearchWithPos'),
+    path('movie_update/theater', UpdateTheater, name='UpdateTheater')
 ]

@@ -53,7 +53,6 @@ class MovieSchedules(models.Model):
     digitalized = models.BooleanField()
     lateNight = models.BooleanField()
     morning = models.BooleanField()
-
     # << movieScheduleFlag
 
 

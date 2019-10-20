@@ -17,7 +17,7 @@ from .crawling import crawl
 import math
 import numbers
 import json
-
+import csv
 
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movies.objects.all()
@@ -34,7 +34,31 @@ class MovieScheduleViewSet(viewsets.ModelViewSet):
 class NamedPointStructureViewSet(viewsets.ModelViewSet):
     queryset = NamedPointStructres.objects.all()
     serializer_class = NamedPointStructresSerializer
-    
+
+def UpdateTheater(request):
+    csvFileDir = r"C:\Users\Lee\workspace\bixby-kuchara\webserver\apitest\theater_info.txt"
+    csvFile = open(csvFileDir, 'r', encoding='UTF-8')
+    try:
+        spamreader = csv.reader(csvFile)
+        for row in spamreader:
+            theaterName = row[0]
+            theaterCode = row[1]
+            regionCode = row[2]
+            brand = row[3]
+            latitude = row[4]
+            longitude = row[5]
+            theaterEle = Theaters(theaterName=theaterName, regionCode=regionCode, theaterCode=theaterCode, longitude=longitude, latitude=latitude, brand=brand)
+            theaterEle.save()
+ #           
+ # print("theatherName:{}, theaterCode:{}, regionCode:{}, brand:{}, latitude:{}, longitude:{}".format(row[0], row[1], row[2], row[3], row[4], row[5]))
+    finally:
+        csvFile.close()
+
+    return JsonResponse({
+        'message':'안녕 파이썬 장고',
+        'items' : ['python', 'django']
+    })
+
 
 def get_euclidean_distance(x1, y1, x2, y2, round_decimal_digits=6):
     if x1 is None or y1 is None or x2 is None or y2 is None:
@@ -105,31 +129,32 @@ def SearchWithPos(request):
 
     print('long:{}, lat:{}'.format(latitude, longitude))
 
-    allTheater = Theaters.objects.all()
+    # 현재는 메가박스에 대한 정보만 가져올 수 있도록 되어 있다. 
+    allTheater = Theaters.objects.filter(brand__exact='megabox')
     for reqtheater in allTheater:
         dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
         print("Dist {}".format(dist))
-        if dist < 0.1:
-            movie_info = crawl(reqtheater.regionCode, reqtheater.theaterCode)
-            print(movie_info)
-            print(type(movie_info['movieName']))
-            print('[DEBUG]: ' + movie_info['movieName'])
-            movie['movieName'] = movie_info['movieName']
-            print('[DEBUG]: ' + movie_info['movieName'])
-            movie['movieRating'] = movie_info['movieRating']
-            
-            theater['theaterName'] = reqtheater.theaterName
-            theater['theaterCode'] = reqtheater.theaterCode
-            theater['regionCode'] = reqtheater.regionCode
-            theater['brand'] = reqtheater.brand
+        if dist < 0.01:
+            movie_list = crawl(reqtheater.regionCode, reqtheater.theaterCode)
+            for movie_Info in movie_list:
+                
+                movie_info = json.loads(movie_Info)
 
-            movieSchedule['room'] = movie_info['room']
-            movieSchedule['totalSeat'] = movie_info['seatInfo']
-            movieSchedule['availableSeat'] = movie_info['seatInfo']
-            movieSchedule['movie'] = movie
-            movieSchedule['theater'] = theater            
+                movie['movieName'] = movie_info['movieName']
+                movie['movieRating'] = movie_info['movieRating']
 
-            movieJson += json.dumps(movieSchedule, ensure_ascii=False)
+                theater['theaterName'] = reqtheater.theaterName
+                theater['theaterCode'] = reqtheater.theaterCode
+                theater['regionCode'] = reqtheater.regionCode
+                theater['brand'] = reqtheater.brand
+
+                movieSchedule['room'] = movie_info['room']
+                movieSchedule['totalSeat'] = movie_info['seatInfo']
+                movieSchedule['availableSeat'] = movie_info['seatInfo']
+                movieSchedule['movie'] = movie
+                movieSchedule['theater'] = theater
+
+                movieJson += json.dumps(movieSchedule, ensure_ascii=False)
 
     return JsonResponse(movieJson, safe=False)
 
@@ -163,4 +188,9 @@ def movie_list(request):
         'items' : ['python', 'django']
     })
 '''
+
+def SearchMovieWithPos(request):
+    moiveJson = dict()
+    
+    return JsonResponse(moiveJson)
 # Create your views here.
