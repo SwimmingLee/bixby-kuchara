@@ -8,6 +8,8 @@ class Movies(models.Model):
     movieRating = models.CharField(max_length=20)
     duration = models.IntegerField(blank=True, null=True)
     genre = models.CharField(max_length=30)
+    userRating = models.FloatField()
+    imgUrl = models.CharField(max_length=50)
 
     def __str__(self):
         return self.movieName

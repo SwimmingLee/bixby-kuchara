@@ -12,12 +12,12 @@ from .models import Movies
 from .models import Theaters
 from .models import NamedPointStructres
 
-from .crawling import crawl
+from .crawling import GetMovieInfo
+from .crawling import MegaBoxCrawl
+from .getdistance import get_euclidean_distance
 
-import math
-import numbers
 import json
-import csv
+
 
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movies.objects.all()
@@ -35,41 +35,8 @@ class NamedPointStructureViewSet(viewsets.ModelViewSet):
     queryset = NamedPointStructres.objects.all()
     serializer_class = NamedPointStructresSerializer
 
-def UpdateTheater(request):
-    csvFileDir = r"C:\Users\Lee\workspace\bixby-kuchara\webserver\apitest\theater_info.txt"
-    csvFile = open(csvFileDir, 'r', encoding='UTF-8')
-    try:
-        spamreader = csv.reader(csvFile)
-        for row in spamreader:
-            theaterName = row[0]
-            theaterCode = row[1]
-            regionCode = row[2]
-            brand = row[3]
-            latitude = row[4]
-            longitude = row[5]
-            theaterEle = Theaters(theaterName=theaterName, regionCode=regionCode, theaterCode=theaterCode, longitude=longitude, latitude=latitude, brand=brand)
-            theaterEle.save()
- #           
- # print("theatherName:{}, theaterCode:{}, regionCode:{}, brand:{}, latitude:{}, longitude:{}".format(row[0], row[1], row[2], row[3], row[4], row[5]))
-    finally:
-        csvFile.close()
-
-    return JsonResponse({
-        'message':'안녕 파이썬 장고',
-        'items' : ['python', 'django']
-    })
 
 
-def get_euclidean_distance(x1, y1, x2, y2, round_decimal_digits=6):
-    if x1 is None or y1 is None or x2 is None or y2 is None:
-        return None
-    
-    dlong = abs(x2-x1)
-    if dlong >= 180:
-        dlong -= 360
-    dlat = y2 - y1
-
-    return round(math.sqrt(pow(dlong, 2)+pow(dlat, 2)), round_decimal_digits)
 
 
 theaterFlag = {
@@ -134,8 +101,8 @@ def SearchWithPos(request):
     for reqtheater in allTheater:
         dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
         print("Dist {}".format(dist))
-        if dist < 0.01:
-            movie_list = crawl(reqtheater.regionCode, reqtheater.theaterCode)
+        if dist < 0.001:
+            movie_list = MegaBoxCrawl(reqtheater.regionCode, reqtheater.theaterCode)
             for movie_Info in movie_list:
                 
                 movie_info = json.loads(movie_Info)
@@ -172,7 +139,7 @@ def movie_list(request):
     reqTheater = Theaters.objects.get(theaterName=theaterName)
     # reqMovies = MovieSchedules.objects.filter(theater=reqTheater.id)
     
-    movieinfo = crawl(reqTheater.regionCode, reqTheater.theaterCode)
+    movieinfo = MegaBoxCrawl(reqTheater.regionCode, reqTheater.theaterCode)
     '''
     print(movieinfo)
 
@@ -194,3 +161,11 @@ def SearchMovieWithPos(request):
     
     return JsonResponse(moiveJson)
 # Create your views here.
+
+
+def Test(request):
+    GetMovieInfo("조커")
+    return JsonResponse({
+        'message':'안녕 파이썬 장고',
+        'items' : ['python', 'django']
+    })
