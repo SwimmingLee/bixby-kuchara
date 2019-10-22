@@ -20,8 +20,8 @@ from movies.views import MovieViewSet
 from movies.views import MovieScheduleViewSet
 from movies.views import TheaterViewSet
 from movies.views import NamedPointStructureViewSet
-from movies.views import movie_list
-from movies.views import SearchWithPos
+from movies.views import SearchMovieListWithPos
+from movies.views import SearchTheaterWithPos
 from movies.update import UpdateTheater
 
 from movies.crawling import WebDriverInit
@@ -38,8 +38,8 @@ WebDriverInit()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
-    path('movie_api/searchWithTheaterName/', movie_list, name='movie_list'),
-    path('movie_api/searchWithPos/', SearchWithPos, name='SearchWithPos'),
+    path('movie_api/searchMoiveListWithPos/', SearchMovieListWithPos, name='SearchMovieListWithPos'),
+    path('movie_api/searchTheaterWithPos/', SearchTheaterWithPos, name='SearchTheaterWithPos'),
     path('movie_api/test/', Test, name='Test'),
     path('movie_update/theater', UpdateTheater, name='UpdateTheater')
 ]

@@ -12,7 +12,8 @@ from .models import Movies
 from .models import Theaters
 from .models import NamedPointStructres
 
-from .crawling import GetMovieInfo
+from .update import GetMovieInfo
+from .update import GetNaverMovieInfo
 from .crawling import MegaBoxCrawl
 from .getdistance import get_euclidean_distance
 
@@ -34,9 +35,6 @@ class MovieScheduleViewSet(viewsets.ModelViewSet):
 class NamedPointStructureViewSet(viewsets.ModelViewSet):
     queryset = NamedPointStructres.objects.all()
     serializer_class = NamedPointStructresSerializer
-
-
-
 
 
 theaterFlag = {
@@ -82,7 +80,7 @@ movieSchedule = {
 }
 
 
-def SearchWithPos(request):
+def SearchTheaterWithPos(request):
     movieJson = ""
     try:
         longitude = float(request.GET['longitude'])
@@ -127,34 +125,16 @@ def SearchWithPos(request):
 
 
 
-def movie_list(request):
-   
-    json_res = dict()
+def SearchMovieListWithPos(request):
     try:
         theaterName = request.GET['theaterName']
     except:
         theaterName = "조커"
-
-    
     reqTheater = Theaters.objects.get(theaterName=theaterName)
     # reqMovies = MovieSchedules.objects.filter(theater=reqTheater.id)
     
     movieinfo = MegaBoxCrawl(reqTheater.regionCode, reqTheater.theaterCode)
-    '''
-    print(movieinfo)
-
-    for reqMovie in reqMovies:
-        print(reqMovie.room)
-        
-    print(reqTheater.theaterName)
-'''
     return JsonResponse(movieinfo, safe=False)
-'''
-    return JsonResponse({
-        'message':'안녕 파이썬 장고',
-        'items' : ['python', 'django']
-    })
-'''
 
 def SearchMovieWithPos(request):
     moiveJson = dict()
