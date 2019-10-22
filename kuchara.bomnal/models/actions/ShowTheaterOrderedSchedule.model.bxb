@@ -1,0 +1,11 @@
+action (ShowTheaterOrderedSchedule) {
+  description (__DESCRIPTION__)
+  type(Search)
+  collect {
+    input (movie) {
+      type (Movie)
+      min (Required) max (One)
+    }
+  }
+  output (TheaterOrderedSchedule)
+}

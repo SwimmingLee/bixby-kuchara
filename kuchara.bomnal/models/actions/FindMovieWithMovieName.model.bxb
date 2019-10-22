@@ -7,6 +7,6 @@ action (FindMovieWithMovieName) {
       min (Required) max (One)
     }
   }
-  output (TheaterOrederedSchedule)
+  output (TheaterOrderedSchedule)
 }
   

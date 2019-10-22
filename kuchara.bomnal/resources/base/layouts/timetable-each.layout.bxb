@@ -1,0 +1,58 @@
+layout-macro-def (timetable-each) {
+  params {
+    param (theater) {
+      type (Theater)
+      min (Required) max (One)
+    }
+  }
+
+  content {
+    compound-card {
+      content {
+        hbox {
+          content {
+            vbox {
+              halign (Start)
+              content {
+                single-line {
+                  image {
+                    shape (Square)
+                    url ("#{value(theater.theaterInfo.iconUri)}")
+                  }
+                  text {
+                    style (Title_M)
+                    value {
+                      template ("#{value(theater.theaterInfo.theaterName)}")
+                    }
+                  }
+                }
+              }
+            }
+            vbox { 
+              halign (End)
+              content {
+                single-line {
+                  text{
+                    style (Title_M)
+                    value(300m)
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        for-each (theater.theaterSchedulePack) {
+          as(theaterSchedulePack) {
+            layout-macro (timetable-for-hbox) {
+              param (theaterSchedulePack) {
+                expression (theater.theaterSchedulePack)
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -25,6 +25,10 @@ structure (TheaterInfo) {
     type (Longitude)
     min (Required) max (One)
   }
+  property(iconUri) {
+    type (IconUri)
+    min (Required) max (One)
+  }
 
 }
 

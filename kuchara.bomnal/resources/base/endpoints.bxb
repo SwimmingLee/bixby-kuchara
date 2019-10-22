@@ -39,28 +39,28 @@ endpoints {
     }
 
     // filter
-    action-endpoint (FilterMovieWithRoom) {
-      accepted-inputs (movieSchedule, room)
-      local-endpoint (FilterMovieWithRoom.js)
+    action-endpoint (FilterMovieWithRoomFromTheaterOrder) {
+      accepted-inputs (theaterOrderedSchedule, room)
+      local-endpoint (FilterMovieWithRoomFromTheaterOrder.js)
     }
 
     action-endpoint (FilterMovieWithMovieName) {
-      accepted-inputs (movieSchedule, movieName, exceptExpression)
+      accepted-inputs (theaterOrderedSchedule, movieName, exceptExpression)
       local-endpoint (FilterMovieWithMovieName.js)
     }
 
     action-endpoint (FilterMovieWithTheaterName) {
-      accepted-inputs (movieSchedule, theaterName, exceptExpression)
+      accepted-inputs (theaterOrderedSchedule, theaterName, exceptExpression)
       local-endpoint (FilterMovieWithTheaterName.js)
     }
 
     action-endpoint (FilterMovieWithGenre) {
-      accepted-inputs (theaterOrderedSchedule, genre, exceptExpression)
+      accepted-inputs (movie, genre, exceptExpression)
       local-endpoint (FilterMovieWithGenre.js)
     }
 
     action-endpoint (FilterMovieWithTime) {
-      accepted-inputs (movieSchedule, dateTimeExpression, isStartTime)
+      accepted-inputs (theaterOrderedSchedule, dateTimeExpression, isStartTime)
       local-endpoint (FilterMovieWithTime.js)
     }
 

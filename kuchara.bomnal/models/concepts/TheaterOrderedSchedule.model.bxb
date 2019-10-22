@@ -1,4 +1,4 @@
-structure (TheaterOrederedSchedule) {
+structure (TheaterOrderedSchedule) {
   description (common Movie descriptions)
   property (movie) {
     type (Movie)

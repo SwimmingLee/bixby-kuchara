@@ -4,8 +4,8 @@ structure (Theater) {
     type (TheaterInfo)
     min (Required) max (One)
   }
-  property(theaterSchedule) {
-    type (TheaterSchedule)
+  property(theaterSchedulePack) {
+    type (TheaterSchedulePack)
     min (Optional) max (Many)
   }
 }

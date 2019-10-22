@@ -11,10 +11,19 @@ action (FindMovieWithLocation) {
           route: geo.CurrentLocation
         }
       }
+      // default-select{
+      //   with-rule {
+      //     select-first {
+      //       sort-key (MIN) {
+      //         binding (placeID)
+      //       }
+      //     }
+      //   }
+      // }
     }
     
   }
-  output (MovieSchedule)
+  output (TheaterOrderedSchedule)
   // output (MovieName)
 }
   

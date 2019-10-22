@@ -1,4 +1,4 @@
-action (FilterMovieWithGenre) {
+action (FilterMovieWithNation) {
   description (filter movie with genre input)
   type (Search)
   collect {
@@ -6,8 +6,8 @@ action (FilterMovieWithGenre) {
       type (Movie)
       min (Required) max (Many)
     }
-    input (genre) {
-      type (Genre)
+    input (nation) {
+      type (Nation)
       min (Required) max (One)
     }
     input(exceptExpression){

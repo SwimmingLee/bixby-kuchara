@@ -1,7 +1,7 @@
 train (t-s2r8t9teeagjvndvqbcddgp2h) {
   utterance ("[g:MakeDateTimeExpression] (7시 반)[v:time.DetachedTime]")
   plan (Y2BmkC7LLNMrycxN1XNJLEkNATJcKwqKUouLM/PzGFSzS5MzEosS9ZLyc/MSc/R8E7NTsSgTRZiRWpKYnJGaAlLAwMTACMQMQJKRAQSgfAA=)
-  last-modified (1571484947147)
+  last-modified (1571741263617)
 }
 train (t-sagto8yhgp0ljbifgzhqltm86) {
   utterance ([g:ShowMoviePoster] 지금 영화 뭐하는지 알려줘)

@@ -2,8 +2,8 @@ action (FilterMovieWithTime) {
   description (__DESCRIPTION__)
   type(Search)
   collect {
-    input (movieSchedule) {
-      type (MovieSchedule)
+    input (theaterOrderedSchedule) {
+      type (TheaterOrderedSchedule)
       min (Required) max (Many)
     }
     input (dateTimeExpression) {
@@ -20,5 +20,5 @@ action (FilterMovieWithTime) {
       min (Optional) max (One)
     }
   }
-  output (MovieSchedule)
+  output (TheaterOrderedSchedule)
 }

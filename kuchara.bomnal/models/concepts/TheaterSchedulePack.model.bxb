@@ -1,0 +1,7 @@
+structure (TheaterSchedulePack) {
+  description (Movie with theater room and exact time schedule)
+  property (theaterSchedule) {
+    type (TheaterSchedule)
+    min (Optional) max (Many)
+  }
+}

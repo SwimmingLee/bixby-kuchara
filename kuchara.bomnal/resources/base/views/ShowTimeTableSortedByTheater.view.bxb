@@ -1,0 +1,31 @@
+// input-view {  
+result-view {
+  match{
+    TheaterOrderedSchedule (this) {
+      min (Required)
+      max (One)
+    }
+
+  }
+  message {
+    template ("#{value(this.movie.movieName)} 을(를) 상영하고 있는 근처 영화관 상영 시간표에요.")
+  }
+  render {
+    // selection-of (this.theater) {
+    list-of (this.theater){
+      where-each (one) {
+        layout-macro (timetable-each) {
+          param (theater) {
+            expression(one)
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    conversation-driver {
+      template ("Hi Iron bro")
+    }
+  }
+}

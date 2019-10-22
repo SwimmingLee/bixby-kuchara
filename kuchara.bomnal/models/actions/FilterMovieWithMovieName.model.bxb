@@ -2,8 +2,8 @@ action (FilterMovieWithMovieName) {
   description (filter movie with movie name input)
   type (Search)
   collect {
-    input (movieSchedule) {
-      type (MovieSchedule)
+    input (timeOrderedSchedule) {
+      type (TimeOrderedSchedule)
       min (Required) max (Many)
     }
     input (movieName) {
@@ -15,5 +15,5 @@ action (FilterMovieWithMovieName) {
       min (Optional) max (One)
     }
   }
-  output (MovieSchedule)
+  output (TimeOrderedSchedule)
 }

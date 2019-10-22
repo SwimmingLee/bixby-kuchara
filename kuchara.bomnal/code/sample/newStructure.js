@@ -22,6 +22,7 @@ module.exports = [
           'latitude' : 123.123,
           "theaterCode": 1533,
           "regionCode": 25,
+          'iconUri':"/images/brand/cgv.png",  // 만들어야 함!
         },
         'schedule' : [
           [
@@ -42,6 +43,9 @@ module.exports = [
             "totalSeat": 234,             // 총 좌석수
             "availableSeat": 123,             // 빈 좌석수
             "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
           },
           {
             'startTime': '18:00',
@@ -49,33 +53,9 @@ module.exports = [
             "totalSeat": 234,             // 총 좌석수
             "availableSeat": 123,             // 빈 좌석수
             "subtitle": true,               // 자막여부
-
-          },
-          ],
-          [
-          {
-            'startTime': '18:00',
-            'endTime': '19:50',
-            "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
-            "subtitle": true,               // 자막여부
-
-          },
-          {
-            'startTime': '18:00',
-            'endTime': '19:50',
-            "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
-            "subtitle": true,               // 자막여부
-
-          },
-          {
-            'startTime': '18:00',
-            'endTime': '19:50',
-            "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
-            "subtitle": true,               // 자막여부
-
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
           },
           ],
           [
@@ -85,7 +65,43 @@ module.exports = [
             "totalSeat": 234,             // 총 좌석수
             "availableSeat": 123,             // 빈 좌석수
             "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
 
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          },
+          ],
+          [
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
           },
           ]
         ]
@@ -100,12 +116,16 @@ module.exports = [
           "regionCode": 25,
         },
         'schedule' : [
+          [
           {
             'startTime': '18:00',
             'endTime': '19:50',
             "totalSeat": 234,             // 총 좌석수
             "availableSeat": 123,             // 빈 좌석수
             "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
 
           },
           {
@@ -114,7 +134,33 @@ module.exports = [
             "totalSeat": 234,             // 총 좌석수
             "availableSeat": 123,             // 빈 좌석수
             "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          },
+          ],
+          [
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
           }
+          ]
         ]
       },
     ]
