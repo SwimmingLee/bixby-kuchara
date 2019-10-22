@@ -7,7 +7,7 @@ from django.http import JsonResponse
 from bs4 import BeautifulSoup
 import urllib.request
 from urllib.request import Request, urlopen
-
+from datetime import datetime
 
 
 def GetNaverMovieInfo(url):
@@ -101,7 +101,10 @@ def UpdateTheater(request):
             brand = row[3]
             latitude = row[4]
             longitude = row[5]
-            theaterEle = Theaters(theaterName=theaterName, regionCode=regionCode, theaterCode=theaterCode, longitude=longitude, latitude=latitude, brand=brand)
+            oldTime = "20191010"
+            convert_date = datetime.strptime(oldTime, "%Y%m%d").date()
+            theaterEle = Theaters(theaterName=theaterName, regionCode=regionCode, theaterCode=theaterCode, \
+                                longitude=longitude, latitude=latitude, brand=brand, updatedTime=convert_date)
             theaterEle.save()
  
     finally:

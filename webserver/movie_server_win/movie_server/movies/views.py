@@ -18,7 +18,7 @@ from .crawling import MegaBoxCrawl
 from .getdistance import get_euclidean_distance
 
 import json
-
+from datetime import datetime
 
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movies.objects.all()
@@ -37,14 +37,6 @@ class NamedPointStructureViewSet(viewsets.ModelViewSet):
     serializer_class = NamedPointStructresSerializer
 
 
-theaterFlag = {
-    'name':'경희대',
-    'point': {
-        'latitude':12.124,
-        'longitude':32.154
-    }
-}
-
 movieScheduleFlag = {
     'subtitle': True,        
     'dubbing': False,               
@@ -58,7 +50,6 @@ theater = {
     'theaterCode':'',
     'regionCode':'',
     'brand':'',
-    'theaterFlag': theaterFlag
 }
 
 movie = {
@@ -66,7 +57,7 @@ movie = {
     'duration':'',
     'movieRating':'',
     'director':'',
-    'actors':'',
+    'actor':'',
     'genre':''
 }
 
@@ -84,14 +75,11 @@ def SearchTheaterWithPos(request):
     movieJson = ""
     try:
         longitude = float(request.GET['longitude'])
-    except:
-        longitude = 0.0
-    
-    try:
         latitude = float(request.GET['latitude'])
     except:
+        longitude = 0.0
         latitude = 0.0
-
+    
     print('long:{}, lat:{}'.format(latitude, longitude))
 
     # 현재는 메가박스에 대한 정보만 가져올 수 있도록 되어 있다. 
@@ -106,7 +94,13 @@ def SearchTheaterWithPos(request):
                 movie_info = json.loads(movie_Info)
 
                 movie['movieName'] = movie_info['movieName']
-                movie['movieRating'] = movie_info['movieRating']
+                movieObj = Movies.objects.get(movieName=movie_info["movieName"])
+                movie['movieRating'] = movieObj.movieRating
+                movie['duration'] = movieObj.movieRating
+                movie['director'] = movieObj.movieRating
+                movie['actor'] = movieObj.actor
+                movie['genre'] = movieObj.genre
+
 
                 theater['theaterName'] = reqtheater.theaterName
                 theater['theaterCode'] = reqtheater.theaterCode
@@ -114,8 +108,8 @@ def SearchTheaterWithPos(request):
                 theater['brand'] = reqtheater.brand
 
                 movieSchedule['room'] = movie_info['room']
-                movieSchedule['totalSeat'] = movie_info['seatInfo']
-                movieSchedule['availableSeat'] = movie_info['seatInfo']
+                movieSchedule['totalSeat'] = movie_info['totalSeat']
+                movieSchedule['availableSeat'] = movie_info['avaliableSeat']
                 movieSchedule['movie'] = movie
                 movieSchedule['theater'] = theater
 
@@ -144,8 +138,47 @@ def SearchMovieWithPos(request):
 
 
 def Test(request):
-    GetMovieInfo("조커")
+    testTheater = Theaters.objects.get(id=1)
+    testTheater.updatedTime = datetime.now()
+    testTheater.save()
+    print(datetime.now())
+    #GetMovieInfo("조커")
     return JsonResponse({
         'message':'안녕 파이썬 장고',
         'items' : ['python', 'django']
     })
+
+'''
+수정해야 할 것:
+1) 영화스케쥴 정보 받아올때 Time 구조체로 영화 정보를 저장하자.
+(즉, StartTime, endTime을 Time구조체로 수정)
+
+2) json으로 보낼때 time구조체를 string으로 바꾸어서 보내줘야 한다. 
+(즉, string type을 time type으로 time type을 string type으로 바꾸기 )
+
+시도해 볼것:
+dict에다가 time객체(또는 datetime객체)를 넣고 json으로 변환하면 어떻게 나올지 
+확인해보자.
+
+
+'''
+
+'''
+
+현재 시간 datetime으로 가져오기
+import datetime
+s = datetime.datetime.now()
+2019-05-15 15:35:00.15464454
+
+시간 끼리 빼기 연산이 가능하다!!
+업데이트 한 시간과 비교했을 때 얼마나 지났는지 확인하고
+업데이트된 시간이랑 15분 이상 차이나면 그 때 초기화하면 된다. 
+
+그냥 비교하는 걸 함수로 만들어주자. 그리고 뺸 시간이을 데이, 날짜, 시간 분 등으로
+파싱한다음에 분으로 묶어주고 비교하면 가능함
+
+==> DateTime을 string값으로 바꿔야 한다. 
+그래야 json에 넣을 때 이쁘게 넣을 수 있다. 
+
+
+'''

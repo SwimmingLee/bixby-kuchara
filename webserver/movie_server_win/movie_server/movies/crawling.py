@@ -52,26 +52,30 @@ def MegaBoxCrawl(regionCode, theaterCode):
         movieName = row.find('a', {'title':'영화상세 보기'})
         if movieName != None:
             movieNameStr = movieName.text
+            movieDict['movieName'] = movieNameStr
             # filter를 쓰지 않고 get으로 에러를 검사하면
             # 데이터를 확인 할 수 있을 것임.
             movieObj = Movies.objects.filter(movieName=movieNameStr)
             movieObj = movieObj.first()
-            # print(type(movieObj))
-            # print(movieObj)
             if movieObj == None:
-                # print("None!!!!")
                 GetMovieInfo(movieNameStr)
             
         #print(movieNameStr)
-    
+
+        # 영화에 대한 정보는 DB에서 추출해서 사용할 것임
+        '''    
         movieRating = row.find('span', {'class':re.compile("age_m age_[0-9.*].*")})
         if movieRating != None:
             movieRatingStr = movieRating.text
+            movieDict['movieRating'] = movieRatingStr
         #print(movieRatingStr)
-    
+        '''
+
         movieRoom = row.find('th', {'class':'room'}).find('div')
         if movieRoom != None:
             movieRoomStr = movieRoom.text
+            movieDict['room'] = movieRoomStr
+            
         #print(movieRoomStr)
 
         movieTime = row.find('div', {'class':'cinema_time'}).find('a')
@@ -80,19 +84,22 @@ def MegaBoxCrawl(regionCode, theaterCode):
         if movieTime != None:
             movieTimeStr = movieTime.text
             movieStartTimeStr, movieEndTimeStr = movieTimeStr.split('~')
+            movieDict['startTime'] = movieStartTimeStr
+            movieDict['endTime'] = movieEndTimeStr
 
         movieTimeInfos = row.findAll('p', {'class':re.compile("time_info.*")})
         for movieTimeInfo in movieTimeInfos:
             movieSeatInfo = movieTimeInfo.find('span', {'class':'seat'})
             if movieSeatInfo != None:
                 movieSeatInfoStr = movieSeatInfo.text
-
-                movieDict['movieName'] = movieNameStr
-                movieDict['movieRating'] = movieRatingStr
-                movieDict['startTime'] = movieStartTimeStr
-                movieDict['endTime'] = movieEndTimeStr
-                movieDict['room'] = movieRoomStr
-                movieDict['seatInfo'] = movieSeatInfoStr
+                try:
+                    avaliableSeat, totalSeat = movieSeatInfoStr.split('/')
+                    movieDict['avaliableSeat'] = avaliableSeat
+                    movieDict['totalSeat'] = totalSeat
+                except:
+                    movieDict['avaliableSeat'] = "-1"
+                    movieDict['totalSeat'] = "-1"
+                
                 movieJson = json.dumps(movieDict, ensure_ascii=False)
                 movieList.append(movieJson)
     return movieList

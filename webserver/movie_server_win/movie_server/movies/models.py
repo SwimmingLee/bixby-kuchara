@@ -34,8 +34,12 @@ class Theaters(models.Model):
     longitude = models.FloatField()
     latitude = models.FloatField()
     brand = models.CharField(max_length=30)
+    updatedTime = models.DateTimeField()
     # >> theaterFlag
     # << theaterFlag
+
+    def __str__(self):
+        return self.brand + " " +  self.theaterName
 
     class Meta:
         managed = True
@@ -48,8 +52,8 @@ class MovieSchedules(models.Model):
     totalSeat = models.IntegerField()
     availableSeat = models.IntegerField()
     movieCode = models.IntegerField()
-    startTime = models.CharField(max_length=10)
-    endTime = models.CharField(max_length=10)
+    startTime = models.TimeField()
+    endTime = models.TimeField()
     # >> movieScheduleFlag
     subtitile = models.BooleanField()
     dubbing = models.BooleanField()
