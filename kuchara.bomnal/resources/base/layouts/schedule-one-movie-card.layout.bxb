@@ -1,0 +1,30 @@
+layout-macro-def (schedule-one-movie-card) {
+ params {
+    param (movieSchedule) {
+      type (MovieSchedule)
+      min (Required)
+      max (One)
+    }
+ }
+  content {
+    
+    hbox {
+      content {
+        for-each (movieSchedule) {
+          as (scheduleElmt) {
+            vbox {
+              content {
+                layout-macro (schedule-minicard) {
+                  param (scheduleElmt) {
+                    expression (scheduleElmt)
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+ }
+}
+

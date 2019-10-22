@@ -18,7 +18,7 @@ structure (Movie) {
   }
   // actors, genre 추가
   property (actors) {
-    type (Actor)
+    type (Actors)
     min (Required) max (Many)
   }
   property (genre) {
@@ -31,6 +31,10 @@ structure (Movie) {
   }
   property (userRating) {
     type (UserRating)
+    min (Required) max (One)
+  }
+  property (nation) {
+    type (Nation)
     min (Required) max (One)
   }
 }

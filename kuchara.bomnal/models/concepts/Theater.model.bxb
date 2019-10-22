@@ -1,23 +1,11 @@
 structure (Theater) {
   description (common Theater descriptions)
-  property (theaterName) {
-    type (TheaterName)
+  property(theaterInfo) {
+    type (TheaterInfo)
     min (Required) max (One)
   }
-  property (theaterCode) {
-    type (TheaterCode)
-    min (Required) max (One)
-  }
-  property (regionCode) {
-    type (RegionCode)
-    min (Required) max (Many)
-  }
-  property (brand) {
-    type (Brand)
-    min (Required) max (Many)
-  }
-  property(theaterFlag) {
-    type (TheaterFlag)
-    min (Required) max (One)
+  property(theaterSchedule) {
+    type (TheaterSchedule)
+    min (Optional) max (Many)
   }
 }

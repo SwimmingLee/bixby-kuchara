@@ -2,8 +2,8 @@ action (FilterMovieWithGenre) {
   description (filter movie with genre input)
   type (Search)
   collect {
-    input (movieSchedule) {
-      type (MovieSchedule)
+    input (theaterOrderedSchedule) {
+      type (TheaterOrderedSchedule)
       min (Required) max (Many)
     }
     input (genre) {
@@ -15,5 +15,5 @@ action (FilterMovieWithGenre) {
       min (Optional) max (One)
     }
   }
-  output (MovieSchedule)
+  output (TheaterOrderedSchedule)
 }

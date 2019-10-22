@@ -1,4 +1,4 @@
-const movieReturn = require('./sample/exampleReturn.js');
+const movieReturn = require('./sample/newStructure.js');
 let console = require('console');
 
 module.exports.function = function findMovieWithMovieName (movieInput) {

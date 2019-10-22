@@ -55,7 +55,7 @@ endpoints {
     }
 
     action-endpoint (FilterMovieWithGenre) {
-      accepted-inputs (movieSchedule, genre, exceptExpression)
+      accepted-inputs (theaterOrderedSchedule, genre, exceptExpression)
       local-endpoint (FilterMovieWithGenre.js)
     }
 

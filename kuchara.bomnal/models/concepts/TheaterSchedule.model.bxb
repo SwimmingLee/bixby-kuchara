@@ -1,21 +1,13 @@
-structure (MovieSchedule) {
+structure (TheaterSchedule) {
   description (Movie with theater room and exact time schedule)
-  property (movie) {
-    type (Movie)
+  property (startTime) {
+    type (StartTime)
     min (Required) max (One)
   }
-  // property (timeInput) {
-  //   type (TimeInput)
-  //   min (Required) max (One)
-  // }
-  // property (startTime) {
-  //   type (StartTime)
-  //   min (Required) max (One)
-  // }
-  // property (endTime) {
-  //   type (EndTime)
-  //   min (Required) max (Many)
-  // }
+  property (endTime) {
+    type (EndTime)
+    min (Required) max (Many)
+  }
   property (totalSeat) {
     type (TotalSeat)
     min (Required) max (One)
@@ -24,18 +16,23 @@ structure (MovieSchedule) {
     type (AvailableSeat)
     min (Required) max (One)
   }
-  property (theater) {
-    type (Theater)
-    min (Required) max (One)
-  }
-  property (movieScheduleFlag) {
-    type (MovieScheduleFlag)
-    min (Required) max (One)
-  }
   property (room) {
     type (Room)
     min (Required) max (One)
   }
+  property (subtitle) {
+    type (Subtitle)
+    min (Required) max (One)
+  }
+  property (dubbing) {
+    type (Dubbing)
+    min (Required) max (One)
+  }
+  property (roomProperty) {
+    type (RoomProperty)
+    min (Required) max (One)
+  }
+
   // 필요없으므로 제외
   // property (movieCode) {
   //   type (MovieCode)

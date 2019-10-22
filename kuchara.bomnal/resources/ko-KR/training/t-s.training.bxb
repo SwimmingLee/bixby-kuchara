@@ -3,6 +3,12 @@ train (t-s2r8t9teeagjvndvqbcddgp2h) {
   plan (Y2BmkC7LLNMrycxN1XNJLEkNATJcKwqKUouLM/PzGFSzS5MzEosS9ZLyc/MSc/R8E7NTsSgTRZiRWpKYnJGaAlLAwMTACMQMQJKRAQSgfAA=)
   last-modified (1571484947147)
 }
+train (t-sagto8yhgp0ljbifgzhqltm86) {
+  utterance ([g:ShowMoviePoster] 지금 영화 뭐하는지 알려줘)
+  plan (Y2BmEMkuTc5ILErUS8rPzUvM0fPNL8tMZZBDEw3OyC8HywTkF5ekFjEoocn7JeampgTkZ+aVBJcUlSaXlBalMjAxMAIxA5BkZGCA0QA=)
+  enabled (false)
+  last-modified (1571703335023)
+}
 train (t-st8o37cttscqg0hkwcgfkix9o) {
   utterance ("[g:FindMovieWithMovieName] (조커)[r:ShowMoviePoster] 시간표 찾아줘")
   plan (Y2BlkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEWTdcvMSwGrCM8syQAz/BJzUxlEsBnCIIcmGpyRXw6WCcgvLkktYlBCkwcZlRKQn5lXElxSVJpcUlqUysDCwMjAxMAMpBmgLEYwCwSYgDQzAwMA)

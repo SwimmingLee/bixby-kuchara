@@ -1,0 +1,39 @@
+structure (TimeSchedule) {
+  description (Movie with theater room and exact time schedule)
+  property (startTime) {
+    type (StartTime)
+    min (Required) max (One)
+  }
+  property (endTime) {
+    type (EndTime)
+    min (Required) max (Many)
+  }
+  property (totalSeat) {
+    type (TotalSeat)
+    min (Required) max (One)
+  }
+  property (availableSeat) {
+    type (AvailableSeat)
+    min (Required) max (One)
+  }
+  property (room) {
+    type (Room)
+    min (Required) max (One)
+  }
+  property (subtitle) {
+    type (Subtitle)
+    min (Required) max (One)
+  }
+  property (dubbing) {
+    type (Dubbing)
+    min (Required) max (One)
+  }
+  property (roomProperty) {
+    type (RoomProperty)
+    min (Required) max (One)
+  }
+  property(theaterInfo){
+    type(TheaterInfo)
+    min(Required) max (One)
+  }
+}

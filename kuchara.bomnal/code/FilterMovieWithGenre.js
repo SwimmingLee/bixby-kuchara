@@ -1,4 +1,4 @@
-module.exports.function = function filterMovieWithGenre (movieSchedule, genre, exceptExpression) {
+module.exports.function = function filterMovieWithGenre (theaterOrderedSchedule, genre, exceptExpression) {
   let result = [];
   let input = movieSchedule;
   if(exceptExpression){

@@ -1,0 +1,11 @@
+structure (TimeOrederedSchedule) {
+  description (common Movie descriptions)
+  property (movie) {
+    type (Movie)
+    min (Required) max (One)
+  }
+  property (timeSchedule) {
+    type (TimeSchedule)
+    min (Optional) max (Many)
+  }
+}

@@ -8,6 +8,7 @@ module.exports = [
     "genre": '액션, 드라마',
     "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167635_P27_100146.jpg",
     "userRating":0.0,
+    'nation': 'korea',
   },
   {
     "movieName": "조커가조커가조커가조커가조커가조커가조커는조커다조커가조커가조커가조커가조커가조커가조커는조커다",
@@ -18,6 +19,8 @@ module.exports = [
     "genre": '액션, 드라마',
     "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167613_P09_182225.jpg",
     "userRating":0.0,
+    'nation': 'korea',
+
   },
   {
     "movieName": "베트맨",
@@ -28,6 +31,7 @@ module.exports = [
     "genre": '액션, 드라마',
     "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167613_P09_182225.jpg",
     "userRating":0.0,
+    'nation': 'korea',
   },
   {
     "movieName": "가나다라마",
@@ -38,6 +42,7 @@ module.exports = [
     "genre": '액션, 드라마',
     "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167635_P27_100146.jpg",
     "userRating":0.0,
+    'nation': 'korea',
   },
   {
     "movieName": "이히리기우구추",
@@ -48,5 +53,6 @@ module.exports = [
     "genre": '액션, 드라마',
     "imgUrl":"https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167613_P09_182225.jpg",
     "userRating":0.0,
+    'nation': 'korea',
   },
 ]

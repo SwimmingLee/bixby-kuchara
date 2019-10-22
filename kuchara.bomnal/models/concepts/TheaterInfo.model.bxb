@@ -1,8 +1,28 @@
 
-structure (TheaterFlag) {
+structure (TheaterInfo) {
   description (Theater specific detail features)
-  property (namedPointStructure) {
-    type (NamedPointStructure)
+  property (theaterName) {
+    type (TheaterName)
+    min (Required) max (One)
+  }
+  property (theaterCode) {
+    type (TheaterCode)
+    min (Required) max (One)
+  }
+  property (regionCode) {
+    type (RegionCode)
+    min (Required) max (Many)
+  }
+  property (brand) {
+    type (Brand)
+    min (Required) max (Many)
+  }
+  property(latitude) {
+    type (Latitude)
+    min (Required) max (One)
+  }
+  property(longitude) {
+    type (Longitude)
     min (Required) max (One)
   }
 

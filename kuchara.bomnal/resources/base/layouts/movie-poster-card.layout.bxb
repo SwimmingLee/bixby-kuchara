@@ -1,9 +1,5 @@
 layout-macro-def (movie-poster-card) {
  params {
-  //  param(image) {
-  //    type(Image)
-  //    min(Required) max (One)
-  //  }
     param (movie) {
       type (Movie)
       min (Required)
@@ -13,15 +9,14 @@ layout-macro-def (movie-poster-card) {
  content {
 
    image-card {
-    //  on-click {
-    //    intent {
-    //      goal: FindMovieWithMovieName
-    //      value: movie
-    //    }       
-    //  }
+     on-click{
+       intent{
+         goal: MakeTheaterStructure //FindMovieWithMovieName
+         //value: Movie(movie)
+       }
+     }
      
      aspect-ratio (3:4)
-     // image-url("이미지 url 주소 적기")
      image-url ("#{value(movie.imgUrl)}")
      text-position (Below)
      title-area {
@@ -30,25 +25,27 @@ layout-macro-def (movie-poster-card) {
          text {
            color (Red)
            style (Title_S)
-           // value ("#{value(image.movieName)}")
            value ("#{value(movie.movieName)}")
          }
        }
        slot2 {
          single-line {
            text {
-             style(Detail_M)
-             // value ("#{value(image.genre)}")
+             style(Detail_L_Soft)
              value ("#{value(movie.genre)}")
+             color (Green)
            }
          }
        }
        slot3 {
          single-line {
+           image {
+             shape (Circle)
+             url(/images/ranking_star_s.png)
+           }
            text {
-             style (Detail_M)
-             // value ("#{value(image.rating)}")
-             value ("#{value(movie.userRating)}")
+             style (Detail_L_Soft)
+             value ("#{value(movie.userRating)} / 5.0")
            }
          }
        }
