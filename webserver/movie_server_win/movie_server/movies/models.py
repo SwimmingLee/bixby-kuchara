@@ -51,15 +51,15 @@ class MovieSchedules(models.Model):
     room = models.CharField(max_length=20)
     totalSeat = models.IntegerField()
     availableSeat = models.IntegerField()
-    movieCode = models.IntegerField()
-    startTime = models.TimeField()
-    endTime = models.TimeField()
+    # movieCode = models.IntegerField(null=True, blank=True)
+    startTime = models.IntegerField()
+    endTime = models.IntegerField()
     # >> movieScheduleFlag
-    subtitile = models.BooleanField()
-    dubbing = models.BooleanField()
-    digitalized = models.BooleanField()
-    lateNight = models.BooleanField()
-    morning = models.BooleanField()
+    subtitile = models.BooleanField(null=True)
+    dubbing = models.BooleanField(null=True)
+    digitalized = models.BooleanField(null=True)
+    lateNight = models.BooleanField(null=True)
+    morning = models.BooleanField(null=True)
     # << movieScheduleFlag
 
 

@@ -20,21 +20,27 @@ import json
 import re
 import sys
 from .models import Movies
+from .models import MovieSchedules
 from .update import GetMovieInfo
+import datetime
 
 def WebDriverInit():
     global driver
-    driverDir = r'C:\Users\student\works\chromedriver_win32\chromedriver.exe'
-    # driverDir = r'C:\\chromedriver_win32\\chromedriver.exe'
+    #driverDir = r'C:\Users\student\works\chromedriver_win32\chromedriver.exe'
+    driverDir = r'C:\\chromedriver_win32\\chromedriver.exe'
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
     driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
 
 
-def MegaBoxCrawl(regionCode, theaterCode):
+def MegaBoxCrawl(theaterObj, regionCode, theaterCode):
     movieJson = ""
+    movieObj = ""
     movieList = []
     movieDict = dict()
+
+    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
+    legacyMovieSchedules.delete()
 
     region = regionCode
     cinema = theaterCode
@@ -58,7 +64,8 @@ def MegaBoxCrawl(regionCode, theaterCode):
             movieObj = Movies.objects.filter(movieName=movieNameStr)
             movieObj = movieObj.first()
             if movieObj == None:
-                GetMovieInfo(movieNameStr)
+                movieObj = GetMovieInfo(movieNameStr)
+                
             
         #print(movieNameStr)
 
@@ -78,14 +85,19 @@ def MegaBoxCrawl(regionCode, theaterCode):
             
         #print(movieRoomStr)
 
-        movieTime = row.find('div', {'class':'cinema_time'}).find('a')
-        movieStartTimeStr = ""
-        movieEndTimeStr = ""
+        movieTime = row.find('div', {'class':re.compile('^cinema_time')}).find('a')
+        movieStartTimeStr = "00:00"
+        movieEndTimeStr = "00:00"
         if movieTime != None:
             movieTimeStr = movieTime.text
             movieStartTimeStr, movieEndTimeStr = movieTimeStr.split('~')
             movieDict['startTime'] = movieStartTimeStr
             movieDict['endTime'] = movieEndTimeStr
+            # print(movieDict['startTime'] + " " + movieDict['endTime'])
+        else:
+            print("[DEBUG]:")
+            print(movieTime)
+
 
         movieTimeInfos = row.findAll('p', {'class':re.compile("time_info.*")})
         for movieTimeInfo in movieTimeInfos:
@@ -94,12 +106,23 @@ def MegaBoxCrawl(regionCode, theaterCode):
                 movieSeatInfoStr = movieSeatInfo.text
                 try:
                     avaliableSeat, totalSeat = movieSeatInfoStr.split('/')
-                    movieDict['avaliableSeat'] = avaliableSeat
-                    movieDict['totalSeat'] = totalSeat
                 except:
-                    movieDict['avaliableSeat'] = "-1"
-                    movieDict['totalSeat'] = "-1"
-                
+                    avaliableSeat = "-1"
+                    totalSeat = "-1"
+                    
+                movieDict['avaliableSeat'] = avaliableSeat
+                movieDict['totalSeat'] = totalSeat
+
+                hour, minute = movieDict['startTime'].split(':')
+                startTime  = int(hour)*100 + int(minute)
+
+                hour, minute = movieDict['endTime'].split(':')
+                endTime  = int(hour)*100 + int(minute)
+
+                MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict["room"],
+                                    totalSeat=totalSeat, availableSeat=avaliableSeat, \
+                                    startTime=startTime, endTime=endTime)
+                MovieScheduleEle.save()
                 movieJson = json.dumps(movieDict, ensure_ascii=False)
                 movieList.append(movieJson)
     return movieList

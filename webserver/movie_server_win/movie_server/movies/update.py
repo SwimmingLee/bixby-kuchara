@@ -80,8 +80,11 @@ def GetMovieInfo(movieName):
                         duration=movieInfoPart2["duration"], genre=movieInfoPart2["genre"], \
                         userRating=userRating, imgUrl=imgUrl, nation=movieInfoPart2["nation"])
         MoviesEle.save()
+        return MoviesEle
     else:
         print("Error code:"+rescode)
+
+        
 
 
 
@@ -89,8 +92,8 @@ def UpdateMoive(request):
     print()
 
 def UpdateTheater(request):
-    csvFileDir = r"C:\Users\student\works\bixby-kuchara\webserver\movie_server_win\movie_server\movies\theater_info.txt"
-    # csvFileDir = r"C:\Users\Lee\workspace\bixby-kuchara\webserver\apitest\theater_info.txt"
+    #csvFileDir = r"C:\Users\student\works\bixby-kuchara\webserver\movie_server_win\movie_server\movies\theater_info.txt"
+    csvFileDir = r"C:\Users\Lee\workspace\bixby-kuchara\webserver\movie_server_win\movie_server\movies\theater_info.txt"
     csvFile = open(csvFileDir, 'r', encoding='UTF-8')
     try:
         spamreader = csv.reader(csvFile)

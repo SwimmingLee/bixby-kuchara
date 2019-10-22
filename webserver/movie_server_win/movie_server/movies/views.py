@@ -68,6 +68,8 @@ movieSchedule = {
     'theater': theater,
     'movieScheduleFlag':movieScheduleFlag,
     'room':'',
+    'startTime':'',
+    'endTime':''
 }
 
 
@@ -88,7 +90,7 @@ def SearchTheaterWithPos(request):
         dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
         print("Dist {}".format(dist))
         if dist < 0.001:
-            movie_list = MegaBoxCrawl(reqtheater.regionCode, reqtheater.theaterCode)
+            movie_list = MegaBoxCrawl(reqtheater, reqtheater.regionCode, reqtheater.theaterCode)
             for movie_Info in movie_list:
                 
                 movie_info = json.loads(movie_Info)
@@ -112,6 +114,8 @@ def SearchTheaterWithPos(request):
                 movieSchedule['availableSeat'] = movie_info['avaliableSeat']
                 movieSchedule['movie'] = movie
                 movieSchedule['theater'] = theater
+                movieSchedule['startTime'] = movie_info['startTime']
+                movieSchedule['endTime'] = movie_info['endTime']
 
                 movieJson += json.dumps(movieSchedule, ensure_ascii=False)
 
@@ -127,7 +131,7 @@ def SearchMovieListWithPos(request):
     reqTheater = Theaters.objects.get(theaterName=theaterName)
     # reqMovies = MovieSchedules.objects.filter(theater=reqTheater.id)
     
-    movieinfo = MegaBoxCrawl(reqTheater.regionCode, reqTheater.theaterCode)
+    movieinfo = MegaBoxCrawl(reqTheater, reqTheater.regionCode, reqTheater.theaterCode)
     return JsonResponse(movieinfo, safe=False)
 
 def SearchMovieWithPos(request):
