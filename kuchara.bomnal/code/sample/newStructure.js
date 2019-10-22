@@ -1,5 +1,5 @@
 // 영화관 순 보기
-module.exports = [
+module.exports = 
   {
     'movie':{
       'movieName': "조커",
@@ -24,8 +24,9 @@ module.exports = [
           "regionCode": 25,
           'iconUri':"/images/brand/cgv.png",  // 만들어야 함!
         },
-        'schedule' : [
-          [
+        'theaterSchedulePack' : [
+          {
+          'theaterSchedule': [
           {
             'startTime': '18:00',
             'endTime': '19:50',
@@ -56,8 +57,10 @@ module.exports = [
             "dubbing": true,
             "room": '7관',
             "roomProperty": 'IMAX'
-          },
-          ],
+          }
+          ]},
+          {
+          'theaterSchedule':
           [
           {
             'startTime': '18:00',
@@ -81,75 +84,6 @@ module.exports = [
             "roomProperty": 'IMAX'
 
           },
-          {
-            'startTime': '18:00',
-            'endTime': '19:50',
-            "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
-            "subtitle": true,               // 자막여부
-            "dubbing": true,
-            "room": '7관',
-            "roomProperty": 'IMAX'
-          },
-          ],
-          [
-          {
-            'startTime': '18:00',
-            'endTime': '19:50',
-            "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
-            "subtitle": true,               // 자막여부
-            "dubbing": true,
-            "room": '7관',
-            "roomProperty": 'IMAX'
-          },
-          ]
-        ]
-      },
-      {
-        'theaterInfo': {
-          'brand' : "cgv",
-          "theaterName": "영통",
-          'longitude' : 123.123,
-          'latitude' : 123.123,
-          "theaterCode": 1533,
-          "regionCode": 25,
-        },
-        'schedule' : [
-          [
-          {
-            'startTime': '18:00',
-            'endTime': '19:50',
-            "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
-            "subtitle": true,               // 자막여부
-            "dubbing": true,
-            "room": '7관',
-            "roomProperty": 'IMAX'
-
-          },
-          {
-            'startTime': '18:00',
-            'endTime': '19:50',
-            "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
-            "subtitle": true,               // 자막여부
-            "dubbing": true,
-            "room": '7관',
-            "roomProperty": 'IMAX'
-          },
-          {
-            'startTime': '18:00',
-            'endTime': '19:50',
-            "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
-            "subtitle": true,               // 자막여부
-            "dubbing": true,
-            "room": '7관',
-            "roomProperty": 'IMAX'
-          },
-          ],
-          [
           {
             'startTime': '18:00',
             'endTime': '19:50',
@@ -160,9 +94,219 @@ module.exports = [
             "room": '7관',
             "roomProperty": 'IMAX'
           }
+          ] },
+          {
+            'theaterSchedule':
+          [
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          },
           ]
+          }
+        ]
+      },
+      {
+        'theaterInfo': {
+          'brand' : "cgv",
+          "theaterName": "영통",
+          'longitude' : 123.123,
+          'latitude' : 123.123,
+          "theaterCode": 1533,
+          "regionCode": 25,
+          'iconUri':"/images/brand/cgv.png",  // 만들어야 함!
+        },
+        'theaterSchedulePack' : [
+          {
+          'theaterSchedule': [
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+            // morning, latenight
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          }
+          ]},
+          {
+          'theaterSchedule':
+          [
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          }
+          ] },
+          {
+            'theaterSchedule':
+          [
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          },
+          ]
+          }
+        ]
+      },
+      {
+        'theaterInfo': {
+          'brand' : "cgv",
+          "theaterName": "영통",
+          'longitude' : 123.123,
+          'latitude' : 123.123,
+          "theaterCode": 1533,
+          "regionCode": 25,
+          'iconUri':"/images/brand/cgv.png",  // 만들어야 함!
+        },
+        'theaterSchedulePack' : [
+          {
+          'theaterSchedule': [
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+            // morning, latenight
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          }
+          ]},
+          {
+          'theaterSchedule':
+          [
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+
+          },
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          }
+          ] },
+          {
+            'theaterSchedule':
+          [
+          {
+            'startTime': '18:00',
+            'endTime': '19:50',
+            "totalSeat": 234,             // 총 좌석수
+            "availableSeat": 123,             // 빈 좌석수
+            "subtitle": true,               // 자막여부
+            "dubbing": true,
+            "room": '7관',
+            "roomProperty": 'IMAX'
+          },
+          ]
+          }
         ]
       },
     ]
   }
-]
