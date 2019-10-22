@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 
 from .serializers import MovieSchuduleSerializer
 from .serializers import TheaterSerializer
@@ -119,7 +119,8 @@ def SearchTheaterWithPos(request):
 
                 movieJson += json.dumps(movieSchedule, ensure_ascii=False)
 
-    return JsonResponse(movieJson, safe=False)
+    return HttpResponse(movieJson, content_type="text/json-comment-filtered")
+    # return JsonResponse(movieJson, safe=False)
 
 
 
