@@ -78,10 +78,15 @@ layout-macro-def (timetable-each-time) {
                 // }
               }
             }
+            divider
             vbox { // 영화사 이미지 icon
+              valign (Middle)
+              halign (Center)
+              grow (2)
               content {
                 single-line {
                   image {
+//                    shape (Circle)
                     url ("#{value(timeSchedule.theaterInfo.iconUri)}")
                   }
                 }

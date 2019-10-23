@@ -1,0 +1,7 @@
+structure (MovieScheduleDetail) {
+  description (common Movie descriptions)
+  property (movieName) {
+    type (MovieName)
+    min (Required) max (One)
+  }
+}

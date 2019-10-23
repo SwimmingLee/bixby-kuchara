@@ -22,7 +22,7 @@ module.exports =
           'latitude' : 123.123,
           "theaterCode": 1533,
           "regionCode": 25,
-          'iconUri':"/images/brand/cgv.png",  // 만들어야 함!
+          'iconUri':"/images/brand/theater/1x/cgv.png",  // 만들어야 함!
         },
         'theaterSchedulePack' : [
           {
@@ -153,7 +153,7 @@ module.exports =
           'latitude' : 123.123,
           "theaterCode": 1533,
           "regionCode": 25,
-          'iconUri':"/images/brand/cgv.png",  // 만들어야 함!
+          'iconUri':"/images/brand/theater/2x/cgv2x.png",  // 만들어야 함!
         },
         'theaterSchedulePack' : [
           {
