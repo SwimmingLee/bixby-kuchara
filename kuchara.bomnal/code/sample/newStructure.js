@@ -22,7 +22,7 @@ module.exports =
           'latitude' : 123.123,
           "theaterCode": 1533,
           "regionCode": 25,
-          'iconUri':"/images/brand/cgv.png",  // 만들어야 함!
+          'iconUri':"/images/brand/theater/1x/cgv.png",
         },
         'theaterSchedulePack' : [
           {
@@ -35,7 +35,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_1px.png"
               // morning, latenight
             },
             {
@@ -46,7 +46,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_2px.png"
             },
             {
               'startTime': '18:00',
@@ -56,7 +56,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_4px.png"
             }
           ]},
           {
@@ -69,7 +69,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_8px.png"
 
             },
             {
@@ -104,7 +104,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_1px.png"
 
             },
             {
@@ -115,7 +115,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_2px.png"
 
             },
             {
@@ -126,7 +126,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_4px.png"
             }
           ] },
           {
@@ -139,7 +139,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_8px.png"
             },
           ]
           }
@@ -153,7 +153,7 @@ module.exports =
           'latitude' : 123.123,
           "theaterCode": 1533,
           "regionCode": 25,
-          'iconUri':"/images/brand/cgv.png",  // 만들어야 함!
+          'iconUri':"/images/brand/theater/1x/lotte.png",  // 만들어야 함!
         },
         'theaterSchedulePack' : [
           {
@@ -166,7 +166,7 @@ module.exports =
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
-            "roomProperty": 'IMAX'
+            "roomProperty": "/images/roomProperty/padding_1px.png"
             // morning, latenight
           },
           {
@@ -177,7 +177,7 @@ module.exports =
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
-            "roomProperty": 'IMAX'
+            "roomProperty": "/images/roomProperty/padding_2px.png"
           },
           {
             'startTime': '18:00',
@@ -187,7 +187,7 @@ module.exports =
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
-            "roomProperty": 'IMAX'
+            "roomProperty": "/images/roomProperty/padding_4px.png"
           }
           ]},
           {
@@ -201,7 +201,7 @@ module.exports =
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
-            "roomProperty": 'IMAX'
+            "roomProperty": "/images/roomProperty/padding_8px.png"
           },
           ]
           }
