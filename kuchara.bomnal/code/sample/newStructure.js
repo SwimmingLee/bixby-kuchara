@@ -148,7 +148,7 @@ module.exports =
       {
         'theaterInfo': {
           'brand' : "cgv",
-          "theaterName": "영통",
+          "theaterName": "영토옹",
           'longitude' : 123.123,
           'latitude' : 123.123,
           "theaterCode": 1533,

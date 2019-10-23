@@ -11,6 +11,7 @@ layout-macro-def (timetable-for-hbox) {
         for-each (theaterSchedulePack.theaterSchedule) {
           as(theaterSchedule) {
             vbox {
+              halign (Start)
               content {
                 single-line { // startTime
                   text {
@@ -19,16 +20,16 @@ layout-macro-def (timetable-for-hbox) {
                       template ("#{value(theaterSchedule.startTime)}")
                     }
                   }
-                }
-                single-line {
                   text {
                     style (Detail_L_Soft)
                     value {
-                      template ("#{value(theaterSchedule.endTime)}")
+                      template ("~#{value(theaterSchedule.endTime)}")
                     }
                   }
                 }
-                  
+                single-line {
+                  spacer
+                }
                 single-line {
                   text {
                     style (Detail_L_Soft)
@@ -40,7 +41,7 @@ layout-macro-def (timetable-for-hbox) {
                   text {
                     style (Detail_L_Soft)
                     value {
-                      template ("/ #{value(theaterSchedule.totalSeat)}")
+                      template ("/#{value(theaterSchedule.totalSeat)}")
                     }
                   }
                 }
