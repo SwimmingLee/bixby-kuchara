@@ -1,0 +1,68 @@
+// input-view {  
+result-view {
+  match{
+    MovieScheduleDetail (this) {
+      min (Required)
+      max (One)
+    }
+
+  }
+  message {
+    template ("내용을 확인해주세요! 예매를 위해 영화관 사이트로 이동합니다.")
+  }
+
+  render {
+    // selection-of (this.theater) {
+    layout {
+      section {
+        content {
+          hbox { // 영화 정보
+            content {
+              vbox {
+                content {
+
+
+                }
+              }
+            }
+          }
+          compound-card { // 영화관 정보
+            content {
+              // 영화관 이름
+              single-line {
+                text {
+                  value {
+                    template ("영화관")
+                  }
+                }
+              }
+              hbox {
+                content {
+                  vbox { // 브랜드 지점
+
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    list-of (this.timeSchedule){
+      where-each (one) {
+        layout-macro (timetable-each-time) {
+          param (timeSchedule) {
+            expression(one)
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    conversation-driver {
+      template ("Hi Iron bro. this is second view.")
+    }
+  }
+}

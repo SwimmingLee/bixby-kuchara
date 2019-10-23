@@ -1,0 +1,14 @@
+layout-macro-def (test-image-layout) {
+  params {
+    param (iconUri) {
+      type (IconUri)
+      min (Required) max (One)
+    }
+  }
+
+  content {
+    image {
+      
+    }
+  }
+}

@@ -6,7 +6,16 @@ layout-macro-def (timetable-each) {
     }
   }
 
+  
   content {
+    section {
+      content {
+        
+      }
+    }
+    section {
+
+    }
     compound-card {
       content {
         hbox {
@@ -50,7 +59,6 @@ layout-macro-def (timetable-each) {
               }
             }
           }
-
         }
       }
     }
