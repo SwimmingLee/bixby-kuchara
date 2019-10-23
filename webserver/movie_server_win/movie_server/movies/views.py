@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from django.http import JsonResponse, HttpResponse
+from django.core import serializers
 
 from .serializers import MovieSchuduleSerializer
 from .serializers import TheaterSerializer
@@ -19,6 +20,7 @@ from .getdistance import get_euclidean_distance
 
 import json
 from datetime import datetime
+from .jsonmodels import TheaterOrderedSchedule
 
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movies.objects.all()
@@ -37,91 +39,64 @@ class NamedPointStructureViewSet(viewsets.ModelViewSet):
     serializer_class = NamedPointStructresSerializer
 
 
-movieScheduleFlag = {
-    'subtitle': True,        
-    'dubbing': False,               
-    'digitalized': True,           
-    'lateNight': False,   
-    'morning': False,
-}
-
-theater = {
-    'theaterName': '',
-    'theaterCode':'',
-    'regionCode':'',
-    'brand':'',
-}
-
-movie = {
-    'movieName':'',
-    'duration':'',
-    'movieRating':'',
-    'director':'',
-    'actor':'',
-    'genre':''
-}
-
-movieSchedule = {
-    'movie': movie,
-    'totalSeat':'',
-    'availableSeat':'',
-    'theater': theater,
-    'movieScheduleFlag':movieScheduleFlag,
-    'room':'',
-    'startTime':'',
-    'endTime':''
-}
-
-
 def SearchTheaterWithPos(request):
-    movieJson = ""
     try:
         longitude = float(request.GET['longitude'])
         latitude = float(request.GET['latitude'])
+        movieName = request.GET['movieName']
     except:
         longitude = 0.0
         latitude = 0.0
     
-    print('long:{}, lat:{}'.format(latitude, longitude))
+    print('long:{}, lat:{}, movieName:{}'.format(latitude, longitude, movieName))
 
     # 현재는 메가박스에 대한 정보만 가져올 수 있도록 되어 있다. 
     allTheater = Theaters.objects.filter(brand__exact='megabox')
+    
+    movieObj = Movies.objects.get(movieName=movieName)
+    theater = []
+    
     for reqtheater in allTheater:
         dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
         print("Dist {}".format(dist))
-        if dist < 0.001:
+        if dist < 0.05:
             movie_list = MegaBoxCrawl(reqtheater, reqtheater.regionCode, reqtheater.theaterCode)
+            timeScheduleList = []
+
             for movie_Info in movie_list:
-                
                 movie_info = json.loads(movie_Info)
 
-                movie['movieName'] = movie_info['movieName']
-                movieObj = Movies.objects.get(movieName=movie_info["movieName"])
-                movie['movieRating'] = movieObj.movieRating
-                movie['duration'] = movieObj.movieRating
-                movie['director'] = movieObj.movieRating
-                movie['actor'] = movieObj.actor
-                movie['genre'] = movieObj.genre
+                if movieName != movie_info['movieName']:
+                    continue 
 
+                movieScheduleDict = dict()
+                movieScheduleDict['room'] = movie_info['room']
+                movieScheduleDict['totalSeat'] = movie_info['totalSeat']
+                movieScheduleDict['availableSeat'] = movie_info['avaliableSeat']
+                movieScheduleDict['startTime'] = movie_info['startTime']
+                movieScheduleDict['endTime'] = movie_info['endTime']
+                movieScheduleDict['subtitle'] = False
+                movieScheduleDict['dubbing'] = False
+                movieScheduleDict['room property'] = "NoT IMAX"
 
-                theater['theaterName'] = reqtheater.theaterName
-                theater['theaterCode'] = reqtheater.theaterCode
-                theater['regionCode'] = reqtheater.regionCode
-                theater['brand'] = reqtheater.brand
+                # print(movieScheduleDict)
+                timeScheduleList.append(movieScheduleDict)
 
-                movieSchedule['room'] = movie_info['room']
-                movieSchedule['totalSeat'] = movie_info['totalSeat']
-                movieSchedule['availableSeat'] = movie_info['avaliableSeat']
-                movieSchedule['movie'] = movie
-                movieSchedule['theater'] = theater
-                movieSchedule['startTime'] = movie_info['startTime']
-                movieSchedule['endTime'] = movie_info['endTime']
+            theaterEle = {
+                'theaterInfo':reqtheater,
+                'theaterSchedule':timeScheduleList
+            }
+            theater.append(theaterEle)
 
-                movieJson += json.dumps(movieSchedule, ensure_ascii=False)
+    TOS = TheaterOrderedSchedule(
+        movie=movieObj,
+        theater=theater
+    )
+    TOSdict = TOS.GetJson()
+    movieJson = json.dumps(TOSdict, ensure_ascii=False)
 
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
     # return JsonResponse(movieJson, safe=False)
-
 
 
 def SearchMovieListWithPos(request):

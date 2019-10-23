@@ -67,6 +67,7 @@ def GetMovieInfo(movieName):
         movieInfo = response_body.decode('utf-8')
         # print(movieInfo)
         movieInfo = json.loads(movieInfo)
+        print(movieName)
         link = movieInfo["items"][0]["link"]
         imgUrl = movieInfo["items"][0]["image"]
         actor = movieInfo["items"][0]["actor"]

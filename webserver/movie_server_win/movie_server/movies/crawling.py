@@ -38,6 +38,7 @@ def MegaBoxCrawl(theaterObj, regionCode, theaterCode):
     movieObj = ""
     movieList = []
     movieDict = dict()
+    print(theaterObj.theaterName)
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
     legacyMovieSchedules.delete()
@@ -84,23 +85,24 @@ def MegaBoxCrawl(theaterObj, regionCode, theaterCode):
             movieDict['room'] = movieRoomStr
             
         #print(movieRoomStr)
+        
+        movieCinemaTimes = row.findAll('div', {'class':re.compile('^cinema_time')})
+        
+        for movieCinemaTime in movieCinemaTimes:
+            movieTime = movieCinemaTime.find('span', {'class':'hover_time'})
+            movieStartTimeStr = ""
+            movieEndTimeStr = ""
+            if movieTime != None:
+                movieTimeStr = movieTime.text
+                movieStartTimeStr, movieEndTimeStr = movieTimeStr.split('~')
+                movieDict['startTime'] = movieStartTimeStr
+                movieDict['endTime'] = movieEndTimeStr
+            else:
+                print("[DEBUG]:")
+                print(movieTime)
 
-        movieTime = row.find('div', {'class':re.compile('^cinema_time')}).find('a')
-        movieStartTimeStr = "00:00"
-        movieEndTimeStr = "00:00"
-        if movieTime != None:
-            movieTimeStr = movieTime.text
-            movieStartTimeStr, movieEndTimeStr = movieTimeStr.split('~')
-            movieDict['startTime'] = movieStartTimeStr
-            movieDict['endTime'] = movieEndTimeStr
-            # print(movieDict['startTime'] + " " + movieDict['endTime'])
-        else:
-            print("[DEBUG]:")
-            print(movieTime)
 
-
-        movieTimeInfos = row.findAll('p', {'class':re.compile("time_info.*")})
-        for movieTimeInfo in movieTimeInfos:
+            movieTimeInfo = movieCinemaTime.find('p', {'class':re.compile("time_info.*")})
             movieSeatInfo = movieTimeInfo.find('span', {'class':'seat'})
             if movieSeatInfo != None:
                 movieSeatInfoStr = movieSeatInfo.text
