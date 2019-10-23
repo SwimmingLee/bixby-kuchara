@@ -3,10 +3,15 @@ action (MakeNamedPointStructure) {
   type (Search)
   collect {
     input (locationalKeyword) {
-      // type (LocationalKeyword)
       type(geo.NamedPoint)
       min (Required) max (One)
+      default-select {
+        with-rule {
+          select-first
+        }
+      }
     }
+
   }
   output (NamedPointStructure)
 }

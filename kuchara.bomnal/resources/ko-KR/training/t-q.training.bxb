@@ -1,5 +1,11 @@
+train (t-qafzj5vdt4zjw1zwlc8odt3jp) {
+  utterance ([g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순으로 보여줘)
+  plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
+  last-modified (1571818481126)
+}
 train (t-qwggsx0s5ltwx17e7na90mpc8) {
   utterance ("[g:FindMovieWithLocation] (동대문)[v:geo.SearchTerm] 근처 영화시간을 알고싶어")
   plan (bY29CsJAEITHn6i1VoKViGXewcZKRYhgvV6W3JHkFi53sfPZPQUlhCwszMx+zGKBTRmUJkfpQ2pLVXqW1nCmNOehYux616Ox+Ze4G69Posgbsdj2qAvVnF/FWJ95F5QPjrHv/6GSh7hla9q0YOmUYPXLDsFLE4qCG4/1QPh6au52ZExO6Ru7GnOMMMYEUySYRYeOT6LGfz8zjioybw==)
-  last-modified (1571293107531)
+  enabled (false)
+  last-modified (1571813421062)
 }

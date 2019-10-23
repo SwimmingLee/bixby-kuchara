@@ -1,4 +1,4 @@
-// const movieReturn = require('./sample/exampleReturn.js');
+const movieReturn = require('./sample/newStructure.js');
 let console = require('console');
 let http = require('http');
 let config = require('config');
@@ -20,8 +20,9 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
   };
 
   // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options); 
-  let response = http.getUrl(config.get('remote.url') + "/movie_api/searchWithPos/", options)
-  console.log(response);
+  // let response = http.getUrl(config.get('remote.url') + "/movie_api/searchWithPos/", options)
+  // console.log(response);
 
-  return response;
+  // return response;
+  return movieReturn;
 }

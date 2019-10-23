@@ -1,5 +1,6 @@
 train (t-lhf96yok39er2b1n06mq83dsm) {
   utterance ("[g:FilterMovieWithTime:continue:MovieSchedule] (7시)[v:time.DetachedTime] (이후)[v:IsStartTime:true] 영화 보여줘")
   plan (Y2BnkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEKTdcvMKUktAqsJzyzJCMnMTWWQQlPjWRxcklhUApbDb7p0WWaZXglQnZ5LYkkqSINrRUFRanFxZn4egyq61sTsVCzKRBFmpJYkgkwGW8zGwMjAxMDMwMLACmQzAHkgCOIxMkAAhGYGqwOqAAA=)
-  last-modified (1571546057966)
+  enabled (false)
+  last-modified (1571813409037)
 }

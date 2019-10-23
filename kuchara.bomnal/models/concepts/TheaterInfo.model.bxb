@@ -1,4 +1,3 @@
-
 structure (TheaterInfo) {
   description (Theater specific detail features)
   property (theaterName) {

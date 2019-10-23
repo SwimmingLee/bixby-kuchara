@@ -13,11 +13,7 @@ action (FindMovieWithLocation) {
       }
       // default-select{
       //   with-rule {
-      //     select-first {
-      //       sort-key (MIN) {
-      //         binding (placeID)
-      //       }
-      //     }
+      //     select-first
       //   }
       // }
     }

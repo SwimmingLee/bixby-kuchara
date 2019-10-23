@@ -1,0 +1,10 @@
+action (RestructureTheaterViewToTimeView) {
+  description (__DESCRIPTION__)
+  collect {
+    input (theaterOrderedSchedule) {
+      type (TheaterOrderedSchedule)
+      min (Required) max (One)
+    }
+  }
+  output (TimeOrderedSchedule)
+}

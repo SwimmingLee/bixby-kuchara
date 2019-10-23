@@ -41,11 +41,11 @@ layout-macro-def (movie-poster-card) {
          single-line {
            image {
              shape (Circle)
-             url(/images/ranking_star_s.png)
+             url(/images/ranking_star_white.png)
            }
            text {
              style (Detail_L_Soft)
-             value ("#{value(movie.userRating)} / 5.0")
+             value ("#{value(movie.userRating)} / 10.0")
            }
          }
        }

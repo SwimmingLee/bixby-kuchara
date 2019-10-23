@@ -25,5 +25,23 @@ input-view {
         }
       }
     }
+
+    // form {
+    //   elements
+    //   on-submit{
+
+    //   }
+    // }
+  }
+  conversation-drivers{
+    conversation-driver{
+      template ("명동 근처에서 영화 뭐 볼수 있어?")
+    }
+    conversation-driver{
+      template ("한국영화 제외해줘")
+    }
+    conversation-driver{
+      template ("액션영화만 보여줘")
+    }
   }
 }

@@ -1,15 +1,15 @@
-layout {
-  match: __CONCEPT__ (this)
-  mode (Summary)
+// layout {
+//   match: __CONCEPT__ (this)
+//   mode (Summary)
 
-  content {
-    section {
-      content {
-        paragraph {
-          value ("#{value(this)}")
-          style (Title_L)
-        }
-      }
-    }
-  }
-}
+//   content {
+//     section {
+//       content {
+//         paragraph {
+//           value ("#{value(this)}")
+//           style (Title_L)
+//         }
+//       }
+//     }
+//   }
+// }

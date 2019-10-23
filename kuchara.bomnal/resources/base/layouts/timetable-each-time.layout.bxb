@@ -1,0 +1,95 @@
+layout-macro-def (timetable-each-time) {
+  params {
+    param (timeSchedule) {
+      type (TimeSchedule)
+      min (Required) max (One)
+    }
+  }
+  
+  content {
+    compound-card {
+      content {
+        hbox {
+          content {
+            vbox {
+              halign (Start)
+              content {
+                single-line {
+                  text { // 시작 시간
+                    style (Title_M)
+                    value {
+                      template ("#{value(timeSchedule.startTime)}")
+                    }
+                  }
+                }
+                single-line {
+                  text { // 종료 시간
+                    style (Detail_L_Soft)
+                    value {
+                      template ("#{value(timeSchedule.endTime)}")
+                    }
+                  }
+                }
+              }
+            }
+            vbox {
+              content {
+                single-line {
+                  text { //  availableSeat
+                    style (Detail_L_Soft)
+                    color (Green)
+                    value {
+                      template ("#{value(timeSchedule.availableSeat)}")
+                    }
+                  }
+                  text { // totalSeat
+                    style (Detail_L_Soft)
+                    value {
+                      template ("/ #{value(timeSchedule.totalSeat)}")
+                    }
+                  }
+                }
+                single-line { // 특별관
+                  image {
+                    url ("#{value(timeSchedule.roomProperty)}")
+                  }
+                }
+              }
+            }
+            vbox { // 극장 이름과 거리
+              grow(2)
+              halign (End)
+              content {
+                single-line { // 극장 이름
+                  text {
+                    style (Detail_L)
+                    value {
+                      template ("#{value(timeSchedule.theaterInfo.theaterName)}")
+                    }
+                  }
+                }
+                // single-line { // 거리 680m
+                //   text {
+                //     style (Detail_L_Soft)
+                //     value {
+                //       template ("#{value(timeSchedule.theaterInfo.theaterName)}")
+                //     }
+                //   }
+                // }
+              }
+            }
+            vbox { // 영화사 이미지 icon
+              content {
+                single-line {
+                  image {
+                    url ("#{value(timeSchedule.theaterInfo.iconUri)}")
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

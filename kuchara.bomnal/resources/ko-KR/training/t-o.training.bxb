@@ -1,5 +1,6 @@
 train (t-oczz5r7wi4jresqpcndo8t02d) {
   utterance ("[g:FilterMovieWithRoom:continue:MovieSchedule] (mx)[v:Room]관만 보여줘")
   plan (Y2BhkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEKTdcvMKUktAqsJzyzJCMrPzyVggjCaLFgLMwMjAxOQZADSIAgBTEAWUAwA)
-  last-modified (1571141463214)
+  enabled (false)
+  last-modified (1571813419714)
 }
