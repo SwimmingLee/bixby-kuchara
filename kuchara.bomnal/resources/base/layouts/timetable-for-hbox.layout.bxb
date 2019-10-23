@@ -31,15 +31,26 @@ layout-macro-def (timetable-for-hbox) {
                   spacer
                 }
                 single-line {
-                  text {
-                    style (Detail_L_Soft)
-                    color (Green)
-                    value {
-                      template ("#{value(theaterSchedule.availableSeat)}")
+                  if (theaterSchedule.availableSeat < 50) {
+                    text {
+                      style (Detail_M)
+                      color (Red)
+                      value {
+                        template ("#{value(theaterSchedule.availableSeat)}")
+                      }
+                    }
+                  }
+                  else {
+                    text {
+                      style (Detail_M)
+                      color (Green)
+                      value {
+                        template ("#{value(theaterSchedule.availableSeat)}")
+                      }
                     }
                   }
                   text {
-                    style (Detail_L_Soft)
+                    style (Detail_L)
                     value {
                       template ("/#{value(theaterSchedule.totalSeat)}")
                     }

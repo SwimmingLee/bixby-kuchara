@@ -1,4 +1,3 @@
-// input-view {  
 result-view {
   match{
     TheaterOrderedSchedule (this) {
@@ -21,9 +20,17 @@ result-view {
                   expression (theater)
                 }
               }
-              layout-macro (timetable-each) {
-                param(theater) {
-                  expression (theater)
+              for-each (theater.theaterSchedulePack) {
+                as (theaterSchedulePack) {
+                  for-each (theaterSchedulePack.theaterSchedule) {
+                    as (theaterSchedule) {
+                      layout-macro (timetable-each) {
+                        param(theaterSchedule) {
+                          expression (theaterSchedule)
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }

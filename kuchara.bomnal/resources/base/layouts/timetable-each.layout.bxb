@@ -1,7 +1,7 @@
 layout-macro-def (timetable-each) {
   params {
-    param (theater) {
-      type (Theater)
+    param (theaterSchedule) {
+      type (TheaterSchedule)
       min (Required) max (Many)
     }
   }
@@ -9,16 +9,69 @@ layout-macro-def (timetable-each) {
   content {
     compound-card {
       content {
-        for-each (theater.theaterSchedulePack) {
-          as(theaterSchedulePack) {
-            layout-macro (timetable-for-hbox) {
-              param (theaterSchedulePack) {
-                expression (theaterSchedulePack)
+        single-line { // startTime
+          text {
+            style (Title_M)
+            value {
+              template ("#{value(theaterSchedule.startTime)}")
+            }
+          }
+          text {
+            style (Detail_L_Soft)
+            value {
+              template ("~#{value(theaterSchedule.endTime)}")
+            }
+          }
+        }
+        single-line {
+          spacer
+        }
+        single-line {
+          if (theaterSchedule.availableSeat < 50) {
+            text {
+              style (Detail_M)
+              color (Red)
+              value {
+                template ("#{value(theaterSchedule.availableSeat)}")
               }
             }
+          }
+          else {
+            text {
+              style (Detail_M)
+              color (Green)
+              value {
+                template ("#{value(theaterSchedule.availableSeat)}")
+              }
+            }
+          }
+          text {
+            style (Detail_L)
+            value {
+              template ("/#{value(theaterSchedule.totalSeat)}")
+            }
+          }
+        }
+        single-line {
+          image {
+            // #{value} 로 사용하는 게 맞는지
+            url ("#{value(theaterSchedule.roomProperty)}")
           }
         }
       }
     }
+    // compound-card {
+    //   content {
+    //     for-each (theater.theaterSchedulePack) {
+    //       as(theaterSchedulePack) {
+    //         layout-macro (timetable-for-hbox) {
+    //           param (theaterSchedulePack) {
+    //             expression (theaterSchedulePack)
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
 }

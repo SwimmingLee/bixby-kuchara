@@ -162,7 +162,7 @@ module.exports =
             'startTime': '18:00',
             'endTime': '19:50',
             "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
+            "availableSeat": 30,             // 빈 좌석수
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
@@ -173,7 +173,7 @@ module.exports =
             'startTime': '18:00',
             'endTime': '19:50',
             "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
+            "availableSeat": 49,             // 빈 좌석수
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
@@ -183,7 +183,7 @@ module.exports =
             'startTime': '18:00',
             'endTime': '19:50',
             "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
+            "availableSeat": 50,             // 빈 좌석수
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
@@ -197,7 +197,7 @@ module.exports =
             'startTime': '18:00',
             'endTime': '19:50',
             "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
+            "availableSeat": 100,             // 빈 좌석수
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
