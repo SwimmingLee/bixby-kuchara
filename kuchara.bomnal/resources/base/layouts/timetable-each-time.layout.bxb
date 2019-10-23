@@ -81,15 +81,15 @@ layout-macro-def (timetable-each-time) {
             vbox { // 영화사 이미지 icon
               content {
 
-                layout-macro (test-image-layout) {
-                  param (iconUri) {
-                    expression (timeSchedule.theaterInfo.iconUri)
-                  }
+                // layout-macro (test-image-layout) {
+                //   param (iconUri) {
+                //     expression (timeSchedule.theaterInfo.iconUri)
+                //   }
 
-                }
+                // }
                 single-line {
                   image {
-
+                    style (Title_XXL)
                     url ("#{value(timeSchedule.theaterInfo.iconUri)}")
                   }
                 }

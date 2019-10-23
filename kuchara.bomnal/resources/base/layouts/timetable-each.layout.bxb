@@ -8,14 +8,6 @@ layout-macro-def (timetable-each) {
 
   
   content {
-    section {
-      content {
-        
-      }
-    }
-    section {
-
-    }
     compound-card {
       content {
         hbox {
