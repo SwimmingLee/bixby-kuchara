@@ -12,7 +12,7 @@ layout-macro-def (movie-poster-card) {
      on-click{
        intent{
          goal: MakeTheaterStructure //FindMovieWithMovieName
-         //value: Movie(movie)
+         // value: Movie(movie)
        }
      }
      

@@ -26,6 +26,12 @@ result-view {
                     param(theaterSchedule) {
                       expression (theaterSchedule)
                     }
+                    param (movie) {
+                      expression (this.movie)
+                    }
+                    param (theaterInfo) {
+                      expression (this.theater.theaterInfo)
+                    }
                   }
                 }
               }

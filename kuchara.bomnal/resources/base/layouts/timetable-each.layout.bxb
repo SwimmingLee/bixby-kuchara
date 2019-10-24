@@ -1,7 +1,15 @@
-layout-macro-def (timetable-each) {
+  layout-macro-def (timetable-each) {
   params {
     param (theaterSchedule) {
       type (TheaterSchedule)
+      min (Required) max (Many)
+    }
+    param (movie) {
+      type (Movie)
+      min (Required) max (Many)
+    }
+    param (theaterInfo) {
+      type (TheaterInfo)
       min (Required) max (Many)
     }
   }
@@ -9,7 +17,36 @@ layout-macro-def (timetable-each) {
     compound-card {
       on-click {
         intent {
-          goal: Movie // 골은 target으로 설정하면 됨다
+          goal: MakeDetailFromTheaterOrderedSchedule // 골은 target으로 설정하면 됨다
+          value: TheaterOrderedSchedule {
+            //movie: Movie(movie)
+            movie: Movie {
+              actors: Actors(movie.actors)
+              director: Director(movie.director)
+              duration: Duration(movie.duration)
+              genre: Genre(movie.genre)
+              imgUrl: ImgUrl(movie.imgUrl)
+              movieName: MovieName(movie.movieName)
+              movieRating: MovieRating(movie.movieRating)
+              nation: Nation(movie.nation)
+              userRating: UserRating(movie.userRating)
+            }
+            theater: Theater {
+              theaterInfo: TheaterInfo {
+                theaterName: TheaterName(theaterInfo.theaterName)
+                theaterCode: TheaterCode(theaterInfo.theaterCode)
+                regionCode: RegionCode(theaterInfo.regionCode)
+                brand: Brand(theaterInfo.brand)
+                latitude: Latitude(theaterInfo.latitude)
+                longitude: Longitude(theaterInfo.longitude)
+                iconUri: IconUri(theaterInfo.iconUri)
+              }
+              theaterSchedule {
+                startTime: StartTime(theaterSchedule.startTime)
+                
+              }
+            }
+          }
         }
       }
       content {
@@ -17,6 +54,7 @@ layout-macro-def (timetable-each) {
           content {
             vbox {
               grow (2)
+
               halign (Center)
               valign (Middle)
               content {
