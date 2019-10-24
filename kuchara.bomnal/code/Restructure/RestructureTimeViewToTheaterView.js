@@ -72,6 +72,16 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
     }
   })
 
+  theaterOrderedSchedule.theater.forEach(function(theaterElement){
+    theaterElement.theaterSchedule.sort(function(a, b){
+      let time = a.startTime.split(":");
+      let aTime = time[0]*60 + time[1]*1;
+      time = b.startTime.split(":");
+      let bTime = time[0]*60 + time[1]*1;
+      return aTime-bTime;
+    })
+  })
+
   
   return theaterOrderedSchedule;
 }
