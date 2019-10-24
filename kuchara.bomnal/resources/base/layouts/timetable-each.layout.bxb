@@ -1,56 +1,61 @@
-layout-macro-def (timetable-each) {
+  layout-macro-def (timetable-each) {
   params {
-    param (theater) {
-      type (Theater)
-      min (Required) max (One)
+    param (theaterSchedule) {
+      type (TheaterSchedule)
+      min (Required) max (Many)
     }
   }
-
   content {
     compound-card {
+      on-click {
+        intent {
+          goal: Movie // 골은 target으로 설정하면 됨다
+        }
+      }
       content {
         hbox {
           content {
             vbox {
+              grow (2)
+              halign (Center)
+              valign (Middle)
+              content {
+                single-line { // startTime
+                  text { value ("#{value(theaterSchedule.startTime)} ") style (Title_S) }
+                  // spacer
+                  text { value ("~ #{value(theaterSchedule.endTime)}") style (Title_S) }
+                }
+              }
+            }
+            vbox {
+              grow (2)
               halign (Start)
+              valign (Middle)
               content {
                 single-line {
-                  image {
-                    shape (Square)
-                    url ("#{value(theater.theaterInfo.iconUri)}")
-                  }
-                  text {
-                    style (Title_M)
-                    value {
-                      template ("#{value(theater.theaterInfo.theaterName)}")
-                    }
-                  }
+                  text { value ("#{value(theaterSchedule.room)}") style (Detail_L) }
+                  spacer
+                  image { url ("#{value(theaterSchedule.roomProperty)}") }
                 }
               }
             }
-            vbox { 
-              halign (End)
+            vbox {
+              grow (1)
+              halign (Center)
+              valign (Middle)
               content {
                 single-line {
-                  text{
-                    style (Title_M)
-                    value(300m)
+                  if (theaterSchedule.availableSeat < 50) {
+                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_L) color (Red) }
                   }
+                  else {
+                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_L) color (Green) }
+                  }
+                  text { value ("/#{value(theaterSchedule.totalSeat)}") style (Detail_L) }
                 }
               }
             }
           }
-        }
-
-        for-each (theater.theaterSchedule) {
-          as(theaterSchedule) {
-            layout-macro (timetable-for-hbox) {
-              param (theaterSchedule) {
-                expression (theater.theaterSchedule)
-              }
-            }
-          }
-
         }
       }
     }

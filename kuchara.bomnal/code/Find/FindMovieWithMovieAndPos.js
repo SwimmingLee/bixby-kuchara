@@ -15,6 +15,8 @@ module.exports.function = function findMovieWithMovieAndPos (movieInput, namedPo
       latitude: lat,
     }
   };
+  console.log(typeof movieReturn.theater[0].theaterSchedule[0].startTime);
+  console.log(movieReturn.theater[0].theaterSchedule[0].startTime);
 
   // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options); 
   // response.theater.forEach(function(theaterElement){

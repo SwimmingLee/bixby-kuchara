@@ -12,7 +12,7 @@ layout-macro-def (timetable-each-time) {
         hbox {
           content {
             vbox {
-              halign (Start)
+              halign (End)
               content {
                 single-line {
                   text { // 시작 시간
@@ -26,13 +26,14 @@ layout-macro-def (timetable-each-time) {
                   text { // 종료 시간
                     style (Detail_L_Soft)
                     value {
-                      template ("#{value(timeSchedule.endTime)}")
+                      template ("~ #{value(timeSchedule.endTime)}")
                     }
                   }
                 }
               }
             }
             vbox {
+              valign (Middle)
               content {
                 single-line {
                   text { //  availableSeat
@@ -57,14 +58,13 @@ layout-macro-def (timetable-each-time) {
               }
             }
             vbox { // 극장 이름과 거리
-              grow(2)
               halign (End)
               content {
                 single-line { // 극장 이름
                   text {
                     style (Detail_L)
                     value {
-                      template ("#{value(timeSchedule.theaterInfo.theaterName)}")
+                      template ("#{value(timeSchedule.theaterInfo.theaterName)}점")
                     }
                   }
                 }
@@ -78,15 +78,13 @@ layout-macro-def (timetable-each-time) {
                 // }
               }
             }
-            divider
             vbox { // 영화사 이미지 icon
+              halign (Start)
               valign (Middle)
-              halign (Center)
-              grow (2)
               content {
                 single-line {
                   image {
-//                    shape (Circle)
+                    style (Title_XL)
                     url ("#{value(timeSchedule.theaterInfo.iconUri)}")
                   }
                 }

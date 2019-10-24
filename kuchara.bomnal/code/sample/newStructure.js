@@ -22,7 +22,7 @@ module.exports =
           'latitude' : 123.123,
           "theaterCode": 1533,
           "regionCode": 25,
-          'iconUri':"/images/brand/theater/1x/cgv.png",  // 만들어야 함!
+          'iconUri':"/images/brand/theater/1x/cgv.png",
         },
           'theaterSchedule': [
             {
@@ -33,7 +33,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_1px.png"
               // morning, latenight
             },
             {
@@ -44,7 +44,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_2px.png"
             },
             {
               'startTime': '18:00',
@@ -54,7 +54,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_4px.png"
             },
             {
               'startTime': '18:00',
@@ -64,7 +64,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_8px.png"
 
             },
             {
@@ -96,7 +96,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_1px.png"
 
             },
             {
@@ -107,7 +107,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_2px.png"
 
             },
             {
@@ -118,7 +118,7 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_4px.png"
             },
             {
               'startTime': '18:00',
@@ -128,61 +128,61 @@ module.exports =
               "subtitle": true,               // 자막여부
               "dubbing": true,
               "room": '7관',
-              "roomProperty": 'IMAX'
+              "roomProperty": "/images/roomProperty/padding_8px.png"
             },
           ]
       },
       {
         'theaterInfo': {
           'brand' : "cgv",
-          "theaterName": "영통",
+          "theaterName": "영토옹",
           'longitude' : 123.123,
           'latitude' : 123.123,
           "theaterCode": 1533,
           "regionCode": 25,
-          'iconUri':"/images/brand/theater/2x/cgv2x.png",  // 만들어야 함!
+          'iconUri':"/images/brand/theater/1x/lotte.png",  // 만들어야 함!
         },
           'theaterSchedule': [
           {
             'startTime': '18:00',
             'endTime': '19:50',
             "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
+            "availableSeat": 30,             // 빈 좌석수
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
-            "roomProperty": 'IMAX'
+            "roomProperty": "/images/roomProperty/padding_1px.png"
             // morning, latenight
           },
           {
             'startTime': '18:00',
             'endTime': '19:50',
             "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
+            "availableSeat": 49,             // 빈 좌석수
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
-            "roomProperty": 'IMAX'
+            "roomProperty": "/images/roomProperty/padding_2px.png"
           },
           {
             'startTime': '18:00',
             'endTime': '19:50',
             "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
+            "availableSeat": 50,             // 빈 좌석수
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
-            "roomProperty": 'IMAX'
+            "roomProperty": "/images/roomProperty/padding_4px.png"
           },
           {
             'startTime': '18:00',
             'endTime': '19:50',
             "totalSeat": 234,             // 총 좌석수
-            "availableSeat": 123,             // 빈 좌석수
+            "availableSeat": 100,             // 빈 좌석수
             "subtitle": true,               // 자막여부
             "dubbing": true,
             "room": '7관',
-            "roomProperty": 'IMAX'
+            "roomProperty": "/images/roomProperty/padding_8px.png"
           },
         ]
       },

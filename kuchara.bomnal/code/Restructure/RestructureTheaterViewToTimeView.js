@@ -51,5 +51,10 @@ module.exports.function = function restructureTheaterViewToTimeView (theaterOrde
     })
   })
 
+  timeOrderedSchedule.timeSchedule.sort(function(a, b){
+    a.startTime.split(":")
+    return
+  })
+
   return timeOrderedSchedule
 }
