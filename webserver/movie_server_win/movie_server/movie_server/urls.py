@@ -40,7 +40,7 @@ WebDriverInit()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
-    path('movie_api/searchMoiveListWithPos/', SearchMovieListWithPos, name='SearchMovieListWithPos'),
+    path('movie_api/searchMovieListWithPos/', SearchMovieListWithPos, name='SearchMovieListWithPos'),
     path('movie_api/searchTheaterWithPos/', SearchTheaterWithPos, name='SearchTheaterWithPos'),
     path('movie_api/searchTheaterOrderedScheduleWithPos/', SearchTheaterOrderedScheduleWithPos, name='SearchTheaterOrderedScheduleWithPos'),
     path('movie_api/searchMegaboxMovie/', SearchMegaboxMovie, name='SearchMegaboxMovie'),

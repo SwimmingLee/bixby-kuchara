@@ -62,6 +62,20 @@ def GetMovieScheduleList(reqtheater, movieID):
         movieScheduleList.append(movieScheduleDict)
     return movieScheduleList
 
+def GetMovie(movieID):
+    movie = Movies.objects.get(id=movieID)
+    movieEle = {
+        'movieName':movie.movieName,
+        'duration':movie.duration,
+        'director':movie.director,
+        'actor':movie.actor,
+        'movieRating':movie.movieRating,
+        'userRating':movie.userRating,
+        'genre':movie.genre,
+        'imgUrl':movie.imgUrl,
+        'nation':movie.nation
+    }
+    return movieEle
 
 def GetTheaterInfo(reqtheater, distance):
     theaterEle = {
@@ -189,18 +203,8 @@ def SearchTheaterWithPos(request):
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
 
-def SearchMovieListWithPos(request):
-    try:
-        theaterName = request.GET['theaterName']
-    except:
-        theaterName = "조커"
-    reqTheater = Theaters.objects.get(theaterName=theaterName)
-    # reqMovies = MovieSchedules.objects.filter(theater=reqTheater.id)
-    
-    movieinfo = MegaBoxCrawl(reqTheater, reqTheater.regionCode, reqTheater.theaterCode)
-    return JsonResponse(movieinfo, safe=False)
 
-def SearchMovieWithPos(request):
+def SearchMovieListWithPos(request):
     try:
         longitude = float(request.GET['longitude'])
         latitude = float(request.GET['latitude'])
@@ -218,16 +222,35 @@ def SearchMovieWithPos(request):
 
     theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
 
-    movie = []
-    movieScheduleSet = []
+    
+    movieScheduleSet = None
+    idx = 0
     for theaterOrder in theaterOrderedSchedule:
         if theaterOrder[1] <= 5000:
-            movieScheduleSet = movieScheduleSet | MovieSchedules.objects.filter(theater__extact=theaterOrder[0])
+            if idx == 0:
+                movieScheduleSet = MovieSchedules.objects.filter(theater__exact=theaterOrder[0])
+            else:
+                movieScheduleSet.union(MovieSchedules.objects.filter(theater__exact=theaterOrder[0]))
+            idx = idx + 1
         else:
             break
-    movie
+    
+    if movieScheduleSet == None:
+        return None
+    
+    movieDict = dict()
+    for movieSchedule in movieScheduleSet:
+        movieID = movieSchedule.movie.id
+        movieDict[movieID] = Movies.objects.get(id=movieID).userRating
 
-    movieJson = json.dumps(theater, ensure_ascii=False)
+    movie = []
+    movieList = sorted(movieDict.items(),key=lambda x: x[1], reverse=True) 
+   
+    for movieOrder in movieList:
+        movieEle = GetMovie(movieOrder[0])
+        movie.append(movieEle)
+
+    movieJson = json.dumps(movie, ensure_ascii=False)
 
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
