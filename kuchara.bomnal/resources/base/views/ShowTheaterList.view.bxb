@@ -20,15 +20,11 @@ result-view {
                   expression (theater)
                 }
               }
-              for-each (theater.theaterSchedulePack) {
-                as (theaterSchedulePack) {
-                  for-each (theaterSchedulePack.theaterSchedule) {
-                    as (theaterSchedule) {
-                      layout-macro (timetable-each) {
-                        param(theaterSchedule) {
-                          expression (theaterSchedule)
-                        }
-                      }
+              for-each (theater.theaterSchedule) {
+                as (theaterSchedule) {
+                  layout-macro (timetable-each) {
+                    param(theaterSchedule) {
+                      expression (theaterSchedule)
                     }
                   }
                 }
