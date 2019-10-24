@@ -1,14 +1,14 @@
 layout-macro-def (timetable-for-hbox) {
   params {
-    param (theaterSchedulePack) {
-      type(TheaterSchedulePack)
+    param (theaterSchedule) {
+      type(TheaterSchedule)
       min (Optional) max (Many)
     }
   }
   content {
     hbox {
       content {
-        for-each (theaterSchedulePack.theaterSchedule) {
+        for-each (theaterSchedule) {
           as(theaterSchedule) {
             vbox {
               content {

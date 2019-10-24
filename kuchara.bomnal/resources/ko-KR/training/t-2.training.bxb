@@ -1,5 +1,0 @@
-train (t-2rzkuhm4pmupi56uzqz2fa6jy) {
-  utterance ([g:FindMovieWithMovieName,r:ShowMoviePoster] 요즘 영화 뭐해)
-  plan (Y2BlkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEWTdcvMSwGrCM8syQAz/BJzUxlEsBnCIIcmGpyRXw6WCcgvLkktYlBCkwcZlRKQn5lXElxSVJpcUlqUysDCwMjAxMAMpBmgLEYwCwSYgDQzAwMA)
-  last-modified (1571703335864)
-}

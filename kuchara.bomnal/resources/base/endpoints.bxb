@@ -12,20 +12,21 @@ endpoints {
       local-endpoint (Find/FindMovieWithMovieAndPos.js)
     }
 
-    action-endpoint (FindMovieWithTheater) {
-      accepted-inputs (brand, namedPointStructure)
-      local-endpoint (FindMovieWithTheater.js)
-    }
+    // 명동 롯데시네마에서 영화 뭐해
+    // action-endpoint (FindMovieWithTheater) {
+    //   accepted-inputs (brand, namedPointStructure)
+    //   local-endpoint (FindMovieWithTheater.js)
+    // }
 
     action-endpoint (FindMovieWithLocation) {
       accepted-inputs (namedPointStructure)
-      local-endpoint (FindMovieWithLocation.js)
+      local-endpoint (Find/FindMovieWithLocation.js)
     }
     
     // find theater
-    action-endpoint (FindTheater) {
+    action-endpoint (FindTheaterWithMovieSelected) {
       accepted-inputs (namedPointStructure, movie)
-      local-endpoint (FindTheater.js)
+      local-endpoint (Find/FindTheaterWithMovieSelected.js)
     }
 
 
@@ -56,30 +57,30 @@ endpoints {
     }
 
     // filter
-    action-endpoint (FilterMovieWithRoomFromTheaterOrder) {
-      accepted-inputs (theaterOrderedSchedule, roomProperty, exceptExpression)
-      local-endpoint (FilterMovieWithRoomFromTheaterOrder.js)
-    }
+    // action-endpoint (FilterMovieWithRoomFromTheaterOrder) {
+    //   accepted-inputs (theaterOrderedSchedule, roomProperty, exceptExpression)
+    //   local-endpoint (FilterMovieWithRoomFromTheaterOrder.js)
+    // }
 
-    action-endpoint (FilterMovieWithMovieName) {
-      accepted-inputs (timeOrderedSchedule, movieName, exceptExpression)
-      local-endpoint (FilterMovieWithMovieName.js)
-    }
+    // action-endpoint (FilterMovieWithMovieName) {
+    //   accepted-inputs (timeOrderedSchedule, movieName, exceptExpression)
+    //   local-endpoint (FilterMovieWithMovieName.js)
+    // }
 
-    action-endpoint (FilterMovieWithTheaterName) {
-      accepted-inputs (theaterOrderedSchedule, theaterName, exceptExpression)
-      local-endpoint (FilterMovieWithTheaterName.js)
-    }
+    // action-endpoint (FilterMovieWithTheaterName) {
+    //   accepted-inputs (theaterOrderedSchedule, theaterName, exceptExpression)
+    //   local-endpoint (FilterMovieWithTheaterName.js)
+    // }
 
-    action-endpoint (FilterMovieWithGenre) {
-      accepted-inputs (movie, genre, exceptExpression)
-      local-endpoint (FilterMovieWithGenre.js)
-    }
+    // action-endpoint (FilterMovieWithGenre) {
+    //   accepted-inputs (movie, genre, exceptExpression)
+    //   local-endpoint (FilterMovieWithGenre.js)
+    // }
 
-    action-endpoint (FilterMovieWithTime) {
-      accepted-inputs (theaterOrderedSchedule, dateTimeExpression, isStartTime)
-      local-endpoint (FilterMovieWithTime.js)
-    }
+    // action-endpoint (FilterMovieWithTime) {
+    //   accepted-inputs (theaterOrderedSchedule, dateTimeExpression, isStartTime)
+    //   local-endpoint (FilterMovieWithTime.js)
+    // }
 
     // restructure 
     action-endpoint (RestructureTheaterViewToTimeView) {
@@ -91,11 +92,6 @@ endpoints {
       accepted-inputs (timeOrderedSchedule)
       local-endpoint (Restructure/RestructureTimeViewToTheaterView.js)
     }
-
-    // action-endpoint (FindMovieWithFullUtterance) {
-    //   accepted-inputs (isStartTime, movieName, timeInput, locationalKeyword, brand)
-    //   local-endpoint (FindMovieWithFullUtterance.js)
-    // }
 
   }
 }

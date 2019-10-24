@@ -1,4 +1,4 @@
-const movieReturn = require('./sample/newStructure.js');
+const movieReturn = require('../sample/newStructure.js');
 let console = require('console');
 let http = require('http');
 let config = require('config');

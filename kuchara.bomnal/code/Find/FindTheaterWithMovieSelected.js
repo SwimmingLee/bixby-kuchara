@@ -1,7 +1,7 @@
 let http = require('http');
 let config = require('config');
 
-module.exports.function = function findTheater (namedPointStructure, movie) {
+module.exports.function = function findTheaterWithMovieSelected (namedPointStructure, movie) {
 
   let long = namedPointStructure.point.longitude;
   let lat = namedPointStructure.point.latitutde;

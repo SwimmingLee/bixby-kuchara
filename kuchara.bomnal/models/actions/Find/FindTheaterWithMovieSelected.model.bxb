@@ -1,4 +1,4 @@
-action (FindTheater) {
+action (FindTheaterWithMovieSelected) {
   description (find theater)
   type (Search)
   collect {

@@ -42,11 +42,11 @@ layout-macro-def (timetable-each) {
           }
         }
 
-        for-each (theater.theaterSchedulePack) {
-          as(theaterSchedulePack) {
+        for-each (theater.theaterSchedule) {
+          as(theaterSchedule) {
             layout-macro (timetable-for-hbox) {
-              param (theaterSchedulePack) {
-                expression (theater.theaterSchedulePack)
+              param (theaterSchedule) {
+                expression (theater.theaterSchedule)
               }
             }
           }
