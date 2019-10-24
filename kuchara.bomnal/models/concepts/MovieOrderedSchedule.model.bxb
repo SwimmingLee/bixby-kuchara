@@ -1,0 +1,15 @@
+structure (MovieOrderedSchedule) {
+  description (common Movie descriptions)
+  property (movie) {
+    type (Movie)
+    min (Required) max (One)
+  }
+  property (theaterInfo) {
+    type (TheaterInfo)
+    min (Required) max (One)
+  }
+  property (theaterSchedule) {
+    type (TheaterSchedule)
+    min (Required) max (One)
+  }
+}

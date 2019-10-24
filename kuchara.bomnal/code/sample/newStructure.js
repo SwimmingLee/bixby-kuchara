@@ -24,8 +24,6 @@ module.exports =
           "regionCode": 25,
           'iconUri':"/images/brand/theater/1x/cgv.png",  // 만들어야 함!
         },
-        'theaterSchedulePack' : [
-          {
           'theaterSchedule': [
             {
               'startTime': '18:00',
@@ -57,45 +55,7 @@ module.exports =
               "dubbing": true,
               "room": '7관',
               "roomProperty": 'IMAX'
-            }
-          ]},
-          {
-          'theaterSchedule': [
-            {
-              'startTime': '18:00',
-              'endTime': '19:50',
-              "totalSeat": 234,             // 총 좌석수
-              "availableSeat": 123,             // 빈 좌석수
-              "subtitle": true,               // 자막여부
-              "dubbing": true,
-              "room": '7관',
-              "roomProperty": 'IMAX'
-
             },
-            {
-              'startTime': '18:00',
-              'endTime': '19:50',
-              "totalSeat": 234,             // 총 좌석수
-              "availableSeat": 123,             // 빈 좌석수
-              "subtitle": true,               // 자막여부
-              "dubbing": true,
-              "room": '7관',
-              "roomProperty": 'IMAX'
-
-            },
-            {
-              'startTime': '18:00',
-              'endTime': '19:50',
-              "totalSeat": 234,             // 총 좌석수
-              "availableSeat": 123,             // 빈 좌석수
-              "subtitle": true,               // 자막여부
-              "dubbing": true,
-              "room": '7관',
-              "roomProperty": 'IMAX'
-            }
-          ] },
-          {
-          'theaterSchedule': [
             {
               'startTime': '18:00',
               'endTime': '19:50',
@@ -127,10 +87,39 @@ module.exports =
               "dubbing": true,
               "room": '7관',
               "roomProperty": 'IMAX'
-            }
-          ] },
-          {
-          'theaterSchedule': [
+            },
+            {
+              'startTime': '18:00',
+              'endTime': '19:50',
+              "totalSeat": 234,             // 총 좌석수
+              "availableSeat": 123,             // 빈 좌석수
+              "subtitle": true,               // 자막여부
+              "dubbing": true,
+              "room": '7관',
+              "roomProperty": 'IMAX'
+
+            },
+            {
+              'startTime': '18:00',
+              'endTime': '19:50',
+              "totalSeat": 234,             // 총 좌석수
+              "availableSeat": 123,             // 빈 좌석수
+              "subtitle": true,               // 자막여부
+              "dubbing": true,
+              "room": '7관',
+              "roomProperty": 'IMAX'
+
+            },
+            {
+              'startTime': '18:00',
+              'endTime': '19:50',
+              "totalSeat": 234,             // 총 좌석수
+              "availableSeat": 123,             // 빈 좌석수
+              "subtitle": true,               // 자막여부
+              "dubbing": true,
+              "room": '7관',
+              "roomProperty": 'IMAX'
+            },
             {
               'startTime': '18:00',
               'endTime': '19:50',
@@ -142,8 +131,6 @@ module.exports =
               "roomProperty": 'IMAX'
             },
           ]
-          }
-        ]
       },
       {
         'theaterInfo': {
@@ -155,8 +142,6 @@ module.exports =
           "regionCode": 25,
           'iconUri':"/images/brand/theater/2x/cgv2x.png",  // 만들어야 함!
         },
-        'theaterSchedulePack' : [
-          {
           'theaterSchedule': [
           {
             'startTime': '18:00',
@@ -188,11 +173,7 @@ module.exports =
             "dubbing": true,
             "room": '7관',
             "roomProperty": 'IMAX'
-          }
-          ]},
-          {
-            'theaterSchedule':
-          [
+          },
           {
             'startTime': '18:00',
             'endTime': '19:50',
@@ -203,8 +184,6 @@ module.exports =
             "room": '7관',
             "roomProperty": 'IMAX'
           },
-          ]
-          }
         ]
       },
     ]

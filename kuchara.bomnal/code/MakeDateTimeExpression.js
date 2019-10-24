@@ -8,19 +8,7 @@ module.exports.function = function makeDateTimeExpression (dateTimeExpression, d
   let dateTimeExpressionObj = {
     'dateTime': zonedDateTime.getDateTime(),
   }
-  // let dateTimeExpressionObj = {
-  //   'dateTime': {
-  //     'date': {
-  //       'year': 0,
-  //       'month': 0,
-  //       'day': 0,
-  //     },
-  //     'time': {
-  //       'hour': 0,
-  //       'minute': 0,
-  //     }
-  //   },
-  // }
+
   console.log(dateTimeExpressionObj);
   console.log(dateTimeExpression);
   console.log(detachedTime);

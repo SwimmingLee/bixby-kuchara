@@ -1,7 +1,11 @@
-action (FindMovieWithLocation) {
-  description (find movie with locational input)
+action (FindMovieWithMovieAndPos) {
+  description (find movie with movie name input)
   type (Search)
   collect {
+    input (movieInput) {
+      type (Movie)
+      min (Required) max (One)
+    }
     input (namedPointStructure) {
       type (NamedPointStructure)
       min (Required) max (One)
@@ -12,9 +16,7 @@ action (FindMovieWithLocation) {
         }
       }
     }
-    
   }
   output (TheaterOrderedSchedule)
-  // output (MovieName)
 }
   

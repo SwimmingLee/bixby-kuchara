@@ -1,11 +1,11 @@
-action (RestructureTheaterViewToTimeView) {
-  description (__DESCRIPTION__)
+action (MakeDetailFromTheaterOrderedSchedule) {
   type(Search)
+  description (__DESCRIPTION__)
   collect {
     input (theaterOrderedSchedule) {
       type (TheaterOrderedSchedule)
       min (Required) max (One)
     }
   }
-  output (TimeOrderedSchedule)
+  output (MovieScheduleDetail)
 }

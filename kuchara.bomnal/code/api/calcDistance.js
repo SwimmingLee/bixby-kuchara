@@ -19,12 +19,12 @@ module.exports.function = function calcDistance (latsrc, longsrc, latdst, longds
 
   let py = latmin*1.85 + latsec*0.031;
 
-  console.log(latDistance);
-  console.log(longDistance);
-  console.log(px);
-  console.log(py);
+  // console.log(latDistance);
+  // console.log(longDistance);
+  // console.log(px);
+  // console.log(py);
   let distance = Math.sqrt(px*px + py*py);
   distance = Math.floor(distance*1000);
-  console.log(distance);
+  // console.log(distance);
   return distance;  //미터단위
 }
