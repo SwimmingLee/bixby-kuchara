@@ -1,0 +1,7 @@
+structure (TimeOrderedScheduleWithMovie) {
+  description (common Movie descriptions)
+  property (movieOrderedSchedule) {
+    type (MovieOrderedSchedule)
+    min (Optional) max (Many)
+  }
+}

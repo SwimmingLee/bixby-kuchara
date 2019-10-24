@@ -4,3 +4,8 @@ train (t-lhf96yok39er2b1n06mq83dsm) {
   enabled (false)
   last-modified (1571813409037)
 }
+train (t-lv78h1k2gghxxgxuy5ohcw9c3) {
+  utterance ([g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 영화관순으로 보여줘)
+  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
+  last-modified (1571919254157)
+}

@@ -14,7 +14,7 @@ action (FindMovieWithLocation) {
     }
     
   }
-  output (TheaterOrderedSchedule)
-  // output (MovieName)
+  output (TimeOrderedScheduleWithMovie)
+
 }
   

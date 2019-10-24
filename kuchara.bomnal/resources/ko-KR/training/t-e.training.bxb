@@ -1,5 +1,0 @@
-train (t-e7latwcgxsghq0ti44ruv2isb) {
-  utterance ([g:FindMovieWithLocation] 주변 영화관 시간표 보여줘)
-  plan (Y2BikMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEGTdcvMSwGrCM8syfDJT04syczPY2AEQgYoBpIA)
-  last-modified (1571228702194)
-}

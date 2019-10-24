@@ -10,8 +10,8 @@ train (t-sagto8yhgp0ljbifgzhqltm86) {
   enabled (false)
   last-modified (1571703335023)
 }
-train (t-st8o37cttscqg0hkwcgfkix9o) {
-  utterance ("[g:FindMovieWithMovieName] (조커)[r:ShowMoviePoster] 시간표 찾아줘")
-  plan (Y2BlkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEWTdcvMSwGrCM8syQAz/BJzUxlEsBnCIIcmGpyRXw6WCcgvLkktYlBCkwcZlRKQn5lXElxSVJpcUlqUysDCwMjAxMAMpBmgLEYwCwSYgDQzAwMA)
-  last-modified (1571576379299)
+train (t-sc72ecc8pb7pl1hrj0uz235ey) {
+  utterance ([g:FindMovieWithLocation] 근처 영화관 시간표 보여줘)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1571918852004)
 }

@@ -1,3 +1,5 @@
+let console = require('console');
+
 module.exports.function = function restructureTimeViewToTheaterView (timeOrderedSchedule) {
   
   let theaterOrderedSchedule = {
@@ -32,6 +34,7 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
     let newBrand = timeScheduleElement.theaterInfo.brand;
     let newLatitude = timeScheduleElement.theaterInfo.latitude;
     let newLongitude = timeScheduleElement.theaterInfo.longitude;
+    let newIconUri = timeScheduleElement.theaterInfo.iconUri;
 
     let theaterInfo = {
       'brand' : newBrand,
@@ -60,15 +63,19 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
             && theaterInfo.regionCode == theaterElement.theaterInfo.regionCode){
         theaterElement.theaterSchedule.push(theaterSchedule);
         found = true;
+        // console.log("123123");
       }
+      // console.log("456456");
     })
+    // console.log(theaterInfo);
 
-    if(found){
-      theater.push({
+    if(found == false){
+      theaterOrderedSchedule.theater.push({
         "theaterInfo": theaterInfo,
         "theaterSchedule": [],
       })
-      theater.theaterSchedule.push(theaterSchedule);
+      
+      theaterOrderedSchedule.theater[theaterOrderedSchedule.theater.length-1].theaterSchedule.push(theaterSchedule);
     }
   })
 
@@ -82,6 +89,7 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
     })
   })
 
+  console.log(theaterOrderedSchedule);
   
   return theaterOrderedSchedule;
 }
