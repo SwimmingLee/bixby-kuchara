@@ -39,6 +39,102 @@ class NamedPointStructureViewSet(viewsets.ModelViewSet):
     serializer_class = NamedPointStructresSerializer
 
 
+def GetMovieScheduleList(reqtheater, movieID):
+    diffTime = GetDiffTime(reqtheater.updatedTime, datetime.now())    
+    if (diffTime > 60*15):
+        MegaBoxCrawl(reqtheater)
+        reqtheater.updatedTime = datetime.now()
+        reqtheater.save() 
+
+    movieScheduleList = []
+    movieSchedules = MovieSchedules.objects.filter(theater__exact=reqtheater.id, movie__exact=movieID)
+    for movieSchedule in movieSchedules:
+        movieScheduleDict = {
+            'room':movieSchedule.room,
+            'totalSeat':movieSchedule.totalSeat,
+            'availableSeat':movieSchedule.availableSeat,
+            'startTime':movieSchedule.startTime,
+            'endTime':movieSchedule.endTime,
+            'subtitle':False,
+            'dubbing':movieSchedule.dubbing,
+            'room property':"2D"
+        }
+        movieScheduleList.append(movieScheduleDict)
+    return movieScheduleList
+
+
+def GetMovieScheduleDict(movie_info):
+    movieScheduleDict = dict()
+    movieScheduleDict['room'] = movie_info['room']
+    movieScheduleDict['totalSeat'] = movie_info['totalSeat']
+    movieScheduleDict['availableSeat'] = movie_info['avaliableSeat']
+    movieScheduleDict['startTime'] = movie_info['startTime']
+    movieScheduleDict['endTime'] = movie_info['endTime']
+    movieScheduleDict['subtitle'] = False
+    movieScheduleDict['dubbing'] = False
+    movieScheduleDict['room property'] = "NoT IMAX"
+    return movieScheduleDict
+
+def GetDiffTime(preTime, curTime):
+    curTime = curTime.replace(tzinfo=None)
+    preTime = preTime.replace(tzinfo=None)
+    diffTime = curTime - preTime
+    #print(curTime)
+    #print(preTime)
+    #print(diffTime)
+    return diffTime.total_seconds()
+
+
+def SearchTheaterOrderedScheduleWithPos(request):
+    try:
+        longitude = float(request.GET['longitude'])
+        latitude = float(request.GET['latitude'])
+        movieName = request.GET['movieName']
+    except:
+        longitude = 0.0
+        latitude = 0.0
+    
+    print('long:{}, lat:{}, movieName:{}'.format(latitude, longitude, movieName))
+
+    # 현재는 메가박스에 대한 정보만 가져올 수 있도록 되어 있다. 
+    allTheater = Theaters.objects.filter(brand__exact='megabox')
+    movieObj = Movies.objects.get(movieName=movieName)
+
+    
+    theaterDistanceDict = dict()
+   
+    for reqtheater in allTheater:
+        dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
+        theaterDistanceDict[reqtheater.id] = dist
+
+    theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
+    theater = []
+    orderCnt = 0
+    for theaterOrder in theaterOrderedSchedule:
+        if orderCnt == 0 or theaterOrder[1] < 3000:
+            orderCnt = orderCnt + 1
+            reqtheater = Theaters.objects.get(id=theaterOrder[0])
+            movieScheduleList = GetMovieScheduleList(reqtheater, movieObj.id)
+            theaterEle = {
+                'theaterInfo':reqtheater,
+                'distance':theaterOrder[1],
+                'theaterSchedule':movieScheduleList
+            }
+            theater.append(theaterEle)
+        else:
+            break
+
+    TOS = TheaterOrderedSchedule(
+        movie=movieObj,
+        theater=theater
+    )
+    TOSdict = TOS.GetJson()
+    movieJson = json.dumps(TOSdict, ensure_ascii=False)
+
+    return HttpResponse(movieJson, content_type="text/json-comment-filtered")
+
+    
+
 def SearchTheaterWithPos(request):
     try:
         longitude = float(request.GET['longitude'])
@@ -60,7 +156,7 @@ def SearchTheaterWithPos(request):
         dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
         print("Dist {}".format(dist))
         if dist < 0.05:
-            movie_list = MegaBoxCrawl(reqtheater, reqtheater.regionCode, reqtheater.theaterCode)
+            movie_list = MegaBoxCrawl(reqtheater)
             timeScheduleList = []
 
             for movie_Info in movie_list:
@@ -69,17 +165,7 @@ def SearchTheaterWithPos(request):
                 if movieName != movie_info['movieName']:
                     continue 
 
-                movieScheduleDict = dict()
-                movieScheduleDict['room'] = movie_info['room']
-                movieScheduleDict['totalSeat'] = movie_info['totalSeat']
-                movieScheduleDict['availableSeat'] = movie_info['avaliableSeat']
-                movieScheduleDict['startTime'] = movie_info['startTime']
-                movieScheduleDict['endTime'] = movie_info['endTime']
-                movieScheduleDict['subtitle'] = False
-                movieScheduleDict['dubbing'] = False
-                movieScheduleDict['room property'] = "NoT IMAX"
-
-                # print(movieScheduleDict)
+                movieScheduleDict = GetMovieScheduleDict(movie_info)
                 timeScheduleList.append(movieScheduleDict)
 
             theaterEle = {
@@ -96,7 +182,6 @@ def SearchTheaterWithPos(request):
     movieJson = json.dumps(TOSdict, ensure_ascii=False)
 
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
-    # return JsonResponse(movieJson, safe=False)
 
 
 def SearchMovieListWithPos(request):

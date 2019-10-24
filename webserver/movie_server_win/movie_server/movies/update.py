@@ -37,10 +37,19 @@ def GetNaverMovieInfo(url):
     movieInfoPart["nation"] = nationStr
 
     duration  = nationRow.next_sibling.next_sibling
-    durationStr = re.findall("\d+", duration.text)[0]
-    movieInfoPart["duration"] = durationStr
+    print(duration)
+    try:
+        # 여기서 TV영화 분류를 거를 수 있다.
+        # 나중에 코드를 깔끔하게 수정할 것
+        durationStr = re.findall("\d+", duration.text)[0]
+        movieInfoPart["duration"] = durationStr
+    except:
+        return None
 
-    rating = infoSpec.find('dt', {'class':'step4'}).next_sibling.next_sibling
+    rating = infoSpec.find('dt', {'class':'step4'})
+    if rating == None:
+        return None
+    rating = rating.next_sibling.next_sibling
     movieRating = rating.a
     movieRatingStr = movieRating.text
     movieInfoPart["movieRating"] = movieRatingStr
@@ -52,7 +61,7 @@ def GetMovieInfo(movieName):
     client_id = "Ob9m_EHdGWkXlNLSWPjo"
     client_key = "tA5WWOMJHo"
     url = "https://openapi.naver.com/v1/search/movie.json"
-    option = "&display=1&sort=count"
+    option = "&display=3&sort=count"
     query = "?query="+urllib.parse.quote(movieName)
     url_query = url + query + option
     #Open API 검색 요청 개체 설정
@@ -64,16 +73,20 @@ def GetMovieInfo(movieName):
     rescode = response.getcode()
     if(rescode == 200):
         response_body = response.read()
-        movieInfo = response_body.decode('utf-8')
+        movieInfos = response_body.decode('utf-8')
         # print(movieInfo)
-        movieInfo = json.loads(movieInfo)
+        movieInfos = json.loads(movieInfos)
         print(movieName)
-        link = movieInfo["items"][0]["link"]
-        imgUrl = movieInfo["items"][0]["image"]
-        actor = movieInfo["items"][0]["actor"]
-        director = movieInfo["items"][0]["director"]
-        userRating = movieInfo["items"][0]["userRating"]
-        movieInfoPart2 = GetNaverMovieInfo(link)
+ 
+        for movieInfo in movieInfos['items']:
+            link = movieInfo['link']
+            imgUrl = movieInfo["image"]
+            actor = movieInfo["actor"]
+            director = movieInfo["director"]
+            userRating = movieInfo["userRating"]
+            movieInfoPart2 = GetNaverMovieInfo(link)
+            if movieInfoPart2 != None:
+                break 
 
 
         MoviesEle = Movies(movieName=movieName, director=director, \

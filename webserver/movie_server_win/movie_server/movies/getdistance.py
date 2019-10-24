@@ -10,4 +10,6 @@ def get_euclidean_distance(x1, y1, x2, y2, round_decimal_digits=6):
         dlong -= 360
     dlat = y2 - y1
 
-    return round(math.sqrt(pow(dlong, 2)+pow(dlat, 2)), round_decimal_digits)
+    distance = round(math.sqrt(pow(dlong, 2)+pow(dlat, 2)), round_decimal_digits)
+    distance_meter = int(distance * (10 ** 5))
+    return distance_meter

@@ -33,7 +33,7 @@ def WebDriverInit():
     driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
 
 
-def MegaBoxCrawl(theaterObj, regionCode, theaterCode):
+def MegaBoxCrawl(theaterObj):
     movieJson = ""
     movieObj = ""
     movieList = []
@@ -43,8 +43,8 @@ def MegaBoxCrawl(theaterObj, regionCode, theaterCode):
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
     legacyMovieSchedules.delete()
 
-    region = regionCode
-    cinema = theaterCode
+    region = theaterObj.regionCode
+    cinema = theaterObj.theaterCode
 
     url = 'http://megabox.co.kr/?menuId=theater-detail&region={}&cinema={}'.format(region,cinema)
     driver.get(url)
@@ -59,33 +59,34 @@ def MegaBoxCrawl(theaterObj, regionCode, theaterCode):
         movieName = row.find('a', {'title':'영화상세 보기'})
         if movieName != None:
             movieNameStr = movieName.text
+            p = re.compile("\[(.*)\] ")
+            m = p.match(movieNameStr)
+            if m:
+                movieNameStr = movieNameStr.replace(m.group(), '')
+            
+            p = re.compile("\((.*)\) ")
+            m = p.match(movieNameStr)
+            if m:
+                movieNameStr = movieNameStr.replace(m.group(), '')
+                if m.group() == '(더빙) ':
+                    movieDict['dubbing'] = True
+                    print("더빙입니다.")
+            
+            movieNameStr = movieNameStr.strip()
             movieDict['movieName'] = movieNameStr
-            # filter를 쓰지 않고 get으로 에러를 검사하면
-            # 데이터를 확인 할 수 있을 것임.
+            
+
+            # movieName을 primary key로 변경하면 get으로 변경
             movieObj = Movies.objects.filter(movieName=movieNameStr)
             movieObj = movieObj.first()
             if movieObj == None:
-                movieObj = GetMovieInfo(movieNameStr)
-                
-            
-        #print(movieNameStr)
-
-        # 영화에 대한 정보는 DB에서 추출해서 사용할 것임
-        '''    
-        movieRating = row.find('span', {'class':re.compile("age_m age_[0-9.*].*")})
-        if movieRating != None:
-            movieRatingStr = movieRating.text
-            movieDict['movieRating'] = movieRatingStr
-        #print(movieRatingStr)
-        '''
+                movieObj = GetMovieInfo(movieNameStr)      
 
         movieRoom = row.find('th', {'class':'room'}).find('div')
         if movieRoom != None:
             movieRoomStr = movieRoom.text
             movieDict['room'] = movieRoomStr
             
-        #print(movieRoomStr)
-        
         movieCinemaTimes = row.findAll('div', {'class':re.compile('^cinema_time')})
         
         for movieCinemaTime in movieCinemaTimes:
@@ -98,7 +99,7 @@ def MegaBoxCrawl(theaterObj, regionCode, theaterCode):
                 movieDict['startTime'] = movieStartTimeStr
                 movieDict['endTime'] = movieEndTimeStr
             else:
-                print("[DEBUG]:")
+                print("[ERROR]: not found moive time")
                 print(movieTime)
 
 
