@@ -46,10 +46,10 @@ layout-macro-def (timetable-each) {
               content {
                 single-line {
                   if (theaterSchedule.availableSeat < 50) {
-                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_M) color (Red) }
+                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_L) color (Red) }
                   }
                   else {
-                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_M) color (Green) }
+                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_L) color (Green) }
                   }
                   text { value ("/#{value(theaterSchedule.totalSeat)}") style (Detail_L) }
                 }

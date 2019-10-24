@@ -19,7 +19,7 @@ layout-macro-def (title-for-theaterSchedule) {
               }
               spacer
               text {
-                style (Title_S)
+                style (Title_XS)
                 value {
                   template ("#{value(theater.theaterInfo.theaterName)}")
                 }
@@ -29,10 +29,11 @@ layout-macro-def (title-for-theaterSchedule) {
         }
         vbox { 
           halign (End)
+          valign (Bottom)
           content {
             single-line {
               text{
-                style (Title_S)
+                style (Detail_L_Soft)
                 value(300m) // 거리로 수정 요망
               }
             }

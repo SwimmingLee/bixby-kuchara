@@ -1,27 +1,42 @@
-// input-view {  
 result-view {
   match{
     MovieScheduleDetail (this) {
       min (Required)
       max (One)
     }
-
   }
   message {
     template ("내용을 확인해주세요! 예매를 위해 영화관 사이트로 이동합니다.")
   }
-
   render {
-    // selection-of (this.theater) {
     layout {
       section {
         content {
           hbox { // 영화 정보
             content {
-              vbox {
+              vbox { // 영화 포스터 이미지
+                grow (1)
                 content {
-
-
+                  single-line { image ("") }// url
+                }
+              }
+              vbox {
+                grow (2)
+                valign (Top)
+                content {
+                  single-line {
+                    text { value ("") style (Title_S) } // 영화 이름
+                    image ("") // 영화 이름 옆에 자그마낳게 관람 등급 이미지 표시
+                  }
+                  text { value ("") style (Detail_L_Soft) } // 장르 표시
+                  single-line {
+                    image ("") // 특별관 이미지 url
+                  }
+                  single-line {
+                    image { url ("/images/ranking_star_white.png") } // 별점 이미지
+                    text { value ("") style (Detail_L_Soft) } // 유저 평점
+                    text { value ("/10.0") style (Detail_L_Soft) } // 10점
+                  }
                 }
               }
             }
