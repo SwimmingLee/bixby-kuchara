@@ -55,7 +55,7 @@ def GetMovieScheduleList(reqtheater, movieID):
             'availableSeat':movieSchedule.availableSeat,
             'startTime':movieSchedule.startTime,
             'endTime':movieSchedule.endTime,
-            'subtitle':False,
+            'subtitle':movieSchedule.subtitle,
             'dubbing':movieSchedule.dubbing,
             'room property':"2D"
         }
@@ -133,7 +133,16 @@ def SearchTheaterOrderedScheduleWithPos(request):
 
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
-    
+def SearchMegaboxMovie(request):
+    allTheater = Theaters.objects.filter(brand__exact='megabox')
+    for reqtheater in allTheater:
+        MegaBoxCrawl(reqtheater)
+
+    movieJson = {
+        "megabox searching":"success"
+    }
+    movieJson = json.dumps(movieJson, ensure_ascii=False)
+    return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
 def SearchTheaterWithPos(request):
     try:

@@ -23,6 +23,7 @@ from movies.views import NamedPointStructureViewSet
 from movies.views import SearchMovieListWithPos
 from movies.views import SearchTheaterWithPos
 from movies.views import SearchTheaterOrderedScheduleWithPos
+from movies.views import SearchMegaboxMovie
 from movies.update import UpdateTheater
 
 from movies.crawling import WebDriverInit
@@ -42,6 +43,7 @@ urlpatterns = [
     path('movie_api/searchMoiveListWithPos/', SearchMovieListWithPos, name='SearchMovieListWithPos'),
     path('movie_api/searchTheaterWithPos/', SearchTheaterWithPos, name='SearchTheaterWithPos'),
     path('movie_api/searchTheaterOrderedScheduleWithPos/', SearchTheaterOrderedScheduleWithPos, name='SearchTheaterOrderedScheduleWithPos'),
+    path('movie_api/searchMegaboxMovie/', SearchMegaboxMovie, name='SearchMegaboxMovie'),
     path('movie_api/test/', Test, name='Test'),
     path('movie_update/theater', UpdateTheater, name='UpdateTheater')
 ]

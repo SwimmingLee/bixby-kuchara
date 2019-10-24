@@ -53,7 +53,12 @@ def MegaBoxCrawl(theaterObj):
     bs = BeautifulSoup(req, 'html.parser')
 
     movieScedule = bs.find('div', {'class':'timetable_container'})
-    movieTableRow = movieScedule.find('tbody').findAll('tr')
+    movieTableRow = movieScedule.find('tbody')
+    if movieTableRow == None:
+        # 여기에 들어왔다는 것은 현재 상영중인 영화가 없다는 뜻이다.
+        return None
+    movieTableRow = movieTableRow.findAll('tr')
+    
 
     for row in movieTableRow:
         movieName = row.find('a', {'title':'영화상세 보기'})
@@ -70,7 +75,9 @@ def MegaBoxCrawl(theaterObj):
                 movieNameStr = movieNameStr.replace(m.group(), '')
                 if m.group() == '(더빙) ':
                     movieDict['dubbing'] = True
-                    print("더빙입니다.")
+            else:
+                movieDict['dubbing'] = False
+                    
             
             movieNameStr = movieNameStr.strip()
             movieDict['movieName'] = movieNameStr
@@ -82,11 +89,23 @@ def MegaBoxCrawl(theaterObj):
             if movieObj == None:
                 movieObj = GetMovieInfo(movieNameStr)      
 
-        movieRoom = row.find('th', {'class':'room'}).find('div')
-        if movieRoom != None:
+        movieRoomInfo = row.find('th', {'class':'room'})
+        movieRoom = movieRoomInfo.find('div')
+        if movieRoom != None:            
             movieRoomStr = movieRoom.text
             movieDict['room'] = movieRoomStr
+        
+        movieSubtitle = movieRoomInfo.find('small')
+        if movieSubtitle != None:
+            print(movieSubtitle)
+            subtitleIdx = movieSubtitle.text.find('자막')
             
+            if subtitleIdx > 0:
+                print('이건 자막입니다.)')
+                movieDict['subtitle'] = True
+            else:
+                movieDict['subtitle'] = False
+
         movieCinemaTimes = row.findAll('div', {'class':re.compile('^cinema_time')})
         
         for movieCinemaTime in movieCinemaTimes:
@@ -122,9 +141,9 @@ def MegaBoxCrawl(theaterObj):
                 hour, minute = movieDict['endTime'].split(':')
                 endTime  = int(hour)*100 + int(minute)
 
-                MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict["room"],
-                                    totalSeat=totalSeat, availableSeat=avaliableSeat, \
-                                    startTime=startTime, endTime=endTime)
+                MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
+                                    totalSeat=totalSeat, availableSeat=avaliableSeat, dubbing=movieDict['dubbing'], \
+                                    startTime=startTime, endTime=endTime, subtitle=movieDict['subtitle'])
                 MovieScheduleEle.save()
                 movieJson = json.dumps(movieDict, ensure_ascii=False)
                 movieList.append(movieJson)

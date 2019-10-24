@@ -55,7 +55,7 @@ class MovieSchedules(models.Model):
     startTime = models.IntegerField()
     endTime = models.IntegerField()
     # >> movieScheduleFlag
-    subtitile = models.BooleanField(null=True)
+    subtitle = models.BooleanField(null=True)
     dubbing = models.BooleanField(null=True)
     digitalized = models.BooleanField(null=True)
     lateNight = models.BooleanField(null=True)
