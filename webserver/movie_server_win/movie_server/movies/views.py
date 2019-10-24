@@ -63,6 +63,18 @@ def GetMovieScheduleList(reqtheater, movieID):
     return movieScheduleList
 
 
+def GetTheaterInfo(reqtheater, distance):
+    theaterEle = {
+        'theaterName':reqtheater.theaterName,
+        'theaterCode':reqtheater.theaterCode,
+        'regionCode':reqtheater.regionCode,
+        'longitude':reqtheater.longitude,
+        'latitude':reqtheater.latitude,
+        'brand':reqtheater.brand,
+        'distance':distance
+    }
+    return theaterEle
+
 def GetMovieScheduleDict(movie_info):
     movieScheduleDict = dict()
     movieScheduleDict['room'] = movie_info['room']
@@ -148,47 +160,31 @@ def SearchTheaterWithPos(request):
     try:
         longitude = float(request.GET['longitude'])
         latitude = float(request.GET['latitude'])
-        movieName = request.GET['movieName']
     except:
         longitude = 0.0
         latitude = 0.0
     
-    print('long:{}, lat:{}, movieName:{}'.format(latitude, longitude, movieName))
 
     # 현재는 메가박스에 대한 정보만 가져올 수 있도록 되어 있다. 
     allTheater = Theaters.objects.filter(brand__exact='megabox')
     
-    movieObj = Movies.objects.get(movieName=movieName)
-    theater = []
-    
+    theaterDistanceDict = dict()
     for reqtheater in allTheater:
         dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
-        print("Dist {}".format(dist))
-        if dist < 0.05:
-            movie_list = MegaBoxCrawl(reqtheater)
-            timeScheduleList = []
+        theaterDistanceDict[reqtheater.id] = dist
 
-            for movie_Info in movie_list:
-                movie_info = json.loads(movie_Info)
-
-                if movieName != movie_info['movieName']:
-                    continue 
-
-                movieScheduleDict = GetMovieScheduleDict(movie_info)
-                timeScheduleList.append(movieScheduleDict)
-
-            theaterEle = {
-                'theaterInfo':reqtheater,
-                'theaterSchedule':timeScheduleList
-            }
+    theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
+    orderCnt = 0
+    theater = []
+    for theaterOrder in theaterOrderedSchedule:
+        if orderCnt <= 10:
+            orderCnt = orderCnt + 1
+            reqtheater = Theaters.objects.get(id=theaterOrder[0])
+            theaterEle = GetTheaterInfo(reqtheater, theaterOrder[1])
             theater.append(theaterEle)
-
-    TOS = TheaterOrderedSchedule(
-        movie=movieObj,
-        theater=theater
-    )
-    TOSdict = TOS.GetJson()
-    movieJson = json.dumps(TOSdict, ensure_ascii=False)
+        else:
+            break
+    movieJson = json.dumps(theater, ensure_ascii=False)
 
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
@@ -205,10 +201,35 @@ def SearchMovieListWithPos(request):
     return JsonResponse(movieinfo, safe=False)
 
 def SearchMovieWithPos(request):
-    moiveJson = dict()
+    try:
+        longitude = float(request.GET['longitude'])
+        latitude = float(request.GET['latitude'])
+    except:
+        longitude = 0.0
+        latitude = 0.0
     
-    return JsonResponse(moiveJson)
-# Create your views here.
+    # 현재는 메가박스에 대한 정보만 가져올 수 있도록 되어 있다. 
+    allTheater = Theaters.objects.filter(brand__exact='megabox')
+    
+    theaterDistanceDict = dict()
+    for reqtheater in allTheater:
+        dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
+        theaterDistanceDict[reqtheater.id] = dist
+
+    theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
+
+    movie = []
+    movieScheduleSet = []
+    for theaterOrder in theaterOrderedSchedule:
+        if theaterOrder[1] <= 5000:
+            movieScheduleSet = movieScheduleSet | MovieSchedules.objects.filter(theater__extact=theaterOrder[0])
+        else:
+            break
+    movie
+
+    movieJson = json.dumps(theater, ensure_ascii=False)
+
+    return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
 
 def Test(request):

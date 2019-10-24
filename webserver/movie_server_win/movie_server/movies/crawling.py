@@ -97,11 +97,9 @@ def MegaBoxCrawl(theaterObj):
         
         movieSubtitle = movieRoomInfo.find('small')
         if movieSubtitle != None:
-            print(movieSubtitle)
             subtitleIdx = movieSubtitle.text.find('자막')
             
             if subtitleIdx > 0:
-                print('이건 자막입니다.)')
                 movieDict['subtitle'] = True
             else:
                 movieDict['subtitle'] = False
