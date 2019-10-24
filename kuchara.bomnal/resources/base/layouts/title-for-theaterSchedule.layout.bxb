@@ -1,4 +1,4 @@
-layout-macro-def (hbox-for-theaterInfo) {
+layout-macro-def (title-for-theaterSchedule) {
   params {
     param (theater) {
       type (Theater)
@@ -14,11 +14,12 @@ layout-macro-def (hbox-for-theaterInfo) {
             single-line {
               image {
                 shape (Square)
+                style (Title_S)
                 url ("#{value(theater.theaterInfo.iconUri)}")
               }
               spacer
               text {
-                style (Title_M)
+                style (Title_S)
                 value {
                   template ("#{value(theater.theaterInfo.theaterName)}")
                 }
@@ -31,8 +32,8 @@ layout-macro-def (hbox-for-theaterInfo) {
           content {
             single-line {
               text{
-                style (Title_M)
-                value(300m)
+                style (Title_S)
+                value(300m) // 거리로 수정 요망
               }
             }
           }

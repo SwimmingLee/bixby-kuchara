@@ -5,73 +5,59 @@ layout-macro-def (timetable-each) {
       min (Required) max (Many)
     }
   }
-
   content {
     compound-card {
+      on-click {
+        intent {
+          goal: Movie // 골은 target으로 설정하면 됨다
+        }
+      }
       content {
-        single-line { // startTime
-          text {
-            style (Title_M)
-            value {
-              template ("#{value(theaterSchedule.startTime)}")
-            }
-          }
-          text {
-            style (Detail_L_Soft)
-            value {
-              template ("~#{value(theaterSchedule.endTime)}")
-            }
-          }
-        }
-        single-line {
-          spacer
-        }
-        single-line {
-          if (theaterSchedule.availableSeat < 50) {
-            text {
-              style (Detail_M)
-              color (Red)
-              value {
-                template ("#{value(theaterSchedule.availableSeat)}")
+        hbox {
+          content {
+            vbox {
+              grow (2)
+              halign (Center)
+              valign (Middle)
+              content {
+                single-line { // startTime
+                  text { value ("#{value(theaterSchedule.startTime)} ") style (Title_S) }
+                  // spacer
+                  text { value ("~ #{value(theaterSchedule.endTime)}") style (Title_S) }
+                }
               }
             }
-          }
-          else {
-            text {
-              style (Detail_M)
-              color (Green)
-              value {
-                template ("#{value(theaterSchedule.availableSeat)}")
+            vbox {
+              grow (2)
+              halign (Start)
+              valign (Middle)
+              content {
+                single-line {
+                  text { value ("#{value(theaterSchedule.room)}") style (Detail_L) }
+                  spacer
+                  image { url ("#{value(theaterSchedule.roomProperty)}") }
+                }
               }
             }
-          }
-          text {
-            style (Detail_L)
-            value {
-              template ("/#{value(theaterSchedule.totalSeat)}")
+            vbox {
+              grow (1)
+              halign (Center)
+              valign (Middle)
+              content {
+                single-line {
+                  if (theaterSchedule.availableSeat < 50) {
+                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_M) color (Red) }
+                  }
+                  else {
+                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_M) color (Green) }
+                  }
+                  text { value ("/#{value(theaterSchedule.totalSeat)}") style (Detail_L) }
+                }
+              }
             }
-          }
-        }
-        single-line {
-          image {
-            // #{value} 로 사용하는 게 맞는지
-            url ("#{value(theaterSchedule.roomProperty)}")
           }
         }
       }
     }
-    // compound-card {
-    //   content {
-    //     for-each (theater.theaterSchedulePack) {
-    //       as(theaterSchedulePack) {
-    //         layout-macro (timetable-for-hbox) {
-    //           param (theaterSchedulePack) {
-    //             expression (theaterSchedulePack)
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
   }
 }

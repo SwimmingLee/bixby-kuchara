@@ -15,7 +15,7 @@ result-view {
         content {
           for-each(this.theater) {
             as(theater) {
-              layout-macro (hbox-for-theaterInfo) {
+              layout-macro (title-for-theaterSchedule) {
                 param (theater) {
                   expression (theater)
                 }
@@ -31,12 +31,22 @@ result-view {
                       }
                     }
                   }
+                  // for-each (theaterSchedulePack.theaterSchedule) {
+                  //   as (theaterSchedule) {
+                  //     layout-macro (timetable-each) {
+                  //       param(theaterSchedule) {
+                  //         expression (theaterSchedule)
+                  //       }
+                  //     }
+                  //   }
+                  // }
                 }
               }
             }
           }
         }
       }
+
     // list-of (this.theater){
     //   where-each (one) {
 
