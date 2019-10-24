@@ -1,0 +1,22 @@
+action (FindTheaterWithMovieSelected) {
+  description (find theater)
+  type (Search)
+  collect {
+    input (namedPointStructure) {
+      type (NamedPointStructure)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: NamedPointStructure
+          route: geo.CurrentLocation
+        }
+      }
+    }
+    input(movie){
+      type(Movie)
+      min (Optional) max (One)
+    }    
+  }
+  output (TheaterOrderedSchedule)
+  // output (MovieName)
+}

@@ -1,0 +1,11 @@
+action (MakeDetailFromTheaterOrderedSchedule) {
+  type(Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (theaterOrderedSchedule) {
+      type (TheaterOrderedSchedule)
+      min (Required) max (One)
+    }
+  }
+  output (MovieScheduleDetail)
+}

@@ -6,9 +6,13 @@ action (FilterMovieWithRoomFromTheaterOrder) {
       type (TheaterOrderedSchedule)
       min (Required) max (Many)
     }
-    input (room) {
-      type (Room)
+    input (roomProperty) {
+      type (RoomProperty)
       min (Required) max (One)
+    }
+    input(exceptExpression){
+      type(ExceptExpression)
+      min (Optional) max (One)
     }
   }
   output (TheaterOrderedSchedule)

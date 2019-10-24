@@ -1,4 +1,4 @@
-const movieReturn = require('./sample/newStructure.js');
+const movieReturn = require('../sample/newStructure.js');
 let console = require('console');
 let http = require('http');
 let config = require('config');
@@ -12,13 +12,10 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
   let options = { 
     format: 'json',
     query: { 
-      // longitude: long,
-      // latitude: lat,
-      longitude: 127.026451,
-      latitude: 37.498241
+      longitude: long,
+      latitude: lat,
     }
   };
-
   // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options); 
   // let response = http.getUrl(config.get('remote.url') + "/movie_api/searchWithPos/", options)
   // console.log(response);

@@ -24,8 +24,6 @@ module.exports =
           "regionCode": 25,
           'iconUri':"/images/brand/theater/1x/cgv.png",
         },
-        'theaterSchedulePack' : [
-          {
           'theaterSchedule': [
             {
               'startTime': '18:00',
@@ -57,10 +55,7 @@ module.exports =
               "dubbing": true,
               "room": '7관',
               "roomProperty": "/images/roomProperty/padding_4px.png"
-            }
-          ]},
-          {
-          'theaterSchedule': [
+            },
             {
               'startTime': '18:00',
               'endTime': '19:50',
@@ -92,10 +87,7 @@ module.exports =
               "dubbing": true,
               "room": '7관',
               "roomProperty": 'IMAX'
-            }
-          ] },
-          {
-          'theaterSchedule': [
+            },
             {
               'startTime': '18:00',
               'endTime': '19:50',
@@ -127,10 +119,7 @@ module.exports =
               "dubbing": true,
               "room": '7관',
               "roomProperty": "/images/roomProperty/padding_4px.png"
-            }
-          ] },
-          {
-          'theaterSchedule': [
+            },
             {
               'startTime': '18:00',
               'endTime': '19:50',
@@ -142,8 +131,6 @@ module.exports =
               "roomProperty": "/images/roomProperty/padding_8px.png"
             },
           ]
-          }
-        ]
       },
       {
         'theaterInfo': {
@@ -155,8 +142,6 @@ module.exports =
           "regionCode": 25,
           'iconUri':"/images/brand/theater/1x/lotte.png",  // 만들어야 함!
         },
-        'theaterSchedulePack' : [
-          {
           'theaterSchedule': [
           {
             'startTime': '18:00',
@@ -188,11 +173,7 @@ module.exports =
             "dubbing": true,
             "room": '7관',
             "roomProperty": "/images/roomProperty/padding_4px.png"
-          }
-          ]},
-          {
-            'theaterSchedule':
-          [
+          },
           {
             'startTime': '18:00',
             'endTime': '19:50',
@@ -203,8 +184,6 @@ module.exports =
             "room": '7관',
             "roomProperty": "/images/roomProperty/padding_8px.png"
           },
-          ]
-          }
         ]
       },
     ]

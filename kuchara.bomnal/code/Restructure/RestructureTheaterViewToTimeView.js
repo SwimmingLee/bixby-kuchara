@@ -27,30 +27,36 @@ module.exports.function = function restructureTheaterViewToTimeView (theaterOrde
     let newRegionCode = theaterElement.theaterInfo.regionCode;
     let newIconUri = theaterElement.theaterInfo.iconUri;
 
-    theaterElement.theaterSchedulePack.forEach(function(schedulePackElement){
-      schedulePackElement.theaterSchedule.forEach(function(scheduleElement){
-        timeOrderedSchedule.timeSchedule.push({
-          'startTime': scheduleElement.startTime,
-          'endTime': scheduleElement.endTime,
-          'totalSeat': scheduleElement.totalSeat,
-          'availableSeat': scheduleElement.availableSeat,
-          "subtitle": scheduleElement.subtitle,               // 자막여부
-          "dubbing": scheduleElement.dubbing,
-          "room": scheduleElement.room,
-          "roomProperty": scheduleElement.roomProperty,
+    theaterElement.theaterSchedule.forEach(function(scheduleElement){
+      timeOrderedSchedule.timeSchedule.push({
+        'startTime': scheduleElement.startTime,
+        'endTime': scheduleElement.endTime,
+        'totalSeat': scheduleElement.totalSeat,
+        'availableSeat': scheduleElement.availableSeat,
+        "subtitle": scheduleElement.subtitle,               // 자막여부
+        "dubbing": scheduleElement.dubbing,
+        "room": scheduleElement.room,
+        "roomProperty": scheduleElement.roomProperty,
 
-          "theaterInfo": {
-            "theaterName": newTheaterName,
-            "theaterCode": newTheaterCode,
-            "regionCode": newRegionCode,
-            "brand": newBrand,
-            'latitude':newLatitude,
-            'longitude':newLongitude,
-            'iconUri': newIconUri
-          }
-        })
+        "theaterInfo": {
+          "theaterName": newTheaterName,
+          "theaterCode": newTheaterCode,
+          "regionCode": newRegionCode,
+          "brand": newBrand,
+          'latitude':newLatitude,
+          'longitude':newLongitude,
+          'iconUri': newIconUri
+        }
       })
     })
+  })
+
+  timeOrderedSchedule.timeSchedule.sort(function(a, b){
+    let time = a.startTime.split(":");
+    let aTime = time[0]*60 + time[1]*1;
+    time = b.startTime.split(":");
+    let bTime = time[0]*60 + time[1]*1;
+    return aTime-bTime;
   })
 
   return timeOrderedSchedule

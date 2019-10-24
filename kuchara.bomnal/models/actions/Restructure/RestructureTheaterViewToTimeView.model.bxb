@@ -1,5 +1,6 @@
 action (RestructureTheaterViewToTimeView) {
   description (__DESCRIPTION__)
+  type(Search)
   collect {
     input (theaterOrderedSchedule) {
       type (TheaterOrderedSchedule)
