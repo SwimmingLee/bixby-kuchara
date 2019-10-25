@@ -16,6 +16,7 @@ from .models import NamedPointStructres
 from .update import GetMovieInfo
 from .update import GetNaverMovieInfo
 from .crawling import MegaBoxCrawl
+from .crawling import LotteCinemaCrawl
 from .getdistance import get_euclidean_distance
 
 import json
@@ -116,14 +117,15 @@ def SearchTheaterOrderedScheduleWithPos(request):
         longitude = float(request.GET['longitude'])
         latitude = float(request.GET['latitude'])
         movieName = request.GET['movieName']
-    except:
+    except: 
         longitude = 0.0
         latitude = 0.0
     
     print('long:{}, lat:{}, movieName:{}'.format(latitude, longitude, movieName))
 
-    # 현재는 메가박스에 대한 정보만 가져올 수 있도록 되어 있다. 
+    # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
     allTheater = Theaters.objects.filter(brand__exact='megabox')
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
     movieObj = Movies.objects.get(movieName=movieName)
 
     
@@ -140,6 +142,15 @@ def SearchTheaterOrderedScheduleWithPos(request):
         if orderCnt == 0 or theaterOrder[1] < 3000:
             orderCnt = orderCnt + 1
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
+            diffTime = GetDiffTime(reqtheater.updatedTime, datetime.now())    
+            if (diffTime > 60*15):
+                if reqtheater.brand == 'megabox':
+                    MegaBoxCrawl(reqtheater)
+                elif reqtheater.brand == 'lottecinema':
+                    LotteCinemaCrawl(reqtheater)
+
+                reqtheater.updatedTime = datetime.now()
+                reqtheater.save() 
             movieScheduleList = GetMovieScheduleList(reqtheater, movieObj.id)
             theaterEle = {
                 'theaterInfo':reqtheater,
@@ -170,6 +181,19 @@ def SearchMegaboxMovie(request):
     movieJson = json.dumps(movieJson, ensure_ascii=False)
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
+def SearchLottecinemaMovie(request):
+    allTheater = Theaters.objects.filter(brand__exact='lottecinema')
+    movieJson = []
+    for idx, reqtheater in enumerate(allTheater):
+        movieList = LotteCinemaCrawl(reqtheater)
+        movieJson.append(movieList)
+ 
+    
+
+    movieJson = json.dumps(movieJson, ensure_ascii=False)
+    return HttpResponse(movieJson, content_type="text/json-comment-filtered")
+    
+
 def SearchTheaterWithPos(request):
     try:
         longitude = float(request.GET['longitude'])
@@ -179,9 +203,10 @@ def SearchTheaterWithPos(request):
         latitude = 0.0
     
 
-    # 현재는 메가박스에 대한 정보만 가져올 수 있도록 되어 있다. 
-    allTheater = Theaters.objects.filter(brand__exact='megabox')
-    
+    # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
+    allTheater = Theaters.objects.filter(brand__exact='lottecinema')
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='megabox'))
+
     theaterDistanceDict = dict()
     for reqtheater in allTheater:
         dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
@@ -191,7 +216,7 @@ def SearchTheaterWithPos(request):
     orderCnt = 0
     theater = []
     for theaterOrder in theaterOrderedSchedule:
-        if orderCnt <= 10:
+        if orderCnt <= 20:
             orderCnt = orderCnt + 1
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             theaterEle = GetTheaterInfo(reqtheater, theaterOrder[1])
@@ -212,9 +237,10 @@ def SearchMovieListWithPos(request):
         longitude = 0.0
         latitude = 0.0
     
-    # 현재는 메가박스에 대한 정보만 가져올 수 있도록 되어 있다. 
+    # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
     allTheater = Theaters.objects.filter(brand__exact='megabox')
-    
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
+
     theaterDistanceDict = dict()
     for reqtheater in allTheater:
         dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
@@ -230,13 +256,17 @@ def SearchMovieListWithPos(request):
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             diffTime = GetDiffTime(reqtheater.updatedTime, datetime.now())    
             if (diffTime > 60*15):
-                MegaBoxCrawl(reqtheater)
+                if reqtheater.brand == 'megabox':
+                    MegaBoxCrawl(reqtheater)
+                elif reqtheater.brand == 'lottecinema':
+                    LotteCinemaCrawl(reqtheater)
+
                 reqtheater.updatedTime = datetime.now()
                 reqtheater.save() 
             if idx == 0:
                 movieScheduleSet = MovieSchedules.objects.filter(theater__exact=theaterOrder[0])
             else:
-                movieScheduleSet.union(MovieSchedules.objects.filter(theater__exact=theaterOrder[0]))
+                movieScheduleSet = movieScheduleSet.union(MovieSchedules.objects.filter(theater__exact=theaterOrder[0]))
             idx = idx + 1
         else:
             break

@@ -78,6 +78,10 @@ def GetMovieInfo(movieName):
         movieInfos = json.loads(movieInfos)
         print(movieName)
  
+        if len(movieInfos['items']) == 0:
+            print("Drong?")
+            return None
+
         for movieInfo in movieInfos['items']:
             link = movieInfo['link']
             imgUrl = movieInfo["image"]

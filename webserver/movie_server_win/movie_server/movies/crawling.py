@@ -19,6 +19,7 @@ import time
 import json
 import re
 import sys
+import copy
 from .models import Movies
 from .models import MovieSchedules
 from .update import GetMovieInfo
@@ -31,6 +32,94 @@ def WebDriverInit():
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
     driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
+
+def LotteCinemaCrawl(theaterObj):
+    movieObj = ""
+    movieList = []
+    movieDict = dict()
+    print(theaterObj.theaterName)
+
+    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
+    legacyMovieSchedules.delete()
+
+    region = theaterObj.regionCode
+    cinema = theaterObj.theaterCode
+
+    url = 'http://www.lottecinema.co.kr/LCHS/Contents/Cinema/Cinema-Detail.aspx?divisionCode=1&detailDivisionCode={}&cinemaID={}'.format(region, cinema)
+    driver.get(url)
+    time.sleep(2)
+    req = driver.page_source
+    bs = BeautifulSoup(req, 'html.parser')
+
+    movieSchedule = bs.find('div', {'class':re.compile('time_aType .*')})
+    movieScheduleLists = movieSchedule.findAll('dl', {'class':re.compile('time_line .*')})
+    for movieScheduleList in movieScheduleLists:
+        movieRating = movieScheduleList.find('span', {'class':re.compile('grade_.*')})
+        #print(movieRating.text)
+        movieName = movieRating.next_sibling
+        #print(movieName)
+        movieDict['movieName'] = movieName
+        movieObj = Movies.objects.filter(movieName=movieName)
+        movieObj = movieObj.first()
+        if movieObj == None:
+            movieObj = GetMovieInfo(movieName)
+            if movieObj == None:
+                continue  
+        movieScreens = movieScheduleList.findAll('dd', {'class':re.compile('screen.*')})
+        for movieScreen in movieScreens:
+            movieCineD1 = movieScreen.find('ul', {'class':'cineD1'}).findAll('li')
+            movieDict['subtitle'] = False
+            movieDict['dubbing'] = False
+            for cineD1 in movieCineD1:
+                if cineD1.text.find('자막') >= 0:
+                    movieDict['subtitle'] = True
+                elif cineD1.text.find('더빙') >= 0:
+                    movieDict['dubbing'] = True 
+            movieTheaterTimes = movieScreen.find('ul', {'class':re.compile('theater_time *')}).findAll('li', recursive=False)
+            for movieTheaterTime in movieTheaterTimes:
+                movieRoom = movieTheaterTime.find('span', {'class':re.compile('cineD.*')})
+                movieDict['room'] = movieRoom.text
+                # print(movieRoom.text)
+                movieTime = movieTheaterTime.find('span', {'class':'clock'})
+                startTimeStr, endTimeStr = movieTime.text.split('~')
+
+                hour, minute = startTimeStr.split(':')
+                if hour.find('심야') >= 0:
+                    movieDict['lateNight'] = True
+                    movieDict['morning'] = False
+                    hour = hour.replace('심야', '')
+                elif hour.find('조조') >= 0:
+                    movieDict['lateNight'] = False
+                    movieDict['morning'] = True
+                    hour = hour.replace('조조', '')
+                else:
+                    movieDict['lateNight'] = False
+                    movieDict['morning'] = False
+                movieDict['startTime'] = int(hour)*100 + int(minute)
+
+                hour, minute = endTimeStr.split(':')
+                movieDict['endTime'] = int(hour)*100 + int(minute)
+
+                #print(movieTime.text)
+                movieSeatInfo = movieTheaterTime.find('span', {'class':'ppNum'})
+                if movieSeatInfo != None:
+                    if movieSeatInfo.text.find('마감') >= 0:
+                        movieDict['avaliableSeat'] = -1
+                        movieDict['totalSeat'] = -1
+                    else:    
+                        avaliableSeatStr, totalSeatStr = movieSeatInfo.text.split('/')
+                        movieDict['avaliableSeat'] = re.findall('\d+', avaliableSeatStr)[0]
+                        movieDict['totalSeat'] = re.findall('\d+', totalSeatStr)[0]
+                    #print(movieSeatInfo.text)
+                
+                MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
+                                    totalSeat=movieDict['totalSeat'], availableSeat=movieDict['avaliableSeat'], dubbing=movieDict['dubbing'], \
+                                    startTime=movieDict['startTime'], endTime=movieDict['endTime'], subtitle=movieDict['subtitle'], \
+                                    lateNight=movieDict['lateNight'], morning=movieDict['morning']
+                                )
+                MovieScheduleEle.save()
+                movieList.append(copy.copy(movieDict))
+    return movieList
 
 
 def MegaBoxCrawl(theaterObj):
