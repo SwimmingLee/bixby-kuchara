@@ -41,7 +41,7 @@
                 longitude: Longitude(theaterInfo.longitude)
                 iconUri: IconUri(theaterInfo.iconUri)
               }
-              theaterSchedule {
+              theaterSchedule: TheaterSchedule {
                 startTime: StartTime(theaterSchedule.startTime)
                 
               }

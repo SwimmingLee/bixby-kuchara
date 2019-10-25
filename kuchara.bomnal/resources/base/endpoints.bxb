@@ -7,16 +7,6 @@ endpoints {
     }
 
     // find movie schedule
-    action-endpoint (FindMovieWithMovieName) {
-      accepted-inputs (movieInput)
-      local-endpoint (FindMovieWithMovieName.js)
-    }
-
-    action-endpoint (FindMovieWithTheater) {
-      accepted-inputs (brand, namedPointStructure)
-      local-endpoint (FindMovieWithTheater.js)
-    }
-
     action-endpoint (FindMovieWithLocation) {
       accepted-inputs (namedPointStructure)
       local-endpoint (FindMovieWithLocation.js)
