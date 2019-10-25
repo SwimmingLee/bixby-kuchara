@@ -17,6 +17,7 @@ from .update import GetMovieInfo
 from .update import GetNaverMovieInfo
 from .crawling import MegaBoxCrawl
 from .crawling import LotteCinemaCrawl
+from .crawling import CGVCrawl
 from .getdistance import get_euclidean_distance
 
 import json
@@ -187,12 +188,21 @@ def SearchLottecinemaMovie(request):
     for idx, reqtheater in enumerate(allTheater):
         movieList = LotteCinemaCrawl(reqtheater)
         movieJson.append(movieList)
- 
-    
 
     movieJson = json.dumps(movieJson, ensure_ascii=False)
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
-    
+
+def SearchCGVMovie(request):
+    allTheater = Theaters.objects.filter(brand__exact='cgv')
+    movieJson = []
+    for idx, reqtheater in enumerate(allTheater):
+        movieList = CGVCrawl(reqtheater)
+        movieJson.append(movieList)
+        if idx > 1:
+            break
+
+    movieJson = json.dumps(movieJson, ensure_ascii=False)
+    return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
 def SearchTheaterWithPos(request):
     try:

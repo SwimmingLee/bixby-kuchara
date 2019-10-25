@@ -33,6 +33,56 @@ def WebDriverInit():
     options.add_argument('headless')
     driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
 
+def CGVCrawl(theaterObj):   
+    movieObj = ""
+    movieList = []
+    movieDict = dict()
+    print(theaterObj.theaterName)
+
+    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
+    legacyMovieSchedules.delete()
+
+    region = theaterObj.regionCode
+    cinema = theaterObj.theaterCode 
+    url = 'http://www.cgv.co.kr/common/showtimes/iframeTheater.aspx?areacode={}&theatercode={}&date=20191010'.format(region, cinema)
+    driver.get(url)
+
+    req = driver.page_source
+    bs = BeautifulSoup(req, 'html.parser')
+
+    movieSchedule = bs.find('div', {'class':'sect-showtimes'}).find('ul')
+
+    movieLists = movieSchedule.findAll('li', recursive=False)
+
+    for movieList in movieLists:
+        movieRating = movieList.find('span', {'class':re.compile('ico-grade.*')})
+        print(movieRating.text.strip())
+        movieName = movieList.find('strong')
+        print(movieName.text.strip())
+        movieHallTypes = movieList.findAll('div', {'class':'type-hall'})
+        for movieHallType in movieHallTypes:
+            movieType = movieHallType.ul.find('li')
+            print(movieType.text.strip())
+
+            movieRoom = movieType.next_sibling.next_sibling
+            print(movieRoom.text.strip())
+
+            totalSeat = movieRoom.next_sibling.next_sibling
+            print(totalSeat.text.replace(" ", "").replace('\n', ''))
+
+            movieTimeLists = movieHallType.find('div', {'class':'info-timetable'}).findAll('li')
+            for movieTimeList in movieTimeLists:
+                startTime = movieTimeList.find('em')
+                print(startTime.text)
+
+                availableSeat = startTime.next_sibling
+                if (availableSeat.text != "마감"):
+                    movieNightType = availableSeat["class"]
+                    print(movieNightType)
+                print(availableSeat.text)
+
+
+
 def LotteCinemaCrawl(theaterObj):
     movieObj = ""
     movieList = []

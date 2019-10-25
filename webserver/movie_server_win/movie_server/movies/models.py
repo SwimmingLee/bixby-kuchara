@@ -29,8 +29,8 @@ class NamedPointStructres(models.Model):
 
 class Theaters(models.Model):
     theaterName = models.CharField(max_length=20)
-    regionCode = models.IntegerField()
-    theaterCode = models.IntegerField()
+    regionCode = models.CharField(max_length=10)
+    theaterCode = models.CharField(max_length=10)
     longitude = models.FloatField()
     latitude = models.FloatField()
     brand = models.CharField(max_length=30)
