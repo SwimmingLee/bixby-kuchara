@@ -1,4 +1,4 @@
-action (FilterMovieWithTheaterName) {
+action (FilterMovieWithTheaterNameAndThOS) {
   description (filter movie with theater name input)
   type (Search)
   collect {
@@ -8,7 +8,11 @@ action (FilterMovieWithTheaterName) {
     }
     input (theaterName) {
       type (TheaterName)
-      min (Required) max (One)
+      min (Optional) max (One)
+    }
+    input(brand){
+      type(Brand)
+      min(Required) max (One)
     }
     input(exceptExpression){
       type(ExceptExpression)

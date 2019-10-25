@@ -1,0 +1,6 @@
+train (t-xvoakke2eq9hhciuoogrflhcm) {
+  utterance ("[g:FilterMovieWithTheaterName:continue:TheaterOrderedSchedule,r:FindMovieWithLocation] (동대문)[v:geo.SearchTerm] (메가박스)[v:Brand:megabox] 상영시간표")
+  plan (jY+9T8MwEMVfoXyVshQWVgRICCkzKwxMbUEkaufDPsVWE1ty7XTjb8eJWihuByzd4He/e3cPF7hbBKHIUfZpa0NVVigmz+7NSXYsc6FYhorxkGCvuorUxDaa59qr9dSUasZVgr44MvK/e54S7IOX3gXhg+NC1zzTvCrserb9tMu7K/CYLoh44v4L3+7EMfInzNgK8toa3CRUG0++W218vjkK9wkzoQXv40aNbrKS7ZYJLjfac/B2GcoyhsX1HvFrpXjbI2dyQhXsagzRwwEO0ccRjnGCU5xhgPOoI3Z6O51B1ND1/lb7+p3XMNL4Bg==)
+  enabled (false)
+  last-modified (1571999053784)
+}

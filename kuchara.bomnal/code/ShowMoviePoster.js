@@ -7,8 +7,10 @@ const movieReturn = require('./sample/exampleMovieReturn.js');
 module.exports.function = function showMoviePoster (namedPointStructure) {
 
   let targetPosition = namedPointStructure;
-  let long = targetPosition.point.longitude;
-  let lat = targetPosition.point.latitutde;
+  // let long = targetPosition.point.longitude;
+  // let lat = targetPosition.point.latitutde;
+  let long = 127.123843;
+  let lat = 37.481394;
 
   let options = { 
     format: 'json',
@@ -18,9 +20,7 @@ module.exports.function = function showMoviePoster (namedPointStructure) {
     }
   };
 
-  // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options); 
-  
-  // console.log(response);
+  let response = http.getUrl(config.get('remote.url') + 'searchMovieListWithPos/', options); 
 
-  return movieReturn;
+  return response;
 }

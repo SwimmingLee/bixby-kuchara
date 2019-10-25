@@ -1,0 +1,23 @@
+action (FilterMovieWithTheaterNameAndTiOS) {
+  description (filter movie with theater name input)
+  type (Search)
+  collect {
+    input (timeOrderedSchedule) {
+      type (TimeOrderedSchedule)
+      min (Required) max (Many)
+    }
+    input (theaterName) {
+      type (TheaterName)
+      min (Optional) max (One)
+    }
+    input(brand){
+      type(Brand)
+      min(Required) max (One)
+    }
+    input(exceptExpression){
+      type(ExceptExpression)
+      min (Optional) max (One)
+    }
+  }
+  output (TimeOrderedSchedule)
+}

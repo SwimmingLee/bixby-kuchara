@@ -13,5 +13,5 @@ train (t-sagto8yhgp0ljbifgzhqltm86) {
 train (t-sc72ecc8pb7pl1hrj0uz235ey) {
   utterance ([g:FindMovieWithLocation] 근처 영화관 시간표 보여줘)
   plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
-  last-modified (1571918852004)
+  last-modified (1572011332943)
 }

@@ -67,19 +67,29 @@ endpoints {
     //   local-endpoint (FilterMovieWithMovieName.js)
     // }
 
-    // action-endpoint (FilterMovieWithTheaterName) {
-    //   accepted-inputs (theaterOrderedSchedule, theaterName, exceptExpression)
-    //   local-endpoint (FilterMovieWithTheaterName.js)
-    // }
+    action-endpoint (FilterMovieWithTheaterNameAndThOS) {
+      accepted-inputs (theaterOrderedSchedule, theaterName, brand, exceptExpression)
+      local-endpoint (Filter/FilterMovieWithTheaterNameAndThOS.js)
+    }
+
+    action-endpoint (FilterMovieWithTheaterNameAndTiOS) {
+      accepted-inputs (timeOrderedSchedule, theaterName, brand, exceptExpression)
+      local-endpoint (Filter/FilterMovieWithTheaterNameAndTiOS.js)
+    }
+
+    action-endpoint (FilterMovieWithTimeAndThOS) {
+      accepted-inputs (theaterOrderedSchedule, dateTimeExpression, isStartTime)
+      local-endpoint (Filter/FilterMovieWithTimeAndThOS.js)
+    }
+
+    action-endpoint (FilterMovieWithTimeAndTiOS) {
+      accepted-inputs (timeOrderedSchedule, dateTimeExpression, isStartTime)
+      local-endpoint (Filter/FilterMovieWithTimeAndTiOS.js)
+    }
 
     // action-endpoint (FilterMovieWithGenre) {
     //   accepted-inputs (movie, genre, exceptExpression)
     //   local-endpoint (FilterMovieWithGenre.js)
-    // }
-
-    // action-endpoint (FilterMovieWithTime) {
-    //   accepted-inputs (theaterOrderedSchedule, dateTimeExpression, isStartTime)
-    //   local-endpoint (FilterMovieWithTime.js)
     // }
 
     // restructure 

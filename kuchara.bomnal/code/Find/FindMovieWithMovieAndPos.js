@@ -5,28 +5,21 @@ let config = require('config');
 
 module.exports.function = function findMovieWithMovieAndPos (movieInput, namedPointStructure) {
   let targetPosition = namedPointStructure;
-  let long = targetPosition.point.longitude;
-  let lat = targetPosition.point.latitutde;
+  // let long = targetPosition.point.longitude;
+  // let lat = targetPosition.point.latitutde;
+  let long = 127.123843;
+  let lat = 37.481394;
 
   let options = { 
     format: 'json',
     query: { 
       longitude: long,
       latitude: lat,
+      movieName: movieInput.movieName,
     }
   };
   
-  // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options); 
-  // response.theater.forEach(function(theaterElement){
-  //   if(theaterElement.theaterInfo.brand == 'cgv'){
-  //     theaterElement.theaterInfo.iconUri = "/images/brand/theater/1x/cgv.png"
-  //   } else if(theaterElement.theaterInfo.brand == 'megabox'){
-  //     theaterElement.theaterInfo.iconUri = "/images/brand/theater/1x/lottecinema.png"
-  //   } else {
-  //     theaterElement.theaterInfo.iconUri = "/images/brand/theater/1x/megabox.png"
-  //   }
-  // })
-  // console.log(response);
+  let response = http.getUrl(config.get('remote.url') + 'searchTheaterOrderedScheduleWithPos/', options); 
 
-  return movieReturn;
+  return response;
 }
