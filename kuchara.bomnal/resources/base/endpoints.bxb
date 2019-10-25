@@ -5,11 +5,16 @@ endpoints {
       accepted-inputs (namedPointStructure)
       local-endpoint (ShowMoviePoster.js)
     }
-
+    
     // find movie schedule
+    action-endpoint (FindMovieWithMovieAndPos) {
+      accepted-inputs (movieInput, namedPointStructure)
+      local-endpoint (Find/FindMovieWithMovieAndPos.js)
+    }
+
     action-endpoint (FindMovieWithLocation) {
       accepted-inputs (namedPointStructure)
-      local-endpoint (FindMovieWithLocation.js)
+      local-endpoint (Find/FindMovieWithLocation.js)
     }
 
     // make structure
@@ -30,34 +35,34 @@ endpoints {
 
     // filter
     action-endpoint (FilterMovieWithRoomFromTheaterOrder) {
-      accepted-inputs (theaterOrderedSchedule, room)
-      local-endpoint (FilterMovieWithRoomFromTheaterOrder.js)
+      accepted-inputs (movieSchedule, roomProperty)
+      local-endpoint (Filter/FilterMovieWithRoomFromTheaterOrder.js)
     }
 
     action-endpoint (FilterMovieWithMovieName) {
-      accepted-inputs (theaterOrderedSchedule, movieName, exceptExpression)
-      local-endpoint (FilterMovieWithMovieName.js)
+      accepted-inputs (timeOrderedSchedule, movieName, exceptExpression)
+      local-endpoint (Filter/FilterMovieWithMovieName.js)
     }
 
     action-endpoint (FilterMovieWithTheaterName) {
       accepted-inputs (theaterOrderedSchedule, theaterName, exceptExpression)
-      local-endpoint (FilterMovieWithTheaterName.js)
+      local-endpoint (Filter/FilterMovieWithTheaterName.js)
     }
 
     action-endpoint (FilterMovieWithGenre) {
       accepted-inputs (movie, genre, exceptExpression)
-      local-endpoint (FilterMovieWithGenre.js)
+      local-endpoint (Filter/FilterMovieWithGenre.js)
     }
 
     action-endpoint (FilterMovieWithTime) {
       accepted-inputs (theaterOrderedSchedule, dateTimeExpression, isStartTime)
-      local-endpoint (FilterMovieWithTime.js)
+      local-endpoint (Filter/FilterMovieWithTime.js)
     }
 
     // restructure 
     action-endpoint (RestructureTheaterViewToTimeView) {
       accepted-inputs (theaterOrderedSchedule)
-      local-endpoint (RestructureTheaterViewToTimeView.js)
+      local-endpoint (Restructure/RestructureTheaterViewToTimeView.js)
     }
 
     // action-endpoint (FindMovieWithFullUtterance) {

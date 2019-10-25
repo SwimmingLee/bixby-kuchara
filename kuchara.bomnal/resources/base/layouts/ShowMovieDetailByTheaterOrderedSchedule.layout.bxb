@@ -1,0 +1,132 @@
+layout-macro-def (showMovieDetailByTheaterOrderedSchedule) {
+  params {
+    param (theaterOrderedSchedule) {
+      type (TheaterOrderedSchedule)
+      min (Required) max (Many)
+    }
+  }
+  content {
+    section {
+      content {
+        hbox { // 영화 정보
+          content {
+            vbox { // 영화 포스터 이미지
+              grow (1)
+              content {
+                single-line { image ("") }// url
+              }
+            }
+            vbox {
+              grow (2)
+              valign (Top)
+              content {
+                single-line {
+                  text { value ("") style (Title_S) } // 영화 이름
+                  image ("") // 영화 이름 옆에 자그마낳게 관람 등급 이미지 표시
+                }
+                text { value ("") style (Detail_L_Soft) } // 장르 표시
+                single-line {
+                  image ("") // 특별관 이미지 url
+                }
+                single-line {
+                  image { url ("/images/ranking_star_white.png") } // 별점 이미지
+                  text { value ("") style (Detail_L_Soft) } // 유저 평점
+                  text { value ("/10.0") style (Detail_L_Soft) } // 10점
+                }
+              }
+            }
+          }
+        }
+        compound-card { // 영화관 정보
+          content {
+            hbox {
+              content {
+                vbox {
+                  halign (Start)
+                  valign (Middle)
+                  content {
+                    single-line { // 브랜드, 영화관
+                      text { value ("영화관") style (Detail_M_Soft) }
+                      text { value (" | ") style (Detail_L) } 
+                    }
+                  }
+                }
+                vbox { // 거리
+                  halign (End)
+                  valign (Bottom)
+                  content {
+                    text { value () style (Detail_M_Soft) }
+                  }
+                }
+              }
+            }
+          }
+        }
+        split-input-cell {
+          left {
+            input-cell {
+              label {
+                template ("날짜") 
+              }
+              value {
+                template ("") // 오늘 날짜
+              }
+            }
+          }
+          right {
+            input-cell {
+              label {
+                template ("시간")
+              }
+              value {
+                template ("") // 선택된 영화 시간
+              }
+            }
+          }
+        }
+            // 잔여좌석, 금액 - area
+        // title-area { // 좌석
+        //   halign (Start)
+        //   slot1 {
+        //     text { value ("잔여좌석") style (Detail_M) }
+        //   }
+        //   slot2 {
+        //     single-line {
+        //       text { value ("") style (Detail_L) } // 현재 좌석
+        //       text { value ("") style (Detail_L) } // 총 좌석
+        //     }
+        //   }
+        // }
+        // title-area { // 금액
+        //   halign (Start)
+        //   slot1 {
+        //     text { value ("금액(성인 1인 기준)") style (Detail_M) }
+        //   }
+        //   slot2 {
+        //     single-line {
+        //       text { value ("") style (Detail_L) } // min 비용
+        //       text { value ("") style (Detail_L) } // max 비용
+        //     }
+        //   }
+        // }
+
+        // input-cell { // 잔여좌석, 금액 - box
+        //   label {
+        //     template ("잔여좌석") 
+        //   }
+        //   value {
+        //     template ("/") // 현재 좌석 / 총 좌석
+        //   }
+        // }
+        // input-cell {
+        //   label {
+        //     template ("금액(성인 1인 기준)") 
+        //   }
+        //   value {
+        //     template ("~") // min 비용 ~ max 비용
+        //   }
+        // }
+      }
+    }
+  }
+}
