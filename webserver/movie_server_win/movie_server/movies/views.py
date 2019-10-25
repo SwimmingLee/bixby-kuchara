@@ -227,6 +227,12 @@ def SearchMovieListWithPos(request):
     idx = 0
     for theaterOrder in theaterOrderedSchedule:
         if theaterOrder[1] <= 5000:
+            reqtheater = Theaters.objects.get(id=theaterOrder[0])
+            diffTime = GetDiffTime(reqtheater.updatedTime, datetime.now())    
+            if (diffTime > 60*15):
+                MegaBoxCrawl(reqtheater)
+                reqtheater.updatedTime = datetime.now()
+                reqtheater.save() 
             if idx == 0:
                 movieScheduleSet = MovieSchedules.objects.filter(theater__exact=theaterOrder[0])
             else:
