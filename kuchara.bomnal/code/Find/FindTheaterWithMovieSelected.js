@@ -1,37 +1,22 @@
 let http = require('http');
 let config = require('config');
 
-module.exports.function = function findTheaterWithMovieSelected (namedPointStructure, movie) {
+module.exports.function = function findTheaterWithMovieSelected (namedPointStructure) {
 
-  let long = namedPointStructure.point.longitude;
-  let lat = namedPointStructure.point.latitutde;
+  // let long = namedPointStructure.point.longitude;
+  // let lat = namedPointStructure.point.latitutde;
+  let long = 127.123843;
+  let lat = 37.481394;
 
-  if(typeof movie == 'undefined'){
-    let options = { 
-      format: 'json',
-      query: { 
-        longitude: long,
-        latitude: lat,
-        movieName: movie.movieName
-      }
-    };
-  // let response = http.getUrl(config.get('remote.url') + '/api-name', options); 
-  // 위치와 영화이름을 받아서 해당 위치 주변의 해당영화를 상영하는 영화관 리스트(TheaterInfo-TimeOrderedSchedule) 반환 
-  } else {
-    let options = { 
-      format: 'json',
-      query: { 
-        longitude: long,
-        latitude: lat,
-      }
-    };
-    // let response = http.getUrl(config.get('remote.url') + '/api-name', options); 
-    // 위치를 받아서 해당 위치 주변의 영화관 리스트(TheaterInfo-TimeOrderedSchedule) 반환 
-  }
+  let options = { 
+    format: 'json',
+    query: { 
+      longitude: long,
+      latitude: lat,
 
+    }
+  };
+  let response = http.getUrl(config.get('remote.url') + 'searchTheaterWithPosWithMovieName/', options); 
 
-  // console.log(response);
-
-
-  return {}
+  return response;
 }

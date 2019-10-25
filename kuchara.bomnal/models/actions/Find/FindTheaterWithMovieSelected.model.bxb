@@ -11,12 +11,7 @@ action (FindTheaterWithMovieSelected) {
           route: geo.CurrentLocation
         }
       }
-    }
-    input(movie){
-      type(Movie)
-      min (Optional) max (One)
-    }    
+    }   
   }
-  output (TheaterOrderedSchedule)
-  // output (MovieName)
+  output (TheaterInfo)
 }

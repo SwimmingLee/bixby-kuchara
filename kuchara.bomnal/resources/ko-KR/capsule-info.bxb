@@ -1,8 +1,17 @@
 capsule-info {
   display-name (봄날)
   developer-name (__COMPANY_NAME__)
-  icon-asset (icon.png)
+  icon-asset (/images/watching_ratings/rating_all.png)
   description ("__DESCRIPTION__")
   website-url (https://example.com/)
   terms-url (https://example.com/terms-of-use/)
+  dispatch-name (동네영화관)
+  dispatch-aliases{
+    alias (동네 영화관)
+    alias (동래영화관)
+    alias (동래 영화관)
+    alias (동래여관)
+    alias (동래 여관)
+
+  }
 }

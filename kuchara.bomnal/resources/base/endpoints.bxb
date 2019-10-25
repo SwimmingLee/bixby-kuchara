@@ -25,7 +25,7 @@ endpoints {
     
     // find theater
     action-endpoint (FindTheaterWithMovieSelected) {
-      accepted-inputs (namedPointStructure, movie)
+      accepted-inputs (namedPointStructure)
       local-endpoint (Find/FindTheaterWithMovieSelected.js)
     }
 
@@ -41,19 +41,14 @@ endpoints {
       local-endpoint (MakeDateTimeExpression.js)
     }
 
-    action-endpoint (MakeTheaterStructure) {
-      accepted-inputs (brand, theaterName)
-      local-endpoint (MakeTheaterStructure.js)
-    }
-
     action-endpoint (MakeDetailFromTimeOrderedSchedule) {
       accepted-inputs (timeOrderedSchedule)
-      local-endpoint (MakeTheaterStructure.js)
+      local-endpoint (MakeDetailFromTimeOrderedSchedule.js)
     }
 
     action-endpoint (MakeDetailFromTheaterOrderedSchedule) {
       accepted-inputs (theaterOrderedSchedule)
-      local-endpoint (MakeTheaterStructure.js)
+      local-endpoint (MakeDetailFromTheaterOrderedSchedule.js)
     }
 
     // filter
