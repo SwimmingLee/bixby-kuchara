@@ -27,8 +27,11 @@ def GetNaverMovieInfo(url):
     genreRow = outline.find('span')
     genres = genreRow.findAll('a')
     genreStr = ""
-    for genre in genres:
-        genreStr += genre.text
+    for idx, genre in enumerate(genres):
+        if idx == 0:
+            genreStr += genre.text
+        else:
+            genreStr += " ," + genre.text
     movieInfoPart["genre"] = genreStr
 
     nationRow = genreRow.next_sibling.next_sibling
@@ -85,7 +88,7 @@ def GetMovieInfo(movieName):
         for movieInfo in movieInfos['items']:
             link = movieInfo['link']
             imgUrl = movieInfo["image"]
-            actors = movieInfo["actors"]
+            actors = movieInfo["actor"]
             director = movieInfo["director"]
             userRating = movieInfo["userRating"]
             movieInfoPart2 = GetNaverMovieInfo(link)
