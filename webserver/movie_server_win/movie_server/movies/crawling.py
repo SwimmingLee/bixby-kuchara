@@ -59,11 +59,27 @@ def CGVCrawl(theaterObj):
         #movieRating = movieList.find('span', {'class':re.compile('ico-grade.*')})
         #print(movieRating.text.strip())
         movieName = movieScheduleList.find('strong')
-        print(movieName.text.strip())
-        movieDict['movieName'] = movieName.text.strip()
+        movieNameStr = movieName.text.strip().replace('-', ':').strip()
+        print(movieNameStr)
+        print(type(movieNameStr))
+        movieDict['movieName'] = movieNameStr
+        
+        movieObj = Movies.objects.filter(movieName=movieNameStr)
+        movieObj = movieObj.first()
+        if movieObj == None:
+            movieName = movieName.encode('utf-8')
+            print(type(movieName))
+            movieObj = GetMovieInfo(movieName)
+            if movieObj == None:
+                continue 
+
         movieHallTypes = movieScheduleList.findAll('div', {'class':'type-hall'})
         for movieHallType in movieHallTypes:
             movieType = movieHallType.ul.find('li')
+            if movieType.text.find('더빙') >= 0:
+                movieDict['dubbing'] = True
+            else:
+                movieDict['dubbing'] = False
             #print(movieType.text.strip())
 
             movieRoom = movieType.next_sibling.next_sibling
@@ -72,13 +88,15 @@ def CGVCrawl(theaterObj):
 
             totalSeat = movieRoom.next_sibling.next_sibling
             totalSeatStr = re.findall("\d+", totalSeat.text)[0]
-            movieDict['totalSeat'] = int(totalSeatStr)
+            #movieDict['totalSeat'] = int(totalSeatStr)
 
             movieTimeLists = movieHallType.find('div', {'class':'info-timetable'}).findAll('li')
             for movieTimeList in movieTimeLists:
                 startTime = movieTimeList.find('em')
                 hour, minute = startTime.text.split(':')
                 movieDict['startTime'] = int(hour)*100 + int(minute)
+                hourcarry = int(minute) + movieObj.duration + 10
+                movieDict['endTime'] = (int(hour) + int(hourcarry / 60) ) * 100 + hourcarry % 60
 
                 availableSeat = startTime.next_sibling
                 if availableSeat.text.find("마감") >= 0 or availableSeat.text.find("매진") >= 0:
@@ -87,6 +105,13 @@ def CGVCrawl(theaterObj):
                 else:
                     availableSeatStr = re.findall("\d+", availableSeat.text)[0]
                     movieDict['availableSeat'] = int(availableSeatStr)
+                    movieDict['totalSeat'] = int(totalSeatStr)
+
+                MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
+                                    totalSeat=movieDict['totalSeat'], availableSeat=movieDict['avaliableSeat'], dubbing=movieDict['dubbing'], \
+                                    startTime=movieDict['startTime'], endTime=movieDict['endTime']
+                                )
+                MovieScheduleEle.save()
                 movieList.append(copy.copy(movieDict))
     return movieList
 
@@ -105,7 +130,14 @@ def LotteCinemaCrawl(theaterObj):
     cinema = theaterObj.theaterCode
 
     url = 'http://www.lottecinema.co.kr/LCHS/Contents/Cinema/Cinema-Detail.aspx?divisionCode=1&detailDivisionCode={}&cinemaID={}'.format(region, cinema)
+    
     driver.get(url)
+
+    '''
+    alert = driver.switch_to_alert()
+    if alert != None:
+        alert.accept()
+    '''
     time.sleep(2)
     req = driver.page_source
     bs = BeautifulSoup(req, 'html.parser')
@@ -115,8 +147,9 @@ def LotteCinemaCrawl(theaterObj):
     for movieScheduleList in movieScheduleLists:
         movieRating = movieScheduleList.find('span', {'class':re.compile('grade_.*')})
         #print(movieRating.text)
-        movieName = movieRating.next_sibling
-        #print(movieName)
+        movieName = movieRating.next_sibling.strip()
+        print(movieName)
+        print(type(movieName))
         movieDict['movieName'] = movieName
         movieObj = Movies.objects.filter(movieName=movieName)
         movieObj = movieObj.first()

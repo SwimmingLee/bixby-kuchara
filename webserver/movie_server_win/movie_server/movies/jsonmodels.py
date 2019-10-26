@@ -19,7 +19,7 @@ def GetMovie(movie):
     movieDict['userRating'] = movie.userRating
     movieDict['duration'] = movie.movieRating
     movieDict['director'] = movie.movieRating
-    movieDict['actor'] = movie.actor
+    movieDict['actors'] = movie.actors
     movieDict['genre'] = movie.genre
     movieDict['imgUrl'] = movie.imgUrl
     movieDict['nation'] = movie.nation

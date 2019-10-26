@@ -55,8 +55,8 @@ def GetMovieScheduleList(reqtheater, movieID):
             'room':movieSchedule.room,
             'totalSeat':movieSchedule.totalSeat,
             'availableSeat':movieSchedule.availableSeat,
-            'startTime':movieSchedule.startTime,
-            'endTime':movieSchedule.endTime,
+            'startTime':'{}:{}'.format(int(movieSchedule.startTime/100), movieSchedule.startTime%100),
+            'endTime': '{}:{}'.format(int(movieSchedule.endTime/100), movieSchedule.endTime%100),
             'subtitle':movieSchedule.subtitle,
             'dubbing':movieSchedule.dubbing,
             'room property':"2D"

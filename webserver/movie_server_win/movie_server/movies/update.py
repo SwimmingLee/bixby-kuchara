@@ -31,7 +31,7 @@ def GetNaverMovieInfo(url):
         if idx == 0:
             genreStr += genre.text
         else:
-            genreStr += " ," + genre.text
+            genreStr += ", " + genre.text
     movieInfoPart["genre"] = genreStr
 
     nationRow = genreRow.next_sibling.next_sibling
