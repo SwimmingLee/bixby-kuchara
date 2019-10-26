@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Movies(models.Model):
+    objects = models.Manager()
     movieName = models.CharField(max_length=20)
     director = models.CharField(max_length=20)
     actors = models.CharField(max_length=50)
@@ -19,15 +20,9 @@ class Movies(models.Model):
         managed = True
         db_table = 'movies'
 
-class NamedPointStructres(models.Model):
-    name = models.CharField(max_length=20)
-    # >> point
-    latitude = models.FloatField()
-    longitude = models.FloatField()
-    # << point
-
 
 class Theaters(models.Model):
+    objects = models.Manager()
     theaterName = models.CharField(max_length=20)
     regionCode = models.CharField(max_length=10)
     theaterCode = models.CharField(max_length=10)
@@ -46,6 +41,7 @@ class Theaters(models.Model):
         db_table = 'theaters'
 
 class MovieSchedules(models.Model):
+    objects = models.Manager()
     movie = models.ForeignKey(Movies, related_name='MovieSchedules', on_delete=models.CASCADE)
     theater = models.ForeignKey(Theaters, models.DO_NOTHING)
     room = models.CharField(max_length=20)
@@ -62,9 +58,6 @@ class MovieSchedules(models.Model):
     morning = models.BooleanField(null=True)
     # << movieScheduleFlag
 
-
-    def __str__(self):
-        return self.movie.movieName
 
     class Meta:
         managed = True

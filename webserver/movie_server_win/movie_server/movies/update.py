@@ -44,7 +44,7 @@ def GetNaverMovieInfo(url):
     try:
         # 여기서 TV영화 분류를 거를 수 있다.
         # 나중에 코드를 깔끔하게 수정할 것
-        durationStr = re.findall("\d+", duration.text)[0]
+        durationStr = re.findall(r"\d+", duration.text)[0]
         movieInfoPart["duration"] = durationStr
     except:
         return None
@@ -82,7 +82,7 @@ def GetMovieInfo(movieName):
         print(movieName)
  
         if len(movieInfos['items']) == 0:
-            print("Drong?")
+            print("해당 영화를 찾을 수 없습니다. Naver Moive API")
             return None
 
         for movieInfo in movieInfos['items']:

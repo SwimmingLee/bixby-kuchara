@@ -24,6 +24,8 @@ from .models import Movies
 from .models import MovieSchedules
 from .update import GetMovieInfo
 import datetime
+from datetime import datetime
+
 
 def WebDriverInit():
     global driver
@@ -33,6 +35,26 @@ def WebDriverInit():
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
     driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
+
+def GetDiffTime(preTime, curTime):
+    curTime = curTime.replace(tzinfo=None)
+    preTime = preTime.replace(tzinfo=None)
+    diffTime = curTime - preTime
+    return diffTime.total_seconds()
+
+
+def MovieCrawl(theaterObj):
+    diffTime = GetDiffTime(theaterObj.updatedTime, datetime.now())    
+    print(diffTime)
+    if (diffTime > 60*15):
+        if theaterObj.brand == 'megabox':
+            MegaBoxCrawl(theaterObj)
+        elif theaterObj.brand == 'lottecinema':
+            LotteCinemaCrawl(theaterObj)
+        elif theaterObj.brand == 'cgv':
+            CGVCrawl(theaterObj)
+        theaterObj.updatedTime = datetime.now()
+        theaterObj.save() 
 
 def CGVCrawl(theaterObj):   
     movieObj = ""

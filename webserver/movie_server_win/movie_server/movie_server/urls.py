@@ -19,23 +19,23 @@ from rest_framework import routers
 from movies.views import MovieViewSet
 from movies.views import MovieScheduleViewSet
 from movies.views import TheaterViewSet
-from movies.views import NamedPointStructureViewSet
-from movies.views import SearchMovieListWithPos
-from movies.views import SearchTheaterWithPos
-from movies.views import SearchTheaterOrderedScheduleWithPos
-from movies.views import SearchMegaboxMovie
-from movies.views import SearchLottecinemaMovie
-from movies.views import SearchCGVMovie
+
+from movies.movieapi import SearchMovieListWithPos
+from movies.movieapi import SearchTheaterWithPos
+from movies.movieapi import SearchTheaterOrderedScheduleWithPos
+from movies.movieapi_test import SearchMegaboxMovie
+from movies.movieapi_test import SearchLottecinemaMovie
+from movies.movieapi_test import SearchCGVMovie
+from movies.movieapi_test import Test
 from movies.update import UpdateTheater
 
 from movies.crawling import WebDriverInit
-from movies.views import Test
+
 
 router = routers.DefaultRouter()
 router.register('movies', MovieViewSet)
 router.register('movieschedules',MovieScheduleViewSet)
 router.register('theaters',TheaterViewSet)
-router.register('namedstructures',MovieScheduleViewSet)
 
 WebDriverInit()
 
