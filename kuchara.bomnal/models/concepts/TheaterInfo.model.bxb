@@ -32,6 +32,10 @@ structure (TheaterInfo) {
     type (Distance)
     min (Optional) max (One)
   }
+  property(address) {
+    type (Address)
+    min (Optional) max (One)
+  }
 
 
 }

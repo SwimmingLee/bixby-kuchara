@@ -118,5 +118,9 @@ endpoints {
       local-endpoint (Restructure/RestructureTimeViewToTheaterViewWithMovie.js)
     }
 
+    action-endpoint (ShowCloserTheaterList) {
+      accepted-inputs (movie)
+      local-endpoint (ShowCloserTheaterList.js)
+    }
   }
 }
