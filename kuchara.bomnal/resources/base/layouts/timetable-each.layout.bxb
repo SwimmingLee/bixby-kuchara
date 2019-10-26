@@ -12,10 +12,6 @@
       type (TheaterInfo)
       min (Required) max (Many)
     }
-    param (duration) {
-      type (Duration)
-      min (Required) max (One)
-    }
   }
   content {
     compound-card {
@@ -23,17 +19,17 @@
         intent {
           // goal: MovieScheduleDetail
           // subplan {
-
             goal: MakeDetailFromTheaterOrderedSchedule // 골은 target으로 설정하면 됨다
-            value: Duration(duraion)
-            
-            value: TheaterOrderedSchedule {
-              movie: $expr(movie.duration)
-              theater: Theater {
-                theaterInfo: $expr(theaterInfo)
-                theaterSchedule: $expr(theaterSchedule)
-              }
-            }
+            value: $expr(movie)
+            value: $expr(theaterInfo)
+            value: $expr(theaterSchedule)
+            // value: TheaterOrderedSchedule {
+            //   movie: $expr(movie)
+            //   theater: Theater {
+            //     theaterInfo: $expr(theaterInfo)
+            //     theaterSchedule: $expr(theaterSchedule)
+            //   }
+            // }
         //   }
         }
       }
