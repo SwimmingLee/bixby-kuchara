@@ -1,12 +1,19 @@
-module.exports.function = function makeRoomPropertyList (roomProperty) {
+module.exports.function = function makeRoomPropertyList (roomProperty, room, subtitle) {
+
   let splited = roomProperty.split(',');
   let list = [];
-  let namespace = "images/roomProperty/"
+
+  let namespace = "images/roomProperty/";
+  let cgv = "Rm_Property_Cgv_icon/";
+  let mega = "Rm_Property_Mega_icon/"
+  let lotte = "Rm_Property_Lotte_icon/"
+
   splited.forEach(function(el){
+    // megabox
     if(el == 'MX'){
-      list.push(namespace+"")
+      list.push(namespace + mega + "Megabox_MX_2px.png")
     } else if(el == '필름소사이어티') {
-      
+      list.push(namespace + mega + "Megabox_FILM_SOCIETY_2px.png")
     } else if(el == '컴포트') {
       
     } else if(el == '더부티크') {
@@ -23,18 +30,48 @@ module.exports.function = function makeRoomPropertyList (roomProperty) {
       
     } else if(el == '슈퍼 S') {
       
-    } else if(el == '필름소사이어티') {
+    } else if(el == 'IMAX') {
       
-    } else if(el == '필름소사이어티') {
+    } else if(el == 'SCREENX') {
       
-    } else if(el == '필름소사이어티') {
+    } else if(el == 'SOUNDX') {
       
-    } else if(el == '필름소사이어티') {
+    } else if(el == 'STARIUM') {
       
-    } else if(el == '필름소사이어티') {
+    } else if(el == 'GOLD CLASS') {
+      
+    } else if(el == 'CINE de CHEF') {
+      
+    } else if(el == 'TEMPUR CINEMA') {
+      
+    } else if(el == 'PREMIUM') {
+      
+    } else if(el == 'SUBPAC') {
+      
+    } else if(el == '씨네앤리빙룸') {
+      
+    } else if(el == 'ART') {
+      
+    } else if(el == 'SKYBOX') {
+      
+    } else {
       
     }
   })
   return {}
 }
 
+
+// IMAX
+// SCREENX
+// SOUNDX
+// STARIUM
+// SphereX
+// GOLD CLASS
+// CINE de CHEF
+// TEMPUR CINEMA
+// PREMIUM
+// SUBPAC
+// 씨네앤리빙룸
+// ART
+// SKYBOX

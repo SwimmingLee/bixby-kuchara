@@ -1,5 +1,5 @@
 capsule-info {
-  display-name (봄날)
+  display-name (동네영화관)
   developer-name (__COMPANY_NAME__)
   icon-asset (/images/watching_ratings/rating_all.png)
   description ("__DESCRIPTION__")
@@ -13,5 +13,12 @@ capsule-info {
     alias (동래여관)
     alias (동래 여관)
 
+  }
+  search-keywords{
+    keyword (영화)
+    keyword (영화 시간표)
+    keyword (동네영화)
+    keyword (동네영화관)
+    keyword (동네 영화관)
   }
 }
