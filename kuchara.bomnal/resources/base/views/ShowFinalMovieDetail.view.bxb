@@ -30,16 +30,16 @@ result-view {
           // }
           hbox { // 영화 정보
             content {
-              
               vbox { // 영화 포스터 이미지
                 grow (1)
+                halign (Center)
+                valign (Middle)
                 content {
                   single-line { // 포스터 이미지
                     image {
-                      //url ("#{value(this.imgUrl)}")
-                      url ("http://t1.daumcdn.net/movie/3a1f1687749c4b04abce9513cf3207411569805246427")
+                      url ("#{value(this.imgUrl)}")
+                      //url ("images/time_sorted_view_0.png")
                       style (Title_XXL)
-                      
                     }
                   }
                 }
@@ -49,10 +49,43 @@ result-view {
                 valign (Top)
                 halign (Start)
                 content {
+
+                  single-line {
+                    text { value ("칸 늘리기") style (Title_XXL) }
+                  }
+
+                   single-line {
+                    text { value ("칸 늘리기") style (Title_XXL) }
+                  }
+
                   single-line {
                     text { value ("#{value(this.movieName)}") style (Title_S) } // 영화 이름
-                    // if(this.movieName )
-                    image ("") // 영화 이름 옆에 자그마낳게 관람 등급 이미지 표시
+                    if (this.movieRating == '전체관람가') {
+                      image {
+                        url ("images/watching_ratings/rating_all.png")
+                        background-color (Transparent)
+                      }
+                    }
+                    else-if (this.movieRating == '12세관람가') {
+                      image {
+                        url ("images/watching_ratings/rating_12.png")
+                        background-color (Transparent)
+                      }
+                    }
+                    else-if (this.movieRating == '15세관람가') {
+                      image {
+                        url ("images/watching_ratings/rating_15.png")
+                        background-color (White)
+                        shape (Circle)
+                      }
+                    }
+                    else-if (this.movieRating == '청소년관람불가') {
+                      image {
+                        url ("images/watching_ratings/rating_19.png")
+                        background-color (Transparent)
+                      }
+                    }
+                    //image ("") // 영화 이름 옆에 자그마낳게 관람 등급 이미지 표시
                   }
                   text { value ("#{value(this.genre)}") style (Detail_L_Soft) } // 장르 표시
                   single-line {
