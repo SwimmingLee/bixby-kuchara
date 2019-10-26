@@ -22,7 +22,7 @@ result-view {
               }
               for-each (theater.theaterSchedule) {
                 as (theaterSchedule) {
-                  layout-macro (timetable-each) {
+                  layout-macro (timetable-each-theater) {
                     param(theaterSchedule) {
                       expression (theaterSchedule)
                     }

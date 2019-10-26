@@ -1,0 +1,5 @@
+train (t-tj8jmyoelbcdj96m8vudxo1om) {
+  utterance ([g:RestructureTheaterViewToTimeViewWithMovie:continue:TheaterOrderedScheduleWithMovie] 시간순으로 보여줘)
+  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9UsigqDFfBbzoYLKKWqrWInRL6uahXQLGjZgmE5bmDhjcMHWfneg6hNusQWOOkSGtFAB3Dsc0qeR5N6m+N7c8d+nnLILdHFG9OgJ)
+  last-modified (1572110409141)
+}

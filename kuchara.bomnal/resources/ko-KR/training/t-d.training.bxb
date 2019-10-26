@@ -1,0 +1,5 @@
+train (t-d9d3wmanfa2nix30ud958mvdv) {
+  utterance ("[g:FilterMovieWithRoomFromTheaterOrder:continue:TheaterOrderedSchedule] (샤로떼 프라이빗)[v:RoomPropertyEnum:'샤롯데 프라이빗'] (빼고)[v:ExceptExpression] 보여줘")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEJT5paZA1Tlm1+WmRqeWZIRlJ+f61aUn4usm0EeTY9rRXJqQYlrRUFRanFxZn4ehgKQKQFF+QWpRSWVrnmlucQ6joWBkYGJgRlIMwBZEAgDzFA5BgA=)
+  last-modified (1572109940236)
+}

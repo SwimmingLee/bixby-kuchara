@@ -1,26 +1,26 @@
-module.exports.function = function filterMovieWithRoom (movieSchedule, roomProperty) {
+module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterOrderedSchedule, roomPropertyEnum, exceptExpression) {
 
   let result = [];
-  let input = movieSchedule;
-  input.forEach(function(el){
-    if(el.room.includes(room)){
-      result.push(el);
-    }
-  })
+  let input = theaterOrderedSchedule;
 
+  // 부정어가 안들어오면, mx관만 보여줘
   if(typeof exceptExpression == 'undefined'){
-    input.forEach(function(el){
-      if(el.genre.toString().includes(genre)){
-        result.push(el);
-      }
+    input.theater.forEach(function(theaterElement){
+      theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
+        if(theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
+          result.push(theaterElement);
+        }
+      })
     })
-  } else {
-    input.forEach(function(el){
-      if(!el.genre.toString().includes(genre)){
-        result.push(el);
-      }
+  } else {    // 부정어가 들어오면,  
+    input.theater.forEach(function(theaterElement){
+      theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
+        if(!theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
+          result.push(theaterElement);
+        }
+      })
     })
   }
-
-  return result
+  input.theater = result;
+  return input;
 }

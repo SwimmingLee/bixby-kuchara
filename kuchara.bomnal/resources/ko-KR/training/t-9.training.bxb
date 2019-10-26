@@ -1,0 +1,5 @@
+train (t-9stjqff3xaz33xthh31ua0axx) {
+  utterance ("[g:FilterMovieWithRoomFromTimeOrder:continue:TimeOrderedSchedule] (아이맥스)[v:RoomPropertyEnum:IMAX]만 보여줘")
+  plan (Y2BhUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUll0EdT45aZU5Ja5JtflpkanlmSEZSfn+tWlJ8L18ogj6YBpCKgKL8gtaik0jWvNJcoW5kZGBmYgCQDkAZBCGACizIAAA==)
+  last-modified (1572109992484)
+}

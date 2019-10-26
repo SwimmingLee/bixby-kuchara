@@ -1,4 +1,4 @@
-  layout-macro-def (timetable-each) {
+  layout-macro-def (timetable-each-theater) {
   params {
     param (theaterSchedule) {
       type (TheaterSchedule)

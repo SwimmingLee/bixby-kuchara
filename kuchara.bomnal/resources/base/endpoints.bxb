@@ -24,10 +24,6 @@ endpoints {
     }
     
     // find theater
-    action-endpoint (FindTheaterWithMovieSelected) {
-      accepted-inputs (namedPointStructure)
-      local-endpoint (Find/FindTheaterWithMovieSelected.js)
-    }
     
     action-endpoint (FindMovieWithTheater) {
       accepted-inputs (brand, regionCode, theaterCode)
@@ -62,15 +58,15 @@ endpoints {
 
 
     // filter
-    // action-endpoint (FilterMovieWithRoomFromTheaterOrder) {
-    //   accepted-inputs (theaterOrderedSchedule, roomProperty, exceptExpression)
-    //   local-endpoint (FilterMovieWithRoomFromTheaterOrder.js)
-    // }
+    action-endpoint (FilterMovieWithRoomFromTheaterOrder) {
+      accepted-inputs (theaterOrderedSchedule, roomPropertyEnum, exceptExpression)
+      local-endpoint (Filter/FilterMovieWithRoomFromTheaterOrder.js)
+    }
 
-    // action-endpoint (FilterMovieWithMovieName) {
-    //   accepted-inputs (timeOrderedSchedule, movieName, exceptExpression)
-    //   local-endpoint (FilterMovieWithMovieName.js)
-    // }
+    action-endpoint (FilterMovieWithRoomFromTimeOrder) {
+      accepted-inputs (timeOrderedSchedule, roomPropertyEnum, exceptExpression)
+      local-endpoint (Filter/FilterMovieWithRoomFromTimeOrder.js)
+    }
 
     action-endpoint (FilterMovieWithTheaterNameAndThOS) {
       accepted-inputs (theaterOrderedSchedule, theaterName, brand, exceptExpression)
@@ -92,10 +88,26 @@ endpoints {
       local-endpoint (Filter/FilterMovieWithTimeAndTiOS.js)
     }
 
-    // action-endpoint (FilterMovieWithGenre) {
-    //   accepted-inputs (movie, genre, exceptExpression)
-    //   local-endpoint (FilterMovieWithGenre.js)
-    // }
+    // 시나리오 2
+    action-endpoint (FilterMovieWithMovieNameAndThOSM) {
+      accepted-inputs (theaterOrderedScheduleWithMovie, movieName, exceptExpression)
+      local-endpoint (Filter/FilterMovieWithMovieNameAndThOSM.js)
+    }
+
+    action-endpoint (FilterMovieWithMovieNameAndTiOSM) {
+      accepted-inputs (timeOrderedScheduleWithMovie, movieName, exceptExpression)
+      local-endpoint (Filter/FilterMovieWithMovieNameAndTiOSM.js)
+    }
+
+    action-endpoint (FilterMovieWithGenreAndTiOSM) {
+      accepted-inputs (timeOrderedScheduleWithMovie, genre, exceptExpression)
+      local-endpoint (Filter/FilterMovieWithGenreAndTiOSM.js)
+    }
+
+    action-endpoint (FilterMovieWithGenreAndThOSM) {
+      accepted-inputs (theaterOrderedScheduleWithMovie, genre, exceptExpression)
+      local-endpoint (Filter/FilterMovieWithGenreAndThOSM.js)
+    }
 
     // restructure 
     action-endpoint (RestructureTheaterViewToTimeView) {

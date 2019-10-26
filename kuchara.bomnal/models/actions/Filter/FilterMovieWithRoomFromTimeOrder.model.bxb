@@ -1,9 +1,9 @@
-action (FilterMovieWithRoomFromTheaterOrder) {
+action (FilterMovieWithRoomFromTimeOrder) {
   description (find movie with locational input)
   type (Search)
   collect {
-    input (theaterOrderedSchedule) {
-      type (TheaterOrderedSchedule)
+    input (timeOrderedSchedule) {
+      type (TimeOrderedSchedule)
       min (Required) max (Many)
     }
     input (roomPropertyEnum) {
@@ -15,7 +15,7 @@ action (FilterMovieWithRoomFromTheaterOrder) {
       min (Optional) max (One)
     }
   }
-  output (TheaterOrderedSchedule)
+  output (TimeOrderedSchedule)
   // output (MovieName)
 }
   

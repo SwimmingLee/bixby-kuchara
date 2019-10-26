@@ -1,0 +1,19 @@
+action (FilterMovieWithMovieNameAndTiOSM) {
+  description (filter movie with movie name input)
+  type (Search)
+  collect {
+    input (timeOrderedScheduleWithMovie) {
+      type (TimeOrderedScheduleWithMovie)
+      min (Required) max (Many)
+    }
+    input (movieName) {
+      type (MovieName)
+      min (Required) max (One)
+    }
+    input(exceptExpression){
+      type(ExceptExpression)
+      min (Optional) max (One)
+    }
+  }
+  output (TimeOrderedScheduleWithMovie)
+}
