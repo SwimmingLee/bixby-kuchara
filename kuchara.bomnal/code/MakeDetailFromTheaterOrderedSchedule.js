@@ -1,6 +1,6 @@
 console = require('console')
 
-module.exports.function = function makeDetailFromTheaterOrderedSchedule (theaterOrderedSchedule) {
+module.exports.function = function makeDetailFromTheaterOrderedSchedule (theaterOrderedSchedule, duration) {
   console.log(theaterOrderedSchedule.movie.movieName)
   let movieScheduleDetail = {
     'movieName': "조커",
