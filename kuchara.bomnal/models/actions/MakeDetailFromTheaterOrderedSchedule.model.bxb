@@ -2,8 +2,16 @@ action (MakeDetailFromTheaterOrderedSchedule) {
   type(Search)
   description (__DESCRIPTION__)
   collect {
-    input (theaterOrderedSchedule) {
-      type (TheaterOrderedSchedule)
+    input (movie) {
+    type (Movie)
+    min (Required) max (One)
+  }
+    input (theaterInfo) {
+      type (TheaterInfo)
+      min (Required) max (One)
+    }
+    input (theaterSchedule) {
+      type (TheaterSchedule)
       min (Required) max (One)
     }
   }

@@ -8,15 +8,15 @@ module.exports.function = function findTheaterWithMovieSelected (namedPointStruc
   let long = 127.123843;
   let lat = 37.481394;
 
-  let options = { 
+  let options = {
     format: 'json',
-    query: { 
+    query: {
       longitude: long,
       latitude: lat,
 
     }
   };
-  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterWithPosWithMovieName/', options); 
+  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterWithPosWithMovieName/', options);
 
   return response;
 }

@@ -1,0 +1,19 @@
+action (FilterMovieWithTheaterName) {
+  description (filter movie with theater name input)
+  type (Search)
+  collect {
+    input (theaterOrderedSchedule) {
+      type (TheaterOrderedSchedule)
+      min (Required) max (Many)
+    }
+    input (theaterName) {
+      type (TheaterName)
+      min (Required) max (One)
+    }
+    input(exceptExpression){
+      type(ExceptExpression)
+      min (Optional) max (One)
+    }
+  }
+  output (TheaterOrderedSchedule)
+}

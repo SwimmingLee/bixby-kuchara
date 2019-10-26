@@ -9,17 +9,17 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
   let long = targetPosition.point.longitude;
   let lat = targetPosition.point.latitutde;
 
-  let options = { 
+  let options = {
     format: 'json',
-    query: { 
+    query: {
       longitude: long,
       latitude: lat,
     }
   };
-  // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options); 
+  // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options);
   // let response = http.getUrl(config.get('remote.url') + "/movie_api/searchWithPos/", options)
   // console.log(response);
-  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterOrderedScheduleWithPos/', options); 
+  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterOrderedScheduleWithPos/', options);
   // return response;
   return movieReturn;
 }

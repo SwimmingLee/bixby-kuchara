@@ -1,7 +1,7 @@
 let console = require('console');
 
 module.exports.function = function restructureTimeViewToTheaterView (timeOrderedSchedule) {
-  
+
   let theaterOrderedSchedule = {
     'movie':{
       "movieName": timeOrderedSchedule.movie.movieName,
@@ -14,10 +14,10 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
       "userRating": timeOrderedSchedule.movie.userRating,
       "nation": timeOrderedSchedule.movie.nation,
     },
-    
+
     'theater': []
   }
-  
+
   timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
     let newStartTime = timeScheduleElement.startTime;
     let newEndtime = timeScheduleElement.endTime;
@@ -59,7 +59,7 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
 
     let found = false;
     theaterOrderedSchedule.theater.forEach(function(theaterElement){
-      if(theaterInfo.theaterCode == theaterElement.theaterInfo.theaterCode 
+      if(theaterInfo.theaterCode == theaterElement.theaterInfo.theaterCode
             && theaterInfo.regionCode == theaterElement.theaterInfo.regionCode){
         theaterElement.theaterSchedule.push(theaterSchedule);
         found = true;
@@ -74,7 +74,7 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
         "theaterInfo": theaterInfo,
         "theaterSchedule": [],
       })
-      
+
       theaterOrderedSchedule.theater[theaterOrderedSchedule.theater.length-1].theaterSchedule.push(theaterSchedule);
     }
   })
@@ -90,6 +90,6 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
   })
 
   console.log(theaterOrderedSchedule);
-  
+
   return theaterOrderedSchedule;
 }

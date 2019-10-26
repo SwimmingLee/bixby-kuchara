@@ -1,7 +1,11 @@
-action (FindTheaterWithMovieSelected) {
-  description (find theater)
+action (FindMovieWithTheater) {
+  description (find movie with theater brand input and OPTIONAL locational keyword input)
   type (Search)
   collect {
+    input (brand) {
+      type (Brand)
+      min (Required) max (One)
+    }
     input (namedPointStructure) {
       type (NamedPointStructure)
       min (Required) max (One)
@@ -13,5 +17,7 @@ action (FindTheaterWithMovieSelected) {
       }
     }
   }
-  output (TheaterInfo)
+  output (TheaterOrderedSchedule)
+  // output (MovieName)
 }
+  

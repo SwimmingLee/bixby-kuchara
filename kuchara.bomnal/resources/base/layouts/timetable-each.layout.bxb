@@ -4,12 +4,33 @@
       type (TheaterSchedule)
       min (Required) max (Many)
     }
+    param (movie) {
+      type (Movie)
+      min (Required) max (Many)
+    }
+    param (theaterInfo) {
+      type (TheaterInfo)
+      min (Required) max (Many)
+    }
   }
   content {
     compound-card {
       on-click {
         intent {
-          goal: Movie // 골은 target으로 설정하면 됨다
+          // goal: MovieScheduleDetail
+          // subplan {
+            goal: MakeDetailFromTheaterOrderedSchedule // 골은 target으로 설정하면 됨다
+            value: $expr(movie)
+            value: $expr(theaterInfo)
+            value: $expr(theaterSchedule)
+            // value: TheaterOrderedSchedule {
+            //   movie: $expr(movie)
+            //   theater: Theater {
+            //     theaterInfo: $expr(theaterInfo)
+            //     theaterSchedule: $expr(theaterSchedule)
+            //   }
+            // }
+        //   }
         }
       }
       content {

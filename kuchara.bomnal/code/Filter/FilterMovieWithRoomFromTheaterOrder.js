@@ -14,13 +14,13 @@ module.exports.function = function filterMovieWithRoom (movieSchedule, roomPrope
         result.push(el);
       }
     })
-  } else {  
+  } else {
     input.forEach(function(el){
       if(!el.genre.toString().includes(genre)){
         result.push(el);
       }
     })
   }
-  
+
   return result
 }

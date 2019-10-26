@@ -15,13 +15,13 @@ layout-macro-def (movie-poster-card) {
         value: Movie{
           movieName: MovieName(movieName)
         }
-        
+
         // value: namedPointStructure {
         //   default-init
         // }
        }
      }
-     
+
      aspect-ratio (3:4)
      image-url ("#{value(movie.imgUrl)}")
      text-position (Below)
