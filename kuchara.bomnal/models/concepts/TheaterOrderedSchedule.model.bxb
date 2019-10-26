@@ -6,6 +6,6 @@ structure (TheaterOrderedSchedule) {
   }
   property (theater) {
     type (Theater)
-    min (Optional) max (Many)
+    min (Required) max (Many)
   }
 }

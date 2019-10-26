@@ -4,59 +4,41 @@ result-view {
       min (Required)
       max (One)
     }
+
   }
   message {
     template ("#{value(this.movie.movieName)} 을(를) 상영하고 있는 근처 영화관 상영 시간표에요.")
   }
   render {
-    if (size(this) == 1 && size(this.theater) == 1 && size(this.theater.theaterInfo) == 1) {
-      layout-macro (showMovieDetailByTheaterOrderedSchedule) {
-        param (theaterOrderedSchedule) {
-          expression (this)
-        }
-      }
-    }
-    else {
-      list-of (this) {
-        where-each (item){
-
-          layout-macro (theater){
-            param(restaurant){
-              expression (item)
-            }
-          }
-        }
-      }
-      // layout {
-        // section {
-        //   content {
-            for-each(this.theater) {
-              as(theater) {
-                // layout-macro (title-for-theaterSchedule) {
-                //   param (theater) {
-                //     expression (theater)
-                //   }
-                // }
-                for-each (theater.theaterSchedule) {
-                  as (theaterSchedule) {
-                    layout-macro (timetable-each) {
-                      param(theaterSchedule) {
-                        expression (theaterSchedule)
-                      }
-                      // param (movie) {
-                      //   expression (this.movie)
-                      // }
-                      // param (theaterInfo) {
-                      //   expression (this.theater.theaterInfo)
-                      // }
+    layout {
+      section {
+        content {
+          for-each(this.theater) {
+            as(theater) {
+              layout-macro (title-for-theaterSchedule) {
+                param (theater) {
+                  expression (theater)
+                }
+              }
+              for-each (theater.theaterSchedule) {
+                as (theaterSchedule) {
+                  layout-macro (timetable-each) {
+                    param(theaterSchedule) {
+                      expression (theaterSchedule)
+                    }
+                    param (movie) {
+                      expression (this.movie)
+                    }
+                    param (theaterInfo) {
+                      expression (this.theater.theaterInfo)
                     }
                   }
                 }
               }
             }
-        //   }
-        // }
-      // }
+          }
+        }
+      }
     }
   }
   conversation-drivers {

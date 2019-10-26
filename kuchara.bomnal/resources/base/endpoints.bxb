@@ -5,7 +5,7 @@ endpoints {
       accepted-inputs (namedPointStructure)
       local-endpoint (ShowMoviePoster.js)
     }
-    
+
     // find movie schedule
     action-endpoint (FindMovieWithMovieAndPos) {
       accepted-inputs (movieInput, namedPointStructure)
@@ -35,7 +35,7 @@ endpoints {
 
     // filter
     action-endpoint (FilterMovieWithRoomFromTheaterOrder) {
-      accepted-inputs (movieSchedule, roomProperty)
+      accepted-inputs (theaterOrderedSchedule, roomProperty)
       local-endpoint (Filter/FilterMovieWithRoomFromTheaterOrder.js)
     }
 
