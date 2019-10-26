@@ -265,6 +265,7 @@ def SearchMovieListWithPos(request):
         if theaterOrder[1] <= 5000:
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             diffTime = GetDiffTime(reqtheater.updatedTime, datetime.now())    
+            print(diffTime)
             if (diffTime > 60*15):
                 if reqtheater.brand == 'megabox':
                     MegaBoxCrawl(reqtheater)

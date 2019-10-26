@@ -55,31 +55,34 @@ def CGVCrawl(theaterObj):
     movieLists = movieSchedule.findAll('li', recursive=False)
 
     for movieList in movieLists:
-        movieRating = movieList.find('span', {'class':re.compile('ico-grade.*')})
-        print(movieRating.text.strip())
+        #movieRating = movieList.find('span', {'class':re.compile('ico-grade.*')})
+        #print(movieRating.text.strip())
         movieName = movieList.find('strong')
         print(movieName.text.strip())
         movieHallTypes = movieList.findAll('div', {'class':'type-hall'})
         for movieHallType in movieHallTypes:
             movieType = movieHallType.ul.find('li')
-            print(movieType.text.strip())
+            #print(movieType.text.strip())
 
             movieRoom = movieType.next_sibling.next_sibling
             print(movieRoom.text.strip())
 
             totalSeat = movieRoom.next_sibling.next_sibling
-            print(totalSeat.text.replace(" ", "").replace('\n', ''))
+            totalSeatStr = re.findall("\d+", totalSeat.text)[0]
+            print(totalSeatStr)
 
             movieTimeLists = movieHallType.find('div', {'class':'info-timetable'}).findAll('li')
             for movieTimeList in movieTimeLists:
                 startTime = movieTimeList.find('em')
-                print(startTime.text)
+                print("startTime: " + startTime.text)
 
                 availableSeat = startTime.next_sibling
-                if (availableSeat.text != "마감"):
+                if availableSeat.text.find("마감") >= 0:
                     movieNightType = availableSeat["class"]
                     print(movieNightType)
-                print(availableSeat.text)
+                else:
+                    availableSeatStr = re.findall("\d+", availableSeat.text)[0]
+                    print("잔여솨석: " + availableSeatStr)
 
 
 
@@ -153,7 +156,7 @@ def LotteCinemaCrawl(theaterObj):
                 #print(movieTime.text)
                 movieSeatInfo = movieTheaterTime.find('span', {'class':'ppNum'})
                 if movieSeatInfo != None:
-                    if movieSeatInfo.text.find('마감') >= 0:
+                    if movieSeatInfo.text.find('마감') >= 0 or movieSeatInfo.text.find('매진') >= 0:
                         movieDict['avaliableSeat'] = -1
                         movieDict['totalSeat'] = -1
                     else:    
