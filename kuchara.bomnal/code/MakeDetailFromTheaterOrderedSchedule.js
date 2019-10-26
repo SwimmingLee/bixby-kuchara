@@ -2,7 +2,7 @@ console = require('console')
 
 module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, theaterInfo, theaterSchedule) {
   console.log(movie.movieName)
-  console.log(movie.duration)
+  // console.log(movie.duration)
   console.log(movie.movieRating)
   console.log(movie.director)
   console.log(movie.actors)
@@ -30,7 +30,7 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
 
   let movieScheduleDetail = {
     'movieName': movie.movieName,
-    "duration": movie.duration,
+    // "duration": movie.duration,
     "movieRating": movie.movieRating,
     "director": movie.director,
     "actors": movie.actors,

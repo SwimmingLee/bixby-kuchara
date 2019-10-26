@@ -7,7 +7,7 @@ structure (MovieScheduleDetail) {
   }
   property (duration) {
     type (Duration)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   property (movieRating) {
     type (MovieRating)

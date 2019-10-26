@@ -56,25 +56,25 @@ result-view {
                     // 관람등급 표시
                     if (this.movieRating == '전체관람가') {
                       image {
-                        url ("images/watching_ratings/rating_all.png")
+                        url ("images/movieRating_icon/rating_all.png")
                         shape (Circle)
                       }
                     }
                     else-if (this.movieRating == '12세관람가') {
                       image {
-                        url ("images/watching_ratings/rating_12.png")
+                        url ("images/movieRating_icon/rating_12.png")
                         shape (Circle)
                       }
                     }
                     else-if (this.movieRating == '15세관람가') {
                       image {
-                        url ("images/watching_ratings/rating_15.png")
+                        url ("images/movieRating_icon/rating_15.png")
                         shape (Circle)
                       }
                     }
                     else-if (this.movieRating == '청소년관람불가') {
                       image {
-                        url ("images/watching_ratings/rating_19.png")
+                        url ("images/movieRating_icon/rating_19.png")
                         shape (Circle)
                       }
                     }
