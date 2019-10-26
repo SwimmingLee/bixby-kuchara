@@ -6,34 +6,23 @@ result-view {
     }
   }
   message {
-    template ("어느 영화관에서 #{value(this.movie.movieName)} 시간표를 보시겠어요?")
+    template ("어느 영화관에서 #{value(this.movieName)} 시간표를 보시겠어요?")
   }
   render {
     layout {
       section {
         content {
-          
-
-          for-each(this.theater) {
-            as(theater) {
-              layout-macro (title-for-theaterSchedule) {
-                param (theater) {
-                  expression (theater)
+          single-line {
+            text { value ("가까운 영화관") style (Detail_L_Soft) }
+          }
+          for-each (this.theaterInfo) {
+            as (theaterInfo) {
+              layout-macro (theater-card) {
+                param (movieName) {
+                  expression (this.movieName)
                 }
-              }
-              for-each (theater.theaterSchedule) {
-                as (theaterSchedule) {
-                  layout-macro (timetable-each) {
-                    param(theaterSchedule) {
-                      expression (theaterSchedule)
-                    }
-                    param (movie) {
-                      expression (this.movie)
-                    }
-                    param (theaterInfo) {
-                      expression (theater.theaterInfo)
-                    }
-                  }
+                param (theaterInfo) {
+                  expression (theaterInfo)
                 }
               }
             }
@@ -44,7 +33,7 @@ result-view {
   }
   conversation-drivers {
     conversation-driver {
-      template ("Hi Iron bro")
+      template ("지금은 새벽 2시. 잠이 오지 않는 밤.")
     }
   }
 }

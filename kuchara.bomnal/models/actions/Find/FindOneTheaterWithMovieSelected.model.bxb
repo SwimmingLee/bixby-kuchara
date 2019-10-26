@@ -1,0 +1,22 @@
+action (FindOneTheaterWithMovieSelected) {
+  description (when One theater is chosen, list up a list of timetable selected by theater)
+  collect {
+    input (movieName) {
+      type (MovieName)
+      min (Required) max (One)
+    }
+    input (brand) {
+      type (Brand)
+      min (Required) max (One)
+    }
+    input (regionCode) {
+      type (RegionCode)
+      min (Required) max (One)
+    }
+    input (theaterCode) {
+      type (TheaterCode)
+      min (Required) max (One)
+    }
+  }
+  output (TheaterOrderedSchedule)
+}

@@ -47,7 +47,7 @@ layout-macro-def (movie-poster-card) {
          single-line {
            image {
              shape (Circle)
-             url(/images/ranking_star_white.png)
+             url(images/ranking_star_white.png)
            }
            text {
              style (Detail_L_Soft)

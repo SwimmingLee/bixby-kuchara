@@ -83,9 +83,14 @@ layout-macro-def (timetable-each-time) {
               valign (Middle)
               content {
                 single-line {
-                  image {
-                    style (Title_XL)
-                    url ("#{value(timeSchedule.theaterInfo.iconUri)}")
+                  if(timeSchedule.theaterInfo.brand == 'cgv') {
+                    image { url ("images/brand/theater/1x/cgv.png") style (Title_XL) }
+                  }
+                  else-if(timeSchedule.theaterInfo.brand == 'megabox') {
+                    image { url ("images/brand/theater/1x/megabox.png") style (Title_XL) }
+                  }
+                  else-if(timeSchedule.theaterInfo.brand == 'lottecinema') {
+                    image { url ("images/brand/theater/1x/lotte.png") style (Title_XL) }
                   }
                 }
               }

@@ -2,6 +2,10 @@ action (FindTheaterWithMovieSelected) {
   description (find theater)
   type (Search)
   collect {
+    input (movieName) {
+      type (MovieName)
+      min (Required) max (One)
+    }
     input (namedPointStructure) {
       type (NamedPointStructure)
       min (Required) max (One)

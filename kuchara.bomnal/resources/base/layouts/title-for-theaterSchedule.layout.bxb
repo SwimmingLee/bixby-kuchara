@@ -12,18 +12,18 @@ layout-macro-def (title-for-theaterSchedule) {
           halign (Start)
           content {
             single-line {
-              image {
-                shape (Square)
-                style (Title_S)
-                url ("#{value(theater.theaterInfo.iconUri)}")
+              if(theater.theaterInfo.brand == 'cgv') {
+                image { url ("images/theater_icon/circle/cgv_c.png") style (Title_S) }
+              }
+              else-if(theater.theaterInfo.brand == 'megabox') {
+                image { url ("images/theater_icon/circle/mega_c.png") style (Title_S) }
+              }
+              else-if(theater.theaterInfo.brand == 'lottecinema') {
+                image { url ("images/theater_icon/circle/lotte_c.png") style (Title_S) }
               }
               spacer
-              text {
-                style (Title_XS)
-                value {
-                  template ("#{value(theater.theaterInfo.theaterName)}")
-                }
-              }
+              text { value ("#{value(theater.theaterInfo.theaterName)}") style (Title_XS) }
+              text { value ("#{value(theater.theaterSchedule.room)}") style (Title_S) }
             }
           }
         }
