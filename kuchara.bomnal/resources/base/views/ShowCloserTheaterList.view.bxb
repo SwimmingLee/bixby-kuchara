@@ -1,17 +1,19 @@
 result-view {
   match{
-    TheaterOrderedSchedule (this) {
+    TheaterList (this) {
       min (Required)
       max (One)
     }
   }
   message {
-    template ("#{value(this.movie.movieName)} 을(를) 상영하고 있는 근처 영화관 상영 시간표에요.")
+    template ("어느 영화관에서 #{value(this.movie.movieName)} 시간표를 보시겠어요?")
   }
   render {
     layout {
       section {
         content {
+          
+
           for-each(this.theater) {
             as(theater) {
               layout-macro (title-for-theaterSchedule) {
