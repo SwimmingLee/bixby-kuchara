@@ -10,7 +10,7 @@ module.exports.function = function showMoviePoster (namedPointStructure) {
   // let long = targetPosition.point.longitude;
   // let lat = targetPosition.point.latitutde;
   let long = 127.123843;
-  let lat = 37.481394;
+  let lat = 37.481395;
 
   let options = { 
     format: 'json',

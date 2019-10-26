@@ -8,7 +8,7 @@ endpoints {
 
     // find movie schedule
     action-endpoint (FindMovieWithMovieAndPos) {
-      accepted-inputs (movieInput, namedPointStructure)
+      accepted-inputs (movie, namedPointStructure)
       local-endpoint (Find/FindMovieWithMovieAndPos.js)
     }
 

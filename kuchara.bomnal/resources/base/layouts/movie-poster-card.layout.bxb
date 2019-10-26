@@ -11,8 +11,14 @@ layout-macro-def (movie-poster-card) {
    image-card {
      on-click{
        intent{
-         goal: FindMovieWithMovieAndPos
-        //  value: Movie(movie)
+        goal: FindMovieWithMovieAndPos
+        value: Movie{
+          movieName: MovieName(movieName)
+        }
+        
+        // value: namedPointStructure {
+        //   default-init
+        // }
        }
      }
      

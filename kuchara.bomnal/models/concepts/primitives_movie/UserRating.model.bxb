@@ -1,1 +1,1 @@
-integer (UserRating)
+decimal (UserRating)

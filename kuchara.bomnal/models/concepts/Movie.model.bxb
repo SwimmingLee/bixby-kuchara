@@ -6,35 +6,35 @@ structure (Movie) {
   }
   property (duration) {
     type (Duration)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   property (movieRating) {
     type (MovieRating)
-    min (Required) max (Many)
+    min (Optional) max (Many)
   }
   property (director) {
     type (Director)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   // actors, genre 추가
   property (actors) {
     type (Actors)
-    min (Required) max (Many)
+    min (Optional) max (Many)
   }
   property (genre) {
     type (Genre)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   property (imgUrl) {
     type (ImgUrl)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   property (userRating) {
     type (UserRating)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   property (nation) {
     type (Nation)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
 }
