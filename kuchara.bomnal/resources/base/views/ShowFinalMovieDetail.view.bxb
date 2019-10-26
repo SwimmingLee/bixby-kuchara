@@ -1,8 +1,8 @@
 result-view {
   match{
     MovieScheduleDetail (this) {
-      min (Required)
-      max (One)
+      min (Optional)
+      max (Many)
     }
   }
   message {

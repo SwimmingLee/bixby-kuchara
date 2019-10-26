@@ -17,33 +17,14 @@
     compound-card {
       on-click {
         intent {
-          goal: MakeDetailFromTheaterOrderedSchedule // 골은 target으로 설정하면 됨다
-          value: TheaterOrderedSchedule {
-            //movie: Movie(movie)
-            movie: Movie {
-              actors: Actors(movie.actors)
-              director: Director(movie.director)
-              duration: Duration(movie.duration)
-              genre: Genre(movie.genre)
-              imgUrl: ImgUrl(movie.imgUrl)
-              movieName: MovieName(movie.movieName)
-              movieRating: MovieRating(movie.movieRating)
-              nation: Nation(movie.nation)
-              userRating: UserRating(movie.userRating)
-            }
-            theater: Theater {
-              theaterInfo: TheaterInfo {
-                theaterName: TheaterName(theaterInfo.theaterName)
-                theaterCode: TheaterCode(theaterInfo.theaterCode)
-                regionCode: RegionCode(theaterInfo.regionCode)
-                brand: Brand(theaterInfo.brand)
-                latitude: Latitude(theaterInfo.latitude)
-                longitude: Longitude(theaterInfo.longitude)
-                iconUri: IconUri(theaterInfo.iconUri)
-              }
-              theaterSchedule: TheaterSchedule {
-                startTime: StartTime(theaterSchedule.startTime)
-                // 아직 채워넣지 않은 이하 부분
+          goal: MovieScheduleDetail
+          subplan {
+            goal: MakeDetailFromTheaterOrderedSchedule // 골은 target으로 설정하면 됨다
+            value: TheaterOrderedSchedule {
+              movie: $expr(movie)
+              theater: Theater {
+                theaterInfo: $expr(theaterInfo)
+                theaterSchedule: $expr(theaterSchedule)
               }
             }
           }
@@ -54,7 +35,6 @@
           content {
             vbox {
               grow (2)
-
               halign (Center)
               valign (Middle)
               content {

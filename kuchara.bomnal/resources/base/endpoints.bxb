@@ -65,10 +65,14 @@ endpoints {
       local-endpoint (Restructure/RestructureTheaterViewToTimeView.js)
     }
 
+    action-endpoint (MakeDetailFromTheaterOrderedSchedule) {
+      accepted-inputs (theaterOrderedSchedule)
+      local-endpoint (MakeDetailFromTheaterOrderedSchedule.js)
+    }
+
     // action-endpoint (FindMovieWithFullUtterance) {
     //   accepted-inputs (isStartTime, movieName, timeInput, locationalKeyword, brand)
     //   local-endpoint (FindMovieWithFullUtterance.js)
     // }
-
   }
 }
