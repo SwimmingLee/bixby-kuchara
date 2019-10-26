@@ -28,6 +28,7 @@ import datetime
 def WebDriverInit():
     global driver
     #driverDir = r'C:\Users\student\works\chromedriver_win32\chromedriver.exe'
+    #driverDir = r'/home/ubuntu/Downloads/chromedriver'
     driverDir = r'C:\\chromedriver_win32\\chromedriver.exe'
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
@@ -52,37 +53,42 @@ def CGVCrawl(theaterObj):
 
     movieSchedule = bs.find('div', {'class':'sect-showtimes'}).find('ul')
 
-    movieLists = movieSchedule.findAll('li', recursive=False)
+    movieScheduleLists = movieSchedule.findAll('li', recursive=False)
 
-    for movieList in movieLists:
+    for movieScheduleList in movieScheduleLists:
         #movieRating = movieList.find('span', {'class':re.compile('ico-grade.*')})
         #print(movieRating.text.strip())
-        movieName = movieList.find('strong')
+        movieName = movieScheduleList.find('strong')
         print(movieName.text.strip())
-        movieHallTypes = movieList.findAll('div', {'class':'type-hall'})
+        movieDict['movieName'] = movieName.text.strip()
+        movieHallTypes = movieScheduleList.findAll('div', {'class':'type-hall'})
         for movieHallType in movieHallTypes:
             movieType = movieHallType.ul.find('li')
             #print(movieType.text.strip())
 
             movieRoom = movieType.next_sibling.next_sibling
             print(movieRoom.text.strip())
+            movieDict['room'] = movieRoom.text.strip() 
 
             totalSeat = movieRoom.next_sibling.next_sibling
             totalSeatStr = re.findall("\d+", totalSeat.text)[0]
-            print(totalSeatStr)
+            movieDict['totalSeat'] = int(totalSeatStr)
 
             movieTimeLists = movieHallType.find('div', {'class':'info-timetable'}).findAll('li')
             for movieTimeList in movieTimeLists:
                 startTime = movieTimeList.find('em')
-                print("startTime: " + startTime.text)
+                hour, minute = startTime.text.split(':')
+                movieDict['startTime'] = int(hour)*100 + int(minute)
 
                 availableSeat = startTime.next_sibling
-                if availableSeat.text.find("마감") >= 0:
-                    movieNightType = availableSeat["class"]
-                    print(movieNightType)
+                if availableSeat.text.find("마감") >= 0 or availableSeat.text.find("매진") >= 0:
+                    movieDict['availableSeat'] = -1
+                    movieDict['totalSeat'] = -1
                 else:
                     availableSeatStr = re.findall("\d+", availableSeat.text)[0]
-                    print("잔여솨석: " + availableSeatStr)
+                    movieDict['availableSeat'] = int(availableSeatStr)
+                movieList.append(copy.copy(movieDict))
+    return movieList
 
 
 

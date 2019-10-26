@@ -85,7 +85,7 @@ def GetMovieInfo(movieName):
         for movieInfo in movieInfos['items']:
             link = movieInfo['link']
             imgUrl = movieInfo["image"]
-            actor = movieInfo["actor"]
+            actors = movieInfo["actors"]
             director = movieInfo["director"]
             userRating = movieInfo["userRating"]
             movieInfoPart2 = GetNaverMovieInfo(link)
@@ -94,7 +94,7 @@ def GetMovieInfo(movieName):
 
 
         MoviesEle = Movies(movieName=movieName, director=director, \
-                        actor=actor, movieRating=movieInfoPart2["movieRating"], \
+                        actors=actors, movieRating=movieInfoPart2["movieRating"], \
                         duration=movieInfoPart2["duration"], genre=movieInfoPart2["genre"], \
                         userRating=userRating, imgUrl=imgUrl, nation=movieInfoPart2["nation"])
         MoviesEle.save()

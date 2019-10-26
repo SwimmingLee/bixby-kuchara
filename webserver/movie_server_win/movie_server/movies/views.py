@@ -70,7 +70,7 @@ def GetMovie(movieID):
         'movieName':movie.movieName,
         'duration':movie.duration,
         'director':movie.director,
-        'actor':movie.actor,
+        'actors':movie.actors,
         'movieRating':movie.movieRating,
         'userRating':movie.userRating,
         'genre':movie.genre,
