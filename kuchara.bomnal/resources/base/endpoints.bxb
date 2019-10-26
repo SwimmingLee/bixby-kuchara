@@ -28,7 +28,11 @@ endpoints {
       accepted-inputs (namedPointStructure)
       local-endpoint (Find/FindTheaterWithMovieSelected.js)
     }
-
+    
+    action-endpoint (FindMovieWithTheater) {
+      accepted-inputs (brand, regionCode, theaterCode)
+      local-endpoint (Find/FindMovieWithTheater.js)
+    }
 
     // make structure
     action-endpoint (MakeNamedPointStructure) {
@@ -50,6 +54,12 @@ endpoints {
       accepted-inputs (theaterOrderedSchedule)
       local-endpoint (MakeDetailFromTheaterOrderedSchedule.js)
     }
+
+    action-endpoint (MakeMovieStructure) {
+      accepted-inputs (movieName)
+      local-endpoint (MakeMovieStructure.js)
+    }
+
 
     // filter
     // action-endpoint (FilterMovieWithRoomFromTheaterOrder) {
@@ -96,6 +106,16 @@ endpoints {
     action-endpoint (RestructureTimeViewToTheaterView) {
       accepted-inputs (timeOrderedSchedule)
       local-endpoint (Restructure/RestructureTimeViewToTheaterView.js)
+    }
+
+    action-endpoint (RestructureTheaterViewToTimeViewWithMovie) {
+      accepted-inputs (theaterOrderedScheduleWithMovie)
+      local-endpoint (Restructure/RestructureTheaterViewToTimeViewWithMovie.js)
+    }
+
+    action-endpoint (RestructureTimeViewToTheaterViewWithMovie) {
+      accepted-inputs (timeOrderedScheduleWithMovie)
+      local-endpoint (Restructure/RestructureTimeViewToTheaterViewWithMovie.js)
     }
 
   }

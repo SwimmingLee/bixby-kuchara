@@ -28,6 +28,11 @@ structure (TheaterInfo) {
     type (IconUri)
     min (Required) max (One)
   }
+  property(distance) {
+    type (Distance)
+    min (Optional) max (One)
+  }
+
 
 }
 

@@ -35,7 +35,17 @@ input-view {
   }
   conversation-drivers{
     conversation-driver{
-      template ("명동 근처에서 영화 뭐 볼수 있어?")
+      // template-macro (FindMovieWithMovieAndPos)
+      template ("요즘 영화 뭐해")
+      
+      // macro {
+      //   param {
+      //     intent{
+      //       goal: FindMovieWithMovieAndPos
+      //       // value: viv.geo.SearchTerm(명동)
+      //     }
+      //   }
+      // }
     }
     conversation-driver{
       template ("한국영화 제외해줘")

@@ -1,0 +1,20 @@
+action (FindMovieWithTheater) {
+  description (find movie with movie name input)
+  type (Search)
+  collect {
+    input (brand) {
+      type (Brand)
+      min (Required) max (One)
+    }
+    input (theaterCode) {
+      type (TheaterCode)
+      min (Required) max (One)
+    }
+    input (regionCode) {
+      type (RegionCode)
+      min (Required) max (One)
+    }
+  }
+  output (TimeOrderedSchedule)
+}
+  

@@ -1,0 +1,11 @@
+action (MakeMovieStructure) {
+  type(Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (movieName) {
+      type (MovieName)
+      min (Required) max (One)
+    }
+  }
+  output (Movie)
+}

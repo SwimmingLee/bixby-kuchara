@@ -7,6 +7,6 @@ action (RestructureTheaterViewToTimeViewWithMovie) {
       min (Required) max (One)
     }
   }
-  output (TimeOrderedSchedule)
+  output (TimeOrderedScheduleWithMovie)
 }
 
