@@ -1,0 +1,3 @@
+text (MyDateExpression) {
+  description (yyyy.mm.dd(요일) 표현)
+}

@@ -12,93 +12,67 @@ result-view {
     layout {
       section {
         content {
-          // image-card {
-          //   image-object-fit (Cover)
-          //   image-object-position (Center)
-          //   image-url ("#{value(this.imgUrl)}")
-          //   text-position (Below)
+          thumbnail-card {
+            image-object-position (Left)
+            image-aspect-ratio (Four_Three)
+            image-url ("#{value(this.imgUrl)}") // 영화 포스터
+            title-area {
+              slot1 {
+                single-line {
+                  text { value ("#{value(this.movieName)}") style (Title_S) } // 영화 이름
+                  spacer
 
-          //   aspect-ratio (3:4)
-          //   column-size (Two)
-          //   title-area {
-          //     slot2 {
-          //       single-line {
-          //         text { value ("haha")}
-          //       }
-          //     }
-          //   }
-          // }
-          hbox { // 영화 정보
-            content {
-              vbox { // 영화 포스터 이미지
-                grow (1)
-                halign (Center)
-                valign (Middle)
-                content {
-                  single-line { // 포스터 이미지
+                  // 관람등급 표시
+                  if (this.movieRating == '전체관람가') {
                     image {
-                      url ("#{value(this.imgUrl)}")
-                      //url ("images/time_sorted_view_0.png")
-                      style (Title_XXL)
+                      url ("images/movieRating_icon/rating_all.png")
+                      shape (Circle)
+                    }
+                  }
+                  else-if (this.movieRating == '12세관람가') {
+                    image {
+                      url ("images/movieRating_icon/rating_12.png")
+                      shape (Circle)
+                    }
+                  }
+                  else-if (this.movieRating == '15세관람가') {
+                    image {
+                      url ("images/movieRating_icon/rating_15.png")
+                      shape (Circle)
+                    }
+                  }
+                  else-if (this.movieRating == '청소년관람불가') {
+                    image {
+                      url ("images/movieRating_icon/rating_19.png")
+                      shape (Circle)
                     }
                   }
                 }
               }
-              vbox {
-                grow (2)
-                valign (Top)
-                halign (Start)
-                content {
-                  single-line {
-                    text { value ("#{value(this.movieName)}") style (Title_S) } // 영화 이름
-                    spacer
-
-                    // 관람등급 표시
-                    if (this.movieRating == '전체관람가') {
-                      image {
-                        url ("images/movieRating_icon/rating_all.png")
-                        shape (Circle)
+              slot2 {
+                single-line { // 장르
+                  text { value ("장르 | #{value(this.genre)}") style (Detail_L_Soft) } // 장르 표시
+                }
+              }
+              slot3 {
+                // 특별관 표시
+                single-line {
+                  if (size(this.roomProperty) > 0) {
+                    for-each (this.roomProperty) {
+                      as (roomProperty) {
+                        image {
+                          url ("#{value(roomProperty)}")
+                        }
+                        // spacer
                       }
                     }
-                    else-if (this.movieRating == '12세관람가') {
-                      image {
-                        url ("images/movieRating_icon/rating_12.png")
-                        shape (Circle)
-                      }
-                    }
-                    else-if (this.movieRating == '15세관람가') {
-                      image {
-                        url ("images/movieRating_icon/rating_15.png")
-                        shape (Circle)
-                      }
-                    }
-                    else-if (this.movieRating == '청소년관람불가') {
-                      image {
-                        url ("images/movieRating_icon/rating_19.png")
-                        shape (Circle)
-                      }
-                    }
-                  }
-                  single-line {
-                    text { value ("장르 | #{value(this.genre)}") style (Detail_L_Soft) } // 장르 표시
-                  }
-                  // 특별관 표시
-                  // single-line {
-                  //   if (size(this.roomProperty) > 0) {
-                  //     for-each (this.roomProperty) {
-                  //       as (roomProperty) {
-                  //         image {
-                  //           url ("#{value(roomProperty)}")
-                  //         }
-                  //       }
-                  //     }
-                  //   }
-                  // }
-                  single-line {
-                    image { url ("/images/ranking_star_white.png") } // 별점 이미지
-                    text { value ("#{value(this.userRating)} / 10.0") style (Detail_L_Soft) } // 유저 평점
                   }
                 }
+                // 한 줄이 모자라 주석..
+                // single-line {
+                //   image { url ("/images/ranking_star_white.png") } // 별점 이미지
+                //   text { value ("#{value(this.userRating)} / 10.0") style (Detail_L_Soft) } // 유저 평점
+                // }
               }
             }
           }
@@ -134,7 +108,7 @@ result-view {
                     halign (End)
                     valign (Bottom)
                     content {
-                      text { value ("거리거리") style (Detail_M_Soft) }
+                      text { value ("#{value(this.distance)}") style (Detail_M_Soft) }
                     }
                   }
                 }
@@ -148,7 +122,7 @@ result-view {
                   template ("날짜")
                 }
                 value {
-                  template ("날짜 $expr로 추가하기") // 오늘 날짜
+                  template ("#{value(this.myDateExpression)}") // 오늘 날짜
                 }
               }
             }
@@ -158,7 +132,7 @@ result-view {
                   template ("시간")
                 }
                 value {
-                  template ("#{value(this.startTime)}") // 선택된 영화 시간
+                  template ("#{value(this.startTime)} ~ #{value(this.endTime)}") // 선택된 영화 시간
                 }
               }
             }
@@ -170,9 +144,22 @@ result-view {
               text { value ("잔여좌석") style (Detail_M) }
             }
             slot2 {
-              single-line {
-                text { value ("#{value(this.availableSeat)}") style (Detail_L) } // 현재 좌석
-                text { value ("#{value(this.totalSeat)}") style (Detail_L) } // 총 좌석
+              single-line { // 좌석
+                if(this.availableSeat * 100 / this.totalSeat > 30) {
+                  text {
+                    color (Green)
+                    style (Detail_L)
+                    value ("#{value(this.availableSeat)}")
+                  }
+                }
+                else {
+                  text {
+                    color (Red)
+                    style (Detail_L)
+                    value ("#{value(this.availableSeat)}")
+                  }
+                }
+                text { value ("/#{value(this.totalSeat)}") style (Detail_L) } // 총 좌석
               }
             }
           }

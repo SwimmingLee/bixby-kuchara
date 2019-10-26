@@ -1,4 +1,5 @@
-console = require('console')
+let console = require('console')
+let dates = require('dates');
 
 module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, theaterInfo, theaterSchedule) {
   console.log(movie.movieName)
@@ -28,6 +29,13 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
   console.log(theaterSchedule.room)
   console.log(theaterSchedule.roomProperty)
 
+  let zonedDateTime = new dates.ZonedDateTime('Asia/Seoul')
+
+  let dateObj = {
+    'dateTime': zonedDateTime.getDateTime(),
+  }
+
+
   let movieScheduleDetail = {
     'movieName': movie.movieName,
     // "duration": movie.duration,
@@ -45,7 +53,8 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
     'latitude' : theaterInfo.latitude,
     "theaterCode": theaterInfo.theaterCode,
     "regionCode": theaterInfo.regionCode,
-    'iconUri': theaterInfo.iconUri,
+    "distance": theaterInfo.distance,
+    //'iconUri': theaterInfo.iconUri,
 
     'startTime': theaterSchedule.startTime,
     'endTime': theaterSchedule.endTime,
@@ -54,7 +63,9 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
     "subtitle": theaterSchedule.subtitle,               // 자막여부
     "dubbing": theaterSchedule.dubbing,
     "room": theaterSchedule.room,
-    "roomProperty": theaterSchedule.roomProperty
+    "roomProperty": theaterSchedule.roomProperty,
+
+    "myDateExpression": dateObj.dateTime.date.year + "." + dateObj.dateTime.date.month + "." + dateObj.dateTime.date.day,
   }
   return movieScheduleDetail;
 }
