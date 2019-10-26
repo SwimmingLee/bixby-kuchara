@@ -11,8 +11,8 @@ layout-macro-def (movie-poster-card) {
    image-card {
      on-click{
        intent{
-         goal: MakeTheaterStructure //FindMovieWithMovieName
-         //value: Movie(movie)
+         goal: FindMovieWithMovieAndPos
+        //  value: Movie(movie)
        }
      }
      

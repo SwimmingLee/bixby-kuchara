@@ -16,7 +16,7 @@ module.exports.function = function findTheaterWithMovieSelected (namedPointStruc
 
     }
   };
-  let response = http.getUrl(config.get('remote.url') + 'searchTheaterWithPosWithMovieName/', options); 
+  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterWithPosWithMovieName/', options); 
 
   return response;
 }

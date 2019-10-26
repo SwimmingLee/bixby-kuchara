@@ -8,7 +8,7 @@ module.exports.function = function filterMovieWithRoom (movieSchedule, roomPrope
     }
   })
 
-  if(typeof exceptExpression == 'undefiended'){
+  if(typeof exceptExpression == 'undefined'){
     input.forEach(function(el){
       if(el.genre.toString().includes(genre)){
         result.push(el);

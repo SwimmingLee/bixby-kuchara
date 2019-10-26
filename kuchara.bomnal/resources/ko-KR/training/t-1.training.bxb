@@ -3,3 +3,8 @@ train (t-1n4q6pn1z9dc2iqusybvbwdqc) {
   enabled (false)
   last-modified (1571813398611)
 }
+train (t-1o1z7hsb6vudjzdy2qwemajzy) {
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule,r:MakeDateTimeExpression] (7시)[v:time.DetachedTime] (이후)[v:IsStartTime:true] 영화만 보여줘")
+  plan (jY4xDsIwDEVdKHACFpgZWHIHJEBiqDokErNpLCVqmqIkjTg+STsgFQbswbb8/rdhA4d2aBQ6ZI++s2iYUISBXO0kOZK8USQHQ3CcYVdtElX1UdNdByV0Rycrhao57GbozfOALmTk32v7qCMLScDOaZ2Vl9fTkfe6t18eFbb0A9t+PChgdh4/WEMBC1hCCavUQ5py5qmAKaZajtzIvAE=)
+  last-modified (1572068353428)
+}

@@ -19,7 +19,7 @@ module.exports.function = function findMovieWithMovieAndPos (movieInput, namedPo
     }
   };
   
-  let response = http.getUrl(config.get('remote.url') + 'searchTheaterOrderedScheduleWithPos/', options); 
+  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterOrderedScheduleWithPos/', options); 
 
   return response;
 }

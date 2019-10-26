@@ -20,7 +20,7 @@ module.exports.function = function showMoviePoster (namedPointStructure) {
     }
   };
 
-  let response = http.getUrl(config.get('remote.url') + 'searchMovieListWithPos/', options); 
-
+  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchMovieListWithPos/', options); 
+  console.log(response);
   return response;
 }
