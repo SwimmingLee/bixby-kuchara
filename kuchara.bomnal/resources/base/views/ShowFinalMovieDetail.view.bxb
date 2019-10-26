@@ -49,52 +49,54 @@ result-view {
                 valign (Top)
                 halign (Start)
                 content {
-
-                  single-line {
-                    text { value ("칸 늘리기") style (Title_XXL) }
-                  }
-
-                   single-line {
-                    text { value ("칸 늘리기") style (Title_XXL) }
-                  }
-
                   single-line {
                     text { value ("#{value(this.movieName)}") style (Title_S) } // 영화 이름
+                    spacer
+
+                    // 관람등급 표시
                     if (this.movieRating == '전체관람가') {
                       image {
                         url ("images/watching_ratings/rating_all.png")
-                        background-color (Transparent)
+                        shape (Circle)
                       }
                     }
                     else-if (this.movieRating == '12세관람가') {
                       image {
                         url ("images/watching_ratings/rating_12.png")
-                        background-color (Transparent)
+                        shape (Circle)
                       }
                     }
                     else-if (this.movieRating == '15세관람가') {
                       image {
                         url ("images/watching_ratings/rating_15.png")
-                        background-color (White)
                         shape (Circle)
                       }
                     }
                     else-if (this.movieRating == '청소년관람불가') {
                       image {
                         url ("images/watching_ratings/rating_19.png")
-                        background-color (Transparent)
+                        shape (Circle)
                       }
                     }
-                    //image ("") // 영화 이름 옆에 자그마낳게 관람 등급 이미지 표시
-                  }
-                  text { value ("#{value(this.genre)}") style (Detail_L_Soft) } // 장르 표시
-                  single-line {
-                    image ("") // 특별관 이미지 url
                   }
                   single-line {
-                    // image { url ("/images/ranking_star_white.png") } // 별점 이미지
-                    text { value ("#{value(this.userRating)}") style (Detail_L_Soft) } // 유저 평점
-                    text { value ("/10.0") style (Detail_L_Soft) } // 10점
+                    text { value ("장르 | #{value(this.genre)}") style (Detail_L_Soft) } // 장르 표시
+                  }
+                  // 특별관 표시
+                  // single-line {
+                  //   if (size(this.roomProperty) > 0) {
+                  //     for-each (this.roomProperty) {
+                  //       as (roomProperty) {
+                  //         image {
+                  //           url ("#{value(roomProperty)}")
+                  //         }
+                  //       }
+                  //     }
+                  //   }
+                  // }
+                  single-line {
+                    image { url ("/images/ranking_star_white.png") } // 별점 이미지
+                    text { value ("#{value(this.userRating)} / 10.0") style (Detail_L_Soft) } // 유저 평점
                   }
                 }
               }
@@ -110,10 +112,21 @@ result-view {
                     content {
                       single-line { // 브랜드, 영화관
                         text { value ("영화관") style (Detail_M_Soft) }
+                      }
+                      single-line {
+                        if (this.brand == 'cgv') {
+                          text { value("CGV") style (Title_S) }
+                        }
+                        else-if (this.brand == 'megabox') {
+                          text { value("메가박스") style (Title_S) }
+                        }
+                        else-if (this.brand == 'lottecinema') {
+                          text { value("롯데시네마") style (Title_S) }
+                        }
                         spacer
-                        text { value ("|") style (Detail_L) } 
+                        text { value ("#{value(this.theaterName)}") style (Title_S) }
                         spacer
-                        text { value("#{value(this.brand)}")}
+                        text { value ("#{value(this.room)}") style (Title_S) }
                       }
                     }
                   }
@@ -121,7 +134,7 @@ result-view {
                     halign (End)
                     valign (Bottom)
                     content {
-                      text { value () style (Detail_M_Soft) }
+                      text { value ("거리거리") style (Detail_M_Soft) }
                     }
                   }
                 }
