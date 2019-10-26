@@ -45,6 +45,18 @@ def GetTheaterInfo2ByObj(theaterObj, distance):
     theaterInfoEle.update({'distance':distance})
     return theaterInfoEle
 
+def GetMovieScheduleInfoByObj(moviescheduleObj):
+    movieScheduleEle = {
+        'room':moviescheduleObj.room,
+        'totalSeat':moviescheduleObj.totalSeat,
+        'availableSeat':moviescheduleObj.availableSeat,
+        'startTime':'{:02}:{:02}'.format(int(moviescheduleObj.startTime/100), moviescheduleObj.startTime%100),
+        'endTime': '{:02}:{:02}'.format(int(moviescheduleObj.endTime/100), moviescheduleObj.endTime%100),
+        'subtitle':moviescheduleObj.subtitle,
+        'dubbing':moviescheduleObj.dubbing,
+        'roomProperty':"2D"
+    }
+    return movieScheduleEle
 
 def GetMovieScheduleList(reqtheater, movieID):
     movieScheduleList = []
@@ -62,6 +74,28 @@ def GetMovieScheduleList(reqtheater, movieID):
         }
         movieScheduleList.append(movieScheduleDict)
     return movieScheduleList
+
+
+class TimeOrderedSchedule:
+    def __init__(self, movie, movieScheduleList):
+        self.movie = movie
+        self.movieSchedule = movieScheduleList
+    
+    def GetJson(self):
+        TimeOrderSchduleJSON = GetMovieInfoByObj(self.movie)
+
+        timeScheduleList = []
+        for movieScheduleObj in self.movieSchedule:
+            timeScheduleDict = GetMovieScheduleInfoByObj(movieScheduleObj)
+            theaterObj = Theaters.objects.get(id=movieScheduleObj.theater)
+            theaterInfo = GetTheaterInfoByObj(theaterObj)
+            timeScheduleDict.update({'theaterInfo':theaterInfo})
+            timeScheduleList.append(timeScheduleDict)
+
+        TimeOrderSchduleJSON.update({'timeschedule':timeScheduleList})
+        return TimeOrderedSchedule
+
+    
 
 
 

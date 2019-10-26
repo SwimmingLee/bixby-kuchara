@@ -23,7 +23,7 @@ import copy
 from .models import Movies
 from .models import MovieSchedules
 from .update import GetMovieInfo
-import datetime
+
 from datetime import datetime
 
 
@@ -35,12 +35,6 @@ def WebDriverInit():
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
     driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
-
-def GetDiffTime(preTime, curTime):
-    curTime = curTime.replace(tzinfo=None)
-    preTime = preTime.replace(tzinfo=None)
-    diffTime = curTime - preTime
-    return diffTime.total_seconds()
 
 
 def MovieCrawl(theaterObj):
@@ -55,6 +49,7 @@ def MovieCrawl(theaterObj):
             CGVCrawl(theaterObj)
         theaterObj.updatedTime = datetime.now()
         theaterObj.save() 
+
 
 def CGVCrawl(theaterObj):   
     movieObj = ""
@@ -98,15 +93,44 @@ def CGVCrawl(theaterObj):
         movieHallTypes = movieScheduleList.findAll('div', {'class':'type-hall'})
         for movieHallType in movieHallTypes:
             movieType = movieHallType.ul.find('li')
+            SoundX = False
             if movieType.text.find('더빙') >= 0:
                 movieDict['dubbing'] = True
             else:
                 movieDict['dubbing'] = False
+            if movieType.text.find('SOUNDX') >= 0:
+                SoundX = True
             #print(movieType.text.strip())
 
             movieRoom = movieType.next_sibling.next_sibling
             #print(movieRoom.text.strip())
-            movieDict['room'] = movieRoom.text.strip() 
+            movieRoomStr = movieRoom.text.strip() 
+            movieDict['room'] = movieRoomStr
+            if movieRoomStr.find('IMAX') >= 0:
+                movieDict['roomProperty'] = 'IMAX'
+            elif movieRoomStr.find('SCREENX') >= 0:
+                movieDict['roomProperty'] = 'SCREENX'
+            elif movieRoomStr.find('STARIUM') >= 0:
+                movieDict['roomProperty'] = 'STARIUM'
+            elif movieRoomStr.find('SphereX') >= 0:
+                movieDict['roomProperty'] = 'SphereX'
+            elif movieRoomStr.find('GOLD CLASS') >= 0:
+                movieDict['roomProperty'] = 'GOLD CLASS'
+            elif movieRoomStr.find('CINE de CHEF') >= 0:
+                movieDict['roomProperty'] = 'CINE de CHEF'
+            elif movieRoomStr.find('TEMPUR CINEMA') >= 0:
+                movieDict['roomProperty'] = 'TEMPUR CINEMA'
+            elif movieRoomStr.find('PREMIUM') >= 0:
+                movieDict['roomProperty'] = 'PREMIUM'
+            elif movieRoomStr.find('SUBPAC ') >= 0:
+                movieDict['roomProperty'] = 'SUBPAC '
+            elif movieRoomStr.find('씨네앤리빙룸') >= 0:
+                movieDict['roomProperty'] = '씨네앤리빙룸'
+            elif movieRoomStr.find('ART') >= 0:
+                movieDict['roomProperty'] = 'ART'
+            elif movieRoomStr.find('SKYBOX') >= 0:
+                movieDict['roomProperty'] = 'SKYBOX'
+
 
             totalSeat = movieRoom.next_sibling.next_sibling
             totalSeatStr = re.findall("\d+", totalSeat.text)[0]
@@ -170,8 +194,6 @@ def LotteCinemaCrawl(theaterObj):
         movieRating = movieScheduleList.find('span', {'class':re.compile('grade_.*')})
         #print(movieRating.text)
         movieName = movieRating.next_sibling.strip()
-        print(movieName)
-        print(type(movieName))
         movieDict['movieName'] = movieName
         movieObj = Movies.objects.filter(movieName=movieName)
         movieObj = movieObj.first()
@@ -179,6 +201,7 @@ def LotteCinemaCrawl(theaterObj):
             movieObj = GetMovieInfo(movieName)
             if movieObj == None:
                 continue  
+
         movieScreens = movieScheduleList.findAll('dd', {'class':re.compile('screen.*')})
         for movieScreen in movieScreens:
             movieCineD1 = movieScreen.find('ul', {'class':'cineD1'}).findAll('li')
@@ -189,10 +212,22 @@ def LotteCinemaCrawl(theaterObj):
                     movieDict['subtitle'] = True
                 elif cineD1.text.find('더빙') >= 0:
                     movieDict['dubbing'] = True 
+                elif cineD1.text.find('슈퍼플렉스 G') >= 0:
+                    movieDict['roomProperty'] = '슈퍼플렉스 G'
+                elif cineD1.text.find('슈퍼 S') >= 0:
+                    movieDict['roomProperty'] = '슈퍼 S'
+                else:
+                    movieDict['roomProperty'] = '2D'
+
             movieTheaterTimes = movieScreen.find('ul', {'class':re.compile('theater_time *')}).findAll('li', recursive=False)
             for movieTheaterTime in movieTheaterTimes:
                 movieRoom = movieTheaterTime.find('span', {'class':re.compile('cineD.*')})
                 movieDict['room'] = movieRoom.text
+                if movieRoom.text.find('샤롯데 프라이빗'):
+                    movieDict['roomProperty'] = '샤롯데 프라이빗'
+                elif movieRoom.text.find('샤롯데'):
+                    movieDict['roomPropery'] = '샤롯데'
+
                 # print(movieRoom.text)
                 movieTime = movieTheaterTime.find('span', {'class':'clock'})
                 startTimeStr, endTimeStr = movieTime.text.split('~')
@@ -297,15 +332,27 @@ def MegaBoxCrawl(theaterObj):
         if movieRoom != None:            
             movieRoomStr = movieRoom.text
             movieDict['room'] = movieRoomStr
+            if movieRoomStr.find('MX') >= 0:
+                movieDict['roomProperty'] = 'MX'
+            elif movieRoomStr.find('컴포트') >= 0:
+                movieDict['roomProperty'] = '컴포트'
+            elif movieRoomStr.find('더부티크') >= 0:
+                if movieRoomStr.find('스위트룸') >= 0:
+                    movieDict['roomProperty'] = '더부티크S'
+                else:
+                    movieDict['roomProperty'] = '더부티크'
+            else:
+                movieDict['roomProperty'] = '2D'
         
         movieSubtitle = movieRoomInfo.find('small')
         if movieSubtitle != None:
-            subtitleIdx = movieSubtitle.text.find('자막')
-            
-            if subtitleIdx > 0:
+            if movieSubtitle.text.find('자막') >= 0:
                 movieDict['subtitle'] = True
             else:
                 movieDict['subtitle'] = False
+            if movieSubtitle.text.find('필름소사이어티') >= 0:
+                movieDict['roomProperty'] = movieSubtitle.text
+
 
         movieCinemaTimes = row.findAll('div', {'class':re.compile('^cinema_time')})
         

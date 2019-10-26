@@ -43,6 +43,7 @@ def SearchTheaterOrderedScheduleWithPos(request):
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             MovieCrawl(reqtheater)
             movieObj = Movies.objects.get(movieName=movieName)
+
             movieScheduleList = GetMovieScheduleList(reqtheater, movieObj.id)
             theaterEle = {
                 'theaterInfo':reqtheater,
@@ -156,3 +157,19 @@ def SearchMovieListWithPos(request):
     movieJson = json.dumps(movie, ensure_ascii=False)
 
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
+
+
+
+def SearchMovieWithTheater(request):
+    try:
+        regionCode = request.GET['regionCdde']
+        theaterCode = request.GET['theaterCode']
+        brand = request.GET['brand']
+    except:
+        return HttpResponse({"invalid data":"transferred data is bad"}, content_type="text/json-comment-filtered")
+    
+    theaterObj = Theaters.objects.filter(brand__exac=brand, regionCode__exact=regionCode, theaterCode__exact=theaterCode)
+    MovieCrawl(theaterObj)
+    #movieScheduleSet = MovieSchedules.objects.filter(theater__exact=theaterObj.id)
+    
+    
