@@ -55,11 +55,11 @@ def GetMovieScheduleList(reqtheater, movieID):
             'room':movieSchedule.room,
             'totalSeat':movieSchedule.totalSeat,
             'availableSeat':movieSchedule.availableSeat,
-            'startTime':'{}:{}'.format(int(movieSchedule.startTime/100), movieSchedule.startTime%100),
-            'endTime': '{}:{}'.format(int(movieSchedule.endTime/100), movieSchedule.endTime%100),
+            'startTime':'{:02}:{:02}'.format(int(movieSchedule.startTime/100), movieSchedule.startTime%100),
+            'endTime': '{:02}:{:02}'.format(int(movieSchedule.endTime/100), movieSchedule.endTime%100),
             'subtitle':movieSchedule.subtitle,
             'dubbing':movieSchedule.dubbing,
-            'room property':"2D"
+            'roomProperty':"2D"
         }
         movieScheduleList.append(movieScheduleDict)
     return movieScheduleList
@@ -100,7 +100,7 @@ def GetMovieScheduleDict(movie_info):
     movieScheduleDict['endTime'] = movie_info['endTime']
     movieScheduleDict['subtitle'] = False
     movieScheduleDict['dubbing'] = False
-    movieScheduleDict['room property'] = "NoT IMAX"
+    movieScheduleDict['roomProperty'] = "NoT IMAX"
     return movieScheduleDict
 
 def GetDiffTime(preTime, curTime):
@@ -126,6 +126,7 @@ def SearchTheaterOrderedScheduleWithPos(request):
 
     # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
     allTheater = Theaters.objects.filter(brand__exact='megabox')
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='cgv'))
     allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
     movieObj = Movies.objects.get(movieName=movieName)
 
@@ -143,12 +144,15 @@ def SearchTheaterOrderedScheduleWithPos(request):
         if orderCnt == 0 or theaterOrder[1] < 3000:
             orderCnt = orderCnt + 1
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
-            diffTime = GetDiffTime(reqtheater.updatedTime, datetime.now())    
+            diffTime = GetDiffTime(reqtheater.updatedTime, datetime.now())  
+            print(reqtheater.theaterName + " : {}".format(diffTime) )  
             if (diffTime > 60*15):
                 if reqtheater.brand == 'megabox':
                     MegaBoxCrawl(reqtheater)
                 elif reqtheater.brand == 'lottecinema':
                     LotteCinemaCrawl(reqtheater)
+                elif reqtheater.brand == 'cgv':
+                    CGVCrawl(reqtheater)
 
                 reqtheater.updatedTime = datetime.now()
                 reqtheater.save() 
@@ -158,7 +162,8 @@ def SearchTheaterOrderedScheduleWithPos(request):
                 'distance':theaterOrder[1],
                 'theaterSchedule':movieScheduleList
             }
-            theater.append(theaterEle)
+            if len(movieScheduleList) > 0:
+                theater.append(theaterEle)
         else:
             break
 
@@ -198,8 +203,6 @@ def SearchCGVMovie(request):
     for idx, reqtheater in enumerate(allTheater):
         movieList = CGVCrawl(reqtheater)
         movieJson.append(movieList)
-        if idx > 1:
-            break
 
     movieJson = json.dumps(movieJson, ensure_ascii=False)
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
@@ -214,7 +217,8 @@ def SearchTheaterWithPos(request):
     
 
     # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
-    allTheater = Theaters.objects.filter(brand__exact='lottecinema')
+    allTheater = Theaters.objects.filter(brand__exact='cgv')
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
     allTheater = allTheater.union(Theaters.objects.filter(brand__exact='megabox'))
 
     theaterDistanceDict = dict()
@@ -249,6 +253,7 @@ def SearchMovieListWithPos(request):
     
     # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
     allTheater = Theaters.objects.filter(brand__exact='megabox')
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='cgv'))
     allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
 
     theaterDistanceDict = dict()

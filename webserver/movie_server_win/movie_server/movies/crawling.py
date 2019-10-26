@@ -60,15 +60,15 @@ def CGVCrawl(theaterObj):
         #print(movieRating.text.strip())
         movieName = movieScheduleList.find('strong')
         movieNameStr = movieName.text.strip().replace('-', ':').strip()
-        print(movieNameStr)
-        print(type(movieNameStr))
+        #print(movieNameStr)
+        #print(type(movieNameStr))
         movieDict['movieName'] = movieNameStr
         
         movieObj = Movies.objects.filter(movieName=movieNameStr)
         movieObj = movieObj.first()
         if movieObj == None:
             movieName = movieName.encode('utf-8')
-            print(type(movieName))
+            #print(type(movieName))
             movieObj = GetMovieInfo(movieName)
             if movieObj == None:
                 continue 
@@ -83,7 +83,7 @@ def CGVCrawl(theaterObj):
             #print(movieType.text.strip())
 
             movieRoom = movieType.next_sibling.next_sibling
-            print(movieRoom.text.strip())
+            #print(movieRoom.text.strip())
             movieDict['room'] = movieRoom.text.strip() 
 
             totalSeat = movieRoom.next_sibling.next_sibling
@@ -108,7 +108,7 @@ def CGVCrawl(theaterObj):
                     movieDict['totalSeat'] = int(totalSeatStr)
 
                 MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
-                                    totalSeat=movieDict['totalSeat'], availableSeat=movieDict['avaliableSeat'], dubbing=movieDict['dubbing'], \
+                                    totalSeat=movieDict['totalSeat'], availableSeat=movieDict['availableSeat'], dubbing=movieDict['dubbing'], \
                                     startTime=movieDict['startTime'], endTime=movieDict['endTime']
                                 )
                 MovieScheduleEle.save()
