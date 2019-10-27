@@ -94,29 +94,29 @@ result-view {
                     content {
                       single-line {
                         if (this.brand == 'cgv') {
-                          text { value("CGV") style (Title_XS) }
+                          text { value("CGV") style (Detail_L) }
                         }
                         else-if (this.brand == 'megabox') {
-                          text { value("메가박스") style (Title_XS) }
+                          text { value("메가박스") style (Detail_L) }
                         }
                         else-if (this.brand == 'lottecinema') {
-                          text { value("롯데시네마") style (Title_XS) }
+                          text { value("롯데시네마") style (Detail_L) }
                         }
                         // spacer
-                        text { value ("#{value(this.theaterName)}") style (Title_XS) }
+                        text { value ("#{value(this.theaterName)}") style (Detail_L) }
                       }
                     }
                   }
                   vbox {
                     halign (End)
                     content {
-                      text { value ("#{value(this.distance)}") style (Detail_M_Soft) }
+                      text { value ("#{value(this.distance)}") style (Detail_L_Soft) }
                     }
                   }
                 }
               }
               single-line {
-                text { value ("#{value(this.room)}") style (Title_XS) }
+                text { value ("#{value(this.room)}") style (Detail_L) }
               }     
             }
           }

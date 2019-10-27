@@ -61,7 +61,7 @@ module.exports.function = function makeDetailFromTimeOrderedSchedule (timeSchedu
     "dubbing": timeSchedule.dubbing,
     "room": timeSchedule.room,
     "roomProperty": timeSchedule.roomProperty,
-    "roomPropertyUriList": theaterSchedule.roomPropertyUriList,
+    "roomPropertyUriList": timeSchedule.roomPropertyUriList,
     
 
     "myDateExpression": dateObj.dateTime.date.year + "." + dateObj.dateTime.date.month + "." + dateObj.dateTime.date.day,

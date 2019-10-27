@@ -27,7 +27,7 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
     let newSubtitle = timeScheduleElement.subtitle;
     let newDubbing = timeScheduleElement.dubbing;
     let newRoomProperty = timeScheduleElement.roomProperty;
-    let newRoomPropertyList = timeScheduleElement.roomPropertyList;
+    let newRoomPropertyUriList = timeScheduleElement.roomPropertyUriList;
 
     let newTheaterName = timeScheduleElement.theaterInfo.theaterName;
     let newTheaterCode = timeScheduleElement.theaterInfo.theaterCode;
@@ -58,7 +58,7 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
       "dubbing": newDubbing,
       "room": newRoom,
       "roomProperty": newRoomProperty,
-      'roomPropertyList': newRoomPropertyList,
+      'roomPropertyUriList': newRoomPropertyUriList,
     }
 
     let found = false;
