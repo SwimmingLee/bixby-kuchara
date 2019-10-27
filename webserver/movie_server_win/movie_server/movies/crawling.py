@@ -23,6 +23,7 @@ import copy
 from .models import Movies
 from .models import MovieSchedules
 from .update import GetMovieInfo
+from .jsonmodels import GetDiffTime
 
 from datetime import datetime
 
@@ -55,7 +56,7 @@ def CGVCrawl(theaterObj):
     movieObj = ""
     movieList = []
     movieDict = dict()
-    print(theaterObj.theaterName)
+    print(theaterObj.brand + theaterObj.theaterName)
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
     legacyMovieSchedules.delete()
@@ -77,16 +78,16 @@ def CGVCrawl(theaterObj):
         #print(movieRating.text.strip())
         movieName = movieScheduleList.find('strong')
         movieNameStr = movieName.text.strip().replace('-', ':').strip()
-        #print(movieNameStr)
+        print(movieNameStr)
         #print(type(movieNameStr))
         movieDict['movieName'] = movieNameStr
         
         movieObj = Movies.objects.filter(movieName=movieNameStr)
         movieObj = movieObj.first()
         if movieObj == None:
-            movieName = movieName.encode('utf-8')
+            #movieName = movieName.encode('utf-8')
             #print(type(movieName))
-            movieObj = GetMovieInfo(movieName)
+            movieObj = GetMovieInfo(movieNameStr)
             if movieObj == None:
                 continue 
 
@@ -130,7 +131,14 @@ def CGVCrawl(theaterObj):
                 movieDict['roomProperty'] = 'ART'
             elif movieRoomStr.find('SKYBOX') >= 0:
                 movieDict['roomProperty'] = 'SKYBOX'
+            else:
+                movieDict['roomProperty'] = '2D'
 
+            if SoundX == True:
+                if movieDict['roomProperty'] == '2D':
+                    movieDict['roomProperty'] = 'SOUNDX'
+                else:
+                    movieDict['roomProperty'] += ',SOUNDX'
 
             totalSeat = movieRoom.next_sibling.next_sibling
             totalSeatStr = re.findall("\d+", totalSeat.text)[0]
@@ -141,11 +149,12 @@ def CGVCrawl(theaterObj):
                 startTime = movieTimeList.find('em')
                 hour, minute = startTime.text.split(':')
                 movieDict['startTime'] = int(hour)*100 + int(minute)
+
                 hourcarry = int(minute) + movieObj.duration + 10
                 movieDict['endTime'] = (int(hour) + int(hourcarry / 60) ) * 100 + hourcarry % 60
 
                 availableSeat = startTime.next_sibling
-                if availableSeat.text.find("마감") >= 0 or availableSeat.text.find("매진") >= 0:
+                if availableSeat.text.find("마감") >= 0 or availableSeat.text.find("매진") >= 0 or availableSeat.text.find('준비중') >= 0:
                     movieDict['availableSeat'] = -1
                     movieDict['totalSeat'] = -1
                 else:
@@ -155,7 +164,7 @@ def CGVCrawl(theaterObj):
 
                 MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
                                     totalSeat=movieDict['totalSeat'], availableSeat=movieDict['availableSeat'], dubbing=movieDict['dubbing'], \
-                                    startTime=movieDict['startTime'], endTime=movieDict['endTime']
+                                    startTime=movieDict['startTime'], endTime=movieDict['endTime'],  roomProperty=movieDict['roomProperty']
                                 )
                 MovieScheduleEle.save()
                 movieList.append(copy.copy(movieDict))
@@ -167,7 +176,7 @@ def LotteCinemaCrawl(theaterObj):
     movieObj = ""
     movieList = []
     movieDict = dict()
-    print(theaterObj.theaterName)
+    print(theaterObj.brand + theaterObj.theaterName)
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
     legacyMovieSchedules.delete()
@@ -179,26 +188,25 @@ def LotteCinemaCrawl(theaterObj):
     
     driver.get(url)
 
-    '''
-    alert = driver.switch_to_alert()
-    if alert != None:
-        alert.accept()
-    '''
     time.sleep(2)
     req = driver.page_source
     bs = BeautifulSoup(req, 'html.parser')
 
     movieSchedule = bs.find('div', {'class':re.compile('time_aType .*')})
+    # 영화 리스트가 없으면 함수를 바로 끝낸다.
+    if movieSchedule == None:
+        return None
     movieScheduleLists = movieSchedule.findAll('dl', {'class':re.compile('time_line .*')})
     for movieScheduleList in movieScheduleLists:
         movieRating = movieScheduleList.find('span', {'class':re.compile('grade_.*')})
         #print(movieRating.text)
         movieName = movieRating.next_sibling.strip()
-        movieDict['movieName'] = movieName
-        movieObj = Movies.objects.filter(movieName=movieName)
+        movieNameStr = movieName.replace(' :', ':')
+        movieDict['movieName'] = movieNameStr
+        movieObj = Movies.objects.filter(movieName=movieNameStr)
         movieObj = movieObj.first()
         if movieObj == None:
-            movieObj = GetMovieInfo(movieName)
+            movieObj = GetMovieInfo(movieNameStr)
             if movieObj == None:
                 continue  
 
@@ -223,10 +231,10 @@ def LotteCinemaCrawl(theaterObj):
             for movieTheaterTime in movieTheaterTimes:
                 movieRoom = movieTheaterTime.find('span', {'class':re.compile('cineD.*')})
                 movieDict['room'] = movieRoom.text
-                if movieRoom.text.find('샤롯데 프라이빗'):
+                if movieRoom.text.find('샤롯데 프라이빗') >= 0:
                     movieDict['roomProperty'] = '샤롯데 프라이빗'
-                elif movieRoom.text.find('샤롯데'):
-                    movieDict['roomPropery'] = '샤롯데'
+                elif movieRoom.text.find('샤롯데') >= 0:
+                    movieDict['roomProperty'] = '샤롯데'
 
                 # print(movieRoom.text)
                 movieTime = movieTheaterTime.find('span', {'class':'clock'})
@@ -264,7 +272,7 @@ def LotteCinemaCrawl(theaterObj):
                 MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
                                     totalSeat=movieDict['totalSeat'], availableSeat=movieDict['avaliableSeat'], dubbing=movieDict['dubbing'], \
                                     startTime=movieDict['startTime'], endTime=movieDict['endTime'], subtitle=movieDict['subtitle'], \
-                                    lateNight=movieDict['lateNight'], morning=movieDict['morning']
+                                    lateNight=movieDict['lateNight'], morning=movieDict['morning'], roomProperty=movieDict['roomProperty']
                                 )
                 MovieScheduleEle.save()
                 movieList.append(copy.copy(movieDict))
@@ -276,7 +284,7 @@ def MegaBoxCrawl(theaterObj):
     movieObj = ""
     movieList = []
     movieDict = dict()
-    print(theaterObj.theaterName)
+    print(theaterObj.brand + theaterObj.theaterName)
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
     legacyMovieSchedules.delete()
@@ -317,7 +325,7 @@ def MegaBoxCrawl(theaterObj):
                 movieDict['dubbing'] = False
                     
             
-            movieNameStr = movieNameStr.strip()
+            movieNameStr = movieNameStr.strip().replace(' :', ':')
             movieDict['movieName'] = movieNameStr
             
 
@@ -325,7 +333,9 @@ def MegaBoxCrawl(theaterObj):
             movieObj = Movies.objects.filter(movieName=movieNameStr)
             movieObj = movieObj.first()
             if movieObj == None:
-                movieObj = GetMovieInfo(movieNameStr)      
+                movieObj = GetMovieInfo(movieNameStr)
+                if movieObj == None:
+                    return None     
 
         movieRoomInfo = row.find('th', {'class':'room'})
         movieRoom = movieRoomInfo.find('div')
@@ -391,7 +401,8 @@ def MegaBoxCrawl(theaterObj):
 
                 MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
                                     totalSeat=totalSeat, availableSeat=avaliableSeat, dubbing=movieDict['dubbing'], \
-                                    startTime=startTime, endTime=endTime, subtitle=movieDict['subtitle'])
+                                    startTime=startTime, endTime=endTime, subtitle=movieDict['subtitle'],  roomProperty=movieDict['roomProperty']
+                                    )
                 MovieScheduleEle.save()
                 movieJson = json.dumps(movieDict, ensure_ascii=False)
                 movieList.append(movieJson)

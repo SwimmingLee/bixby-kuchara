@@ -23,8 +23,12 @@ def GetNaverMovieInfo(url):
     #print(movieNames.text)
 
     infoSpec = bs.find('dl', {'class':'info_spec'})
-    outline = infoSpec.find('dt', {'class':'step1'}).next_sibling.next_sibling
-    genreRow = outline.find('span')
+    step1 = infoSpec.find('dt', {'class':'step1'}).next_sibling.next_sibling
+    movieOutline = step1.findAll('span')
+    if len(movieOutline) != 4:
+        return None
+    
+    genreRow = step1.find('span')
     genres = genreRow.findAll('a')
     genreStr = ""
     for idx, genre in enumerate(genres):
@@ -79,13 +83,15 @@ def GetMovieInfo(movieName):
         movieInfos = response_body.decode('utf-8')
         # print(movieInfo)
         movieInfos = json.loads(movieInfos)
-        print(movieName)
+        
  
         if len(movieInfos['items']) == 0:
-            print("해당 영화를 찾을 수 없습니다. Naver Moive API")
+            print(movieName)
+            print("해당 영화를 찾을 수 없습니다. Naver Movie API")
             return None
 
         for movieInfo in movieInfos['items']:
+            print(movieInfo['title'])
             link = movieInfo['link']
             imgUrl = movieInfo["image"]
             actors = movieInfo["actor"]
@@ -94,11 +100,15 @@ def GetMovieInfo(movieName):
             movieInfoPart2 = GetNaverMovieInfo(link)
             if movieInfoPart2 != None:
                 break 
-
+        
+        if movieInfoPart2 == None:
+            print(movieName)
+            print("해당 영화 정보가 올바르지 않습니다. Naver Movie API")
+            return None
 
         MoviesEle = Movies(movieName=movieName, director=director, \
                         actors=actors, movieRating=movieInfoPart2["movieRating"], \
-                        duration=movieInfoPart2["duration"], genre=movieInfoPart2["genre"], \
+                        duration=int(movieInfoPart2["duration"]), genre=movieInfoPart2["genre"], \
                         userRating=userRating, imgUrl=imgUrl, nation=movieInfoPart2["nation"])
         MoviesEle.save()
         return MoviesEle

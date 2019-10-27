@@ -7,11 +7,12 @@ class Movies(models.Model):
     director = models.CharField(max_length=20)
     actors = models.CharField(max_length=50)
     movieRating = models.CharField(max_length=20)
-    duration = models.IntegerField(blank=True, null=True)
+    duration = models.IntegerField()
     genre = models.CharField(max_length=30)
     userRating = models.FloatField()
     imgUrl = models.CharField(max_length=50)
     nation = models.CharField(max_length=20)
+
 
     def __str__(self):
         return self.movieName
@@ -50,6 +51,7 @@ class MovieSchedules(models.Model):
     # movieCode = models.IntegerField(null=True, blank=True)
     startTime = models.IntegerField()
     endTime = models.IntegerField()
+    roomProperty = models.CharField(max_length=20)
     # >> movieScheduleFlag
     subtitle = models.BooleanField(null=True)
     dubbing = models.BooleanField(null=True)
