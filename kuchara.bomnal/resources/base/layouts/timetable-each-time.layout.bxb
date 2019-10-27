@@ -46,26 +46,26 @@ layout-macro-def (timetable-each-time) {
             vbox {
               valign (Middle)
               content {
-                single-line {
-                  if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 30) {
-                    text {
-                      color (Green)
-                      style (Detail_M)
-                      value ("#{value(timeSchedule.availableSeat)}")
-                    }
+                single-line { // 좌석
+                  if (timeSchedule.totalSeat == -1) {
+                    text { value ("자리 없음") color (Red) style (Detail_M)}
                   }
                   else {
-                    text {
-                      color (Red)
-                      style (Detail_M)
-                      value ("#{value(timeSchedule.availableSeat)}")
+                    if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 30) {
+                      text {
+                        color (Green)
+                        style (Detail_M)
+                        value ("#{value(timeSchedule.availableSeat)}")
+                      }
                     }
-                  }
-                  text { // totalSeat
-                    style (Detail_L)
-                    value {
-                      template ("/#{value(timeSchedule.totalSeat)}석")
+                    else {
+                      text {
+                        color (Red)
+                        style (Detail_M)
+                        value ("#{value(timeSchedule.availableSeat)}")
+                      }
                     }
+                    text { value ("/#{value(timeSchedule.totalSeat)}석") style (Detail_M) }
                   }
                 }
                 single-line {

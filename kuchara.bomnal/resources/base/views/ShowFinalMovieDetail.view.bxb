@@ -14,36 +14,41 @@ result-view {
         content {
           thumbnail-card {
             image-object-position (Right)
+
             image-aspect-ratio (3:4)
             image-url ("#{value(this.imgUrl)}") // 영화 포스터
             title-area {
               slot1 {
-                single-line {
-                  text { value ("#{value(this.movieName)}") style (Title_S) } // 영화 이름
+                single-line { // 영화 이름
+                  text { value ("#{value(this.movieName)}") style (Title_S) }
                   spacer
 
                   // 관람등급 표시
                   if (this.movieRating == '전체 관람가') {
                     image {
                       url ("images/movieRating_icon/rating_all.png")
+                      style (Detail_L)
                       shape (Circle)
                     }
                   }
                   else-if (this.movieRating == '12세 관람가') {
                     image {
                       url ("images/movieRating_icon/rating_12.png")
+                      style (Detail_L)
                       shape (Circle)
                     }
                   }
                   else-if (this.movieRating == '15세 관람가') {
                     image {
                       url ("images/movieRating_icon/rating_15.png")
+                      style (Detail_L)
                       shape (Circle)
                     }
                   }
                   else-if (this.movieRating == '청소년 관람불가') {
                     image {
                       url ("images/movieRating_icon/rating_19.png")
+                      style (Detail_L)
                       shape (Circle)
                     }
                   }
@@ -51,7 +56,7 @@ result-view {
               }
               slot2 {
                 single-line { // 장르
-                  text { value ("장르 | #{value(this.genre)}") style (Detail_L_Soft) } // 장르 표시
+                  text { value ("장르 | #{value(this.genre)}") style (Detail_M_Soft) } // 장르 표시
                 }
               }
               slot3 {
@@ -62,6 +67,7 @@ result-view {
                       as (roomProperty) {
                         image {
                           url ("#{value(roomProperty)}")
+                          style (Detail_L)
                         }
                         // spacer
                       }
@@ -78,41 +84,40 @@ result-view {
           }
           compound-card { // 영화관 정보
             content {
+              single-line { // 브랜드, 영화관
+                text { value ("영화관") style (Detail_M_Soft) }
+              }
               hbox {
                 content {
                   vbox {
                     halign (Start)
-                    valign (Middle)
                     content {
-                      single-line { // 브랜드, 영화관
-                        text { value ("영화관") style (Detail_M_Soft) }
-                      }
                       single-line {
                         if (this.brand == 'cgv') {
-                          text { value("CGV") style (Title_S) }
+                          text { value("CGV") style (Title_XS) }
                         }
                         else-if (this.brand == 'megabox') {
-                          text { value("메가박스") style (Title_S) }
+                          text { value("메가박스") style (Title_XS) }
                         }
                         else-if (this.brand == 'lottecinema') {
-                          text { value("롯데시네마") style (Title_S) }
+                          text { value("롯데시네마") style (Title_XS) }
                         }
-                        spacer
-                        text { value ("#{value(this.theaterName)}") style (Title_S) }
-                        spacer
-                        text { value ("#{value(this.room)}") style (Title_S) }
+                        // spacer
+                        text { value ("#{value(this.theaterName)}") style (Title_XS) }
                       }
                     }
                   }
-                  vbox { // 거리
+                  vbox {
                     halign (End)
-                    valign (Bottom)
                     content {
                       text { value ("#{value(this.distance)}") style (Detail_M_Soft) }
                     }
                   }
                 }
               }
+              single-line {
+                text { value ("#{value(this.room)}") style (Title_XS) }
+              }     
             }
           }
           split-input-cell {
@@ -137,44 +142,52 @@ result-view {
               }
             }
           }
+          spacer
+
               // 잔여좌석, 금액 - area
           title-area { // 좌석
             halign (Start)
             slot1 {
-              text { value ("잔여좌석") style (Detail_M) }
+              text { value ("잔여좌석") style (Detail_M_Soft) }
             }
             slot2 {
               single-line { // 좌석
-                if(this.availableSeat * 100 / this.totalSeat > 30) {
-                  text {
-                    color (Green)
-                    style (Detail_L)
-                    value ("#{value(this.availableSeat)}")
-                  }
+                if(this.totalSeat == -1) {
+                  text { value ("자리 없음") style (Title_XS) }
+
                 }
                 else {
-                  text {
-                    color (Red)
-                    style (Detail_L)
-                    value ("#{value(this.availableSeat)}")
+                  if(this.availableSeat * 100 / this.totalSeat > 30) {
+                    text {
+                      color (Green)
+                      style (Title_XS)
+                      value ("#{value(this.availableSeat)}")
+                    }
                   }
+                  else {
+                    text {
+                      color (Red)
+                      style (Title_XS)
+                      value ("#{value(this.availableSeat)}")
+                    }
+                  }
+                  text { value ("/#{value(this.totalSeat)}") style (Title_XS) } // 총 좌석
                 }
-                text { value ("/#{value(this.totalSeat)}") style (Detail_L) } // 총 좌석
               }
             }
           }
-          title-area { // 금액
-            halign (Start)
-            slot1 {
-              text { value ("금액(성인 1인 기준)") style (Detail_M) }
-            }
-            slot2 {
-              single-line {
-                text { value ("비용비용") style (Detail_L) } // min 비용
-                text { value ("삐용삐용") style (Detail_L) } // max 비용
-              }
-            }
-          }
+          // title-area { // 금액
+          //   halign (Start)
+          //   slot1 {
+          //     text { value ("금액(성인 1인 기준)") style (Detail_M) }
+          //   }
+          //   slot2 {
+          //     single-line {
+          //       text { value ("비용비용") style (Detail_L) } // min 비용
+          //       text { value ("삐용삐용") style (Detail_L) } // max 비용
+          //     }
+          //   }
+          // }
 
           // input-cell { // 잔여좌석, 금액 - box
           //   label {
@@ -196,10 +209,9 @@ result-view {
       }
     }
   }
-
   conversation-drivers {
     conversation-driver {
-      template ("여기다가는 뭘 적어야 되지?")
+      template ("웹으로 이동해줘")
     }
   }
 }

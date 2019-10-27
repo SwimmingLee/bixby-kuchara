@@ -108,21 +108,26 @@ layout-macro-def (movieOrderedSchedule-card) {
               valign (Middle)
               content {
                 single-line { // 좌석
-                  if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 30) {
-                    text {
-                      color (Green)
-                      style (Detail_M)
-                      value ("#{value(theaterSchedule.availableSeat)}")
-                    }
+                  if (theaterSchedule.totalSeat == -1) {
+                    text { value ("자리 없음") style (Detail_M)}
                   }
                   else {
-                    text {
-                      color (Red)
-                      style (Detail_M)
-                      value ("#{value(theaterSchedule.availableSeat)}")
+                    if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 30) {
+                      text {
+                        color (Green)
+                        style (Detail_M)
+                        value ("#{value(theaterSchedule.availableSeat)}")
+                      }
                     }
+                    else {
+                      text {
+                        color (Red)
+                        style (Detail_M)
+                        value ("#{value(theaterSchedule.availableSeat)}")
+                      }
+                    }
+                    text { value ("/#{value(theaterSchedule.totalSeat)}석") style (Detail_M) }
                   }
-                  text { value ("/#{value(theaterSchedule.totalSeat)}석") style (Detail_M) }
                 }
               }
             }

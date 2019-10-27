@@ -50,7 +50,10 @@ result-view {
   }
   conversation-drivers {
     conversation-driver {
-      template ("Hi Iron bro")
+      template ("시간순으로 보여줘")
+    }
+    conversation-driver {
+      template ("다른 영화관 보여줘")
     }
   }
 }
