@@ -1,0 +1,11 @@
+action (OpenBrowser) {
+  type (Search)
+  description (open to browser)
+  collect {
+    input (movieScheduleDetail) {
+      type (MovieScheduleDetail)
+      min (Required) max (One)
+    }
+  }
+  output (webURL)
+}

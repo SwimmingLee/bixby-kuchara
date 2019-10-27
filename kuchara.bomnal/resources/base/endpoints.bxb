@@ -139,5 +139,10 @@ endpoints {
       local-endpoint (Restructure/RestructureTimeViewToTheaterViewWithMovie.js)
     }
 
+    // webURL 연결
+    action-endpoint (OpenBrowser) {
+      accepted-inputs (movieScheduleDetail)
+      local-endpoint (OpenBrowser.js)
+    }
   }
 }
