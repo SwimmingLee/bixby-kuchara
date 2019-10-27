@@ -3,3 +3,8 @@ train (t-p9lvotsbtdotmzell9fqgdf7o) {
   plan (bU1LCgIxDH2joydw4VZB3M0d3MzOD4zgOraBlplpIbae37YIQjEh4eV9CNY4jFEZEuqefnY0dXfDFFiuollYD8qwjhPjWNl66/TZvy0/bDAFnJy++Rc2lbFo2NUsjVyUIUhUIQpj+y94oZmxr5RMpl/WhV96hQYLLNEmhC9uUqNMrny3aeMD)
   last-modified (1572091796755)
 }
+train (t-pc9qatk79i243h7qrhl4focw3) {
+  utterance ([g:FindTheaterWithMovieSelected:continue:TimeOrderedSchedule] 딴 영화관 시간 보여줘)
+  plan (Y2BhkMouTc5ILErUS8rPzUvM0QvJSE0sSS3yzEvLZ9BGk3PLzEuByodnlmT45pdlpgan5qQml6SmMEigKQbL+iXmpjIoocmABFMC8jPzSoJLikqTS0qLUhmYGRgZmIAkA5AGQQgAswA=)
+  last-modified (1572169029953)
+}

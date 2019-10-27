@@ -1,0 +1,10 @@
+train (t-60bs5nnu3klywzfta0aupbcab) {
+  utterance ([g:RestructureTheaterViewToTimeViewWithMovie:continue:TheaterOrderedScheduleWithMovie] 빠른순서대로)
+  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9UsigqDFfBbzoYLKKWqrWInRL6uahXQLGjZgmE5bmDhjcMHWfneg6hNusQWOOkSGtFAB3Dsc0qeR5N6m+N7c8d+nnLILdHFG9OgJ)
+  last-modified (1572168803576)
+}
+train (t-6yn6k8h1xu1so3nlj7kkab1g5) {
+  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 볼만한 영화 알려줘)
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572165988897)
+}

@@ -1,0 +1,5 @@
+train (t-714pxbd8c8wwiur1k9qf47l1d) {
+  utterance ("[g:RestructureTheaterViewToTimeViewWithMovie,r:FindMovieWithLocation,r:FilterMovieWithMovieNameAndThOSM] (용산아이파크몰)[v:geo.SearchTerm]에서 볼 수 있는 (비티에스월드투어)[v:MovieName] 제일 빠른걸로")
+  plan (lZBBTwIxEEY/RAUVMdGLXo3xYrJevXLxJGDcjZ5rO9k27LZJaZebv90uwi4pYMKhSTPfm5m+4gpPM88lsyz5NqVmRZKpkqZWkCWRcknCF/SlnBybShFeIviD5s567rylTBJzZD8VLTJTD6lvbWcSr/nD9256jvhXVQR8mTXQhJU00iKT03SM26ihIQ5e/Z/kyisYtrpt50F/+bBlqEXj92Y4c8po3EdUbSTejdIuXT8Kj7E6m9Eu7rpSVZKT2RiCm3Vt5J2Z+zwPsrjbUfxZSNqckRKzXGZkSwzRwRG6OMYJTtFDH2c4xwUGuAwZVml3Kx2EBMuD5tZWEPhOmDkMnX3gFw==)
+  last-modified (1572169281022)
+}

@@ -1,3 +1,8 @@
+train (t-43a23efraqiyzalwylv8unon3) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS,r:ShowMoviePoster] (십칠시)[v:time.DetachedTime]에 (끝나)[v:IsStartTime:false]는 영화는 뭔데")
+  plan (jVBNSwMxEH2rta0fvelFwYMg4mX9DYIKHtqKWfQcNwMJ3U0kyW79+SYRW8l6KCFkmPcx84IZrlZdLbnl5YdpNW/KSrW0tIIsCVZLEl1DuM04T6rxZOemV/SuvIySey0qtWQ4z6jPjnlufaTsNOou47yS87arfWepksTD2DdF68pEbaxwnZv+sHLfm0EELTYBUhESvBiH04yYMFxmXSbNOiFBEqYNoi14S8FOac9+18dFr/rSh73Lh7BhDPD49WnJOWX0IMacr+gf2tnWgzyP4dLPzlBgD/sY4QBjTDDFYThHOMYJELDiDzYOaJGwAkjo9mLzjpLjNOq/AQ==)
+  last-modified (1572168108667)
+}
 train (t-4lcuqac8236cr9s5d8tvxraun) {
   utterance ([g:RestructureTimeViewToTheaterView:continue:TimeOrderedScheduleWithMovie] 영화관순으로 보여줘)
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)

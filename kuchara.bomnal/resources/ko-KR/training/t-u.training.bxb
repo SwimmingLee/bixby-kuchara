@@ -1,0 +1,15 @@
+train (t-uc1y4mmkddgd13lanaw654jp0) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] (조커)[v:MovieName] 재미있어?")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572166301165)
+}
+train (t-ucrlr2kkvxqz36cam3o7q39bl) {
+  utterance ("[g:FindMovieWithMovieAndPos] (수원 영통)[v:geo.SearchTerm]에서 볼만한 영화 있니")
+  plan (bYw7D4IwFIUPvl3VxdVE3fgPLG4+Ekica3tDG6BNSoubv91K1BDCdu53vnuwxL7wXDLL4oepNCvjTBJzZK9WkCWRcknCl4RjTzspLc6mUXRXTrYh0eJmamx6Ytth16MXVlHQlXaps547bwmH/icraMhbNaqJczKdEax/LPHO1D7PqXbYDsDXU1J3IyVmuczIVlggwghjTDDFDPNwI5DoT2Yho2X4JgQ/+nhv)
+  last-modified (1572168169100)
+}
+train (t-usmwwz2qkvrrkot5u1fm7ni05) {
+  utterance ([g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순으로)
+  plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
+  last-modified (1572168320440)
+}
