@@ -4,10 +4,22 @@ layout-macro-def (timetable-each-time) {
       type (TimeSchedule)
       min (Required) max (One)
     }
+    param (movie) {
+      type (Movie)
+      min (Required) max (One)
+    }
   }
   
   content {
     compound-card {
+      on-click {
+        intent {
+          goal: MakeDetailFromTimeOrderedSchedule
+          value: $expr(movie)
+          value: $expr(theaterInfo)
+          value: $expr(theaterSchedule)
+        }
+      }
       content {
         hbox {
           content {

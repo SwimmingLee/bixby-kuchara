@@ -51,7 +51,7 @@ endpoints {
     }
 
     action-endpoint (MakeDetailFromTimeOrderedSchedule) {
-      accepted-inputs (timeOrderedSchedule)
+      accepted-inputs (movie, timeSchedule)
       local-endpoint (MakeDetailFromTimeOrderedSchedule.js)
     }
 
