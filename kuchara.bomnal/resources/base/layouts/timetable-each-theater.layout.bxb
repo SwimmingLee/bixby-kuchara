@@ -1,4 +1,4 @@
-  layout-macro-def (timetable-each-theater) {
+layout-macro-def (timetable-each-theater) {
   params {
     param (theaterSchedule) {
       type (TheaterSchedule)
@@ -17,62 +17,75 @@
     compound-card {
       on-click {
         intent {
-          // goal: MovieScheduleDetail
-          // subplan {
-            goal: MakeDetailFromTheaterOrderedSchedule // 골은 target으로 설정하면 됨다
-            value: $expr(movie)
-            value: $expr(theaterInfo)
-            value: $expr(theaterSchedule)
-            // value: TheaterOrderedSchedule {
-            //   movie: $expr(movie)
-            //   theater: Theater {
-            //     theaterInfo: $expr(theaterInfo)
-            //     theaterSchedule: $expr(theaterSchedule)
-            //   }
-            // }
-        //   }
+          goal: MakeDetailFromTheaterOrderedSchedule
+          value: $expr(movie)
+          value: $expr(theaterInfo)
+          value: $expr(theaterSchedule)
         }
       }
       content {
         hbox {
           content {
             vbox {
-              grow (2)
-              halign (Center)
-              valign (Middle)
-              content {
-                single-line { // startTime
-                  text { value ("#{value(theaterSchedule.startTime)} ") style (Title_S) }
-                  // spacer
-                  text { value ("~ #{value(theaterSchedule.endTime)}") style (Title_S) }
-                }
-              }
-            }
-            vbox {
-              grow (2)
               halign (Start)
               valign (Middle)
               content {
-                single-line {
-                  text { value ("#{value(theaterSchedule.room)}") style (Detail_L) }
-                  spacer
-                  image { url ("#{value(theaterSchedule.roomProperty)}") }
+                single-line { // startTime
+                  text { value ("#{value(theaterSchedule.startTime)} ") style (Title_XS) }
+                  // spacer
+                  text { value ("~#{value(theaterSchedule.endTime)}") style (Title_XS) }
                 }
               }
             }
             vbox {
-              grow (1)
-              halign (Center)
-              valign (Middle)
+              halign (End)
+              valign (Bottom)
               content {
                 single-line {
-                  if (theaterSchedule.availableSeat < 50) {
-                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_L) color (Red) }
+                  text { value ("#{value(theaterSchedule.room)}") style (Detail_L) }
+                }
+              }
+            }
+          }
+        }
+        hbox {
+          content {
+            vbox {
+              halign (Start)
+              valign (Top)
+              content {
+                single-line { // 좌석
+                  if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 30) {
+                    text {
+                      color (Green)
+                      style (Detail_M)
+                      value ("#{value(theaterSchedule.availableSeat)}")
+                    }
                   }
                   else {
-                    text { value ("#{value(theaterSchedule.availableSeat)}") style (Detail_L) color (Green) }
+                    text {
+                      color (Red)
+                      style (Detail_M)
+                      value ("#{value(theaterSchedule.availableSeat)}")
+                    }
                   }
-                  text { value ("/#{value(theaterSchedule.totalSeat)}") style (Detail_L) }
+                  text { value ("/#{value(theaterSchedule.totalSeat)}석") style (Detail_M) }
+                }
+              }
+            }
+            vbox {
+              halign (End)
+              valign (Top)
+              content {
+                single-line {
+                  if (size(theaterSchedule.roomProperty) > 0) {
+                    for-each (theaterSchedule.roomProperty) {
+                      as (roomProperty) {
+                        image { url ("#{value(roomProperty)}") }
+                        // spacer
+                      }
+                    }
+                  }
                 }
               }
             }
