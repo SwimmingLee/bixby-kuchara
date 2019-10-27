@@ -3,7 +3,7 @@ endpoints {
     // show movie poster
     action-endpoint (ShowMoviePoster) {
       accepted-inputs (namedPointStructure)
-      local-endpoint (ShowMoviePoster.js)
+      local-endpoint (Make/ShowMoviePoster.js)
     }
 
     // find movie schedule
@@ -42,27 +42,27 @@ endpoints {
     // make structure
     action-endpoint (MakeNamedPointStructure) {
       accepted-inputs (locationalKeyword)
-      local-endpoint (MakeNamedPointStructure.js)
+      local-endpoint (Make/MakeNamedPointStructure.js)
     }
 
     action-endpoint (MakeDateTimeExpression) {
       accepted-inputs (dateTimeExpression, detachedTime)
-      local-endpoint (MakeDateTimeExpression.js)
+      local-endpoint (Make/MakeDateTimeExpression.js)
     }
 
     action-endpoint (MakeDetailFromTimeOrderedSchedule) {
       accepted-inputs (movie, timeSchedule)
-      local-endpoint (MakeDetailFromTimeOrderedSchedule.js)
+      local-endpoint (Make/MakeDetailFromTimeOrderedSchedule.js)
     }
 
     action-endpoint (MakeDetailFromTheaterOrderedSchedule) {
       accepted-inputs (movie, theaterInfo, theaterSchedule)
-      local-endpoint (MakeDetailFromTheaterOrderedSchedule.js)
+      local-endpoint (Make/MakeDetailFromTheaterOrderedSchedule.js)
     }
 
     action-endpoint (MakeMovieStructure) {
       accepted-inputs (movieName)
-      local-endpoint (MakeMovieStructure.js)
+      local-endpoint (Make/MakeMovieStructure.js)
     }
 
 

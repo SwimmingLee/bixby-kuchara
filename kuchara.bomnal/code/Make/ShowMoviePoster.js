@@ -2,7 +2,7 @@ let http = require("http");
 let config = require("config");
 let console = require("console");
 
-const movieReturn = require('./sample/exampleMovieReturn.js');
+// const movieReturn = require('./sample/exampleMovieReturn.js');
 
 module.exports.function = function showMoviePoster (namedPointStructure) {
 
