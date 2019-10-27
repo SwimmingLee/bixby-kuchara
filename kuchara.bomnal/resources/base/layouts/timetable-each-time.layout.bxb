@@ -51,9 +51,16 @@ layout-macro-def (timetable-each-time) {
                     text { value ("자리 없음") color (Red) style (Detail_M)}
                   }
                   else {
-                    if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 30) {
+                    if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 60) {
                       text {
                         color (Green)
+                        style (Detail_M)
+                        value ("#{value(timeSchedule.availableSeat)}")
+                      }
+                    }
+                    else-if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 30) {
+                      text {
+                        color (Amber)
                         style (Detail_M)
                         value ("#{value(timeSchedule.availableSeat)}")
                       }
@@ -86,9 +93,7 @@ layout-macro-def (timetable-each-time) {
                 single-line { // 극장 이름
                   text {
                     style (Detail_L)
-                    value {
-                      template ("#{value(timeSchedule.theaterInfo.theaterName)}점")
-                    }
+                    value ("#{value(timeSchedule.theaterInfo.theaterName)}점")
                   }
                 }
                 single-line { // 거리

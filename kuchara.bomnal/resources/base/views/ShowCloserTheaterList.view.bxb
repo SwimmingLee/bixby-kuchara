@@ -17,7 +17,7 @@ result-view {
           }
           for-each (this.theaterInfo) {
             as (theaterInfo) {
-              layout-macro (theater-card) {
+              layout-macro (closer-theater-card) {
                 param (movieName) {
                   expression (this.movieName)
                 }

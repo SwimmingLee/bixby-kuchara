@@ -34,13 +34,8 @@ result-view {
                   }
                 }
               }
-              spacer
-              single-line {
-                text { value ("\0") style (Title_L) } 
-              }
-              spacer
-              single-line {
-                text { value ("\0") style (Title_L) }
+              single-line { // 여백 주기..
+                image { url ("images/null_img.png") style (Title_S) }
               }
             }
           }
