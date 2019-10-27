@@ -1,0 +1,68 @@
+layout-macro-def (theater-card) {
+  params {
+    param (movieName) {
+      type (MovieName)
+      min (Required) max (One)
+    }
+    param (theaterInfo) {
+      type (TheaterInfo)
+      min (Required) max (One)
+    }
+  }
+  
+  content {
+    compound-card {
+      on-click {
+        intent {
+          goal: FindOneTheaterWithMovieSelected
+          value: $expr(movieName)
+          value: $expr(theaterInfo.brand)
+          value: $expr(theaterInfo.regionCode)
+          value: $expr(theaterInfo.theaterCode)
+        }
+      }
+      content {
+        hbox {
+          content {
+            vbox { // 영화관 로고
+              grow (1)
+              content {
+                single-line {
+                  if(theaterInfo.brand == 'cgv') {
+                    image { url ("images/theater_icon/square/cgv_s.png") style (Title_XL) }
+                  }
+                  else-if(theaterInfo.brand == 'megabox') {
+                    image { url ("images/theater_icon/square/mega_s.png") style (Title_XL) }
+                  }
+                  else-if(theaterInfo.brand == 'lottecinema') {
+                    image { url ("images/theater_icon/square/lotte_s.png") style (Title_XL) }
+                  }
+                }
+              }
+            }
+            vbox { // 영화관 이름, 주소
+              grow (4)
+              content {
+                single-line {
+                  text { value ("#{value(theaterInfo.theaterName)}") style (Detail_L)}
+                }
+                single-line {
+                  text { value ("#{value(theaterInfo.address)}") style (Detail_M_Soft)}
+                }
+              }
+            }
+            vbox { 
+              grow (1)
+              valign (Top)
+              content {
+                single-line {
+                  text { value ("#{value(theaterInfo.distance)}") style (Detail_M_Soft) }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

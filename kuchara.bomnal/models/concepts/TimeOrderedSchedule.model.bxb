@@ -6,6 +6,6 @@ structure (TimeOrderedSchedule) {
   }
   property (timeSchedule) {
     type (TimeSchedule)
-    min (Optional) max (Many)
+    min (Required) max (Many)
   }
 }

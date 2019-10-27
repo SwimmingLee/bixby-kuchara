@@ -7,7 +7,7 @@ structure (MovieScheduleDetail) {
   }
   property (duration) {
     type (Duration)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   property (movieRating) {
     type (MovieRating)
@@ -63,10 +63,18 @@ structure (MovieScheduleDetail) {
     type (Longitude)
     min (Required) max (One)
   }
-  property(iconUri) {
-    type (IconUri)
-    min (Required) max (One)
+  property(distance) {
+    type (Distance)
+    min (Optional) max (One)
   }
+  property(address) {
+    type (Address)
+    min (Optional) max (One)
+  }
+  // property(iconUri) {
+  //   type (IconUri)
+  //   min (Required) max (One)
+  // }
 
   // theaterSchedule
     property (startTime) {
@@ -99,6 +107,10 @@ structure (MovieScheduleDetail) {
   }
   property (roomProperty) {
     type (RoomProperty)
+    min (Required) max (One)
+  }
+  property (myDateExpression) {
+    type (MyDateExpression)
     min (Required) max (One)
   }
 }

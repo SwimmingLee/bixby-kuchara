@@ -1,0 +1,11 @@
+structure (TheaterList) {
+  description (when user choose the movie, list up list of theater)
+  property (movieName) {
+    type (MovieName)
+    min (Required) max (One)
+  }
+  property (theaterInfo) {
+    type (TheaterInfo)
+    min (Required) max (One)
+  }
+}

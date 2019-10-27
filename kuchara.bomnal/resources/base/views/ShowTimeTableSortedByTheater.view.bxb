@@ -4,7 +4,6 @@ result-view {
       min (Required)
       max (One)
     }
-
   }
   message {
     template ("#{value(this.movie.movieName)} 을(를) 상영하고 있는 근처 영화관 상영 시간표에요.")
@@ -46,5 +45,4 @@ result-view {
       template ("Hi Iron bro")
     }
   }
-
 }

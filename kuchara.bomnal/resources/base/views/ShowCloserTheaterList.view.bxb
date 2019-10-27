@@ -1,0 +1,39 @@
+result-view {
+  match{
+    TheaterList (this) {
+      min (Required)
+      max (One)
+    }
+  }
+  message {
+    template ("어느 영화관에서 #{value(this.movieName)} 시간표를 보시겠어요?")
+  }
+  render {
+    layout {
+      section {
+        content {
+          single-line {
+            text { value ("가까운 영화관") style (Detail_L_Soft) }
+          }
+          for-each (this.theaterInfo) {
+            as (theaterInfo) {
+              layout-macro (theater-card) {
+                param (movieName) {
+                  expression (this.movieName)
+                }
+                param (theaterInfo) {
+                  expression (theaterInfo)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  conversation-drivers {
+    conversation-driver {
+      template ("지금은 새벽 2시. 잠이 오지 않는 밤.")
+    }
+  }
+}

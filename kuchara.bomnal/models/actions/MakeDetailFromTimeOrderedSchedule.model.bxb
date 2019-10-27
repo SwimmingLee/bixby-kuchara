@@ -2,8 +2,12 @@ action (MakeDetailFromTimeOrderedSchedule) {
   type(Search)
   description (__DESCRIPTION__)
   collect {
-    input (timeOrderedSchedule) {
-      type (TimeOrderedSchedule)
+    input (movie) {
+      type (Movie)
+      min (Required) max (One)
+    }
+    input (timeSchedule) {
+      type (TimeSchedule)
       min (Required) max (One)
     }
   }
