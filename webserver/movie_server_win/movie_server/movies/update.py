@@ -44,7 +44,7 @@ def GetNaverMovieInfo(url):
     movieInfoPart["nation"] = nationStr
 
     duration  = nationRow.next_sibling.next_sibling
-    print(duration)
+    #print(duration)
     try:
         # 여기서 TV영화 분류를 거를 수 있다.
         # 나중에 코드를 깔끔하게 수정할 것
@@ -91,7 +91,7 @@ def GetMovieInfo(movieName):
             return None
 
         for movieInfo in movieInfos['items']:
-            print(movieInfo['title'])
+            print(movieInfo['title'] + "에 대한 영화 정보를 찾는 중입니다.")
             link = movieInfo['link']
             imgUrl = movieInfo["image"]
             actors = movieInfo["actor"]
@@ -124,7 +124,7 @@ def UpdateMoive(request):
 
 def UpdateTheater(request):
     #csvFileDir = r"C:\Users\student\works\bixby-kuchara\webserver\movie_server_win\movie_server\movies\theater_info.txt"
-    csvFileDir = r"C:\Users\Lee\workspace\bixby-kuchara\webserver\movie_server_win\movie_server\movies\theater_info.txt"
+    csvFileDir = r"C:\Users\Lee\workspace\bixby-kuchara\webserver\movie_server_win\movie_server\movies\theater_info2.txt"
     csvFile = open(csvFileDir, 'r', encoding='UTF-8')
     try:
         spamreader = csv.reader(csvFile)
@@ -135,10 +135,13 @@ def UpdateTheater(request):
             brand = row[3]
             latitude = row[4]
             longitude = row[5]
+            address = row[6]
             oldTime = "20191010"
             convert_date = datetime.strptime(oldTime, "%Y%m%d").date()
             theaterEle = Theaters(theaterName=theaterName, regionCode=regionCode, theaterCode=theaterCode, \
-                                longitude=longitude, latitude=latitude, brand=brand, updatedTime=convert_date)
+                                longitude=longitude, latitude=latitude, brand=brand, updatedTime=convert_date, \
+                                address=address
+                            )
             theaterEle.save()
  
     finally:

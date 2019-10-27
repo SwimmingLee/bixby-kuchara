@@ -116,9 +116,10 @@ class TheaterOrderedSchedule:
         
         theaterList = []
         for theater in self.theater:
-            theaterInfo = theater['theaterInfo']
+            theaterInfo = GetTheaterInfoByObj(theater['theaterInfo'])
+            theaterInfo.update({'distance':theater['distance']})
             theaterEle = {
-                'theaterInfo':GetTheaterInfoByObj(theaterInfo),
+                'theaterInfo':theaterInfo,
                 'theaterSchedule':theater['theaterSchedule']
             }
             theaterList.append(theaterEle)

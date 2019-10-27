@@ -31,6 +31,7 @@ class Theaters(models.Model):
     latitude = models.FloatField()
     brand = models.CharField(max_length=30)
     updatedTime = models.DateTimeField()
+    address = models.CharField(max_length=50)
     # >> theaterFlag
     # << theaterFlag
 

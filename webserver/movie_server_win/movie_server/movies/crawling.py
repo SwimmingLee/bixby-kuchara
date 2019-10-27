@@ -40,7 +40,7 @@ def WebDriverInit():
 
 def MovieCrawl(theaterObj):
     diffTime = GetDiffTime(theaterObj.updatedTime, datetime.now())    
-    print(diffTime)
+    #print(diffTime)
     if (diffTime > 60*15):
         if theaterObj.brand == 'megabox':
             MegaBoxCrawl(theaterObj)
@@ -58,7 +58,7 @@ def CGVCrawl(theaterObj):
     movieDict = dict()
     print(theaterObj.brand + theaterObj.theaterName)
 
-    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
+    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
     legacyMovieSchedules.delete()
 
     region = theaterObj.regionCode
@@ -184,7 +184,7 @@ def LotteCinemaCrawl(theaterObj):
     movieDict = dict()
     print(theaterObj.brand + theaterObj.theaterName)
 
-    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
+    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
     legacyMovieSchedules.delete()
 
     region = theaterObj.regionCode
@@ -292,7 +292,7 @@ def MegaBoxCrawl(theaterObj):
     movieDict = dict()
     print(theaterObj.brand + theaterObj.theaterName)
 
-    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj)
+    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
     legacyMovieSchedules.delete()
 
     region = theaterObj.regionCode

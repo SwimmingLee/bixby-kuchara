@@ -86,7 +86,7 @@ def SearchTheaterOrderedScheduleWithPos(request):
     theater = []
     orderCnt = 0
     for theaterOrder in theaterOrderedSchedule:
-        if orderCnt == 0 or theaterOrder[1] < 3000:
+        if orderCnt == 0 or theaterOrder[1] < 5000:
             orderCnt = orderCnt + 1
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             MovieCrawl(reqtheater)
@@ -142,6 +142,7 @@ def SearchTheaterWithMoviePos(request):
             MovieCrawl(reqtheater)
             if len(MovieSchedules.objects.filter(theater__exact=theaterOrder[0], movie__exact=movieObj.id)) > 0:
                 theaterEle = GetTheaterInfo2ByObj(reqtheater, theaterOrder[1])
+                theaterEle.update({'address':reqtheater.address})
                 theater.append(theaterEle)
         else:
             break
@@ -176,6 +177,7 @@ def SearchTheaterWithPos(request):
             orderCnt = orderCnt + 1
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             theaterEle = GetTheaterInfo2ByObj(reqtheater, theaterOrder[1])
+            theaterEle.update({'address':reqtheater.address})
             theater.append(theaterEle)
         else:
             break
