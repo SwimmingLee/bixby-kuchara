@@ -18,7 +18,7 @@ layout-macro-def (movieOrderedTime-card) {
     compound-card {
       on-click {
         intent {
-          goal: FindOneTheaterWithMovieSelected
+          goal: MakeDetailFromTheaterOrderedSchedule
           value: $expr(movie)
           value: $expr(theaterInfo)
           value: $expr(theaterSchedule)

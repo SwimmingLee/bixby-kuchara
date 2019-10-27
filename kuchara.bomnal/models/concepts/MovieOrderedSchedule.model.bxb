@@ -10,6 +10,6 @@ structure (MovieOrderedSchedule) {
   }
   property (theaterSchedule) {
     type (TheaterSchedule)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
 }

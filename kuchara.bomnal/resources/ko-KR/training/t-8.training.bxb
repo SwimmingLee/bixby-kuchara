@@ -3,3 +3,8 @@ train (t-8hsullilty90s4fpodz5ez8bs) {
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
   last-modified (1572168421124)
 }
+train (t-8mysv896isgz1elqmgnmqh0ht) {
+  utterance ([g:RestructureTimeViewToTheaterViewWithMovie:continue:TimeOrderedScheduleWithMovie] 영화관 순으로 보여줘)
+  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9TMogqDFzDAwHypITFFbxUqMflnVLKSFCuCGDRim0xYmzhhcsLXfHaj65FtsgaMOkSHdgt7hkP4euczbLL9PKf57k1OWQIkzokdP)
+  last-modified (1572207211472)
+}

@@ -1,3 +1,4 @@
+const getUriList = require('api/makeRoomPropertyList.js');
 const movieReturn = require('../sample/newStructure3.js');
 let console = require('console');
 let http = require('http');
@@ -23,8 +24,15 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
     movieOrderedSchedule: []
   };
   response.forEach(function(mosElement){
+    let rp = mosElement.theaterSchedule.roomProperty;
+    let db = mosElement.theaterSchedule.dubbing;
+    let list = getUriList(rp, db);
+    mosElement.theaterSchedule.roomPropertyUriList = [];
+    list.forEach(function(el) {
+      mosElement.theaterSchedule.roomPropertyUriList.push({roomPropertyUri: el});
+    })
     timeOrderedScheduleWithMovie.movieOrderedSchedule.push(mosElement)
-  })
+  });
 
   return timeOrderedScheduleWithMovie;
 }
