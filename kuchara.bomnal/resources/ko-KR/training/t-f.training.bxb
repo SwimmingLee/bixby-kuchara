@@ -1,6 +1,0 @@
-train (t-f8px5re313bfw7ksevpo5rrz5) {
-  utterance ("[g:FindMovieWithTheater] (강남)[v:geo.SearchTerm] (메가박스)[v:Brand:megabox] 영화시간표 보여줘")
-  plan (bY09C8IwFEVv/ai6qovgpODY/6CDmyK04ByTRxPaJpAmdfO3G4tKKd3uO/e897DAtvBcMsuSh6k0K5OLaRSlXJLwJWHfa89Ki9a4KyczScyRxbonnSzTArsevbKKxM0o7VJnPXfeEg7956ygIW/ZqCbJyXSOYPVjR+9M7fOcaofNAHw9JXVvpMQslxnZCnNEGGGMCaaIMQszAon+JA4ZLcM3IXSfnWC+AQ==)
-  enabled (false)
-  last-modified (1571918751973)
-}

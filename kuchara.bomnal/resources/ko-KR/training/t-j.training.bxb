@@ -1,9 +1,3 @@
-train (t-j5fyxwu6me5ynnk69p9whgaa3) {
-  utterance ("[g:FilterMovieWithMovieName:continue:MovieSchedule] (아주평범한연애)[v:MovieName]만 보여줘")
-  plan (Y2BhkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEeTdcvMKUktAqsJzyzJADP8EnNTGSSwGQOWwW8BMwMjAxOQZADSIAgBTGBRBgA=)
-  enabled (false)
-  last-modified (1571813408105)
-}
 train (t-jlu5kmgtpfflrjz1zsjgiwzx0) {
   utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 요즘 영화 뭐해)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)

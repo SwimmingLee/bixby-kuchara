@@ -1,3 +1,8 @@
+train (t-o7n2zglmy4r4728jxcowcu3sw) {
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (반지의제왕)[v:MovieName] (빼고)[v:ExceptExpression] 보여줘")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
+  last-modified (1572163854529)
+}
 train (t-oczz5r7wi4jresqpcndo8t02d) {
   utterance ("[g:FilterMovieWithRoom:continue:MovieSchedule] (mx)[v:Room]관만 보여줘")
   plan (Y2BhkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEKTdcvMKUktAqsJzyzJCMrPzyVggjCaLFgLMwMjAxOQZADSIAgBTEAWUAwA)

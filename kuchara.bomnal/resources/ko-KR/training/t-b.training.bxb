@@ -1,0 +1,5 @@
+train (t-bof8nxav10rlkflbebkxi8nsk) {
+  utterance ("[g:FindMovieWithLocation] (강남 메가박스)[v:geo.SearchTerm] 영화시간표 보여줘")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572164010073)
+}
