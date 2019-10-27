@@ -1,5 +1,5 @@
 // 영화관 순 보기
-module.exports = 
+module.exports =
   {
   "movie": {
     "movieName": "82년생 김지영",

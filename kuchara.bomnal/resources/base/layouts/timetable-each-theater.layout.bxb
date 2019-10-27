@@ -28,7 +28,7 @@ layout-macro-def (timetable-each-theater) {
           content {
             vbox {
               halign (Start)
-              valign (Middle)
+              valign (Bottom)
               content {
                 single-line { // startTime
                   text { value ("#{value(theaterSchedule.startTime)} ") style (Title_XS) }
@@ -75,7 +75,7 @@ layout-macro-def (timetable-each-theater) {
             }
             vbox {
               halign (End)
-              valign (Top)
+              valign (Middle)
               content {
                 single-line {
                   if (size(theaterSchedule.roomProperty) > 0) {
