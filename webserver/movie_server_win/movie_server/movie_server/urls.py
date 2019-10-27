@@ -23,6 +23,9 @@ from movies.views import TheaterViewSet
 from movies.movieapi import SearchMovieListWithPos
 from movies.movieapi import SearchTheaterWithPos
 from movies.movieapi import SearchTheaterOrderedScheduleWithPos
+from movies.movieapi import SearchTheaterWithMoviePos
+from movies.movieapi import SearchMovieScheduleWithMovieTheater
+from movies.movieapi import SearchTimeOrderedScheduleWithPos
 from movies.movieapi_test import SearchMegaboxMovie
 from movies.movieapi_test import SearchLottecinemaMovie
 from movies.movieapi_test import SearchCGVMovie
@@ -43,8 +46,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
     path('movie_api/searchMovieListWithPos/', SearchMovieListWithPos, name='SearchMovieListWithPos'),
+    path('movie_api/searchMovieScheduleWithMovieTheater/', SearchMovieScheduleWithMovieTheater, name='SearchMovieScheduleWithMovieTheater'),
     path('movie_api/searchTheaterWithPos/', SearchTheaterWithPos, name='SearchTheaterWithPos'),
+    path('movie_api/searchTheaterWithMoviePos/', SearchTheaterWithMoviePos, name='SearchTheaterWithMoviePos'),
     path('movie_api/searchTheaterOrderedScheduleWithPos/', SearchTheaterOrderedScheduleWithPos, name='SearchTheaterOrderedScheduleWithPos'),
+    path('movie_api/searchTimeOrderedScheduleWithPos/', SearchTimeOrderedScheduleWithPos, name='SearchTimeOrderedScheduleWithPos'),
     path('movie_api/searchMegaboxMovie/', SearchMegaboxMovie, name='SearchMegaboxMovie'),
     path('movie_api/searchLottecinemaMovie/', SearchLottecinemaMovie, name='SearchLottecinemaMovie'),
     path('movie_api/searchCGVMovie/', SearchCGVMovie, name='SearchCGVMovie'),

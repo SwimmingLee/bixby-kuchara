@@ -7,8 +7,56 @@ from .models import Theaters
 from .models import MovieSchedules
 from .jsonmodels import GetMovieScheduleList
 from .jsonmodels import GetTheaterInfo2ByObj
+from .jsonmodels import GetTheaterInfoByObj
+from .jsonmodels import GetMovieScheduleInfoByObj
 from .jsonmodels import GetMovieInfoByID
+from .jsonmodels import GetMovieInfoByObj
 from .jsonmodels import TheaterOrderedSchedule
+import copy
+
+
+
+def SearchTimeOrderedScheduleWithPos(request):
+    try:
+        longitude = float(request.GET['longitude'])
+        latitude = float(request.GET['latitude'])
+    except:
+        return HttpResponse("{'invalid data': 'error'}", content_type="text/json-comment-filtered")
+    
+    allTheater = Theaters.objects.filter(brand__exact='cgv')
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='megabox'))
+
+    theaterDistanceDict = dict()
+    for reqtheater in allTheater:
+        dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
+        theaterDistanceDict[reqtheater.id] = dist
+
+    DistanceOrderedTheater = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
+
+    movieScheduleSet = None
+    for orderCnt, theaterOrder in enumerate(DistanceOrderedTheater):
+        if orderCnt == 0:
+            movieScheduleSet = MovieSchedules.objects.filter(theater=theaterOrder[0])
+        elif orderCnt <= 5:
+            movieScheduleSet = movieScheduleSet.union(MovieSchedules.objects.filter(theater=theaterOrder[0]))
+        else:
+            break
+
+    movieScheduleSet = movieScheduleSet.order_by('startTime')
+
+    MovieTheaterScheduleList = []
+    for movieSchedule in movieScheduleSet:
+        MovieTheaterSchedule = {
+            'movie':GetMovieInfoByObj(movieSchedule.movie),
+            'theaterInfo':GetTheaterInfo2ByObj(movieSchedule.theater, theaterDistanceDict[movieSchedule.theater.id]),
+            'theaterSchedule': GetMovieScheduleInfoByObj(movieSchedule)
+        }
+        MovieTheaterScheduleList.append(copy.copy(MovieTheaterSchedule))
+    movieJson = json.dumps(MovieTheaterScheduleList, ensure_ascii=False)
+
+    return HttpResponse(movieJson, content_type="text/json-comment-filtered")
+
 
 def SearchTheaterOrderedScheduleWithPos(request):
     try:
@@ -65,6 +113,40 @@ def SearchTheaterOrderedScheduleWithPos(request):
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
 
+def SearchTheaterWithMoviePos(request):
+    try:
+        longitude = float(request.GET['longitude'])
+        latitude = float(request.GET['latitude'])
+        movieName = request.GET['movieName']
+    except:
+        return HttpResponse("{'invalid data': 'error'}", content_type="text/json-comment-filtered")
+        # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
+   
+    allTheater = Theaters.objects.filter(brand__exact='cgv')
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
+    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='megabox'))
+
+    theaterDistanceDict = dict()
+    for reqtheater in allTheater:
+        dist = get_euclidean_distance(reqtheater.latitude, reqtheater.longitude, latitude, longitude)
+        theaterDistanceDict[reqtheater.id] = dist
+
+    theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
+    
+    theater = []
+    movieObj = Movies.objects.get(movieName=movieName)
+
+    for orderCnt, theaterOrder in enumerate(theaterOrderedSchedule):
+        if orderCnt <= 10:
+            reqtheater = Theaters.objects.get(id=theaterOrder[0])
+            MovieCrawl(reqtheater)
+            if len(MovieSchedules.objects.filter(theater__exact=theaterOrder[0], movie__exact=movieObj.id)) > 0:
+                theaterEle = GetTheaterInfo2ByObj(reqtheater, theaterOrder[1])
+                theater.append(theaterEle)
+        else:
+            break
+    movieJson = json.dumps(theater, ensure_ascii=False)
+    return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
 
 def SearchTheaterWithPos(request):
@@ -140,7 +222,7 @@ def SearchMovieListWithPos(request):
             break
     
     if movieScheduleSet == None:
-        return None
+        return HttpResponse("{'no search cinema': 'error'}", content_type="text/json-comment-filtered")
     
     movieDict = dict()
     for movieSchedule in movieScheduleSet:
@@ -160,16 +242,32 @@ def SearchMovieListWithPos(request):
 
 
 
-def SearchMovieWithTheater(request):
+def SearchMovieScheduleWithMovieTheater(request):
     try:
-        regionCode = request.GET['regionCdde']
+        regionCode = request.GET['regionCode']
         theaterCode = request.GET['theaterCode']
         brand = request.GET['brand']
+        movieName = request.GET['movieName']
     except:
         return HttpResponse({"invalid data":"transferred data is bad"}, content_type="text/json-comment-filtered")
     
-    theaterObj = Theaters.objects.filter(brand__exac=brand, regionCode__exact=regionCode, theaterCode__exact=theaterCode)
+    theaterObj = Theaters.objects.get(brand=brand, regionCode=regionCode, theaterCode=theaterCode)
     MovieCrawl(theaterObj)
-    #movieScheduleSet = MovieSchedules.objects.filter(theater__exact=theaterObj.id)
-    
-    
+    movieObj = Movies.objects.get(movieName=movieName)
+    movieScheduleSet = MovieSchedules.objects.filter(theater__exact=theaterObj.id, movie=movieObj.id)
+
+    MovieTheaterScheduleList = []
+    for movieSchedule in movieScheduleSet:
+        MovieTheaterSchedule = {
+            'movie':GetMovieInfoByObj(movieObj),
+            'theaterInfo':GetTheaterInfoByObj(theaterObj),
+            'theaterSchedule': GetMovieScheduleInfoByObj(movieSchedule)
+        }
+        MovieTheaterScheduleList.append(copy.copy(MovieTheaterSchedule))
+    movieJson = json.dumps(MovieTheaterScheduleList, ensure_ascii=False)
+
+    return HttpResponse(movieJson, content_type="text/json-comment-filtered")
+
+
+def SearchMovieScheduleWithTheater(request):
+    i = 0
