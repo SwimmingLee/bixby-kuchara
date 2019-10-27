@@ -1,4 +1,4 @@
-module.exports.function = function calcDistance (latsrc, longsrc, latdst, longdst) {
+module.exports = function calcDistance (latsrc, longsrc, latdst, longdst) {
   let latDistance = latsrc - latdst;
   let longDistance = longsrc - longdst;
 

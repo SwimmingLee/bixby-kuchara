@@ -32,6 +32,11 @@ structure (TimeSchedule) {
     type (RoomProperty)
     min (Required) max (One)
   }
+  property(roomPropertyUriList){
+    type (RoomPropertyUriList)
+    min (Optional) max (One)
+  }
+
   property(theaterInfo){
     type(TheaterInfo)
     min(Required) max (One)

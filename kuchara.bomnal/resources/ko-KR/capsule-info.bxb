@@ -1,8 +1,8 @@
 capsule-info {
   display-name (동네영화관)
-  developer-name (__COMPANY_NAME__)
-  icon-asset (/images/movieRating_icon/rating_all.png)
-  description ("__DESCRIPTION__")
+  developer-name (kuchara)
+  icon-asset (/images/Icon.png)
+  description ("동네영화관은 ")
   website-url (https://example.com/)
   terms-url (https://example.com/terms-of-use/)
   dispatch-name (동네영화관)
@@ -11,7 +11,7 @@ capsule-info {
     alias (동래영화관)
     alias (동래 영화관)
     alias (동래여관)
-    alias (동래 여관)
+    alias (동래 여관) // 최대 5개
   }
   search-keywords{
     keyword (영화)
@@ -19,5 +19,7 @@ capsule-info {
     keyword (동네영화)
     keyword (동네영화관)
     keyword (동네 영화관)
+    keyword (주변 영화관)
+    keyword (영화관)
   }
 }

@@ -7,10 +7,10 @@ let console = require("console");
 module.exports.function = function showMoviePoster (namedPointStructure) {
 
   let targetPosition = namedPointStructure;
-  // let long = targetPosition.point.longitude;
-  // let lat = targetPosition.point.latitutde;
-  let long = 127.123843;
-  let lat = 37.481395;
+  let long = targetPosition.point.longitude;
+  let lat = targetPosition.point.latitude;
+  // let long = 127.123843;
+  // let lat = 37.481395;
 
   let options = { 
     format: 'json',

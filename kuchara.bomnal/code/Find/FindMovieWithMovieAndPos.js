@@ -1,3 +1,4 @@
+const getUriList = require('api/makeRoomPropertyList.js');
 const movieReturn = require('sample/newStructure.js');
 let console = require('console');
 let http = require('http');
@@ -20,9 +21,26 @@ module.exports.function = function findMovieWithMovieAndPos (movie, namedPointSt
   };
 
   let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterOrderedScheduleWithPos/', options);
+  // let response = movieReturn;
   console.log(response);
-  // response.theater.forEach(function(theaterElement){
-  //   theaterElement.theaterInfo.iconUri = "/images/brand/theater/1x/cgv.png";
-  // }) 현진이꺼임
+
+  response.theater.forEach(function(theaterElement){
+    theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
+      let rp = theaterScheduleElement.roomProperty;
+      let db = theaterScheduleElement.dubbing;
+      let list = getUriList(rp, db);
+      console.log(list);
+      theaterScheduleElement.roomPropertyUriList = [];
+      list.forEach(function(el){
+        theaterScheduleElement.roomPropertyUriList.push({roomPropertyUri: el});
+      })
+
+      console.log(theaterScheduleElement.roomPropertyUriList);
+    })
+  })
+
+  console.log("rpurilist");
+  console.log(response);
+
   return response;
 }

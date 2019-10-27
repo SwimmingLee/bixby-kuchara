@@ -22,15 +22,19 @@ structure (TheaterSchedule) {
   }
   property (subtitle) {
     type (Subtitle)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   property (dubbing) {
     type (Dubbing)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   property (roomProperty) {
     type (RoomProperty)
     min (Required) max (Many)
+  }
+  property(roomPropertyUriList){
+    type (RoomPropertyUriList)
+    min (Optional) max (One)
   }
 
   // 필요없으므로 제외

@@ -1,4 +1,5 @@
 action (FindOneTheaterWithMovieSelected) {
+  type(Search)
   description (when One theater is chosen, list up a list of timetable selected by theater)
   collect {
     input (movieName) {

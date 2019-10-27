@@ -1,0 +1,7 @@
+structure (RoomPropertyUriList) {
+  description (__DESCRIPTION__)
+  property (roomPropertyUri) {
+    type (RoomPropertyUri)
+    min (Optional) max (Many)
+  }
+}
