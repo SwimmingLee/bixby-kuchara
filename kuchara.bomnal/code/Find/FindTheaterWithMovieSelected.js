@@ -19,7 +19,7 @@ module.exports.function = function showCloserTheaterList (movieName, namedPointS
     }
   };
 
-  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterWithMPos/', options); 
+  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterWithMoviePos/', options); 
   console.log(response);
 
   let obj = {

@@ -13,13 +13,13 @@ result-view {
       section {
         content {
           for-each(this.theater) {
-            as(theater) {
+            as(theater1) {
               layout-macro (title-for-theaterSchedule) {
                 param (theater) {
-                  expression (theater)
+                  expression (theater1)
                 }
               }
-              for-each (theater.theaterSchedule) {
+              for-each (theater1.theaterSchedule) {
                 as (theaterSchedule) {
                   layout-macro (timetable-each-theater) {
                     param(theaterSchedule) {
@@ -29,7 +29,7 @@ result-view {
                       expression (this.movie)
                     }
                     param (theaterInfo) {
-                      expression (theater.theaterInfo)
+                      expression (theater1.theaterInfo)
                     }
                   }
                 }
