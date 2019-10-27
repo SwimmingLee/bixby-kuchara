@@ -7,7 +7,7 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
 
   let targetPosition = namedPointStructure;
   let long = targetPosition.point.longitude;
-  let lat = targetPosition.point.latitutde;
+  let lat = targetPosition.point.latitude;
 
   let options = {
     format: 'json',
@@ -16,10 +16,15 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
       latitude: lat,
     }
   };
-  // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options);
-  // let response = http.getUrl(config.get('remote.url') + "/movie_api/searchWithPos/", options)
-  // console.log(response);
-  let response = http.getUrl(config.get('remote.url') + 'movie_api//', options);
-  // return response;
-  return response;
+
+  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTimeOrderedScheduleWithPos/', options);
+
+  let timeOrderedScheduleWithMovie = {
+    movieOrderedSchedule: []
+  };
+  response.forEach(function(mosElement){
+    timeOrderedScheduleWithMovie.movieOrderedSchedule.push(mosElement)
+  })
+
+  return timeOrderedScheduleWithMovie;
 }

@@ -17,7 +17,7 @@ module.exports.function = function findOneTheaterWithMovieSelected (movieName, b
     }
   };
 
-  let response = http.getUrl(config.get('remote.url') + 'movie_api/???/', options);
+  let response = http.getUrl(config.get('remote.url') + 'movie_api/searchMovieScheduleWithMovieTheater/', options);
   console.log(response);
 
   response.theater.forEach(function(theaterElement){
