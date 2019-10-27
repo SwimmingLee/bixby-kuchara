@@ -1,14 +1,18 @@
-action (FilterMovieWithGenreAndThOSM) {
-  description (filter movie with genre input)
+action (FilterMovieWithTheaterNameAndThOSM) {
+  description (filter movie with theater name input)
   type (Search)
   collect {
     input (theaterOrderedScheduleWithMovie) {
       type (TheaterOrderedScheduleWithMovie)
       min (Required) max (Many)
     }
-    input (genreEnum) {
-      type (GenreEnum)
-      min (Required) max (One)
+    input (theaterName) {
+      type (TheaterName)
+      min (Optional) max (One)
+    }
+    input(brand){
+      type(Brand)
+      min(Required) max (One)
     }
     input(exceptExpression){
       type(ExceptExpression)

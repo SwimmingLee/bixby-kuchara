@@ -7,16 +7,24 @@ module.exports.function = function filterMovieWithTheaterNameAndTheaterOrderedSc
   // 부정어가 안들어오면, 그것만
   if(typeof exceptExpression == 'undefined'){
     input.theater.forEach(function(theaterElement){
-      if(!theaterElement.theaterInfo.theaterName.includes(theaterName)){
+      if(!theaterElement.theaterInfo.brand.includes(brand)){
         result.push(theaterElement);
       }
     })
   } else {  // 부정어가 들어오면, 제외
-    input.forEach(function(el){
-      if(theaterElement.theaterInfo.theaterName.includes(theaterName)){
-        result.push(theaterElement);
-      }
-    })
+    if(!exceptExpression){
+      input.theater.forEach(function(theaterElement){
+        if(!theaterElement.theaterInfo.brand.includes(brand)){
+          result.push(theaterElement);
+        }
+      })
+    } else {
+      input.forEach(function(el){
+        if(theaterElement.theaterInfo.brand.includes(brand)){
+          result.push(theaterElement);
+        }
+      })
+    }
   }
   theaterOrderedSchedule.theater = result;
   console.log(result);

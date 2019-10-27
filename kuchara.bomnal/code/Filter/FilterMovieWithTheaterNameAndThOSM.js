@@ -1,32 +1,31 @@
-module.exports.function = function filterMovieWithMovieNameAndThOSM (theaterOrderedScheduleWithMovie, movieName, exceptExpression) {
+module.exports.function = function filterMovieWithTheaterNameAndThOSM (theaterOrderedScheduleWithMovie, theaterName, brand, exceptExpression) {
   let result = [];
   let input = theaterOrderedScheduleWithMovie;
 
-  // 제외해줘 표현 없으면 그거만 보여주기
+  // 부정어가 안들어오면, 그것만
   if(typeof exceptExpression == 'undefined'){
     input.movieOrderedSchedule.forEach(function(mosElement){
-      if(mosElement.movie.movieName.includes(movieName)){
+      if(!mosElement.theaterInfo.brand.includes(brand)){
         result.push(mosElement);
       }
     })
-  } else {
+  } else {  // 부정어가 들어오면, 제외
     if(!exceptExpression){
       input.movieOrderedSchedule.forEach(function(mosElement){
-      if(mosElement.movie.movieName.includes(movieName)){
-        result.push(mosElement);
-      }
-    })
-    } else {
-      input.movieOrderedSchedule.forEach(function(mosElement){
-        if(!mosElement.movie.movieName.includes(movieName)){
+        if(!mosElement.theaterInfo.brand.includes(brand)){
           result.push(mosElement);
         }
       })
+    } else {
+      input.movieOrderedSchedule.forEach(function(mosElement){
+        if(!mosElement.theaterInfo.brand.includes(brand)){
+          result.push(mosElement);
+        }
+      })
+
     }
-    
   }
-
   input.movieOrderedSchedule = result;
-
+  // console.log(result);
   return input;
 }

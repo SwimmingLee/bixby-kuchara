@@ -1,13 +1,13 @@
-action (FilterMovieWithGenreAndThOSM) {
+action (FilterMovieWithNationAndTiOSM) {
   description (filter movie with genre input)
   type (Search)
   collect {
-    input (theaterOrderedScheduleWithMovie) {
-      type (TheaterOrderedScheduleWithMovie)
+    input (timeOrderedScheduleWithMovie) {
+      type (TimeOrderedScheduleWithMovie)
       min (Required) max (Many)
     }
-    input (genreEnum) {
-      type (GenreEnum)
+    input (nation) {
+      type (Nation)
       min (Required) max (One)
     }
     input(exceptExpression){
@@ -15,5 +15,5 @@ action (FilterMovieWithGenreAndThOSM) {
       min (Optional) max (One)
     }
   }
-  output (TheaterOrderedScheduleWithMovie)
+  output (Movie)
 }

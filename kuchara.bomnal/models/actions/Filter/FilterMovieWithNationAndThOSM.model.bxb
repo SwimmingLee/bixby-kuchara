@@ -1,9 +1,9 @@
-action (FilterMovieWithNation) {
+action (FilterMovieWithNationAndThOSM) {
   description (filter movie with genre input)
   type (Search)
   collect {
-    input (movie) {
-      type (Movie)
+    input (theaterOrderedScheduleWithMovie) {
+      type (TheaterOrderedScheduleWithMovie)
       min (Required) max (Many)
     }
     input (nation) {

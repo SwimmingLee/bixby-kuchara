@@ -1,13 +1,13 @@
-action (FilterMovieWithGenreAndThOSM) {
-  description (filter movie with genre input)
+action (FilterMovieWithRoomFromTheaterOrderWithMovie) {
+  description (find movie with locational input)
   type (Search)
   collect {
     input (theaterOrderedScheduleWithMovie) {
       type (TheaterOrderedScheduleWithMovie)
       min (Required) max (Many)
     }
-    input (genreEnum) {
-      type (GenreEnum)
+    input (roomPropertyEnum) {
+      type (RoomPropertyEnum)
       min (Required) max (One)
     }
     input(exceptExpression){
@@ -16,4 +16,6 @@ action (FilterMovieWithGenreAndThOSM) {
     }
   }
   output (TheaterOrderedScheduleWithMovie)
+  // output (MovieName)
 }
+  

@@ -10,11 +10,19 @@ module.exports.function = function filterMovieWithRoomFromTimeOrder (timeOrdered
       }
     })
   } else {    // 부정어가 들어오면,  
-    input.timeSechedule.forEach(function(timeSecheduleElement){
-      if(!timeSecheduleElement.roomProperty.includes(roomPropertyEnum)){
-        result.push(timeSecheduleElement);
-      }
-    })
+    if(!exceptExpression){
+      input.timeSechedule.forEach(function(timeSecheduleElement){
+        if(timeSecheduleElement.roomProperty.includes(roomPropertyEnum)){
+          result.push(timeSecheduleElement);
+        }
+      })
+    } else {
+      input.timeSechedule.forEach(function(timeSecheduleElement){
+        if(!timeSecheduleElement.roomProperty.includes(roomPropertyEnum)){
+          result.push(timeSecheduleElement);
+        }
+      })
+    }
   }
   input.timeSechedule = result;
   return input;

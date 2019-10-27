@@ -1,4 +1,4 @@
-module.exports.function = function filterMovieWithGenreAndTiOSM (timeOrderedScheduleWithMovie, genreEnum, exceptExpression) {
+module.exports.function = function filterMovieWithNationAndTiOSM (timeOrderedScheduleWithMovie, nation, exceptExpression) {
   let result = [];
   let input = timeOrderedScheduleWithMovie;
 
@@ -7,26 +7,25 @@ module.exports.function = function filterMovieWithGenreAndTiOSM (timeOrderedSche
   if(typeof exceptExpression == 'undefined'){
     
     input.movieOrderedSchedule.forEach(function(mosElement){
-      if(mosElement.movie.genre.includes(genreEnum)){
+      if(mosElement.movie.nation.includes(nation)){
         result.push(mosElement);
       }
     })
   } else {  
     if(!exceptExpression){
       input.movieOrderedSchedule.forEach(function(mosElement){
-        if(mosElement.movie.genre.includes(genreEnum)){
+        if(mosElement.movie.nation.includes(nation)){
           result.push(mosElement);
         }
       })
     } else {
       input.movieOrderedSchedule.forEach(function(mosElement){
-        if(!mosElement.movie.genre.includes(genreEnum)){
+        if(!mosElement.movie.nation.includes(nation)){
           result.push(mosElement);
         }
       })
       
     }
   }
-
-  return result
+  return result;
 }

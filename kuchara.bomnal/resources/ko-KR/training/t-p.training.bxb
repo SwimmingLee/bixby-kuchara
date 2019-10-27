@@ -6,5 +6,5 @@ train (t-p9lvotsbtdotmzell9fqgdf7o) {
 train (t-pc9qatk79i243h7qrhl4focw3) {
   utterance ([g:FindTheaterWithMovieSelected:continue:TimeOrderedSchedule] 딴 영화관 시간 보여줘)
   plan (Y2BhkMouTc5ILErUS8rPzUvM0QvJSE0sSS3yzEvLZ9BGk3PLzEuByodnlmT45pdlpgan5qQml6SmMEigKQbL+iXmpjIoocmABFMC8jPzSoJLikqTS0qLUhmYGRgZmIAkA5AGQQgAswA=)
-  last-modified (1572169029953)
+  last-modified (1572183103486)
 }

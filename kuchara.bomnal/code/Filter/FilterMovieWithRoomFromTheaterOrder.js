@@ -13,13 +13,24 @@ module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterO
       })
     })
   } else {    // 부정어가 들어오면,  
-    input.theater.forEach(function(theaterElement){
-      theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
-        if(!theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
-          result.push(theaterElement);
-        }
+    if(!exceptExpression){
+      input.theater.forEach(function(theaterElement){
+        theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
+          if(theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
+            result.push(theaterElement);
+          }
+        })
       })
-    })
+    } else {
+      input.theater.forEach(function(theaterElement){
+        theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
+          if(!theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
+            result.push(theaterElement);
+          }
+        })
+      })
+    }
+    
   }
   input.theater = result;
   return input;

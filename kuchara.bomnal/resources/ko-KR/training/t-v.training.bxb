@@ -1,0 +1,5 @@
+train (t-vw1sxl4r6xpzbyzid02yc60ze) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] (체크 히어로) [v:MovieName] (잠실)[v:geo.SearchTerm]에서 볼껀데")
+  plan (lY7LCsIwEEWv79dON7oVcSPUb3Djyhe04DomQxNsE4hJ3fnt1oJVqxsDIczJmbmDARZnzyWzLDiZVLMkiFRKeyvIkgi5JOETOiontyZThGVFXqvEkS3+SmnHUlppEal9uMW40lAa/+XOvnK1KFM3hjOnjMa0Yj1yxMEo7UJnPXfeEubVhdiZfnnDTGVBTOZtCEZPtvLOXHwc08Vh8gPerpLeZ4TELJcR2RR91FBHA0200EYHXfRyhpzWPmg3r1Hw132cZtHfz1/cAQ==)
+  last-modified (1572182613951)
+}

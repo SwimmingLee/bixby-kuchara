@@ -13,11 +13,20 @@ module.exports.function = function filterMovieWithTheaterNameAndTiOS (timeOrdere
       }
     })
   } else {  // 부정어가 들어오면, 제외
-    input.timeSchedule.forEach(function(timeScheduleElement){
-      if(timeScheduleElement.theaterInfo.theaterName.includes(theaterName)){
-        result.push(timeScheduleElement);
-      }
-    })
+    if(!exceptExpression){
+      input.timeSchedule.forEach(function(timeScheduleElement){
+        if(!timeScheduleElement.theaterInfo.theaterName.includes(theaterName)){
+          result.push(timeScheduleElement);
+        }
+      })
+    } else {
+      input.timeSchedule.forEach(function(timeScheduleElement){
+        if(timeScheduleElement.theaterInfo.theaterName.includes(theaterName)){
+          result.push(timeScheduleElement);
+        }
+      })
+
+    }
   }
   timeOrderedSchedule.timeSchedule = result;
   // console.log(result);

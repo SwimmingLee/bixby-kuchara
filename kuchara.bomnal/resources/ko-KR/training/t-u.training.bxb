@@ -8,6 +8,11 @@ train (t-ucrlr2kkvxqz36cam3o7q39bl) {
   plan (bYw7D4IwFIUPvl3VxdVE3fgPLG4+Ekica3tDG6BNSoubv91K1BDCdu53vnuwxL7wXDLL4oepNCvjTBJzZK9WkCWRcknCl4RjTzspLc6mUXRXTrYh0eJmamx6Ytth16MXVlHQlXaps547bwmH/icraMhbNaqJczKdEax/LPHO1D7PqXbYDsDXU1J3IyVmuczIVlggwghjTDDFDPNwI5DoT2Yho2X4JgQ/+nhv)
   last-modified (1572168169100)
 }
+train (t-unjfjr0gm0fp398bv6wr5wcuc) {
+  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 영화 예매할래요)
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572183758625)
+}
 train (t-usmwwz2qkvrrkot5u1fm7ni05) {
   utterance ([g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순으로)
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)

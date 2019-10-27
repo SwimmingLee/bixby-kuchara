@@ -1,6 +1,10 @@
 hints {
   uncategorized {
     utterance (__ALIGNED_UTTERANCE__)
+    // hint ("동네영화관에서 영화 보고 싶어")
+    // hint ("동네영화관에서 터미네이터 상영시간표 보려줘")
+    // hint ("동네영화관에서 서울 압구정 근처 영화")
+  
   }
 }
 

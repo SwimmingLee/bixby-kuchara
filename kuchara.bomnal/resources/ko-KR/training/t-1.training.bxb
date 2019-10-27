@@ -11,5 +11,5 @@ train (t-1o1z7hsb6vudjzdy2qwemajzy) {
 train (t-1vcr97gcmziubzrzesec39ty3) {
   utterance ("[g:FilterMovieWithRoomFromTimeOrder:continue:TimeOrderedSchedule] (슈퍼플렉스)[v:RoomPropertyEnum:'슈퍼플렉스 G'] 이거 (빼)[v:ExceptExpression]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUll0EdT45aZU5Ja5JtflpkanlmSEZSfn+tWlJ8L18ogj6bBtSI5taDEtaKgKLW4ODM/D0MByIiAovyC1KKSSte80lyinMXCwMjAxMAMpBmALAiEAWaoHAMA)
-  last-modified (1572168687523)
+  last-modified (1572182484865)
 }
