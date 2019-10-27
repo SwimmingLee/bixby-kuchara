@@ -78,8 +78,8 @@ layout-macro-def (timetable-each-theater) {
               valign (Middle)
               content {
                 single-line {
-                  if (size(theaterSchedule.roomPropertyUriList) > 0) {
-                    for-each (theaterSchedule.roomPropertyUriList) {
+                  if (size(theaterSchedule.roomPropertyUriList.roomPropertyUri) > 0) {
+                    for-each (theaterSchedule.roomPropertyUriList.roomPropertyUri) {
                       as (roomProperty) {
                         image { url ("#{value(roomProperty)}") }
                         // spacer

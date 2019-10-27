@@ -13,8 +13,8 @@ result-view {
       section {
         content {
           thumbnail-card {
-            image-object-position (Left)
-            image-aspect-ratio (Four_Three)
+            image-object-position (Right)
+            image-aspect-ratio (3:4)
             image-url ("#{value(this.imgUrl)}") // 영화 포스터
             title-area {
               slot1 {
@@ -57,8 +57,8 @@ result-view {
               slot3 {
                 // 특별관 표시
                 single-line {
-                  if (size(this.roomPropertyUriList) > 0) {
-                    for-each (this.roomPropertyUriList) {
+                  if (size(this.roomPropertyUriList.roomPropertyUri) > 0) {
+                    for-each (this.roomPropertyUriList.roomPropertyUri) {
                       as (roomProperty) {
                         image {
                           url ("#{value(roomProperty)}")

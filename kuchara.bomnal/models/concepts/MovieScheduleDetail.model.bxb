@@ -107,7 +107,12 @@ structure (MovieScheduleDetail) {
   }
   property (roomProperty) {
     type (RoomProperty)
-    min (Required) max (One)
+    min (Optional) max (One)
+  }
+  property (roomPropertyUriList) {
+    type (RoomPropertyUriList)
+    min (Optional) max (One)
+
   }
   property (myDateExpression) {
     type (MyDateExpression)
