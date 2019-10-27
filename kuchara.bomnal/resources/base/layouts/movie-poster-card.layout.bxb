@@ -27,29 +27,30 @@ layout-macro-def (movie-poster-card) {
         halign (Start)
         slot1 {
           single-line {
-            text { value ("#{value(movie.movieName)}") style (Title_S) }
+            text { value ("#{value(movie.movieName)}") style (Detail_L) }
+            spacer
             if (movie.movieRating == '전체 관람가') {
-              image { url ("images/movieRating_icon/rating_all.png") }
+              image { url ("images/movieRating_icon/rating_all.png") style (Detail_M) }
             }
             else-if (movie.movieRating == '12세 관람가') {
-              image { url ("images/movieRating_icon/rating_12.png") }
+              image { url ("images/movieRating_icon/rating_12.png") style (Detail_M) }
             }
             else-if (movie.movieRating == '15세 관람가') {
-              image { url ("images/movieRating_icon/rating_15.png") }
+              image { url ("images/movieRating_icon/rating_15.png") style (Detail_M) }
             }
             else-if (movie.movieRating == '청소년 관람불가') {
-              image { url ("images/movieRating_icon/rating_19.png") }
+              image { url ("images/movieRating_icon/rating_19.png") style (Detail_M) }
             }
           }
         }
         slot2 {
           single-line {
-            text { value ("#{value(movie.genre)}") style(Detail_L_Soft) }
+            text { value ("#{value(movie.genre)}") style(Legal) }
           }
         }
         slot3 {
           single-line {
-            text { value ("평점 | #{value(movie.userRating)}점") style (Detail_L_Soft) }
+            text { value ("평점 | #{value(movie.userRating)}점") style (Detail_M) }
           }
         }
       }

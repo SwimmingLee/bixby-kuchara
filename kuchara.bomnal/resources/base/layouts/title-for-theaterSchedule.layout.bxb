@@ -13,19 +13,22 @@ layout-macro-def (title-for-theaterSchedule) {
           content {
             single-line {
               if(theater.theaterInfo.brand == 'cgv') {
-                image { url ("images/theater_icon/circle/cgv_c.png") style (Title_S) }
-                text { value ("CGV") style (Title_S)}
+                image { url ("images/theater_icon/circle/cgv_c.png") style (Detail_M) }
+                spacer
+                text { value ("CGV") style (Detail_M)}
               }
               else-if(theater.theaterInfo.brand == 'megabox') {
-                image { url ("images/theater_icon/circle/mega_c.png") style (Title_S) }
-                text { value ("메가박스") style (Title_S)}
+                image { url ("images/theater_icon/circle/mega_c.png") style (Detail_M) }
+                spacer
+                text { value ("메가박스") style (Detail_M)}
               }
               else-if(theater.theaterInfo.brand == 'lottecinema') {
-                image { url ("images/theater_icon/circle/lotte_c.png") style (Title_S) }
-                text { value ("롯데시네마") style (Title_S)}
+                image { url ("images/theater_icon/circle/lotte_c.png") style (Detail_M) }
+                spacer
+                text { value ("롯데시네마") style (Detail_M)}
               }
               spacer
-              text { value ("#{value(theater.theaterInfo.theaterName)}") style (Title_XS) }
+              text { value ("#{value(theater.theaterInfo.theaterName)}") style (Detail_M) }
             }
           }
         }
@@ -34,7 +37,7 @@ layout-macro-def (title-for-theaterSchedule) {
           valign (Bottom)
           content {
             single-line {
-              text{ value("#{value(theater.theaterInfo.distance)}") style (Detail_L_Soft)
+              text{ value("#{value(theater.theaterInfo.distance)}") style (Detail_M_Soft)
               }
             }
           }

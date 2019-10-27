@@ -20,9 +20,10 @@ module.exports.function = function findMovieWithMovieAndPos (movie, namedPointSt
   };
 
   let response = http.getUrl(config.get('remote.url') + 'movie_api/searchTheaterOrderedScheduleWithPos/', options);
-  console.log(response);
+  // console.log(response);
   // response.theater.forEach(function(theaterElement){
   //   theaterElement.theaterInfo.iconUri = "/images/brand/theater/1x/cgv.png";
   // }) 현진이꺼임
-  return response;
+  //  return response;
+  return movieReturn;
 }
