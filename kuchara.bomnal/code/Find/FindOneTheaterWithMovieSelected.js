@@ -5,8 +5,7 @@ let http = require('http');
 let config = require('config');
 
 module.exports.function = function findOneTheaterWithMovieSelected (movieName, brand, regionCode, theaterCode) {
-  let targetPosition = namedPointStructure;
-  
+
   let options = {
     format: 'json',
     query: {
@@ -20,20 +19,24 @@ module.exports.function = function findOneTheaterWithMovieSelected (movieName, b
   let response = http.getUrl(config.get('remote.url') + 'movie_api/searchMovieScheduleWithMovieTheater/', options);
   console.log(response);
 
-  response.theater.forEach(function(theaterElement){
-    theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
-      let rp = theaterScheduleElement.roomProperty;
-      let db = theaterScheduleElement.dubbing;
-      let list = getUriList(rp, db);
-      console.log(list);
-      theaterScheduleElement.roomPropertyUriList = [];
-      list.forEach(function(el){
-        theaterScheduleElement.roomPropertyUriList.push({roomPropertyUri: el});
-      })
+  let obj = {
+    movie: response[0].movie,
+    theater: {
+      theaterInfo: response[0].theaterInfo,
+      theaterSchedule: [],
+    }
+  }
 
-      console.log(theaterScheduleElement.roomPropertyUriList);
+  response.forEach(function(responseElement) {
+    let rp = responseElement.theaterSchedule.roomProperty;
+    let db = responseElement.theaterSchedule.dubbing;
+    let list = getUriList(rp, db);
+    responseElement.theaterSchedule.roomPropertyUriList = [];
+    list.forEach(function(el) {
+      responseElement.theaterSchedule.roomPropertyUriList.push({roomPropertyUri: el});
     })
-  })
+    obj.theater.theaterSchedule.push(responseElement.theaterSchedule);
+  });
 
-  return response;
+  return obj;
 }

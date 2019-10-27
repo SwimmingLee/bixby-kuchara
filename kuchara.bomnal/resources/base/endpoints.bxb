@@ -25,7 +25,7 @@ endpoints {
 
     // find theater
     action-endpoint (FindTheaterWithMovieSelected) {
-      accepted-inputs (movieName, namedPointStructure)
+      accepted-inputs (theaterOrderedSchedule, namedPointStructure)
       local-endpoint (Find/FindTheaterWithMovieSelected.js)
     }
 

@@ -42,6 +42,7 @@ layout-macro-def (closer-theater-card) {
             }
             vbox { // 영화관 이름, 주소
               grow (4)
+              halign (Start)
               content {
                 single-line {
                   text { value ("#{value(theaterInfo.theaterName)}") style (Detail_L)}

@@ -8,11 +8,6 @@ train (t-ieg4ck6njapi46us5xl02mc70) {
   plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
   last-modified (1572164068275)
 }
-train (t-imalxbpnux0iwxy4fpnxyydh4) {
-  utterance ([g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 다른 영화관은 없나)
-  plan (Y2BhkMouTc5ILErUS8rPzUvM0QvJSE0sSS3yzEvLZ9BGk3PLzEuByodnlmT45pdlpgan5qQml6SmMEigKQbL+iXmpjIoocmABFMC8jPzSoJLikqTS0qLUhmYGRgZmIAkA5AGQQgAswA=)
-  last-modified (1572168962745)
-}
 train (t-imn1b3xw17l8qr0uiceed0fw9) {
   utterance ("[g:FindMovieWithLocation] (영등포)[v:geo.SearchTerm] 근처 영화관 시간표 보여줘")
   plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
