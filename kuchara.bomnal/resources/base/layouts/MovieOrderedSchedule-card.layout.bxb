@@ -92,8 +92,8 @@ layout-macro-def (movieOrderedSchedule-card) {
                       template ("~#{value(theaterSchedule.endTime)}")
                     }
                   }
-                  if (size(theaterSchedule.roomProperty) > 0) {
-                    for-each (theaterSchedule.roomProperty) {
+                  if (size(theaterSchedule.roomPropertyUriList) > 0) {
+                    for-each (theaterSchedule.roomPropertyUriList) {
                       as (roomProperty) {
                         image { url ("#{value(roomProperty)}") }
                         // spacer

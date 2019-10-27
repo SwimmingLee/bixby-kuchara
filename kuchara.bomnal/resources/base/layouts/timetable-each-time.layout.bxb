@@ -69,8 +69,8 @@ layout-macro-def (timetable-each-time) {
                   }
                 }
                 single-line {
-                  if (size(timeSchedule.roomProperty) > 0) {
-                    for-each (timeSchedule.roomProperty) {
+                  if (size(timeSchedule.roomPropertyUriList) > 0) {
+                    for-each (timeSchedule.roomPropertyUriList) {
                       as (roomProperty) {
                         image { url ("#{value(roomProperty)}") }
                         // spacer

@@ -57,8 +57,8 @@ result-view {
               slot3 {
                 // 특별관 표시
                 single-line {
-                  if (size(this.roomProperty) > 0) {
-                    for-each (this.roomProperty) {
+                  if (size(this.roomPropertyUriList) > 0) {
+                    for-each (this.roomPropertyUriList) {
                       as (roomProperty) {
                         image {
                           url ("#{value(roomProperty)}")
