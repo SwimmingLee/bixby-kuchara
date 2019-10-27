@@ -8,7 +8,7 @@ result-view {
 
   }
   message {
-    template ("4시간 이내에 시작하는 #{value(this.movie.movieName)} 의 상영 시간표에요.")
+    template ("4시간 이내에 시작하는 #{value(this.movie.movieName)}의 상영 시간표에요.")
   }
   render {
     // selection-of (this.theater) {

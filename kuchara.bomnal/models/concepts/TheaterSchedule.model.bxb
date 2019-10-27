@@ -30,7 +30,7 @@ structure (TheaterSchedule) {
   }
   property (roomProperty) {
     type (RoomProperty)
-    min (Required) max (One)
+    min (Required) max (Many)
   }
 
   // 필요없으므로 제외

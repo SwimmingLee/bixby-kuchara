@@ -32,9 +32,7 @@ layout-macro-def (title-for-theaterSchedule) {
           valign (Bottom)
           content {
             single-line {
-              text{
-                style (Detail_L_Soft)
-                value(300m) // 거리로 수정 요망
+              text{ value("#{value(theater.theaterInfo.distance)}") style (Detail_L_Soft)
               }
             }
           }

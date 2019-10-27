@@ -36,23 +36,35 @@ layout-macro-def (timetable-each-time) {
               valign (Middle)
               content {
                 single-line {
-                  text { //  availableSeat
-                    style (Detail_L_Soft)
-                    color (Green)
-                    value {
-                      template ("#{value(timeSchedule.availableSeat)}")
+                  if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 30) {
+                    text {
+                      color (Green)
+                      style (Detail_M)
+                      value ("#{value(timeSchedule.availableSeat)}")
+                    }
+                  }
+                  else {
+                    text {
+                      color (Red)
+                      style (Detail_M)
+                      value ("#{value(timeSchedule.availableSeat)}")
                     }
                   }
                   text { // totalSeat
-                    style (Detail_L_Soft)
+                    style (Detail_L)
                     value {
-                      template ("/ #{value(timeSchedule.totalSeat)}")
+                      template ("/#{value(timeSchedule.totalSeat)}석")
                     }
                   }
                 }
-                single-line { // 특별관
-                  image {
-                    url ("#{value(timeSchedule.roomProperty)}")
+                single-line {
+                  if (size(timeSchedule.roomProperty) > 0) {
+                    for-each (timeSchedule.roomProperty) {
+                      as (roomProperty) {
+                        image { url ("#{value(roomProperty)}") }
+                        // spacer
+                      }
+                    }
                   }
                 }
               }
@@ -68,29 +80,27 @@ layout-macro-def (timetable-each-time) {
                     }
                   }
                 }
-                // single-line { // 거리 680m
-                //   text {
-                //     style (Detail_L_Soft)
-                //     value {
-                //       template ("#{value(timeSchedule.theaterInfo.theaterName)}")
-                //     }
-                //   }
-                // }
+                single-line { // 거리
+                  text {
+                    style (Detail_L_Soft)
+                    value ("#{value(timeSchedule.theaterInfo.distance)}")
+                  }
+                }
               }
             }
             vbox { // 영화사 이미지 icon
-              halign (Start)
+              halign (End)
               valign (Middle)
               content {
                 single-line {
                   if(timeSchedule.theaterInfo.brand == 'cgv') {
-                    image { url ("images/brand/theater/1x/cgv.png") style (Title_XL) }
+                    image { url ("images/theater_icon/square/cgv_s.png") style (Title_XL) }
                   }
                   else-if(timeSchedule.theaterInfo.brand == 'megabox') {
-                    image { url ("images/brand/theater/1x/megabox.png") style (Title_XL) }
+                    image { url ("images/theater_icon/square/mega_s.png") style (Title_XL) }
                   }
                   else-if(timeSchedule.theaterInfo.brand == 'lottecinema') {
-                    image { url ("images/brand/theater/1x/lotte.png") style (Title_XL) }
+                    image { url ("images/theater_icon/square/lotte_s.png") style (Title_XL) }
                   }
                 }
               }

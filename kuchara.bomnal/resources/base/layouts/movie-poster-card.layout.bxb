@@ -1,61 +1,58 @@
 layout-macro-def (movie-poster-card) {
- params {
+  params {
     param (movie) {
       type (Movie)
-      min (Required)
-      max (One)
+      min (Required) max (One)
     }
- }
- content {
+  }
+  content {
+    image-card {
+      on-click{
+        intent{
+          goal: FindMovieWithMovieAndPos
+          value: Movie {
+            movieName: MovieName(movieName)
+          }
 
-   image-card {
-     on-click{
-       intent{
-        goal: FindMovieWithMovieAndPos
-        value: Movie{
-          movieName: MovieName(movieName)
+          // value: namedPointStructure {
+          //   default-init
+          // }
         }
+      }
 
-        // value: namedPointStructure {
-        //   default-init
-        // }
-       }
-     }
-
-     aspect-ratio (3:4)
-     image-url ("#{value(movie.imgUrl)}")
-     text-position (Below)
-     title-area {
-       halign (Start)
-       slot1 {
-         text {
-           color (Red)
-           style (Title_S)
-           value ("#{value(movie.movieName)}")
-         }
-       }
-       slot2 {
-         single-line {
-           text {
-             style(Detail_L_Soft)
-             value ("#{value(movie.genre)}")
-             color (Green)
-           }
-         }
-       }
-       slot3 {
-         single-line {
-           image {
-             shape (Circle)
-             url(images/ranking_star_white.png)
-           }
-           text {
-             style (Detail_L_Soft)
-             value ("#{value(movie.userRating)} / 10.0")
-           }
-         }
-       }
-     }
-   }
- }
+      aspect-ratio (3:4)
+      image-url ("#{value(movie.imgUrl)}")
+      text-position (Below)
+      title-area {
+        halign (Start)
+        slot1 {
+          single-line {
+            text { value ("#{value(movie.movieName)}") style (Title_S) }
+            if (movie.movieRating == '전체관람가') {
+              image { url ("images/movieRating_icon/rating_all.png") }
+            }
+            else-if (movie.movieRating == '12세관람가') {
+              image { url ("images/movieRating_icon/rating_12.png") }
+            }
+            else-if (movie.movieRating == '15세관람가') {
+              image { url ("images/movieRating_icon/rating_15.png") }
+            }
+            else-if (movie.movieRating == '청소년관람불가') {
+              image { url ("images/movieRating_icon/rating_19.png") }
+            }
+          }
+        }
+        slot2 {
+          single-line {
+            text { value ("#{value(movie.genre)}") style(Detail_L_Soft) }
+          }
+        }
+        slot3 {
+          single-line {
+            text { value ("평점 | #{value(movie.userRating)}점") style (Detail_L_Soft) }
+          }
+        }
+      }
+    }
+  }
 }
