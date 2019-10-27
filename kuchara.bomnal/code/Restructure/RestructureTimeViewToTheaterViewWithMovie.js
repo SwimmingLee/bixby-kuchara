@@ -15,5 +15,6 @@ module.exports.function = function restructureTimeViewToTheaterViewWithMovie (ti
     }
   })
 
-  return timeOrderedScheduleWithMovie;
+  let theaterOrderedScheduleWithMovie = timeOrderedScheduleWithMovie;
+  return theaterOrderedScheduleWithMovie;
 }

@@ -37,6 +37,7 @@ module.exports.function = function restructureTheaterViewToTimeView (theaterOrde
         "dubbing": scheduleElement.dubbing,
         "room": scheduleElement.room,
         "roomProperty": scheduleElement.roomProperty,
+        "roomPropertyUriList": scheduleElement.roomPropertyList,
 
         "theaterInfo": {
           "theaterName": newTheaterName,
@@ -45,7 +46,8 @@ module.exports.function = function restructureTheaterViewToTimeView (theaterOrde
           "brand": newBrand,
           'latitude':newLatitude,
           'longitude':newLongitude,
-          'iconUri': newIconUri
+          'distance': distance,
+          'address': address,
         }
       })
     })

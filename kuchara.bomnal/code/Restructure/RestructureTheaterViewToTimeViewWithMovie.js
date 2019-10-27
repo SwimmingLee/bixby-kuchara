@@ -8,6 +8,6 @@ module.exports.function = function restructureTheaterViewToTimeViewWithMovie (th
     return aTime-bTime;
   })
 
-
-  return theaterOrderedScheduleWithMovie;
+  let timeOrderedScheduleWithMovie = theaterOrderedScheduleWithMovie;
+  return timeOrderedScheduleWithMovie;
 }

@@ -1,4 +1,4 @@
-layout-macro-def (movieOrderedSchedule-card) {
+layout-macro-def (movieOrderedTheater-card) {
   params {
     param (movie) {
       type (Movie)
@@ -13,7 +13,6 @@ layout-macro-def (movieOrderedSchedule-card) {
       min (Required) max (One)
     }
   }
-  
   content {
     compound-card {
       on-click {
@@ -31,12 +30,40 @@ layout-macro-def (movieOrderedSchedule-card) {
               halign (Start)
               content {
                 single-line {
-                  text { // movieName
-                    style (Detail_L)
-                    value {
-                      template ("#{value(movie.movieName)}")
-                    }
+                  // brand
+                  if(theaterInfo.brand == 'cgv') {
+                    text { value ("CGV") style (Detail_L) }
                   }
+                  else-if(theaterInfo.brand == 'megabox') {
+                    text { value ("메가박스") style (Detail_L) }
+                  }
+                  else-if(theaterInfo.brand == 'lottecinema') {
+                    text { value ("롯데시네마")style (Detail_L) }
+                  }
+                  
+                  // theaterName
+                  text { value ("#{value(theaterInfo.theaterName)}점") }
+                }
+              }
+            }
+            vbox { // 거리
+              halign (End)
+              content {
+                text { value ("#{value(theaterInfo.distance)}") style (Detail_L_Soft)}
+              }
+            }
+          }
+        }
+        divider
+        hbox {
+          content {
+            vbox {
+              halign (Start)
+              content {
+                single-line { // 영화 이름
+                  text { value ("#{value(movie.movieName)}") style (Detail_L)}
+                  spacer
+
                   if (movie.movieRating == '전체 관람가') {
                     image { url ("images/movieRating_icon/rating_all.png") }
                   }
@@ -49,26 +76,14 @@ layout-macro-def (movieOrderedSchedule-card) {
                   else-if (movie.movieRating == '청소년 관람불가') {
                     image { url ("images/movieRating_icon/rating_19.png") }
                   }
-                  // text { // genre
-                  //   style (Legal)
-                  //   value {
-                  //     template ("장르| #{value(movie.genre)}")
-                  //   }
-                  // }
                 }
               }
             }
-            vbox { // userRating
+            vbox {
               halign (End)
-              valign (Middle)
               content {
                 single-line {
-                  text { 
-                    style (Detail_M)
-                    value {
-                      template ("#{value(movie.userRating)}점")
-                    }
-                  }
+                  text { value ("#{value(movie.userRating)}점") style (Detail_M) }
                 }
               }
             }
@@ -112,9 +127,16 @@ layout-macro-def (movieOrderedSchedule-card) {
                     text { value ("자리 없음") style (Detail_M)}
                   }
                   else {
-                    if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 30) {
+                    if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 60) {
                       text {
                         color (Green)
+                        style (Detail_M)
+                        value ("#{value(theaterSchedule.availableSeat)}")
+                      }
+                    }
+                    else-if (theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 30) {
+                      text {
+                        color (Amber)
                         style (Detail_M)
                         value ("#{value(theaterSchedule.availableSeat)}")
                       }
@@ -128,39 +150,6 @@ layout-macro-def (movieOrderedSchedule-card) {
                     }
                     text { value ("/#{value(theaterSchedule.totalSeat)}석") style (Detail_M) }
                   }
-                }
-              }
-            }
-          }
-        }
-        divider
-        hbox { // brand, theaterName, distance
-          content {
-            vbox {
-              content {
-                single-line {
-                  // brand
-                  if(theaterInfo.brand == 'cgv') {
-                    text { value ("CGV") style (Detail_L) }
-                  }
-                  else-if(theaterInfo.brand == 'megabox') {
-                    text { value ("메가박스") style (Detail_L) }
-                  }
-                  else-if(theaterInfo.brand == 'lottecinema') {
-                    text { value ("롯데시네마")style (Detail_L) }
-                  }
-                  
-                  // theaterName
-                  text { value ("#{value(theaterInfo.theaterName)}점") }
-                }
-              }
-            }
-            vbox {
-              halign (End)
-              valign (Middle)
-              content {
-                single-line {
-                  text { value (theaterInfo.distance) style (Detail_L_Soft) }
                 }
               }
             }
