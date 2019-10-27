@@ -162,9 +162,15 @@ def CGVCrawl(theaterObj):
                     movieDict['availableSeat'] = int(availableSeatStr)
                     movieDict['totalSeat'] = int(totalSeatStr)
 
+                if movieDict['dubbing'] == False and movieObj.nation.find('한국') == -1:
+                    movieDict['subtitle'] = True
+                else:
+                    movieDict['subtitle'] = False
+
                 MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
                                     totalSeat=movieDict['totalSeat'], availableSeat=movieDict['availableSeat'], dubbing=movieDict['dubbing'], \
-                                    startTime=movieDict['startTime'], endTime=movieDict['endTime'],  roomProperty=movieDict['roomProperty']
+                                    startTime=movieDict['startTime'], endTime=movieDict['endTime'],  roomProperty=movieDict['roomProperty'], \
+                                    subtitle=movieDict['subtitle']
                                 )
                 MovieScheduleEle.save()
                 movieList.append(copy.copy(movieDict))
