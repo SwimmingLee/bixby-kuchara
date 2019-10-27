@@ -8,3 +8,8 @@ train (t-tj8jmyoelbcdj96m8vudxo1om) {
   plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9UsigqDFfBbzoYLKKWqrWInRL6uahXQLGjZgmE5bmDhjcMHWfneg6hNusQWOOkSGtFAB3Dsc0qeR5N6m+N7c8d+nnLILdHFG9OgJ)
   last-modified (1572110409141)
 }
+train (t-ts7ptq3j1cc5tl72my8t2sbfw) {
+  utterance ([g:OpenBrowser:continue:MovieScheduleDetail] 웹으로 이동해줘)
+  plan (Y2BmEM0uTc5ILErUS8rPzUvM0StPTQoN8mGQQhP2L0jNcyrKLy9OLWJQQpPzzS/LTA1OzkhNKc1JdUktSczMYWBiYARiBiDJyMAAowE=)
+  last-modified (1572193700940)
+}

@@ -110,7 +110,12 @@ result-view {
                   vbox {
                     halign (End)
                     content {
-                      text { value ("#{value(this.distance)}") style (Detail_L_Soft) }
+                      if (this.distance > 999) {
+                        text { value ("#{value(this.distance) / 1000}km") style (Detail_L_Soft) }
+                      }
+                      else {
+                        text { value ("#{value(this.distance)}m") style (Detail_L_Soft) }
+                      }
                     }
                   }
                 }

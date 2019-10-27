@@ -68,7 +68,7 @@ layout-macro-def (timetable-each-time) {
                         value ("#{value(timeSchedule.availableSeat)}")
                       }
                     }
-                    text { value ("/#{value(timeSchedule.totalSeat)}석") style (Detail_M) }
+                    text { value ("/#{value(timeSchedule.totalSeat)}석") style (Detail_L) }
                   }
                 }
               }
@@ -98,7 +98,7 @@ layout-macro-def (timetable-each-time) {
         hbox {
           content {
             vbox {
-              grow (1)
+              // grow (1)
               halign (Start)
               valign (Top)
               content {
@@ -125,13 +125,15 @@ layout-macro-def (timetable-each-time) {
               }
             }
             vbox {
-              grow (1)
+              // grow (1)
               halign (End)
               content {
                 single-line { // 거리
-                  text {
-                    style (Detail_L_Soft)
-                    value ("#{value(timeSchedule.theaterInfo.distance)}")
+                  if (timeSchedule.theaterInfo.distance > 999) {
+                    text { value ("#{value(timeSchedule.theaterInfo.distance) / 1000}km") style (Detail_L_Soft) }
+                  }
+                  else {
+                    text { value ("#{value(timeSchedule.theaterInfo.distance)}m") style (Detail_L_Soft) }
                   }
                 }
               }
