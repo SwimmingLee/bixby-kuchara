@@ -60,9 +60,13 @@ module.exports = function makeRoomPropertyList (roomProperty, dubbing) {
     } else if(el == 'SKYBOX') {
       list.push(namespace + cgv + "cgv_SKYBOX_2px.png")
     } else if(el == '2D') {
-      list.push(namespace + cgv + "cgv_2D_2px.png")
+      list.push(namespace + general + "general_2D_2px.png")
+    } else if(el == '3D') {
+      list.push(namespace + general + "general_3D_2px.png")
+    } else if(el == '4D') {
+      list.push(namespace + general + "general_4D_2px.png")
     } else {
-      
+
     }
   })
   return list;
