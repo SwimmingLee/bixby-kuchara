@@ -1,4 +1,4 @@
-layout-macro-def (theater-card) {
+layout-macro-def (closer-theater-card) {
   params {
     param (movieName) {
       type (MovieName)

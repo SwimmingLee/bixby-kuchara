@@ -19,7 +19,7 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
   // let response = http.getUrl(config.get('remote.url') + '/searchWithPos', options);
   // let response = http.getUrl(config.get('remote.url') + "/movie_api/searchWithPos/", options)
   // console.log(response);
-  let response = http.getUrl(config.get('remote.url') + 'movie_api/?????/', options);
+  let response = http.getUrl(config.get('remote.url') + 'movie_api//', options);
   // return response;
   return response;
 }

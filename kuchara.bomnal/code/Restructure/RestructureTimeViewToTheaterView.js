@@ -27,6 +27,7 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
     let newSubtitle = timeScheduleElement.subtitle;
     let newDubbing = timeScheduleElement.dubbing;
     let newRoomProperty = timeScheduleElement.roomProperty;
+    let newRoomPropertyUriList = timeScheduleElement.roomPropertyUriList;
 
     let newTheaterName = timeScheduleElement.theaterInfo.theaterName;
     let newTheaterCode = timeScheduleElement.theaterInfo.theaterCode;
@@ -34,7 +35,8 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
     let newBrand = timeScheduleElement.theaterInfo.brand;
     let newLatitude = timeScheduleElement.theaterInfo.latitude;
     let newLongitude = timeScheduleElement.theaterInfo.longitude;
-    let newIconUri = timeScheduleElement.theaterInfo.iconUri;
+    let newAddress = timeScheduleElement.theaterInfo.address;
+    let newDistance = timeScheduleElement.theaterInfo.distance;
 
     let theaterInfo = {
       'brand' : newBrand,
@@ -43,7 +45,8 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
       'latitude' : newLatitude,
       "theaterCode": newTheaterCode,
       "regionCode": newRegionCode,
-      'iconUri': newIconUri,
+      'distance': newDistance,
+      'address': newAddress,
     }
 
     let theaterSchedule = {
@@ -54,7 +57,8 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
       "subtitle": newSubtitle,               // 자막여부
       "dubbing": newDubbing,
       "room": newRoom,
-      "roomProperty": newRoomProperty
+      "roomProperty": newRoomProperty,
+      'roomPropertyUriList': newRoomPropertyUriList,
     }
 
     let found = false;

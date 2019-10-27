@@ -23,54 +23,98 @@ layout-macro-def (timetable-each-time) {
         hbox {
           content {
             vbox {
-              halign (End)
+              grow (1)
+              halign (Start)
+              valign (Baseline)
               content {
                 single-line {
                   text { // 시작 시간
-                    style (Title_M)
+                    style (Title_XS)
                     value {
                       template ("#{value(timeSchedule.startTime)}")
-                    }
-                  }
-                }
-                single-line {
-                  text { // 종료 시간
-                    style (Detail_L_Soft)
-                    value {
-                      template ("~ #{value(timeSchedule.endTime)}")
                     }
                   }
                 }
               }
             }
             vbox {
-              valign (Middle)
+              // grow(1)
+              valign (Baseline)
+              halign (Start)
               content {
-                single-line {
-                  if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 30) {
-                    text {
-                      color (Green)
-                      style (Detail_M)
-                      value ("#{value(timeSchedule.availableSeat)}")
-                    }
+                single-line { // 좌석
+                  if (timeSchedule.totalSeat == -1) {
+                    text { value ("자리 없음") color (Red) style (Detail_L)}
                   }
                   else {
-                    text {
-                      color (Red)
-                      style (Detail_M)
-                      value ("#{value(timeSchedule.availableSeat)}")
+                    if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 60) {
+                      text {
+                        color (Green)
+                        style (Detail_L)
+                        value ("#{value(timeSchedule.availableSeat)}")
+                      }
                     }
-                  }
-                  text { // totalSeat
-                    style (Detail_L)
-                    value {
-                      template ("/#{value(timeSchedule.totalSeat)}석")
+                    else-if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 30) {
+                      text {
+                        color (Amber)
+                        style (Detail_L)
+                        value ("#{value(timeSchedule.availableSeat)}")
+                      }
                     }
+                    else {
+                      text {
+                        color (Red)
+                        style (Detail_L)
+                        value ("#{value(timeSchedule.availableSeat)}")
+                      }
+                    }
+                    text { value ("/#{value(timeSchedule.totalSeat)}석") style (Detail_M) }
                   }
                 }
+              }
+            }
+            vbox {
+              grow (4)
+              halign (End)
+              valign (Baseline)
+              content {
                 single-line {
-                  if (size(timeSchedule.roomProperty) > 0) {
-                    for-each (timeSchedule.roomProperty) {
+                  if (timeSchedule.theaterInfo.brand == 'cgv') {
+                    text { value ("CGV") style (Detail_L)}
+                  }
+                  else-if (timeSchedule.theaterInfo.brand == 'megabox') {
+                    text { value ("메가박스") style (Detail_L)}
+
+                  }
+                  else-if (timeSchedule.theaterInfo.brand == 'lottecinema') {
+                    text { value ("롯데시네마") style (Detail_L)}
+                  }
+                  text { value("#{value(timeSchedule.theaterInfo.theaterName)}점") style (Detail_L)}
+                }
+              }
+            }
+          }
+        }
+        hbox {
+          content {
+            vbox {
+              grow (1)
+              halign (Start)
+              valign (Top)
+              content {
+                single-line { // 종료 시간
+                  text { value ("~#{value(timeSchedule.endTime)}") style (Detail_L_Soft) }
+                }
+              }
+            }
+            vbox {
+              grow (5)
+              halign (Start)
+              valign (Top)
+              content {
+                single-line {
+                  if (size(timeSchedule.roomPropertyUriList.roomPropertyUri) > 0) {
+                    for-each (timeSchedule.roomPropertyUriList.roomPropertyUri) {
                       as (roomProperty) {
                         image { url ("#{value(roomProperty)}") }
                         // spacer
@@ -80,17 +124,10 @@ layout-macro-def (timetable-each-time) {
                 }
               }
             }
-            vbox { // 극장 이름과 거리
+            vbox {
+              grow (1)
               halign (End)
               content {
-                single-line { // 극장 이름
-                  text {
-                    style (Detail_L)
-                    value {
-                      template ("#{value(timeSchedule.theaterInfo.theaterName)}점")
-                    }
-                  }
-                }
                 single-line { // 거리
                   text {
                     style (Detail_L_Soft)
@@ -99,23 +136,23 @@ layout-macro-def (timetable-each-time) {
                 }
               }
             }
-            vbox { // 영화사 이미지 icon
-              halign (End)
-              valign (Middle)
-              content {
-                single-line {
-                  if(timeSchedule.theaterInfo.brand == 'cgv') {
-                    image { url ("images/theater_icon/square/cgv_s.png") style (Title_XL) }
-                  }
-                  else-if(timeSchedule.theaterInfo.brand == 'megabox') {
-                    image { url ("images/theater_icon/square/mega_s.png") style (Title_XL) }
-                  }
-                  else-if(timeSchedule.theaterInfo.brand == 'lottecinema') {
-                    image { url ("images/theater_icon/square/lotte_s.png") style (Title_XL) }
-                  }
-                }
-              }
-            }
+            // vbox { // 영화사 이미지 icon
+            //   halign (End)
+            //   valign (Middle)
+            //   content {
+            //     single-line {
+            //       if(timeSchedule.theaterInfo.brand == 'cgv') {
+            //         image { url ("images/theater_icon/square/cgv_s.png") style (Title_XL) }
+            //       }
+            //       else-if(timeSchedule.theaterInfo.brand == 'megabox') {
+            //         image { url ("images/theater_icon/square/mega_s.png") style (Title_XL) }
+            //       }
+            //       else-if(timeSchedule.theaterInfo.brand == 'lottecinema') {
+            //         image { url ("images/theater_icon/square/lotte_s.png") style (Title_XL) }
+            //       }
+            //     }
+            //   }
+            // }
           }
         }
       }

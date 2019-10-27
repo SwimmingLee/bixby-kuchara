@@ -55,31 +55,44 @@ layout-macro-def (timetable-each-theater) {
               valign (Top)
               content {
                 single-line { // 좌석
-                  if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 30) {
-                    text {
-                      color (Green)
-                      style (Detail_M)
-                      value ("#{value(theaterSchedule.availableSeat)}")
-                    }
+                  if (theaterSchedule.totalSeat == -1) {
+                    
+                    text { value ("자리 없음") color (Red) style (Detail_M)}
                   }
                   else {
-                    text {
-                      color (Red)
-                      style (Detail_M)
-                      value ("#{value(theaterSchedule.availableSeat)}")
+                    if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 60) {
+                      text {
+                        color (Green)
+                        style (Detail_M)
+                        value ("#{value(theaterSchedule.availableSeat)}")
+                      }
                     }
+                    else-if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 30) {
+                      text {
+                        color (Amber)
+                        style (Detail_M)
+                        value ("#{value(theaterSchedule.availableSeat)}")
+                      }
+                    }
+                    else {
+                      text {
+                        color (Red)
+                        style (Detail_M)
+                        value ("#{value(theaterSchedule.availableSeat)}")
+                      }
+                    }
+                    text { value ("/#{value(theaterSchedule.totalSeat)}석") style (Detail_M) }
                   }
-                  text { value ("/#{value(theaterSchedule.totalSeat)}석") style (Detail_M) }
                 }
               }
             }
             vbox {
               halign (End)
-              valign (Middle)
+              valign (Top)
               content {
                 single-line {
-                  if (size(theaterSchedule.roomProperty) > 0) {
-                    for-each (theaterSchedule.roomProperty) {
+                  if (size(theaterSchedule.roomPropertyUriList.roomPropertyUri) > 0) {
+                    for-each (theaterSchedule.roomPropertyUriList.roomPropertyUri) {
                       as (roomProperty) {
                         image { url ("#{value(roomProperty)}") }
                         // spacer

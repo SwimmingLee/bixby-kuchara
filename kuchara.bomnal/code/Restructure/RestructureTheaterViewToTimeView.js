@@ -25,7 +25,8 @@ module.exports.function = function restructureTheaterViewToTimeView (theaterOrde
     let newLatitude = theaterElement.theaterInfo.latitude;
     let newTheaterCode = theaterElement.theaterInfo.theaterCode;
     let newRegionCode = theaterElement.theaterInfo.regionCode;
-    let newIconUri = theaterElement.theaterInfo.iconUri;
+    let newDistance = theaterElement.theaterInfo.distance;
+    let newAddress = theaterElement.theaterInfo.address;
 
     theaterElement.theaterSchedule.forEach(function(scheduleElement){
       timeOrderedSchedule.timeSchedule.push({
@@ -37,6 +38,7 @@ module.exports.function = function restructureTheaterViewToTimeView (theaterOrde
         "dubbing": scheduleElement.dubbing,
         "room": scheduleElement.room,
         "roomProperty": scheduleElement.roomProperty,
+        "roomPropertyUriList": scheduleElement.roomPropertyUriList,
 
         "theaterInfo": {
           "theaterName": newTheaterName,
@@ -45,7 +47,8 @@ module.exports.function = function restructureTheaterViewToTimeView (theaterOrde
           "brand": newBrand,
           'latitude':newLatitude,
           'longitude':newLongitude,
-          'iconUri': newIconUri
+          'distance': newDistance,
+          'address': newAddress,
         }
       })
     })

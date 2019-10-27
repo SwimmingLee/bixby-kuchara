@@ -1,6 +1,6 @@
 result-view {
   match{
-    TimeOrderedScheduleWithMovie (this) {
+    TheaterOrderedScheduleWithMovie (this) {
       min (Required)
       max (One)
     }
@@ -12,12 +12,9 @@ result-view {
     layout {
       section {
         content {
-          single-line {
-            text { value ("곧 시작할 영화") style (Detail_L_Soft) }
-          }
           for-each (this.movieOrderedSchedule) {
             as (movieOrderedSchedule) {
-              layout-macro (movieOrderedTime-card) {
+              layout-macro (movieOrderedTheater-card) {
                 param (movie) {
                   expression (movieOrderedSchedule.movie)
                 }

@@ -61,6 +61,7 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
     "dubbing": theaterSchedule.dubbing,
     "room": theaterSchedule.room,
     "roomProperty": theaterSchedule.roomProperty,
+    "roomPropertyUriList": theaterSchedule.roomPropertyUriList,
 
     "myDateExpression": dateObj.dateTime.date.year + "." + dateObj.dateTime.date.month + "." + dateObj.dateTime.date.day,
   }
