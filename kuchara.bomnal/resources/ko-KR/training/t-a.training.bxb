@@ -1,5 +1,5 @@
 train (t-a1vvfsbwb4f9n0cxj99ogk1uo) {
-  utterance ("[g:FindMovieWithTheater] (롯데시네마)[v:Brand:lottecinema] (명동)[v:geo.SearchTerm] 점 타임테이블 알려줘")
-  plan (bY09C8IwFEVv/ai6qovgpODY/6CDmyK04ByTRxPaJpAmdfO3G4tKKd3uO/e897DAtvBcMsuSh6k0K5OLaRSlXJLwJWHfa89Ki9a4KyczScyRxbonnSzTArsevbKKxM0o7VJnPXfeEg7956ygIW/ZqCbJyXSOYPVjR+9M7fOcaofNAHw9JXVvpMQslxnZCnNEGGGMCaaIMQszAon+JA4ZLcM3IXSfnWC+AQ==)
-  last-modified (1571294338511)
+  utterance ("[g:FindMovieWithLocation] (롯데시네마 명동)[v:geo.SearchTerm] 점 타임테이블 알려줘")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572164705771)
 }

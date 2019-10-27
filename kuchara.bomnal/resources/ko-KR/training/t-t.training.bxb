@@ -1,3 +1,8 @@
+train (t-telqj1tr1q3k1oiaoo00g69gu) {
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (7시)[v:time.DetachedTime] (이후)[v:IsStartTime:true] 영화만 보여줘")
+  plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
+  last-modified (1572164788413)
+}
 train (t-tj8jmyoelbcdj96m8vudxo1om) {
   utterance ([g:RestructureTheaterViewToTimeViewWithMovie:continue:TheaterOrderedScheduleWithMovie] 시간순으로 보여줘)
   plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9UsigqDFfBbzoYLKKWqrWInRL6uahXQLGjZgmE5bmDhjcMHWfneg6hNusQWOOkSGtFAB3Dsc0qeR5N6m+N7c8d+nnLILdHFG9OgJ)

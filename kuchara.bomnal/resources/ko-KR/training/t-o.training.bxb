@@ -3,9 +3,8 @@ train (t-o7n2zglmy4r4728jxcowcu3sw) {
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
   last-modified (1572163854529)
 }
-train (t-oczz5r7wi4jresqpcndo8t02d) {
-  utterance ("[g:FilterMovieWithRoom:continue:MovieSchedule] (mx)[v:Room]관만 보여줘")
-  plan (Y2BhkMkuTc5ILErUS8rPzUvM0fPNL8tMDU7OSE0pzUllUEKTdcvMKUktAqsJzyzJCMrPzyVggjCaLFgLMwMjAxOQZADSIAgBTEAWUAwA)
-  enabled (false)
-  last-modified (1571813419714)
+train (t-oayqj6cyalhat6oybuxrogall) {
+  utterance ("[g:FindMovieWithLocation] (동대문)[v:geo.SearchTerm] 근처 영화시간표")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572164935397)
 }

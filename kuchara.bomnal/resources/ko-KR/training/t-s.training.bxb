@@ -1,14 +1,12 @@
 train (t-s2r8t9teeagjvndvqbcddgp2h) {
   utterance ("[g:MakeDateTimeExpression] (7시 반)[v:time.DetachedTime]")
   plan (Y2BmkC7LLNMrycxN1XNJLEkNATJcKwqKUouLM/PzGFSzS5MzEosS9ZLyc/MSc/R8E7NTsSgTRZiRWpKYnJGaAlLAwMTACMQMQJKRAQSgfAA=)
-  enabled (false)
-  last-modified (1571813422388)
+  last-modified (1572164951061)
 }
 train (t-sagto8yhgp0ljbifgzhqltm86) {
   utterance ([g:ShowMoviePoster] 지금 영화 뭐하는지 알려줘)
   plan (Y2BmEMkuTc5ILErUS8rPzUvM0fPNL8tMZZBDEw3OyC8HywTkF5ekFjEoocn7JeampgTkZ+aVBJcUlSaXlBalMjAxMAIxA5BkZGCA0QA=)
-  enabled (false)
-  last-modified (1571703335023)
+  last-modified (1572164956431)
 }
 train (t-sc72ecc8pb7pl1hrj0uz235ey) {
   utterance ([g:FindMovieWithLocation] 근처 영화관 시간표 보여줘)
