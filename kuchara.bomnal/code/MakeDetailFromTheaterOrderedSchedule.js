@@ -18,7 +18,7 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
   console.log(theaterInfo.latitude)
   console.log(theaterInfo.regionCode)
   console.log(theaterInfo.theaterCode)
-  console.log(theaterInfo.iconUri)
+  // console.log(theaterInfo.iconUri)
 
   console.log(theaterSchedule.startTime)
   console.log(theaterSchedule.endTime)
@@ -30,12 +30,8 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
   console.log(theaterSchedule.roomProperty)
 
   let zonedDateTime = new dates.ZonedDateTime('Asia/Seoul')
-
-  let dateObj = {
-    'dateTime': zonedDateTime.getDateTime(),
-  }
-
-
+  let dateObj = { 'dateTime': zonedDateTime.getDateTime(), }
+  
   let movieScheduleDetail = {
     'movieName': movie.movieName,
     // "duration": movie.duration,
@@ -54,6 +50,7 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
     "theaterCode": theaterInfo.theaterCode,
     "regionCode": theaterInfo.regionCode,
     "distance": theaterInfo.distance,
+    "address": theaterInfo.address,
     //'iconUri': theaterInfo.iconUri,
 
     'startTime': theaterSchedule.startTime,

@@ -18,7 +18,7 @@ result-view {
             as (timeSchedule) {
               layout-macro (timetable-each-time) {
                 param (timeSchedule) {
-                  expression (one)
+                  expression (timeSchedule)
                 }
                 param (movie) {
                   expression (this.movie)

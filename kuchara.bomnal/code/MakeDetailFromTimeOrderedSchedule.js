@@ -12,29 +12,25 @@ module.exports.function = function makeDetailFromTimeOrderedSchedule (timeSchedu
   console.log(movie.userRating)
   console.log(movie.nation)
 
-  console.log(theaterInfo.brand)
-  console.log(theaterInfo.theaterName)
-  console.log(theaterInfo.longitude)
-  console.log(theaterInfo.latitude)
-  console.log(theaterInfo.regionCode)
-  console.log(theaterInfo.theaterCode)
-  console.log(theaterInfo.iconUri)
+  console.log(timeSchedule.theaterInfo.brand)
+  console.log(timeSchedule.theaterInfo.theaterName)
+  console.log(timeSchedule.theaterInfo.longitude)
+  console.log(timeSchedule.theaterInfo.latitude)
+  console.log(timeSchedule.theaterInfo.regionCode)
+  console.log(timeSchedule.theaterInfo.theaterCode)
+  // console.log(timeSchedule.theaterInfo.iconUri)
 
-  console.log(theaterSchedule.startTime)
-  console.log(theaterSchedule.endTime)
-  console.log(theaterSchedule.totalSeat)
-  console.log(theaterSchedule.availableSeat)
-  console.log(theaterSchedule.subtitle)
-  console.log(theaterSchedule.dubbing)
-  console.log(theaterSchedule.room)
-  console.log(theaterSchedule.roomProperty)
+  console.log(timeSchedule.startTime)
+  console.log(timeSchedule.endTime)
+  console.log(timeSchedule.totalSeat)
+  console.log(timeSchedule.availableSeat)
+  console.log(timeSchedule.subtitle)
+  console.log(timeSchedule.dubbing)
+  console.log(timeSchedule.room)
+  console.log(timeSchedule.roomProperty)
 
   let zonedDateTime = new dates.ZonedDateTime('Asia/Seoul')
-
-  let dateObj = {
-    'dateTime': zonedDateTime.getDateTime(),
-  }
-
+  let dateObj = { 'dateTime': zonedDateTime.getDateTime(), }
 
   let movieScheduleDetail = {
     'movieName': movie.movieName,
@@ -47,23 +43,25 @@ module.exports.function = function makeDetailFromTimeOrderedSchedule (timeSchedu
     "userRating": movie.userRating,
     'nation': movie.nation,
 
-    'brand' : theaterInfo.brand,
-    "theaterName": theaterInfo.theaterName,
-    'longitude' : theaterInfo.longitude,
-    'latitude' : theaterInfo.latitude,
-    "theaterCode": theaterInfo.theaterCode,
-    "regionCode": theaterInfo.regionCode,
-    "distance": theaterInfo.distance,
-    //'iconUri': theaterInfo.iconUri,
+    'brand' : timeSchedule.theaterInfo.brand,
+    "theaterName": timeSchedule.theaterInfo.theaterName,
+    'longitude' : timeSchedule.theaterInfo.longitude,
+    'latitude' : timeSchedule.theaterInfo.latitude,
+    "theaterCode": timeSchedule.theaterInfo.theaterCode,
+    "regionCode": timeSchedule.theaterInfo.regionCode,
+    "distance": timeSchedule.theaterInfo.distance,
+    "address": timeSchedule.theaterInfo.address,
+    //'iconUri': timeSchedule.theaterInfo.iconUri,
 
-    'startTime': theaterSchedule.startTime,
-    'endTime': theaterSchedule.endTime,
-    "totalSeat": theaterSchedule.totalSeat,             // 총 좌석수
-    "availableSeat": theaterSchedule.availableSeat,             // 빈 좌석수
-    "subtitle": theaterSchedule.subtitle,               // 자막여부
-    "dubbing": theaterSchedule.dubbing,
-    "room": theaterSchedule.room,
-    "roomProperty": theaterSchedule.roomProperty,
+    'startTime': timeSchedule.startTime,
+    'endTime': timeSchedule.endTime,
+    "totalSeat": timeSchedule.totalSeat,             // 총 좌석수
+    "availableSeat": timeSchedule.availableSeat,     // 빈 좌석수
+    "subtitle": timeSchedule.subtitle,               // 자막여부
+    "dubbing": timeSchedule.dubbing,
+    "room": timeSchedule.room,
+    "roomProperty": timeSchedule.roomProperty,
+    
 
     "myDateExpression": dateObj.dateTime.date.year + "." + dateObj.dateTime.date.month + "." + dateObj.dateTime.date.day,
   }

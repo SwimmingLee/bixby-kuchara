@@ -28,16 +28,16 @@ layout-macro-def (movie-poster-card) {
         slot1 {
           single-line {
             text { value ("#{value(movie.movieName)}") style (Title_S) }
-            if (movie.movieRating == '전체관람가') {
+            if (movie.movieRating == '전체 관람가') {
               image { url ("images/movieRating_icon/rating_all.png") }
             }
-            else-if (movie.movieRating == '12세관람가') {
+            else-if (movie.movieRating == '12세 관람가') {
               image { url ("images/movieRating_icon/rating_12.png") }
             }
-            else-if (movie.movieRating == '15세관람가') {
+            else-if (movie.movieRating == '15세 관람가') {
               image { url ("images/movieRating_icon/rating_15.png") }
             }
-            else-if (movie.movieRating == '청소년관람불가') {
+            else-if (movie.movieRating == '청소년 관람불가') {
               image { url ("images/movieRating_icon/rating_19.png") }
             }
           }

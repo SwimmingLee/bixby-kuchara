@@ -36,19 +36,5 @@ structure (TheaterInfo) {
     type (Address)
     min (Optional) max (One)
   }
-
-
 }
-
-// CGV
-  // normal, fourDX, imax, screenX, sphereX, soundX, starium, temperCinema, goldClass, cineDeChef, 
-  // privateCinema, cineNForet, cineNLivingroom, cineKids, premium, skyBox, sweetBox
-
-  // MEGABOX
-  // normal, theBoutique, mx, comfort, megaboxKids, theFirstClub, balcony
-
-  // LOTTECINEMA
-  // normal, super4D, charlotte, superplexG, superS, superplex, cineFamily, cineCouple, cineBiz
-
-  // 추가고려: atmos 등 사운드
   

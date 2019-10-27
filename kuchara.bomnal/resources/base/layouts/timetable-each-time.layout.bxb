@@ -16,8 +16,7 @@ layout-macro-def (timetable-each-time) {
         intent {
           goal: MakeDetailFromTimeOrderedSchedule
           value: $expr(movie)
-          value: $expr(theaterInfo)
-          value: $expr(theaterSchedule)
+          value: $expr(timeSchedule)
         }
       }
       content {
