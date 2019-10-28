@@ -1,4 +1,5 @@
-module.exports.function = function filterMovieWithNationAndThOSM (theaterOrderedScheduleWithMovie, nationEnum, exceptExpression) {
+module.exports.function = function filterMovieWithNationAndThOSM (
+  theaterOrderedScheduleWithMovie, nationEnum, exceptExpression) {
   let result = {
     movieOrderedSchedule: []
   };

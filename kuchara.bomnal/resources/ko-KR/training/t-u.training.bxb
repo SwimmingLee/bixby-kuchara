@@ -1,7 +1,7 @@
 train (t-ubjf3aj7tgkjli6gh5kbprvah) {
-  utterance ([g:kuchara.bomnal.FindMovieWithMovieAndPos,r:ShowMoviePoster] 다른 영화 보여줘)
+  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 다른 영화 보여줘)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
-  last-modified (1572237824133)
+  last-modified (1572247638418)
 }
 train (t-uc1y4mmkddgd13lanaw654jp0) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] (조커)[v:MovieName] 재미있어?")
