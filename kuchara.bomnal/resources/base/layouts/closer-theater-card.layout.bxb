@@ -26,16 +26,18 @@ layout-macro-def (closer-theater-card) {
           content {
             vbox { // 영화관 로고
               grow (1)
+              halign (Center)
+              valign (Middle)
               content {
                 single-line {
                   if(theaterInfo.brand == 'cgv') {
-                    image { url ("images/theater_icon/square/cgv_s.png") style (Title_M) }
+                    image { url ("images/theater_icon/square/cgv_s.png") style (Title_L) }
                   }
                   else-if(theaterInfo.brand == 'megabox') {
-                    image { url ("images/theater_icon/square/mega_s.png") style (Title_M) }
+                    image { url ("images/theater_icon/square/mega_s.png") style (Title_L) }
                   }
                   else-if(theaterInfo.brand == 'lottecinema') {
-                    image { url ("images/theater_icon/square/lotte_s.png") style (Title_M) }
+                    image { url ("images/theater_icon/square/lotte_s.png") style (Title_L) }
                   }
                 }
               }
@@ -57,12 +59,7 @@ layout-macro-def (closer-theater-card) {
               valign (Top)
               content {
                 single-line {
-                  if (theaterInfo.distance > 999) {
-                    text { value ("#{value(theaterInfo.distance) / 1000}km") style (Detail_M_Soft)}
-                  }
-                  else {
-                    text { value ("#{value(theaterInfo.distance)}m") style (Detail_M_Soft) }
-                  }
+                  text { value ("#{value(theaterInfo.distance)}") style (Detail_M_Soft) }
                 }
               }
             }
