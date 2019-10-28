@@ -29,13 +29,13 @@ layout-macro-def (closer-theater-card) {
               content {
                 single-line {
                   if(theaterInfo.brand == 'cgv') {
-                    image { url ("images/theater_icon/square/cgv_s.png") style (Title_XL) }
+                    image { url ("images/theater_icon/square/cgv_s.png") style (Title_M) }
                   }
                   else-if(theaterInfo.brand == 'megabox') {
-                    image { url ("images/theater_icon/square/mega_s.png") style (Title_XL) }
+                    image { url ("images/theater_icon/square/mega_s.png") style (Title_M) }
                   }
                   else-if(theaterInfo.brand == 'lottecinema') {
-                    image { url ("images/theater_icon/square/lotte_s.png") style (Title_XL) }
+                    image { url ("images/theater_icon/square/lotte_s.png") style (Title_M) }
                   }
                 }
               }

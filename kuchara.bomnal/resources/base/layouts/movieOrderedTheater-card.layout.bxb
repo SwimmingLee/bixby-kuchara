@@ -50,7 +50,7 @@ layout-macro-def (movieOrderedTheater-card) {
               halign (End)
               content {
                 if (theaterInfo.distance > 999) {
-                  text { value ("#{value(theaterInfo.distance) / 1000}km") style (Detail_L_Soft) }
+                  text { value ("#{(value(theaterInfo.distance) / 1000)}km") style (Detail_L_Soft) }
                 }
                 else {
                   text { value ("#{value(theaterInfo.distance)}m") style (Detail_L_Soft) }
