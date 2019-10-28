@@ -1,5 +1,5 @@
 train (t-wlfch8qeebctabtkpnn10luzc) {
-  utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (한국영화)[v:NationEnum:한국](만)[v:ExceptExpression] 보여줘")
+  utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (한국영화)[v:NationEnum:한국](만)[v:ExceptExpression:false] 보여줘")
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiaYAot81rzSXNGexMDAyMDEwA2kGIAsCYYAZKscAAA==)
-  last-modified (1572251227562)
+  last-modified (1572267019768)
 }

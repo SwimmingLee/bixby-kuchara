@@ -1,7 +1,7 @@
 train (t-1mz4cdf432n28h9j52wqg4ieb) {
-  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (날씨의 아이)[v:MovieName]는 (빼)[v:ExceptExpression]버려")
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (날씨의 아이)[v:MovieName]는 (빼)[v:ExceptExpression:true]버려")
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
-  last-modified (1572167625030)
+  last-modified (1572267180480)
 }
 train (t-1o1z7hsb6vudjzdy2qwemajzy) {
   utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule,r:MakeDateTimeExpression] (7시)[v:time.DetachedTime] (이후)[v:IsStartTime:true] 영화만 보여줄래?")
@@ -9,7 +9,7 @@ train (t-1o1z7hsb6vudjzdy2qwemajzy) {
   last-modified (1572258296944)
 }
 train (t-1vcr97gcmziubzrzesec39ty3) {
-  utterance ("[g:FilterMovieWithRoomFromTimeOrder:continue:TimeOrderedSchedule] (슈퍼플렉스)[v:RoomPropertyEnum:'슈퍼플렉스 G'] 이거 (빼)[v:ExceptExpression]버려")
+  utterance ("[g:FilterMovieWithRoomFromTimeOrder:continue:TimeOrderedSchedule] (슈퍼플렉스)[v:RoomPropertyEnum:'슈퍼플렉스 G'] 이거 (빼)[v:ExceptExpression:true]버려")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUll0EdT45aZU5Ja5JtflpkanlmSEZSfn+tWlJ8L18ogj6bBtSI5taDEtaKgKLW4ODM/D0MByIiAovyC1KKSSte80lyinMXCwMjAxMAMpBmALAiEAWaoHAMA)
-  last-modified (1572258315185)
+  last-modified (1572267208784)
 }

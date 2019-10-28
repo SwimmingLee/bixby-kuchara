@@ -4,9 +4,9 @@ train (t-97mj68p5i0jbllde1fn9ac4t4) {
   last-modified (1572166983012)
 }
 train (t-9dycdpzkheyy8l4e5n7ot2pss) {
-  utterance ("[g:FilterMovieWithRoomFromTheaterOrder:continue:TheaterOrderedSchedule] (더부티크)[v:RoomPropertyEnum:더부티크] 저거 (빼)[v:ExceptExpression]줘")
+  utterance ("[g:FilterMovieWithRoomFromTheaterOrder:continue:TheaterOrderedSchedule] (더부티크)[v:RoomPropertyEnum:더부티크] 저거 (빼)[v:ExceptExpression:true]줘")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEJT5paZA1Tlm1+WmRqeWZIRlJ+f61aUn4usm0EeTY9rRXJqQYlrRUFRanFxZn4ehgKQKQFF+QWpRSWVrnmlucQ6joWBkYGJgRlIMwBZEAgDzFA5BgA=)
-  last-modified (1572168688890)
+  last-modified (1572266875240)
 }
 train (t-9stjqff3xaz33xthh31ua0axx) {
   utterance ("[g:FilterMovieWithRoomFromTimeOrder:continue:TimeOrderedSchedule] (아이맥스)[v:RoomPropertyEnum:IMAX]만 보여줘")
