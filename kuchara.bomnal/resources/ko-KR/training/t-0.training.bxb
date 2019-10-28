@@ -1,0 +1,5 @@
+train (t-0e71hbfb556cy4n891wyc8qht) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (로맨스)[v:GenreEnum:멜로/로맨스]만 보여줘")
+  plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQQFMMlnXNK80l2VpmBkYGJiDJAKRBEAKYwKIMAA==)
+  last-modified (1572258877381)
+}
