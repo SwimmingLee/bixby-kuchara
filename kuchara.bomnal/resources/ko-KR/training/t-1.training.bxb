@@ -1,3 +1,8 @@
+train (t-1jp9d3136fd3zof0pk34p6jjv) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (로맨스)[v:GenreEnum:멜로/로맨스] 영화 (제외)[v:ExceptExpression]")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572259341792)
+}
 train (t-1mz4cdf432n28h9j52wqg4ieb) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (날씨의 아이)[v:MovieName]는 (빼)[v:ExceptExpression]버려")
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
