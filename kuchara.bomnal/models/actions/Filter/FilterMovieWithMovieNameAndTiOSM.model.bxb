@@ -4,7 +4,7 @@ action (FilterMovieWithMovieNameAndTiOSM) {
   collect {
     input (timeOrderedScheduleWithMovie) {
       type (TimeOrderedScheduleWithMovie)
-      min (Required) max (Many)
+      min (Required) max (One)
     }
     input (movieName) {
       type (MovieName)

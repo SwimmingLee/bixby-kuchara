@@ -3,6 +3,11 @@ train (t-d9d3wmanfa2nix30ud958mvdv) {
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEJT5paZA1Tlm1+WmRqeWZIRlJ+f61aUn4usm0EeTY9rRXJqQYlrRUFRanFxZn4ehgKQKQFF+QWpRSWVrnmlucQ6joWBkYGJgRlIMwBZEAgDzFA5BgA=)
   last-modified (1572109940236)
 }
+train (t-deyqebix67mw20ao5ek5orhcz) {
+  utterance ([g:FindMovieWithLocation] 근처 영화관 보여줘)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572237894365)
+}
 train (t-drb0zt72l3l7uo5uahk3rw9s5) {
   utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 영화 추천 좀)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)

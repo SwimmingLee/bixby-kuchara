@@ -1,5 +1,0 @@
-train (t-5axorhoa2qcl0m0b5nic2ayx5) {
-  utterance ([g:FindMovieWithLocation] 근처 영화관 시간표 보여줘)
-  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
-  last-modified (1572150962130)
-}

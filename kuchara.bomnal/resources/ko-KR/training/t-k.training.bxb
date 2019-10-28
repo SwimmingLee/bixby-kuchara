@@ -1,0 +1,5 @@
+train (t-kr3dslhavrmwr7grvnp17g5dl) {
+  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 요즘 핫한 영화가 뭐야?)
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572239847729)
+}
