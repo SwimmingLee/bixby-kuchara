@@ -4,7 +4,7 @@ train (t-p9lvotsbtdotmzell9fqgdf7o) {
   last-modified (1572091796755)
 }
 train (t-pc9qatk79i243h7qrhl4focw3) {
-  utterance ([g:FindTheaterWithMovieSelected:continue:TimeOrderedSchedule] 딴 영화관 시간 보여줘)
-  plan (Y2BhkMouTc5ILErUS8rPzUvM0QvJSE0sSS3yzEvLZ9BGk3PLzEuByodnlmT45pdlpgan5qQml6SmMEigKQbL+iXmpjIoocmABFMC8jPzSoJLikqTS0qLUhmYGRgZmIAkA5AGQQgAswA=)
-  last-modified (1572183103486)
+  utterance ([g:FindTheaterWithMovieSelected:continue:TimeOrderedSchedule] 딴 영화관 보여줘)
+  plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
+  last-modified (1572258251983)
 }

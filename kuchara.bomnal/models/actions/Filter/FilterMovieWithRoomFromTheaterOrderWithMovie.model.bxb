@@ -4,7 +4,7 @@ action (FilterMovieWithRoomFromTheaterOrderWithMovie) {
   collect {
     input (theaterOrderedScheduleWithMovie) {
       type (TheaterOrderedScheduleWithMovie)
-      min (Required) max (Many)
+      min (Required) max (One)
     }
     input (roomPropertyEnum) {
       type (RoomPropertyEnum)
@@ -16,6 +16,5 @@ action (FilterMovieWithRoomFromTheaterOrderWithMovie) {
     }
   }
   output (TheaterOrderedScheduleWithMovie)
-  // output (MovieName)
 }
   

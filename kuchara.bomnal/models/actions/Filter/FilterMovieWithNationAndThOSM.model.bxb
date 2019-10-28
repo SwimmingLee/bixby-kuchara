@@ -4,10 +4,10 @@ action (FilterMovieWithNationAndThOSM) {
   collect {
     input (theaterOrderedScheduleWithMovie) {
       type (TheaterOrderedScheduleWithMovie)
-      min (Required) max (Many)
+      min (Required) max (One)
     }
-    input (nation) {
-      type (Nation)
+    input (nationEnum) {
+      type (NationEnum)
       min (Required) max (One)
     }
     input(exceptExpression){
@@ -15,5 +15,5 @@ action (FilterMovieWithNationAndThOSM) {
       min (Optional) max (One)
     }
   }
-  output (Movie)
+  output (TheaterOrderedScheduleWithMovie)
 }

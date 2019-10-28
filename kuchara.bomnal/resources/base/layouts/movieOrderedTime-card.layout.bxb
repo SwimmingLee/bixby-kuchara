@@ -18,7 +18,7 @@ layout-macro-def (movieOrderedTime-card) {
     compound-card {
       on-click {
         intent {
-          goal: FindOneTheaterWithMovieSelected
+          goal: MakeDetailFromTheaterOrderedSchedule
           value: $expr(movie)
           value: $expr(theaterInfo)
           value: $expr(theaterSchedule)
@@ -37,17 +37,18 @@ layout-macro-def (movieOrderedTime-card) {
                       template ("#{value(movie.movieName)}")
                     }
                   }
+                  spacer
                   if (movie.movieRating == '전체 관람가') {
-                    image { url ("images/movieRating_icon/rating_all.png") }
+                    image { url ("images/movieRating_icon/rating_all.png") style (Detail_M) }
                   }
                   else-if (movie.movieRating == '12세 관람가') {
-                    image { url ("images/movieRating_icon/rating_12.png") }
+                    image { url ("images/movieRating_icon/rating_12.png") style (Detail_M) }
                   }
                   else-if (movie.movieRating == '15세 관람가') {
-                    image { url ("images/movieRating_icon/rating_15.png") }
+                    image { url ("images/movieRating_icon/rating_15.png") style (Detail_M) }
                   }
                   else-if (movie.movieRating == '청소년 관람불가') {
-                    image { url ("images/movieRating_icon/rating_19.png") }
+                    image { url ("images/movieRating_icon/rating_19.png") style (Detail_M) }
                   }
                   // text { // genre
                   //   style (Legal)
@@ -92,10 +93,11 @@ layout-macro-def (movieOrderedTime-card) {
                       template ("~#{value(theaterSchedule.endTime)}")
                     }
                   }
+                  spacer
                   if (size(theaterSchedule.roomPropertyUriList.roomPropertyUri) > 0) {
                     for-each (theaterSchedule.roomPropertyUriList.roomPropertyUri) {
                       as (roomProperty) {
-                        image { url ("#{value(roomProperty)}") }
+                        image { url ("#{value(roomProperty)}") style (Detail_M) }
                         // spacer
                       }
                     }
@@ -109,7 +111,7 @@ layout-macro-def (movieOrderedTime-card) {
               content {
                 single-line { // 좌석
                   if (theaterSchedule.totalSeat == -1) {
-                    text { value ("자리 없음") style (Detail_M)}
+                    text { value ("자리 없음") style (Detail_M) color (Red) }
                   }
                   else {
                     if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 60) {
@@ -146,19 +148,16 @@ layout-macro-def (movieOrderedTime-card) {
             vbox {
               content {
                 single-line {
-                  // brand
+                  // brand, theaterName
                   if(theaterInfo.brand == 'cgv') {
-                    text { value ("CGV") style (Detail_L) }
+                    text { value ("CGV #{value(theaterInfo.theaterName)}점") style (Detail_M) }
                   }
                   else-if(theaterInfo.brand == 'megabox') {
-                    text { value ("메가박스") style (Detail_L) }
+                    text { value ("메가박스 #{value(theaterInfo.theaterName)}점") style (Detail_M) }
                   }
                   else-if(theaterInfo.brand == 'lottecinema') {
-                    text { value ("롯데시네마")style (Detail_L) }
+                    text { value ("롯데시네마 #{value(theaterInfo.theaterName)}점") style (Detail_M) }
                   }
-                  
-                  // theaterName
-                  text { value ("#{value(theaterInfo.theaterName)}점") }
                 }
               }
             }
@@ -167,12 +166,7 @@ layout-macro-def (movieOrderedTime-card) {
               valign (Middle)
               content {
                 single-line {
-                  if (theaterInfo.distance > 999) {
-                    text { value ("#{value(theaterInfo.distance) / 1000}km") style (Detail_L_Soft) }
-                  }
-                  else {
-                    text { value ("#{value(theaterInfo.distance)}m") style (Detail_L_Soft) }
-                  }
+                  text { value ("#{value(theaterInfo.distance)}") style (Detail_L_Soft) }
                 }
               }
             }

@@ -1,0 +1,10 @@
+train (t-kcsz9uxoke6xmuin34api58pz) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (말레피센트 2)[v:MovieName] (빼)[v:ExceptExpression]줘")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
+  last-modified (1572248988543)
+}
+train (t-kr3dslhavrmwr7grvnp17g5dl) {
+  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 요즘 핫한 영화가 뭐야?)
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572239847729)
+}
