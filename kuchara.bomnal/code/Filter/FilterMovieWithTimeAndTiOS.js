@@ -2,17 +2,17 @@ module.exports.function = function filterMovieWithTimeAndTiOS (timeOrderedSchedu
   let result = [];
   let input = timeOrderedSchedule;
 
-  let timeInput = dateTimeExpression.dateTime.time.hour*60 + dateTimeExpression.dateTime.time.minute*1;
+  let timeInput = dateTimeExpression.dateTime.time.hour*60;
 
   // 이후 시작하는 영화
   if(typeof isStartTime == 'undefined'){
     input.timeSchedule.forEach(function(timeScheduleElement){
-      let time = timeScheduleElement.startTime.split(":");
+      let time = mosElement.theaterSchedule.startTime + "";
+        time = time.split(":")
       let aTime = time[0]*60 + time[1]*1;
-      if(aTime >= time){
+      if(aTime >= timeInput){
         result.push(timeScheduleElement);
       }
-
       input.timeSchedule = result;
     })
   } else {

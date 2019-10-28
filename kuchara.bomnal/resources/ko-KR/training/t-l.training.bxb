@@ -1,3 +1,8 @@
+train (t-l2ritiqls0uw9jk71whbbyt07) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM:continue:TheaterOrderedScheduleWithMovie] (10시)[v:time.DetachedTime] 이후에 (시작하는)[v:IsStartTime:true] 영화 있어?")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572264397072)
+}
 train (t-lv78h1k2gghxxgxuy5ohcw9c3) {
   utterance ([g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 영화관순으로 보여줘)
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
