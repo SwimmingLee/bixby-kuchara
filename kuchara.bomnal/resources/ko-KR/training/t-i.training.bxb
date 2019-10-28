@@ -14,7 +14,7 @@ train (t-imn1b3xw17l8qr0uiceed0fw9) {
   last-modified (1572151081804)
 }
 train (t-io5hty1y4ew86avd0pq8j2fln) {
-  utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (한국)[v:Nation] 영화 (빼)[v:ExceptExpression]고 보여줘")
-  plan (Y2BlEMkuTc5ILErUS8rPzUvM0fPNL8tMZdBBE3XLzClJLQLLhWeWZPgllmTm5znmpYRk+gf7MsijqXatSE4tKHGtKChKLS4GKmQQRVMA0c+gjSYckpmb6l+UklqUmhKcnJGaUpoDtg3iJBYGRgYmBmYgzQBkQSAMMEPlGAA=)
-  last-modified (1572242048803)
+  utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (한국)[v:NationEnum:한국] 영화 (빼)[v:ExceptExpression]고 보여줘")
+  plan (Y2BlEMkuTc5ILErUS8rPzUvM0fPNL8tMZdBBE3XLzClJLQLLhWeWZPgllmTm5znmpYRk+gf7MsijqXatSE4tKHGtKChKLS4GKmSQRFMA0e+aV5rLoI0mFZKZm+pflJJalJoSnJyRmlKaA7YR4iwWBkYGJgZmIM0AZEEgDDBD5RgA)
+  last-modified (1572249553157)
 }

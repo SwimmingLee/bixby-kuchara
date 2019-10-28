@@ -14,9 +14,9 @@ train (t-sc72ecc8pb7pl1hrj0uz235ey) {
   last-modified (1572011332943)
 }
 train (t-sk1za3js5cklyoix02ngawd8i) {
-  utterance ([g:kuchara.bomnal.FindMovieWithMovieAndPos,r:kuchara.bomnal.ShowMoviePoster] 요즘 대세 영화가 뭐야?)
+  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 요즘 대세 영화가 뭐야?)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
-  last-modified (1572240769670)
+  last-modified (1572247638629)
 }
 train (t-slu2xubjekskhsr2jo96ublbp) {
   utterance ([g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순으로 보여줘)

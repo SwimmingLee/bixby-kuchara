@@ -6,8 +6,8 @@ action (FilterMovieWithNationAndTiOSM) {
       type (TimeOrderedScheduleWithMovie)
       min (Required) max (One)
     }
-    input (nation) {
-      type (Nation)
+    input (nationEnum) {
+      type (NationEnum)
       min (Required) max (One)
     }
     input(exceptExpression){
@@ -15,5 +15,5 @@ action (FilterMovieWithNationAndTiOSM) {
       min (Optional) max (One)
     }
   }
-  output (Movie)
+  output (TimeOrderedScheduleWithMovie)
 }

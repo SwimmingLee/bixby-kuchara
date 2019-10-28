@@ -42,8 +42,6 @@ result-view {
     conversation-driver {
       template ("11시 전에 끝나는 영화만 보여줘")
     }
-    
-
 
     conversation-driver {
       template ("다른 영화관 보여줘")
