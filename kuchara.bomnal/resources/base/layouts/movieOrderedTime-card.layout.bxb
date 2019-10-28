@@ -111,7 +111,7 @@ layout-macro-def (movieOrderedTime-card) {
               content {
                 single-line { // 좌석
                   if (theaterSchedule.totalSeat == -1) {
-                    text { value ("자리 없음") style (Detail_M)}
+                    text { value ("자리 없음") style (Detail_M) color (Red) }
                   }
                   else {
                     if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 60) {
