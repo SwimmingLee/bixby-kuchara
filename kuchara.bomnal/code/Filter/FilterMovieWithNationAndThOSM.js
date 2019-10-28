@@ -1,5 +1,4 @@
-module.exports.function = function filterMovieWithNationAndThOSM (
-  theaterOrderedScheduleWithMovie, nationEnum, exceptExpression) {
+module.exports.function = function filterMovieWithNationAndThOSM (theaterOrderedScheduleWithMovie, nation, exceptExpression) {
   let result = {
     movieOrderedSchedule: []
   };
@@ -8,20 +7,20 @@ module.exports.function = function filterMovieWithNationAndThOSM (
   // 해당 장르만 보여준다.
   if(typeof exceptExpression == 'undefined'){
     theaterOrderedScheduleWithMovie.movieOrderedSchedule.forEach(function(mosElement){
-      if(mosElement.movie.nation.includes(nationEnum)){
+      if(mosElement.movie.nation.includes(nation)){
         result.movieOrderedSchedule.push(mosElement);
       }
     })
   } else {  
     if(!exceptExpression){
       theaterOrderedScheduleWithMovie.movieOrderedSchedule.forEach(function(mosElement){
-      if(mosElement.movie.nation.includes(nationEnum)){
+      if(mosElement.movie.nation.includes(nation)){
         result.movieOrderedSchedule.push(mosElement);
       }
       })
     } else {
       theaterOrderedScheduleWithMovie.movieOrderedSchedule.forEach(function(mosElement){
-      if(!mosElement.movie.nation.includes(nationEnum)){
+      if(!mosElement.movie.nation.includes(nation)){
         result.movieOrderedSchedule.push(mosElement);
       }
       })

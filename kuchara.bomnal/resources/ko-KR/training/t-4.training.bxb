@@ -9,7 +9,7 @@ train (t-4lcuqac8236cr9s5d8tvxraun) {
   last-modified (1572237257630)
 }
 train (t-4q9ava9l8y53icqvcuqn98i51) {
-  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 다른 영화 볼래)
+  utterance ([g:kuchara.bomnal.FindMovieWithMovieAndPos,r:kuchara.bomnal.ShowMoviePoster] 다른 영화 볼래)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
-  last-modified (1572247636568)
+  last-modified (1572209237909)
 }

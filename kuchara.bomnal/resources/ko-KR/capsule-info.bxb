@@ -4,7 +4,7 @@ capsule-info {
   icon-asset (/images/Icon.png)
   description ("동네영화관은 ")
   website-url (https://example.com/)
-  terms-url (https://example.com/terms-of-use/)
+  terms-url (https://github.com/SwimmingLee/bixby-kuchara/blob/master/Privacy%20Policy.md)
   dispatch-name (동네영화관)
   dispatch-aliases{
     alias (동네 영화관)

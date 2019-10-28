@@ -110,7 +110,12 @@ result-view {
                   vbox {
                     halign (End)
                     content {
-                      text { value ("#{value(this.distance)}m") style (Detail_L_Soft) }
+                      if (this.distance > 999) {
+                        text { value ("#{value(this.distance) / 1000}km") style (Detail_L_Soft) }
+                      }
+                      else {
+                        text { value ("#{value(this.distance)}m") style (Detail_L_Soft) }
+                      }
                     }
                   }
                 }
@@ -152,32 +157,26 @@ result-view {
             }
             slot2 {
               single-line { // 좌석
-                if (this.totalSeat == -1) {
-                  text { value ("자리 없음") style (Detail_M) color (Red) }
+                if(this.totalSeat == -1) {
+                  text { value ("자리 없음") style (Title_XS) }
+
                 }
                 else {
-                  if(this.availableSeat * 100 / this.totalSeat > 60) {
+                  if(this.availableSeat * 100 / this.totalSeat > 30) {
                     text {
                       color (Green)
-                      style (Detail_M)
-                      value ("#{value(this.availableSeat)}")
-                    }
-                  }
-                  else-if(this.availableSeat * 100 / this.totalSeat > 30) {
-                    text {
-                      color (Amber)
-                      style (Detail_M)
+                      style (Title_XS)
                       value ("#{value(this.availableSeat)}")
                     }
                   }
                   else {
                     text {
                       color (Red)
-                      style (Detail_M)
+                      style (Title_XS)
                       value ("#{value(this.availableSeat)}")
                     }
                   }
-                  text { value ("/#{value(this.totalSeat)}석") style (Detail_M) }
+                  text { value ("/#{value(this.totalSeat)}") style (Title_XS) } // 총 좌석
                 }
               }
             }

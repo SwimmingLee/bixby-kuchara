@@ -34,11 +34,6 @@ endpoints {
       local-endpoint (Find/FindOneTheaterWithMovieSelected.js)
     }
 
-    action-endpoint (FindMovieWithTheater) {
-      accepted-inputs (brand, regionCode, theaterCode)
-      local-endpoint (Find/FindMovieWithTheater.js)
-    }
-
     // make structure
     action-endpoint (MakeNamedPointStructure) {
       accepted-inputs (locationalKeyword)
@@ -129,12 +124,12 @@ endpoints {
     }
 
     action-endpoint (FilterMovieWithNationAndTiOSM) {
-      accepted-inputs (timeOrderedScheduleWithMovie, nationEnum, exceptExpression)
+      accepted-inputs (timeOrderedScheduleWithMovie, nation, exceptExpression)
       local-endpoint (Filter/FilterMovieWithNationAndTiOSM.js)
     }
 
     action-endpoint (FilterMovieWithNationAndThOSM) {
-      accepted-inputs (theaterOrderedScheduleWithMovie, nationEnum, exceptExpression)
+      accepted-inputs (theaterOrderedScheduleWithMovie, nation, exceptExpression)
       local-endpoint (Filter/FilterMovieWithNationAndThOSM.js)
     }
 

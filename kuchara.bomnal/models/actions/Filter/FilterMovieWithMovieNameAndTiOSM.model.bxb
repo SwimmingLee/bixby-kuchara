@@ -8,7 +8,7 @@ action (FilterMovieWithMovieNameAndTiOSM) {
     }
     input (movieName) {
       type (MovieName)
-      min (Required) max (Many)
+      min (Required) max (One)
     }
     input(exceptExpression){
       type(ExceptExpression)

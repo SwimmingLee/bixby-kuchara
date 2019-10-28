@@ -3,3 +3,8 @@ train (t-0e71hbfb556cy4n891wyc8qht) {
   plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQQFMMlnXNK80l2VpmBkYGJiDJAKRBEAKYwKIMAA==)
   last-modified (1572258877381)
 }
+train (t-0ozesgy24rgfwz4dtpgg2yz80) {
+  utterance ([g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순으로 알려줘)
+  plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
+  last-modified (1572266380467)
+}

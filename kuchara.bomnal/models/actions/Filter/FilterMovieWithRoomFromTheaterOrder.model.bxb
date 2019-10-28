@@ -16,5 +16,6 @@ action (FilterMovieWithRoomFromTheaterOrder) {
     }
   }
   output (TheaterOrderedSchedule)
+  // output (MovieName)
 }
   
