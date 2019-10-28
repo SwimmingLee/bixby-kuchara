@@ -13,31 +13,31 @@ module.exports.function = function filterMovieWithTimeAndTiOS (timeOrderedSchedu
       if(aTime >= timeInput){
         result.push(timeScheduleElement);
       }
-      input.timeSchedule = result;
     })
   } else {
     // 시작하는: 이후 시작하는 영화
     if(isStartTime){
       input.timeSchedule.forEach(function(timeScheduleElement){
-        let time = timeScheduleElement.startTime.split(":");
+        let time = mosElement.theaterSchedule.startTime + "";
+        time = time.split(":")
         let aTime = time[0]*60 + time[1]*1;
-        if(aTime >= time){
+        if(aTime >= timeInput){
           result.push(timeScheduleElement);
         }
-
-        input.timeSchedule = result;
       })
     } else {    // 끝나는: 인풋시간 이전에 끝나는 영화
       input.timeSchedule.forEach(function(timeScheduleElement){
-        let time = timeScheduleElement.endTime.split(":");
+        let time = mosElement.theaterSchedule.endTime + "";
+        time = time.split(":")
         let aTime = time[0]*60 + time[1]*1;
-        if(aTime <= time){
+        if(aTime <= timeInput){
           result.push(timeScheduleElement);
         }
-
-        input.timeSchedule = result;
       })
     }
   }
+
+  input.timeSchedule = result;
+
   return input;
 }

@@ -4,8 +4,9 @@ module.exports.function = function filterMovieWithTimeAndThOS (theaterOrderedSch
   let result = [];
   let input = theaterOrderedSchedule;
 
-  let timeInput = dateTimeExpression.dateTime.time.hour*60 + dateTimeExpression.dateTime.time.minute*1;
+  let timeInput = dateTimeExpression.dateTime.time.hour*60;
 
+  // input.theater = result; 이런 느낌?
   // 이후 시작하는 영화
   if(typeof isStartTime == 'undefined'){
     input.theater.forEach(function(theaterElement){
@@ -48,6 +49,4 @@ module.exports.function = function filterMovieWithTimeAndThOS (theaterOrderedSch
     }
   }
   return input;
-  
-  // return {}
 }
