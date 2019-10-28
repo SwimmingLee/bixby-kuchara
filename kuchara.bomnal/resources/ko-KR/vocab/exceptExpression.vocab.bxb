@@ -1,5 +1,4 @@
-vocab(ExceptExpression){
-  "제외하고"
-  "빼고"
-  "빼"
+vocab (ExceptExpression){
+  "true" {"제외하고", "제외 하고", "빼고", "빼", "빼줘", "없애" }
+  "false" {"만"}
 }

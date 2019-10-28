@@ -8,6 +8,13 @@ module.exports.function = function restructureTheaterViewToTimeViewWithMovie (th
     return aTime-bTime;
   })
 
-  let timeOrderedScheduleWithMovie = theaterOrderedScheduleWithMovie;
+  let timeOrderedScheduleWithMovie = {
+    movieOrderedSchedule: []
+  };
+
+  theaterOrderedScheduleWithMovie.movieOrderedSchedule.forEach(function(mosElement) {
+    timeOrderedScheduleWithMovie.movieOrderedSchedule.push(mosElement);
+  });
+
   return timeOrderedScheduleWithMovie;
 }

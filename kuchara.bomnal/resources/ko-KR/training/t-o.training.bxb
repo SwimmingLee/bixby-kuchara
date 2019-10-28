@@ -1,7 +1,12 @@
+train (t-o1999rmniqevmt4xt4o208g93) {
+  utterance ([g:RestructureTheaterViewToTimeViewWithMovie:continue:TheaterOrderedScheduleWithMovie] 영화 시간순으로 보여줘)
+  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9UsigqDFfBbzoYLKKWqrWInRL6uahXQLGjZgmE5bmDhjcMHWfneg6hNusQWOOkSGtFAB3Dsc0qeR5N6m+N7c8d+nnLILdHFG9OgJ)
+  last-modified (1572265499616)
+}
 train (t-o7n2zglmy4r4728jxcowcu3sw) {
-  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (반지의제왕)[v:MovieName] 영화 (빼고)[v:ExceptExpression] 보여줘")
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (반지의제왕)[v:MovieName] 영화 (빼고)[v:ExceptExpression:true] 보여줘")
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
-  last-modified (1572165886076)
+  last-modified (1572266964367)
 }
 train (t-oavof039kjlwqfxevfgd4b4mv) {
   utterance ("[g:FindMovieWithLocation] (피카디리1958)[v:geo.SearchTerm] 시간표 알려줘")

@@ -1,12 +1,12 @@
 train (t-idommtjf4svbni58vn3p554sc) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (터미네이터)[v:MovieName] (빼)[v:ExceptExpression]고 보여줘")
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (터미네이터)[v:MovieName] (빼)[v:ExceptExpression:true]고 보여줘")
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
-  last-modified (1572167645677)
+  last-modified (1572267116945)
 }
 train (t-ieg4ck6njapi46us5xl02mc70) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (아주평범한연애)[v:MovieName]만 보여줘")
-  plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
-  last-modified (1572164068275)
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (아주평범한연애)[v:MovieName](만)[v:ExceptExpression:false] 보여줘")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
+  last-modified (1572267103201)
 }
 train (t-imn1b3xw17l8qr0uiceed0fw9) {
   utterance ("[g:FindMovieWithLocation] (영등포)[v:geo.SearchTerm] 근처 영화관 시간표 보여줘")
