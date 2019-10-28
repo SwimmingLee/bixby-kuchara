@@ -6,8 +6,8 @@ action (FilterMovieWithNationAndThOSM) {
       type (TheaterOrderedScheduleWithMovie)
       min (Required) max (Many)
     }
-    input (nation) {
-      type (Nation)
+    input (nationEnum) {
+      type (NationEnum)
       min (Required) max (One)
     }
     input(exceptExpression){

@@ -1,4 +1,4 @@
-module.exports.function = function filterMovieWithNationAndTiOSM (timeOrderedScheduleWithMovie, nation, exceptExpression) {
+module.exports.function = function filterMovieWithNationAndTiOSM (timeOrderedScheduleWithMovie, nationEnum, exceptExpression) {
   let result = {
     movieOrderedSchedule: []
   };

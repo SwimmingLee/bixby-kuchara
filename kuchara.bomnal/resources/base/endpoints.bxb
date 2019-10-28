@@ -129,12 +129,12 @@ endpoints {
     }
 
     action-endpoint (FilterMovieWithNationAndTiOSM) {
-      accepted-inputs (timeOrderedScheduleWithMovie, nation, exceptExpression)
+      accepted-inputs (timeOrderedScheduleWithMovie, nationEnum, exceptExpression)
       local-endpoint (Filter/FilterMovieWithNationAndTiOSM.js)
     }
 
     action-endpoint (FilterMovieWithNationAndThOSM) {
-      accepted-inputs (theaterOrderedScheduleWithMovie, nation, exceptExpression)
+      accepted-inputs (theaterOrderedScheduleWithMovie, nationEnum, exceptExpression)
       local-endpoint (Filter/FilterMovieWithNationAndThOSM.js)
     }
 
