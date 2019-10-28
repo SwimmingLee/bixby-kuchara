@@ -42,7 +42,12 @@ def GetTheaterInfoByObj(theaterObj):
 
 def GetTheaterInfo2ByObj(theaterObj, distance):
     theaterInfoEle = GetTheaterInfoByObj(theaterObj)
-    theaterInfoEle.update({'distance':distance})
+    distanceStr = ""
+    if distance >= 1000:
+        distanceStr = '{:.2f}Km'.format(distance/1000)
+    else:
+        distanceStr = '{}m'.format(distance)
+    theaterInfoEle.update({'distance':distanceStr})
     return theaterInfoEle
 
 def GetMovieScheduleInfoByObj(moviescheduleObj):
@@ -117,7 +122,12 @@ class TheaterOrderedSchedule:
         theaterList = []
         for theater in self.theater:
             theaterInfo = GetTheaterInfoByObj(theater['theaterInfo'])
-            theaterInfo.update({'distance':theater['distance']})
+            distanceStr = ""
+            if theater['distance'] >= 1000:
+                distanceStr = '{:.2f}Km'.format(theater['distance']/1000)
+            else:
+                distanceStr = '{}m'.format(theater['distance'])
+            theaterInfo.update({'distance':distanceStr})
             theaterEle = {
                 'theaterInfo':theaterInfo,
                 'theaterSchedule':theater['theaterSchedule']

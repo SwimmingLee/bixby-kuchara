@@ -1390,3 +1390,510 @@ megabox하남스타필드
 체크 히어로
 극장판 헬로카봇: 달나라를 구해줘!
 [28/Oct/2019 16:58:56] "GET /movie_api/searchMegaboxMovie/ HTTP/1.1" 200 178983
+----------------------------------------
+Exception happened during processing of request from ('110.70.59.100', 52383)
+----------------------------------------
+lottecinema브로드웨이(신사)
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+너를 만난 여름
+원스 어폰 어 타임... 인 할리우드
+cgv강남
+말레피센트 2
+조커
+82년생 김지영
+가장 보통의 연애
+람보: 라스트 워
+megabox강남대로
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+cgv압구정
+말레피센트 2
+조커
+82년생 김지영
+가장 보통의 연애
+스탠 바이 미
+경계선
+메기
+퍼펙트 스트레인저
+와일드 로즈
+블러드 심플
+미드소마 감독판
+미드소마 감독판
+해당 영화를 찾을 수 없습니다. Naver Movie API
+벌새
+원스 어폰 어 타임... 인 할리우드
+megabox강남
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+cgv청담씨네시티
+조커
+82년생 김지영
+가장 보통의 연애
+람보: 라스트 워
+megabox센트럴
+82년생 김지영
+말레피센트 2
+조커
+megabox코엑스
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+더 킹: 헨리 5세
+우피치 미술관
+우피치 미술관
+해당 영화를 찾을 수 없습니다. Naver Movie API
+경계선
+퍼펙트맨
+100일 동안 100가지로 100퍼센트 행복찾기
+버티고
+두번할까요
+미드 90
+퍼펙트 스트레인저
+스노우 화이트
+와일드 로즈
+여배우들의 티타임
+마리아 칼라스: 세기의 디바
+오늘도 위위
+cgv건대입구
+말레피센트 2
+조커
+82년생 김지영
+가장 보통의 연애
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[28/Oct/2019 17:24:19] "GET /movie_api/searchMovieListWithPos/?longitude=127.029248&latitude=37.511168 HTTP/1.1" 200 8054
+[28/Oct/2019 17:24:22] "GET /movie_api/searchMovieListWithPos/?longitude=127.029248&latitude=37.511168 HTTP/1.1" 200 8054
+[28/Oct/2019 17:26:24] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.029248&latitude=37.511168 HTTP/1.1" 200 69544
+Not Found: /movie_api/
+[28/Oct/2019 17:34:09] "GET /movie_api/ HTTP/1.1" 404 6649
+[28/Oct/2019 17:34:18] "GET / HTTP/1.1" 200 5584
+[28/Oct/2019 17:34:21] "GET /movies/ HTTP/1.1" 200 46044
+[28/Oct/2019 17:34:28] "GET /theaters/ HTTP/1.1" 200 98368
+long:37.511168, lat:127.029248, movieName:메기
+lottecinema브로드웨이(신사)
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+너를 만난 여름
+원스 어폰 어 타임... 인 할리우드
+cgv강남
+말레피센트 2
+조커
+82년생 김지영
+가장 보통의 연애
+람보: 라스트 워
+megabox강남대로
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+cgv압구정
+말레피센트 2
+조커
+82년생 김지영
+가장 보통의 연애
+스탠 바이 미
+경계선
+메기
+퍼펙트 스트레인저
+와일드 로즈
+블러드 심플
+미드소마 감독판
+미드소마 감독판
+해당 영화를 찾을 수 없습니다. Naver Movie API
+벌새
+원스 어폰 어 타임... 인 할리우드
+megabox강남
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+cgv청담씨네시티
+조커
+82년생 김지영
+가장 보통의 연애
+람보: 라스트 워
+megabox센트럴
+82년생 김지영
+말레피센트 2
+조커
+megabox코엑스
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+더 킹: 헨리 5세
+우피치 미술관
+우피치 미술관
+해당 영화를 찾을 수 없습니다. Naver Movie API
+경계선
+퍼펙트맨
+두번할까요
+버티고
+미드 90
+스노우 화이트
+퍼펙트 스트레인저
+와일드 로즈
+여배우들의 티타임
+마리아 칼라스: 세기의 디바
+오늘도 위위
+cgv건대입구
+말레피센트 2
+조커
+82년생 김지영
+가장 보통의 연애
+[28/Oct/2019 17:39:32] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.029248&latitude=37.511168&movieName=%EB%A9%94%EA%B8%B0 HTTP/1.1" 200 690
+long:37.511168, lat:127.029248, movieName:오늘도 위위
+[28/Oct/2019 17:42:48] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.029248&latitude=37.511168&movieName=%EC%98%A4%EB%8A%98%EB%8F%84+%EC%9C%84%EC%9C%84 HTTP/1.1" 200 691
+cgv왕십리
+말레피센트 2
+조커
+82년생 김지영
+가장 보통의 연애
+람보: 라스트 워
+시크릿 슈퍼스타
+퍼펙트 스트레인저
+스노우 화이트
+나쁜 녀석들: 더 무비
+lottecinema건대입구
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+터미네이터2 3D
+터미네이터2 3D
+해당 영화를 찾을 수 없습니다. Naver Movie API
+너를 만난 여름
+경계선
+신문기자
+스노우 화이트
+퍼펙트 스트레인저
+[28/Oct/2019 17:43:26] "GET /movie_api/searchTheaterWithMoviePos/?movieName=%EC%98%A4%EB%8A%98%EB%8F%84+%EC%9C%84%EC%9C%84&longitude=127.029248&latitude=37.511168 HTTP/1.1" 200 205
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Watching for file changes with StatReloader
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 28, 2019 - 17:47:05
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/swim/.venv/movieapi/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movie_server/urls.py", line 23, in <module>
+    from movies.movieapi import SearchMovieListWithPos
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 3, in <module>
+    from .crawling import MovieCrawl
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 23, in <module>
+    from .jsonmodels import GetDiffTime
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py", line 130
+    theaterInfo.update({'distance':distanceStr)
+                                              ^
+SyntaxError: invalid syntax
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/swim/.venv/movieapi/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movie_server/urls.py", line 23, in <module>
+    from movies.movieapi import SearchMovieListWithPos
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 3, in <module>
+    from .crawling import MovieCrawl
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 23, in <module>
+    from .jsonmodels import GetDiffTime
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py", line 130
+    theaterInfo.update({'distance':distanceStr)
+                                              ^
+SyntaxError: invalid syntax
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 28, 2019 - 17:51:31
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 28, 2019 - 17:51:44
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /movie_api/searchTimeOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 53, in SearchTimeOrderedScheduleWithPos
+    'theaterInfo':GetTheaterInfo2ByObj(movieSchedule.theater, theaterDistanceDict[movieSchedule.theater.id]),
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py", line 47, in GetTheaterInfo2ByObj
+    distanceStr = '{.2}Km'.format(distance/1000)
+AttributeError: 'float' object has no attribute '2'
+[28/Oct/2019 17:54:43] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=129.116461&latitude=35.182444 HTTP/1.1" 500 77976
+[28/Oct/2019 17:54:54] "GET /movie_api/searchMovieListWithPos/?longitude=129.116461&latitude=35.182444 HTTP/1.1" 200 29
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 28, 2019 - 17:54:38
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 28, 2019 - 17:56:05
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[28/Oct/2019 17:57:42] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=129.116461&latitude=35.182444 HTTP/1.1" 200 67808
+[28/Oct/2019 18:30:50] "GET / HTTP/1.0" 200 156
+[28/Oct/2019 19:23:38] "GET / HTTP/1.1" 200 5584
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[28/Oct/2019 19:23:38] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[28/Oct/2019 19:23:44] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[28/Oct/2019 19:23:44] "GET /favicon.ico HTTP/1.1" 404 6652
+[28/Oct/2019 19:23:50] "GET /theaters/ HTTP/1.1" 200 98368
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 28, 2019 - 17:56:28
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[28/Oct/2019 19:31:13] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.035917&latitude=37.499176 HTTP/1.1" 200 70081
+[28/Oct/2019 19:35:18] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=126.991171&latitude=37.571053 HTTP/1.1" 200 57756
+[28/Oct/2019 19:37:50] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.073109&latitude=37.51387 HTTP/1.1" 200 116004
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 28, 2019 - 19:27:03
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+megabox강남
+[28/Oct/2019 19:41:42] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.104975&latitude=37.513983 HTTP/1.1" 200 84933
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+megabox강남대로
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+cgv강남
+말레피센트 2
+조커
+82년생 김지영
+가장 보통의 연애
+람보: 라스트 워
+lottecinema브로드웨이(신사)
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+원스 어폰 어 타임... 인 할리우드
+megabox센트럴
+82년생 김지영
+말레피센트 2
+조커
+cgv압구정
+말레피센트 2
+조커
+82년생 김지영
+스탠 바이 미
+경계선
+퍼펙트 스트레인저
+블러드 심플
+미드소마 감독판
+미드소마 감독판
+해당 영화를 찾을 수 없습니다. Naver Movie API
+원스 어폰 어 타임... 인 할리우드
+cgv청담씨네시티
+조커
+82년생 김지영
+가장 보통의 연애
+람보: 라스트 워
+megabox코엑스
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+더 킹: 헨리 5세
+경계선
+퍼펙트맨
+미드 90
+버티고
+두번할까요
+스노우 화이트
+와일드 로즈
+퍼펙트 스트레인저
+여배우들의 티타임
+마리아 칼라스: 세기의 디바
+오늘도 위위
+megabox이수
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+megaboxARTNINE
+더 킹: 헨리 5세
+경계선
+cgv건대입구
+말레피센트 2
+조커
+82년생 김지영
+가장 보통의 연애
+[28/Oct/2019 19:43:15] "GET /movie_api/searchTheaterWithMoviePos/?latitude=37.498241&longitude=127.026451&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2231
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Watching for file changes with StatReloader
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/jsonmodels.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 28, 2019 - 19:44:35
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[28/Oct/2019 19:44:51] "GET /movie_api/searchTheaterWithMoviePos/?latitude=37.498241&longitude=127.026451&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2203
+[28/Oct/2019 19:48:17] "GET /theaters/ HTTP/1.1" 200 42620
+[28/Oct/2019 19:50:18] "GET /theaters/ HTTP/1.1" 200 42620
+[28/Oct/2019 19:50:19] "GET /theaters/ HTTP/1.1" 200 42620
+[28/Oct/2019 19:50:21] "GET /theaters/ HTTP/1.1" 200 42620
+[28/Oct/2019 19:51:13] "GET /theaters/ HTTP/1.1" 200 42620
+[28/Oct/2019 19:51:13] "GET /theaters/ HTTP/1.1" 200 42620
+[28/Oct/2019 19:51:14] "GET /theaters/ HTTP/1.1" 200 42620
+[28/Oct/2019 19:51:15] "GET /theaters/ HTTP/1.1" 200 42620
