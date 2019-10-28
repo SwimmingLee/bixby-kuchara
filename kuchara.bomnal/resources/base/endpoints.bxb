@@ -34,11 +34,6 @@ endpoints {
       local-endpoint (Find/FindOneTheaterWithMovieSelected.js)
     }
 
-    action-endpoint (FindMovieWithTheater) {
-      accepted-inputs (brand, regionCode, theaterCode)
-      local-endpoint (Find/FindMovieWithTheater.js)
-    }
-
     // make structure
     action-endpoint (MakeNamedPointStructure) {
       accepted-inputs (locationalKeyword)

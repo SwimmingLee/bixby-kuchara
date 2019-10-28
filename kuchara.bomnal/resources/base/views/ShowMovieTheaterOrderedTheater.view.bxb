@@ -33,7 +33,7 @@ result-view {
   }
   conversation-drivers {
     conversation-driver {
-      template ("영화관 이름순으로 정렬된 뷰.")
+      template ("영화 시간순으로 보여줘")
     }
   }
 }
