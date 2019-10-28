@@ -4,7 +4,7 @@ action (FilterMovieWithTheaterNameAndThOSM) {
   collect {
     input (theaterOrderedScheduleWithMovie) {
       type (TheaterOrderedScheduleWithMovie)
-      min (Required) max (Many)
+      min (Required) max (One)
     }
     input (theaterName) {
       type (TheaterName)

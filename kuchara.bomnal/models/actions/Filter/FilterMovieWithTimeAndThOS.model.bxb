@@ -4,7 +4,7 @@ action (FilterMovieWithTimeAndThOS) {
   collect {
     input (theaterOrderedSchedule) {
       type (TheaterOrderedSchedule)
-      min (Required) max (Many)
+      min (Required) max (One)
     }
     input (dateTimeExpression) {
       type (time.DateTimeExpression)

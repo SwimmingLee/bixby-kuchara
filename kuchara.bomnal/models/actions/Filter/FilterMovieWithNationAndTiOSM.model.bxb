@@ -4,7 +4,7 @@ action (FilterMovieWithNationAndTiOSM) {
   collect {
     input (timeOrderedScheduleWithMovie) {
       type (TimeOrderedScheduleWithMovie)
-      min (Required) max (Many)
+      min (Required) max (One)
     }
     input (nation) {
       type (Nation)

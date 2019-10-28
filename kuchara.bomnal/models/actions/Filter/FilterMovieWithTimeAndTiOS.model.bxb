@@ -4,7 +4,7 @@ action (FilterMovieWithTimeAndTiOS) {
   collect {
     input (timeOrderedSchedule) {
       type (TimeOrderedSchedule)
-      min (Required) max (Many)
+      min (Required) max (One)
     }
     input (dateTimeExpression) {
       type (time.DateTimeExpression)
