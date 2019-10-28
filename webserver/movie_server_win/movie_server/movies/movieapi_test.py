@@ -13,12 +13,11 @@ import json
 
 def SearchMegaboxMovie(request):
     allTheater = Theaters.objects.filter(brand__exact='megabox')
+    movieJson = []
     for reqtheater in allTheater:
-        MegaBoxCrawl(reqtheater)
+        movieList = MegaBoxCrawl(reqtheater)
+        movieJson.append(movieList)
 
-    movieJson = {
-        "megabox searching":"success"
-    }
     movieJson = json.dumps(movieJson, ensure_ascii=False)
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 

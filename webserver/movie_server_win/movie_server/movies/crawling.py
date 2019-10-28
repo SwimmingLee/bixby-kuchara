@@ -1,13 +1,10 @@
 '''
-megabox 영화관별로 정보가져오기2
-​
-영화이름, 상영등급, 상영종류, 상영관, 시작 시간, 끝나는 시간, 남은 좌석, 총 좌석 등을
-한 번에 가져와서 뿌려보기
-'''
-'''
-크롤링한 데이터를 json으로 받아와보자
-지금 보니까 테이블이 없으면 에러가 난다.
-에러처리하는 함수를 만들어 주자. 가능하면 try catch를 사용할 것!
+megabox, lottecinema, cgv 모두 영화 데이터를 얻어올 수 있다.
+특별관 종류를 얻어오는데 오버헤드가 많이 생긴다. 
+크롤링 속도를 어떻게 해야 줄일 수 있는 지 고민이 필요하다.
+
+또한 디버깅을 위해서 어떤 정보를 프린트 해야 하는지 정리해야 한다.
+
 '''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -24,23 +21,25 @@ from .models import Movies
 from .models import MovieSchedules
 from .update import GetMovieInfo
 from .jsonmodels import GetDiffTime
-
 from datetime import datetime
 
 
 def WebDriverInit():
     global driver
+    
     #driverDir = r'C:\Users\student\works\chromedriver_win32\chromedriver.exe'
     #driverDir = r'/home/ubuntu/Downloads/chromedriver'
-    driverDir = r'C:\\chromedriver_win32\\chromedriver.exe'
+    #driverDir = r'C:\\chromedriver_win32\\chromedriver.exe'
+    driverDir = r'/home/swim/Downloads/chromedriver'
     options = webdriver.ChromeOptions()
-    options.add_argument('headless')
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    #options.add_argument('--disdable-dev-shm-usage')
     driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
 
 
 def MovieCrawl(theaterObj):
     diffTime = GetDiffTime(theaterObj.updatedTime, datetime.now())    
-    #print(diffTime)
     if (diffTime > 60*15):
         if theaterObj.brand == 'megabox':
             MegaBoxCrawl(theaterObj)
@@ -57,6 +56,7 @@ def CGVCrawl(theaterObj):
     movieList = []
     movieDict = dict()
     print(theaterObj.brand + theaterObj.theaterName)
+    sys.stdout.flush()
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
     legacyMovieSchedules.delete()
@@ -74,19 +74,15 @@ def CGVCrawl(theaterObj):
     movieScheduleLists = movieSchedule.findAll('li', recursive=False)
 
     for movieScheduleList in movieScheduleLists:
-        #movieRating = movieList.find('span', {'class':re.compile('ico-grade.*')})
-        #print(movieRating.text.strip())
         movieName = movieScheduleList.find('strong')
         movieNameStr = movieName.text.strip().replace('-', ':').strip()
         print(movieNameStr)
-        #print(type(movieNameStr))
+        sys.stdout.flush()
         movieDict['movieName'] = movieNameStr
         
         movieObj = Movies.objects.filter(movieName=movieNameStr)
         movieObj = movieObj.first()
         if movieObj == None:
-            #movieName = movieName.encode('utf-8')
-            #print(type(movieName))
             movieObj = GetMovieInfo(movieNameStr)
             if movieObj == None:
                 continue 
@@ -183,6 +179,7 @@ def LotteCinemaCrawl(theaterObj):
     movieList = []
     movieDict = dict()
     print(theaterObj.brand + theaterObj.theaterName)
+    sys.stdout.flush()
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
     legacyMovieSchedules.delete()
@@ -202,15 +199,18 @@ def LotteCinemaCrawl(theaterObj):
     # 영화 리스트가 없으면 함수를 바로 끝낸다.
     if movieSchedule == None:
         return None
+
     movieScheduleLists = movieSchedule.findAll('dl', {'class':re.compile('time_line .*')})
     for movieScheduleList in movieScheduleLists:
         movieRating = movieScheduleList.find('span', {'class':re.compile('grade_.*')})
-        #print(movieRating.text)
         movieName = movieRating.next_sibling.strip()
         movieNameStr = movieName.replace(' :', ':')
+
         movieDict['movieName'] = movieNameStr
         movieObj = Movies.objects.filter(movieName=movieNameStr)
         movieObj = movieObj.first()
+        print(movieNameStr)
+        sys.stdout.flush()
         if movieObj == None:
             movieObj = GetMovieInfo(movieNameStr)
             if movieObj == None:
@@ -291,6 +291,7 @@ def MegaBoxCrawl(theaterObj):
     movieList = []
     movieDict = dict()
     print(theaterObj.brand + theaterObj.theaterName)
+    sys.stdout.flush()
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
     legacyMovieSchedules.delete()
@@ -333,15 +334,16 @@ def MegaBoxCrawl(theaterObj):
             
             movieNameStr = movieNameStr.strip().replace(' :', ':')
             movieDict['movieName'] = movieNameStr
+            print(movieNameStr)
+            sys.stdout.flush()
             
-
             # movieName을 primary key로 변경하면 get으로 변경
             movieObj = Movies.objects.filter(movieName=movieNameStr)
             movieObj = movieObj.first()
             if movieObj == None:
                 movieObj = GetMovieInfo(movieNameStr)
                 if movieObj == None:
-                    return None     
+                    continue     
 
         movieRoomInfo = row.find('th', {'class':'room'})
         movieRoom = movieRoomInfo.find('div')
@@ -410,8 +412,6 @@ def MegaBoxCrawl(theaterObj):
                                     startTime=startTime, endTime=endTime, subtitle=movieDict['subtitle'],  roomProperty=movieDict['roomProperty']
                                     )
                 MovieScheduleEle.save()
-                movieJson = json.dumps(movieDict, ensure_ascii=False)
-                movieList.append(movieJson)
+                movieList.append(copy.copy(movieDict))
     return movieList
-    #return movieDict
 

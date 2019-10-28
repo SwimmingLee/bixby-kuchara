@@ -13,6 +13,7 @@ from .jsonmodels import GetMovieInfoByID
 from .jsonmodels import GetMovieInfoByObj
 from .jsonmodels import TheaterOrderedSchedule
 import copy
+import sys
 
 
 
@@ -68,14 +69,13 @@ def SearchTheaterOrderedScheduleWithPos(request):
         latitude = 0.0
     
     print('long:{}, lat:{}, movieName:{}'.format(latitude, longitude, movieName))
+    sys.stdout.flush()
 
     # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
     allTheater = Theaters.objects.filter(brand__exact='megabox')
     allTheater = allTheater.union(Theaters.objects.filter(brand__exact='cgv'))
     allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
-    
-
-    
+       
     theaterDistanceDict = dict()
    
     for reqtheater in allTheater:
@@ -206,7 +206,6 @@ def SearchMovieListWithPos(request):
         theaterDistanceDict[reqtheater.id] = dist
 
     theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
-
     
     movieScheduleSet = None
     idx = 0
