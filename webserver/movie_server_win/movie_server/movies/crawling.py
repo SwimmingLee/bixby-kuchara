@@ -29,8 +29,8 @@ def WebDriverInit():
     
     #driverDir = r'C:\Users\student\works\chromedriver_win32\chromedriver.exe'
     #driverDir = r'/home/ubuntu/Downloads/chromedriver'
-    #driverDir = r'C:\\chromedriver_win32\\chromedriver.exe'
-    driverDir = r'/home/swim/Downloads/chromedriver'
+    driverDir = r'C:\\chromedriver_win32\\chromedriver.exe'
+    #driverDir = r'/home/swim/Downloads/chromedriver'
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
