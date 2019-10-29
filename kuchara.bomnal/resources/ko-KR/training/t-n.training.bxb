@@ -1,20 +1,5 @@
-train (t-n3ri2pw03lu9r1o4lrkegqwu9) {
-  utterance ("[g:FindMovieWithLocation] (잠실)[v:geo.SearchTerm] 영화관 보여줘")
-  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
-  last-modified (1572166327198)
-}
-train (t-ncwbflc045sny7hfk3jcftnle) {
-  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 볼만한 영화 뭐 있어?)
+train (t-n8lx2jakb3j4mdtqaud81mugw) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 재미난 영화가 있어?\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
-  last-modified (1572166484890)
-}
-train (t-ndjds262jqup1hjhrovkipii6) {
-  utterance ("[g:MakeDateTimeExpression] (오늘)[v:time.DateTimeExpression] (오후 세시 반)[v:time.DetachedTime]")
-  plan (Y2BhkC7LLNMrycxN1XNJLEkNATJcKwqKUouLM/PzGFSzS5MzEosS9ZLyc/MSc/R8E7NTsSjDa4YoQjK1JDE5IzUFpICBmYGRgQlIMgBpEIQAuCgA)
-  last-modified (1571574152009)
-}
-train (t-nudlqo0dj0y0r56vhzvuukurg) {
-  utterance ([g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 영화관 순으로 보여줘)
-  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572185022472)
+  last-modified (1572349525764)
 }

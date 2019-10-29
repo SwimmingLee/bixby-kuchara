@@ -1,21 +1,20 @@
-train (t-telqj1tr1q3k1oiaoo00g69gu) {
-  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (7시)[v:time.DetachedTime] 영화 (이후)[v:IsStartTime:true] 영화만 보여줘")
-  plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
-  last-modified (1572165929227)
+train (t-tgusw20buii6zmnwhaofahwiw) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 상영하고 있는 영화 예매할래\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572349537107)
 }
-train (t-tj8jmyoelbcdj96m8vudxo1om) {
-  utterance ([g:RestructureTheaterViewToTimeViewWithMovie:continue:TheaterOrderedScheduleWithMovie] 시간순으로 보여줘)
-  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9UsigqDFfBbzoYLKKWqrWInRL6uahXQLGjZgmE5bmDhjcMHWfneg6hNusQWOOkSGtFAB3Dsc0qeR5N6m+N7c8d+nnLILdHFG9OgJ)
-  last-modified (1572110409141)
+train (t-tw0eoi143ztpij26hr1osxce2) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯씨)[v:Brand:lottecinema] (뺄래)[v:ExceptExpression:true]\n")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572349918762)
 }
-train (t-ts7ptq3j1cc5tl72my8t2sbfw) {
-  utterance ([g:OpenBrowser:continue:MovieScheduleDetail] 웹으로 이동해줘)
-  plan (Y2BmEM0uTc5ILErUS8rPzUvM0StPTQoN8mGQQhP2L0jNcyrKLy9OLWJQQpPzzS/LTA1OzkhNKc1JdUktSczMYWBiYARiBiDJyMAAowE=)
-  last-modified (1572193700940)
+train (t-tyfxk8naq8d3clgcesqza58dc) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (씨지비)[v:Brand:cgv]는 (제외)[v:ExceptExpression:true]해줘\n")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572349827875)
 }
-train (t-ttvoos03vweh49c19i90ne5np) {
-  utterance ("[g:FilterMovieWithTimeAndTiOS] (7시 반)[v:time.DetachedTime]에 (시작하는)[v:IsStartTime:true] 영화 (빼줘)[v:ExceptExpression:true]")
-  plan (jZBBa8JAEIVfbLW1PfeiB6HQQy/xNxQawYMoRvC8JgNZzGbDZBLsv3c3RSupiLuX5c333hsWr3jf10mmWIU7awqVhxttaMkpMaVxklFa54TPDjPTuRAvbKNpqyXzlq8i3ehljFEHnVexKBaP3FU1vV21ttbM2JqzFZOOITokVEp0KJmqStviH+AjVmxLYvmJitrctda40U0obhB+KyFPXDR8dAIWak9XsLe/DBLlk9tfeUGAHh7wiD4GeMIzhk6DU4NW9Tdo1QBo9dP5fflp3yU4zxE=)
-  enabled (false)
-  last-modified (1572334386795)
+train (t-tzi5o4arfuce6qqjlbpd841rq) {
+  utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 다른 극장 좀 찾아봐\n")
+  plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
+  last-modified (1572349609201)
 }

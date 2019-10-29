@@ -1,20 +1,5 @@
-train (t-g1xkqg0p4wuz9k083kc53g66g) {
-  utterance ([g:RestructureTheaterViewToTimeViewWithMovie:continue:TheaterOrderedScheduleWithMovie] 시간순)
-  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9UsigqDFfBbzoYLKKWqrWInRL6uahXQLGjZgmE5bmDhjcMHWfneg6hNusQWOOkSGtFAB3Dsc0qeR5N6m+N7c8d+nnLILdHFG9OgJ)
-  last-modified (1572168343016)
-}
-train (t-gl0n2ceb4tvbu3hxu7kzfiltq) {
-  utterance ([g:RestructureTimeViewToTheaterViewWithMovie:continue:TimeOrderedScheduleWithMovie] 영화관순)
-  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9TMogqDFzDAwHypITFFbxUqMflnVLKSFCuCGDRim0xYmzhhcsLXfHaj65FtsgaMOkSHdgt7hkP4euczbLL9PKf57k1OWQIkzokdP)
-  last-modified (1572168390552)
-}
-train (t-gpkpgwlbrgcjlbh0nkg4h1gul) {
-  utterance ([g:FindMovieWithLocation] 근처 영화관 시간표 보여줘)
-  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
-  last-modified (1572111538207)
-}
-train (t-gwesmdptehlj18z67ni6qtjon) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM,r:FindMovieWithLocation] (평촌 롯데시네마)[v:geo.SearchTerm]에서 (가장 보통의 연애)[v:MovieName] 상영시간표 알아봐줘")
-  plan (lY7LCsIwEEWv79dON7oVcSPUb3Djyhe04DomQxNsE4hJ3fnt1oJVqxsDIczJmbmDARZnzyWzLDiZVLMkiFRKeyvIkgi5JOETOiontyZThGVFXqvEkS3+SmnHUlppEal9uMW40lAa/+XOvnK1KFM3hjOnjMa0Yj1yxMEo7UJnPXfeEubVhdiZfnnDTGVBTOZtCEZPtvLOXHwc08Vh8gPerpLeZ4TELJcR2RR91FBHA0200EYHXfRyhpzWPmg3r1Hw132cZtHfz1/cAQ==)
-  last-modified (1572167243477)
+train (t-g0wsrwynbrwrfaqo5328vqzz5) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (씨쥐비)[v:Brand:cgv]는 (빼고)[v:ExceptExpression:true]\n")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572349838264)
 }

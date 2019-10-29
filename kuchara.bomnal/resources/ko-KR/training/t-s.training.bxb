@@ -1,30 +1,15 @@
-train (t-s2r8t9teeagjvndvqbcddgp2h) {
-  utterance ("[g:MakeDateTimeExpression] (7시 반)[v:time.DetachedTime]")
-  plan (Y2BmkC7LLNMrycxN1XNJLEkNATJcKwqKUouLM/PzGFSzS5MzEosS9ZLyc/MSc/R8E7NTsSgTRZiRWpKYnJGaAlLAwMTACMQMQJKRAQSgfAA=)
-  last-modified (1572164951061)
-}
-train (t-sagto8yhgp0ljbifgzhqltm86) {
-  utterance ([g:ShowMoviePoster] 지금 영화 뭐하는지 알려줘)
-  plan (Y2BmEMkuTc5ILErUS8rPzUvM0fPNL8tMZZBDEw3OyC8HywTkF5ekFjEoocn7JeampgTkZ+aVBJcUlSaXlBalMjAxMAIxA5BkZGCA0QA=)
-  last-modified (1572164956431)
-}
-train (t-sc72ecc8pb7pl1hrj0uz235ey) {
-  utterance ([g:FindMovieWithLocation] 근처 영화관 시간표 보여줘)
-  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
-  last-modified (1572011332943)
-}
-train (t-sk1za3js5cklyoix02ngawd8i) {
-  utterance ([g:kuchara.bomnal.FindMovieWithMovieAndPos,r:kuchara.bomnal.ShowMoviePoster] 요즘 대세 영화가 뭐야?)
-  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
-  last-modified (1572240769670)
-}
-train (t-slu2xubjekskhsr2jo96ublbp) {
-  utterance ([g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순으로 보여줘)
+train (t-s58bz12nkd2hp74ino2uc91la) {
+  utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간으로 정렬해줘\n")
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
-  last-modified (1572203380821)
+  last-modified (1572349757629)
 }
-train (t-su9qgjxscb58uc6mv3bvzfaa3) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (가장 보통의 연애)[v:MovieName] (빼고)[v:ExceptExpression:true] 보여줘")
-  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
-  last-modified (1572266982635)
+train (t-sdb2cc2zqyqhegumjw69ifco8) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 상영중인 영화가 보고싶어\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572349363952)
+}
+train (t-sysmas1jdxizfz201118uyuy0) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯데시네마)[v:Brand:lottecinema] (제외)[v:ExceptExpression:true]\n")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572349884837)
 }

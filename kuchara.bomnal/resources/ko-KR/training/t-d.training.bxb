@@ -1,15 +1,10 @@
-train (t-d0j84kpi86c6m1vsm4n0cgb80) {
-  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie] (11시)[v:time.DetachedTime] 이전에 (끝나는)[v:IsStartTime:false] 영화 목록 보여줘")
-  plan (lc69CsIwEADgq/XnCVx0dlHIOwgqOJQOLTifzUGP/kl6DT6+uXYQiovJkDvy3Q9s4FQNRYkOzbNrWqxNzg2lzpIjmxUl2aGmB0uZdJ4JjjN841rIjX+KtPbc2pzTLIHdzN77TNCJmv+G7j17I0GYCwopvb5fjvqeuxYOs04JVvSDbb89SFBHjHusIYIFxLCEVYghZHo1i2A60xuPLogP)
-  last-modified (1572262019249)
+train (t-dm9hy1j182dm956ob1h4836xr) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯시)[v:Brand:lottecinema]는 (제외)[v:ExceptExpression:true]할래\n")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572349909262)
 }
-train (t-d9d3wmanfa2nix30ud958mvdv) {
-  utterance ("[g:FilterMovieWithRoomFromTheaterOrder:continue:TheaterOrderedSchedule] (샤로떼 프라이빗)[v:RoomPropertyEnum:'샤롯데 프라이빗'] (빼고)[v:ExceptExpression:true] 보여줘")
-  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEJT5paZA1Tlm1+WmRqeWZIRlJ+f61aUn4usm0EeTY9rRXJqQYlrRUFRanFxZn4ehgKQKQFF+QWpRSWVrnmlucQ6joWBkYGJgRlIMwBZEAgDzFA5BgA=)
-  last-modified (1572266893886)
-}
-train (t-drb0zt72l3l7uo5uahk3rw9s5) {
-  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 영화 추천 좀)
-  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
-  last-modified (1572166523084)
+train (t-douty5i54fa188y47975jd8a6) {
+  utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 빠른 거부터 찾아줘\n")
+  plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
+  last-modified (1572349782452)
 }

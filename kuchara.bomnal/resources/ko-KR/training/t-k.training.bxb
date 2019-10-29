@@ -1,5 +1,15 @@
-train (t-kr3dslhavrmwr7grvnp17g5dl) {
-  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 요즘 핫한 영화가 뭐야?)
+train (t-kak82pajr2dlt6urr4mepfzug) {
+  utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 딴 극장을 알려줘\n")
+  plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
+  last-modified (1572349690867)
+}
+train (t-kbqg9v6ywls360pw2uge2no0r) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (메가박스)[v:Brand:megabox] (빼)[v:ExceptExpression:true]\n")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572349927985)
+}
+train (t-ku5rns0opk9ncodp8hn24ao6s) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 지금하는 영화들 볼래\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
-  last-modified (1572239847729)
+  last-modified (1572349436131)
 }

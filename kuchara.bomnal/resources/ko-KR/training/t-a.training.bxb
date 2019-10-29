@@ -1,10 +1,15 @@
-train (t-a1vvfsbwb4f9n0cxj99ogk1uo) {
-  utterance ("[g:FindMovieWithLocation] (롯데시네마 명동)[v:geo.SearchTerm] 점 타임테이블 알려줘")
-  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
-  last-modified (1572164705771)
+train (t-a0up2i4e58w5q4gwzbqjc79d6) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 영화 뭐하는지 알려줘\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572349512925)
 }
-train (t-aaeqtea2yo458oz9cyas3qaxj) {
-  utterance ([g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 다른 영화관에서 볼래)
-  plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
-  last-modified (1572266012689)
+train (t-a9fq78niv8d8wiqnrunjsw5w1) {
+  utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순으로 알려줘\n")
+  plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
+  last-modified (1572349700236)
+}
+train (t-adlx3wtfhcbe3zaiapnph580g) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 볼 수 있는 영화 좀 알려주라\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572349454088)
 }

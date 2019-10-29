@@ -1,0 +1,5 @@
+train (t-wlnxtxwidqnv2rvl9rcthmncc) {
+  utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 다른 곳에서 찾아줄래?\n")
+  plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
+  last-modified (1572349636045)
+}

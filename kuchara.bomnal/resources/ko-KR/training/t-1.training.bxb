@@ -1,20 +1,5 @@
-train (t-16uortbyl3pfbhzdfko24da67) {
-  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (6시)[v:time.DetachedTime]에 (시작하는)[v:IsStartTime:true] 영화 있어?")
-  plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
-  last-modified (1572336292595)
-}
-train (t-1mz4cdf432n28h9j52wqg4ieb) {
-  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (날씨의 아이)[v:MovieName]는 (빼)[v:ExceptExpression:true]버려")
-  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
-  last-modified (1572267180480)
-}
-train (t-1o1z7hsb6vudjzdy2qwemajzy) {
-  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule,r:MakeDateTimeExpression] (7시)[v:time.DetachedTime] (이후)[v:IsStartTime:true] 영화만 보여줄래?")
-  plan (jY4xDsIwDEVdKHACFpgZWHIHJEBiqDokErNpLCVqmqIkjTg+STsgFQbswbb8/rdhA4d2aBQ6ZI++s2iYUISBXO0kOZK8USQHQ3CcYVdtElX1UdNdByV0Rycrhao57GbozfOALmTk32v7qCMLScDOaZ2Vl9fTkfe6t18eFbb0A9t+PChgdh4/WEMBC1hCCavUQ5py5qmAKaZajtzIvAE=)
-  last-modified (1572258296944)
-}
-train (t-1vcr97gcmziubzrzesec39ty3) {
-  utterance ("[g:FilterMovieWithRoomFromTimeOrder:continue:TimeOrderedSchedule] (슈퍼플렉스)[v:RoomPropertyEnum:'슈퍼플렉스 G'] 이거 (빼)[v:ExceptExpression:true]버려")
-  plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUll0EdT45aZU5Ja5JtflpkanlmSEZSfn+tWlJ8L18ogj6bBtSI5taDEtaKgKLW4ODM/D0MByIiAovyC1KKSSte80lyinMXCwMjAxMAMpBmALAiEAWaoHAMA)
-  last-modified (1572267208784)
+train (t-1j4y37puydoo98t00wnhj443d) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 볼만한 영화가 뭐야?\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572349408059)
 }

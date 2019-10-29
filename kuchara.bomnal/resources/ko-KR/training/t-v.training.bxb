@@ -1,5 +1,10 @@
-train (t-vw1sxl4r6xpzbyzid02yc60ze) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] (체크 히어로) [v:MovieName] (잠실)[v:geo.SearchTerm]에서 볼껀데")
-  plan (lY7LCsIwEEWv79dON7oVcSPUb3Djyhe04DomQxNsE4hJ3fnt1oJVqxsDIczJmbmDARZnzyWzLDiZVLMkiFRKeyvIkgi5JOETOiontyZThGVFXqvEkS3+SmnHUlppEal9uMW40lAa/+XOvnK1KFM3hjOnjMa0Yj1yxMEo7UJnPXfeEubVhdiZfnnDTGVBTOZtCEZPtvLOXHwc08Vh8gPerpLeZ4TELJcR2RR91FBHA0200EYHXfRyhpzWPmg3r1Hw132cZtHfz1/cAQ==)
-  last-modified (1572182613951)
+train (t-vpzvsv4t7o13857l5o7qj4fyr) {
+  utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순서대로 보여줘\n")
+  plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
+  last-modified (1572349730515)
+}
+train (t-vr2rvp30qrh8t3ngoqw34yccv) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 인기있는 영화는 뭐있어?\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572349354031)
 }

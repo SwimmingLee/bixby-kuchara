@@ -1,0 +1,5 @@
+train (t-ffnnz1cd7ril1xaozp4990ksb) {
+  utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 빠른순으로 찾아줘\n")
+  plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
+  last-modified (1572349801833)
+}

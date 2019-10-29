@@ -1,0 +1,15 @@
+train (t-56giphvgp0my2wqmxplhdwwpq) {
+  utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 빠른 시간순 정렬\n")
+  plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
+  last-modified (1572349774825)
+}
+train (t-581bmnt7q5p3olyxj8dl5b6tc) {
+  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 재미있는 영화 좀 보여줄래?)
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572349341465)
+}
+train (t-5x81qy8tkbqmlmf569j58edfw) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 인기많은 영화 말해줘\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572349464400)
+}

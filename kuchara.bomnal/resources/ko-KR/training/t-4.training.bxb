@@ -1,20 +1,15 @@
-train (t-43a23efraqiyzalwylv8unon3) {
-  utterance ("[g:FilterMovieWithTimeAndTiOS,r:ShowMoviePoster] (십칠시)[v:time.DetachedTime]에 (끝나)[v:IsStartTime:false]는 영화는 뭔데")
-  plan (jVBNSwMxEH2rta0fvelFwYMg4mX9DYIKHtqKWfQcNwMJ3U0kyW79+SYRW8l6KCFkmPcx84IZrlZdLbnl5YdpNW/KSrW0tIIsCVZLEl1DuM04T6rxZOemV/SuvIySey0qtWQ4z6jPjnlufaTsNOou47yS87arfWepksTD2DdF68pEbaxwnZv+sHLfm0EELTYBUhESvBiH04yYMFxmXSbNOiFBEqYNoi14S8FOac9+18dFr/rSh73Lh7BhDPD49WnJOWX0IMacr+gf2tnWgzyP4dLPzlBgD/sY4QBjTDDFYThHOMYJELDiDzYOaJGwAkjo9mLzjpLjNOq/AQ==)
-  last-modified (1572168108667)
-}
-train (t-4eyimxnqs7xvv1g45vj0gi783) {
-  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (씨지비)[v:Brand:cgv]는 (제외)[v:ExceptExpression:true]해줘")
+train (t-49tj2k7pvrl37d39nq15e7uo0) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (스즈브)[v:Brand:cgv] (없애)[v:ExceptExpression:true]줘\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
-  last-modified (1572267930678)
+  last-modified (1572349869973)
 }
-train (t-4lcuqac8236cr9s5d8tvxraun) {
-  utterance ([g:RestructureTimeViewToTheaterViewWithMovie:continue:TimeOrderedScheduleWithMovie] 영화관 순으로 보여줘)
-  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9TMogqDFzDAwHypITFFbxUqMflnVLKSFCuCGDRim0xYmzhhcsLXfHaj65FtsgaMOkSHdgt7hkP4euczbLL9PKf57k1OWQIkzokdP)
-  last-modified (1572237257630)
+train (t-4afgfxa6rpg77ys21o7x0lgyl) {
+  utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 딴 곳에서 보고싶어\n")
+  plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
+  last-modified (1572349680530)
 }
-train (t-4q9ava9l8y53icqvcuqn98i51) {
-  utterance ([g:kuchara.bomnal.FindMovieWithMovieAndPos,r:kuchara.bomnal.ShowMoviePoster] 다른 영화 볼래)
+train (t-4j1xbgqrbslpldcu8hc7xgjgm) {
+  utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 개봉 영화 좀 찾아줘)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
-  last-modified (1572209237909)
+  last-modified (1572349379277)
 }

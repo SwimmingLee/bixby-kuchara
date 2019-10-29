@@ -1,5 +1,5 @@
-train (t-2lc51p9m25bt32du30wb5zp5c) {
-  utterance ([g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 다른 영화관 보여줘)
+train (t-2z5rtf5tmynw1joif17qw76zi) {
+  utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 여기 말고는 없어?\n")
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
-  last-modified (1572199317627)
+  last-modified (1572349619318)
 }

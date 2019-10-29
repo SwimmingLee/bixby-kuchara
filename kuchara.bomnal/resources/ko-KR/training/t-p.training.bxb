@@ -1,10 +1,10 @@
-train (t-p9lvotsbtdotmzell9fqgdf7o) {
-  utterance ("[g:FindMovieWithMovieAndPos,r:MakeMovieStructure] 근처에서 (조커)[v:MovieName] 시간 알려줘")
-  plan (bU1LCgIxDH2joydw4VZB3M0d3MzOD4zgOraBlplpIbae37YIQjEh4eV9CNY4jFEZEuqefnY0dXfDFFiuollYD8qwjhPjWNl66/TZvy0/bDAFnJy++Rc2lbFo2NUsjVyUIUhUIQpj+y94oZmxr5RMpl/WhV96hQYLLNEmhC9uUqNMrny3aeMD)
-  last-modified (1572091796755)
-}
-train (t-pc9qatk79i243h7qrhl4focw3) {
-  utterance ([g:FindTheaterWithMovieSelected:continue:TimeOrderedSchedule] 딴 영화관 보여줘)
+train (t-pe9pyrlysa478lj51xymo0l5w) {
+  utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 딴 영화관은 어디야?\n")
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
-  last-modified (1572258251983)
+  last-modified (1572349655493)
+}
+train (t-pephbsqpaqpuujxy63j8f6w4q) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 인기 영화 보여줘봐\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572349426383)
 }

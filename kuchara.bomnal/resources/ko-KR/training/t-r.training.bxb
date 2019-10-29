@@ -1,5 +1,0 @@
-train (t-rioz2241xwilv0w34wou59hfx) {
-  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] (서울 압구정)[v:geo.SearchTerm]에서 볼만한 영화 알려줘")
-  plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)
-  last-modified (1572156067788)
-}

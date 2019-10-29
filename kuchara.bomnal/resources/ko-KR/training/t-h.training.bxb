@@ -1,0 +1,10 @@
+train (t-hktygifp26tkdlvk7s5w2xqm5) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (메박)[v:Brand:megabox]은 (시러)[v:ExceptExpression:true]\n")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572349940150)
+}
+train (t-hqfmw1imtxl4684ci8mzynqt7) {
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (열한시)[v:time.DetachedTime] 전에 (끝나는)[v:IsStartTime:false] 영화만 알려줘")
+  plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
+  last-modified (1572353724266)
+}
