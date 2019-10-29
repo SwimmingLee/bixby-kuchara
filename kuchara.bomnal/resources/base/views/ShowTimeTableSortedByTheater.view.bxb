@@ -6,7 +6,12 @@ result-view {
     }
   }
   message {
-    template ("지금 볼 수 있는 #{value(this.movie.movieName)}의 상영 시간표에요.")
+    if(size(this.movie) == 0) {
+      template ("지금 볼 수 있는 #{value(this.movie.movieName)}의 상영 시간표에요.")
+    }
+    else {
+      template ("이런! 조건에 맞는 영화가 없어요 :(")
+    }
   }
   render {
     layout {
@@ -44,11 +49,19 @@ result-view {
     }
   }
   conversation-drivers {
-    conversation-driver {
-      template ("시간순으로 보여줘")
+    if(size(this.movie) == 0) {
+      conversation-driver {
+        template ("다른 영화 보여줘")
+      }
     }
-    conversation-driver {
-      template ("다른 영화관 보여줘")
+    else {
+      
+      conversation-driver {
+        template ("시간순으로 보여줘")
+      }
+      conversation-driver {
+        template ("다른 영화관 보여줘")
+      }
     }
   }
 }

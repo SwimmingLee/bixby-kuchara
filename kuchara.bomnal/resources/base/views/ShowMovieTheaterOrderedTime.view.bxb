@@ -36,6 +36,18 @@ result-view {
   }
   conversation-drivers {
     conversation-driver {
+      template ("#{value(this.movieOrderedSchedule[0].movie.movieName)}만 보여줘")
+    }
+    conversation-driver {
+      template ("#{value(this.movieOrderedSchedule[0].theaterInfo.theaterName)} 빼고 보여줘")
+    }
+
+    conversation-driver {
+      template ("#{value(this.movieOrderedSchedule[0].theaterInfo.brand)}만 보여줘 ")
+    }
+
+
+    conversation-driver {
       template ("영화관 순으로 보여줘")
     }
     conversation-driver {

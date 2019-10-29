@@ -22,4 +22,7 @@ enum (RoomPropertyEnum) {
   symbol (씨네앤리빙룸)
   symbol (ART)
   symbol (SKYBOX)
+  symbol (2D)
+  symbol (3D)
+  symbol (4D)
 }

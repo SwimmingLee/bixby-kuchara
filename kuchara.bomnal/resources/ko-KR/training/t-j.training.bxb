@@ -6,5 +6,10 @@ train (t-jcvqjn1y6pb0mtocv1x38pfj8) {
 train (t-jlu5kmgtpfflrjz1zsjgiwzx0) {
   utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 요즘 영화 뭐해)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
-  last-modified (1572326635860)
+  last-modified (1572220499545)
+}
+train (t-jy2ivd4kdtjg7mqwy7erdypqs) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (CGV)[v:Brand:cgv] (빼)[v:ExceptExpression:true]고 보여줘")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572349746149)
 }

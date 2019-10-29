@@ -13,6 +13,11 @@ train (t-ucrlr2kkvxqz36cam3o7q39bl) {
   plan (bYw7D4IwFIUPvl3VxdVE3fgPLG4+Ekica3tDG6BNSoubv91K1BDCdu53vnuwxL7wXDLL4oepNCvjTBJzZK9WkCWRcknCl4RjTzspLc6mUXRXTrYh0eJmamx6Ytth16MXVlHQlXaps547bwmH/icraMhbNaqJczKdEax/LPHO1D7PqXbYDsDXU1J3IyVmuczIVlggwghjTDDFDPNwI5DoT2Yho2X4JgQ/+nhv)
   last-modified (1572168169100)
 }
+train (t-ukvgoxll0wbspixxdxpp6yi2l) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (롯데시네마)[v:Brand:lottecinema](만)[v:ExceptExpression:false] 보여줘")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eyy1gYGBmYGJiBNAOQBYEwwAyVYwAA)
+  last-modified (1572351159003)
+}
 train (t-unjfjr0gm0fp398bv6wr5wcuc) {
   utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 영화 예매할래요)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
