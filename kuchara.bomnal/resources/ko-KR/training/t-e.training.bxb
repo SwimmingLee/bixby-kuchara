@@ -1,0 +1,15 @@
+train (t-e4o0ulp2g3cn27m5okm0qpiti) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (3시간)[v:time.DetachedTime] 이내로 볼 수 있는 거 찾아줘")
+  plan (jYy9CsIwFIVP6s8bOLkJDi55B8G6lQ4tOMfmQi5NE0nT4uObdBGKg3e553K++2GPUz91RgUln35wysqWB6qDpkC66QzpyRIuK+bONlKo/Mz04Gjyy9XpluvmL91x5lnGVMibipSJ8v0KNI7sHc4rQaV6+oEdvg6KKpszgB0ECmywTQkpiyULYLnyFGmn7gM=)
+  last-modified (1572378579030)
+}
+train (t-eoqqonl7p1fzijnvmpez2abzc) {
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (1시)[v:time.DetachedTime] 이전에 (종료되는)[v:IsStartTime:false] 거 알고 싶어")
+  plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
+  last-modified (1572375399085)
+}
+train (t-ezm1xupn2bmlmcln7zurhcrcw) {
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (4시간)[v:time.DetachedTime] 이내로 볼 수 있는 거 찾아줘")
+  plan (jYy7DsIwDEWd8vgDJmYGlvwDErBVHRqJ2TSWYrVNUJpGfD5OFyRgwIuvdY8PbOHQz53DiPoeRo+DNo4wUWyipUi27RzZeSA4fmBXHoSqQ2a6cXKGRzp5a1zT/mvcZ846yZ8+S10El+cj0jRx8F+OGnv6ge3eDkpYzAWADSioYAVrSSBZLVkBLFeZSrZ0Lw==)
+  last-modified (1572378503328)
+}

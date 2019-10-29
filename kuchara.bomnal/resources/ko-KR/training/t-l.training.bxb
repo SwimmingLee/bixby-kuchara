@@ -1,5 +1,15 @@
+train (t-la183uippvu4m1a2v6dgqb4fm) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (11시)[v:time.DetachedTime] 전에 (끝나는)[v:IsStartTime:false] 영화만 알려줘")
+  plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
+  last-modified (1572375302419)
+}
 train (t-ldxckybt0xt1xix84phc7nss1) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 빠른 것부터 알고싶어\n")
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
   last-modified (1572349793106)
+}
+train (t-lpi5u9d6kgoanckubbwudady7) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯씨)[v:Brand:lottecinema](만)[v:ExceptExpression:false] 보고 싶다")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572373811262)
 }

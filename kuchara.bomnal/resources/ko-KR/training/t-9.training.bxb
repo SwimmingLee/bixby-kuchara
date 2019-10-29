@@ -1,3 +1,13 @@
+train (t-9ivebgudro7m4hz9hqwbba3gq) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (1시)[v:time.DetachedTime] 이전에 (종료되는)[v:IsStartTime:false] 거 알고 싶어")
+  plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
+  last-modified (1572375429539)
+}
+train (t-9kmlfquxs4d6k65k8fqfexw5j) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (저녁 9시)[v:time.DetachedTime] 부터 (상영하는)[v:IsStartTime:true] 영화를 찾아봐")
+  plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
+  last-modified (1572377349548)
+}
 train (t-9s7kglglufy7b5tcut2d7ltx8) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 핫한 영화 예매\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)

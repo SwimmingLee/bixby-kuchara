@@ -30,11 +30,27 @@ result-view {
           }
         }
       }
+      section {
+        content {
+          title-area {
+            halign (Center)
+            slot2 {
+              paragraph {
+                value ("원하는 영화관이 없으시다면\n\"~에서 영화 보고싶어!\"\n라고 말씀해주세요.")
+                style (Title_XS)
+              }
+            }
+          }
+        }
+      }
     }
   }
   conversation-drivers {
     conversation-driver {
-      template ("다른 영화 보여줘")
+      template ("강남에서 영화 보고 싶어")
+    }
+    conversation-driver {
+      template ("서면에서 영화 보고 싶어")
     }
   }
 }

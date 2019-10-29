@@ -1,5 +1,10 @@
+train (t-30roushubuyeifxzrk9clf163) {
+  utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (씨쥐비)[v:Brand:cgv](만)[v:ExceptExpression:false] 보고 싶어")
+  plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
+  last-modified (1572370914829)
+}
 train (t-37cdhkudufj7i0aayylox5j4v) {
-  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (씨지브이)[v:Brand:cgv] (말고)[v:ExceptExpression:true]\n")
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (CGV)[v:Brand:cgv] (말고)[v:ExceptExpression:true]\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
-  last-modified (1572349858699)
+  last-modified (1572369503509)
 }

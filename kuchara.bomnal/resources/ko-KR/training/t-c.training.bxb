@@ -1,0 +1,20 @@
+train (t-cbrlcr9x656etklcifxh8kwlg) {
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (7시)[v:time.DetachedTime] 쯤 볼 수 있는 영화 보여줘")
+  plan (jYy7DsIwDEWd8vgDJmYGlvwDErBVHRqJ2TSWYrVNUJpGfD5OFyRgwIuvdY8PbOHQz53DiPoeRo+DNo4wUWyipUi27RzZeSA4fmBXHoSqQ2a6cXKGRzp5a1zT/mvcZ846yZ8+S10El+cj0jRx8F+OGnv6ge3eDkpYzAWADSioYAVrSSBZLVkBLFeZSrZ0Lw==)
+  last-modified (1572377132261)
+}
+train (t-cdlc82hvp5u9dwwnna84e6an9) {
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (12시)[v:time.DetachedTime] 즈음 (가능한)[v:IsStartTime:true] 영화 볼래")
+  plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
+  last-modified (1572378297884)
+}
+train (t-cndckzj2h67p9orqucu3xw86y) {
+  utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (메가박스)[v:Brand:megabox](만)[v:ExceptExpression:false]")
+  plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
+  last-modified (1572374176451)
+}
+train (t-cqhhnxp63hiw92zsmgsu9q0mw) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (12시)[v:time.DetachedTime] 즈음 (가능한)[v:IsStartTime:true] 영화 볼래")
+  plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
+  last-modified (1572378323770)
+}

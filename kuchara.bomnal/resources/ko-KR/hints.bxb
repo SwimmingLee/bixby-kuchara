@@ -1,5 +1,5 @@
 hints {
-  uncategorized {
+  uncategorized { // 여긴 뭐죠?
     utterance("asdf")
     // hint ("동네영화관에서 영화 보고 싶어")
     // hint ("동네영화관에서 터미네이터 상영시간표 보려줘")

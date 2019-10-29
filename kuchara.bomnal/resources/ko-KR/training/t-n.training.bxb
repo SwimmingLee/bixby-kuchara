@@ -3,3 +3,8 @@ train (t-n8lx2jakb3j4mdtqaud81mugw) {
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349525764)
 }
+train (t-nx3nnrf274oypx2yzcfupvv63) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (10시 30분)[v:time.DetachedTime] 쯤 볼 수 있는 영화 보여줘")
+  plan (jYy9CsIwFIVP6s8bOLkJDi55B8G6lQ4tOMfmQi5NE0nT4uObdBGKg3e553K++2GPUz91RgUln35wysqWB6qDpkC66QzpyRIuK+bONlKo/Mz04Gjyy9XpluvmL91x5lnGVMibipSJ8v0KNI7sHc4rQaV6+oEdvg6KKpszgB0ECmywTQkpiyULYLnyFGmn7gM=)
+  last-modified (1572377186039)
+}

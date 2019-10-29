@@ -1,3 +1,8 @@
+train (t-wi7tnrxlvhkcvpd4mfgjtt7z9) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (아침 8시)[v:time.DetachedTime]에 (시작하는)[v:IsStartTime:true] 것 보고 싶어")
+  plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
+  last-modified (1572377937536)
+}
 train (t-wlnxtxwidqnv2rvl9rcthmncc) {
   utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 다른 곳에서 찾아줄래?\n")
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
