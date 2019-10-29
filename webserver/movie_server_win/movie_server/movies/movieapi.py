@@ -1,6 +1,6 @@
 from django.http import JsonResponse, HttpResponse
 import json
-from .crawling import MovieCrawl
+from .crawling_thread import MovieCrawl
 from .getdistance import get_euclidean_distance
 from .models import Movies
 from .models import Theaters

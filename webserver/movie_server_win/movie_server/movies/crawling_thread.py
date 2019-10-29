@@ -27,6 +27,8 @@ import threading
 from queue import Queue
 
 
+global driverDir
+driverDir = r'C:\chromedriver_win32\chromedriver.exe'
 
 def storage(queue):
     while 1:
@@ -61,9 +63,7 @@ def MovieCrawl(theaterObj):
         
 
 
-def CGVCrawl(theaterObj):  
-
-    driverDir = r'/home/swim/Downloads/chromedriver'
+def CGVCrawl(theaterObj):      
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
@@ -72,7 +72,7 @@ def CGVCrawl(theaterObj):
     movieObj = ""
     movieList = []
     movieDict = dict()
-    print(theaterObj.brand + theaterObj.theaterName)
+    print(theaterObj.brand + theaterObj.theaterName + "crawling start")
     sys.stdout.flush()
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
@@ -197,12 +197,13 @@ def CGVCrawl(theaterObj):
                 queue.put(movieDict)
 
                 movieList.append(copy.copy(movieDict))
+    print(theaterObj.brand + theaterObj.theaterName + "crawling end")
     return movieList
 
 
 
 def LotteCinemaCrawl(theaterObj):
-    driverDir = r'/home/swim/Downloads/chromedriver'
+    #driverDir = r'/home/swim/Downloads/chromedriver'
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
@@ -211,7 +212,7 @@ def LotteCinemaCrawl(theaterObj):
     movieObj = ""
     movieList = []
     movieDict = dict()
-    print(theaterObj.brand + theaterObj.theaterName)
+    print(theaterObj.brand + theaterObj.theaterName + 'crawling start')
     sys.stdout.flush()
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
@@ -304,10 +305,10 @@ def LotteCinemaCrawl(theaterObj):
                 movieSeatInfo = movieTheaterTime.find('span', {'class':'ppNum'})
                 if movieSeatInfo != None:
                     if  movieSeatInfo.text.find('매진') >= 0:
-                        movieDict['avaliableSeat'] = -1
+                        movieDict['availableSeat'] = -1
                         movieDict['totalSeat'] = -1
                     elif movieSeatInfo.text.find('마감') >= 0:
-                        movieDict['avaliableSeat'] = -2
+                        movieDict['availableSeat'] = -2
                         movieDict['totalSeat'] = -2
                     else:    
                         avaliableSeatStr, totalSeatStr = movieSeatInfo.text.split('/')
@@ -319,11 +320,12 @@ def LotteCinemaCrawl(theaterObj):
                 movieDict['theater'] = theaterObj
                 queue.put(movieDict)
                 movieList.append(copy.copy(movieDict))
+    print(theaterObj.brand + theaterObj.theaterName + "crawling end")
     return movieList
 
 
 def MegaBoxCrawl(theaterObj):
-    driverDir = r'/home/swim/Downloads/chromedriver'
+    #driverDir = r'/home/swim/Downloads/chromedriver'
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
@@ -333,7 +335,7 @@ def MegaBoxCrawl(theaterObj):
     movieObj = ""
     movieList = []
     movieDict = dict()
-    print(theaterObj.brand + theaterObj.theaterName)
+    print(theaterObj.brand + theaterObj.theaterName + "crawling start")
     sys.stdout.flush()
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id) 
@@ -463,5 +465,6 @@ def MegaBoxCrawl(theaterObj):
                 movieDict['theater'] = theaterObj
                 queue.put(movieDict)
                 movieList.append(copy.copy(movieDict))
+    print(theaterObj.brand + theaterObj.theaterName + "crawling end")
     return movieList
 

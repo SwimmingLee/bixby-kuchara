@@ -32,7 +32,7 @@ from movies.movieapi_test import SearchCGVMovie
 from movies.movieapi_test import Test
 from movies.update import UpdateTheater
 
-from movies.crawling import WebDriverInit
+from movies.crawling_thread import WebDriverInit
 
 
 router = routers.DefaultRouter()
