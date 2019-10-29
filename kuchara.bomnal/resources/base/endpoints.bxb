@@ -178,7 +178,7 @@ endpoints {
     // webURL 연결
     action-endpoint (OpenBrowser) {
       accepted-inputs (movieScheduleDetail)
-      local-endpoint (OpenBrowser.js)
+      local-endpoint (api/OpenBrowser.js)
     }
   }
 }

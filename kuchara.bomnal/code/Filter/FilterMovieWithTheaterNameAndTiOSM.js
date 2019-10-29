@@ -58,19 +58,19 @@ module.exports.function = function filterMovieWithTheaterNameAndTiOSM (timeOrder
         let brand_obj2str = mosElement.theaterInfo.brand + "";
         if(_brand) {
           if(_theaterName) {
-            if(mosElement.theaterInfo.theaterName.includes(theaterName) && 
-              brand_obj2str.includes(brand)){
+            if(!(mosElement.theaterInfo.theaterName.includes(theaterName) && 
+              brand_obj2str.includes(brand))){
               result.movieOrderedSchedule.push(mosElement);
             }
           }
           else {
-            if(brand_obj2str.includes(brand)){
+            if(!brand_obj2str.includes(brand)){
               result.movieOrderedSchedule.push(mosElement);
             }
           }
         }
         else {
-          if(mosElement.theaterInfo.theaterName.includes(theaterName)){
+          if(!mosElement.theaterInfo.theaterName.includes(theaterName)){
             result.movieOrderedSchedule.push(mosElement);
           }
         }

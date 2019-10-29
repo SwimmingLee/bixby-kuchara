@@ -7,46 +7,82 @@ module.exports.function = function filterMovieWithTheaterNameAndTiOS (timeOrdere
     'timeSchedule': [],
   }
 
+  let _brand = false, _theaterName = false;
+  if(typeof brand != 'undefined') _brand = true;
+  if(typeof theaterName != 'undefined') _theaterName = true;
+
   // 부정어가 안들어오면, 그것만
   if(typeof exceptExpression == 'undefined'){
-    let timeScheduleTemp = {};
     timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
-      timeScheduleTemp = timeScheduleElement;
-      let theaterInfoTemp = [];
-      timeScheduleElement.theaterInfo.forEach(function(theaterInfoElement) {
-        if(!theaterInfoElement.theaterName.includes(theaterName)) {
-          theaterInfoTemp.push(theaterInfoElement);
+      let brand_obj2str = timeScheduleElement.theaterInfo.brand + "";
+
+      if(_brand) {
+        if(_theaterName) {
+          if(timeScheduleElement.theaterInfo.theaterName.includes(theaterName) && 
+            brand_obj2str.includes(brand)) {
+              result.timeSchedule.push(timeScheduleElement);
+            }
         }
-      })
-      timeScheduleTemp.theaterInfo = temp;
-      result.timeSchedule.push(timeScheduleTemp);
+        else {
+          if(brand_obj2str.includes(brand)){
+            result.timeSchedule.push(timeScheduleElement);
+          }
+        }
+      }
+      else {
+        if(timeScheduleElement.theaterInfo.theaterName.includes(theaterName)) {
+          result.timeSchedule.push(timeScheduleElement);
+        }
+      }
+
     })
   } else {  // 부정어가 들어오면, 제외
     if(!exceptExpression){
-      let timeScheduleTemp = {};
-        timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
-          timeScheduleTemp = timeScheduleElement;
-          let theaterInfoTemp = [];
-          timeScheduleElement.theaterInfo.forEach(function(theaterInfoElement) {
-            if(!theaterInfoElement.theaterName.includes(theaterName)) {
-              theaterInfoTemp.push(theaterInfoElement);
+      timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
+        let brand_obj2str = timeScheduleElement.theaterInfo.brand + "";
+
+        if(_brand) {
+          if(_theaterName) {
+            if(timeScheduleElement.theaterInfo.theaterName.includes(theaterName) && 
+              brand_obj2str.includes(brand)) {
+                result.timeSchedule.push(timeScheduleElement);
+              }
+          }
+          else {
+            if(brand_obj2str.includes(brand)){
+              result.timeSchedule.push(timeScheduleElement);
             }
-          })
-        timeScheduleTemp.theaterInfo = temp;
-        result.timeSchedule.push(timeScheduleTemp);
+          }
+        }
+        else {
+          if(timeScheduleElement.theaterInfo.theaterName.includes(theaterName)) {
+            result.timeSchedule.push(timeScheduleElement);
+          }
+        }
+
       })
     } else {
-      let timeScheduleTemp = {};
-        timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
-          timeScheduleTemp = timeScheduleElement;
-          let theaterInfoTemp = [];
-          timeScheduleElement.theaterInfo.forEach(function(theaterInfoElement) {
-            if(!theaterInfoElement.theaterName.includes(theaterName)) {
-              theaterInfoTemp.push(theaterInfoElement);
+      timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
+        let brand_obj2str = timeScheduleElement.theaterInfo.brand + "";
+
+        if(_brand) {
+          if(_theaterName) {
+            if(!(timeScheduleElement.theaterInfo.theaterName.includes(theaterName) && 
+              brand_obj2str.includes(brand))) {
+                result.timeSchedule.push(timeScheduleElement);
+              }
+          }
+          else {
+            if(!brand_obj2str.includes(brand)){
+              result.timeSchedule.push(timeScheduleElement);
             }
-          })
-        timeScheduleTemp.theaterInfo = temp;
-        result.timeSchedule.push(timeScheduleTemp);
+          }
+        }
+        else {
+          if(!timeScheduleElement.theaterInfo.theaterName.includes(theaterName)) {
+            result.timeSchedule.push(timeScheduleElement);
+          }
+        }
       })
     }
   }

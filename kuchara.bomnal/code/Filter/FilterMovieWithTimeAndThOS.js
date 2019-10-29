@@ -17,16 +17,15 @@ module.exports.function = function filterMovieWithTimeAndThOS (theaterOrderedSch
     let theaterTemp = {};
     theaterOrderedSchedule.theater.forEach(function(theaterElement){
       theaterTemp = theaterElement;
-      let theaterScheduleTemp = [];
+      theaterTemp.theaterSchedule = [];
       theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
         let time = theaterScheduleElement.startTime + "";
         time = time.split(":");
         let aTime = time[0]*60 + time[1]*1;
         if(aTime >= timeInput){
-          theaterScheduleTemp.push(theaterScheduleElement);
+          theaterTemp.theaterSchedule.push(theaterScheduleElement);
         }
       })
-      theaterTemp.theaterSchedule = theaterScheduleTemp;
       result.theater.push(theaterTemp);
     })
   } else {
@@ -35,32 +34,30 @@ module.exports.function = function filterMovieWithTimeAndThOS (theaterOrderedSch
       let theaterTemp = {};
       theaterOrderedSchedule.theater.forEach(function(theaterElement){
         theaterTemp = theaterElement;
-        let theaterScheduleTemp = [];
+        theaterTemp.theaterSchedule = [];
         theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
           let time = theaterScheduleElement.startTime + "";
           time = time.split(":");
           let aTime = time[0]*60 + time[1]*1;
           if(aTime >= timeInput){
-            theaterScheduleTemp.push(theaterScheduleElement);
+            theaterTemp.theaterSchedule.push(theaterScheduleElement);
           }
         })
-        theaterTemp.theaterSchedule = theaterScheduleTemp;
         result.theater.push(theaterTemp);
       })
     } else {    // 끝나는: 인풋시간 이전에 끝나는 영화
       let theaterTemp = {};
       theaterOrderedSchedule.theater.forEach(function(theaterElement){
         theaterTemp = theaterElement;
-        let theaterScheduleTemp = [];
+        theaterTemp.theaterSchedule = [];
         theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
-          let time = theaterScheduleElement.endTime + "";
+          let time = theaterScheduleElement.startTime + "";
           time = time.split(":");
           let aTime = time[0]*60 + time[1]*1;
           if(aTime <= timeInput){
-            theaterScheduleTemp.push(theaterScheduleElement);
+            theaterTemp.theaterSchedule.push(theaterScheduleElement);
           }
         })
-        theaterTemp.theaterSchedule = theaterScheduleTemp;
         result.theater.push(theaterTemp);
       })
     }
