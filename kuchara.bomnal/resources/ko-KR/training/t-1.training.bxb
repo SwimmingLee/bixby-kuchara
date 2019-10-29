@@ -1,3 +1,8 @@
+train (t-16uortbyl3pfbhzdfko24da67) {
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (6시)[v:time.DetachedTime]에 (시작하는)[v:IsStartTime:true] 영화 있어?")
+  plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
+  last-modified (1572336292595)
+}
 train (t-1mz4cdf432n28h9j52wqg4ieb) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (날씨의 아이)[v:MovieName]는 (빼)[v:ExceptExpression:true]버려")
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)

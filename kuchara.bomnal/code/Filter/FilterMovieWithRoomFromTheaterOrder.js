@@ -26,7 +26,8 @@ module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterO
           }
         })
         theaterTemp.theaterSchedule = theaterScheduleTemp;
-        result.theater.push(theaterTemp);
+        if(theaterTemp.theaterSchedule.length)
+          result.theater.push(theaterTemp);
       })
     } else { // ~~ 빼고 보여줘~~
       let theaterTemp = {};
@@ -39,7 +40,8 @@ module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterO
           }
         })
         theaterTemp.theaterSchedule = theaterScheduleTemp;
-        result.theater.push(theaterTemp);
+        if(theaterTemp.theaterSchedule.length)
+          result.theater.push(theaterTemp);
       })
     }
   }

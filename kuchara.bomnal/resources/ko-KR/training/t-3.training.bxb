@@ -1,3 +1,8 @@
+train (t-3gk67dvtnwfnphk61zqtl497n) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (10시 반)[v:time.DetachedTime] 전에 (끝나는)[v:IsStartTime:false] 영화만 보여줘")
+  plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
+  last-modified (1572334480955)
+}
 train (t-3kobva3al2g8m8vx3cmu0o6j7) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] 가까운 극장에서 (82년생 김지영)[v:MovieName] 예매해줘")
   plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
