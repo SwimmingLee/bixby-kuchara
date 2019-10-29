@@ -16,7 +16,7 @@ module.exports.function = function filterMovieWithTheaterNameAndTheaterOrderedSc
   if(typeof exceptExpression == 'undefined'){
     theaterOrderedSchedule.theater.forEach(function(theaterElement){
       if(!theaterElement.theaterInfo.brand.includes(brand)){
-        result.push(theaterElement);
+        result.theater.push(theaterElement);
       }
     })
   } else {  // 부정어가 들어오면, 제외

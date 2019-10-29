@@ -19,24 +19,26 @@ module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterO
       let theaterTemp = {};
       theaterOrderedSchedule.theater.forEach(function(theaterElement){
         theaterTemp = theaterElement;
-        theaterTemp.theaterSchedule = [];
+        let theaterScheduleTemp = [];
         theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
           if(theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
-            theaterTemp.theaterSchedule.push(theaterScheduleElement);
+            theaterScheduleTemp.push(theaterScheduleElement);
           }
         })
+        theaterTemp.theaterSchedule = theaterScheduleTemp;
         result.theater.push(theaterTemp);
       })
     } else { // ~~ 빼고 보여줘~~
-       let theaterTemp = {};
-      theaterOrderedSchedule.theater.forEach(function(theaterElement){
+      let theaterTemp = {};
+        theaterOrderedSchedule.theater.forEach(function(theaterElement){
         theaterTemp = theaterElement;
-        theaterTemp.theaterSchedule = [];
+        let theaterScheduleTemp = [];
         theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
           if(!theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
-            theaterTemp.theaterSchedule.push(theaterScheduleElement);
+            theaterScheduleTemp.push(theaterScheduleElement);
           }
         })
+        theaterTemp.theaterSchedule = theaterScheduleTemp;
         result.theater.push(theaterTemp);
       })
     }
