@@ -407,11 +407,11 @@ def MegaBoxCrawl(theaterObj):
                 if movieSeatInfoStr.find('마감') >= 0:
                     avaliableSeat = "-2"
                     totalSeat = "-2"
+                elif movieSeatInfoStr.find('매진') >= 0:
+                    avaliableSeat = "-1"
+                    totalSeat = "-1"
                 else:
                     avaliableSeat, totalSeat = movieSeatInfoStr.split('/')                 
-                    if int(avaliableSeat) == int(totalSeat):
-                        avaliableSeat = "-1"
-                        totalSeat = "-1"
 
                 movieDict['avaliableSeat'] = avaliableSeat
                 movieDict['totalSeat'] = totalSeat

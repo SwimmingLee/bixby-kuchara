@@ -11320,3 +11320,1585 @@ cgv명동역 씨네라이브러리
 와일드 로즈
 판소리 복서
 [29/Oct/2019 10:40:43] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.029248&latitude=37.511168&movieName=%EC%8A%A4%ED%83%A0+%EB%B0%94%EC%9D%B4+%EB%AF%B8 HTTP/1.1" 200 1225
+long:37.398241, lat:127.026451, movieName:조커
+[29/Oct/2019 10:51:24] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?latitude=37.398241&longitude=127.026451&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2991
+long:37.511168, lat:127.029248, movieName:100일 동안 100가지로 100퍼센트 행복찾기
+lottecinema브로드웨이(신사)
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+너를 만난 여름
+엑시트
+원스 어폰 어 타임... 인 할리우드
+cgv강남
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+람보: 라스트 워
+블랙머니
+megabox강남대로
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+cgv압구정
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+아이다호
+스탠 바이 미
+경계선
+메기
+퍼펙트 스트레인저
+스노우 화이트
+블러드 심플
+신문기자
+미드소마 감독판
+미드소마 감독판
+해당 영화를 찾을 수 없습니다. Naver Movie API
+와일드 로즈
+판소리 복서
+벌새
+원스 어폰 어 타임... 인 할리우드
+megabox강남
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+뱅드림! 필름 라이브
+버스데이 원더랜드
+cgv청담씨네시티
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+와일드 로즈
+megabox센트럴
+long:37.511168, lat:127.029248, movieName:100일 동안 100가지로 100퍼센트 행복찾기
+82년생 김지영
+megabox코엑스
+82년생 김지영
+날씨의 아이
+말레피센트 2
+말레피센트 2
+조커
+가장 보통의 연애
+카르멘 @ The Met
+카르멘 @ The Met
+해당 영화를 찾을 수 없습니다. Naver Movie API
+cgv건대입구
+Internal Server Error: /movie_api/searchTheaterOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 91, in SearchTheaterOrderedScheduleWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 47, in MovieCrawl
+    MegaBoxCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 411, in MegaBoxCrawl
+    avaliableSeat, totalSeat = movieSeatInfoStr.split('/')
+ValueError: not enough values to unpack (expected 2, got 1)
+[29/Oct/2019 10:59:32] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.029248&latitude=37.511168&movieName=100%EC%9D%BC+%EB%8F%99%EC%95%88+100%EA%B0%80%EC%A7%80%EB%A1%9C+100%ED%8D%BC%EC%84%BC%ED%8A%B8+%ED%96%89%EB%B3%B5%EC%B0%BE%EA%B8%B0 HTTP/1.1" 500 127738
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+cgv왕십리
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+스노우 화이트
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+나쁜 녀석들: 더 무비
+lottecinema건대입구
+megabox이수
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+버스데이 원더랜드
+megaboxARTNINE
+더 킹: 헨리 5세
+경계선
+날씨의 아이
+벌새
+메기
+버티고
+신문기자
+megabox동대문
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+터미네이터 2
+뱅드림! 필름 라이브
+버스데이 원더랜드
+뱅드림! 필름 라이브
+lottecinema황학
+cgv동대문
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+megabox군자
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+터미네이터 2
+경계선
+퍼펙트맨
+벌새
+메기
+체크 히어로
+퍼펙트 스트레인저
+버스데이 원더랜드
+원스 어폰 어 타임... 인 할리우드
+아이언 자이언트
+토막살인범의 고백
+cgv명동역 씨네라이브러리
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+퍼펙트 스트레인저
+스노우 화이트
+신문기자
+와일드 로즈
+판소리 복서
+cgv용산아이파크몰
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+스노우 화이트
+터미네이터2
+빅트립: 아기팬더 배달 대모험
+블러드 심플
+체크 히어로
+cgv명동
+말레피센트 2
+82년생 김지영
+조커
+cgv피카디리1958
+말레피센트 2
+82년생 김지영
+조커
+long:37.511168, lat:127.029248, movieName:100일 동안 100가지로 100퍼센트 행복찾기
+가장 보통의 연애
+람보: 라스트 워
+cgv강변
+lottecinema에비뉴엘(명동)
+lottecinema청량리
+Internal Server Error: /movie_api/searchTheaterOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 91, in SearchTheaterOrderedScheduleWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 51, in MovieCrawl
+    CGVCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 73, in CGVCrawl
+    movieSchedule = bs.find('div', {'class':'sect-showtimes'}).find('ul')
+AttributeError: 'NoneType' object has no attribute 'find'
+[29/Oct/2019 11:00:38] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.029248&latitude=37.511168&movieName=100%EC%9D%BC+%EB%8F%99%EC%95%88+100%EA%B0%80%EC%A7%80%EB%A1%9C+100%ED%8D%BC%EC%84%BC%ED%8A%B8+%ED%96%89%EB%B3%B5%EC%B0%BE%EA%B8%B0 HTTP/1.1" 500 98625
+lottecinema용산
+lottecinema장안
+lottecinema월드타워
+cgv성신여대입구
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+lottecinema서울대입구
+cgv대학로
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+람보: 라스트 워
+블러드 심플
+두번할까요
+megabox상봉
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+두번할까요
+버스데이 원더랜드
+megabox강동
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+터미네이터 2
+퍼펙트맨
+체크 히어로
+빅트립: 아기팬더 배달 대모험
+두번할까요
+퍼펙트 스트레인저
+버스데이 원더랜드
+스노우 화이트
+megabox송파파크하비오
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+체크 히어로
+빅트립: 아기팬더 배달 대모험
+두번할까요
+퍼펙트 스트레인저
+버스데이 원더랜드
+lottecinema강동
+megabox신촌
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+경계선
+퍼펙트맨
+벌새
+버티고
+뱅드림! 필름 라이브
+퍼펙트 스트레인저
+스노우 화이트
+cgv신촌아트레온
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+스노우 화이트
+판소리 복서
+cgv미아
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+체크 히어로
+cgv송파
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+두번할까요
+lottecinema신림
+cgv여의도
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+람보: 라스트 워
+메기
+퍼펙트 스트레인저
+블러드 심플
+파리로 가는 길
+<b>파리로 가는 길</b>에 대한 영화 정보를 찾는 중입니다.
+cgv상봉
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+나쁜 녀석들: 더 무비
+lottecinema홍대입구
+cgv홍대
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+람보: 라스트 워
+megabox홍대
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+뱅드림! 필름 라이브
+cgv천호
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+퍼펙트맨
+두번할까요
+lottecinema위례
+lottecinema영등포
+lottecinema합정
+lottecinema인덕원
+cgv스타필드시티위례
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+퍼펙트맨
+두번할까요
+lottecinema수유
+cgv영등포
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+스노우 화이트
+터미네이터2
+북간도의 십자가
+디어 마이 프렌드
+<b>디어 마이 프렌드</b>에 대한 영화 정보를 찾는 중입니다.
+lottecinema성남(모란역)
+cgv수유
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+퍼펙트 스트레인저
+체크 히어로
+나쁜 녀석들: 더 무비
+cgv하계
+말레피센트 2
+82년생 김지영
+long:37.511168, lat:127.029248, movieName:100일 동안 100가지로 100퍼센트 행복찾기
+조커
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+cgv중계
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+나쁜 녀석들: 더 무비
+cgv평촌
+lottecinema성남중앙(신흥역)
+cgv야탑
+Internal Server Error: /movie_api/searchTheaterOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 91, in SearchTheaterOrderedScheduleWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 51, in MovieCrawl
+    CGVCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 73, in CGVCrawl
+    movieSchedule = bs.find('div', {'class':'sect-showtimes'}).find('ul')
+AttributeError: 'NoneType' object has no attribute 'find'
+[29/Oct/2019 11:02:13] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.029248&latitude=37.511168&movieName=100%EC%9D%BC+%EB%8F%99%EC%95%88+100%EA%B0%80%EC%A7%80%EB%A1%9C+100%ED%8D%BC%EC%84%BC%ED%8A%B8+%ED%96%89%EB%B3%B5%EC%B0%BE%EA%B8%B0 HTTP/1.1" 500 98627
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+블랙머니
+퍼펙트 스트레인저
+lottecinema독산
+lottecinema신도림
+cgv불광
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+스노우 화이트
+빅트립: 아기팬더 배달 대모험
+퍼펙트맨
+megabox상암월드컵경기장
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+경계선
+체크 히어로
+빅트립: 아기팬더 배달 대모험
+와일드 로즈
+megabox창동
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+lottecinema평촌(범계역)
+lottecinema가산디지털
+cgv판교
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+빅트립: 아기팬더 배달 대모험
+퍼펙트맨
+cgv구리
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+cgv범계
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+퍼펙트맨
+cgv구로
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+스노우 화이트
+빅트립: 아기팬더 배달 대모험
+미드소마 감독판
+미드소마 감독판
+해당 영화를 찾을 수 없습니다. Naver Movie API
+체크 히어로
+lottecinema노원
+lottecinema구리아울렛
+megabox은평
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+두번할까요
+lottecinema안양(안양역)
+megabox목동
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+터미네이터 2
+카르멘 @ The Met
+카르멘 @ The Met
+해당 영화를 찾을 수 없습니다. Naver Movie API
+체크 히어로
+뱅드림! 필름 라이브
+버스데이 원더랜드
+cgv목동
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+북간도의 십자가
+두번할까요
+cgv서현
+말레피센트 2
+82년생 김지영
+조커
+lottecinema안양일번가
+megabox분당
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+82년생 김지영
+카르멘 @ The Met
+카르멘 @ The Met
+해당 영화를 찾을 수 없습니다. Naver Movie API
+버스데이 원더랜드
+cgv광명철산
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+퍼펙트맨
+두번할까요
+lottecinema수락산
+lottecinema은평(롯데몰)
+lottecinema광명아울렛
+megabox미사강변
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+두번할까요
+megabox별내
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+체크 히어로
+lottecinema광명(광명사거리)
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+너를 만난 여름
+cgv등촌
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+북간도의 십자가
+체크 히어로
+두번할까요
+cgv산본
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+두번할까요
+lottecinema산본피트인
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+너를 만난 여름
+빅트립: 아기팬더 배달 대모험
+스노우 화이트
+lottecinema가양
+cgv오리
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+스노우 화이트
+빅트립: 아기팬더 배달 대모험
+블러드 심플
+체크 히어로
+megabox고양스타필드
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+체크 히어로
+빅트립: 아기팬더 배달 대모험
+버스데이 원더랜드
+megabox화곡
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+megabox하남스타필드
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+82년생 김지영
+megabox마곡
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+체크 히어로
+cgv죽전
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+퍼펙트맨
+두번할까요
+제미니 맨
+lottecinema수지
+cgv북수원
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+cgv광교상현
+82년생 김지영
+조커
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+스노우 화이트
+터미네이터2
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+cgv역곡
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+megabox부천스타필드시티
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+lottecinema광교아울렛
+cgv의정부
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅 위시
+<b>빅 위시</b>에 대한 영화 정보를 찾는 중입니다.
+퍼펙트 스트레인저
+빅트립: 아기팬더 배달 대모험
+cgv의정부태흥
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+퍼펙트 스트레인저
+터미네이터2
+판소리 복서
+lottecinema김포공항
+cgv화정
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+퍼펙트맨
+두번할까요
+megabox수원남문
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+버스데이 원더랜드
+lottecinema의정부민락
+megabox의정부민락
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+cgv시흥
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+체크 히어로
+두번할까요
+cgv수원
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+cgv동수원
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+lottecinema서수원
+lottecinema부천역
+lottecinema수원(수원역)
+cgv부천역
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+북간도의 십자가
+megabox용인테크노밸리
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+퍼펙트 스트레인저
+cgv경기광주
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+lottecinema용인기흥
+lottecinema광주터미널
+lottecinema진접
+lottecinema부천(신중동역)
+megabox남양주
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+퍼펙트맨
+체크 히어로
+빅트립: 아기팬더 배달 대모험
+두번할까요
+megabox수원
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+megabox영통
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+체크 히어로
+빅트립: 아기팬더 배달 대모험
+버스데이 원더랜드
+소피와 드래곤: 마법책의 비밀
+<b>소피와 드래곤: 마법책의 비밀</b>에 대한 영화 정보를 찾는 중입니다.
+극장판 헬로카봇: 달나라를 구해줘!
+<b>극장판 헬로카봇 : 달나라를 구해줘</b>!에 대한 영화 정보를 찾는 중입니다.
+cgv동백
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+퍼펙트 스트레인저
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+퍼펙트맨
+lottecinema안산
+cgv부천
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+시크릿 슈퍼스타
+빅트립: 아기팬더 배달 대모험
+북간도의 십자가
+와일드 로즈
+megabox일산벨라시타
+82년생 김지영
+말레피센트 2
+조커
+더 킹: 헨리 5세
+터미네이터 2
+빅트립: 아기팬더 배달 대모험
+lottecinema센트럴락
+lottecinema송탄
+cgv소풍
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+람보: 라스트 워
+퍼펙트 스트레인저
+스노우 화이트
+빅트립: 아기팬더 배달 대모험
+북간도의 십자가
+블러드 심플
+체크 히어로
+와일드 로즈
+두번할까요
+몬스터 하우스
+극장판 엉덩이 탐정: 화려한 사건 수첩
+<b>극장판 엉덩이 탐정: 화려한 사건 수첩</b>에 대한 영화 정보를 찾는 중입니다.
+megabox백석
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+cgv안산
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+체크 히어로
+megabox안산중앙
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+터미네이터 2
+버스데이 원더랜드
+lottecinema안산고잔
+lottecinema양주고읍
+megabox양주
+82년생 김지영
+Internal Server Error: /movie_api/searchTheaterOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 91, in SearchTheaterOrderedScheduleWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 47, in MovieCrawl
+    MegaBoxCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 411, in MegaBoxCrawl
+    avaliableSeat, totalSeat = movieSeatInfoStr.split('/')
+ValueError: not enough values to unpack (expected 2, got 1)
+[29/Oct/2019 11:06:45] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.029248&latitude=37.511168&movieName=100%EC%9D%BC+%EB%8F%99%EC%95%88+100%EA%B0%80%EC%A7%80%EB%A1%9C+100%ED%8D%BC%EC%84%BC%ED%8A%B8+%ED%96%89%EB%B3%B5%EC%B0%BE%EA%B8%B0 HTTP/1.1" 500 122007
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 29, 2019 - 11:08:51
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+cgv대학로
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+람보: 라스트 워
+블러드 심플
+두번할까요
+cgv동대문
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+가장 보통의 연애
+람보: 라스트 워
+빅트립: 아기팬더 배달 대모험
+cgv피카디리1958
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+cgv성신여대입구
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+megabox동대문
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+람보: 라스트 워
+터미네이터 2
+뱅드림! 필름 라이브
+버스데이 원더랜드
+뱅드림! 필름 라이브
+lottecinema황학
+cgv명동
+말레피센트 2
+82년생 김지영
+조커
+cgv명동역 씨네라이브러리
+말레피센트 2
+82년생 김지영
+조커
+날씨의 아이
+아이다호
+스탠 바이 미
+경계선
+시크릿 슈퍼스타
+퍼펙트 스트레인저
+스노우 화이트
+신문기자
+와일드 로즈
+판소리 복서
+lottecinema에비뉴엘(명동)
+cgv미아
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+체크 히어로
+cgv왕십리
+lottecinema청량리
+Internal Server Error: /movie_api/searchTimeOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 40, in SearchTimeOrderedScheduleWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 51, in MovieCrawl
+    CGVCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 73, in CGVCrawl
+    movieSchedule = bs.find('div', {'class':'sect-showtimes'}).find('ul')
+AttributeError: 'NoneType' object has no attribute 'find'
+[29/Oct/2019 11:17:51] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.002035&latitude=37.583977 HTTP/1.1" 500 97628
+[29/Oct/2019 11:17:51] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.002035&latitude=37.583977 HTTP/1.1" 200 166032
+[29/Oct/2019 11:30:06] "GET / HTTP/1.1" 200 159
+[29/Oct/2019 12:20:21] "GET / HTTP/1.0" 200 156
+[29/Oct/2019 12:20:23] code 400, message Bad HTTP/0.9 request type ('l\x00')
+[29/Oct/2019 12:20:23] "l          " 400 -
+[2019-10-29 12:20:23,825] - Broken pipe from ('139.162.174.228', 64837)
+
+Not Found: /nice ports,/Trinity.txt.bak
+[29/Oct/2019 12:20:24] "GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0" 404 6701
+[29/Oct/2019 12:20:24] code 400, message Bad request syntax ('\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03')
+[29/Oct/2019 12:20:24] "  " 400 -
+[29/Oct/2019 12:20:26] code 400, message Bad request syntax ('\x04\x01\x00\x16\x7f\x00\x00\x01root\x00')
+[29/Oct/2019 12:20:26] "   root " 400 -
+[2019-10-29 12:20:26,792] - Broken pipe from ('139.162.174.228', 1578)
+
+[29/Oct/2019 12:20:27] code 400, message Bad request syntax ('#ST')
+[29/Oct/2019 12:20:27] "#ST" 400 -
+[29/Oct/2019 12:20:29] code 400, message Bad HTTP/0.9 request type ('\x00')
+[29/Oct/2019 12:20:29] " n    beio" 400 -
+[2019-10-29 12:20:29,167] - Broken pipe from ('139.162.174.228', 45190)
+
+[29/Oct/2019 12:20:30] code 400, message Bad request syntax ('\x00\x00\x07\x00\x08\x00\x03\x00\x04\x00\x05\x00\x06')
+[29/Oct/2019 12:20:30] "       " 400 -
+[2019-10-29 12:20:30,966] - Broken pipe from ('139.162.174.228', 65428)
+
+[29/Oct/2019 12:20:31] "OPTIONS / HTTP/1.0" 200 212
+[29/Oct/2019 12:20:31] code 400, message Bad request version ('RTSP/1.0')
+[29/Oct/2019 12:20:31] "OPTIONS / RTSP/1.0" 400 -
+[29/Oct/2019 12:20:33] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+[29/Oct/2019 12:20:33] "  (rþ          |                    " 400 -
+[2019-10-29 12:20:33,906] - Broken pipe from ('139.162.174.228', 32245)
+
+[29/Oct/2019 12:20:35] code 400, message Bad HTTP/0.9 request type ('\x00')
+[29/Oct/2019 12:20:35] "          versionbind   " 400 -
+[2019-10-29 12:20:35,660] - Broken pipe from ('139.162.174.228', 19587)
+
+[29/Oct/2019 12:20:37] code 400, message Bad HTTP/0.9 request type ('\x00')
+[29/Oct/2019 12:20:37] "            " 400 -
+[2019-10-29 12:20:37,423] - Broken pipe from ('139.162.174.228', 60030)
+
+[29/Oct/2019 12:20:37] code 400, message Bad request syntax ('HELP')
+[29/Oct/2019 12:20:37] "HELP" 400 -
+[29/Oct/2019 12:20:38] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+[29/Oct/2019 12:20:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[29/Oct/2019 12:20:38] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+[29/Oct/2019 12:20:38] "  *%à     Cookie: mstshash=beio" 400 -
+[29/Oct/2019 12:20:39] code 400, message Bad request version ('\x00/\x00')
+[29/Oct/2019 12:20:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[29/Oct/2019 12:20:39] code 400, message Bad request syntax ('\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01')
+[29/Oct/2019 12:20:39] "   qjn0k¡¢" 400 -
+[29/Oct/2019 12:20:42] code 400, message Bad request syntax ('\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00')
+[29/Oct/2019 12:20:42] "   ¤ÿSMBr    @              @     PC NETWORK PROGRAM 1.0 MICROSOFT NETWORKS 1.03 MICROSOFT NETWORKS 3.0 LANMAN1.0 LM1.2X002 Samba NT LANMAN 1.0 NT LM 0.12 " 400 -
+[2019-10-29 12:20:42,074] - Broken pipe from ('139.162.174.228', 29188)
+
+[29/Oct/2019 12:20:42] code 400, message Bad request syntax ('\x01default')
+[29/Oct/2019 12:20:42] "default" 400 -
+[29/Oct/2019 12:20:42] code 400, message Bad request syntax ('0\x84\x00\x00\x00-\x02\x01\x07c\x84\x00\x00\x00$\x04\x00')
+[29/Oct/2019 12:20:42] "0   -c   $ " 400 -
+[29/Oct/2019 12:20:44] code 400, message Bad HTTP/0.9 request type ('0')
+[29/Oct/2019 12:20:44] "0`  " 400 -
+[2019-10-29 12:20:44,946] - Broken pipe from ('139.162.174.228', 33608)
+
+[29/Oct/2019 12:20:45] code 400, message Bad request version ('SIP/2.0')
+[29/Oct/2019 12:20:45] "OPTIONS sip:nm SIP/2.0" 400 -
+[29/Oct/2019 12:20:47] code 400, message Bad request syntax ('TNMP\x04\x00\x00\x00TNME\x00\x00\x04\x00')
+[29/Oct/2019 12:20:47] "TNMP   TNME   " 400 -
+[2019-10-29 12:20:47,830] - Broken pipe from ('139.162.174.228', 31740)
+
+[29/Oct/2019 12:20:49] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00')
+[29/Oct/2019 12:20:49] "  à     " 400 -
+[2019-10-29 12:20:49,640] - Broken pipe from ('139.162.174.228', 52779)
+
+[29/Oct/2019 12:20:51] code 400, message Bad request syntax ('DmdT\x00\x00\x00\x17\x00\x00\x00\x01\x00\x00\x00\x00\x11\x11\x00ÿ\x01ÿ\x13')
+[29/Oct/2019 12:20:51] "DmdT           ÿÿ" 400 -
+[2019-10-29 12:20:51,421] - Broken pipe from ('139.162.174.228', 49853)
+
+[29/Oct/2019 12:20:53] code 400, message Bad HTTP/0.9 request type (':\x00\x00\x00/\x00\x00\x00\x02\x00\x00@\x02\x0f\x00\x01\x00=\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/\x00\x00\x00\x00\x00\x00\x00\x00\x00@')
+[29/Oct/2019 12:20:53] ":   /     @  =            /         @                 " 400 -
+[2019-10-29 12:20:53,214] - Broken pipe from ('139.162.174.228', 8432)
+
+[29/Oct/2019 12:20:54] code 400, message Bad request syntax ('JRMI\x00\x02K')
+[29/Oct/2019 12:20:54] "JRMI K" 400 -
+[2019-10-29 12:20:54,989] - Broken pipe from ('139.162.174.228', 42571)
+
+[29/Oct/2019 12:20:56] code 400, message Bad request syntax ('\x01\x00\x00ýÎú\x0b°\xa0\x00\x00\x00MMS\x14\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x12\x00\x00\x00\x01\x00\x03\x00ðððð\x0b\x00\x04\x00\x1c\x00\x03\x00N\x00S\x00P\x00l\x00a\x00y\x00e\x00r\x00/\x009\x00.\x00\x00.\x00\x00.\x02\x009\x008\x00\x00;\x00 \x00{\x00\x00\x00\x00\x00A\x00A\x00\x00\x00-\x00\x00A\x00\x00\x00-\x00\x00\x00a\x00\x00-\x00A\x00A\x00\x00A\x00-\x00\x00\x00\x00\x00A\x00\x00A\x00A\x00\x00A\x00A\x00\x00}\x00\x00\x00àmß_')
+[29/Oct/2019 12:20:56] "  ýÎú°    MMS                    ðððð    N S P l a y e r / 9 .  .  . 9 8  ;   {     A A   -  A   -   a  - A A  A -     A  A A  A A  }   àmß_" 400 -
+[2019-10-29 12:20:56,761] - Broken pipe from ('139.162.174.228', 56348)
+
+[29/Oct/2019 12:20:58] code 400, message Bad HTTP/0.9 request type ('\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00')
+[29/Oct/2019 12:20:58] " Z     6,   ÿ      :               æ           (CONNECT_DATA=(COMMAND=version))" 400 -
+[2019-10-29 12:20:58,549] - Broken pipe from ('139.162.174.228', 37988)
+
+[29/Oct/2019 12:21:00] code 400, message Bad request version ('\x03\x00(\x00\x04ÿ\x08\x00\x01U\x00\x00\x00MSSQLServer\x00H\x0f\x00\x00')
+[29/Oct/2019 12:21:00] " 4            ( ÿ U   MSSQLServer H  " 400 -
+[2019-10-29 12:21:00,333] - Broken pipe from ('139.162.174.228', 20948)
+
+[29/Oct/2019 12:21:02] code 400, message Bad request syntax ('\x00\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x0f\x00')
+[29/Oct/2019 12:21:02] "              " 400 -
+[2019-10-29 12:21:02,135] - Broken pipe from ('139.162.174.228', 10506)
+
+[29/Oct/2019 12:21:03] code 400, message Bad request syntax ('GIOP\x01\x00\x01\x00$\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00\x00abcdef\x00\x00\x04\x00\x00\x00get\x00\x00\x00\x00\x00')
+[29/Oct/2019 12:21:03] "GIOP  $                abcdef     get     " 400 -
+[2019-10-29 12:21:03,877] - Broken pipe from ('139.162.174.228', 48087)
+
+[29/Oct/2019 12:21:05] code 400, message Bad request syntax ('\x00\x9c\x00\x01\x1a+<M\x00\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01ÿÿ\x00\x01none\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00beio\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+[29/Oct/2019 12:21:05] "  +<M            ÿÿ none                                                            beio                                                            " 400 -
+[2019-10-29 12:21:05,695] - Broken pipe from ('139.162.174.228', 43797)
+
+[29/Oct/2019 12:21:07] code 400, message Bad request syntax ('\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x01\x00\x00\x00\x00')
+[29/Oct/2019 12:21:07] "                   " 400 -
+[2019-10-29 12:21:07,493] - Broken pipe from ('139.162.174.228', 32824)
+
+[29/Oct/2019 12:21:09] code 400, message Bad request syntax ('\x03\x81\x00\x00\x00\x00\x00_@\x00\x017\x00\x00\x00\x00\x00\x00\x00\x01\x00\x01\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00InitiatorName=iqn.1991-05.com.microsoft:beio-iscsi-probe\x00SessionType=Discovery\x00AuthMethod=None\x00\x00')
+[29/Oct/2019 12:21:09] "     _@ 7                                InitiatorName=iqn.1991-05.com.microsoft:beio-iscsi-probe SessionType=Discovery AuthMethod=None  " 400 -
+[2019-10-29 12:21:09,291] - Broken pipe from ('139.162.174.228', 12387)
+
+[29/Oct/2019 12:21:11] code 400, message Bad request syntax ('\x01\x00\x00\x00\x00Í\x00\x01\x00\x00ANY-SCP\x00\x00\x00\x00\x00\x00\x00\x00\x00FINDSCU\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x10\x00\x00\x151.2.840.10008.3.1.1.1 \x00\x00.\x01\x00\x00\x000\x00\x00\x111.2.840.10008.1.1@\x00\x00\x111.2.840.10008.1.2P\x00\x00:Q\x00\x00\x04\x00\x00@\x00R\x00\x00\x1e1.2.826.0.1.3680043.2.1396.999U\x00\x00\x0cCharruaVista')
+[29/Oct/2019 12:21:11] "    Í   ANY-SCP         FINDSCU                                           1.2.840.10008.3.1.1.1   .   0  1.2.840.10008.1.1@  1.2.840.10008.1.2P  :Q    @ R  1.2.826.0.1.3680043.2.1396.999U  CharruaVista" 400 -
+[2019-10-29 12:21:11,094] - Broken pipe from ('139.162.174.228', 46063)
+
+[29/Oct/2019 12:21:12] code 400, message Bad request syntax ('\x00\x00\x00\x00\x00')
+[29/Oct/2019 12:21:12] "     " 400 -
+[2019-10-29 12:21:12,894] - Broken pipe from ('139.162.174.228', 23574)
+
+[29/Oct/2019 12:21:13] code 400, message Bad request syntax ('\x01I20100')
+[29/Oct/2019 12:21:13] "I20100" 400 -
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movie_server/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/swim/.venv/movieapi/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movie_server/urls.py", line 43, in <module>
+    WebDriverInit()
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling_thread.py", line 53, in WebDriverInit
+    treading.Thread(target=storage, args=(queue)).start()
+NameError: name 'treading' is not defined
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/swim/.venv/movieapi/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movie_server/urls.py", line 23, in <module>
+    from movies.movieapi import SearchMovieListWithPos
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 3, in <module>
+    from .crawling_thread import MovieCrawl
+ImportError: cannot import name 'MovieCrawl'
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/swim/.venv/movieapi/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movie_server/urls.py", line 43, in <module>
+    WebDriverInit()
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling_thread.py", line 53, in WebDriverInit
+    treading.Thread(target=storage, args=(queue)).start()
+NameError: name 'treading' is not defined
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/swim/.venv/movieapi/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movie_server/urls.py", line 43, in <module>
+    WebDriverInit()
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling_thread.py", line 53, in WebDriverInit
+    treading.Thread(target=storage, args=(queue)).start()
+NameError: name 'treading' is not defined
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling_thread.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 29, 2019 - 13:42:53
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+long:37.398241, lat:127.026451, movieName:조커
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+TypeError: storage() argument after * must be an iterable, not Queue
+
+Internal Server Error: /movie_api/searchTheaterOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 91, in SearchTheaterOrderedScheduleWithPos
+    MovieCrawl(reqtheater)
+NameError: name 'MovieCrawl' is not defined
+[29/Oct/2019 13:43:04] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?latitude=37.398241&longitude=127.026451&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 500 75366
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/swim/.venv/movieapi/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movie_server/urls.py", line 23, in <module>
+    from movies.movieapi import SearchMovieListWithPos
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 3, in <module>
+    from .crawling_thread import MovieCrawl
+ImportError: cannot import name 'MovieCrawl'
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/swim/.venv/movieapi/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movie_server/urls.py", line 23, in <module>
+    from movies.movieapi import SearchMovieListWithPos
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 3, in <module>
+    from .crawling_thread import MovieCrawl
+ImportError: cannot import name 'MovieCrawl'
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling_thread.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+TypeError: storage() argument after * must be an iterable, not Queue
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling_thread.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 29, 2019 - 13:44:34
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+TypeError: storage() argument after * must be an iterable, not Queue
+
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling_thread.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 29, 2019 - 13:45:07
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling_thread.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 29, 2019 - 13:48:45
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Exception ignored in: <module 'threading' from '/usr/lib/python3.5/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 1288, in _shutdown
+    t.join()
+  File "/usr/lib/python3.5/threading.py", line 1054, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.5/threading.py", line 1070, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/utils/autoreload.py", line 593, in <lambda>
+    signal.signal(signal.SIGTERM, lambda *args: sys.exit(0))
+SystemExit: 0
