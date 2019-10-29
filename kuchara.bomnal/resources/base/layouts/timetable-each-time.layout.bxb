@@ -44,7 +44,13 @@ layout-macro-def (timetable-each-time) {
               content {
                 single-line { // 좌석
                   if (timeSchedule.totalSeat == -1) {
-                    text { value ("자리 없음") color (Red) style (Detail_L)}
+                    text { value ("매진") color (Red) style (Detail_L)}
+                  }
+                  else-if (timeSchedule.totalSeat == -2) {
+                    text { value ("마감") style (Detail_L) color (Red) }
+                  }
+                  else-if (timeSchedule.totalSeat == -3) {
+                    text { value ("좌석 자리 준비중") style (Detail_L) color (Amber) }
                   }
                   else {
                     if(timeSchedule.availableSeat * 100 / timeSchedule.totalSeat > 60) {
@@ -129,12 +135,7 @@ layout-macro-def (timetable-each-time) {
               halign (End)
               content {
                 single-line { // 거리
-                  if (timeSchedule.theaterInfo.distance > 999) {
-                    text { value ("#{value(timeSchedule.theaterInfo.distance) / 1000}km") style (Detail_L_Soft) }
-                  }
-                  else {
-                    text { value ("#{value(timeSchedule.theaterInfo.distance)}m") style (Detail_L_Soft) }
-                  }
+                  text { value ("#{value(timeSchedule.theaterInfo.distance)}") style (Detail_L_Soft) }
                 }
               }
             }

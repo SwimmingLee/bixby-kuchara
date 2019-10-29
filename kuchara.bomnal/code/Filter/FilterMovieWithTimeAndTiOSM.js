@@ -4,12 +4,14 @@ module.exports.function = function filterMovieWithTimeAndTiOSM (timeOrderedSched
   };
 
   let timeInput = dateTimeExpression.dateTime.time.hour*60;
-
+  if (typeof dateTimeExpression.dateTime.time.minute != 'undefined') {
+    timeInput += dateTimeExpression.dateTime.time.minute*1;
+  }
   // 이후 시작하는 영화
   if(typeof isStartTime == 'undefined'){
     timeOrderedScheduleWithMovie.movieOrderedSchedule.forEach(function(mosElement){
       let time = mosElement.theaterSchedule.startTime + "";
-        time = time.split(":")
+      time = time.split(":");
       let aTime = time[0]*60 + time[1]*1;
 
       if(aTime >= timeInput){
@@ -22,7 +24,7 @@ module.exports.function = function filterMovieWithTimeAndTiOSM (timeOrderedSched
     if(isStartTime){
       timeOrderedScheduleWithMovie.movieOrderedSchedule.forEach(function(mosElement){
         let time = mosElement.theaterSchedule.startTime + "";
-        time = time.split(":")
+        time = time.split(":");
         let aTime = time[0]*60 + time[1]*1;
 
         if(aTime >= timeInput){
@@ -31,10 +33,8 @@ module.exports.function = function filterMovieWithTimeAndTiOSM (timeOrderedSched
       })
     } else {    // 끝나는: 인풋시간 이전에 끝나는 영화
       timeOrderedScheduleWithMovie.movieOrderedSchedule.forEach(function(mosElement){
-
         let time = mosElement.theaterSchedule.endTime + "";
-        time = time.split(":")
-
+        time = time.split(":");
         let aTime = time[0]*60 + time[1]*1;
 
         if(aTime <= timeInput){

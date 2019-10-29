@@ -108,14 +108,14 @@ endpoints {
       local-endpoint (Filter/FilterMovieWithTimeAndThOSM.js)
     }
 
+    action-endpoint (FilterMovieWithTimeAndThOS) {
+      accepted-inputs (theaterOrderedSchedule, dateTimeExpression, isStartTime)
+      local-endpoint (Filter/FilterMovieWithTimeAndThOS.js)
+    }
+
     action-endpoint (FilterMovieWithTimeAndTiOS) {
       accepted-inputs (timeOrderedSchedule, dateTimeExpression, isStartTime)
       local-endpoint (Filter/FilterMovieWithTimeAndTiOS.js)
-    }
-
-    action-endpoint (FilterMovieWithTimeAndTiOSM) {
-      accepted-inputs (timeOrderedScheduleWithMovie, dateTimeExpression, isStartTime)
-      local-endpoint (Filter/FilterMovieWithTimeAndTiOSM.js)
     }
 
     action-endpoint (FilterMovieWithTimeAndTiOSM) {
@@ -178,7 +178,7 @@ endpoints {
     // webURL 연결
     action-endpoint (OpenBrowser) {
       accepted-inputs (movieScheduleDetail)
-      local-endpoint (OpenBrowser.js)
+      local-endpoint (api/OpenBrowser.js)
     }
   }
 }

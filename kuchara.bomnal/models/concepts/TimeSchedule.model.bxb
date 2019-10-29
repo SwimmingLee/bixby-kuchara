@@ -6,7 +6,7 @@ structure (TimeSchedule) {
   }
   property (endTime) {
     type (EndTime)
-    min (Required) max (Many)
+    min (Required) max (One)
   }
   property (totalSeat) {
     type (TotalSeat)

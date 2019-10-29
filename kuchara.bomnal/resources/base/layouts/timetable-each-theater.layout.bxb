@@ -56,8 +56,13 @@ layout-macro-def (timetable-each-theater) {
               content {
                 single-line { // 좌석
                   if (theaterSchedule.totalSeat == -1) {
-                    
-                    text { value ("자리 없음") color (Red) style (Detail_M)}
+                    text { value ("매진") style (Detail_M) color (Red) }
+                  }
+                  else-if (theaterSchedule.totalSeat == -2) {
+                    text { value ("마감") style (Detail_M) color (Red) }
+                  }
+                  else-if (theaterSchedule.totalSeat == -3) {
+                    text { value ("좌석 자리 준비중") style (Detail_M) color (Amber) }
                   }
                   else {
                     if(theaterSchedule.availableSeat * 100 / theaterSchedule.totalSeat > 60) {

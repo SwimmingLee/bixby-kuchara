@@ -1,37 +1,46 @@
 module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterOrderedSchedule, roomPropertyEnum, exceptExpression) {
 
-  let result = [];
-  let input = theaterOrderedSchedule;
+  let result = {
+    'movie': theaterOrderedSchedule.movie,
+    'theater': [],
+  }
 
   // 부정어가 안들어오면, mx관만 보여줘
   if(typeof exceptExpression == 'undefined'){
-    input.theater.forEach(function(theaterElement){
+    theaterOrderedSchedule.theater.forEach(function(theaterElement){
       theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
         if(theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
           result.push(theaterElement);
         }
       })
     })
-  } else {    // 부정어가 들어오면,  
-    if(!exceptExpression){
-      input.theater.forEach(function(theaterElement){
+  } else { // 부정어가 들어왔어!
+    if(!exceptExpression){ // ~~ 만 보여줄래
+      let theaterTemp = {};
+      theaterOrderedSchedule.theater.forEach(function(theaterElement){
+        theaterTemp = theaterElement;
+        theaterTemp.theaterSchedule = [];
         theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
           if(theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
-            result.push(theaterElement);
+            theaterTemp.theaterSchedule.push(theaterScheduleElement);
           }
         })
+        result.theater.push(theaterTemp);
       })
-    } else {
-      input.theater.forEach(function(theaterElement){
+    } else { // ~~ 빼고 보여줘~~
+       let theaterTemp = {};
+      theaterOrderedSchedule.theater.forEach(function(theaterElement){
+        theaterTemp = theaterElement;
+        theaterTemp.theaterSchedule = [];
         theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
           if(!theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
-            result.push(theaterElement);
+            theaterTemp.theaterSchedule.push(theaterScheduleElement);
           }
         })
+        result.theater.push(theaterTemp);
       })
     }
-    
   }
-  input.theater = result;
-  return input;
+
+  return result;
 }

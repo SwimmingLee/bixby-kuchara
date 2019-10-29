@@ -1,6 +1,6 @@
 vocab (Brand) {
-  "cgv" {"CGV", "cgv", "씨지비"}
-  "megabox" {"Megabox", "MEGABOX", "메가박스", "megabox"}
+  "cgv" {"CGV", "cgv", "씨지비", "스즈브", "씨집"}
+  "megabox" {"Megabox", "MEGABOX", "메가박스", "megabox", "므그븍"}
   "lottecinema" {"lottecinema", "Lottecinema", "LOTTECINEMA", "롯데시네마", "롯시", "로떼시네마", "로때", "로씨"}
 }
 
