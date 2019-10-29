@@ -1,7 +1,0 @@
-usage: manage.py runserver [-h] [--ipv6] [--nothreading] [--noreload]
-                           [--nostatic] [--insecure] [--version]
-                           [-v {0,1,2,3}] [--settings SETTINGS]
-                           [--pythonpath PYTHONPATH] [--traceback]
-                           [--no-color] [--force-color]
-                           [addrport]
-manage.py runserver: error: unrecognized arguments: 2

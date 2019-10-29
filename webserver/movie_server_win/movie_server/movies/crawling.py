@@ -41,14 +41,15 @@ def WebDriverInit():
 def MovieCrawl(theaterObj):
     diffTime = GetDiffTime(theaterObj.updatedTime, datetime.now())    
     if (diffTime > 60*15):
+        theaterObj.updatedTime = datetime.now()
+        theaterObj.save() 
         if theaterObj.brand == 'megabox':
             MegaBoxCrawl(theaterObj)
         elif theaterObj.brand == 'lottecinema':
             LotteCinemaCrawl(theaterObj)
         elif theaterObj.brand == 'cgv':
             CGVCrawl(theaterObj)
-        theaterObj.updatedTime = datetime.now()
-        theaterObj.save() 
+        
 
 
 def CGVCrawl(theaterObj):   

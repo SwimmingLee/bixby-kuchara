@@ -93,13 +93,14 @@ def GetMovieInfo(movieName):
         for movieInfo in movieInfos['items']:
             print(movieInfo['title'] + "에 대한 영화 정보를 찾는 중입니다.")
             link = movieInfo['link']
+            movieInfoPart2 = GetNaverMovieInfo(link)
+            if movieInfoPart2 != None:
+                break 
             imgUrl = movieInfo["image"]
             actors = movieInfo["actor"]
             director = movieInfo["director"]
             userRating = movieInfo["userRating"]
-            movieInfoPart2 = GetNaverMovieInfo(link)
-            if movieInfoPart2 != None:
-                break 
+            
         
         if movieInfoPart2 == None:
             print(movieName)
@@ -124,7 +125,8 @@ def UpdateMoive(request):
 
 def UpdateTheater(request):
     #csvFileDir = r"C:\Users\student\works\bixby-kuchara\webserver\movie_server_win\movie_server\movies\theater_info.txt"
-    csvFileDir = r"C:\Users\Lee\workspace\bixby-kuchara\webserver\movie_server_win\movie_server\movies\theater_info2.txt"
+    csvFileDir = r"/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/theater_info3.txt"
+    #csvFileDir = r"C:\Users\Lee\workspace\bixby-kuchara\webserver\movie_server_win\movie_server\movies\theater_info3.txt"
     csvFile = open(csvFileDir, 'r', encoding='UTF-8')
     try:
         spamreader = csv.reader(csvFile)

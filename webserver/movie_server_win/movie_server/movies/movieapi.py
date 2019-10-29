@@ -37,10 +37,13 @@ def SearchTimeOrderedScheduleWithPos(request):
 
     movieScheduleSet = None
     for orderCnt, theaterOrder in enumerate(DistanceOrderedTheater):
-        if orderCnt == 0:
-            movieScheduleSet = MovieSchedules.objects.filter(theater=theaterOrder[0])
-        elif orderCnt <= 5:
-            movieScheduleSet = movieScheduleSet.union(MovieSchedules.objects.filter(theater=theaterOrder[0]))
+        if orderCnt < 2 or theaterOrder[1] <= 5000:
+            reqtheater = Theaters.objects.get(id=theaterOrder[0])
+            MovieCrawl(reqtheater)
+            if movieScheduleSet == None:
+                movieScheduleSet = MovieSchedules.objects.filter(theater=theaterOrder[0])
+            else:
+                movieScheduleSet = movieScheduleSet.union(MovieSchedules.objects.filter(theater=theaterOrder[0]))
         else:
             break
 
@@ -84,14 +87,16 @@ def SearchTheaterOrderedScheduleWithPos(request):
 
     theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
     theater = []
+
     orderCnt = 0
     for theaterOrder in theaterOrderedSchedule:
-        if orderCnt == 0 or theaterOrder[1] < 5000:
-            orderCnt = orderCnt + 1
+        if orderCnt < 2 or theaterOrder[1] <= 5000:
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             MovieCrawl(reqtheater)
-            movieObj = Movies.objects.get(movieName=movieName)
-
+            movieObj = Movies.objects.filter(movieName__exact=movieName)
+            if movieObj.count() == 0:
+                continue
+            movieObj = movieObj.first()
             movieScheduleList = GetMovieScheduleList(reqtheater, movieObj.id)
             theaterEle = {
                 'theaterInfo':reqtheater,
@@ -99,7 +104,9 @@ def SearchTheaterOrderedScheduleWithPos(request):
                 'theaterSchedule':movieScheduleList
             }
             if len(movieScheduleList) > 0:
+                orderCnt = orderCnt + 1
                 theater.append(theaterEle)
+
         else:
             break
 
@@ -137,9 +144,9 @@ def SearchTheaterWithMoviePos(request):
     movieObj = Movies.objects.get(movieName=movieName)
 
     for orderCnt, theaterOrder in enumerate(theaterOrderedSchedule):
-        if orderCnt <= 10:
+        if orderCnt < 15:
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
-            MovieCrawl(reqtheater)
+            #MovieCrawl(reqtheater)
             if len(MovieSchedules.objects.filter(theater__exact=theaterOrder[0], movie__exact=movieObj.id)) > 0:
                 theaterEle = GetTheaterInfo2ByObj(reqtheater, theaterOrder[1])
                 theaterEle.update({'address':reqtheater.address})
@@ -170,11 +177,10 @@ def SearchTheaterWithPos(request):
         theaterDistanceDict[reqtheater.id] = dist
 
     theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
-    orderCnt = 0
+    
     theater = []
-    for theaterOrder in theaterOrderedSchedule:
-        if orderCnt <= 20:
-            orderCnt = orderCnt + 1
+    for orderCnt, theaterOrder in enumerate(theaterOrderedSchedule):
+        if orderCnt < 15:
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             theaterEle = GetTheaterInfo2ByObj(reqtheater, theaterOrder[1])
             theaterEle.update({'address':reqtheater.address})
@@ -208,17 +214,16 @@ def SearchMovieListWithPos(request):
     theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
     
     movieScheduleSet = None
-    idx = 0
-    for theaterOrder in theaterOrderedSchedule:
-        if theaterOrder[1] <= 5000:
+
+    for orderCnt, theaterOrder in enumerate(theaterOrderedSchedule):
+        if orderCnt < 2 or theaterOrder[1] <= 5000:
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             MovieCrawl(reqtheater)
 
-            if idx == 0:
+            if movieScheduleSet == None:
                 movieScheduleSet = MovieSchedules.objects.filter(theater__exact=theaterOrder[0])
             else:
                 movieScheduleSet = movieScheduleSet.union(MovieSchedules.objects.filter(theater__exact=theaterOrder[0]))
-            idx = idx + 1
         else:
             break
     
