@@ -35,12 +35,7 @@ layout-macro-def (title-for-theaterSchedule) {
           valign (Bottom)
           content {
             single-line {
-              if(theater.theaterInfo.distance > 999) {
-                text{ value("#{value(theater.theaterInfo.distance) / 1000}km") style (Detail_M_Soft) }
-              }
-              else {
-                text{ value("#{value(theater.theaterInfo.distance)}m") style (Detail_M_Soft) }
-              }
+              text{ value("#{value(theater.theaterInfo.distance)}") style (Detail_M_Soft) }
             }
           }
         }
