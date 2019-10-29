@@ -3,6 +3,11 @@ train (t-43a23efraqiyzalwylv8unon3) {
   plan (jVBNSwMxEH2rta0fvelFwYMg4mX9DYIKHtqKWfQcNwMJ3U0kyW79+SYRW8l6KCFkmPcx84IZrlZdLbnl5YdpNW/KSrW0tIIsCVZLEl1DuM04T6rxZOemV/SuvIySey0qtWQ4z6jPjnlufaTsNOou47yS87arfWepksTD2DdF68pEbaxwnZv+sHLfm0EELTYBUhESvBiH04yYMFxmXSbNOiFBEqYNoi14S8FOac9+18dFr/rSh73Lh7BhDPD49WnJOWX0IMacr+gf2tnWgzyP4dLPzlBgD/sY4QBjTDDFYThHOMYJELDiDzYOaJGwAkjo9mLzjpLjNOq/AQ==)
   last-modified (1572168108667)
 }
+train (t-4eyimxnqs7xvv1g45vj0gi783) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (씨지비)[v:Brand:cgv]는 (제외)[v:ExceptExpression:true]해줘")
+  plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
+  last-modified (1572267930678)
+}
 train (t-4lcuqac8236cr9s5d8tvxraun) {
   utterance ([g:RestructureTimeViewToTheaterViewWithMovie:continue:TimeOrderedScheduleWithMovie] 영화관 순으로 보여줘)
   plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9TMogqDFzDAwHypITFFbxUqMflnVLKSFCuCGDRim0xYmzhhcsLXfHaj65FtsgaMOkSHdgt7hkP4euczbLL9PKf57k1OWQIkzokdP)
