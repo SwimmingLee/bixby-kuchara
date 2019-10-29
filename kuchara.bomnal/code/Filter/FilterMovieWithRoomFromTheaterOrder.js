@@ -21,7 +21,8 @@ module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterO
         theaterTemp = theaterElement;
         let theaterScheduleTemp = [];
         theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
-          if(theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
+          let obj2str = theaterScheduleElement.roomProperty + "";
+          if(obj2str.includes(roomPropertyEnum)){
             theaterScheduleTemp.push(theaterScheduleElement);
           }
         })
@@ -35,7 +36,8 @@ module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterO
         theaterTemp = theaterElement;
         let theaterScheduleTemp = [];
         theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
-          if(!theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
+          let obj2str = theaterScheduleElement.roomProperty + "";
+          if(!obj2str.includes(roomPropertyEnum)){
             theaterScheduleTemp.push(theaterScheduleElement);
           }
         })

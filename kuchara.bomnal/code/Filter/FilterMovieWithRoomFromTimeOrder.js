@@ -7,21 +7,24 @@ module.exports.function = function filterMovieWithRoomFromTimeOrder (timeOrdered
   // 부정어가 안들어오면, mx관만 보여줘
   if(typeof exceptExpression == 'undefined'){
     timeOrderedSchedule.timeSechedule.forEach(function(timeSecheduleElement){
-      if(timeSecheduleElement.roomProperty.includes(roomPropertyEnum)){
+      let obj2str = timeSecheduleElement.roomProperty + "";
+      if(obj2str.includes(roomPropertyEnum)){
         result.push(timeSecheduleElement);
       }
     })
   } else {    // 부정어가 들어오면,  
     if(!exceptExpression){
       timeOrderedSchedule.timeSechedule.forEach(function(timeSecheduleElement){
-        if(timeSecheduleElement.roomProperty.includes(roomPropertyEnum)){
-          result.timeSchedule.push(timeSecheduleElement);
+        let obj2str = timeSecheduleElement.roomProperty + "";
+        if(obj2str.includes(roomPropertyEnum)){
+          result.push(timeSecheduleElement);
         }
       })
     } else {
       timeOrderedSchedule.timeSechedule.forEach(function(timeSecheduleElement){
-        if(!timeSecheduleElement.roomProperty.includes(roomPropertyEnum)){
-          result.timeSchedule.push(timeSecheduleElement);
+        let obj2str = timeSecheduleElement.roomProperty + "";
+        if(!obj2str.includes(roomPropertyEnum)){
+          result.push(timeSecheduleElement);
         }
       })
     }

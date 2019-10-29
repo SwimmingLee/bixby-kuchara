@@ -6,6 +6,7 @@ result-view {
     }
   }
   message {
+    
     template ("어느 영화관에서 #{value(this.movieName)} 시간표를 보시겠어요?")
   }
   render {
