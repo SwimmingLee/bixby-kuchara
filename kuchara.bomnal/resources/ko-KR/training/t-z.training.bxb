@@ -1,0 +1,5 @@
+train (t-z1g8aofd6zw486m27ujua3r15) {
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (5시 반)[v:time.DetachedTime] 전에 (끝나는)[v:IsStartTime:false] 것만 보여줘")
+  plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
+  last-modified (1572309593922)
+}

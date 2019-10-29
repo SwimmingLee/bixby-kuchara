@@ -33,7 +33,7 @@ result-view {
   }
   conversation-drivers {
     conversation-driver {
-      template ("지금은 새벽 2시. 잠이 오지 않는 밤.")
+      template ("다른 영화 보여줘")
     }
   }
 }

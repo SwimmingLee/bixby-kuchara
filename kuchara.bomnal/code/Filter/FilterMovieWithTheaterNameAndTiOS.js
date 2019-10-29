@@ -2,33 +2,54 @@ let console = require('console');
 
 module.exports.function = function filterMovieWithTheaterNameAndTiOS (timeOrderedSchedule, theaterName, brand, exceptExpression) {
 
-  let result = [];
-  let input = timeOrderedSchedule;
+  let result = {
+    'movie': timeOrderedSchedule.movie,
+    'timeSchedule': [],
+  }
 
   // 부정어가 안들어오면, 그것만
   if(typeof exceptExpression == 'undefined'){
-    input.timeSchedule.forEach(function(timeScheduleElement){
-      if(!timeScheduleElement.theaterInfo.theaterName.includes(theaterName)){
-        result.push(timeScheduleElement);
-      }
+    let timeScheduleTemp = {};
+    timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
+      timeScheduleTemp = timeScheduleElement;
+      let theaterInfoTemp = [];
+      timeScheduleElement.theaterInfo.forEach(function(theaterInfoElement) {
+        if(!theaterInfoElement.theaterName.includes(theaterName)) {
+          theaterInfoTemp.push(theaterInfoElement);
+        }
+      })
+      timeScheduleTemp.theaterInfo = temp;
+      result.timeSchedule.push(timeScheduleTemp);
     })
   } else {  // 부정어가 들어오면, 제외
     if(!exceptExpression){
-      input.timeSchedule.forEach(function(timeScheduleElement){
-        if(!timeScheduleElement.theaterInfo.theaterName.includes(theaterName)){
-          result.push(timeScheduleElement);
-        }
+      let timeScheduleTemp = {};
+        timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
+          timeScheduleTemp = timeScheduleElement;
+          let theaterInfoTemp = [];
+          timeScheduleElement.theaterInfo.forEach(function(theaterInfoElement) {
+            if(!theaterInfoElement.theaterName.includes(theaterName)) {
+              theaterInfoTemp.push(theaterInfoElement);
+            }
+          })
+        timeScheduleTemp.theaterInfo = temp;
+        result.timeSchedule.push(timeScheduleTemp);
       })
     } else {
-      input.timeSchedule.forEach(function(timeScheduleElement){
-        if(timeScheduleElement.theaterInfo.theaterName.includes(theaterName)){
-          result.push(timeScheduleElement);
-        }
+      let timeScheduleTemp = {};
+        timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
+          timeScheduleTemp = timeScheduleElement;
+          let theaterInfoTemp = [];
+          timeScheduleElement.theaterInfo.forEach(function(theaterInfoElement) {
+            if(!theaterInfoElement.theaterName.includes(theaterName)) {
+              theaterInfoTemp.push(theaterInfoElement);
+            }
+          })
+        timeScheduleTemp.theaterInfo = temp;
+        result.timeSchedule.push(timeScheduleTemp);
       })
-
     }
   }
-  timeOrderedSchedule.timeSchedule = result;
-  // console.log(result);
-  return timeOrderedSchedule;
+  console.log(result);
+  return result;
 }
