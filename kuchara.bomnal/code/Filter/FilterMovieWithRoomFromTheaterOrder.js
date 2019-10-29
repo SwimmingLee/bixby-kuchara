@@ -7,12 +7,19 @@ module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterO
 
   // 부정어가 안들어오면, mx관만 보여줘
   if(typeof exceptExpression == 'undefined'){
+    let theaterTemp = {};
     theaterOrderedSchedule.theater.forEach(function(theaterElement){
+      theaterTemp = theaterElement;
+      let theaterScheduleTemp = [];
       theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
-        if(theaterScheduleElement.roomProperty.includes(roomPropertyEnum)){
-          result.push(theaterElement);
+        let obj2str = theaterScheduleElement.roomProperty + "";
+        if(obj2str.includes(roomPropertyEnum)){
+          theaterScheduleTemp.push(theaterScheduleElement);
         }
       })
+      theaterTemp.theaterSchedule = theaterScheduleTemp;
+      if(theaterTemp.theaterSchedule.length)
+        result.theater.push(theaterTemp);
     })
   } else { // 부정어가 들어왔어!
     if(!exceptExpression){ // ~~ 만 보여줄래

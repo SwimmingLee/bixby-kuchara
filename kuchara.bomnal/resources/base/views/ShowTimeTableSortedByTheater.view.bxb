@@ -6,7 +6,7 @@ result-view {
     }
   }
   message {
-    if(size(this.movie) == 0) {
+    if(exists(this.movie)) {
       template ("지금 볼 수 있는 #{value(this.movie.movieName)}의 상영 시간표에요.")
     }
     else {
@@ -49,18 +49,17 @@ result-view {
     }
   }
   conversation-drivers {
-    if(size(this.movie) == 0) {
+    if(exists(this.movie)) {
       conversation-driver {
-        template ("다른 영화 보여줘")
-      }
-    }
-    else {
-      
-      conversation-driver {
-        template ("시간순으로 보여줘")
+        template ("다른 영화관에서 볼래")
       }
       conversation-driver {
         template ("다른 영화관 보여줘")
+      }
+    }
+    else {
+      conversation-driver {
+        template ("다른 영화 보여줘")
       }
     }
   }

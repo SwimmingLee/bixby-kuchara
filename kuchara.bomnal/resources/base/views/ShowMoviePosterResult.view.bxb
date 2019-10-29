@@ -6,7 +6,12 @@ input-view {
     }
   }
   message {
-    template (현재 주변 위치에서 상영중인 영화를 알려드릴게요)
+    if(size(this) % 2 == 1) {
+      template (현재 주변 위치에서 상영중인 영화를 알려드릴게요)
+    }
+    else {
+      template (근처에서 상영중인 영화입니다.)
+    }
   }
   render {
     selection-of (this) {

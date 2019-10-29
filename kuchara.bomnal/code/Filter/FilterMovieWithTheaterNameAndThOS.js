@@ -15,9 +15,27 @@ module.exports.function = function filterMovieWithTheaterNameAndTheaterOrderedSc
   // 부정어가 안들어오면, 그것만
   if(typeof exceptExpression == 'undefined'){
     theaterOrderedSchedule.theater.forEach(function(theaterElement){
-      if(!theaterElement.theaterInfo.brand.includes(brand)){
-        result.theater.push(theaterElement);
+      let brand_obj2str = theaterElement.theaterInfo.brand + "";
+
+      if(_brand) { // 브랜드
+        if(_theaterName) { // 지점 명
+          if(theaterElement.theaterInfo.theaterName.includes(theaterName) && 
+          brand_obj2str.includes(brand)) {
+            result.theater.push(theaterElement);
+          }
+        }
+        else {
+          if(brand_obj2str.includes(brand)){
+            result.theater.push(theaterElement);
+          }
+        }
       }
+      else {
+        if(theaterElement.theaterInfo.theaterName.includes(theaterName)) {
+          result.theater.push(theaterElement);
+        }
+      }
+
     })
   } else {  // 부정어가 들어오면, 제외
     if(!exceptExpression){
