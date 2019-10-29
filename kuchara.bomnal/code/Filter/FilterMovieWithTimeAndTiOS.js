@@ -1,3 +1,5 @@
+let console = require('console')
+
 module.exports.function = function filterMovieWithTimeAndTiOS (timeOrderedSchedule, dateTimeExpression, isStartTime) {
   let result = {
     'movie': timeOrderedSchedule.movie,
@@ -12,7 +14,7 @@ module.exports.function = function filterMovieWithTimeAndTiOS (timeOrderedSchedu
   // 이후 시작하는 영화
   if(typeof isStartTime == 'undefined'){
     timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
-      let time = mosElement.theaterSchedule.startTime + "";
+      let time = timeScheduleElement.startTime + "";
       time = time.split(":")
       let aTime = time[0]*60 + time[1]*1;
       if(aTime >= timeInput){
@@ -23,7 +25,7 @@ module.exports.function = function filterMovieWithTimeAndTiOS (timeOrderedSchedu
     // 시작하는: 이후 시작하는 영화
     if(isStartTime){
       timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
-        let time = mosElement.theaterSchedule.startTime + "";
+        let time = timeScheduleElement.startTime + "";
         time = time.split(":")
         let aTime = time[0]*60 + time[1]*1;
         if(aTime >= timeInput){
@@ -32,9 +34,10 @@ module.exports.function = function filterMovieWithTimeAndTiOS (timeOrderedSchedu
       })
     } else {    // 끝나는: 인풋시간 이전에 끝나는 영화
       timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
-        let time = mosElement.theaterSchedule.endTime + "";
+        let time = timeScheduleElement.endTime + "";
         time = time.split(":")
         let aTime = time[0]*60 + time[1]*1;
+
         if(aTime <= timeInput){
           result.timeSchedule.push(timeScheduleElement);
         }
