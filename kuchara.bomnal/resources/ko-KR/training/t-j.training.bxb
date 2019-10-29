@@ -1,3 +1,8 @@
+train (t-j4w7cpghn3qjgotpp1k74qm7o) {
+  utterance ("[g:FilterMovieWithTheaterNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (메가박스)[v:Brand:megabox]만 보여줘")
+  plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT7JaZU5JaBJYDKQrJSE0E8v0Sc1Md81JCMv2DfRlE0LQ4FSXmpZBmKzMDIwMTkGQA0iAIAUxgUQYA)
+  last-modified (1572357995318)
+}
 train (t-jcvqjn1y6pb0mtocv1x38pfj8) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] (조커)[v:MovieName] 볼래")
   plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
