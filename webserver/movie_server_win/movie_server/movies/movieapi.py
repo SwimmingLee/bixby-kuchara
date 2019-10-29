@@ -24,9 +24,7 @@ def SearchTimeOrderedScheduleWithPos(request):
     except:
         return HttpResponse("{'invalid data': 'error'}", content_type="text/json-comment-filtered")
     
-    allTheater = Theaters.objects.filter(brand__exact='cgv')
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='megabox'))
+    allTheater = Theaters.objects.all()
 
     theaterDistanceDict = dict()
     for reqtheater in allTheater:
@@ -75,9 +73,7 @@ def SearchTheaterOrderedScheduleWithPos(request):
     sys.stdout.flush()
 
     # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
-    allTheater = Theaters.objects.filter(brand__exact='megabox')
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='cgv'))
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
+    allTheater = Theaters.objects.all()
        
     theaterDistanceDict = dict()
    
@@ -95,6 +91,7 @@ def SearchTheaterOrderedScheduleWithPos(request):
             MovieCrawl(reqtheater)
             movieObj = Movies.objects.filter(movieName__exact=movieName)
             if movieObj.count() == 0:
+                movieObj = "no movie data"
                 continue
             movieObj = movieObj.first()
             movieScheduleList = GetMovieScheduleList(reqtheater, movieObj.id)
@@ -129,9 +126,7 @@ def SearchTheaterWithMoviePos(request):
         return HttpResponse("{'invalid data': 'error'}", content_type="text/json-comment-filtered")
         # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
    
-    allTheater = Theaters.objects.filter(brand__exact='cgv')
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='megabox'))
+    allTheater = Theaters.objects.all()
 
     theaterDistanceDict = dict()
     for reqtheater in allTheater:
@@ -167,9 +162,7 @@ def SearchTheaterWithPos(request):
     
 
     # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
-    allTheater = Theaters.objects.filter(brand__exact='cgv')
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='megabox'))
+    allTheater = Theaters.objects.all()
 
     theaterDistanceDict = dict()
     for reqtheater in allTheater:
@@ -202,9 +195,7 @@ def SearchMovieListWithPos(request):
         latitude = 0.0
     
     # 현재는 메가박스 + 롯데시네마 에 대한 정보만 가져올 수 있도록 되어 있다. 
-    allTheater = Theaters.objects.filter(brand__exact='megabox')
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='cgv'))
-    allTheater = allTheater.union(Theaters.objects.filter(brand__exact='lottecinema'))
+    allTheater = Theaters.objects.all()
 
     theaterDistanceDict = dict()
     for reqtheater in allTheater:

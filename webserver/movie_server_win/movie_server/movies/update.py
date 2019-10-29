@@ -16,7 +16,7 @@ def GetNaverMovieInfo(url):
     res = urllib.request.urlopen(req)
     html = res.read()
 
-    bs = BeautifulSoup(html, 'html.parser')
+    bs = BeautifulSoup(html, 'lxml')
 
     # Get movie name
     #movieNames = bs.find('h3', {'class':'h_movie'}).a
@@ -94,13 +94,12 @@ def GetMovieInfo(movieName):
             print(movieInfo['title'] + "에 대한 영화 정보를 찾는 중입니다.")
             link = movieInfo['link']
             movieInfoPart2 = GetNaverMovieInfo(link)
-            if movieInfoPart2 != None:
-                break 
             imgUrl = movieInfo["image"]
             actors = movieInfo["actor"]
             director = movieInfo["director"]
             userRating = movieInfo["userRating"]
-            
+            if movieInfoPart2 != None:
+                break 
         
         if movieInfoPart2 == None:
             print(movieName)

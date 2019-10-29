@@ -68,7 +68,7 @@ def CGVCrawl(theaterObj):
     driver.get(url)
 
     req = driver.page_source
-    bs = BeautifulSoup(req, 'html.parser')
+    bs = BeautifulSoup(req, 'lxml')
 
     movieSchedule = bs.find('div', {'class':'sect-showtimes'}).find('ul')
 
@@ -86,6 +86,7 @@ def CGVCrawl(theaterObj):
         if movieObj == None:
             movieObj = GetMovieInfo(movieNameStr)
             if movieObj == None:
+
                 continue 
 
         movieHallTypes = movieScheduleList.findAll('div', {'class':'type-hall'})
@@ -151,9 +152,15 @@ def CGVCrawl(theaterObj):
                 movieDict['endTime'] = (int(hour) + int(hourcarry / 60) ) * 100 + hourcarry % 60
 
                 availableSeat = startTime.next_sibling
-                if availableSeat.text.find("마감") >= 0 or availableSeat.text.find("매진") >= 0 or availableSeat.text.find('준비중') >= 0:
+                if availableSeat.text.find("매진") >= 0:
                     movieDict['availableSeat'] = -1
                     movieDict['totalSeat'] = -1
+                elif availableSeat.text.find("마감") >= 0:
+                    movieDict['availableSeat'] = -2
+                    movieDict['totalSeat'] = -2
+                elif availableSeat.text.find('준비중') >= 0:
+                    movieDict['availableSeat'] = -3
+                    movieDict['totalSeat'] = -3
                 else:
                     availableSeatStr = re.findall("\d+", availableSeat.text)[0]
                     movieDict['availableSeat'] = int(availableSeatStr)
@@ -192,9 +199,9 @@ def LotteCinemaCrawl(theaterObj):
     
     driver.get(url)
 
-    time.sleep(2)
+    #time.sleep(1)
     req = driver.page_source
-    bs = BeautifulSoup(req, 'html.parser')
+    bs = BeautifulSoup(req, 'lxml')
 
     movieSchedule = bs.find('div', {'class':re.compile('time_aType .*')})
     # 영화 리스트가 없으면 함수를 바로 끝낸다.
@@ -267,9 +274,12 @@ def LotteCinemaCrawl(theaterObj):
                 #print(movieTime.text)
                 movieSeatInfo = movieTheaterTime.find('span', {'class':'ppNum'})
                 if movieSeatInfo != None:
-                    if movieSeatInfo.text.find('마감') >= 0 or movieSeatInfo.text.find('매진') >= 0:
+                    if  movieSeatInfo.text.find('매진') >= 0:
                         movieDict['avaliableSeat'] = -1
                         movieDict['totalSeat'] = -1
+                    elif movieSeatInfo.text.find('마감') >= 0:
+                        movieDict['avaliableSeat'] = -2
+                        movieDict['totalSeat'] = -2
                     else:    
                         avaliableSeatStr, totalSeatStr = movieSeatInfo.text.split('/')
                         movieDict['avaliableSeat'] = re.findall('\d+', avaliableSeatStr)[0]
@@ -299,12 +309,13 @@ def MegaBoxCrawl(theaterObj):
 
     region = theaterObj.regionCode
     cinema = theaterObj.theaterCode
-
+    
+    
     url = 'http://megabox.co.kr/?menuId=theater-detail&region={}&cinema={}'.format(region,cinema)
     driver.get(url)
 
     req = driver.page_source
-    bs = BeautifulSoup(req, 'html.parser')
+    bs = BeautifulSoup(req, 'lxml')
 
     movieScedule = bs.find('div', {'class':'timetable_container'})
     movieTableRow = movieScedule.find('tbody')
@@ -393,12 +404,15 @@ def MegaBoxCrawl(theaterObj):
             movieSeatInfo = movieTimeInfo.find('span', {'class':'seat'})
             if movieSeatInfo != None:
                 movieSeatInfoStr = movieSeatInfo.text
-                try:
-                    avaliableSeat, totalSeat = movieSeatInfoStr.split('/')
-                except:
-                    avaliableSeat = "-1"
-                    totalSeat = "-1"
-                    
+                if movieSeatInfoStr.find('마감') >= 0:
+                    avaliableSeat = "-2"
+                    totalSeat = "-2"
+                else:
+                    avaliableSeat, totalSeat = movieSeatInfoStr.split('/')                 
+                    if int(avaliableSeat) == int(totalSeat):
+                        avaliableSeat = "-1"
+                        totalSeat = "-1"
+
                 movieDict['avaliableSeat'] = avaliableSeat
                 movieDict['totalSeat'] = totalSeat
 
