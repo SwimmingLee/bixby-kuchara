@@ -3,6 +3,11 @@ train (t-kcsz9uxoke6xmuin34api58pz) {
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
   last-modified (1572267059677)
 }
+train (t-kq05x4l1wm27oax5q7zr04qvq) {
+  utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (메가박스)[v:Brand:megabox](만)[v:ExceptExpression:false] 보여줘")
+  plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
+  last-modified (1572314241861)
+}
 train (t-kr3dslhavrmwr7grvnp17g5dl) {
   utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 요즘 핫한 영화가 뭐야?)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)

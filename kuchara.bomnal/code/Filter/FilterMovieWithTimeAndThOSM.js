@@ -13,7 +13,7 @@ module.exports.function = function filterMovieWithTimeAndThOSM (theaterOrderedSc
       let time = mosElement.theaterSchedule.startTime.split(":");
       let aTime = time[0]*60 + time[1]*1;
 
-      if(aTime >= time){
+      if(aTime >= timeInput){
         result.movieOrderedSchedule.push(mosElement);
       }
     })
@@ -24,7 +24,7 @@ module.exports.function = function filterMovieWithTimeAndThOSM (theaterOrderedSc
       let time = mosElement.theaterSchedule.startTime.split(":");
       let aTime = time[0]*60 + time[1]*1;
 
-      if(aTime >= time){
+      if(aTime >= timeInput){
         result.movieOrderedSchedule.push(mosElement);
       }
     })
@@ -33,7 +33,7 @@ module.exports.function = function filterMovieWithTimeAndThOSM (theaterOrderedSc
       let time = mosElement.theaterSchedule.startTime.split(":");
       let aTime = time[0]*60 + time[1]*1;
 
-      if(aTime <= time){
+      if(aTime <= timeInput){
         result.movieOrderedSchedule.push(mosElement);
       }
     })
