@@ -18,6 +18,10 @@ action (FindOneTheaterWithMovieSelected) {
       type (TheaterCode)
       min (Required) max (One)
     }
+    input (distance) {
+      type (Distance)
+      min (Required) max (One)
+    }
   }
   output (TheaterOrderedSchedule)
 }

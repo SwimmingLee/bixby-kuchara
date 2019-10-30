@@ -4,7 +4,7 @@ let console = require('console');
 let http = require('http');
 let config = require('config');
 
-module.exports.function = function findOneTheaterWithMovieSelected (movieName, brand, regionCode, theaterCode) {
+module.exports.function = function findOneTheaterWithMovieSelected (movieName, brand, regionCode, theaterCode, distance) {
 
   let options = {
     format: 'json',
@@ -21,13 +21,14 @@ module.exports.function = function findOneTheaterWithMovieSelected (movieName, b
 
   let obj = {
     movie: response[0].movie,
-    theater: {
-      theaterInfo: response[0].theaterInfo,
-      theaterSchedule: [],
-    }
+    theater: [],
   }
 
   response.forEach(function(responseElement) {
+    let theaterTemp = {};
+    theaterTemp.theaterInfo = responseElement.theaterInfo;
+    theaterTemp.theaterInfo.distance = distance;
+    theaterTemp.theaterSchedule = [];
     let rp = responseElement.theaterSchedule.roomProperty;
     let db = responseElement.theaterSchedule.dubbing;
     let list = getUriList(rp, db);
@@ -35,8 +36,11 @@ module.exports.function = function findOneTheaterWithMovieSelected (movieName, b
     list.forEach(function(el) {
       responseElement.theaterSchedule.roomPropertyUriList.push({roomPropertyUri: el});
     })
-    obj.theater.theaterSchedule.push(responseElement.theaterSchedule);
+    theaterTemp.theaterSchedule.push(responseElement.theaterSchedule);
+    obj.theater.push(theaterTemp);
   });
+
+  console.log(obj);
 
   return obj;
 }
