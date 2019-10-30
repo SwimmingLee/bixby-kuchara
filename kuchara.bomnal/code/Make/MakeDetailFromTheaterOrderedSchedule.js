@@ -18,7 +18,6 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
   console.log(theaterInfo.latitude)
   console.log(theaterInfo.regionCode)
   console.log(theaterInfo.theaterCode)
-  // console.log(theaterInfo.iconUri)
 
   console.log(theaterSchedule.startTime)
   console.log(theaterSchedule.endTime)
@@ -55,6 +54,7 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
 
     'startTime': theaterSchedule.startTime,
     'endTime': theaterSchedule.endTime,
+    'scheduleDate': theaterSchedule.scheduleDate,
     "totalSeat": theaterSchedule.totalSeat,             // 총 좌석수
     "availableSeat": theaterSchedule.availableSeat,             // 빈 좌석수
     "subtitle": theaterSchedule.subtitle,               // 자막여부
@@ -63,8 +63,15 @@ module.exports.function = function makeDetailFromTheaterOrderedSchedule (movie, 
     "roomProperty": theaterSchedule.roomProperty,
     "roomPropertyUriList": theaterSchedule.roomPropertyUriList,
 
-    "myDateExpression": dateObj.dateTime.date.year + "." + dateObj.dateTime.date.month + "." + dateObj.dateTime.date.day,
+    // "myDateExpression": dateObj.dateTime.date.year + "." + dateObj.dateTime.date.month + "." + dateObj.dateTime.date.day,
   }
+
+  let mm = 1, dd;
+  while ((mm + 1) * 100 < theaterSchedule.scheduleDate) mm++;
+  dd = theaterSchedule.scheduleDate - (mm * 100);
+  if(mm < 10) mm = "0" + mm;
+
+  movieScheduleDetail.myDateExpression = dateObj.dateTime.date.year + "." + mm + "." + dd;
   return movieScheduleDetail;
 }
 
