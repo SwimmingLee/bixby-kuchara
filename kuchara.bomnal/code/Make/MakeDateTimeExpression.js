@@ -35,7 +35,7 @@ module.exports.function = function makeDateTimeExpression (dateTimeExpression, d
     if(typeof detachedTime.minute != 'undefined'){
       minin = detachedTime.minute;
     } else {
-      minin = dateTimeExpressionObj.dateTime.time.minute;
+      minin = 0;
     }
 
 

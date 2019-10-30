@@ -30,7 +30,7 @@ module.exports.function = function filterMovieWithTimeAndThOSM (theaterOrderedSc
     })
     } else {    // 끝나는: 인풋시간 이전에 끝나는 영화
       theaterOrderedScheduleWithMovie.movieOrderedSchedule.forEach(function(mosElement){
-      let time = mosElement.theaterSchedule.startTime.split(":");
+      let time = mosElement.theaterSchedule.endTime.split(":");
       let aTime = time[0]*60 + time[1]*1;
 
       if(aTime <= timeInput){

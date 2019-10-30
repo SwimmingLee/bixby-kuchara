@@ -58,7 +58,7 @@ module.exports.function = function filterMovieWithTimeAndThOS (theaterOrderedSch
         theaterTemp = theaterElement;
         let theaterScheduleTemp = [];
         theaterElement.theaterSchedule.forEach(function(theaterScheduleElement){
-          let time = theaterScheduleElement.startTime + "";
+          let time = theaterScheduleElement.endTime + "";
           time = time.split(":");
           let aTime = time[0]*60 + time[1]*1;
           if(aTime <= timeInput){
