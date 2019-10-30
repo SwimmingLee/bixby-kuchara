@@ -19,5 +19,21 @@ action (FilterMovieWithTheaterNameAndTiOS) {
       min (Optional) max (One)
     }
   }
-  output (TimeOrderedSchedule)
+  output (TimeOrderedSchedule) {
+    throws {
+      error (error1) {
+        property (timeSchedule) {
+          type (TimeSchedule)
+          min (Required) max (Many)
+        }
+        on-catch {
+          halt {
+            dialog {
+              template ("theater is empty!!")
+            }
+          }
+        }
+      }
+    }
+  }
 }

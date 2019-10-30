@@ -19,5 +19,21 @@ action (FilterMovieWithTheaterNameAndThOS) {
       min (Optional) max (One)
     }
   }
-  output (TheaterOrderedSchedule)
+  output (TheaterOrderedSchedule) {
+    throws {
+      error (requiredCompilationError) {
+        property (theater) {
+          type (Theater)
+          min (Required) max (Many)
+        }
+        on-catch {
+          halt {
+            dialog {
+              template ("theater is empty!!")
+            }
+          }
+        }
+      }
+    }
+  }
 }
