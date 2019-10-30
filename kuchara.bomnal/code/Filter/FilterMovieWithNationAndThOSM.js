@@ -1,4 +1,7 @@
-module.exports.function = function filterMovieWithNationAndThOSM (theaterOrderedScheduleWithMovie, nation, isDomestic, exceptExpression) {
+let console = require('console');
+let fail = require('fail');
+
+module.exports.function = function filterMovieWithNationAndThOSM (theaterOrderedScheduleWithMovie, nation, exceptExpression) {
   let result = {
     movieOrderedSchedule: []
   };
@@ -14,7 +17,7 @@ module.exports.function = function filterMovieWithNationAndThOSM (theaterOrdered
           result.movieOrderedSchedule.push(mosElement);
         }
       })
-    } else {  
+    } else {
       if(!exceptExpression){
         theaterOrderedScheduleWithMovie.movieOrderedSchedule.forEach(function(mosElement){
         if(mosElement.movie.nation.includes(nation)){
@@ -46,6 +49,10 @@ module.exports.function = function filterMovieWithNationAndThOSM (theaterOrdered
       })
     }
   }
-​
+
+  if(typeof result.movieOrderedSchedule.movie == 'undefined') {
+    throw fail.checkedError('There is no theater data', 'NoDataError', {})
+  }
+
   return result;
 }

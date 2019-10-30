@@ -1,3 +1,6 @@
+let console = require('console');
+let fail = require('fail');
+
 module.exports.function = function filterMovieWithRoomFromTimeOrder (timeOrderedSchedule, roomPropertyEnum, exceptExpression) {
   let result = {
     'movie': timeOrderedSchedule.movie,
@@ -28,6 +31,10 @@ module.exports.function = function filterMovieWithRoomFromTimeOrder (timeOrdered
         }
       })
     }
+  }
+
+  if(typeof result.timeSchedule.startTime == 'undefined') {
+    throw fail.checkedError('There is no theater data', 'NoDataError', {})
   }
   
   return result;

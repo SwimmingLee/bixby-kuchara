@@ -15,7 +15,18 @@ action (FilterMovieWithRoomFromTimeOrderWithMovie) {
       min (Optional) max (One)
     }
   }
-  output (TimeOrderedScheduleWithMovie)
-  // output (MovieName)
+  output (TimeOrderedScheduleWithMovie) {
+    throws {
+      error (NoDataError) {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (NoDataError)
+            }
+          }
+        }
+      }
+    }
+  }
 }
   

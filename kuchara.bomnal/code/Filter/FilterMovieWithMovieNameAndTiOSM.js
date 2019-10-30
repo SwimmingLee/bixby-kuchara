@@ -1,4 +1,6 @@
 let console = require('console');
+let fail = require('fail');
+
 module.exports.function = function filterMovieWithMovieNameAndTiOSM (timeOrderedScheduleWithMovie, movieName, exceptExpression) {
   let result = {
     movieOrderedSchedule: []
@@ -25,6 +27,10 @@ module.exports.function = function filterMovieWithMovieNameAndTiOSM (timeOrdered
         }
       })
     }
+  }
+
+  if(typeof result.movieOrderedSchedule.movie == 'undefined') {
+    throw fail.checkedError('There is no theater data', 'NoDataError', {})
   }
   
   return result;

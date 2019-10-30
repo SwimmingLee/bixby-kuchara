@@ -15,5 +15,17 @@ action (FilterMovieWithGenreAndTiOSM) {
       min (Optional) max (One)
     }
   }
-  output (TimeOrderedScheduleWithMovie)
+  output (TimeOrderedScheduleWithMovie) {
+    throws {
+      error (NoDataError) {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (NoDataError)
+            }
+          }
+        }
+      }
+    }
+  }
 }

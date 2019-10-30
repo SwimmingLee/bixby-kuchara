@@ -1,4 +1,5 @@
 let console = require('console');
+let fail = require('fail');
 
 module.exports.function = function filterMovieWithTimeAndThOS (theaterOrderedSchedule, dateTimeExpression, isStartTime) {
   let result = {
@@ -71,5 +72,10 @@ module.exports.function = function filterMovieWithTimeAndThOS (theaterOrderedSch
       })
     }
   }
+
+  if(typeof result.theater.theaterInfo == 'undefined') {
+    throw fail.checkedError('There is no theater data', 'NoDataError', {})
+  }
+  
   return result;
 }

@@ -19,6 +19,7 @@ layout-macro-def (closer-theater-card) {
           value: $expr(theaterInfo.brand)
           value: $expr(theaterInfo.regionCode)
           value: $expr(theaterInfo.theaterCode)
+          value: $expr(theaterInfo.distance)
         }
       }
       content {

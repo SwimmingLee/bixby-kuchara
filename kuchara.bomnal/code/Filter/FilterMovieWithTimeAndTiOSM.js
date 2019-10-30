@@ -1,3 +1,6 @@
+let console = require('console');
+let fail = require('fail');
+
 module.exports.function = function filterMovieWithTimeAndTiOSM (timeOrderedScheduleWithMovie, dateTimeExpression, isStartTime) {
   let result = {
     movieOrderedSchedule: []
@@ -17,7 +20,6 @@ module.exports.function = function filterMovieWithTimeAndTiOSM (timeOrderedSched
       if(aTime >= timeInput){
         result.movieOrderedSchedule.push(mosElement);
       }
-
     })
   } else {
     // 시작하는: 이후 시작하는 영화
@@ -43,5 +45,10 @@ module.exports.function = function filterMovieWithTimeAndTiOSM (timeOrderedSched
       })
     }
   }
+
+  if(typeof result.movieOrderedSchedule.movie == 'undefined') {
+    throw fail.checkedError('There is no theater data', 'NoDataError', {})
+  }
+  
   return result;
 }

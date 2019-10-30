@@ -19,5 +19,17 @@ action (FilterMovieWithTheaterNameAndTiOS) {
       min (Optional) max (One)
     }
   }
-  output (TimeOrderedSchedule)
+  output (TimeOrderedSchedule) {
+    throws {
+      error (NoDataError) {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (NoDataError)
+            }
+          }
+        }
+      }
+    }
+  }
 }

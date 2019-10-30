@@ -19,5 +19,17 @@ action (FilterMovieWithTheaterNameAndThOS) {
       min (Optional) max (One)
     }
   }
-  output (TheaterOrderedSchedule)
+  output (TheaterOrderedSchedule) {
+    throws {
+      error (NoDataError) {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (NoDataError)
+            }
+          }
+        }
+      }
+    }
+  }
 }
