@@ -24,17 +24,17 @@ structure (TheaterInfo) {
     type (Longitude)
     min (Required) max (One)
   }
-  // property(iconUri) {
-  //   type (IconUri)
-  //   min (Required) max (One)
-  // }
   property(distance) {
     type (Distance)
-    min (Optional) max (One)
+    min (Required) max (One)
   }
   property(address) {
     type (Address)
     min (Optional) max (One)
   }
+  // property(iconUri) {
+  //   type (IconUri)
+  //   min (Required) max (One)
+  // }
 }
   

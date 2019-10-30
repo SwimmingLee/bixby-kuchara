@@ -6,7 +6,7 @@ train (t-g0wsrwynbrwrfaqo5328vqzz5) {
 train (t-gl4wn3e8ylxsetu5xfxvwtiiy) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (메박)[v:Brand:megabox] (빼고)[v:ExceptExpression:true]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
-  last-modified (1572369968566)
+  last-modified (1572399088636)
 }
 train (t-gyz9ims6dkab6j54n0fvuj823) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (메가박스)[v:Brand:megabox](만)[v:ExceptExpression:false]")

@@ -30,7 +30,7 @@ input-view {
       template ("#{value(this[0].nation)}영화 제외해줘")
     }
     conversation-driver{
-      template ("#{value(this[0].genre)}영화만 보여줘")
+      template ("#{value(this[0].genre)} 장르만 보여줘")
     }
   }
 }

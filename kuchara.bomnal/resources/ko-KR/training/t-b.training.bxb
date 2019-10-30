@@ -13,6 +13,11 @@ train (t-bdfm3kp3a49hk878m4dqcaa36) {
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
   last-modified (1572349742366)
 }
+train (t-bnk9lcyxu1tlfuxlsvi655ld4) {
+  utterance ([g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 상영관)
+  plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
+  last-modified (1572398609756)
+}
 train (t-bs8xlemyphn74dp6k7h7wyjn7) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 영화 순위 보여주삼\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)

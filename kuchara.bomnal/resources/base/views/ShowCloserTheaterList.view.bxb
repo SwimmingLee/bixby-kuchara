@@ -35,7 +35,13 @@ result-view {
             halign (Center)
             slot2 {
               paragraph {
-                value ("원하는 영화관이 없으시다면\n\"~에서 영화 보고싶어!\"\n라고 말씀해주세요.")
+                value ("원하는 영화관이 없으시다면\n\"~에서 영화 보고싶어!\"")
+                style (Title_XS)
+              }
+            }
+            slot3 {
+              paragraph {
+                value ("라고 말씀해주세요.")
                 style (Title_XS)
               }
             }
