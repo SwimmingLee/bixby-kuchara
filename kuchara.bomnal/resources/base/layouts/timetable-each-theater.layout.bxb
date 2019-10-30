@@ -59,7 +59,7 @@ layout-macro-def (timetable-each-theater) {
                     text { value ("매진") style (Detail_M) color (Red) }
                   }
                   else-if (theaterSchedule.totalSeat == -2) {
-                    text { value ("마감") style (Detail_M) color (Red) }
+                    text { value ("온라인 예약 마감") style (Detail_M) color (Red) }
                   }
                   else-if (theaterSchedule.totalSeat == -3) {
                     text { value ("좌석 자리 준비중") style (Detail_M) color (Amber) }
