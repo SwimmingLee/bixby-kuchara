@@ -3,10 +3,30 @@ train (t-h0y84rdxun8t55lf6ugv9ohb1) {
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
   last-modified (1572420181726)
 }
+train (t-haza683loy19nqj2jge51xhro) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼플렉스 G)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572438468397)
+}
+train (t-hej6peul675nspw24z0x9acuu) {
+  utterance ("[g:GenreEnum] (따뜻한)[v:GenreEnum:가족]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437157821)
+}
 train (t-hktygifp26tkdlvk7s5w2xqm5) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (메박)[v:Brand:megabox]은 (시러)[v:ExceptExpression:true]\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572349940150)
+}
+train (t-hnscr07r0tdd1genbmmrtjqnf) {
+  utterance ("[g:RoomPropertyEnum] (필름소사이어티)[v:RoomPropertyEnum:필름소사이어티]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433168834)
+}
+train (t-hp9baghcqznhwv8usz7a6rv04) {
+  utterance ("[g:GenreEnum] (때려뿌수는)[v:GenreEnum:액션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437440561)
 }
 train (t-hqfmw1imtxl4684ci8mzynqt7) {
   utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (열한시)[v:time.DetachedTime] 전에 (끝나는)[v:IsStartTime:false] 영화만 알려줘")

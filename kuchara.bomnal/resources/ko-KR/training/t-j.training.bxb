@@ -8,28 +8,88 @@ train (t-j3xcyeo5shsr7dpykuhh78t3p) {
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
   last-modified (1572410187273)
 }
+train (t-j452bfn3trd08x0d87uqsjhb1) {
+  utterance ("[g:GenreEnum] (다큐멘터리)[v:GenreEnum:다큐멘터리]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436492007)
+}
+train (t-j4twawmycfwnsjbxwg3wlxfhs) {
+  utterance ("[g:RoomPropertyEnum] (써브팩)[v:RoomPropertyEnum:SUBPAC]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435276472)
+}
+train (t-j5ag9g9rh80zjaikdeol48p25) {
+  utterance ("[g:GenreEnum] (가족)[v:GenreEnum:가족]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437140384)
+}
+train (t-j5zkqq425nukvpibobl6v9pvn) {
+  utterance ("[g:RoomPropertyEnum] (사운드엑쓰)[v:RoomPropertyEnum:SOUNDX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434817771)
+}
 train (t-j6grzp8arkdngvgea97idmds0) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (메박)[v:Brand:megabox](만)[v:ExceptExpression:false] 보여줄래")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572370996197)
+}
+train (t-jb06ka57z2f3mc23t8wfudzhj) {
+  utterance ("[g:RoomPropertyEnum] (템퍼씨네마)[v:RoomPropertyEnum:'TEMPUR CINEMA']")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435154867)
 }
 train (t-jbib039foxvum1gom3q92h93x) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 이거 말고 다른거\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572411027597)
 }
+train (t-jbpd3m4rwfpfb547nqvvwm9bf) {
+  utterance ("[g:GenreEnum] (가족이랑 보기좋은)[v:GenreEnum:가족]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437166061)
+}
+train (t-jc0zv9l69c7k1r5w9bo9z4kvp) {
+  utterance ("[g:GenreEnum] (에로)[v:GenreEnum:에로]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437527410)
+}
 train (t-jcm7ekt8f4jo3x3zgtnsz52nn) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (롯데시네마)[v:Brand:lottecinema] (제외)[v:ExceptExpression:true]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572369841140)
+}
+train (t-jg0durancjrqe35wo5e6yhuwf) {
+  utterance ("[g:RoomPropertyEnum] (샤롯떼 프라이빗)[v:RoomPropertyEnum:'샤롯데 프라이빗']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434294411)
 }
 train (t-jibr86pv54vr2yf4md5nwpk8l) {
   utterance ("[g:RestructureTimeViewToTheaterView] 상영관 별 정렬\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
   last-modified (1572410202847)
 }
+train (t-jky4wcbayivig929gw9wiczkr) {
+  utterance ("[g:GenreEnum] (부시는)[v:GenreEnum:전쟁]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437217576)
+}
 train (t-jl4djdjwviukcpqg1t39pmtf4) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (시지브이)[v:Brand:cgv]를 (빼)[v:ExceptExpression:true]줘\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572349847489)
+}
+train (t-joj1inbcxlznqeq5v2fmevsh0) {
+  utterance ("[g:GenreEnum] (엑소시즘)[v:GenreEnum:컬트]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436407279)
+}
+train (t-jrgyxaaix2zg5qp4934uipm4u) {
+  utterance ("[g:RoomPropertyEnum] (씨네앤리빙룸)[v:RoomPropertyEnum:씨네앤리빙룸]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435319116)
+}
+train (t-jtps5k39xkpub38qtjfk4fttc) {
+  utterance ("[g:GenreEnum] (구마)[v:GenreEnum:컬트]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436473149)
 }

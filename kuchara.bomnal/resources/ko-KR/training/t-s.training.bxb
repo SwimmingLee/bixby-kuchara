@@ -13,6 +13,11 @@ train (t-sb9cvh7zze8vgitvnxw5jnj8t) {
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
   last-modified (1572420158071)
 }
+train (t-sci8tkvblfwgejozfis3cz146) {
+  utterance ("[g:RoomPropertyEnum] (씨네패밀리)[v:RoomPropertyEnum:씨네패밀리]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434341470)
+}
 train (t-sdb2cc2zqyqhegumjw69ifco8) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 상영중인 영화가 보고싶어\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
@@ -33,13 +38,28 @@ train (t-spl9ta256re2bdp02ha6xe53p) {
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
   last-modified (1572419984935)
 }
+train (t-srwit965t8v8r3ltqqf2b761m) {
+  utterance ("[g:RoomPropertyEnum] (아트)[v:RoomPropertyEnum:ART]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435328371)
+}
 train (t-ssg95ht7a1ejhcbcxnbenvg5s) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 딴 거 내놔\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572411036727)
 }
+train (t-swf9i54uvnsmnl46bl0loidmc) {
+  utterance ("[g:RoomPropertyEnum] (더부띠끄에쓰)[v:RoomPropertyEnum:더부티크S]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433728781)
+}
 train (t-sysmas1jdxizfz201118uyuy0) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯데시네마)[v:Brand:lottecinema] (제외)[v:ExceptExpression:true]\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572349884837)
+}
+train (t-szmyzbzd0fdyxpejcgodr01gv) {
+  utterance ("[g:GenreEnum] (로맨틱코미디)[v:GenreEnum:멜로/로맨스]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437052043)
 }

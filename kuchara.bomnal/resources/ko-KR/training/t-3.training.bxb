@@ -3,6 +3,11 @@ train (t-30roushubuyeifxzrk9clf163) {
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572370914829)
 }
+train (t-31xfl5o0z9wx18zsxnsvc1r62) {
+  utterance ("[g:RoomPropertyEnum] (컴포트)[v:RoomPropertyEnum:컴포트]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572438402811)
+}
 train (t-35fc9ra9l0jt5f2bq7rt6eqcd) {
   utterance ("[g:Brand] (로떼시네마)[v:Brand:lottecinema]\n")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
@@ -13,13 +18,48 @@ train (t-37cdhkudufj7i0aayylox5j4v) {
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572423497419)
 }
+train (t-39m2kr0igxn33a18jqfuxgfnt) {
+  utterance ("[g:RoomPropertyEnum] (골드클래스)[v:RoomPropertyEnum:'GOLD CLASS']")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434981815)
+}
+train (t-3aqp2ugtnm1y7u6sb0ebg8yxl) {
+  utterance ("[g:GenreEnum] (모험)[v:GenreEnum:모험]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436141844)
+}
 train (t-3axusl7mhc5khikpdw9bukq7a) {
   utterance ("[g:RestructureTimeViewToTheaterView] 가까운 영화관 별로 정렬\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
   last-modified (1572410139133)
 }
+train (t-3btcp7dzizz8kxuud3rksfyx2) {
+  utterance ("[g:RoomPropertyEnum] (더부띠끄에스)[v:RoomPropertyEnum:더부티크S]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433443948)
+}
+train (t-3dakpdj5kccojcgnmhkj4sf6w) {
+  utterance ("[g:GenreEnum] (범죄)[v:GenreEnum:스릴러]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436249490)
+}
 train (t-3dbglkk9rgoxfo1c2a6q5mob1) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 이거 말고는 볼거 없어?\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572411071978)
+}
+train (t-3qisad784jhvuw5wcwebwn03o) {
+  utterance ("[g:GenreEnum] (어벤쳐)[v:GenreEnum:모험]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436191550)
+}
+train (t-3qtkkrfurt9eqlf1vka9uuhuo) {
+  utterance ("[g:RoomPropertyEnum] (시네더셰프)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435137368)
+}
+train (t-3vfhosbz6mgjsktp58xgzl0nw) {
+  utterance ("[g:RoomPropertyEnum] (샤로떼)[v:RoomPropertyEnum:샤롯데]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433734329)
 }

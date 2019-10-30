@@ -1,3 +1,13 @@
+train (t-50h7dcrhew81an8wrbgk0og8l) {
+  utterance ("[g:GenreEnum] (중국)[v:GenreEnum:무협]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437521416)
+}
+train (t-54pnrauk9m7cvvff272rmr3u7) {
+  utterance ("[g:GenreEnum] (무서운)[v:GenreEnum:범죄]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437293111)
+}
 train (t-56giphvgp0my2wqmxplhdwwpq) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 빠른 시간순 정렬\n")
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
@@ -13,6 +23,21 @@ train (t-5bedsvqbfwjihcm7jxaiq4bkc) {
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572370761134)
 }
+train (t-5dailwyoux5dmbtcyqndbnwih) {
+  utterance ("[g:GenreEnum] (아이랑 보기좋은)[v:GenreEnum:애니메이션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437260978)
+}
+train (t-5dtjff9ni2gq8t2gpmryaq57w) {
+  utterance ("[g:RoomPropertyEnum] (싸운드엑쓰)[v:RoomPropertyEnum:SOUNDX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434829168)
+}
+train (t-5f0qem91qjvg4jrsgl4plgf3t) {
+  utterance ("[g:GenreEnum] (사탄)[v:GenreEnum:컬트]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436308755)
+}
 train (t-5igr4pnomneh876jvhfo467nw) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (빅 2)[v:MovieName] (빼줘)[v:ExceptExpression:true]\n")
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
@@ -22,6 +47,26 @@ train (t-5l9a6t0msnbq5ax2s9mc3a67k) {
   utterance ("[g:Brand] (씨쥐비)[v:Brand:cgv]")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
   last-modified (1572425550709)
+}
+train (t-5mnt30sn8eaeqflbegvs0tu63) {
+  utterance ("[g:RoomPropertyEnum] (필름쏘싸이어티)[v:RoomPropertyEnum:필름소사이어티]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433190238)
+}
+train (t-5oucpqcxr6zijkkto1rbw25ej) {
+  utterance ("[g:GenreEnum] (애니메이션)[v:GenreEnum:애니메이션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437236547)
+}
+train (t-5pfo2ukf2wo065nk6d28b55us) {
+  utterance ("[g:GenreEnum] (서사)[v:GenreEnum:서사]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437580496)
+}
+train (t-5roiljix05ikf69ijsmrox0nu) {
+  utterance ("[g:GenreEnum] (남성적인)[v:GenreEnum:느와르]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436293635)
 }
 train (t-5x81qy8tkbqmlmf569j58edfw) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 인기많은 영화 말해줘\n")

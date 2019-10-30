@@ -1,12 +1,27 @@
+train (t-d2oatol7cgtsqp2vm76l30rxz) {
+  utterance ("[g:GenreEnum] (에스에프)[v:GenreEnum:SF]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437366995)
+}
 train (t-d3yzro0ttp23l55yo93ijx1aj) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (베일리 어게인)[v:MovieName] (빼줘)[v:ExceptExpression:true]\n")
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
   last-modified (1572419946262)
 }
+train (t-diffwwg23ymwqw6yuwv8i854a) {
+  utterance ("[g:GenreEnum] (부시는)[v:GenreEnum:액션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437423959)
+}
 train (t-djyvjj2gjva38wolc5n991r1f) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (코엑스)[v:TheaterName] (메가박스)[v:Brand:megabox]를 (빼줘)[v:ExceptExpression:true]")
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
   last-modified (1572422007293)
+}
+train (t-dkk4gsghy4r41lsjaxicx74p5) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼에쓰)[v:RoomPropertyEnum:'슈퍼 S']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434684711)
 }
 train (t-dm9hy1j182dm956ob1h4836xr) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯시)[v:Brand:lottecinema]는 (제외)[v:ExceptExpression:true]할래\n")
@@ -22,6 +37,21 @@ train (t-dt65urot7b8lc5unn1kvx4hs1) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (씨쥐비)[v:Brand:cgv](만)[v:ExceptExpression:false] 보고 싶어")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572370860394)
+}
+train (t-dtm4rbkx9iabe4k54xm7hp3u1) {
+  utterance ("[g:GenreEnum] (드라마)[v:GenreEnum:드라마]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572435542458)
+}
+train (t-du50qjmxlunddpapfqzn79sin) {
+  utterance ("[g:GenreEnum] (따듯한)[v:GenreEnum:드라마]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572435548420)
+}
+train (t-dumfouoai8kjfm1kqg1uq39yh) {
+  utterance ("[g:RoomPropertyEnum] (알트)[v:RoomPropertyEnum:ART]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435337876)
 }
 train (t-dupwc87e0mrnlgz1b9ctxuqtw) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (날씨의 아이)[v:MovieName]만 알고 싶어\n")

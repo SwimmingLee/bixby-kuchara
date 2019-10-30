@@ -3,6 +3,11 @@ train (t-b2pkzx0wben2tow1drp72oz69) {
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
   last-modified (1572377300074)
 }
+train (t-b3h359k6qwgvnavramio0csio) {
+  utterance ("[g:RoomPropertyEnum] (스피얼엑쓰)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434890250)
+}
 train (t-b4l9z6kgbjlv6m9v9q0uci433) {
   utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (한시)[v:time.DetachedTime] (이후)[v:IsStartTime:true]로 시작되는 영화가 뭐야")
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
@@ -18,15 +23,30 @@ train (t-bdfm3kp3a49hk878m4dqcaa36) {
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
   last-modified (1572349742366)
 }
+train (t-bejinzuqf7kuzxroobw9owvq8) {
+  utterance ("[g:GenreEnum] (역사)[v:GenreEnum:서사]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437584769)
+}
 train (t-bhqxwhj64to6i8d4kwvsuw2x9) {
   utterance ("[g:FindMovieWithLocation] (서울 압구정)[v:geo.SearchTerm] 주변영화관 시간표 보여줘")
   plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
   last-modified (1572409071169)
 }
+train (t-bhsv3mfz3t8qoi2q5xzguua36) {
+  utterance ("[g:RoomPropertyEnum] (스피얼엑스)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434898120)
+}
 train (t-bjt4vi90bwpggtnyx4mrvlxp5) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (CGV)[v:Brand:cgv] (성신여대입구)[v:TheaterName]에서는 (안볼래)[v:ExceptExpression:true]\n")
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
   last-modified (1572421967954)
+}
+train (t-bmhx7l2m6w66xssh2tvf3mk8h) {
+  utterance ("[g:GenreEnum] (씁쓸한데 웃긴)[v:GenreEnum:블랙코미디]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437615153)
 }
 train (t-bnk9lcyxu1tlfuxlsvi655ld4) {
   utterance ([g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 상영관)
@@ -38,6 +58,16 @@ train (t-bnknu0d0ei0rw0s4pg5rmar3p) {
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
   last-modified (1572415710845)
 }
+train (t-bs0o7u0byzwqs4e2md3bo05nd) {
+  utterance ("[g:GenreEnum] (풍자)[v:GenreEnum:블랙코미디]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437599359)
+}
+train (t-bs6al9do3otbq0ivqcnpbe1ni) {
+  utterance ("[g:GenreEnum] (가족적인)[v:GenreEnum:가족]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437148640)
+}
 train (t-bs8xlemyphn74dp6k7h7wyjn7) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 영화 순위 보여주삼\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
@@ -47,4 +77,9 @@ train (t-bvkcrvjb4jpq5rpp8ongct9hu) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (쇼생크 탈출)[v:MovieName] (없애)[v:ExceptExpression:true]\n")
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
   last-modified (1572419993430)
+}
+train (t-bvu80b9ilbhtnjzhhilujw2me) {
+  utterance ("[g:GenreEnum] (실험적인)[v:GenreEnum:실험]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437620260)
 }

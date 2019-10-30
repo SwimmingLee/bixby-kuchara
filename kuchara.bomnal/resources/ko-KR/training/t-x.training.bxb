@@ -8,6 +8,11 @@ train (t-x6t4efdraxug73hs05xnaacgs) {
   plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
   last-modified (1572419831218)
 }
+train (t-x8w1erw2k4iq35yuypxshonli) {
+  utterance ("[g:GenreEnum] (어드벤철)[v:GenreEnum:모험]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436175639)
+}
 train (t-x8znjg0gyljzb1mw07kpaw6sd) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (CGV)[v:Brand:cgv] (구로점)[v:TheaterName] (빼고)[v:ExceptExpression:true] 보여줘\n")
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
@@ -17,4 +22,9 @@ train (t-xt3bzqyc5h3wmy7cmlh7iaalm) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (아일라)[v:MovieName]를 (제외)[v:ExceptExpression:true]\n")
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
   last-modified (1572419972330)
+}
+train (t-xyzjw0mkmp9l06mht2a64l082) {
+  utterance ("[g:RoomPropertyEnum] (더부티크)[v:RoomPropertyEnum:더부티크]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572438410809)
 }

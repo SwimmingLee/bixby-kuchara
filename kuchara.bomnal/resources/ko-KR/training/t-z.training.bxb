@@ -3,6 +3,26 @@ train (t-z5ql2do8y5wvwvyemxg6u2xpa) {
   plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
   last-modified (1572409605552)
 }
+train (t-z5qol9yg3go23htk0dvoe3g53) {
+  utterance ("[g:GenreEnum] (월드투어)[v:GenreEnum:공연실황]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437698976)
+}
+train (t-z6eqq4e17tx6rthmrdcm1lzab) {
+  utterance ("[g:RoomPropertyEnum] (엠엑쓰)[v:RoomPropertyEnum:MX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433134486)
+}
+train (t-z6wulqw6ro7lbcwxaypvnyu9w) {
+  utterance ("[g:GenreEnum] (써스펜스)[v:GenreEnum:서스펜스]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437567858)
+}
+train (t-z8en0e0t6fs8378rn0nhddf7t) {
+  utterance ("[g:RoomPropertyEnum] (골드클래쓰)[v:RoomPropertyEnum:'GOLD CLASS']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435045341)
+}
 train (t-zdqpg9es1ph1bra0oftorfbgo) {
   utterance ([g:FindMovieWithLocation] 주변 영화관에서 영화시간표 볼래)
   plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
@@ -17,4 +37,19 @@ train (t-zrdbrfk8iznlg7j9r1gzv1nza) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (조커)[v:MovieName]만 찾아줘라\n")
   plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
   last-modified (1572419778128)
+}
+train (t-zrkqf3dy5pwnbzryqg9nrbr8p) {
+  utterance ("[g:RoomPropertyEnum] (쓰리디)[v:RoomPropertyEnum:3D]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435675991)
+}
+train (t-zt0vhrii7qhh5k4xctumxpwyv) {
+  utterance ("[g:GenreEnum] (가족이랑 볼)[v:GenreEnum:코미디]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436641380)
+}
+train (t-zwl37gdoutt49zelhgggu2zpl) {
+  utterance ("[g:RoomPropertyEnum] (에멕스)[v:RoomPropertyEnum:MX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433126459)
 }

@@ -1,3 +1,18 @@
+train (t-q1y3lkm3f9zzmd0ija6v4e8by) {
+  utterance ("[g:GenreEnum] (아이랑 보는)[v:GenreEnum:애니메이션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437266644)
+}
+train (t-q4zlau20nlcum4lq4mgo627gn) {
+  utterance ("[g:GenreEnum] (퐌타지)[v:GenreEnum:판타지]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572435592585)
+}
+train (t-qq1voyfckd5qbmj50pmeykl7j) {
+  utterance ("[g:RoomPropertyEnum] (필름소싸이어티)[v:RoomPropertyEnum:필름소사이어티]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433179763)
+}
 train (t-qts94ijxozchjfp5pbvgk4dm6) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 딴 영화는 없어?\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)

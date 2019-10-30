@@ -1,3 +1,13 @@
+train (t-n41rflxysy317wycq8hk9y20w) {
+  utterance ("[g:RoomPropertyEnum] (더부티크에쓰)[v:RoomPropertyEnum:더부티크S]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433409125)
+}
+train (t-n5unr5ml9qcab6rm2arm0411x) {
+  utterance ("[g:GenreEnum] (미스테리)[v:GenreEnum:미스터리]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437192308)
+}
 train (t-n8lx2jakb3j4mdtqaud81mugw) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 재미난 영화가 있어?\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
@@ -13,8 +23,38 @@ train (t-nnrqjn3qqxgmj06stvx6eon41) {
   plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
   last-modified (1572411914472)
 }
+train (t-npdru5fq1kqiqjeq9eg6terx0) {
+  utterance ("[g:GenreEnum] (웃긴)[v:GenreEnum:코미디]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436591908)
+}
+train (t-ntjha096z6gj5ey1yin1dpza2) {
+  utterance ("[g:GenreEnum] (가족이랑 볼)[v:GenreEnum:가족]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437179070)
+}
+train (t-nuq4l8v2hjn2e72buzd0gd8zj) {
+  utterance ("[g:GenreEnum] (공포)[v:GenreEnum:스릴러]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436231184)
+}
+train (t-nvayaxdoozfw4ixo3e7iy582m) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼에스)[v:RoomPropertyEnum:'슈퍼 S']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434697703)
+}
+train (t-nvye6tzygja7kqunhz9pvz1e6) {
+  utterance ("[g:GenreEnum] (로맨스코메디)[v:GenreEnum:멜로/로맨스]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436076351)
+}
 train (t-nx3nnrf274oypx2yzcfupvv63) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (10시 30분)[v:time.DetachedTime] 쯤 볼 수 있는 영화 보여줘")
   plan (jYy9CsIwFIVP6s8bOLkJDi55B8G6lQ4tOMfmQi5NE0nT4uObdBGKg3e553K++2GPUz91RgUln35wysqWB6qDpkC66QzpyRIuK+bONlKo/Mz04Gjyy9XpluvmL91x5lnGVMibipSJ8v0KNI7sHc4rQaV6+oEdvg6KKpszgB0ECmywTQkpiyULYLnyFGmn7gM=)
   last-modified (1572377186039)
+}
+train (t-nxvq1s20nuxmdewzdcravw07r) {
+  utterance ("[g:RoomPropertyEnum] (씨네드셰프)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435071914)
 }

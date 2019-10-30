@@ -1,3 +1,23 @@
+train (t-20h014r35ldcyzk1a5gc3w8a1) {
+  utterance ("[g:GenreEnum] (공포)[v:GenreEnum:공포]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572435966923)
+}
+train (t-2f0hfpkgwv07mrqhcnthplypn) {
+  utterance ("[g:RoomPropertyEnum] (쓰크린엑쓰)[v:RoomPropertyEnum:SCREENX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434792439)
+}
+train (t-2fibzn1ga9d59w8yd6rddev0g) {
+  utterance ("[g:GenreEnum] (서스펜스)[v:GenreEnum:서스펜스]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437558892)
+}
+train (t-2gi0he8qv2ja99knla0cd0wri) {
+  utterance ("[g:GenreEnum] (힐링)[v:GenreEnum:드라마]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572435571324)
+}
 train (t-2w95vr7dp3myau8nwe1aio4np) {
   utterance ("[g:Brand] (롯시)[v:Brand:lottecinema]\n")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)

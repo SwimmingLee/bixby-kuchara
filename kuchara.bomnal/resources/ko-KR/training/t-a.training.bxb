@@ -3,6 +3,16 @@ train (t-a0up2i4e58w5q4gwzbqjc79d6) {
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349512925)
 }
+train (t-a14s1xuvgoxrfga5q6lqm3626) {
+  utterance ("[g:GenreEnum] (써부)[v:GenreEnum:서부]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572435951284)
+}
+train (t-a1ho9fo6zuumgdutk0x99msns) {
+  utterance ("[g:RoomPropertyEnum] (씨네패미리)[v:RoomPropertyEnum:씨네패밀리]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434329117)
+}
 train (t-a38hhmtc83kibq3lww6nkcugx) {
   utterance ([g:RestructureTimeViewToTheaterView] 영화관 순으로 보여줘)
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
@@ -18,8 +28,43 @@ train (t-a9fq78niv8d8wiqnrunjsw5w1) {
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
   last-modified (1572349700236)
 }
+train (t-a9s03x72vqfivvxqt0nl5wdvh) {
+  utterance ("[g:RoomPropertyEnum] (수퍼플렉스쥐)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434416612)
+}
+train (t-aa2cn1w7kp3g1iivo1ljwu99e) {
+  utterance ("[g:GenreEnum] (멜로)[v:GenreEnum:멜로/로맨스]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436083646)
+}
 train (t-adlx3wtfhcbe3zaiapnph580g) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 볼 수 있는 영화 좀 알려주라\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349454088)
+}
+train (t-ajrvdsm5wjfvaigxpb1ty702f) {
+  utterance ("[g:RoomPropertyEnum] (쓰피얼엑스)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434967152)
+}
+train (t-anktvuyrwgfesuqkhtyxniu8n) {
+  utterance ("[g:RoomPropertyEnum] (스카이빡스)[v:RoomPropertyEnum:SKYBOX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435361772)
+}
+train (t-aoz9y89f86h9ofgfd70zsq3l1) {
+  utterance ("[g:GenreEnum] (액쎤)[v:GenreEnum:액션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437406622)
+}
+train (t-asdac429n5r9dvvevrgg45onv) {
+  utterance ("[g:GenreEnum] (엄빠주의)[v:GenreEnum:에로]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437553962)
+}
+train (t-auuwhtulr2k0j7c1mpl3eq92x) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼플렉스지)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434362235)
 }

@@ -23,10 +23,20 @@ train (t-u7cbi6k3p7bxnb2kdipczxvs1) {
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
   last-modified (1572349589326)
 }
+train (t-u7xv7n3ul1f1187ghx2r9h1za) {
+  utterance ("[g:RoomPropertyEnum] (더부티크에스)[v:RoomPropertyEnum:더부티크S]")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433397316)
+}
 train (t-uaoypy6cu2ggucwr5r70k95es) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (로떼시네마)[v:Brand:lottecinema](만)[v:ExceptExpression:false] 알려줘")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572374314297)
+}
+train (t-udlqz271mmqc875x3474wx60a) {
+  utterance ("[g:RoomPropertyEnum] (스카이박스)[v:RoomPropertyEnum:SKYBOX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435347294)
 }
 train (t-ugxapmuxjqee26j6nj90ygsh4) {
   utterance ("[g:GenreEnum] (무서운)[v:GenreEnum:공포]")
@@ -37,6 +47,16 @@ train (t-uik1pxzjq6899n1nnyveom1fb) {
   utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 따른 영화관 보여줘\n")
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
   last-modified (1572349597023)
+}
+train (t-ukx2zhx9lg1mquqhrwml4yg56) {
+  utterance ("[g:GenreEnum] (애니)[v:GenreEnum:애니메이션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437246424)
+}
+train (t-uridspkac2mizhbf3hzxv9j3d) {
+  utterance ("[g:RoomPropertyEnum] (샤롯떼)[v:RoomPropertyEnum:샤롯데]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433743740)
 }
 train (t-uxs9msk9eu3g5u64h7uoy5rlf) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 빠른 시간순서 위주로 보여줄래?\n")

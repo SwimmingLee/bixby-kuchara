@@ -3,15 +3,35 @@ train (t-w0hq8bdnuhqq09hlm8xdpodh3) {
   plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)
   last-modified (1572420836108)
 }
+train (t-w0its3bl1qfm1ioqy4jqxddut) {
+  utterance ("[g:RoomPropertyEnum] (컴폿트)[v:RoomPropertyEnum:컴포트]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433207008)
+}
 train (t-w3s04itg4xs87arg41ourct0p) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (건대입구)[v:TheaterName] (시지비)[v:Brand:cgv]는 (제외)[v:ExceptExpression:true]해줘")
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
   last-modified (1572413712781)
 }
+train (t-w7j1dmoiuh864bldkvei5cs2s) {
+  utterance ("[g:RoomPropertyEnum] (더부띠크)[v:RoomPropertyEnum:더부티크]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433313976)
+}
+train (t-w7k3tv9elirrb4fzbony9aw4c) {
+  utterance ("[g:GenreEnum] (신기한)[v:GenreEnum:판타지]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572435614106)
+}
 train (t-wbhcprg8c1e6w9x5yp6ip19vi) {
   utterance ("[g:Brand] (시지브이)[v:Brand:cgv]\n")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
   last-modified (1572425587674)
+}
+train (t-wdkp27ffc5x90ozrpyh5ts4al) {
+  utterance ("[g:RoomPropertyEnum] (아이맥스)[v:RoomPropertyEnum:IMAX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434729053)
 }
 train (t-wfadtg2wcstiwte5o7yqkvudx) {
   utterance ("[g:FindMovieWithLocation] (명동역)[v:geo.SearchTerm] 근처 영화관의 시간표를 알고 싶어")
@@ -38,8 +58,23 @@ train (t-wlnxtxwidqnv2rvl9rcthmncc) {
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
   last-modified (1572349636045)
 }
+train (t-wsjbs46zh5r5x1q3r8w36z8yt) {
+  utterance ("[g:RoomPropertyEnum] (필름소사이어티)[v:RoomPropertyEnum:필름소사이어티]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572438395665)
+}
 train (t-wtjd79fg02b64zw52wx8xb3d4) {
   utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (따듯한)[v:GenreEnum:드라마] 영화 보여줘")
   plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQQFMMlnXNK80l2VpmBkYGJiDJAKRBEAKYwKIMAA==)
   last-modified (1572414051462)
+}
+train (t-wwy3rlivlohj7igxrt5sru0d9) {
+  utterance ("[g:GenreEnum] (때려뿌시는)[v:GenreEnum:액션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437447267)
+}
+train (t-wxibb0c7rbxrk79lh7d6bwdfp) {
+  utterance ("[g:GenreEnum] (공영실항)[v:GenreEnum:공연실황]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437681816)
 }

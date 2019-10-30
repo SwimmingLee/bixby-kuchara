@@ -1,3 +1,8 @@
+train (t-y5g73ex2ie07c4aqkwuk62k4q) {
+  utterance ("[g:GenreEnum] (로맨스코미디)[v:GenreEnum:멜로/로맨스]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436346585)
+}
 train (t-y9oyam4a4nstj1j5jnz0wvniz) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (터미네이터)[v:MovieName]만 찾아줘\n")
   plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
@@ -22,4 +27,24 @@ train (t-ykyvp139ncg6f1cino82s8s43) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (프렌드존)[v:MovieName]만 보게 해줘\n")
   plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
   last-modified (1572419740540)
+}
+train (t-ymyhp3zzdn5szxfp30e6i9n1o) {
+  utterance ("[g:GenreEnum] (아이랑 볼)[v:GenreEnum:애니메이션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437271999)
+}
+train (t-ypprlekh9l8txl9mime6ysklr) {
+  utterance ("[g:RoomPropertyEnum] (쓰피어엑쓰)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434908579)
+}
+train (t-yqyebn874t8yaba5q26dvnzra) {
+  utterance ("[g:RoomPropertyEnum] (시네더쉐프)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435830531)
+}
+train (t-yuca98sya40yvf4sbjxc92cn2) {
+  utterance ("[g:RoomPropertyEnum] (프리미암)[v:RoomPropertyEnum:PREMIUM]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435181012)
 }

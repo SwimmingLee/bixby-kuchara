@@ -8,15 +8,55 @@ train (t-f0t883hsnkp8ztheb6epsax6s) {
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572373856429)
 }
+train (t-f2jn3osa5mhyz0k9xilrjc7ki) {
+  utterance ("[g:RoomPropertyEnum] (샤로떼 프라이빗)[v:RoomPropertyEnum:'샤롯데 프라이빗']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434250521)
+}
+train (t-f31w0midkhvith3djwigv7cdx) {
+  utterance ("[g:GenreEnum] (쓰릴러)[v:GenreEnum:범죄]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437304821)
+}
 train (t-fcyy1w56syld6f0i8q9390io9) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (CGV)[v:Brand:cgv](만)[v:ExceptExpression:false] 보여줘")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572370625336)
 }
+train (t-fd947tqxwg1bvniat3a29lt4f) {
+  utterance ("[g:RoomPropertyEnum] (더부띠끄에쓰)[v:RoomPropertyEnum:더부티크S]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433460219)
+}
+train (t-fecl7le6sd9thvo2if4f06vdf) {
+  utterance ("[g:GenreEnum] (부수는)[v:GenreEnum:액션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437418301)
+}
+train (t-ff9nmcyldgmk4vl67gsf9cau3) {
+  utterance ("[g:RoomPropertyEnum] (스크린엑스)[v:RoomPropertyEnum:SCREENX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434784767)
+}
 train (t-ffnnz1cd7ril1xaozp4990ksb) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 빠른순으로 찾아줘\n")
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
   last-modified (1572349801833)
+}
+train (t-fhvxct4jzf2tsjf8tadd192b5) {
+  utterance ("[g:RoomPropertyEnum] (스피어엑쓰)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434869560)
+}
+train (t-fjsk34pl46j4bksjibpdsnte5) {
+  utterance ("[g:RoomPropertyEnum] (스카이빡쓰)[v:RoomPropertyEnum:SKYBOX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435375171)
+}
+train (t-fp0lje5p3j4wqku3nbhiks0me) {
+  utterance ("[g:GenreEnum] (무횹)[v:GenreEnum:무협]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437515415)
 }
 train (t-fvl5x02n3dyktx27q8ukeysco) {
   utterance ("[g:RestructureTimeViewToTheaterView] 근처 상영관 위주로 볼래\n")

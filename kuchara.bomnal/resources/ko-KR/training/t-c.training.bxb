@@ -1,7 +1,27 @@
+train (t-c26i49z8ifttbqazvtefgj3zo) {
+  utterance ("[g:RoomPropertyEnum] (썹팩)[v:RoomPropertyEnum:SUBPAC]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435213310)
+}
+train (t-c6h7w0hhxould0zwke0faenx3) {
+  utterance ("[g:GenreEnum] (블랙코미디)[v:GenreEnum:블랙코미디]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437594767)
+}
+train (t-camf8j58eyn5jt99jfe7ovrk9) {
+  utterance ("[g:RoomPropertyEnum] (수퍼에스)[v:RoomPropertyEnum:'슈퍼 S']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434721902)
+}
 train (t-cbrlcr9x656etklcifxh8kwlg) {
   utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (7시)[v:time.DetachedTime] 쯤 볼 수 있는 영화 보여줘")
   plan (jYy7DsIwDEWd8vgDJmYGlvwDErBVHRqJ2TSWYrVNUJpGfD5OFyRgwIuvdY8PbOHQz53DiPoeRo+DNo4wUWyipUi27RzZeSA4fmBXHoSqQ2a6cXKGRzp5a1zT/mvcZ846yZ8+S10El+cj0jRx8F+OGnv6ge3eDkpYzAWADSioYAVrSSBZLVkBLFeZSrZ0Lw==)
   last-modified (1572377132261)
+}
+train (t-cdctk2bel35gpvnewq9lgxd9a) {
+  utterance ("[g:RoomPropertyEnum] (더부띠크에쓰)[v:RoomPropertyEnum:더부티크S]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433433698)
 }
 train (t-cdlc82hvp5u9dwwnna84e6an9) {
   utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (12시)[v:time.DetachedTime] 즈음 (가능한)[v:IsStartTime:true] 영화 볼래")
@@ -13,6 +33,11 @@ train (t-cj62lk2t5h4zp61ldf48djz78) {
   plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
   last-modified (1572419872722)
 }
+train (t-cln8l4pa6r4e071abi3kii1b9) {
+  utterance ("[g:GenreEnum] (전쟁)[v:GenreEnum:전쟁]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437205231)
+}
 train (t-cndckzj2h67p9orqucu3xw86y) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (메가박스)[v:Brand:megabox](만)[v:ExceptExpression:false]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
@@ -22,6 +47,11 @@ train (t-cqhhnxp63hiw92zsmgsu9q0mw) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (12시)[v:time.DetachedTime] 즈음 (가능한)[v:IsStartTime:true] 영화 볼래")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
   last-modified (1572378323770)
+}
+train (t-cydxofor8hi9f5pboh1a28gc3) {
+  utterance ("[g:GenreEnum] (가족)[v:GenreEnum:코미디]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436604478)
 }
 train (t-cz6lszwmchvbrobe1cqpfu824) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (나쁜녀석들)[v:MovieName]만 보여줘봐\n")

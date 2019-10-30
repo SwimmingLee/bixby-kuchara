@@ -3,13 +3,48 @@ train (t-la183uippvu4m1a2v6dgqb4fm) {
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
   last-modified (1572375302419)
 }
+train (t-lbmadl9ejx0nae71yenla2tgd) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼플렉쓰쥐)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434511145)
+}
+train (t-lcscniu8cwlfxsxhc7pjrs16a) {
+  utterance ("[g:GenreEnum] (코미디)[v:GenreEnum:코미디]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436558996)
+}
+train (t-lcyr4xjfc0g12kqpg4ty10xit) {
+  utterance ("[g:RoomPropertyEnum] (샤롯데)[v:RoomPropertyEnum:샤롯데]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572438438061)
+}
 train (t-ldxckybt0xt1xix84phc7nss1) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 빠른 것부터 알고싶어\n")
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
   last-modified (1572349793106)
 }
+train (t-leucannzqxzyab8kb42xhhp4v) {
+  utterance ("[g:RoomPropertyEnum] (더부띠끄)[v:RoomPropertyEnum:더부티크]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433322833)
+}
+train (t-lohly7j08v3tryvyyj8ccatiq) {
+  utterance ("[g:RoomPropertyEnum] (템퍼시네마)[v:RoomPropertyEnum:'TEMPUR CINEMA']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435148814)
+}
 train (t-lpi5u9d6kgoanckubbwudady7) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯씨)[v:Brand:lottecinema](만)[v:ExceptExpression:false] 보고 싶다")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572373811262)
+}
+train (t-lrf8yogm2zuu2alnioi5o9ec6) {
+  utterance ("[g:RoomPropertyEnum] (엠엑스)[v:RoomPropertyEnum:MX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572433116796)
+}
+train (t-lwh46chdnx3vpi3x5xq3pyilw) {
+  utterance ("[g:RoomPropertyEnum] (씨네패밀리)[v:RoomPropertyEnum:씨네패밀리]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572438455008)
 }

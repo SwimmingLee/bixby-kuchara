@@ -3,6 +3,11 @@ train (t-o1td56nplzr8ql8ohuteha2mc) {
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
   last-modified (1572375527130)
 }
+train (t-o41t9ogaoy6zbj2vzw93puksn) {
+  utterance ("[g:GenreEnum] (블코)[v:GenreEnum:블랙코미디]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437603741)
+}
 train (t-oapjxmzo8qsw4qeln5otw4kf6) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (가장 보통의 연애)[v:MovieName]만 보고 싶어")
   plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
@@ -13,13 +18,48 @@ train (t-od1nhwhvusy7d3bv18yrca1ue) {
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
   last-modified (1572425603921)
 }
+train (t-odly87wqfdi56vzeaxaum6bxk) {
+  utterance ("[g:RoomPropertyEnum] (스트레스)[v:RoomPropertyEnum:'슈퍼 S']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572438538511)
+}
 train (t-oj7zlxs8u5yta6105dw6lu0vo) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (인생은 아름다워)[v:MovieName]는 (싫어)[v:ExceptExpression:true]\n")
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
   last-modified (1572420019249)
 }
+train (t-okanykv0xz2qjfszg7jfjazpv) {
+  utterance ("[g:GenreEnum] (악마)[v:GenreEnum:컬트]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436334892)
+}
+train (t-ol941dukbziuhvnn5l7x5pgl0) {
+  utterance ("[g:GenreEnum] (따뜻한)[v:GenreEnum:드라마]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572435561027)
+}
+train (t-oozrwn4jql2cmhm382kx02iwx) {
+  utterance ("[g:GenreEnum] (가족이랑 보는)[v:GenreEnum:가족]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437172920)
+}
+train (t-op87evdwt6759wu9a9ui2if02) {
+  utterance ("[g:GenreEnum] (만화)[v:GenreEnum:애니메이션]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437241737)
+}
 train (t-opv4yz7xkyzz3depphhm7g5w1) {
   utterance ("[g:RestructureTimeViewToTheaterView] 근처 위주로 정렬해줘\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
   last-modified (1572410175140)
+}
+train (t-oqekvkpw8tbn1iapi1u74w8lr) {
+  utterance ("[g:RoomPropertyEnum] (섭팩)[v:RoomPropertyEnum:SUBPAC]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435271268)
+}
+train (t-oweqa9pu2s1yg12pbhmzvjpw6) {
+  utterance ("[g:GenreEnum] (두근두근)[v:GenreEnum:멜로/로맨스]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436113417)
 }

@@ -1,7 +1,37 @@
+train (t-006ml6xln5x807xrk5jirbqiq) {
+  utterance ("[g:RoomPropertyEnum] (수퍼플렉스지)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434401166)
+}
+train (t-05lv1gjcjfwdj9w67pd335fa5) {
+  utterance ("[g:RoomPropertyEnum] (시네앤리빙룸)[v:RoomPropertyEnum:씨네앤리빙룸]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435283966)
+}
+train (t-06d9toygsjm870drtme09jirc) {
+  utterance ("[g:GenreEnum] (예술적인)[v:GenreEnum:실험]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437639009)
+}
 train (t-07fxurr5xsbqqgt0zv7oyzevx) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 상영작을 추천해줘\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349397680)
+}
+train (t-0b0euhsyk2whfhinyyvzkxppr) {
+  utterance ("[g:GenreEnum] (귀신)[v:GenreEnum:공포]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436002501)
+}
+train (t-0b9g35mwuqxnm8j2wy1o3uvpn) {
+  utterance ("[g:GenreEnum] (스릴러)[v:GenreEnum:스릴러]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436212712)
+}
+train (t-0bx5ctlatscxyu2abqp8w08y9) {
+  utterance ("[g:GenreEnum] (실험)[v:GenreEnum:실험]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437625309)
 }
 train (t-0gi4u2hahjq1sivlw2j26hrz0) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 영화를 보여줘\n")
@@ -28,6 +58,16 @@ train (t-0msl4ciqr5rt4vlivgexotkg4) {
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
   last-modified (1572422668983)
 }
+train (t-0nft2x91qc7plgiftk2x02x3a) {
+  utterance ("[g:GenreEnum] (뿌시는)[v:GenreEnum:전쟁]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437229722)
+}
+train (t-0ogllo533z8zptw5ztdy4smxg) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼플렉스 칠)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572438475392)
+}
 train (t-0oqivmdoa4arvhzh627n7ry36) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (오후 2시)[v:time.DetachedTime] 이후에 (시작하는)[v:IsStartTime:true] 거 뭐 있어")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
@@ -37,4 +77,9 @@ train (t-0p38mnqnbi6er6c6qen25nfi6) {
   utterance ("[g:Brand] (롯씨)[v:Brand:lottecinema]\n")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
   last-modified (1572425627936)
+}
+train (t-0ywannhealh2r8mggjcw9fd8h) {
+  utterance ("[g:GenreEnum] (잔잔한)[v:GenreEnum:드라마]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572435577189)
 }

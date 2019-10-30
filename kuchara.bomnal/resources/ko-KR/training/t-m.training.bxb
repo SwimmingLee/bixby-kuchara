@@ -13,10 +13,35 @@ train (t-m3m3h77rgo50wkv66lg7ucpjm) {
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
   last-modified (1572376928219)
 }
+train (t-m4jjuyok81udsnh9n5pwiplso) {
+  utterance ("[g:RoomPropertyEnum] (씨네더셰프)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435122560)
+}
+train (t-m650jj782aeag0vqy1kkerkfy) {
+  utterance ("[g:RoomPropertyEnum] (쓰피얼엑쓰)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434959209)
+}
 train (t-m97n7wyt3bamuguksd9n814xo) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] (서면)[v:geo.SearchTerm]에 영화 차자도")
   plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)
   last-modified (1572420713940)
+}
+train (t-ma1l4exvjk79atahrdqc7l4wl) {
+  utterance ("[g:GenreEnum] (엑소시스트)[v:GenreEnum:컬트]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436972349)
+}
+train (t-mb0k98ioylz859v0nmvutxi8i) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼플렉스쥐)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434378450)
+}
+train (t-mbmybgyoyzjbpq1jio0g4lvms) {
+  utterance ("[g:RoomPropertyEnum] (시네드쉐프)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435103198)
 }
 train (t-mbrnu3c3x1beziivtiyuydj6q) {
   utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 다른 데 봐봐\n")
@@ -28,10 +53,40 @@ train (t-md2fshsjj33yxenql812uenz9) {
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349417033)
 }
+train (t-mdcucm0qpr68ujlqkgxqmc5dk) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼플렉쓰지)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434499095)
+}
 train (t-mdpao6fa3wj1026wasbp5k9mo) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (우먼 인 할리우드)[v:MovieName] (안볼래)[v:ExceptExpression:true]\n")
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
   last-modified (1572420166488)
+}
+train (t-mfpxdajb4bx99qfpdlit81vvq) {
+  utterance ("[g:GenreEnum] (스릴러)[v:GenreEnum:범죄]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437311808)
+}
+train (t-mgfya815zzn4julf5wzouhntz) {
+  utterance ("[g:RoomPropertyEnum] (씨네더쉐프)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572435129780)
+}
+train (t-mhptyun1dyfa1819al2uqmrw7) {
+  utterance ("[g:GenreEnum] (로코)[v:GenreEnum:멜로/로맨스]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436024492)
+}
+train (t-mnsebkxjm2o103ck9oxr0p82z) {
+  utterance ("[g:GenreEnum] (에쎕)[v:GenreEnum:SF]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572437390769)
+}
+train (t-moksa8bli4nvz37beu7lwpr7c) {
+  utterance ("[g:RoomPropertyEnum] (스타리움)[v:RoomPropertyEnum:STARIUM]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572434841002)
 }
 train (t-mv7isvboig28fwg1y16sibkl6) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (세시)[v:time.DetachedTime] (넘어)[v:IsStartTime:true] 서 있는 것만 예매할래")

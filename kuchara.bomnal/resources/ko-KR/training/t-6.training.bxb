@@ -1,3 +1,13 @@
+train (t-6akv7o8tv7zzuzo16nukphbz0) {
+  utterance ("[g:GenreEnum] (추적)[v:GenreEnum:스릴러]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436225566)
+}
+train (t-6c8u7fkyt0xxhz5b5ptobfpgd) {
+  utterance ("[g:GenreEnum] (오컬트)[v:GenreEnum:컬트]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436322392)
+}
 train (t-6da3duin4ybwiuk18m56ip9ze) {
   utterance ("[g:RestructureTimeViewToTheaterView] 근처 영화관 순으로 보고 싶어\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
@@ -17,4 +27,9 @@ train (t-6tp0j45fscaibkwtndbnl97da) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (롯씨)[v:Brand:lottecinema] (월드타워)[v:TheaterName](만)[v:ExceptExpression:false] 보자")
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
   last-modified (1572421803295)
+}
+train (t-6zijli3zxu0de01g2bvcu0dzn) {
+  utterance ("[g:GenreEnum] (가족이랑 보는)[v:GenreEnum:코미디]\n")
+  plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
+  last-modified (1572436629986)
 }
