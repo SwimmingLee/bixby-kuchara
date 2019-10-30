@@ -54,13 +54,20 @@ result-view {
         template ("다른 영화관에서 볼래")
       }
       conversation-driver {
-        template ("다른 영화관 보여줘")
+        template ("시간 순으로 알려줘")
+      }
+      conversation-driver {
+        template ("#{value(this.theater[0].theaterInfo.brand)} 빼고 알려줘")
+      }
+      conversation-driver {
+        template ("11시 전에 끝나는 영화 알려줘")
+      }
+      conversation-driver {
+        template ("#{value(this.theater[0].theaterSchedule[0].roomProperty)} 제외해줘")
       }
     }
-    else {
-      conversation-driver {
-        template ("다른 영화 보여줘")
-      }
+    conversation-driver {
+      template ("다른 영화 보여줘")
     }
   }
 }

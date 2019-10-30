@@ -6,7 +6,7 @@ result-view {
     }
   }
   message {
-    template ("내용을 확인해주세요! 예매를 위해 영화관 사이트로 이동합니다.")
+    template ("내용을 확인해주세요! 예매를 원하시면 영화관 사이트로 이동합니다.")
   }
   render {
     layout {

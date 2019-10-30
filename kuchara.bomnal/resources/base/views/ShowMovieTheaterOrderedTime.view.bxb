@@ -6,7 +6,12 @@ result-view {
     }
   }
   message {
-    template ("근처 영화관에서 시작하는 영화 시간표를 알려드릴게요.")
+    if(exists(this.movieOrderedSchedule)) {
+      template ("근처 영화관에서 시작하는 영화 시간표를 알려드릴게요.")
+    }
+    else {
+      template ("이런! 조건에 맞는 영화가 없어요 :(")
+    }
   }
   render {
     layout {
@@ -35,26 +40,28 @@ result-view {
     }
   }
   conversation-drivers {
-    conversation-driver {
-      template ("#{value(this.movieOrderedSchedule[0].movie.movieName)}만 보여줘")
-    }
-    conversation-driver {
-      template ("#{value(this.movieOrderedSchedule[0].theaterInfo.theaterName)} 빼고 보여줘")
-    }
-
-    conversation-driver {
-      template ("#{value(this.movieOrderedSchedule[0].theaterInfo.brand)}만 보여줘 ")
-    }
-
-
-    conversation-driver {
-      template ("영화관 순으로 보여줘")
+    if(exists(this.movieOrderedSchedule)) {
+      conversation-driver {
+        template ("영화관 순으로 보여줘")
+      }
+      conversation-driver {
+        template ("#{value(this.movieOrderedSchedule[0].movie.movieName)}만 보여줘")
+      }
+      conversation-driver {
+        template ("#{value(this.movieOrderedSchedule[0].movie.genre)} 영화 빼고 보여줘")
+      }
+      conversation-driver {
+        template ("#{value(this.movieOrderedSchedule[0].movie.nation)}만 보여줘 ")
+      }
+      conversation-driver {
+        template ("#{value(this.movieOrderedSchedule[0].theaterSchedule.roomProperty)}만 보여줘 ")
+      }
+      conversation-driver {
+        template ("#{value(this.movieOrderedSchedule[0].theaterInfo.brand)} 빼고 알려줘 ")
+      }
     }
     conversation-driver {
       template ("다른 영화관 보여줘")
-    }
-    conversation-driver {
-      template ("11시 전에 끝나는 영화만 보여줘")
     }
   }
 }

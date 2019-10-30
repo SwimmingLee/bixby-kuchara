@@ -7,7 +7,7 @@ result-view {
     }
   }
   message {
-    if(size(this) > 0) {
+    if(exists(this.movie)) {
       template ("지금 볼 수 있는 #{value(this.movie.movieName)}의 상영 시간표에요.")
     }
     else {
@@ -35,27 +35,19 @@ result-view {
     }
   }
   conversation-drivers {
-    if(size(this) == 0) {
+    if(exists(this.movie)) {
       conversation-driver {
-        template ("다른 영화 보여줘")
+        template ("#{value(this.timeSchedule[0].theaterInfo.brand)} 빼고 알려줘")
+      }
+      conversation-driver {
+        template ("11시 전에 끝나는 영화 보여줘")
+      }
+      conversation-driver {
+        template ("#{value(this.timeSchedule[0].roomProperty)} 제외해줘")
       }
     }
-    else {
-      conversation-driver {
-        template ("CGV만 보여줘")
-      }
-      conversation-driver {
-        template ("메가박스만 보여줘")
-      }
-      conversation-driver {
-        template ("롯데시네마만 보여줘")
-      }
-      conversation-driver {
-        template ("11시 전에 끝나는 영화만 보여줘")
-      }
+    conversation-driver {
+      template ("다른 영화 보여줘")
     }
-    // conversation-driver {
-    //   template ("다른 영화관 보여줘")
-    // }
   }
 }
