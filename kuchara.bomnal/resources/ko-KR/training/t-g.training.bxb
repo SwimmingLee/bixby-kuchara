@@ -13,6 +13,11 @@ train (t-g4j7anmvbxuz46uwfs1469zy8) {
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
   last-modified (1572419893472)
 }
+train (t-gc9x69tufrlpv8jvqq5dtbg8b) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (두시 반)[v:time.DetachedTime] (이후)[v:IsStartTime:true]의 상영 시간표 띄워줘")
+  plan (lY/LCsIwEEWnWl8f4EZ3ohuF/oOggmCt0ILrsRloaJtIOi1+vk0WFqobN4HcnLlnAjPY5XWaocHgoUuFRZDIkiIjyJCI04xEXdBdchbqRhJse/BJFkzGvVnIzu6VSGQUh7DosecqZjRsmf+k6y+pEh/lRafIUitY9agrliRuWiqO2dQp14Zg2cgm4NYVHJDJSo+vp6GqsgWbXkGIOf3A5l0HMdpl3Y+m4MEAhuDDCMYwae/QJp5LPJd4AC7rTt/N+JZ9Aw==)
+  last-modified (1572460150537)
+}
 train (t-gce6myfwlwvf3cxu59e76h0k2) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (니나 내나)[v:MovieName]만 알려줘라\n")
   plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)

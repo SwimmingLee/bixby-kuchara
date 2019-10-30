@@ -68,6 +68,11 @@ train (t-1p0chbngat22nt44hdnrt14ls) {
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572374351975)
 }
+train (t-1qik1gyhuww3josxpbrfvzjz4) {
+  utterance ("[g:FindMovieWithLocation] 동네영화관에서 (혜화역)[v:geo.SearchTerm]에서 볼 수 있는 영화 시간표 알려줘")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572458039733)
+}
 train (t-1sg2vo4o6j04clatk3osp0nah) {
   utterance ("[g:GenreEnum] (무서운)[v:GenreEnum:공포]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

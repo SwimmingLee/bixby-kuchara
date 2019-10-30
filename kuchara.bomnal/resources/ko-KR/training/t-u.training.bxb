@@ -38,6 +38,11 @@ train (t-uaoypy6cu2ggucwr5r70k95es) {
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572374314297)
 }
+train (t-ubmm7rk5uk3xv90bd6bditiu6) {
+  utterance ("[g:FindMovieWithLocation] 동네영화관에서 (화곡 메가박스)[v:geo.SearchTerm] 시간표 찾을 수 있어?")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572459894997)
+}
 train (t-udlqz271mmqc875x3474wx60a) {
   utterance ("[g:RoomPropertyEnum] (스카이박스)[v:RoomPropertyEnum:SKYBOX]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

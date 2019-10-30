@@ -18,6 +18,11 @@ train (t-k57rkfjxlej2dlc6ezockjiac) {
   plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
   last-modified (1572455121038)
 }
+train (t-k6heh4igi9jj9g10estff67i7) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (프렌드 존)[v:MovieName] 상영 시간표 알려줘")
+  plan (lY1LCsIwFEVvbetnB47FmVDX4ECdWCtUcByTBw02CYTE9ZtmUKFFoZP3uffAwQq7l+cNs6x4GqVZW9ylosoKsiRq3pDwLT2ka0rzljSCT7J1ZGPXQWfSlg5a3GVVl1gP4NgetVfTnPv/znhcmfrt7Ylp3u3Iq0VvvRjOnDQamwHVecTNSO1qZz133hKWSDBDigw55liEHyFJYpLFJAFi9p1p2Hlo8AE=)
+  last-modified (1572459428804)
+}
 train (t-k8asx0rrw23tkxnyn15bu4kc1) {
   utterance ("[g:GenreEnum] (에세프)[v:GenreEnum:SF] \n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

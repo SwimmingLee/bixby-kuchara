@@ -8,6 +8,11 @@ train (t-y63hvx7lloynxzcsd0xfo2kxk) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572439398306)
 }
+train (t-y9h1kn4nv94q3wcxijximim8l) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (8시)[v:time.DetachedTime] (넘어)[v:IsStartTime:true] 서 하는 영화 시간표 알 수 있어?")
+  plan (lY/LCsIwEEWnWl8f4EZ3ohuF/oOggmCt0ILrsRloaJtIOi1+vk0WFqobN4HcnLlnAjPY5XWaocHgoUuFRZDIkiIjyJCI04xEXdBdchbqRhJse/BJFkzGvVnIzu6VSGQUh7DosecqZjRsmf+k6y+pEh/lRafIUitY9agrliRuWiqO2dQp14Zg2cgm4NYVHJDJSo+vp6GqsgWbXkGIOf3A5l0HMdpl3Y+m4MEAhuDDCMYwae/QJp5LPJd4AC7rTt/N+JZ9Aw==)
+  last-modified (1572460009464)
+}
 train (t-y9oyam4a4nstj1j5jnz0wvniz) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (터미네이터)[v:MovieName](만)[v:ExceptExpression:false] 찾아줘\n")
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
@@ -47,6 +52,11 @@ train (t-ymyhp3zzdn5szxfp30e6i9n1o) {
   utterance ("[g:GenreEnum] (아이랑 볼)[v:GenreEnum:애니메이션]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437271999)
+}
+train (t-ynhh0bscoswvrj22s76hz4ih9) {
+  utterance ("[g:FindMovieWithLocation] 동네영화관에서 (메가박스 분당점)[v:geo.SearchTerm] 상영 시간표 좀 알려줘")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572459898062)
 }
 train (t-ypprlekh9l8txl9mime6ysklr) {
   utterance ("[g:RoomPropertyEnum] (쓰피어엑쓰)[v:RoomPropertyEnum:SphereX]\n")

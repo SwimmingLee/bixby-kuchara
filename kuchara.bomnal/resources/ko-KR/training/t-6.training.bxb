@@ -1,3 +1,8 @@
+train (t-6491lhhqxscg28xf84bojpx2t) {
+  utterance ([g:FindMovieWithLocation] 주변에서 영화 시간표 찾아줘)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572458212526)
+}
 train (t-6618cfycnrfywj4rg72wm300s) {
   utterance ("[g:RoomPropertyEnum] (템포 시네마)[v:RoomPropertyEnum:'TEMPUR CINEMA']\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

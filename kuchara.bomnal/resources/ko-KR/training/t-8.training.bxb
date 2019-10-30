@@ -8,6 +8,11 @@ train (t-827tmymve2hnivftz4amg0h3o) {
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
   last-modified (1572421982196)
 }
+train (t-83dwm0xdkkajnopxfg0cgxngd) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (아홉시 반)[v:time.DetachedTime]  (넘은)[v:IsStartTime:true] 영화 시간표 보여줘")
+  plan (lY/LCsIwEEWnWl8f4EZ3ohuF/oOggmCt0ILrsRloaJtIOi1+vk0WFqobN4HcnLlnAjPY5XWaocHgoUuFRZDIkiIjyJCI04xEXdBdchbqRhJse/BJFkzGvVnIzu6VSGQUh7DosecqZjRsmf+k6y+pEh/lRafIUitY9agrliRuWiqO2dQp14Zg2cgm4NYVHJDJSo+vp6GqsgWbXkGIOf3A5l0HMdpl3Y+m4MEAhuDDCMYwae/QJp5LPJd4AC7rTt/N+JZ9Aw==)
+  last-modified (1572460186030)
+}
 train (t-83vk6d0cvbwvue1jekkwkkoet) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (람보)[v:MovieName]만 볼래")
   plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
@@ -32,6 +37,11 @@ train (t-8hf0ea22n7oxaz7c6fn3dlwi7) {
   utterance ("[g:RoomPropertyEnum] (사운드)[v:RoomPropertyEnum:SOUNDX]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572439454180)
+}
+train (t-8hfly4x0c33l68it1l52bjhrv) {
+  utterance ("[g:FindMovieWithLocation] 동네영화관에서 (수유 롯데시네마)[v:geo.SearchTerm] 시간표 보고 싶어")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572459892297)
 }
 train (t-8lfnlv0clx3o702joiysfxmbs) {
   utterance ("[g:RoomPropertyEnum] (아이맥쓰)[v:RoomPropertyEnum:IMAX]\n")

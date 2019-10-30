@@ -23,6 +23,16 @@ train (t-xbiuz3yjl1x8614j2okt7asnn) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572439461409)
 }
+train (t-xfh8j8hgbvvgck56dxu2m9fr5) {
+  utterance ("[g:FindMovieWithLocation] 동네영화관에서 (고속터미널 근처)[v:geo.SearchTerm] 영화관 시간표 보여줘라")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572459091142)
+}
+train (t-xgqtl9yjk5uxy8myu7n02nq15) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (빅 위시)[v:MovieName] 시간표 띄워줘")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572459257614)
+}
 train (t-xnnzhhwt38oze198j2fhkd8ya) {
   utterance ("[g:RoomPropertyEnum] (신의 샤프)[v:RoomPropertyEnum:'CINE de CHEF']\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

@@ -43,6 +43,11 @@ train (t-zetggg6n7lf4w05sr4ci09laa) {
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572349898852)
 }
+train (t-zg3rb9gpvbzk3wf2wsq7hqb6v) {
+  utterance ("[g:FindMovieWithLocation] 동네영화관에서 (평촌역)[v:geo.SearchTerm] 근처 상영 시간표 보여줄래?")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572459035554)
+}
 train (t-zocmxj3mn03zq7frq5cwgc3ui) {
   utterance ("[g:RoomPropertyEnum] (스크린)[v:RoomPropertyEnum:SCREENX]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

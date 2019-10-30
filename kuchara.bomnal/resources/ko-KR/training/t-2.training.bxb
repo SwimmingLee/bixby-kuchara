@@ -3,6 +3,11 @@ train (t-20h014r35ldcyzk1a5gc3w8a1) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572435966923)
 }
+train (t-25wlxgs2r148gtkr4qo0jqu63) {
+  utterance ([g:FindMovieWithLocation] 동네영화관에서 근처의 시간표 좀 띄워줘)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572457315098)
+}
 train (t-291h3t5p2hx4hzic2tf1ke8pk) {
   utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (우리나라)[v:IsDomestic:true] 꺼는 (싫어)[v:ExceptExpression:true]\n")
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCJpsCz2CU/N7W4JDOZQRRNCmI0yQ5mZWBkYGJgZmABshiAbBhEAGaoCgYA)
@@ -22,6 +27,11 @@ train (t-2gi0he8qv2ja99knla0cd0wri) {
   utterance ("[g:GenreEnum] (힐링)[v:GenreEnum:드라마]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572435571324)
+}
+train (t-2iv6njindddwabjigep4nvqxp) {
+  utterance ("[g:FindMovieWithLocation] 동네영화관에서 (CGV 동탄점)[v:geo.SearchTerm] 상영 시간표 찾아줘라")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572459893734)
 }
 train (t-2lnzqv1ytmn0sbwx81vaybj5i) {
   utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (써스펜쓰)[v:GenreEnum:서스펜스]는 (빼줘)[v:ExceptExpression:true]라\n")

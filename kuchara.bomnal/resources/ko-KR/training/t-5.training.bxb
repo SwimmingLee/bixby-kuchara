@@ -18,6 +18,11 @@ train (t-56vcyvnofuhgk2pq8vdesmys6) {
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiqYAop80J7EwMDIwMTADaQYgCwJhgBkqxwAA)
   last-modified (1572446668507)
 }
+train (t-578odheupgbopfq5cgm3shhrz) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (4시 30분)[v:time.DetachedTime] (이후)[v:IsStartTime:true] 시간표 보자")
+  plan (lY/LCsIwEEWnWl8f4EZ3ohuF/oOggmCt0ILrsRloaJtIOi1+vk0WFqobN4HcnLlnAjPY5XWaocHgoUuFRZDIkiIjyJCI04xEXdBdchbqRhJse/BJFkzGvVnIzu6VSGQUh7DosecqZjRsmf+k6y+pEh/lRafIUitY9agrliRuWiqO2dQp14Zg2cgm4NYVHJDJSo+vp6GqsgWbXkGIOf3A5l0HMdpl3Y+m4MEAhuDDCMYwae/QJp5LPJd4AC7rTt/N+JZ9Aw==)
+  last-modified (1572460013218)
+}
 train (t-581bmnt7q5p3olyxj8dl5b6tc) {
   utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 재미있는 영화 좀 보여줄래?)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)

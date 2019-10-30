@@ -8,6 +8,11 @@ train (t-r0jiq9iwgf30ey1akli8k2he8) {
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
   last-modified (1572415658114)
 }
+train (t-r2qq0cz3izusq1h3u6de2wfug) {
+  utterance ([g:FindMovieWithLocation] 근처에서 시간표 좀 띄워줘)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572458275743)
+}
 train (t-r7hlmwq9w2erqbo45ax0nt4sn) {
   utterance ("[g:GenreEnum] (19세)[v:GenreEnum:에로]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
@@ -18,6 +23,11 @@ train (t-r9efpmyjzts3d7n46z45sfj3q) {
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
   last-modified (1572445036554)
 }
+train (t-rb1ap7vq5j11aipzi0h55msii) {
+  utterance ([g:FindMovieWithLocation] 동네영화관에서 주변 영화 시간표 찾아줘)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572457199377)
+}
 train (t-rbkq4qeyekv6q5wk0ykp771ph) {
   utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (무서운)[v:GenreEnum:공포] 영화(만)[v:ExceptExpression:false] 보여줘\n")
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
@@ -27,6 +37,11 @@ train (t-rdn0acvhnayrinxcxjxno8onf) {
   utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 주변에 (혹성탈출)[v:MovieName] 시간표 알려줘")
   plan (lY3RCoIwFIZ/s6zeIOguuiqwZwiqq8xAoevlDjjSLeaUHr9NSsIgiLFxds53/g9TrG91ljPNwqsqJSvCVJQUa06aeJLlxOuCLsLkkWoEYdWDD6IwpNuZg9zuVvJUxEn0X/Dmd3BbnNhH+qy30BH/eZdfXsk761FlzAglsehRzsPPSkiTGF1nptaEeSOa0FhXuGOGnHT/uGuqKhcwgYcBfAwxQoCx/ePV8duOZw/a+35hJ57lA+AJ)
   last-modified (1572455392798)
+}
+train (t-re3ww3b9a4xwaf4jhgngz9fjg) {
+  utterance ([g:FindMovieWithLocation] 동네영화관에서 가까운 곳의 상영시간표를 알고싶어)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572457359458)
 }
 train (t-rfwsicet16nqyu6yo7jt8sd2w) {
   utterance ("[g:RoomPropertyEnum] (스타리옴)[v:RoomPropertyEnum:STARIUM]\n")

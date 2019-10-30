@@ -43,6 +43,11 @@ train (t-4cffi5k4hd8r74bk4qv2e3l38) {
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
   last-modified (1572425671094)
 }
+train (t-4cq37ry5dby328llhs4w5f2fc) {
+  utterance ("[g:FindMovieWithLocation] 동네영화관에서 (해운대)[v:geo.SearchTerm] 영화관 상영 시간표 알려줘")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572459059102)
+}
 train (t-4h3j2glxu25kdh50twjr6ixv1) {
   utterance ("[g:RoomPropertyEnum] (신의 패밀리)[v:RoomPropertyEnum:씨네패밀리]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
@@ -82,4 +87,9 @@ train (t-4u6n12gt6ctb0f2ah5g6y3a8u) {
   utterance ("[g:RoomPropertyEnum] (신안 리블룸)[v:RoomPropertyEnum:씨네앤리빙룸]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572439687549)
+}
+train (t-4vsw0kdb232w130fwzod2pl02) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (한시)[v:time.DetachedTime] (넘은)[v:IsStartTime:true] 영화 시간표 볼래")
+  plan (lY/LCsIwEEWnWl8f4EZ3ohuF/oOggmCt0ILrsRloaJtIOi1+vk0WFqobN4HcnLlnAjPY5XWaocHgoUuFRZDIkiIjyJCI04xEXdBdchbqRhJse/BJFkzGvVnIzu6VSGQUh7DosecqZjRsmf+k6y+pEh/lRafIUitY9agrliRuWiqO2dQp14Zg2cgm4NYVHJDJSo+vp6GqsgWbXkGIOf3A5l0HMdpl3Y+m4MEAhuDDCMYwae/QJp5LPJd4AC7rTt/N+JZ9Aw==)
+  last-modified (1572460045301)
 }

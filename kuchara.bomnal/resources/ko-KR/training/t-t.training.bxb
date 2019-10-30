@@ -53,6 +53,11 @@ train (t-teditjtk3td9nvrhaze8c9ezk) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572435173785)
 }
+train (t-tg0bam9wnjsuoy3hi1oum348f) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (날씨의 아이)[v:MovieName] 상영 시간표 보고 싶어")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572459211425)
+}
 train (t-tgc4z90fok68murg6bx4voeih) {
   utterance ("[g:GenreEnum] (어드벤처)[v:GenreEnum:모험]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
@@ -87,6 +92,11 @@ train (t-tn4xj1idohw2abjlnxqy5ciuu) {
   utterance ("[g:RoomPropertyEnum] (싸운드엑스)[v:RoomPropertyEnum:SOUNDX]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434823633)
+}
+train (t-tss5458m90q8path3im616ieo) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (엔젤 오브 마인)[v:MovieName] 시간표 알고 싶어")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572459418525)
 }
 train (t-tthpw0lz2jg8ncdi5x60879ko) {
   utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie] (11시)[v:time.DetachedTime] 넘어 (시작하는)[v:IsStartTime:true] 영화 좀 알려줘\n")

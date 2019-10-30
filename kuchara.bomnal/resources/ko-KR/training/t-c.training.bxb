@@ -3,6 +3,11 @@ train (t-c26i49z8ifttbqazvtefgj3zo) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572435213310)
 }
+train (t-c60dm4suwma6thja69xf9lvas) {
+  utterance ([g:FindMovieWithLocation] 근처 상영시간표 보여줘라)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572458238770)
+}
 train (t-c6h7w0hhxould0zwke0faenx3) {
   utterance ("[g:GenreEnum] (블랙코미디)[v:GenreEnum:블랙코미디]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
@@ -47,6 +52,11 @@ train (t-cqhhnxp63hiw92zsmgsu9q0mw) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (12시)[v:time.DetachedTime] 즈음 (가능한)[v:IsStartTime:true] 영화 볼래")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
   last-modified (1572378323770)
+}
+train (t-cqq5kvgyfp8chbj0e1exstu8d) {
+  utterance ([g:FindMovieWithLocation] 가까운 곳에서 영화 시간표 찾아줄 수 있어?)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572458260987)
 }
 train (t-cydxofor8hi9f5pboh1a28gc3) {
   utterance ("[g:GenreEnum] (가족)[v:GenreEnum:코미디]\n")
