@@ -1,3 +1,8 @@
+train (t-81kae37ov4ixu1pda7n7id7zp) {
+  utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (국내)[v:IsDomestic:true] 거(만)[v:ExceptExpression:false] 띄워줘\n")
+  plan (Y2Bj0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiabAs9glPze1uCQzmUEUTQpiNGmuZWVgZGBiYGZgAbIYgGwYRABmqAoGAA==)
+  last-modified (1572446622575)
+}
 train (t-827tmymve2hnivftz4amg0h3o) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (로떼)[v:Brand:lottecinema] (신사점)[v:TheaterName] (제외)[v:ExceptExpression:true]해\n")
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)

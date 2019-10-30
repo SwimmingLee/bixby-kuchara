@@ -8,6 +8,11 @@ train (t-q4zlau20nlcum4lq4mgo627gn) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572435592585)
 }
+train (t-q9o3yr165y2it5sm2pzxbpzro) {
+  utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (우리나라)[v:IsDomestic:true] 영화 (놉)[v:ExceptExpression:true]\n")
+  plan (Y2Bj0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiabAs9glPze1uCQzmUEUTQpiNGmuZWVgZGBiYGZgAbIYgGwYRABmqAoGAA==)
+  last-modified (1572446686305)
+}
 train (t-qq1voyfckd5qbmj50pmeykl7j) {
   utterance ("[g:RoomPropertyEnum] (필름소싸이어티)[v:RoomPropertyEnum:필름소사이어티]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

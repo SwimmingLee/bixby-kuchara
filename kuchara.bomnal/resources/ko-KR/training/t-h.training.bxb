@@ -53,3 +53,8 @@ train (t-hqfmw1imtxl4684ci8mzynqt7) {
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
   last-modified (1572353724266)
 }
+train (t-hxbliwvt3j6qopr4dwdxjvghv) {
+  utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (우리나라)[v:IsDomestic:true] 영화 (안볼래)[v:ExceptExpression:true]\n")
+  plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCJpsCz2CU/N7W4JDOZQRRNCmI0yQ5mZWBkYGJgZmABshiAbBhEAGaoCgYA)
+  last-modified (1572446294100)
+}

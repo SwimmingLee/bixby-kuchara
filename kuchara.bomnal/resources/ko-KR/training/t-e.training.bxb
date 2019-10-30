@@ -1,3 +1,8 @@
+train (t-e3a5x8mjw7g684257fcodff11) {
+  utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (한국)[v:Nation] 꺼(만)[v:ExceptExpression:false] 냅둬\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCKpgCin2RXsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572446614579)
+}
 train (t-e3puvh2qobkmqq177vtjgxw5n) {
   utterance ("[g:RoomPropertyEnum] (사운드 X)[v:RoomPropertyEnum:SOUNDX]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
@@ -63,6 +68,11 @@ train (t-eqqr7btif10mmjpdw1xoayuuf) {
   utterance ("[g:GenreEnum] (설레는)[v:GenreEnum:멜로/로맨스]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572436120013)
+}
+train (t-etn60o4b5eekqz64d7ko2ve0p) {
+  utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (국내)[v:IsDomestic:true] 꺼 (없애)[v:ExceptExpression:true]줘\n")
+  plan (Y2Bj0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiabAs9glPze1uCQzmUEUTQpiNGmuZWVgZGBiYGZgAbIYgGwYRABmqAoGAA==)
+  last-modified (1572446676978)
 }
 train (t-etrglot46nxnh153fcqqqo1ut) {
   utterance ("[g:RoomPropertyEnum] (시네패밀리)[v:RoomPropertyEnum:씨네패밀리]\n")

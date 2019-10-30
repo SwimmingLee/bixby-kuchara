@@ -48,6 +48,11 @@ train (t-fhvxct4jzf2tsjf8tadd192b5) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434869560)
 }
+train (t-fi8ra4qq9bkxtfpc3ztlgmi28) {
+  utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (국내)[v:IsDomestic:true] 영화 (만)[v:ExceptExpression:false] 보고 싶어\n")
+  plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCJpsCz2CU/N7W4JDOZQRRNCmI0yQ5mZWBkYGJgZmABshiAbBhEAGaoCgYA)
+  last-modified (1572446549505)
+}
 train (t-fj58uqwbuxe19mn0691n81n3q) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (롯떼씨네마)[v:Brand:lottecinema](만)[v:ExceptExpression:false] 볼래\n")
   plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)

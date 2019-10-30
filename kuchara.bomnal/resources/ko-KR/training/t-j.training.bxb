@@ -73,6 +73,11 @@ train (t-jibr86pv54vr2yf4md5nwpk8l) {
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
   last-modified (1572442888605)
 }
+train (t-jk25b6ykuf7q35eyz4qcqihl2) {
+  utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (한국)[v:Nation] 꺼(만)[v:ExceptExpression:false] 찾아줘라\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiqYAop80J7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572446640628)
+}
 train (t-jky4wcbayivig929gw9wiczkr) {
   utterance ("[g:GenreEnum] (부시는)[v:GenreEnum:전쟁]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

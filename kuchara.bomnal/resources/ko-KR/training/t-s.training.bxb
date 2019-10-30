@@ -31,7 +31,7 @@ train (t-sdb2cc2zqyqhegumjw69ifco8) {
 train (t-sfw1wfrqv2nfrjqg90hs23gf2) {
   utterance ([g:OpenBrowser:continue:MovieScheduleDetail] 웹으로 이동해줘)
   plan (Y2BmEM0uTc5ILErUS8rPzUvM0StPTQoN8mGQQhP2L0jNcyrKLy9OLWJQQpPzzS/LTA1OzkhNKc1JdUktSczMYWBiYARiBiDJyMAAowE=)
-  last-modified (1572440209497)
+  last-modified (1572448833149)
 }
 train (t-sit1p6etotzyeu5qhmzbigd0c) {
   utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (일상)[v:GenreEnum:드라마] 영화(만)[v:ExceptExpression:false] 보여줘\n")
@@ -62,6 +62,11 @@ train (t-ssg95ht7a1ejhcbcxnbenvg5s) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 딴 거 내놔\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572411036727)
+}
+train (t-sw342jevi5877j7l3zxgxo0n6) {
+  utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (한국)[v:Nation] 꺼 (빼줘)[v:ExceptExpression:true]\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCKpgCin2RXsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572446324298)
 }
 train (t-swf9i54uvnsmnl46bl0loidmc) {
   utterance ("[g:RoomPropertyEnum] (더부띠끄에쓰)[v:RoomPropertyEnum:더부티크S]\n")

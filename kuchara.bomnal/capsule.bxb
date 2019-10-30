@@ -1,6 +1,6 @@
 capsule {
   id (kuchara.bomnal)
-  version (0.3.0)
+  version (0.4.0)
   format (3)
   targets {
     target (bixby-mobile-ko-KR)

@@ -3,6 +3,11 @@ train (t-20h014r35ldcyzk1a5gc3w8a1) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572435966923)
 }
+train (t-291h3t5p2hx4hzic2tf1ke8pk) {
+  utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (우리나라)[v:IsDomestic:true] 꺼는 (싫어)[v:ExceptExpression:true]\n")
+  plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCJpsCz2CU/N7W4JDOZQRRNCmI0yQ5mZWBkYGJgZmABshiAbBhEAGaoCgYA)
+  last-modified (1572446314623)
+}
 train (t-2f0hfpkgwv07mrqhcnthplypn) {
   utterance ("[g:RoomPropertyEnum] (쓰크린엑쓰)[v:RoomPropertyEnum:SCREENX]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

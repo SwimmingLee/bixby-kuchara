@@ -8,6 +8,11 @@ train (t-k38326v3xx7p1t9neqd9k1b5o) {
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
   last-modified (1572442917254)
 }
+train (t-k3m40edormgl71iwhns3q3bb1) {
+  utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (한국)[v:Nation] 영화(만)[v:ExceptExpression:false] 알려줘\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiqYAop80J7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572446656291)
+}
 train (t-k8asx0rrw23tkxnyn15bu4kc1) {
   utterance ("[g:GenreEnum] (에세프)[v:GenreEnum:SF] \n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

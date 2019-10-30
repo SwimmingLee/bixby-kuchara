@@ -23,6 +23,11 @@ train (t-nnrqjn3qqxgmj06stvx6eon41) {
   plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
   last-modified (1572411914472)
 }
+train (t-nosiyol5hvpp0a6wm8iqt5y30) {
+  utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (우리나라)[v:IsDomestic:true] 꺼(만)[v:ExceptExpression:false] 볼래\n")
+  plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCJpsCz2CU/N7W4JDOZQRRNCmI0yQ5mZWBkYGJgZmABshiAbBhEAGaoCgYA)
+  last-modified (1572446575982)
+}
 train (t-npdru5fq1kqiqjeq9eg6terx0) {
   utterance ("[g:GenreEnum] (웃긴)[v:GenreEnum:코미디]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

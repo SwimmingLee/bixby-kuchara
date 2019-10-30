@@ -3,6 +3,11 @@ train (t-006ml6xln5x807xrk5jirbqiq) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434401166)
 }
+train (t-03c26u4zdta945tkxu2abv0dx) {
+  utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (국내)[v:IsDomestic:true] 영화 (빼고)[v:ExceptExpression:true] 보여줘봐\n")
+  plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCJpsCz2CU/N7W4JDOZQRRNCmI0yQ5mZWBkYGJgZmABshiAbBhEAGaoCgYA)
+  last-modified (1572446532942)
+}
 train (t-05lv1gjcjfwdj9w67pd335fa5) {
   utterance ("[g:RoomPropertyEnum] (시네앤리빙룸)[v:RoomPropertyEnum:씨네앤리빙룸]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
@@ -77,6 +82,11 @@ train (t-0p38mnqnbi6er6c6qen25nfi6) {
   utterance ("[g:Brand] (롯씨)[v:Brand:lottecinema]\n")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
   last-modified (1572425627936)
+}
+train (t-0ybxxwlgt54b4uepi5soeka3y) {
+  utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (한국)[v:Nation]영화는 (제외)[v:ExceptExpression:true]해줘\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCKpgCin2RXsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572446165890)
 }
 train (t-0ywannhealh2r8mggjcw9fd8h) {
   utterance ("[g:GenreEnum] (잔잔한)[v:GenreEnum:드라마]\n")

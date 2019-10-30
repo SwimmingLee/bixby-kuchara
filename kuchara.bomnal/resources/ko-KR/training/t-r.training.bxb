@@ -38,6 +38,11 @@ train (t-rl9t9t9mkuv3zq3k3b54ml8bz) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437429192)
 }
+train (t-rlcobnx98vduev0l7nyot4qoe) {
+  utterance ("[g:FilterMovieWithNationAndThOSM:continue:TheaterOrderedScheduleWithMovie] (우리나라)[v:IsDomestic:true] 영화(만)[v:ExceptExpression:false] 남겨줘\n")
+  plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT75aZA1QOlgMp8kssyczPc8xLCcnwD/ZlkEdT7VqRnFpQ4lpRUJRaXAxUyCCJpsCz2CU/N7W4JDOZQRRNCmI0yQ5mZWBkYGJgZmABshiAbBhEAGaoCgYA)
+  last-modified (1572446607030)
+}
 train (t-rn6p5roygxytel68fzmaffqaq) {
   utterance ("[g:Brand] (스즈브)[v:Brand:cgv]\n")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
