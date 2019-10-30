@@ -1,0 +1,5 @@
+template-macro-def (NoDataError) {
+  content {
+    template ("원하시는 조건의 영화를 찾을 수 없어요.")
+  }
+}

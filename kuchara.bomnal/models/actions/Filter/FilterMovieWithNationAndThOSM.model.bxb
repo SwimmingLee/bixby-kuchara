@@ -15,5 +15,17 @@ action (FilterMovieWithNationAndThOSM) {
       min (Optional) max (One)
     }
   }
-  output (Movie)
+  output (TheaterOrderedScheduleWithMovie) {
+    throws {
+      error (NoDataError) {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (NoDataError)
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,4 +1,5 @@
 let console = require('console');
+let fail = require('fail');
 
 module.exports.function = function filterMovieWithTheaterNameAndTheaterOrderedSchedule (theaterOrderedSchedule, theaterName, brand, exceptExpression) {
   let result = {
@@ -71,8 +72,10 @@ module.exports.function = function filterMovieWithTheaterNameAndTheaterOrderedSc
     }
   }
 
-  console.log(result);
+  if(typeof result.theater.theaterInfo == 'undefined') {
+    throw fail.checkedError('There is no theater data', 'NoDataError', {})
+  }
 
-  if(typeof result.theater.theaterInfo == 'undefined')
+  console.log(result);
   return result;
 }

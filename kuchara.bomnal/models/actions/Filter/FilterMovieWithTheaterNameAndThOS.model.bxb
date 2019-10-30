@@ -21,15 +21,11 @@ action (FilterMovieWithTheaterNameAndThOS) {
   }
   output (TheaterOrderedSchedule) {
     throws {
-      error (requiredCompilationError) {
-        property (theater) {
-          type (Theater)
-          min (Required) max (Many)
-        }
+      error (NoDataError) {
         on-catch {
           halt {
             dialog {
-              template ("theater is empty!!")
+              template-macro (NoDataError)
             }
           }
         }
