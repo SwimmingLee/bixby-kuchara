@@ -8,6 +8,10 @@ structure (TimeSchedule) {
     type (EndTime)
     min (Required) max (One)
   }
+  property (scheduleDate) {
+    type (ScheduleDate)
+    min (Optional) max (One)
+  }
   property (totalSeat) {
     type (TotalSeat)
     min (Required) max (One)

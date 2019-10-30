@@ -21,6 +21,7 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
   timeOrderedSchedule.timeSchedule.forEach(function(timeScheduleElement){
     let newStartTime = timeScheduleElement.startTime;
     let newEndtime = timeScheduleElement.endTime;
+    let newScheduleDate = timeScheduleElement.scheduleDate;
     let newTotalSeat = timeScheduleElement.totalSeat;
     let newAvailableSeat = timeScheduleElement.availableSeat;
     let newRoom = timeScheduleElement.room;
@@ -52,6 +53,7 @@ module.exports.function = function restructureTimeViewToTheaterView (timeOrdered
     let theaterSchedule = {
       'startTime': newStartTime,
       'endTime': newEndtime,
+      'scheduleDate': newScheduleDate,
       "totalSeat": newTotalSeat,     // 총 좌석수
       "availableSeat": newAvailableSeat,            // 빈 좌석수
       "subtitle": newSubtitle,               // 자막여부

@@ -6,7 +6,11 @@ structure (TheaterSchedule) {
   }
   property (endTime) {
     type (EndTime)
-    min (Required) max (Many)
+    min (Required) max (One)
+  }
+  property (scheduleDate) {
+    type (ScheduleDate)
+    min (Optional) max (One)
   }
   property (totalSeat) {
     type (TotalSeat)

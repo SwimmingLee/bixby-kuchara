@@ -55,6 +55,7 @@ module.exports.function = function makeDetailFromTimeOrderedSchedule (timeSchedu
 
     'startTime': timeSchedule.startTime,
     'endTime': timeSchedule.endTime,
+    'scheduleDate': timeSchedule.scheduleDate,
     "totalSeat": timeSchedule.totalSeat,             // 총 좌석수
     "availableSeat": timeSchedule.availableSeat,     // 빈 좌석수
     "subtitle": timeSchedule.subtitle,               // 자막여부
@@ -63,8 +64,15 @@ module.exports.function = function makeDetailFromTimeOrderedSchedule (timeSchedu
     "roomProperty": timeSchedule.roomProperty,
     "roomPropertyUriList": timeSchedule.roomPropertyUriList,
     
-
-    "myDateExpression": dateObj.dateTime.date.year + "." + dateObj.dateTime.date.month + "." + dateObj.dateTime.date.day,
+    // "myDateExpression": dateObj.dateTime.date.year + "." + dateObj.dateTime.date.month + "." + dateObj.dateTime.date.day,
   }
+
+  let mm = 1, dd;
+  while ((mm + 1) * 100 < theaterSchedule.scheduleDate) mm++;
+  dd = theaterSchedule.scheduleDate - (mm * 100);
+  if(mm < 10) mm = "0" + mm;
+
+  movieScheduleDetail.myDateExpression = dateObj.dateTime.date.year + "." + mm + "." + dd;
+
   return movieScheduleDetail;
 }

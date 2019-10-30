@@ -16,7 +16,7 @@ module.exports.function = function restructureTheaterViewToTimeView (theaterOrde
     },
     
     'timeSchedule': []
-    }
+  }
 
   theaterOrderedSchedule.theater.forEach(function(theaterElement){
     let newBrand = theaterElement.theaterInfo.brand;
@@ -32,6 +32,7 @@ module.exports.function = function restructureTheaterViewToTimeView (theaterOrde
       timeOrderedSchedule.timeSchedule.push({
         'startTime': scheduleElement.startTime,
         'endTime': scheduleElement.endTime,
+        'scheduleDate': scheduleElement.scheduleDate,
         'totalSeat': scheduleElement.totalSeat,
         'availableSeat': scheduleElement.availableSeat,
         "subtitle": scheduleElement.subtitle,               // 자막여부
