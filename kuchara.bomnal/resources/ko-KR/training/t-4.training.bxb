@@ -59,9 +59,9 @@ train (t-4j8kc169y6yypwpe7h5a8lfe0) {
   last-modified (1572437373174)
 }
 train (t-4jcij6l9tzmp4sx01l9np2um1) {
-  utterance ("[g:kuchara.bomnal.FindMovieWithMovieAndPos,r:kuchara.bomnal.ShowMoviePoster] (강남)[v:geo.SearchTerm]에서 영화 보고싶어")
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] (강남)[v:geo.SearchTerm]에서 영화 보고싶어")
   plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)
-  last-modified (1572420520980)
+  last-modified (1572441577421)
 }
 train (t-4kgwy1af0olevggfjm4i7qk1r) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (메박)[v:Brand:megabox](만)[v:ExceptExpression:false] 보자\n")

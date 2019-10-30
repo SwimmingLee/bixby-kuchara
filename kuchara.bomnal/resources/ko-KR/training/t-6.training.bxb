@@ -19,9 +19,9 @@ train (t-6cuu5kibc5jxojwrsg67as4af) {
   last-modified (1572439406092)
 }
 train (t-6da3duin4ybwiuk18m56ip9ze) {
-  utterance ("[g:RestructureTimeViewToTheaterView] 근처 영화관 순으로 보고 싶어\n")
+  utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 근처 영화관 순으로 보고 싶어\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572410150731)
+  last-modified (1572441646092)
 }
 train (t-6j0yl5egi5ac9x9e1repdwf9u) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (날씨의 아이)[v:MovieName]만 띄워\n")

@@ -8,6 +8,7 @@ module.exports.function = function findOneTheaterWithMovieSelected (movieName, b
 
   let options = {
     format: 'json',
+    cacheTime: 0,
     query: {
       movieName: movieName,
       brand: brand,

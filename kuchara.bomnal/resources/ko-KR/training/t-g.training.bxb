@@ -53,6 +53,11 @@ train (t-gwmn401vg12rb5sd0g4pjfdio) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572435091165)
 }
+train (t-gww8q8tvhusecu7qe7jomg7le) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (추리)[v:GenreEnum:미스터리] 영화 (싫어)[v:ExceptExpression:true]요\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572445242577)
+}
 train (t-gxwhnqg1lwpvpf0uz22rpqn2y) {
   utterance ("[g:GenreEnum] (멜로로맨스)[v:GenreEnum:멜로/로맨스]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

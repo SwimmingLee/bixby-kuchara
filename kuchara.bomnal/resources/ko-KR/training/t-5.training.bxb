@@ -63,6 +63,11 @@ train (t-5pfo2ukf2wo065nk6d28b55us) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437580496)
 }
+train (t-5pw512oy8adqxwt3wg8fb5lmf) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (판타지)[v:GenreEnum:판타지] (업시)[v:ExceptExpression:true] 추천해줘\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572445084269)
+}
 train (t-5roiljix05ikf69ijsmrox0nu) {
   utterance ("[g:GenreEnum] (남성적인)[v:GenreEnum:느와르]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

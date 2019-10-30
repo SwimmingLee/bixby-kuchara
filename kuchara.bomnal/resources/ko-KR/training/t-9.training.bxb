@@ -26,12 +26,12 @@ train (t-9cf9rzqixogxzgk8xuaykstgs) {
 train (t-9gf4wqc29womf7i09g5qhj9ne) {
   utterance ("[g:GenreEnum] (범죄)[v:GenreEnum:범죄]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
-  last-modified (1572437278698)
+  last-modified (1572441861001)
 }
 train (t-9ivebgudro7m4hz9hqwbba3gq) {
-  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (1시)[v:time.DetachedTime] 이전에 (종료되는)[v:IsStartTime:false] 거 알고 싶어")
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (1시)[v:time.DetachedTime] 이전에 (종료)[v:IsStartTime:false]되는 거 알고 싶어")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
-  last-modified (1572375429539)
+  last-modified (1572441856265)
 }
 train (t-9jti1o6o10ymxxgtehhfw0u08) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (주전장)[v:MovieName]은 (제외)[v:ExceptExpression:true]한 영화 보여줘\n")
@@ -39,9 +39,9 @@ train (t-9jti1o6o10ymxxgtehhfw0u08) {
   last-modified (1572419938161)
 }
 train (t-9kmlfquxs4d6k65k8fqfexw5j) {
-  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (저녁 9시)[v:time.DetachedTime] 부터 (상영하는)[v:IsStartTime:true] 영화를 찾아봐")
-  plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
-  last-modified (1572377349548)
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (저녁 9시)[v:time.DetachedTime] 부터 상영하는 영화를 찾아봐")
+  plan (jYy9CsIwFIVP6s8bOLkJDi55B8G6lQ4tOMfmQi5NE0nT4uObdBGKg3e553K++2GPUz91RgUln35wysqWB6qDpkC66QzpyRIuK+bONlKo/Mz04Gjyy9XpluvmL91x5lnGVMibipSJ8v0KNI7sHc4rQaV6+oEdvg6KKpszgB0ECmywTQkpiyULYLnyFGmn7gM=)
+  last-modified (1572441960099)
 }
 train (t-9n6wkp4185shy0lxc5rgjijxt) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (메가박스)[v:Brand:megabox]에서(만)[v:ExceptExpression:false] 찾을래\n")

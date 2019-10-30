@@ -12,6 +12,7 @@ module.exports.function = function showCloserTheaterList (theaterOrderedSchedule
 
   let options = { 
     format: 'json',
+    cacheTime: 0,
     query: { 
       movieName: theaterOrderedSchedule.movie.movieName,
       longitude: long,

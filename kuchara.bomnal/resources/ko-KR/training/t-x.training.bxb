@@ -4,9 +4,9 @@ train (t-x0css3zix3ffj14gr92txa5ei) {
   last-modified (1572420174590)
 }
 train (t-x6t4efdraxug73hs05xnaacgs) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (다크 페이트)[v:MovieName]만 보고 싶어\n")
-  plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
-  last-modified (1572419831218)
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (다크 페이트)[v:MovieName](만)[v:ExceptExpression:false] 보고 싶어\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
+  last-modified (1572443937633)
 }
 train (t-x8w1erw2k4iq35yuypxshonli) {
   utterance ("[g:GenreEnum] (어드벤철)[v:GenreEnum:모험]\n")

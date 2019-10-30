@@ -11,7 +11,7 @@ train (t-d3yzro0ttp23l55yo93ijx1aj) {
 train (t-diffwwg23ymwqw6yuwv8i854a) {
   utterance ("[g:GenreEnum] (부시는)[v:GenreEnum:액션]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
-  last-modified (1572437423959)
+  last-modified (1572442289865)
 }
 train (t-djyvjj2gjva38wolc5n991r1f) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (코엑스)[v:TheaterName] (메가박스)[v:Brand:megabox]를 (빼줘)[v:ExceptExpression:true]")

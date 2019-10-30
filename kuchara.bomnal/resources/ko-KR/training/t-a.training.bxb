@@ -14,9 +14,9 @@ train (t-a1ho9fo6zuumgdutk0x99msns) {
   last-modified (1572434329117)
 }
 train (t-a38hhmtc83kibq3lww6nkcugx) {
-  utterance ([g:RestructureTimeViewToTheaterView] 영화관 순으로 보여줘)
+  utterance ([g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 영화관 순으로 보여줘)
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572409997468)
+  last-modified (1572442002628)
 }
 train (t-a4371e3qj0rao7tpp3ou2xd8m) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (cgv)[v:Brand:cgv] (빼)[v:ExceptExpression:true]라\n")
@@ -29,9 +29,9 @@ train (t-a5uhxb6kcp2w5q0qo3j5w6sq7) {
   last-modified (1572440051181)
 }
 train (t-a6eqwm21gscnl3a1iyw3w780b) {
-  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (11시)[v:time.DetachedTime] (까지 하는)[v:IsStartTime:false] 영화 보여줘")
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (11시)[v:time.DetachedTime] (까지)[v:IsStartTime:false] 하는 영화 보여줘")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
-  last-modified (1572375574462)
+  last-modified (1572442033821)
 }
 train (t-a9fq78niv8d8wiqnrunjsw5w1) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순으로 알려줘\n")

@@ -26,7 +26,7 @@ train (t-cdctk2bel35gpvnewq9lgxd9a) {
 train (t-cdlc82hvp5u9dwwnna84e6an9) {
   utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (12시)[v:time.DetachedTime] 즈음 (가능한)[v:IsStartTime:true] 영화 볼래")
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
-  last-modified (1572378297884)
+  last-modified (1572442170893)
 }
 train (t-cj62lk2t5h4zp61ldf48djz78) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (꼬마 자전거 스피디)[v:MovieName]만 보기\n")

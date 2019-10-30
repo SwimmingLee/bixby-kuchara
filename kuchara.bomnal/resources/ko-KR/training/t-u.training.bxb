@@ -4,9 +4,9 @@ train (t-u0iw2rvptknqam72lgkcg8fyx) {
   last-modified (1572425652064)
 }
 train (t-u14qq4gnfzv02swraxp0qcpqc) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (시크릿 슈퍼스타)[v:MovieName]만 띄워줘\n")
-  plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
-  last-modified (1572419854740)
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (시크릿 슈퍼스타)[v:MovieName](만)[v:ExceptExpression:false] 띄워줘\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
+  last-modified (1572443645088)
 }
 train (t-u3xftbdg7814qfmvve5721uut) {
   utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 딴거뭐있어?)
@@ -64,9 +64,9 @@ train (t-um3two80ckpsumubzt62luyzl) {
   last-modified (1572439671984)
 }
 train (t-uo0pg0x3hfox0h4tvi13xerv2) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (cgv)[v:Brand:cgv](만)[v:ExceptExpression:false] 알려줘라\n")
-  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
-  last-modified (1572440036567)
+  utterance ("[g:FilterMovieWithTheaterNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (cgv)[v:Brand:cgv](만)[v:ExceptExpression:false] 알려줘라\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT7JaZU5JaBJYDKQrJSE0E8v0Sc1Md81JCMv2DfRlE0LQ4FSXmpTDIo4m6ViSnFpS4VhQUpRYXZ+bnkeYsFgZGBiYGZiDNAGRBIAwwQ+UYAA==)
+  last-modified (1572443706615)
 }
 train (t-uo66fl5deln9zflvy5dae353c) {
   utterance ("[g:RoomPropertyEnum] (솔티)[v:RoomPropertyEnum:4D]")

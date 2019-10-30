@@ -13,6 +13,16 @@ train (t-r7hlmwq9w2erqbo45ax0nt4sn) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437542284)
 }
+train (t-r9efpmyjzts3d7n46z45sfj3q) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (웃긴)[v:GenreEnum:코미디] 것(만)[v:ExceptExpression:false] 볼래\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572445036554)
+}
+train (t-rbkq4qeyekv6q5wk0ykp771ph) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (무서운)[v:GenreEnum:공포] 영화(만)[v:ExceptExpression:false] 보여줘\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572444999673)
+}
 train (t-rfwsicet16nqyu6yo7jt8sd2w) {
   utterance ("[g:RoomPropertyEnum] (스타리옴)[v:RoomPropertyEnum:STARIUM]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
@@ -21,7 +31,7 @@ train (t-rfwsicet16nqyu6yo7jt8sd2w) {
 train (t-rio32zqzcafcb29i4jflz2atc) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (롯데)[v:Brand:lottecinema] (안볼래)[v:ExceptExpression:true]\n")
   plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
-  last-modified (1572440186833)
+  last-modified (1572441023752)
 }
 train (t-rl9t9t9mkuv3zq3k3b54ml8bz) {
   utterance ("[g:GenreEnum] (뿌시는)[v:GenreEnum:액션]\n")
@@ -39,12 +49,17 @@ train (t-ro5a260b0bahm1qkun2z4q50e) {
   last-modified (1572439484608)
 }
 train (t-rqfvvkjquobr9tnpn7q8vwazu) {
-  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (빅 위시)[v:MovieName]만 내놔\n")
-  plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
-  last-modified (1572419724136)
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (빅 위시)[v:MovieName](만)[v:ExceptExpression:false] 내놔\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
+  last-modified (1572443539155)
 }
 train (t-rridn4do8th8c5orix13jdhh9) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (메가박스)[v:Brand:megabox]는 (싫어)[v:ExceptExpression:true]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572370519790)
+}
+train (t-rzanbev8ve0l1t4wv23elc0c9) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (역사)[v:GenreEnum:서사] 영화 (빼고)[v:ExceptExpression:true] 추천\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572445456918)
 }

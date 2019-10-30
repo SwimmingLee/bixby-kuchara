@@ -36,7 +36,7 @@ train (t-7c6i2jiktacrk9za9gv74an69) {
 train (t-7ii49bkqfnnh5myqozcqj5dax) {
   utterance ("[g:GenreEnum] (뿌수는)[v:GenreEnum:액션]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
-  last-modified (1572437434985)
+  last-modified (1572441763664)
 }
 train (t-7j04feva7gkv0imr89rgdwwyz) {
   utterance ("[g:RoomPropertyEnum] (슈퍼 스)[v:RoomPropertyEnum:'슈퍼 S']\n")

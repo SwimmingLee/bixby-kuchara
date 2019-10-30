@@ -8,6 +8,11 @@ train (t-s58bz12nkd2hp74ino2uc91la) {
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
   last-modified (1572349757629)
 }
+train (t-s8nq0pkl0o8jdkgrotrv2ss5k) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (가족이랑 보기 좋은)[v:GenreEnum:가족] 영화(만)[v:ExceptExpression:false] 찾아줘라\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572445044248)
+}
 train (t-sb9cvh7zze8vgitvnxw5jnj8t) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (라스트 워)[v:MovieName] (없애)[v:ExceptExpression:true]고 찾아줘라\n")
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
@@ -27,6 +32,11 @@ train (t-sfw1wfrqv2nfrjqg90hs23gf2) {
   utterance ([g:OpenBrowser:continue:MovieScheduleDetail] 웹으로 이동해줘)
   plan (Y2BmEM0uTc5ILErUS8rPzUvM0StPTQoN8mGQQhP2L0jNcyrKLy9OLWJQQpPzzS/LTA1OzkhNKc1JdUktSczMYWBiYARiBiDJyMAAowE=)
   last-modified (1572440209497)
+}
+train (t-sit1p6etotzyeu5qhmzbigd0c) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (일상)[v:GenreEnum:드라마] 영화(만)[v:ExceptExpression:false] 보여줘\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572445494438)
 }
 train (t-sjc8so0lx8tfjsbhtstj270x2) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (메박)[v:Brand:megabox] (동대문점)[v:TheaterName]에서(만)[v:ExceptExpression:false] 알고 싶어\n")

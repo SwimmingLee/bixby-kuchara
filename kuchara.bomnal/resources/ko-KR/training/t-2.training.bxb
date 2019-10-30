@@ -18,6 +18,11 @@ train (t-2gi0he8qv2ja99knla0cd0wri) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572435571324)
 }
+train (t-2lnzqv1ytmn0sbwx81vaybj5i) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (써스펜쓰)[v:GenreEnum:서스펜스]는 (빼줘)[v:ExceptExpression:true]라\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572445078065)
+}
 train (t-2w95vr7dp3myau8nwe1aio4np) {
   utterance ("[g:Brand] (롯시)[v:Brand:lottecinema]\n")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)

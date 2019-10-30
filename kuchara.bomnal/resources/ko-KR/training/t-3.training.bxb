@@ -8,6 +8,11 @@ train (t-31xfl5o0z9wx18zsxnsvc1r62) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572438402811)
 }
+train (t-32a8x2hu7vi9uwu3g5kt1i2yc) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (로코)[v:GenreEnum:멜로/로맨스](만)[v:ExceptExpression:false] 알려줘라\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572444960905)
+}
 train (t-35fc9ra9l0jt5f2bq7rt6eqcd) {
   utterance ("[g:Brand] (로떼시네마)[v:Brand:lottecinema]\n")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
@@ -53,10 +58,20 @@ train (t-3dbglkk9rgoxfo1c2a6q5mob1) {
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572411071978)
 }
+train (t-3mms4x6chva5iu698vlcxm6l1) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (조폭)[v:GenreEnum:느와르] 나오는 거 (제외하고)[v:ExceptExpression:true] 보여줘\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572445475416)
+}
 train (t-3o1mbugm25h40ekpxd9gamwkh) {
   utterance ("[g:RoomPropertyEnum] (수퍼플렉쓰쥐)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572439322533)
+}
+train (t-3pwarg5512fc87uhm7nl2jurr) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (전쟁)[v:GenreEnum:전쟁] 영화(만)[v:ExceptExpression:false] 볼래\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572444968339)
 }
 train (t-3qisad784jhvuw5wcwebwn03o) {
   utterance ("[g:GenreEnum] (어벤쳐)[v:GenreEnum:모험]\n")

@@ -4,14 +4,19 @@ train (t-k2j6egifdgiziztlvr7k38ncv) {
   last-modified (1572436165262)
 }
 train (t-k38326v3xx7p1t9neqd9k1b5o) {
-  utterance ("[g:RestructureTimeViewToTheaterView] 가까운 상영관 별로 보여줄래\n")
+  utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 가까운 상영관 별로 보여줄래\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572410166574)
+  last-modified (1572442917254)
 }
 train (t-k8asx0rrw23tkxnyn15bu4kc1) {
   utterance ("[g:GenreEnum] (에세프)[v:GenreEnum:SF] \n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437395556)
+}
+train (t-k8pl3osnpx5tyw3wcgryp1dtu) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (애니)[v:GenreEnum:애니메이션](만)[v:ExceptExpression:false] 보고 싶어\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572445011470)
 }
 train (t-k9ar57ndvay558wo61d4tz869) {
   utterance ("[g:RoomPropertyEnum] (스크린엑쓰)[v:RoomPropertyEnum:SCREENX]\n")
@@ -53,15 +58,20 @@ train (t-kltgxapgrzsojvmlo0vcvguu3) {
   plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
   last-modified (1572419767016)
 }
+train (t-km56enigw8fz1nma0os9lnql7) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (악마)[v:GenreEnum:컬트] 나오는 영화 (빼줘)[v:ExceptExpression:true]\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572445488839)
+}
 train (t-kmkuxavh0j4tiisa54ajgv4t8) {
   utterance ("[g:RoomPropertyEnum] (sound 엑스)[v:RoomPropertyEnum:SOUNDX]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572439441389)
 }
 train (t-knd74ygt6ovsfanvdo5qg5hud) {
-  utterance ("[g:RestructureTimeViewToTheaterView] 가까운 순서대로 볼래\n")
+  utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 가까운 순서대로 볼래\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572410131877)
+  last-modified (1572443069628)
 }
 train (t-kta7qo32vetuv8jiipu09jqef) {
   utterance ("[g:GenreEnum] (때려부시는)[v:GenreEnum:액션]\n")

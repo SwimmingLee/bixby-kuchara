@@ -54,9 +54,9 @@ train (t-0mictzib4omq8gsiokx65kpgb) {
   last-modified (1572377887156)
 }
 train (t-0msl4ciqr5rt4vlivgexotkg4) {
-  utterance ("[g:FilterMovieWithTimeAndTiOS] (여섯시)[v:time.DetachedTime]부터 (되는)[v:IsStartTime:true] 영화만 알려줄래")
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (여섯시)[v:time.DetachedTime]부터 (되는)[v:IsStartTime:true] 영화만 알려줄래")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
-  last-modified (1572422668983)
+  last-modified (1572441491065)
 }
 train (t-0nft2x91qc7plgiftk2x02x3a) {
   utterance ("[g:GenreEnum] (뿌시는)[v:GenreEnum:전쟁]\n")

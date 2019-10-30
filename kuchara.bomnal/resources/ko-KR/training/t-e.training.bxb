@@ -9,9 +9,10 @@ train (t-e3qrtamij8a9bzucec5ppekqq) {
   last-modified (1572437334901)
 }
 train (t-e4o0ulp2g3cn27m5okm0qpiti) {
-  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (3시간)[v:time.DetachedTime] 이내로 볼 수 있는 거 찾아줘")
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (세시간 이내)[v:time.DetachedTime]로 볼 수 있는 거 찾아줘")
   plan (jYy9CsIwFIVP6s8bOLkJDi55B8G6lQ4tOMfmQi5NE0nT4uObdBGKg3e553K++2GPUz91RgUln35wysqWB6qDpkC66QzpyRIuK+bONlKo/Mz04Gjyy9XpluvmL91x5lnGVMibipSJ8v0KNI7sHc4rQaV6+oEdvg6KKpszgB0ECmywTQkpiyULYLnyFGmn7gM=)
-  last-modified (1572435761342)
+  enabled (false)
+  last-modified (1572442480329)
 }
 train (t-e6gj15z3e4w4grjnj4jglsk1a) {
   utterance ("[g:GenreEnum] (뿌수는)[v:GenreEnum:전쟁]\n")
@@ -44,14 +45,19 @@ train (t-efiazs3bmp8lllzdhfijzkgt2) {
   last-modified (1572437379020)
 }
 train (t-eoqqonl7p1fzijnvmpez2abzc) {
-  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (1시)[v:time.DetachedTime] 이전에 (종료되는)[v:IsStartTime:false] 거 알고 싶어")
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (1시)[v:time.DetachedTime] 이전에 (종료)[v:IsStartTime:false]되는 거 알고 싶어")
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
-  last-modified (1572435789897)
+  last-modified (1572442524148)
 }
 train (t-epck0j756nk1z4184rhfl9mru) {
   utterance ("[g:GenreEnum] (신기한)[v:GenreEnum:판타지]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572435604411)
+}
+train (t-eq1s2hc3tscxacfirskvyfezo) {
+  utterance ("[g:FilterMovieWithGenreAndTiOSM:continue:TimeOrderedScheduleWithMovie] (뮤지컬)[v:GenreEnum:뮤지컬] 영화(만)[v:ExceptExpression:false] 추천해봐\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
+  last-modified (1572445055623)
 }
 train (t-eqqr7btif10mmjpdw1xoayuuf) {
   utterance ("[g:GenreEnum] (설레는)[v:GenreEnum:멜로/로맨스]\n")
@@ -63,8 +69,14 @@ train (t-etrglot46nxnh153fcqqqo1ut) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434315243)
 }
+train (t-eured89ob901axpmw4icenhr7) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (액쎤)[v:GenreEnum:액션]은 (말고)[v:ExceptExpression:true] 알려줘\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572445221960)
+}
 train (t-ezm1xupn2bmlmcln7zurhcrcw) {
   utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (4시간)[v:time.DetachedTime] 이내로 볼 수 있는 거 찾아줘")
   plan (jYy7DsIwDEWd8vgDJmYGlvwDErBVHRqJ2TSWYrVNUJpGfD5OFyRgwIuvdY8PbOHQz53DiPoeRo+DNo4wUWyipUi27RzZeSA4fmBXHoSqQ2a6cXKGRzp5a1zT/mvcZ846yZ8+S10El+cj0jRx8F+OGnv6ge3eDkpYzAWADSioYAVrSSBZLVkBLFeZSrZ0Lw==)
-  last-modified (1572378503328)
+  enabled (false)
+  last-modified (1572442553732)
 }

@@ -44,9 +44,9 @@ train (t-zocmxj3mn03zq7frq5cwgc3ui) {
   last-modified (1572439532760)
 }
 train (t-zrdbrfk8iznlg7j9r1gzv1nza) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (조커)[v:MovieName]만 찾아줘라\n")
-  plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
-  last-modified (1572419778128)
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (조커)[v:MovieName](만)[v:ExceptExpression:false] 찾아줘라\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
+  last-modified (1572444089471)
 }
 train (t-zrkqf3dy5pwnbzryqg9nrbr8p) {
   utterance ("[g:RoomPropertyEnum] (쓰리디)[v:RoomPropertyEnum:3D]\n")
@@ -62,4 +62,9 @@ train (t-zwl37gdoutt49zelhgggu2zpl) {
   utterance ("[g:RoomPropertyEnum] (에멕스)[v:RoomPropertyEnum:MX]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572433126459)
+}
+train (t-zwwdrxsfnyzrurf07fm259msw) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (SF)[v:GenreEnum:SF]는 (빼고)[v:ExceptExpression:true] 볼래\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572445065435)
 }

@@ -1,7 +1,7 @@
 train (t-o1td56nplzr8ql8ohuteha2mc) {
-  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (2시)[v:time.DetachedTime] (까지 하는)[v:IsStartTime:false] 영화 보여줘")
+  utterance ("[g:FilterMovieWithTimeAndThOS:continue:TheaterOrderedSchedule] (2시)[v:time.DetachedTime] (까지)[v:IsStartTime:false] 하는 영화 보여줘")
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
-  last-modified (1572375527130)
+  last-modified (1572443309879)
 }
 train (t-o41t9ogaoy6zbj2vzw93puksn) {
   utterance ("[g:GenreEnum] (블코)[v:GenreEnum:블랙코미디]\n")
@@ -14,9 +14,9 @@ train (t-o8n2y3xg4go8mxtdvwnd28non) {
   last-modified (1572439595859)
 }
 train (t-oapjxmzo8qsw4qeln5otw4kf6) {
-  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (가장 보통의 연애)[v:MovieName]만 보고 싶어")
-  plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
-  last-modified (1572419689592)
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (가장 보통의 연애)[v:MovieName](만)[v:ExceptExpression:false] 보고 싶어")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
+  last-modified (1572443351335)
 }
 train (t-od1nhwhvusy7d3bv18yrca1ue) {
   utterance ("[g:Brand] (메박)[v:Brand:megabox]\n")
@@ -59,9 +59,9 @@ train (t-op87evdwt6759wu9a9ui2if02) {
   last-modified (1572437241737)
 }
 train (t-opv4yz7xkyzz3depphhm7g5w1) {
-  utterance ("[g:RestructureTimeViewToTheaterView] 근처 위주로 정렬해줘\n")
+  utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 근처 위주로 정렬해줘\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572410175140)
+  last-modified (1572443401151)
 }
 train (t-oqekvkpw8tbn1iapi1u74w8lr) {
   utterance ("[g:RoomPropertyEnum] (섭팩)[v:RoomPropertyEnum:SUBPAC]\n")

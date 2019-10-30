@@ -13,6 +13,7 @@ module.exports.function = function findMovieWithMovieAndPos (movie, namedPointSt
 
   let options = {
     format: 'json',
+    cacheTime: 0,
     query: {
       longitude: long,
       latitude: lat,

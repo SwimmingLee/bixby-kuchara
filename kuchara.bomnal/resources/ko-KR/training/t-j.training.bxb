@@ -4,9 +4,9 @@ train (t-j3povfn1bj5qlvutks7owpw3e) {
   last-modified (1572409012333)
 }
 train (t-j3xcyeo5shsr7dpykuhh78t3p) {
-  utterance ("[g:RestructureTimeViewToTheaterView] 가까운 위치 먼저 띄워줘\n")
+  utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 가까운 위치 먼저 띄워줘\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572410187273)
+  last-modified (1572442836113)
 }
 train (t-j452bfn3trd08x0d87uqsjhb1) {
   utterance ("[g:GenreEnum] (다큐멘터리)[v:GenreEnum:다큐멘터리]\n")
@@ -58,15 +58,20 @@ train (t-jcm7ekt8f4jo3x3zgtnsz52nn) {
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572369841140)
 }
+train (t-je34whiq8axdtb4jjum1lyo4c) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (블랙코미디)[v:GenreEnum:블랙코미디] 영화(만)[v:ExceptExpression:false] 추천해줘\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572444975099)
+}
 train (t-jg0durancjrqe35wo5e6yhuwf) {
   utterance ("[g:RoomPropertyEnum] (샤롯떼 프라이빗)[v:RoomPropertyEnum:'샤롯데 프라이빗']\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434294411)
 }
 train (t-jibr86pv54vr2yf4md5nwpk8l) {
-  utterance ("[g:RestructureTimeViewToTheaterView] 상영관 별 정렬\n")
+  utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 상영관 별 정렬\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572410202847)
+  last-modified (1572442888605)
 }
 train (t-jky4wcbayivig929gw9wiczkr) {
   utterance ("[g:GenreEnum] (부시는)[v:GenreEnum:전쟁]\n")

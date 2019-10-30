@@ -9,9 +9,9 @@ train (t-y63hvx7lloynxzcsd0xfo2kxk) {
   last-modified (1572439398306)
 }
 train (t-y9oyam4a4nstj1j5jnz0wvniz) {
-  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (터미네이터)[v:MovieName]만 찾아줘\n")
-  plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
-  last-modified (1572419837539)
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (터미네이터)[v:MovieName](만)[v:ExceptExpression:false] 찾아줘\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
+  last-modified (1572443983129)
 }
 train (t-yboy9kgmv8xaww0y07xnacecg) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (보헤미안 랩소디)[v:MovieName] (안볼래)[v:ExceptExpression:true]\n")
@@ -29,14 +29,14 @@ train (t-yg5bhq0zcit88ihlcd4n41qew) {
   last-modified (1572439517926)
 }
 train (t-yjonhyh7k8lile838265sepo6) {
-  utterance ("[g:RestructureTimeViewToTheaterView] 영화관 순 보기\n")
+  utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 영화관 순 보기\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572410195250)
+  last-modified (1572444009809)
 }
 train (t-ykyvp139ncg6f1cino82s8s43) {
-  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (프렌드존)[v:MovieName]만 보게 해줘\n")
-  plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
-  last-modified (1572419740540)
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (프렌드존)[v:MovieName](만)[v:ExceptExpression:false] 보게 해줘\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
+  last-modified (1572444033999)
 }
 train (t-ymyhp3zzdn5szxfp30e6i9n1o) {
   utterance ("[g:GenreEnum] (아이랑 볼)[v:GenreEnum:애니메이션]\n")

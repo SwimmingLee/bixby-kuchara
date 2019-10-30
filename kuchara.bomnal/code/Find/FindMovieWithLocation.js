@@ -12,6 +12,7 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
 
   let options = {
     format: 'json',
+    cacheTime: 0,
     query: {
       longitude: long,
       latitude: lat,

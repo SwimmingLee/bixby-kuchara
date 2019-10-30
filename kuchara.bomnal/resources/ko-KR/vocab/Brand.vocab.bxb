@@ -1,7 +1,8 @@
 vocab (Brand) {
   "cgv" {"CGV", "cgv", "씨지비", "시지비", "씨쥐비", "시지브이", "스즈브"}
   "megabox" {"Megabox", "MEGABOX", "메가박스", "megabox", "메박"}
-  "lottecinema" {"lottecinema", "Lottecinema", "LOTTECINEMA","롯데씨네마", "롯데시네마", "롯씨", "롯시", "로떼시네마","로떼씨네마", "로때","로떼", "로씨"}
+  "lottecinema" {"lottecinema", "롯데", "Lottecinema", "LOTTECINEMA","롯데씨네마", "롯데시네마", 
+                  "롯씨", "롯시", "로떼시네마","로떼씨네마", "로때","로떼", "로씨", "롯떼씨네마", "롯떼"}
 }
 
 // enum (Brand) {
