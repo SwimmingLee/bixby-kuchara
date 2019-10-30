@@ -1,3 +1,8 @@
+train (t-6618cfycnrfywj4rg72wm300s) {
+  utterance ("[g:RoomPropertyEnum] (템포 시네마)[v:RoomPropertyEnum:'TEMPUR CINEMA']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439610353)
+}
 train (t-6akv7o8tv7zzuzo16nukphbz0) {
   utterance ("[g:GenreEnum] (추적)[v:GenreEnum:스릴러]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
@@ -7,6 +12,11 @@ train (t-6c8u7fkyt0xxhz5b5ptobfpgd) {
   utterance ("[g:GenreEnum] (오컬트)[v:GenreEnum:컬트]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572436322392)
+}
+train (t-6cuu5kibc5jxojwrsg67as4af) {
+  utterance ("[g:RoomPropertyEnum] (sound x)[v:RoomPropertyEnum:SOUNDX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439406092)
 }
 train (t-6da3duin4ybwiuk18m56ip9ze) {
   utterance ("[g:RestructureTimeViewToTheaterView] 근처 영화관 순으로 보고 싶어\n")

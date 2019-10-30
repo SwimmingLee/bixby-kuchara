@@ -28,6 +28,11 @@ train (t-t67rh5v91fi6j5zxvq4p769pd) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437299160)
 }
+train (t-t6pzp8x2r3gjaxt11xvbkgye3) {
+  utterance ("[g:RoomPropertyEnum] (CX)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439474920)
+}
 train (t-t7igwqfgjkvgpn0hrqgyz0rbs) {
   utterance ("[g:GenreEnum] (깨부시는)[v:GenreEnum:액션]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

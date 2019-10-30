@@ -8,6 +8,11 @@ train (t-11v13y57vtjxqhkl6vk2k40j1) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437198805)
 }
+train (t-127iyc0q4v543tjudiq2cr8mq) {
+  utterance ("[g:RoomPropertyEnum] (신안 리빙룸)[v:RoomPropertyEnum:씨네앤리빙룸]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439679387)
+}
 train (t-13rwncp7ni46o2g6zngr46mr2) {
   utterance ("[g:GenreEnum] (유쾌한)[v:GenreEnum:코미디]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

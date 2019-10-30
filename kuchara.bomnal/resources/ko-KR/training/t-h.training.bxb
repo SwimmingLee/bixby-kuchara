@@ -8,15 +8,35 @@ train (t-haza683loy19nqj2jge51xhro) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572438468397)
 }
+train (t-hbpfklyrqhjqh41d1lohes07h) {
+  utterance ("[g:RoomPropertyEnum] (스트레스)[v:RoomPropertyEnum:'슈퍼 S']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439343922)
+}
 train (t-hej6peul675nspw24z0x9acuu) {
   utterance ("[g:GenreEnum] (따뜻한)[v:GenreEnum:가족]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437157821)
 }
+train (t-hkseo3qsu0jcq0j152i7pxjgw) {
+  utterance ("[g:RoomPropertyEnum] (고 스트레스)[v:RoomPropertyEnum:'GOLD CLASS']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439511225)
+}
 train (t-hktygifp26tkdlvk7s5w2xqm5) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (메박)[v:Brand:megabox]은 (시러)[v:ExceptExpression:true]\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572349940150)
+}
+train (t-hl85ui20kqa30394q74w8xpqe) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (메가박스)[v:Brand:megabox]는 (없애)[v:ExceptExpression:true]고 알려줘라\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572440014453)
+}
+train (t-hlwv82tf1xful5ngufmrz325g) {
+  utterance ("[g:RoomPropertyEnum] (스팸 X)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439495235)
 }
 train (t-hnscr07r0tdd1genbmmrtjqnf) {
   utterance ("[g:RoomPropertyEnum] (필름소사이어티)[v:RoomPropertyEnum:필름소사이어티]\n")

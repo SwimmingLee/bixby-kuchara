@@ -18,6 +18,11 @@ train (t-z6wulqw6ro7lbcwxaypvnyu9w) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437567858)
 }
+train (t-z7x3675ph94x5tct0syq6yfud) {
+  utterance ("[g:RoomPropertyEnum] (서 파)[v:RoomPropertyEnum:SUBPAC]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439619447)
+}
 train (t-z8en0e0t6fs8378rn0nhddf7t) {
   utterance ("[g:RoomPropertyEnum] (골드클래쓰)[v:RoomPropertyEnum:'GOLD CLASS']\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
@@ -32,6 +37,11 @@ train (t-zetggg6n7lf4w05sr4ci09laa) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯데씨네마)[v:Brand:lottecinema]에서는 (안볼래)[v:ExceptExpression:true]\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572349898852)
+}
+train (t-zocmxj3mn03zq7frq5cwgc3ui) {
+  utterance ("[g:RoomPropertyEnum] (스크린)[v:RoomPropertyEnum:SCREENX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439532760)
 }
 train (t-zrdbrfk8iznlg7j9r1gzv1nza) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (조커)[v:MovieName]만 찾아줘라\n")

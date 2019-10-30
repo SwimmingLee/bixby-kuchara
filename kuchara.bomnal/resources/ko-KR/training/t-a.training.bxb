@@ -18,6 +18,16 @@ train (t-a38hhmtc83kibq3lww6nkcugx) {
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
   last-modified (1572409997468)
 }
+train (t-a4371e3qj0rao7tpp3ou2xd8m) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (cgv)[v:Brand:cgv] (빼)[v:ExceptExpression:true]라\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572439942925)
+}
+train (t-a5uhxb6kcp2w5q0qo3j5w6sq7) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (롯씨)[v:Brand:lottecinema]에서(만)[v:ExceptExpression:false] 찾아줘\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572440051181)
+}
 train (t-a6eqwm21gscnl3a1iyw3w780b) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (11시)[v:time.DetachedTime] (까지 하는)[v:IsStartTime:false] 영화 보여줘")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
@@ -37,6 +47,11 @@ train (t-aa2cn1w7kp3g1iivo1ljwu99e) {
   utterance ("[g:GenreEnum] (멜로)[v:GenreEnum:멜로/로맨스]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572436083646)
+}
+train (t-aa6dxua1nubjgw5em6n04cd2y) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (cgv)[v:Brand:cgv]는 (빼고)[v:ExceptExpression:true] 보여줘\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572439898972)
 }
 train (t-adlx3wtfhcbe3zaiapnph580g) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 볼 수 있는 영화 좀 알려주라\n")

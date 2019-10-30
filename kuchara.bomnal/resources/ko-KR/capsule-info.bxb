@@ -2,8 +2,8 @@ capsule-info {
   display-name (동네영화관)
   developer-name (kuchara)
   icon-asset (/images/Icon.png)
-  description ("동네영화관은 ")
-  website-url (https://example.com/)
+  description ("갑자기 팝콘이 먹고싶을 때는 동네영화관에서 상영중인 영화를 찾아보세요! 동네영화관은 쉽고 빠르게 당신의 상황에 맞는 최적의 영화 예매를 도와드립니다.")
+  website-url (https://github.com/SwimmingLee/bixby-kuchara/blob/master/README.md)
   terms-url (https://github.com/SwimmingLee/bixby-kuchara/blob/master/Privacy%20Policy.md)
   dispatch-name (동네영화관)
   dispatch-aliases{

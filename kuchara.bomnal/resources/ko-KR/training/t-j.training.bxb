@@ -78,6 +78,11 @@ train (t-jl4djdjwviukcpqg1t39pmtf4) {
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572349847489)
 }
+train (t-jmoq7fc776hhof8iep4zbf8fo) {
+  utterance ("[g:RoomPropertyEnum] (스페어 x)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439467245)
+}
 train (t-joj1inbcxlznqeq5v2fmevsh0) {
   utterance ("[g:GenreEnum] (엑소시즘)[v:GenreEnum:컬트]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

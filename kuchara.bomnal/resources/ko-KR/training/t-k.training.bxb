@@ -53,6 +53,11 @@ train (t-kltgxapgrzsojvmlo0vcvguu3) {
   plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
   last-modified (1572419767016)
 }
+train (t-kmkuxavh0j4tiisa54ajgv4t8) {
+  utterance ("[g:RoomPropertyEnum] (sound 엑스)[v:RoomPropertyEnum:SOUNDX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439441389)
+}
 train (t-knd74ygt6ovsfanvdo5qg5hud) {
   utterance ("[g:RestructureTimeViewToTheaterView] 가까운 순서대로 볼래\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)

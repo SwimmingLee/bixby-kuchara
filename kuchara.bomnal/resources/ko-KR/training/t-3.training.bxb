@@ -23,6 +23,11 @@ train (t-39m2kr0igxn33a18jqfuxgfnt) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434981815)
 }
+train (t-3acojm2pwc72br4jud72om783) {
+  utterance ("[g:RoomPropertyEnum] (스크릴렉스)[v:RoomPropertyEnum:SCREENX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439378084)
+}
 train (t-3aqp2ugtnm1y7u6sb0ebg8yxl) {
   utterance ("[g:GenreEnum] (모험)[v:GenreEnum:모험]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
@@ -47,6 +52,11 @@ train (t-3dbglkk9rgoxfo1c2a6q5mob1) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 이거 말고는 볼거 없어?\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572411071978)
+}
+train (t-3o1mbugm25h40ekpxd9gamwkh) {
+  utterance ("[g:RoomPropertyEnum] (수퍼플렉쓰쥐)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439322533)
 }
 train (t-3qisad784jhvuw5wcwebwn03o) {
   utterance ("[g:GenreEnum] (어벤쳐)[v:GenreEnum:모험]\n")

@@ -1,3 +1,8 @@
+train (t-e3puvh2qobkmqq177vtjgxw5n) {
+  utterance ("[g:RoomPropertyEnum] (사운드 X)[v:RoomPropertyEnum:SOUNDX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439443480)
+}
 train (t-e3qrtamij8a9bzucec5ppekqq) {
   utterance ("[g:GenreEnum] (SF)[v:GenreEnum:SF]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

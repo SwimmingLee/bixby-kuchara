@@ -78,3 +78,8 @@ train (t-px4mfnhg65l8epaom1xtrnpph) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437590535)
 }
+train (t-pyzrpe546nibagknqjb9jualc) {
+  utterance ("[g:RoomPropertyEnum] (시드셰프)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439523607)
+}

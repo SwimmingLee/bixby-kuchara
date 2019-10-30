@@ -13,6 +13,11 @@ train (t-qq1voyfckd5qbmj50pmeykl7j) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572433179763)
 }
+train (t-qtheaofa28c94ob6niy2sb529) {
+  utterance ("[g:RoomPropertyEnum] (sound 엑스)[v:RoomPropertyEnum:SOUNDX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439421636)
+}
 train (t-qts94ijxozchjfp5pbvgk4dm6) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 딴 영화는 없어?\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)

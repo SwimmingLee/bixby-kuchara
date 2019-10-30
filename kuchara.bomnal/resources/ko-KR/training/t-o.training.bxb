@@ -8,6 +8,11 @@ train (t-o41t9ogaoy6zbj2vzw93puksn) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437603741)
 }
+train (t-o8n2y3xg4go8mxtdvwnd28non) {
+  utterance ("[g:RoomPropertyEnum] (심혜진 F)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439595859)
+}
 train (t-oapjxmzo8qsw4qeln5otw4kf6) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (가장 보통의 연애)[v:MovieName]만 보고 싶어")
   plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
@@ -37,6 +42,11 @@ train (t-ol941dukbziuhvnn5l7x5pgl0) {
   utterance ("[g:GenreEnum] (따뜻한)[v:GenreEnum:드라마]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572435561027)
+}
+train (t-olq5njgp887fw9azhh9p4jrnr) {
+  utterance ("[g:RoomPropertyEnum] (서브 팝)[v:RoomPropertyEnum:SUBPAC]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439635560)
 }
 train (t-oozrwn4jql2cmhm382kx02iwx) {
   utterance ("[g:GenreEnum] (가족이랑 보는)[v:GenreEnum:가족]\n")

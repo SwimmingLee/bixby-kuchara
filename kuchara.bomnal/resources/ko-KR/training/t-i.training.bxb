@@ -1,3 +1,13 @@
+train (t-i3g7tiehpudfahnqaz5m8gi5k) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (cgv)[v:Brand:cgv](만)[v:ExceptExpression:false]\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572440030743)
+}
+train (t-i3zwytw85awbvpby2dheyqdwl) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼 S)[v:RoomPropertyEnum:'슈퍼 S']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439330717)
+}
 train (t-i4m4ln5176zutdqwpwhdi6ovb) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 다른 영화로 부탁해요\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
@@ -23,10 +33,20 @@ train (t-ii4r5yaimfrsrus8lsodbvz22) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437385803)
 }
+train (t-ii6fecvszwoyyrigyrjscj0av) {
+  utterance ("[g:RoomPropertyEnum] (신의 디 셰프)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439559814)
+}
 train (t-iil7fvcc9r844kfzawlennmpp) {
   utterance ("[g:GenreEnum] (로맨틱코메디)[v:GenreEnum:멜로/로맨스]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572436018083)
+}
+train (t-incvnmlub1j1i2fqum508g045) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (메박)[v:Brand:megabox]는 (놉)[v:ExceptExpression:true]\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572440003637)
 }
 train (t-inedr9bx4q48f3smr6dwrp8x2) {
   utterance ("[g:GenreEnum] (어드벤쳐)[v:GenreEnum:모험]\n")

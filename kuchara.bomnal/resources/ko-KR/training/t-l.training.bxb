@@ -1,3 +1,18 @@
+train (t-l65xuw32k68hs3l1mr03vthbm) {
+  utterance ("[g:RoomPropertyEnum] (슈퍼 스)[v:RoomPropertyEnum:'슈퍼 S']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439338192)
+}
+train (t-l8salwegfuuwywp8d90mczcci) {
+  utterance ("[g:RoomPropertyEnum] (씨네앤리빙룸)[v:RoomPropertyEnum:씨네앤리빙룸]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439664185)
+}
+train (t-l90akphyehur2kmkt1ua4asuh) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (cgv)[v:Brand:cgv]는 (제외)[v:ExceptExpression:true]해줘라\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572439973279)
+}
 train (t-la183uippvu4m1a2v6dgqb4fm) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (11시)[v:time.DetachedTime] 전에 (끝나는)[v:IsStartTime:false] 영화만 알려줘")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
@@ -7,6 +22,11 @@ train (t-lbmadl9ejx0nae71yenla2tgd) {
   utterance ("[g:RoomPropertyEnum] (슈퍼플렉쓰쥐)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434511145)
+}
+train (t-lcg0qvl3u1u86ei1dq08s2ni0) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (롯떼)[v:Brand:lottecinema](만)[v:ExceptExpression:false] 띄워줘라\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572440068773)
 }
 train (t-lcscniu8cwlfxsxhc7pjrs16a) {
   utterance ("[g:GenreEnum] (코미디)[v:GenreEnum:코미디]\n")
@@ -27,6 +47,11 @@ train (t-leucannzqxzyab8kb42xhhp4v) {
   utterance ("[g:RoomPropertyEnum] (더부띠끄)[v:RoomPropertyEnum:더부티크]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572433322833)
+}
+train (t-llqtsczhmpkwbdg9xp8wufbb2) {
+  utterance ("[g:RoomPropertyEnum] (서 팩)[v:RoomPropertyEnum:SUBPAC]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439648061)
 }
 train (t-lohly7j08v3tryvyyj8ccatiq) {
   utterance ("[g:RoomPropertyEnum] (템퍼시네마)[v:RoomPropertyEnum:'TEMPUR CINEMA']\n")

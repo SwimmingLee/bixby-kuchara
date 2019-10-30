@@ -28,6 +28,11 @@ train (t-u7xv7n3ul1f1187ghx2r9h1za) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572433397316)
 }
+train (t-u97c6oovuj4t0f2a36lh4lrqo) {
+  utterance ("[g:RoomPropertyEnum] (사운드 X)[v:RoomPropertyEnum:SOUNDX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439413156)
+}
 train (t-uaoypy6cu2ggucwr5r70k95es) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (로떼시네마)[v:Brand:lottecinema](만)[v:ExceptExpression:false] 알려줘")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
@@ -52,6 +57,26 @@ train (t-ukx2zhx9lg1mquqhrwml4yg56) {
   utterance ("[g:GenreEnum] (애니)[v:GenreEnum:애니메이션]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437246424)
+}
+train (t-um3two80ckpsumubzt62luyzl) {
+  utterance ("[g:RoomPropertyEnum] (신의 엔 리빙룸)[v:RoomPropertyEnum:씨네앤리빙룸]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439671984)
+}
+train (t-uo0pg0x3hfox0h4tvi13xerv2) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (cgv)[v:Brand:cgv](만)[v:ExceptExpression:false] 알려줘라\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572440036567)
+}
+train (t-uo66fl5deln9zflvy5dae353c) {
+  utterance ("[g:RoomPropertyEnum] (솔티)[v:RoomPropertyEnum:4D]")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439694552)
+}
+train (t-upxcuuaml0m0cyivlfz2w4m7a) {
+  utterance ("[g:RoomPropertyEnum] (신 헤드셋)[v:RoomPropertyEnum:'CINE de CHEF']\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439579795)
 }
 train (t-uridspkac2mizhbf3hzxv9j3d) {
   utterance ("[g:RoomPropertyEnum] (샤롯떼)[v:RoomPropertyEnum:샤롯데]\n")

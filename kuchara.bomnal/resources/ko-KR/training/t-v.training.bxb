@@ -8,10 +8,20 @@ train (t-v6gmpvgm4gy7yftits1rgzz2a) {
   plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)
   last-modified (1572420620474)
 }
+train (t-v7647nptbhmo2scg022v7wpbl) {
+  utterance ("[g:RoomPropertyEnum] (싸 팩)[v:RoomPropertyEnum:SUBPAC]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439656435)
+}
 train (t-v9c179qg05n2g7o4ldon0zi17) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (롯씨)[v:Brand:lottecinema] (뺄래)[v:ExceptExpression:true]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572370454332)
+}
+train (t-vdr8d5id33a5vdealhg84kqj7) {
+  utterance ("[g:RoomPropertyEnum] (스피엑스)[v:RoomPropertyEnum:SphereX]\n")
+  plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
+  last-modified (1572439500835)
 }
 train (t-ve6ue4k7wl1d36p1f6olmhww3) {
   utterance ("[g:RoomPropertyEnum] (샤롯데 프라이빗)[v:RoomPropertyEnum:'샤롯데 프라이빗']")
@@ -32,6 +42,11 @@ train (t-vhos64ve3s0azinbd0oavojrd) {
   utterance ("[g:RoomPropertyEnum] (수퍼에쓰)[v:RoomPropertyEnum:'슈퍼 S']\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434709799)
+}
+train (t-vis77r1wntx01oemkogrqymda) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (메박)[v:Brand:megabox] (없이)[v:ExceptExpression:true] 알아봐줘\n")
+  plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
+  last-modified (1572440022319)
 }
 train (t-vjjbn183ymh29ucfv91alhowa) {
   utterance ("[g:RoomPropertyEnum] (프리미엄)[v:RoomPropertyEnum:PREMIUM]\n")
