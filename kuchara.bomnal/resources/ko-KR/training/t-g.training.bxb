@@ -3,10 +3,30 @@ train (t-g0wsrwynbrwrfaqo5328vqzz5) {
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572349838264)
 }
+train (t-g4j7anmvbxuz46uwfs1469zy8) {
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (그린북)[v:MovieName]은 (빼고)[v:ExceptExpression:true] 볼래\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
+  last-modified (1572419893472)
+}
+train (t-gce6myfwlwvf3cxu59e76h0k2) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (니나 내나)[v:MovieName]만 알려줘라\n")
+  plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
+  last-modified (1572419801977)
+}
+train (t-ghwrjlqc8rlv4jvojelj3ux2i) {
+  utterance ("[g:Brand] (씨지비)[v:Brand:cgv]")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425529033)
+}
 train (t-gl4wn3e8ylxsetu5xfxvwtiiy) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (메박)[v:Brand:megabox] (빼고)[v:ExceptExpression:true]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572399088636)
+}
+train (t-gqyq50fk9jo5o3l6ivtn83oxb) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (북간도의 십자가)[v:MovieName] (제외하고)[v:ExceptExpression:true] 보여줄래\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
+  last-modified (1572420108843)
 }
 train (t-gyz9ims6dkab6j54n0fvuj823) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (메가박스)[v:Brand:megabox](만)[v:ExceptExpression:false]")

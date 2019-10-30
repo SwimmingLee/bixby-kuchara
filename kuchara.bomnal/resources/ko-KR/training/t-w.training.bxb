@@ -1,10 +1,45 @@
+train (t-w0hq8bdnuhqq09hlm8xdpodh3) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] (왕십리)[v:geo.SearchTerm] 쪽에서 가능한 영화 뭐 있어?")
+  plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)
+  last-modified (1572420836108)
+}
+train (t-w3s04itg4xs87arg41ourct0p) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (건대입구)[v:TheaterName] (시지비)[v:Brand:cgv]는 (제외)[v:ExceptExpression:true]해줘")
+  plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
+  last-modified (1572413712781)
+}
+train (t-wbhcprg8c1e6w9x5yp6ip19vi) {
+  utterance ("[g:Brand] (시지브이)[v:Brand:cgv]\n")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425587674)
+}
+train (t-wfadtg2wcstiwte5o7yqkvudx) {
+  utterance ("[g:FindMovieWithLocation] (명동역)[v:geo.SearchTerm] 근처 영화관의 시간표를 알고 싶어")
+  plan (bYw/C8IwFMTPP1VnnVxFXIR+Bxcnq0ILzjF5NKFNAmlSNz+7qaCU0gcHd/d+HFY4VoFL5lj6tNqwOi2UppsT5EjkXJIINT2Ul5ltFWE/gM/KiO+nQy6WM6+swW5AXZkmcbfK+Ny7wH1whMOAyVhFY9y6VW1aku2NYPPrTsHbJpQlNR7bkfL9ktTfyIk5LgtyGktMMMUMcyRYxIReTqLHX91No4vMBw==)
+  last-modified (1572409838704)
+}
 train (t-wi7tnrxlvhkcvpd4mfgjtt7z9) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (아침 8시)[v:time.DetachedTime]에 (시작하는)[v:IsStartTime:true] 것 보고 싶어")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
   last-modified (1572377937536)
 }
+train (t-wk8qfyfj2lqhn6ctps40fr7br) {
+  utterance ("[g:Brand] (메가박스)[v:Brand:megabox]\n")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425596655)
+}
+train (t-wkp4x3vlx7lb33flu9jojvnf3) {
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (나홀로 집에)[v:MovieName] (없이)[v:ExceptExpression:true] 보여줘\n")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
+  last-modified (1572420010441)
+}
 train (t-wlnxtxwidqnv2rvl9rcthmncc) {
   utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 다른 곳에서 찾아줄래?\n")
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
   last-modified (1572349636045)
+}
+train (t-wtjd79fg02b64zw52wx8xb3d4) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (따듯한)[v:GenreEnum:드라마] 영화 보여줘")
+  plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQQFMMlnXNK80l2VpmBkYGJiDJAKRBEAKYwKIMAA==)
+  last-modified (1572414051462)
 }

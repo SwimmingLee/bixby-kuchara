@@ -1,12 +1,32 @@
+train (t-j3povfn1bj5qlvutks7owpw3e) {
+  utterance ([g:FindMovieWithLocation] 근처 영화관 상영시간표 알려줘)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572409012333)
+}
+train (t-j3xcyeo5shsr7dpykuhh78t3p) {
+  utterance ("[g:RestructureTimeViewToTheaterView] 가까운 위치 먼저 띄워줘\n")
+  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
+  last-modified (1572410187273)
+}
 train (t-j6grzp8arkdngvgea97idmds0) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (메박)[v:Brand:megabox](만)[v:ExceptExpression:false] 보여줄래")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572370996197)
 }
+train (t-jbib039foxvum1gom3q92h93x) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 이거 말고 다른거\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572411027597)
+}
 train (t-jcm7ekt8f4jo3x3zgtnsz52nn) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (롯데시네마)[v:Brand:lottecinema] (제외)[v:ExceptExpression:true]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572369841140)
+}
+train (t-jibr86pv54vr2yf4md5nwpk8l) {
+  utterance ("[g:RestructureTimeViewToTheaterView] 상영관 별 정렬\n")
+  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
+  last-modified (1572410202847)
 }
 train (t-jl4djdjwviukcpqg1t39pmtf4) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (시지브이)[v:Brand:cgv]를 (빼)[v:ExceptExpression:true]줘\n")

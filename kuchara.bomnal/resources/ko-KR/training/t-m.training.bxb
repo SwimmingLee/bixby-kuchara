@@ -1,3 +1,8 @@
+train (t-m0lr1uqvvbgge0wvknfwdtgl9) {
+  utterance ("[g:Brand] (로씨)[v:Brand:lottecinema]\n")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425678555)
+}
 train (t-m3hgjrl3rbjns9wnf9dc4zczo) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (메박)[v:Brand:megabox](만)[v:ExceptExpression:false] 보여줄래")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
@@ -8,6 +13,11 @@ train (t-m3m3h77rgo50wkv66lg7ucpjm) {
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
   last-modified (1572376928219)
 }
+train (t-m97n7wyt3bamuguksd9n814xo) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] (서면)[v:geo.SearchTerm]에 영화 차자도")
+  plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)
+  last-modified (1572420713940)
+}
 train (t-mbrnu3c3x1beziivtiyuydj6q) {
   utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 다른 데 봐봐\n")
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
@@ -17,6 +27,16 @@ train (t-md2fshsjj33yxenql812uenz9) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 상영 영화를 추천해줄래?\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349417033)
+}
+train (t-mdpao6fa3wj1026wasbp5k9mo) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (우먼 인 할리우드)[v:MovieName] (안볼래)[v:ExceptExpression:true]\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
+  last-modified (1572420166488)
+}
+train (t-mv7isvboig28fwg1y16sibkl6) {
+  utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (세시)[v:time.DetachedTime] (넘어)[v:IsStartTime:true] 서 있는 것만 예매할래")
+  plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
+  last-modified (1572423111481)
 }
 train (t-mz6jwlubwp3fwbqf34777qf2g) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 개봉작을 추천해봐\n")

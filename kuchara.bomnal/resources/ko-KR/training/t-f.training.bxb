@@ -1,3 +1,8 @@
+train (t-f0480s7mndw4lhvmldp1vlgg9) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM] (코미디)[v:GenreEnum:코미디] (안볼래)[v:ExceptExpression:true]")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572415966567)
+}
 train (t-f0t883hsnkp8ztheb6epsax6s) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (롯씨)[v:Brand:lottecinema](만)[v:ExceptExpression:false] 보고 싶다")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
@@ -12,4 +17,9 @@ train (t-ffnnz1cd7ril1xaozp4990ksb) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 빠른순으로 찾아줘\n")
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
   last-modified (1572349801833)
+}
+train (t-fvl5x02n3dyktx27q8ukeysco) {
+  utterance ("[g:RestructureTimeViewToTheaterView] 근처 상영관 위주로 볼래\n")
+  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
+  last-modified (1572410157893)
 }

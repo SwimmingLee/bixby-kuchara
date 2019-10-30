@@ -3,8 +3,23 @@ train (t-30roushubuyeifxzrk9clf163) {
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572370914829)
 }
+train (t-35fc9ra9l0jt5f2bq7rt6eqcd) {
+  utterance ("[g:Brand] (로떼시네마)[v:Brand:lottecinema]\n")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425644669)
+}
 train (t-37cdhkudufj7i0aayylox5j4v) {
-  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (CGV)[v:Brand:cgv] (말고)[v:ExceptExpression:true]\n")
+  utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (씨지비)[v:Brand:cgv] (말고)[v:ExceptExpression:true]\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
-  last-modified (1572369503509)
+  last-modified (1572423497419)
+}
+train (t-3axusl7mhc5khikpdw9bukq7a) {
+  utterance ("[g:RestructureTimeViewToTheaterView] 가까운 영화관 별로 정렬\n")
+  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
+  last-modified (1572410139133)
+}
+train (t-3dbglkk9rgoxfo1c2a6q5mob1) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 이거 말고는 볼거 없어?\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572411071978)
 }

@@ -1,3 +1,13 @@
+train (t-k38326v3xx7p1t9neqd9k1b5o) {
+  utterance ("[g:RestructureTimeViewToTheaterView] 가까운 상영관 별로 보여줄래\n")
+  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
+  last-modified (1572410166574)
+}
+train (t-kaic0izxeunuyidcs6dt0jwwn) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 이거 말고 다른 영화\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572410992205)
+}
 train (t-kak82pajr2dlt6urr4mepfzug) {
   utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 딴 극장을 알려줘\n")
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
@@ -13,8 +23,23 @@ train (t-kcnznd9gofc2cgf527jtux9zn) {
   plan (jY49DsIwDIVdys8JWGBmYMkdkACJoeqQSMymsZSoaYqSNOL4JO2AVBiwB9vy954NGzi0Q6PQIXv0nUXDhCIM5GonyZHkjSI5GILjDLtqk6iqj5ruOiihOzpZKVTNYTdDb54HdCEj/17bRx1ZSAJ2TuusvLyejrzXvf3yqLClH9j240EBs/P4wRoKWEAJS1ilHtKUM08FTDHVcuQS8QY=)
   last-modified (1572375250141)
 }
+train (t-kltgxapgrzsojvmlo0vcvguu3) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (말레피센트 2)[v:MovieName]만 보여줘\n")
+  plan (Y2Bh0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavcwMjAxMQJIBSIMgBDCBRRkA)
+  last-modified (1572419767016)
+}
+train (t-knd74ygt6ovsfanvdo5qg5hud) {
+  utterance ("[g:RestructureTimeViewToTheaterView] 가까운 순서대로 볼래\n")
+  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
+  last-modified (1572410131877)
+}
 train (t-ku5rns0opk9ncodp8hn24ao6s) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 지금하는 영화들 볼래\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349436131)
+}
+train (t-kw4l74od0q82ipu5ntvbc2bjb) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (너를 만난 여름)[v:MovieName] (제외)[v:ExceptExpression:true]한 영화 보여줘라\n")
+  plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
+  last-modified (1572420131211)
 }

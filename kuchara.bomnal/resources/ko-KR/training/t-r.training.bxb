@@ -1,3 +1,18 @@
+train (t-r0jiq9iwgf30ey1akli8k2he8) {
+  utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (로코)[v:GenreEnum:멜로/로맨스]는 (제외)[v:ExceptExpression:true]해줘")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
+  last-modified (1572415658114)
+}
+train (t-rn6p5roygxytel68fzmaffqaq) {
+  utterance ("[g:Brand] (스즈브)[v:Brand:cgv]\n")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425576736)
+}
+train (t-rqfvvkjquobr9tnpn7q8vwazu) {
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (빅 위시)[v:MovieName]만 내놔\n")
+  plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
+  last-modified (1572419724136)
+}
 train (t-rridn4do8th8c5orix13jdhh9) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (메가박스)[v:Brand:megabox]는 (싫어)[v:ExceptExpression:true]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)

@@ -3,6 +3,16 @@ train (t-n8lx2jakb3j4mdtqaud81mugw) {
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349525764)
 }
+train (t-necpge0x5txdimouany0dtyzc) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (롯씨)[v:Brand:lottecinema] (청량리)[v:TheaterName] (싫어)[v:ExceptExpression:true]\n")
+  plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
+  last-modified (1572421975648)
+}
+train (t-nnrqjn3qqxgmj06stvx6eon41) {
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (팔십이년생김지영)[v:MovieName]만보여줘")
+  plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
+  last-modified (1572411914472)
+}
 train (t-nx3nnrf274oypx2yzcfupvv63) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (10시 30분)[v:time.DetachedTime] 쯤 볼 수 있는 영화 보여줘")
   plan (jYy9CsIwFIVP6s8bOLkJDi55B8G6lQ4tOMfmQi5NE0nT4uObdBGKg3e553K++2GPUz91RgUln35wysqWB6qDpkC66QzpyRIuK+bONlKo/Mz04Gjyy9XpluvmL91x5lnGVMibipSJ8v0KNI7sHc4rQaV6+oEdvg6KKpszgB0ECmywTQkpiyULYLnyFGmn7gM=)

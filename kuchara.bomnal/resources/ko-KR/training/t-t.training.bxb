@@ -1,7 +1,27 @@
+train (t-t05emh6g2rgw6o2kwybcsopbu) {
+  utterance ("[g:Brand] (시지비)[v:Brand:cgv]\n")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425537632)
+}
+train (t-t34g92jwkz2miezhns7kqvs3z) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 다른 거 보고싶어\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572411011078)
+}
+train (t-t9kdwgt25wnurlsxzqp16sgvf) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 다른 영화 보여줘\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572410982242)
+}
 train (t-tgusw20buii6zmnwhaofahwiw) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 상영하고 있는 영화 예매할래\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349537107)
+}
+train (t-tgxoa3796i9in3tujs1m1ryhm) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 딴 영화 찾아줘\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572411019840)
 }
 train (t-tw0eoi143ztpij26hr1osxce2) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯씨)[v:Brand:lottecinema] (뺄래)[v:ExceptExpression:true]\n")

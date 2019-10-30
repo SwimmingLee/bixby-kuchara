@@ -1,3 +1,8 @@
+train (t-43uaqn7navx9ze3injx3eiz8r) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 다른 거 추천해봐\n")
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572411045965)
+}
 train (t-49tj2k7pvrl37d39nq15e7uo0) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (스즈브)[v:Brand:cgv] (없애)[v:ExceptExpression:true]줘\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
@@ -8,8 +13,23 @@ train (t-4afgfxa6rpg77ys21o7x0lgyl) {
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
   last-modified (1572349680530)
 }
+train (t-4cffi5k4hd8r74bk4qv2e3l38) {
+  utterance ("[g:Brand] (로떼)[v:Brand:lottecinema]\n")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425671094)
+}
 train (t-4j1xbgqrbslpldcu8hc7xgjgm) {
   utterance ([g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 개봉 영화 좀 찾아줘)
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349379277)
+}
+train (t-4jcij6l9tzmp4sx01l9np2um1) {
+  utterance ("[g:kuchara.bomnal.FindMovieWithMovieAndPos,r:kuchara.bomnal.ShowMoviePoster] (강남)[v:geo.SearchTerm]에서 영화 보고싶어")
+  plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)
+  last-modified (1572420520980)
+}
+train (t-4rgy9momvhojphdax66i61i85) {
+  utterance ("[g:Brand] (롯시)[v:Brand:lottecinema]")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572413774997)
 }

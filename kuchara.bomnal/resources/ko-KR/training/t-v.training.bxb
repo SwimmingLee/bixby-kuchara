@@ -1,7 +1,17 @@
+train (t-v6gmpvgm4gy7yftits1rgzz2a) {
+  utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] (명동역)[v:geo.SearchTerm] 주변에서 영화 볼래")
+  plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)
+  last-modified (1572420620474)
+}
 train (t-v9c179qg05n2g7o4ldon0zi17) {
   utterance ("[g:FilterMovieWithTheaterNameAndTiOS:continue:TimeOrderedSchedule] (롯씨)[v:Brand:lottecinema] (뺄래)[v:ExceptExpression:true]")
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572370454332)
+}
+train (t-vlncay3o9cvajgdngtgni9byc) {
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (해리포터)[v:MovieName]만 볼 수 있어\n")
+  plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBA0wBXQbLVzAyMDExAkgFIgyAEMIFFGQA=)
+  last-modified (1572419751163)
 }
 train (t-vpzvsv4t7o13857l5o7qj4fyr) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순서대로 보여줘\n")
@@ -12,4 +22,9 @@ train (t-vr2rvp30qrh8t3ngoqw34yccv) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 인기있는 영화는 뭐있어?\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
   last-modified (1572349354031)
+}
+train (t-vx9f54437lg09pc0xsm560tos) {
+  utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (메박)[v:Brand:megabox] (송파파크하비오)[v:TheaterName]는 (놉)[v:ExceptExpression:true]\n")
+  plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
+  last-modified (1572421989944)
 }

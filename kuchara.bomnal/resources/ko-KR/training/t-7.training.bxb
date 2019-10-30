@@ -1,5 +1,20 @@
+train (t-723t67jwtu3j03k5kc4iymglc) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] (열두시)[v:time.DetachedTime] 에하는영화만")
+  plan (lY7PCsIwDIcz578X8ORN9KLQdxDUk3PCBp7jGljZ1kqXDh/fdciE6cVL4Jd8+RKYw65wWY4Wxd1UGkuRqopiK8mSTLKcpCvppjiPTKMItgP4pEom28085Hf3WqYqTqL/xOsvsZa99mwyZGU0rAbUBSuSV6M0J2xdxs4SLBvVCG5viQMy+aPH58NSXXvBZiCIsKAf2OLjIEb/rAdgBgGMIIQxTGDaJnjnoMtBl6Gvvh966gU=)
+  last-modified (1572423098976)
+}
+train (t-75lyir0zt5dytl08z6xcwpc4z) {
+  utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (그린북)[v:MovieName]은 (빼고)[v:ExceptExpression:true] 볼래")
+  plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT75aZA1QOloMr8kvMTXXMSwnJ8A/2ZZBH0+BakZxaUOJaUVCUWlycmZ/HIIGmAG4EyW5jYWBkYGJgBtIMQBYEwgAzVI4BAA==)
+  last-modified (1572411925124)
+}
 train (t-7c6i2jiktacrk9za9gv74an69) {
   utterance ("[g:FilterMovieWithTimeAndTiOS:continue:TimeOrderedSchedule] (오전 10시)[v:time.DetachedTime] 쯤에 (끝나는)[v:IsStartTime:false] 거 찾아줄래")
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
   last-modified (1572375647344)
+}
+train (t-7rymz0v36opqwehgdr0w9ld7m) {
+  utterance ("[g:Brand] (롯데씨네마)[v:Brand:lottecinema]\n")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425612894)
 }

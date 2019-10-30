@@ -1,3 +1,8 @@
+train (t-2w95vr7dp3myau8nwe1aio4np) {
+  utterance ("[g:Brand] (롯시)[v:Brand:lottecinema]\n")
+  plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
+  last-modified (1572425636335)
+}
 train (t-2z5rtf5tmynw1joif17qw76zi) {
   utterance ("[g:FindTheaterWithMovieSelected:continue:TheaterOrderedSchedule] 여기 말고는 없어?\n")
   plan (bU3LCgIxEBsfX+FR8LSwn+HJF1TY89gJdLDbwjj1+10fp8UEkkACoTVt7i0mNu5vdSyc+2sCO+ygD6du1u21yK8f1NOxPhUBGdEhtJ2NTzxCLlWLB7cWvRlo9//sbAKDhJggLYNWtKDlpDT5m1980gs=)
