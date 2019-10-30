@@ -33,6 +33,11 @@ train (t-7c6i2jiktacrk9za9gv74an69) {
   plan (jY09C8JADIZT68cvcNFNcHC5/yCo4FA6XME59gIN/ZJrevjzvWsH4XAwGZKXPHlf2MChHssKLapn33bYqIJbyq0hS0aXFZmxIThFzI0bIZv1junBUoWXc2cKzjXsIvQ+aEErAfkrau/YKfEHdUGhQFzfL0vDwH0Hx8ggw5p+YNuvBwkG5yl+DQksIIUlrPwOXoUOKoG55plOnCc+)
   last-modified (1572375647344)
 }
+train (t-7cfqtl7irla5clyera3dtfpk4) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie] (8시)[v:time.DetachedTime] (부터)[v:IsStartTime:true] 상영하는 영화가 어떤거야\n")
+  plan (lc69CsIwEADgq/XnCVx0dlHIOwgqOJQOLTifzUGP/kl6DT6+uXYQiovJkDvy3Q9s4FQNRYkOzbNrWqxNzg2lzpIjmxUl2aGmB0uZdJ4JjjN841rIjX+KtPbc2pzTLIHdzN77TNCJmv+G7j17I0GYCwopvb5fjvqeuxYOs04JVvSDbb89SFBHjHusIYIFxLCEVYghZHo1i2A60xuPLogP)
+  last-modified (1572454142060)
+}
 train (t-7ii49bkqfnnh5myqozcqj5dax) {
   utterance ("[g:GenreEnum] (뿌수는)[v:GenreEnum:액션]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

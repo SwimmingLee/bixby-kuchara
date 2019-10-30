@@ -83,6 +83,11 @@ train (t-3qtkkrfurt9eqlf1vka9uuhuo) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572435137368)
 }
+train (t-3v9t3fiee8073op6pk05xg3ak) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (위플래시)[v:MovieName] 시간표 보여줘")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572456055125)
+}
 train (t-3vfhosbz6mgjsktp58xgzl0nw) {
   utterance ("[g:RoomPropertyEnum] (샤로떼)[v:RoomPropertyEnum:샤롯데]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

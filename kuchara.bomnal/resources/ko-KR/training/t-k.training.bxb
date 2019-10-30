@@ -13,6 +13,11 @@ train (t-k3m40edormgl71iwhns3q3bb1) {
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiqYAop80J7EwMDIwMTADaQYgCwJhgBkqxwAA)
   last-modified (1572446656291)
 }
+train (t-k57rkfjxlej2dlc6ezockjiac) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 요 주변에서 (날씨의 아이)[v:MovieName] 상영시간표 알려줘")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572455121038)
+}
 train (t-k8asx0rrw23tkxnyn15bu4kc1) {
   utterance ("[g:GenreEnum] (에세프)[v:GenreEnum:SF] \n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
@@ -92,6 +97,11 @@ train (t-ktp9e6sysu6stqeii0ihrcqtw) {
   utterance ("[g:GenreEnum] (무지컬)[v:GenreEnum:뮤지컬]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437327448)
+}
+train (t-ktquhv2httdsp3pq5xcjytl5z) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM:continue:TheaterOrderedScheduleWithMovie] (4시)[v:time.DetachedTime] (넘어)[v:IsStartTime:true] 서 있는 거 보자\n")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572454583411)
 }
 train (t-ku5rns0opk9ncodp8hn24ao6s) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 지금하는 영화들 볼래\n")

@@ -1,3 +1,8 @@
+train (t-92d5p1fvlgxc3qg3digr2jiq2) {
+  utterance ([g:FindMovieWithLocation] 동네영화관에서 근처 상영시간표 알려줘)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572456762296)
+}
 train (t-93r451hb6h9g8f6qkeqwk27ww) {
   utterance ("[g:Brand] (롯데시네마)[v:Brand:lottecinema]\n")
   plan (Y2BiEMkuTc5ILErUS8rPzUvM0XMqSsxLwSHKCIQMDDxAzATEQDYA)
@@ -82,6 +87,11 @@ train (t-9v1vifyc41zgm7mdoklyt5794) {
   utterance ("[g:GenreEnum] (단편)[v:GenreEnum:실험]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437668384)
+}
+train (t-9vgxbkuf0amvepuidsbsit4j7) {
+  utterance ([g:OpenBrowser:continue:MovieScheduleDetail] 웹으로 가자)
+  plan (Y2BmEM0uTc5ILErUS8rPzUvM0StPTQoN8mGQQhP2L0jNcyrKLy9OLWJQQpPzzS/LTA1OzkhNKc1JdUktSczMYWBiYARiBiDJyMAAowE=)
+  last-modified (1572449981259)
 }
 train (t-9zpm33wdo14nowqj99xcfs82b) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (롯데시네마)[v:Brand:lottecinema] (명동점)[v:TheaterName](만)[v:ExceptExpression:false] 찾아줘\n")

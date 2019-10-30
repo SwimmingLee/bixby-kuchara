@@ -23,6 +23,11 @@ train (t-rbkq4qeyekv6q5wk0ykp771ph) {
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
   last-modified (1572444999673)
 }
+train (t-rdn0acvhnayrinxcxjxno8onf) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 주변에 (혹성탈출)[v:MovieName] 시간표 알려줘")
+  plan (lY3RCoIwFIZ/s6zeIOguuiqwZwiqq8xAoevlDjjSLeaUHr9NSsIgiLFxds53/g9TrG91ljPNwqsqJSvCVJQUa06aeJLlxOuCLsLkkWoEYdWDD6IwpNuZg9zuVvJUxEn0X/Dmd3BbnNhH+qy30BH/eZdfXsk761FlzAglsehRzsPPSkiTGF1nptaEeSOa0FhXuGOGnHT/uGuqKhcwgYcBfAwxQoCx/ePV8duOZw/a+35hJ57lA+AJ)
+  last-modified (1572455392798)
+}
 train (t-rfwsicet16nqyu6yo7jt8sd2w) {
   utterance ("[g:RoomPropertyEnum] (스타리옴)[v:RoomPropertyEnum:STARIUM]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
@@ -32,6 +37,11 @@ train (t-rio32zqzcafcb29i4jflz2atc) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (롯데)[v:Brand:lottecinema] (안볼래)[v:ExceptExpression:true]\n")
   plan (Y+Bg0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQQNMAV0GavYb47Q3JSE0E8lFsFkHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn0eas9gZGBmYGJgZWBhYGdiAPAYgnxHMB0FGBgawCAwwA9kgdQwA)
   last-modified (1572441023752)
+}
+train (t-rkpljpfc7s27pz05nv72s2s76) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM:continue:TheaterOrderedScheduleWithMovie] (6시)[v:time.DetachedTime] 이전에 (끝나는)[v:IsStartTime:false] 영화 볼래\n")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572452947952)
 }
 train (t-rl9t9t9mkuv3zq3k3b54ml8bz) {
   utterance ("[g:GenreEnum] (뿌시는)[v:GenreEnum:액션]\n")

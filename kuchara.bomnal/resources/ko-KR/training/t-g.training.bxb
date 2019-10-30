@@ -43,6 +43,11 @@ train (t-gl4wn3e8ylxsetu5xfxvwtiiy) {
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572399088636)
 }
+train (t-glaitu84pf4145uuixfihieqd) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM] (세시)[v:time.DetachedTime] 이후부터 (시작)[v:IsStartTime:true]하는 영화 알아봐")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572454488803)
+}
 train (t-gqyq50fk9jo5o3l6ivtn83oxb) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (북간도의 십자가)[v:MovieName] (제외하고)[v:ExceptExpression:true] 보여줄래\n")
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
@@ -67,6 +72,11 @@ train (t-gxwhnqg1lwpvpf0uz22rpqn2y) {
   utterance ("[g:GenreEnum] (멜로로맨스)[v:GenreEnum:멜로/로맨스]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572435987859)
+}
+train (t-gyka27xbonxlrg4my3xfio1bo) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (빅 위시)[v:MovieName] 볼래")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572456244239)
 }
 train (t-gyz9ims6dkab6j54n0fvuj823) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (메가박스)[v:Brand:megabox](만)[v:ExceptExpression:false]")

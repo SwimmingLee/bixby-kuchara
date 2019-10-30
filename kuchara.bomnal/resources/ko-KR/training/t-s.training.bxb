@@ -31,7 +31,7 @@ train (t-sdb2cc2zqyqhegumjw69ifco8) {
 train (t-sfw1wfrqv2nfrjqg90hs23gf2) {
   utterance ([g:OpenBrowser:continue:MovieScheduleDetail] 웹으로 이동해줘)
   plan (Y2BmEM0uTc5ILErUS8rPzUvM0StPTQoN8mGQQhP2L0jNcyrKLy9OLWJQQpPzzS/LTA1OzkhNKc1JdUktSczMYWBiYARiBiDJyMAAowE=)
-  last-modified (1572448833149)
+  last-modified (1572450014836)
 }
 train (t-sit1p6etotzyeu5qhmzbigd0c) {
   utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (일상)[v:GenreEnum:드라마] 영화(만)[v:ExceptExpression:false] 보여줘\n")
@@ -42,6 +42,11 @@ train (t-sjc8so0lx8tfjsbhtstj270x2) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (메박)[v:Brand:megabox] (동대문점)[v:TheaterName]에서(만)[v:ExceptExpression:false] 알고 싶어\n")
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)
   last-modified (1572421794570)
+}
+train (t-slseywd4aohp4pykosnnl5rhl) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 가까운 영화관에서 (조커)[v:MovieName] 시간표 알고싶어")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572455301906)
 }
 train (t-so5zawvnecem3lsjj89r8vi9u) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (월이)[v:MovieName]를 (뺀)[v:ExceptExpression:true] 리스트\n")

@@ -58,6 +58,11 @@ train (t-pi5mtfbk5lytifeis6jvnn84x) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437255089)
 }
+train (t-pngkwt3ybzhd9vt1l4i45mfes) {
+  utterance ([g:OpenBrowser:continue:MovieScheduleDetail] 웹에서 예매해줘)
+  plan (Y2BmEM0uTc5ILErUS8rPzUvM0StPTQoN8mGQQhP2L0jNcyrKLy9OLWJQQpPzzS/LTA1OzkhNKc1JdUktSczMYWBiYARiBiDJyMAAowE=)
+  last-modified (1572449833992)
+}
 train (t-po50fizziec7zqln3dduobals) {
   utterance ("[g:GenreEnum] (속시원한)[v:GenreEnum:액션]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

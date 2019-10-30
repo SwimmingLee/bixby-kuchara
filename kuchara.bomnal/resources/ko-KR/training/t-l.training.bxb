@@ -3,6 +3,11 @@ train (t-l65xuw32k68hs3l1mr03vthbm) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572439338192)
 }
+train (t-l89ec99y1pe03ckmdfaletg7w) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie] (9시)[v:time.DetachedTime] (이후)[v:IsStartTime:true]에 시작하는 영화를 알려줘라\n")
+  plan (lc69CsIwEADgq/XnCVx0dlHIOwgqOJQOLTifzUGP/kl6DT6+uXYQiovJkDvy3Q9s4FQNRYkOzbNrWqxNzg2lzpIjmxUl2aGmB0uZdJ4JjjN841rIjX+KtPbc2pzTLIHdzN77TNCJmv+G7j17I0GYCwopvb5fjvqeuxYOs04JVvSDbb89SFBHjHusIYIFxLCEVYghZHo1i2A60xuPLogP)
+  last-modified (1572454360309)
+}
 train (t-l8salwegfuuwywp8d90mczcci) {
   utterance ("[g:RoomPropertyEnum] (씨네앤리빙룸)[v:RoomPropertyEnum:씨네앤리빙룸]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

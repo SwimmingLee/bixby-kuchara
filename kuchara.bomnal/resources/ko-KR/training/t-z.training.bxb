@@ -33,6 +33,11 @@ train (t-zdqpg9es1ph1bra0oftorfbgo) {
   plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
   last-modified (1572409089657)
 }
+train (t-ze0kni063ij5cb65n3xjgggy5) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM:continue:TheaterOrderedScheduleWithMovie] (5시) [v:time.DetachedTime]  (넘어)[v:IsStartTime:true] 서 가능한 영화는 뭐가 있어?\n")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572454567246)
+}
 train (t-zetggg6n7lf4w05sr4ci09laa) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (롯데씨네마)[v:Brand:lottecinema]에서는 (안볼래)[v:ExceptExpression:true]\n")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
@@ -67,4 +72,9 @@ train (t-zwwdrxsfnyzrurf07fm259msw) {
   utterance ("[g:FilterMovieWithGenreAndThOSM:continue:TheaterOrderedScheduleWithMovie] (SF)[v:GenreEnum:SF]는 (빼고)[v:ExceptExpression:true] 볼래\n")
   plan (Y2Bl0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQR1PsWpGcWlDiWlFQlFpcnJmfxyCBpgCs3TWvNJdkd7EwMDIwMTADaQYgCwJhgBkqxwAA)
   last-modified (1572445065435)
+}
+train (t-zy7i9mu8su9404kvf9dd9eisd) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM:continue:TheaterOrderedScheduleWithMovie] (7시)[v:time.DetachedTime] 까지 (마치는)[v:IsStartTime:false] 영화를 보여줘라\n")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572452957676)
 }

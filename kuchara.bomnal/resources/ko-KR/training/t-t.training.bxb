@@ -78,10 +78,20 @@ train (t-tj5p85w19kekh6ql4gadvfxak) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572435585263)
 }
+train (t-tkrjz3tx6cmxtp48twr2tpi0z) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie] (12시)[v:time.DetachedTime] (이후)[v:IsStartTime:true]에 있는 거 예매해줘\n")
+  plan (lc69CsIwEADgq/XnCVx0dlHIOwgqOJQOLTifzUGP/kl6DT6+uXYQiovJkDvy3Q9s4FQNRYkOzbNrWqxNzg2lzpIjmxUl2aGmB0uZdJ4JjjN841rIjX+KtPbc2pzTLIHdzN77TNCJmv+G7j17I0GYCwopvb5fjvqeuxYOs04JVvSDbb89SFBHjHusIYIFxLCEVYghZHo1i2A60xuPLogP)
+  last-modified (1572454320595)
+}
 train (t-tn4xj1idohw2abjlnxqy5ciuu) {
   utterance ("[g:RoomPropertyEnum] (싸운드엑스)[v:RoomPropertyEnum:SOUNDX]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434823633)
+}
+train (t-tthpw0lz2jg8ncdi5x60879ko) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie] (11시)[v:time.DetachedTime] 넘어 (시작하는)[v:IsStartTime:true] 영화 좀 알려줘\n")
+  plan (lc69CsIwEADgq/XnCVx0dlHIOwgqOJQOLTifzUGP/kl6DT6+uXYQiovJkDvy3Q9s4FQNRYkOzbNrWqxNzg2lzpIjmxUl2aGmB0uZdJ4JjjN841rIjX+KtPbc2pzTLIHdzN77TNCJmv+G7j17I0GYCwopvb5fjvqeuxYOs04JVvSDbb89SFBHjHusIYIFxLCEVYghZHo1i2A60xuPLogP)
+  last-modified (1572454170973)
 }
 train (t-tvbdbj0y4e2bfwgbrmzxbwjio) {
   utterance ("[g:RoomPropertyEnum] (더부띠크에스)[v:RoomPropertyEnum:더부티크S]\n")

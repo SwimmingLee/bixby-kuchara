@@ -18,6 +18,11 @@ train (t-f31w0midkhvith3djwigv7cdx) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437304821)
 }
+train (t-f4hav3bu9ofttuiy23jtd09gb) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM:continue:TheaterOrderedScheduleWithMovie] 오후 (6시)[v:time.DetachedTime] 부터 (되는)[v:IsStartTime:true] 영화가 있어?\n")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572454303946)
+}
 train (t-fcyy1w56syld6f0i8q9390io9) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (CGV)[v:Brand:cgv](만)[v:ExceptExpression:false] 보여줘")
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)

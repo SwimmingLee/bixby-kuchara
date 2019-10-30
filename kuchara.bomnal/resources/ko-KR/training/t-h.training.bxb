@@ -3,6 +3,11 @@ train (t-h0y84rdxun8t55lf6ugv9ohb1) {
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EdT7JaZU5JaBJaDK/JLzE11zEsJyfQP9mWQR9PgWpGcWlDiWlFQlFpcnJmfxyCBpgBuBGkOY2FgZGBiYAbSDEAWBMIAM1SOAQA=)
   last-modified (1572420181726)
 }
+train (t-h1vsqor1pm7ix2btuj4nltu45) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 동네영화관에서 (네시)[v:time.DetachedTime] (이후)[v:IsStartTime:true] 시간표 알려줘")
+  plan (lY/LCsIwEEWnWl8f4EZ3ohuF/oOggmCt0ILrsRloaJtIOi1+vk0WFqobN4HcnLlnAjPY5XWaocHgoUuFRZDIkiIjyJCI04xEXdBdchbqRhJse/BJFkzGvVnIzu6VSGQUh7DosecqZjRsmf+k6y+pEh/lRafIUitY9agrliRuWiqO2dQp14Zg2cgm4NYVHJDJSo+vp6GqsgWbXkGIOf3A5l0HMdpl3Y+m4MEAhuDDCMYwae/QJp5LPJd4AC7rTt/N+JZ9Aw==)
+  last-modified (1572456257182)
+}
 train (t-haza683loy19nqj2jge51xhro) {
   utterance ("[g:RoomPropertyEnum] (슈퍼플렉스 G)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

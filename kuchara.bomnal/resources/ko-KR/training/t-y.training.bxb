@@ -28,6 +28,11 @@ train (t-yg5bhq0zcit88ihlcd4n41qew) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572439517926)
 }
+train (t-yi4978yfprond4wktd94zytms) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 근처 상영중인 (피의 연대기)[v:MovieName] 시간표 알려줘")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572455302948)
+}
 train (t-yjonhyh7k8lile838265sepo6) {
   utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 영화관 순 보기\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)

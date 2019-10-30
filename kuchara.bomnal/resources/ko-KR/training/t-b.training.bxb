@@ -38,6 +38,11 @@ train (t-bhsv3mfz3t8qoi2q5xzguua36) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434898120)
 }
+train (t-bhu8phednfqnyee1ykqmdlkqh) {
+  utterance ("[g:FilterMovieWithTimeAndTiOSM:continue:TimeOrderedScheduleWithMovie] (10시)[v:time.DetachedTime] (부터)[v:IsStartTime:true] 있는 영화 찾아봐줘\n")
+  plan (lc69CsIwEADgq/XnCVx0dlHIOwgqOJQOLTifzUGP/kl6DT6+uXYQiovJkDvy3Q9s4FQNRYkOzbNrWqxNzg2lzpIjmxUl2aGmB0uZdJ4JjjN841rIjX+KtPbc2pzTLIHdzN77TNCJmv+G7j17I0GYCwopvb5fjvqeuxYOs04JVvSDbb89SFBHjHusIYIFxLCEVYghZHo1i2A60xuPLogP)
+  last-modified (1572454162310)
+}
 train (t-bjt4vi90bwpggtnyx4mrvlxp5) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (CGV)[v:Brand:cgv] (성신여대입구)[v:TheaterName]에서는 (안볼래)[v:ExceptExpression:true]\n")
   plan (Y2Bj0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xlMERT75aZA1QOlgMpgmr3S8xNdcxLCcnwD/ZlEEHT4lSUmJfCII8m6lqRnFpQ4lpRUJRaXJyZn8cghd1lIKNJdjUrAyMDEwMzAwuQxQBkwyACsMBVMAAA)

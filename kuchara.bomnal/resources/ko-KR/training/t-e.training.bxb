@@ -69,6 +69,11 @@ train (t-eqqr7btif10mmjpdw1xoayuuf) {
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572436120013)
 }
+train (t-etmh39hvq7grc3pdq5eq09b8r) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 근방에 상영 중인 영화 중에 (엔젤 오브 마인)[v:MovieName] 시간표 볼 수 있니")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572455184703)
+}
 train (t-etn60o4b5eekqz64d7ko2ve0p) {
   utterance ("[g:FilterMovieWithNationAndTiOSM:continue:TimeOrderedScheduleWithMovie] (국내)[v:IsDomestic:true] 꺼 (없애)[v:ExceptExpression:true]줘\n")
   plan (Y2Bj0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiabAs9glPze1uCQzmUEUTQpiNGmuZWVgZGBiYGZgAbIYgGwYRABmqAoGAA==)

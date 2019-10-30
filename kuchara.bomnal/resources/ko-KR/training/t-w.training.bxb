@@ -88,6 +88,11 @@ train (t-wtjd79fg02b64zw52wx8xb3d4) {
   plan (Y2Bh0MsuTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EZT75aZA1QOlgMpck/NK0p1zEsJyfAP9mWQQFMMlnXNK80l2VpmBkYGJiDJAKRBEAKYwKIMAA==)
   last-modified (1572414051462)
 }
+train (t-wtxdpvrypeqcbgyq4u8zaxxdv) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] 근처 영화관 (터미네이터)[v:MovieName] 시간표 보여줘")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572455126786)
+}
 train (t-wwy3rlivlohj7igxrt5sru0d9) {
   utterance ("[g:GenreEnum] (때려뿌시는)[v:GenreEnum:액션]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
@@ -97,4 +102,9 @@ train (t-wxibb0c7rbxrk79lh7d6bwdfp) {
   utterance ("[g:GenreEnum] (공영실항)[v:GenreEnum:공연실황]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437681816)
+}
+train (t-wzv6ovwodunau1iil2k4aflpj) {
+  utterance ([g:kuchara.bomnal.FindMovieWithMovieAndPos,r:kuchara.bomnal.ShowMoviePoster] 동네영화관에서 영화 보고싶어)
+  plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
+  last-modified (1572456728513)
 }

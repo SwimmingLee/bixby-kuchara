@@ -28,6 +28,11 @@ train (t-5bedsvqbfwjihcm7jxaiq4bkc) {
   plan (Y2BlUMouTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUllMEBT45aZU5Ja5JtflpkanlmSEZKRmgjk+yXmpjrmpYRk+gcziKDpcCpKzEthkEcTda1ITi0oca0oKEotLs7MzyPKMSwMjAxMDMxAmgHIgkAYYIbKMQAA)
   last-modified (1572370761134)
 }
+train (t-5cuaaj3y3arql0h6j9vqti5x9) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM:continue:TheaterOrderedScheduleWithMovie] (7시)[v:time.DetachedTime] 에 (시작하는)[v:IsStartTime:true] 거 볼래\n")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572454116619)
+}
 train (t-5dailwyoux5dmbtcyqndbnwih) {
   utterance ("[g:GenreEnum] (아이랑 보기좋은)[v:GenreEnum:애니메이션]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

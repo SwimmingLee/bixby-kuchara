@@ -33,6 +33,11 @@ train (t-j6grzp8arkdngvgea97idmds0) {
   plan (Y2BlUM0uTc5ILErUS8rPzUvM0QvJSE0sSS3yL0pJLUpNCU7OSE0pzUllMEBT5paZA1Tlm1+WmRqeWZIB1eWXmJvqmJcSkuEfzCCCpsOpKDEvhUEeTdS1Ijm1oMS1oqAotbg4Mz+PWPewMDAyMDEwA2kGIAsCYYAZKscAAA==)
   last-modified (1572370996197)
 }
+train (t-j84gep64hg2kccezj9yn6hsbh) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM:continue:TheaterOrderedScheduleWithMovie] 오후 (3시)[v:time.DetachedTime] 전에 (종료)[v:IsStartTime:false]하는 영화를 알려줘\n")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572452985991)
+}
 train (t-jb06ka57z2f3mc23t8wfudzhj) {
   utterance ("[g:RoomPropertyEnum] (템퍼씨네마)[v:RoomPropertyEnum:'TEMPUR CINEMA']")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
@@ -82,6 +87,11 @@ train (t-jky4wcbayivig929gw9wiczkr) {
   utterance ("[g:GenreEnum] (부시는)[v:GenreEnum:전쟁]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)
   last-modified (1572437217576)
+}
+train (t-jkymx75do99ss77ufgmmgzgrr) {
+  utterance ([g:OpenBrowser:continue:MovieScheduleDetail] 웹에서 예매)
+  plan (Y2BmEM0uTc5ILErUS8rPzUvM0StPTQoN8mGQQhP2L0jNcyrKLy9OLWJQQpPzzS/LTA1OzkhNKc1JdUktSczMYWBiYARiBiDJyMAAowE=)
+  last-modified (1572449865263)
 }
 train (t-jl4djdjwviukcpqg1t39pmtf4) {
   utterance ("[g:FilterMovieWithTheaterNameAndThOS:continue:TheaterOrderedSchedule] (시지브이)[v:Brand:cgv]를 (빼)[v:ExceptExpression:true]줘\n")

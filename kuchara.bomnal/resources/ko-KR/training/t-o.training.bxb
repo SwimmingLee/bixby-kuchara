@@ -53,6 +53,11 @@ train (t-olq5njgp887fw9azhh9p4jrnr) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572439635560)
 }
+train (t-omb7q1xp98doe4vun0j7f5quy) {
+  utterance ("[g:FilterMovieWithTimeAndThOSM:continue:TheaterOrderedScheduleWithMovie] (4시)[v:time.DetachedTime] 쯤 (마치는)[v:IsStartTime:false] 거 찾아줘라\n")
+  plan (lc69DsIgEAfwq/XjCVx0dnHgHUyqiUPTARLns1wCKW0NUOLjC3QwaVyEAS787n/ADlg3tQotsufYD2iYUISebGMlWZK8VSQnQw/tVT0GTXBe+Js2kee3hITu6TJIoRpew2Fh7457tD6Zv+cegw7Mx05WRZciru+XJef0OMBpEVZjRz/Y/ptBHtOI/JUtFLCCEtawiXeIVdqpKmBe81lmF8UH)
+  last-modified (1572452932230)
+}
 train (t-oozrwn4jql2cmhm382kx02iwx) {
   utterance ("[g:GenreEnum] (가족이랑 보는)[v:GenreEnum:가족]\n")
   plan (Y2BikMguTc5ILErUS8rPzUvM0XNPzStKdc0rzcUjwwiEDAw8QMwExEA2AA==)

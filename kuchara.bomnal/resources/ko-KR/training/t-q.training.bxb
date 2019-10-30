@@ -13,6 +13,11 @@ train (t-q9o3yr165y2it5sm2pzxbpzro) {
   plan (Y2Bj0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0xl0EFT7JaZU5JaBJYDKfJLLMnMz3PMSwnJ9A/2ZZBHU+1akZxaUOJaUVCUWlwMVMggiabAs9glPze1uCQzmUEUTQpiNGmuZWVgZGBiYGZgAbIYgGwYRABmqAoGAA==)
   last-modified (1572446686305)
 }
+train (t-qb7ko0jkc7ofa2tqzxvlbm19u) {
+  utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie,r:FindMovieWithLocation] (판소리 복서)[v:MovieName] 시간표 알려줘")
+  plan (lY2xCsIwEIb/2uozOIubUJ/BxclaIQXnmBzksE3gSHx+2wwd4uRN33Hf8WGH0zsZp0W3rzB5PbYDT9SLJSGrjCObRnpydF34MOFcyFceI0m+rdJdT3TxduBeddgXD6vxX/f40/V2rd6C0ZGDx6Gwlo59BPZRRUkmJiFsUWGDGs1MmLnKXAF5W6bORgN8AQ==)
+  last-modified (1572455961734)
+}
 train (t-qq1voyfckd5qbmj50pmeykl7j) {
   utterance ("[g:RoomPropertyEnum] (필름소싸이어티)[v:RoomPropertyEnum:필름소사이어티]\n")
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)

@@ -98,6 +98,11 @@ train (t-my9mzfxr8smnzxnagzjyi43l5) {
   plan (Y2Bl0M4uTc5ILErUS8rPzUvM0QvJzE31L0pJLUpNCU7OSE0pzUkNzyzJ8M0vy0zFUOyWmVOSWgSWAylyT80rSnXMSwnJ9A/2ZZBHU+xakZxaUOJaUVCUWlycmZ/HIIGmAKzdNa80lzRHsTAwMjAxMANpBiALAmGAGSrHAAA=)
   last-modified (1572445230096)
 }
+train (t-myhwl0uxik6opzuux56z9g72s) {
+  utterance ([g:OpenBrowser:continue:MovieScheduleDetail] 웹으로 이동)
+  plan (Y2BmEM0uTc5ILErUS8rPzUvM0StPTQoN8mGQQhP2L0jNcyrKLy9OLWJQQpPzzS/LTA1OzkhNKc1JdUktSczMYWBiYARiBiDJyMAAowE=)
+  last-modified (1572449888690)
+}
 train (t-mz6jwlubwp3fwbqf34777qf2g) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 개봉작을 추천해봐\n")
   plan (XY07DgIxDEQnwN6AmgIJ0e0daOj4SEGiNomlROwmkkng+kTeLnbzPDO2MeDwri6Q0PjKc6JpfASmwnITz8LeusC+ToxjFzvH5C/5G/kZS1A4JX/PH2y7oHrYdaoN+adOW2nfsO/8K83czsVUbJHqShXGAIMV1ti0hrJpk1FealHwBw==)
