@@ -1,6 +1,7 @@
 from django.http import JsonResponse, HttpResponse
 import json
-from .crawling_thread import MovieCrawl
+from .crawling import MovieCrawl
+from .crawling_multi import taskQueue
 from .getdistance import get_euclidean_distance
 from .models import Movies
 from .models import Theaters
@@ -12,6 +13,7 @@ from .jsonmodels import GetMovieScheduleInfoByObj
 from .jsonmodels import GetMovieInfoByID
 from .jsonmodels import GetMovieInfoByObj
 from .jsonmodels import TheaterOrderedSchedule
+from multiprocessing import Process, Queue
 import copy
 import sys
 
@@ -34,17 +36,17 @@ def SearchTimeOrderedScheduleWithPos(request):
     DistanceOrderedTheater = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
 
     movieScheduleSet = None
+    nearTheaterlist = []
+    processes = []
     for orderCnt, theaterOrder in enumerate(DistanceOrderedTheater):
         if orderCnt < 2 or theaterOrder[1] <= 5000:
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             MovieCrawl(reqtheater)
-            if movieScheduleSet == None:
-                movieScheduleSet = MovieSchedules.objects.filter(theater=theaterOrder[0])
-            else:
-                movieScheduleSet = movieScheduleSet.union(MovieSchedules.objects.filter(theater=theaterOrder[0]))
+            nearTheaterlist.append(theaterOrder[0])
         else:
             break
 
+    movieScheduleSet = MovieSchedules.objects.filter(theater__in=nearTheaterlist)
     movieScheduleSet = movieScheduleSet.order_by('startTime')
 
     MovieTheaterScheduleList = []
@@ -84,16 +86,17 @@ def SearchTheaterOrderedScheduleWithPos(request):
     theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
     theater = []
 
-    orderCnt = 0
-    for theaterOrder in theaterOrderedSchedule:
-        if orderCnt < 2 or theaterOrder[1] <= 5000:
+    searchCnt = 0
+    processes = []
+    for orderCnt, theaterOrder in enumerate(theaterOrderedSchedule):
+        if (searchCnt < 2 or theaterOrder[1] <= 5000) and orderCnt < 5:
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             MovieCrawl(reqtheater)
             movieObj = Movies.objects.filter(movieName__exact=movieName)
             if movieObj.count() == 0:
-                movieObj = "no movie data"
                 continue
             movieObj = movieObj.first()
+    
             movieScheduleList = GetMovieScheduleList(reqtheater, movieObj.id)
             theaterEle = {
                 'theaterInfo':reqtheater,
@@ -101,11 +104,13 @@ def SearchTheaterOrderedScheduleWithPos(request):
                 'theaterSchedule':movieScheduleList
             }
             if len(movieScheduleList) > 0:
-                orderCnt = orderCnt + 1
+                searchrCnt = searchCnt + 1
                 theater.append(theaterEle)
-
         else:
             break
+
+    if len(theater) == 0:
+        return HttpResponse("{'no search cinema schedule': 'error'}", content_type="text/json-comment-filtered")
 
     TOS = TheaterOrderedSchedule(
         movie=movieObj,
@@ -113,6 +118,7 @@ def SearchTheaterOrderedScheduleWithPos(request):
     )
     TOSdict = TOS.GetJson()
     movieJson = json.dumps(TOSdict, ensure_ascii=False)
+
 
     return HttpResponse(movieJson, content_type="text/json-comment-filtered")
 
@@ -141,7 +147,7 @@ def SearchTheaterWithMoviePos(request):
     for orderCnt, theaterOrder in enumerate(theaterOrderedSchedule):
         if orderCnt < 15:
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
-            #MovieCrawl(reqtheater)
+            
             if len(MovieSchedules.objects.filter(theater__exact=theaterOrder[0], movie__exact=movieObj.id)) > 0:
                 theaterEle = GetTheaterInfo2ByObj(reqtheater, theaterOrder[1])
                 theaterEle.update({'address':reqtheater.address})
@@ -205,23 +211,23 @@ def SearchMovieListWithPos(request):
     theaterOrderedSchedule = sorted(theaterDistanceDict.items(),key=lambda x: x[1]) 
     
     movieScheduleSet = None
-
+    nearTheaterlist = []
+    processes = []
     for orderCnt, theaterOrder in enumerate(theaterOrderedSchedule):
         if orderCnt < 2 or theaterOrder[1] <= 5000:
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             MovieCrawl(reqtheater)
-
-            if movieScheduleSet == None:
-                movieScheduleSet = MovieSchedules.objects.filter(theater__exact=theaterOrder[0])
-            else:
-                movieScheduleSet = movieScheduleSet.union(MovieSchedules.objects.filter(theater__exact=theaterOrder[0]))
+            #processes.append(Process(target=MovieCrawl, args=(reqtheater, taskQueue, )))
+            nearTheaterlist.append(theaterOrder[0])
         else:
             break
-    
+
+    movieScheduleSet = MovieSchedules.objects.filter(theater__in=nearTheaterlist)
     if movieScheduleSet == None:
         return HttpResponse("{'no search cinema': 'error'}", content_type="text/json-comment-filtered")
     
     movieDict = dict()
+
     for movieSchedule in movieScheduleSet:
         movieID = movieSchedule.movie.id
         movieDict[movieID] = Movies.objects.get(id=movieID).userRating

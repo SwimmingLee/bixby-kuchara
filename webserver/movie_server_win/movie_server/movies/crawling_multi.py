@@ -17,24 +17,20 @@ import json
 import re
 import sys
 import copy
-import time
 from .models import Movies
 from .models import MovieSchedules
 from .update import GetMovieInfo
 from .jsonmodels import GetDiffTime
 from datetime import datetime
-import threading
-from queue import Queue 
+from multiprocessing import Process, Queue
+ 
+global taskQueue 
+taskQueue = Queue()
 
-
-global driverDir
-driverDir = '/home/swim/Downloads/chromedriver'
-#driverDir = r'C:\chromedriver_win32\chromedriver.exe'
-
-def storage(queue):
+def storage(taskQueue):
     while 1:
-        if not queue.empty():
-            movieDict = queue.get()
+        if not taskQueue.empty():
+            movieDict = taskQueue.get()
             MovieScheduleEle = MovieSchedules(movie=movieDict['movie'], theater=movieDict['theater'], room=movieDict['room'], \
                                     totalSeat=movieDict['totalSeat'], availableSeat=movieDict['availableSeat'], dubbing=movieDict['dubbing'], \
                                     startTime=movieDict['startTime'], endTime=movieDict['endTime'],  roomProperty=movieDict['roomProperty'], \
@@ -42,39 +38,39 @@ def storage(queue):
                                 )
             MovieScheduleEle.save()
 
-
 def WebDriverInit():
-    global queue
-    queue = Queue()
-    threading.Thread(target=storage, args=(queue,)).start()
+    global driver
+    #driverDir = r'C:\Users\student\works\chromedriver_win32\chromedriver.exe'
+    #driverDir = r'/home/ubuntu/Downloads/chromedriver'
+    #driverDir = r'C:\\chromedriver_win32\\chromedriver.exe'
+    driverDir = r'/home/swim/Downloads/chromedriver'
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    #options.add_argument('--disdable-dev-shm-usage')
+    driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
 
 
-def MovieCrawl(theaterObj):
+def MovieCrawl(theaterObj, taskQueue):
+    WebDriverInit()
     diffTime = GetDiffTime(theaterObj.updatedTime, datetime.now())    
     if (diffTime > 60*15):
         theaterObj.updatedTime = datetime.now()
         theaterObj.save() 
         if theaterObj.brand == 'megabox':
-            threading.Thread(target=MegaBoxCrawl, args=(theaterObj,)).start()
+            MegaBoxCrawl(theaterObj, taskQueue)
         elif theaterObj.brand == 'lottecinema':
-            threading.Thread(target=LotteCinemaCrawl, args=(theaterObj,)).start()
+            LotteCinemaCrawl(theaterObj, taskQueue)
         elif theaterObj.brand == 'cgv':
-            threading.Thread(target=CGVCrawl, args=(theaterObj,)).start()
-            
+            CGVCrawl(theaterObj, taskQueue)
         
 
 
-def CGVCrawl(theaterObj):      
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--single-process')
-    options.add_argument('--disable-dev-shm-usage')
-    driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options) 
+def CGVCrawl(theaterObj, taskQueue):   
     movieObj = ""
     movieList = []
     movieDict = dict()
-    print(theaterObj.brand + theaterObj.theaterName + "crawling start")
+    print(theaterObj.brand + theaterObj.theaterName)
     sys.stdout.flush()
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
@@ -84,11 +80,6 @@ def CGVCrawl(theaterObj):
     cinema = theaterObj.theaterCode 
     url = 'http://www.cgv.co.kr/common/showtimes/iframeTheater.aspx?areacode={}&theatercode={}&date=20191010'.format(region, cinema)
     driver.get(url)
-    
-    wait = WebDriverWait(driver, 20)
-    wait.until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, ".sect-showtimes"))
-    )
 
     req = driver.page_source
     bs = BeautifulSoup(req, 'lxml')
@@ -195,27 +186,16 @@ def CGVCrawl(theaterObj):
 
                 movieDict['movie'] = movieObj
                 movieDict['theater'] = theaterObj
-                
-                queue.put(movieDict)
-
-                movieList.append(copy.copy(movieDict))
-    print(theaterObj.brand + theaterObj.theaterName + "crawling end")
-    return movieList
+                taskQueue.put(movieDict)
 
 
 
-def LotteCinemaCrawl(theaterObj):
-    #driverDir = r'/home/swim/Downloads/chromedriver'
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--single-process')
-    options.add_argument('--disable-dev-shm-usage')
-    driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
+
+def LotteCinemaCrawl(theaterObj, taskQueue):
     movieObj = ""
     movieList = []
     movieDict = dict()
-    print(theaterObj.brand + theaterObj.theaterName + 'crawling start')
+    print(theaterObj.brand + theaterObj.theaterName)
     sys.stdout.flush()
 
     legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
@@ -228,11 +208,7 @@ def LotteCinemaCrawl(theaterObj):
     
     driver.get(url)
 
-    wait = WebDriverWait(driver, 20)
-    wait.until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, ".cineD1"))
-    )
-
+    #time.sleep(1)
     req = driver.page_source
     bs = BeautifulSoup(req, 'lxml')
 
@@ -321,28 +297,19 @@ def LotteCinemaCrawl(theaterObj):
                 
                 movieDict['movie'] = movieObj
                 movieDict['theater'] = theaterObj
-                queue.put(movieDict)
-                movieList.append(copy.copy(movieDict))
-    print(theaterObj.brand + theaterObj.theaterName + "crawling end")
-    return movieList
+                taskQueue.put(movieDict)
 
 
-def MegaBoxCrawl(theaterObj):
-    #driverDir = r'/home/swim/Downloads/chromedriver'
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--single-process')
-    options.add_argument('--disable-dev-shm-usage')
-    driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
+
+def MegaBoxCrawl(theaterObj, taskQueue):
     movieJson = ""
     movieObj = ""
     movieList = []
     movieDict = dict()
-    print(theaterObj.brand + theaterObj.theaterName + "crawling start")
+    print(theaterObj.brand + theaterObj.theaterName)
     sys.stdout.flush()
 
-    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id) 
+    legacyMovieSchedules = MovieSchedules.objects.filter(theater=theaterObj.id)
     legacyMovieSchedules.delete()
 
     region = theaterObj.regionCode
@@ -351,12 +318,7 @@ def MegaBoxCrawl(theaterObj):
     
     url = 'http://megabox.co.kr/?menuId=theater-detail&region={}&cinema={}'.format(region,cinema)
     driver.get(url)
-    
-    wait = WebDriverWait(driver, 20)
-    wait.until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, ".timetable_container"))
-    )
-    
+
     req = driver.page_source
     bs = BeautifulSoup(req, 'lxml')
 
@@ -448,16 +410,15 @@ def MegaBoxCrawl(theaterObj):
             if movieSeatInfo != None:
                 movieSeatInfoStr = movieSeatInfo.text
                 if movieSeatInfoStr.find('마감') >= 0:
-                    availableSeat = "-2"
-                    totalSeat = "-2"
+                    movieDict['availableSeat'] = "-1"
+                    movieDict['totalSeat'] = "-1"
                 elif movieSeatInfoStr.find('매진') >= 0:
-                    availableSeat = "-1"
-                    totalSeat = "-1"
+                    movieDict['availableSeat'] = "-2"
+                    movieDict['totalSeat'] = "-2"
                 else:
                     availableSeat, totalSeat = movieSeatInfoStr.split('/')                 
-
-                movieDict['availableSeat'] = availableSeat
-                movieDict['totalSeat'] = totalSeat
+                    movieDict['availableSeat'] = availableSeat
+                    movieDict['totalSeat'] = totalSeat
 
                 hour, minute = movieDict['startTime'].split(':')
                 movieDict['startTime']  = int(hour)*100 + int(minute)
@@ -467,8 +428,5 @@ def MegaBoxCrawl(theaterObj):
 
                 movieDict['movie'] = movieObj
                 movieDict['theater'] = theaterObj
-                queue.put(movieDict)
-                movieList.append(copy.copy(movieDict))
-    print(theaterObj.brand + theaterObj.theaterName + "crawling end")
-    return movieList
+                taskQueue.put(movieDict)
 

@@ -3,15 +3,15 @@ from django.db import models
 
 class Movies(models.Model):
     objects = models.Manager()
-    movieName = models.CharField(max_length=20)
-    director = models.CharField(max_length=20)
-    actors = models.CharField(max_length=50)
-    movieRating = models.CharField(max_length=20)
+    movieName = models.TextField()
+    director = models.TextField()
+    actors = models.TextField()
+    movieRating = models.TextField()
     duration = models.IntegerField()
-    genre = models.CharField(max_length=30)
+    genre = models.TextField()
     userRating = models.FloatField()
-    imgUrl = models.CharField(max_length=50)
-    nation = models.CharField(max_length=20)
+    imgUrl = models.TextField()
+    nation = models.TextField()
 
 
     def __str__(self):
@@ -24,14 +24,14 @@ class Movies(models.Model):
 
 class Theaters(models.Model):
     objects = models.Manager()
-    theaterName = models.CharField(max_length=20)
+    theaterName = models.TextField()
     regionCode = models.CharField(max_length=10)
     theaterCode = models.CharField(max_length=10)
     longitude = models.FloatField()
     latitude = models.FloatField()
     brand = models.CharField(max_length=30)
     updatedTime = models.DateTimeField()
-    address = models.CharField(max_length=50)
+    address = models.TextField()
     # >> theaterFlag
     # << theaterFlag
 
@@ -44,15 +44,16 @@ class Theaters(models.Model):
 
 class MovieSchedules(models.Model):
     objects = models.Manager()
-    movie = models.ForeignKey(Movies, related_name='MovieSchedules', on_delete=models.CASCADE)
+    movie = models.ForeignKey(Movies, models.DO_NOTHING)
     theater = models.ForeignKey(Theaters, models.DO_NOTHING)
-    room = models.CharField(max_length=20)
+    room = models.TextField()
     totalSeat = models.IntegerField()
     availableSeat = models.IntegerField()
     # movieCode = models.IntegerField(null=True, blank=True)
     startTime = models.IntegerField()
     endTime = models.IntegerField()
-    roomProperty = models.CharField(max_length=20)
+    roomProperty = models.CharField(max_length=30)
+    scheduleDate = models.IntegerField()
     # >> movieScheduleFlag
     subtitle = models.BooleanField(null=True)
     dubbing = models.BooleanField(null=True)

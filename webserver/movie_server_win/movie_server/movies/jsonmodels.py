@@ -59,7 +59,8 @@ def GetMovieScheduleInfoByObj(moviescheduleObj):
         'endTime': '{:02}:{:02}'.format(int(moviescheduleObj.endTime/100), moviescheduleObj.endTime%100),
         'subtitle':moviescheduleObj.subtitle,
         'dubbing':moviescheduleObj.dubbing,
-        'roomProperty':moviescheduleObj.roomProperty
+        'roomProperty':moviescheduleObj.roomProperty,
+        'scheduleDate':moviescheduleObj.scheduleDate
     }
     return movieScheduleEle
 
@@ -75,7 +76,8 @@ def GetMovieScheduleList(reqtheater, movieID):
             'endTime': '{:02}:{:02}'.format(int(movieSchedule.endTime/100), movieSchedule.endTime%100),
             'subtitle':movieSchedule.subtitle,
             'dubbing':movieSchedule.dubbing,
-            'roomProperty':movieSchedule.roomProperty
+            'roomProperty':movieSchedule.roomProperty,
+            'scheduleDate':movieSchedule.scheduleDate
         }
         movieScheduleList.append(movieScheduleDict)
     return movieScheduleList

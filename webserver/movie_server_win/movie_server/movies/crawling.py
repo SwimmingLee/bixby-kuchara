@@ -24,6 +24,7 @@ from .jsonmodels import GetDiffTime
 from datetime import datetime
 
 
+
 def WebDriverInit():
     global driver
     
@@ -34,7 +35,7 @@ def WebDriverInit():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
-    #options.add_argument('--disdable-dev-shm-usage')
+    options.add_argument('--disdable-dev-shm-usage')
     driver = webdriver.Chrome(executable_path=driverDir, chrome_options=options)
 
 
@@ -67,8 +68,22 @@ def CGVCrawl(theaterObj):
     url = 'http://www.cgv.co.kr/common/showtimes/iframeTheater.aspx?areacode={}&theatercode={}&date=20191010'.format(region, cinema)
     driver.get(url)
 
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, '.item-wrap > .item > .on'))
+    )
     req = driver.page_source
     bs = BeautifulSoup(req, 'lxml')
+
+
+    dateTable = bs.find('div', {'class':'item-wrap'})
+    date = dateTable.find('li', {'class':'on'})
+    month = date.find('span').text
+    day = date.find('strong').text
+    month = re.findall('\d+', month)[0]
+    day = re.findall('\d+', day)[0]
+    movieDict['scheduleDate'] = int(month) * 100 + int(day)
+    
+    
 
     movieSchedule = bs.find('div', {'class':'sect-showtimes'}).find('ul')
 
@@ -86,7 +101,6 @@ def CGVCrawl(theaterObj):
         if movieObj == None:
             movieObj = GetMovieInfo(movieNameStr)
             if movieObj == None:
-
                 continue 
 
         movieHallTypes = movieScheduleList.findAll('div', {'class':'type-hall'})
@@ -174,7 +188,7 @@ def CGVCrawl(theaterObj):
                 MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
                                     totalSeat=movieDict['totalSeat'], availableSeat=movieDict['availableSeat'], dubbing=movieDict['dubbing'], \
                                     startTime=movieDict['startTime'], endTime=movieDict['endTime'],  roomProperty=movieDict['roomProperty'], \
-                                    subtitle=movieDict['subtitle']
+                                    subtitle=movieDict['subtitle'],  scheduleDate=movieDict['scheduleDate']
                                 )
                 MovieScheduleEle.save()
                 movieList.append(copy.copy(movieDict))
@@ -199,9 +213,18 @@ def LotteCinemaCrawl(theaterObj):
     
     driver.get(url)
 
-    #time.sleep(1)
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, 'div > label > em'))
+    )
     req = driver.page_source
     bs = BeautifulSoup(req, 'lxml')
+
+    calenderArea = bs.find('div', {'class':'calendarArea'})
+    
+    day = calenderArea.input
+    day = day.get('value')
+    year, month, day = day.split('-')
+    movieDict['scheduleDate'] = month*100 + day
 
     movieSchedule = bs.find('div', {'class':re.compile('time_aType .*')})
     # 영화 리스트가 없으면 함수를 바로 끝낸다.
@@ -289,7 +312,8 @@ def LotteCinemaCrawl(theaterObj):
                 MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
                                     totalSeat=movieDict['totalSeat'], availableSeat=movieDict['avaliableSeat'], dubbing=movieDict['dubbing'], \
                                     startTime=movieDict['startTime'], endTime=movieDict['endTime'], subtitle=movieDict['subtitle'], \
-                                    lateNight=movieDict['lateNight'], morning=movieDict['morning'], roomProperty=movieDict['roomProperty']
+                                    lateNight=movieDict['lateNight'], morning=movieDict['morning'], roomProperty=movieDict['roomProperty'], \
+                                    scheduleDate=movieDict['scheduleDate']
                                 )
                 MovieScheduleEle.save()
                 movieList.append(copy.copy(movieDict))
@@ -316,6 +340,13 @@ def MegaBoxCrawl(theaterObj):
 
     req = driver.page_source
     bs = BeautifulSoup(req, 'lxml')
+
+    theaterHeader = bs.find('div', {'class':'movie_time_header'})
+    theaterDate = theaterHeader.find('span', {'class':'date'})
+    month, day = theaterDate.text.split('.')
+    day = re.findall('\d+', day)[0]
+    movieDict['scheduleDate'] = int(month)*100 + int(day)
+
 
     movieScedule = bs.find('div', {'class':'timetable_container'})
     movieTableRow = movieScedule.find('tbody')
@@ -424,7 +455,8 @@ def MegaBoxCrawl(theaterObj):
 
                 MovieScheduleEle = MovieSchedules(movie=movieObj, theater=theaterObj, room=movieDict['room'], \
                                     totalSeat=totalSeat, availableSeat=avaliableSeat, dubbing=movieDict['dubbing'], \
-                                    startTime=startTime, endTime=endTime, subtitle=movieDict['subtitle'],  roomProperty=movieDict['roomProperty']
+                                    startTime=startTime, endTime=endTime, subtitle=movieDict['subtitle'],  roomProperty=movieDict['roomProperty'], \
+                                    scheduleDate=movieDict['scheduleDate']
                                     )
                 MovieScheduleEle.save()
                 movieList.append(copy.copy(movieDict))

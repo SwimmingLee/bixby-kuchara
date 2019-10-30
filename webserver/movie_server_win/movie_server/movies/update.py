@@ -9,6 +9,13 @@ import urllib.request
 from urllib.request import Request, urlopen
 from datetime import datetime
 
+def FaultMovieSave(movieName):
+    MoviesEle = Movies(movieName=movieName, director="director", \
+                        actors="actors", movieRating="movieRating", \
+                        duration=0, genre="genre", \
+                        userRating=0, imgUrl="imgUrl", nation="nation")
+    MoviesEle.save()
+
 
 def GetNaverMovieInfo(url):
     movieInfoPart = dict()
@@ -88,6 +95,7 @@ def GetMovieInfo(movieName):
         if len(movieInfos['items']) == 0:
             print(movieName)
             print("해당 영화를 찾을 수 없습니다. Naver Movie API")
+            FaultMovieSave(movieName)
             return None
 
         for movieInfo in movieInfos['items']:
@@ -104,6 +112,7 @@ def GetMovieInfo(movieName):
         if movieInfoPart2 == None:
             print(movieName)
             print("해당 영화 정보가 올바르지 않습니다. Naver Movie API")
+            FaultMovieSave(movieName)
             return None
 
         MoviesEle = Movies(movieName=movieName, director=director, \

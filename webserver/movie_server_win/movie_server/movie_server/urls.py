@@ -32,8 +32,10 @@ from movies.movieapi_test import SearchCGVMovie
 from movies.movieapi_test import Test
 from movies.update import UpdateTheater
 
-from movies.crawling_thread import WebDriverInit
-
+from movies.crawling import WebDriverInit
+from movies.crawling_multi import storage
+from multiprocessing import Process, Queue
+from movies.crawling_multi import taskQueue
 
 router = routers.DefaultRouter()
 router.register('movies', MovieViewSet)
@@ -41,6 +43,8 @@ router.register('movieschedules',MovieScheduleViewSet)
 router.register('theaters',TheaterViewSet)
 
 WebDriverInit()
+#process = Process(target=storage, args=(taskQueue,))
+#process.start()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
