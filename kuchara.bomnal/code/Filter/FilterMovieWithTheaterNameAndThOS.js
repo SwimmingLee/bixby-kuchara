@@ -12,6 +12,9 @@ module.exports.function = function filterMovieWithTheaterNameAndTheaterOrderedSc
   let _brand = false, _theaterName = false;
   if(typeof brand != 'undefined') _brand = true;
   if(typeof theaterName != 'undefined') _theaterName = true;
+  
+  console.log(_brand)
+  console.log(_theaterName)
 
   // 부정어가 안들어오면, 그것만
   if(typeof exceptExpression == 'undefined'){
@@ -24,7 +27,8 @@ module.exports.function = function filterMovieWithTheaterNameAndTheaterOrderedSc
     if(!exceptExpression){
       theaterOrderedSchedule.theater.forEach(function(theaterElement){
         let brand_obj2str = theaterElement.theaterInfo.brand + "";
-
+        console.log(brand_obj2str)
+        console.log(brand)
         if(_brand) { // 브랜드
           if(_theaterName) { // 지점 명
             if(theaterElement.theaterInfo.theaterName.includes(theaterName) && 
@@ -72,7 +76,10 @@ module.exports.function = function filterMovieWithTheaterNameAndTheaterOrderedSc
     }
   }
 
-  if(typeof result.theater.theaterInfo == 'undefined') {
+  console.log(result)
+  console.log(result.theater.length)
+
+  if(result.theater.length == 0) {
     throw fail.checkedError('There is no theater data', 'NoDataError', {})
   }
 

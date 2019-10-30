@@ -1,5 +1,7 @@
+let console = require("console");
 module.exports.function = function restructureTimeViewToTheaterViewWithMovie (timeOrderedScheduleWithMovie) {
 
+  
   timeOrderedScheduleWithMovie.movieOrderedSchedule.sort(function(a, b){
     // return (a.theaterInfo.theaterName < b.theaterInfo.theaterName);
     if(a.theaterInfo.theaterName < b.theaterInfo.theaterName){
@@ -7,6 +9,7 @@ module.exports.function = function restructureTimeViewToTheaterViewWithMovie (ti
     } else if(a.theaterInfo.theaterName > b.theaterInfo.theaterName){
       return 1;
     } else {
+      console.log(a);
       if(a.theaterSchedule.startTime > b.theaterSchedule.startTime){
         return -1;
       } else {
@@ -15,6 +18,7 @@ module.exports.function = function restructureTimeViewToTheaterViewWithMovie (ti
     }
   })
 
+  console.log(timeOrderedScheduleWithMovie);
   let theaterOrderedScheduleWithMovie = {
     movieOrderedSchedule: []
   };

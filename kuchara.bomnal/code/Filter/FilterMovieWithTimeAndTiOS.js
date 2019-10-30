@@ -46,7 +46,7 @@ module.exports.function = function filterMovieWithTimeAndTiOS (timeOrderedSchedu
     }
   }
 
-  if(typeof result.timeSchedule.startTime == 'undefined') {
+  if(result.timeSchedule.length == 0) {
     throw fail.checkedError('There is no theater data', 'NoDataError', {})
   }
 

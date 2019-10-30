@@ -20,12 +20,12 @@ input-view {
       }
     }
   }
-  conversation-drivers{
-    conversation-driver{
-      template ("#{value(this[0].nation)}영화 제외해줘")
-    }
-    conversation-driver{
-      template ("#{value(this[0].genre)} 장르만 보여줘")
-    }
-  }
+  // conversation-drivers{
+  //   conversation-driver{
+  //     template ("#{value(this[0].nation)}영화 제외해줘")
+  //   }
+  //   conversation-driver{
+  //     template ("#{value(this[0].genre)} 장르만 보여줘")
+  //   }
+  // }
 }

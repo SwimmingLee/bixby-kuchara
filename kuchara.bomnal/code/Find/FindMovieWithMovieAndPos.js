@@ -43,5 +43,22 @@ module.exports.function = function findMovieWithMovieAndPos (movie, namedPointSt
   console.log("rpurilist");
   console.log(response);
 
+  // let checkedTheater = [];
+
+  // response.theater.every(function(theaterEl){
+  //   theaterEl.theaterSchedule.every(function(scheduleEl){
+
+  //   })
+  //   if(typeof el.theaterSchedule == 'undefined'){
+  //     return true;
+  //   } else if(typeof el.theaterInfo == 'undefined'){
+  //     return true;
+  //   } else if(typeof el.movie == 'undefined'){
+  //     return true;
+  //   }
+  //   checkedMOS.push(el);
+  // })
+  // timeOrderedScheduleWithMovie.movieOrderedSchedule = checkedMOS;
+
   return response;
 }

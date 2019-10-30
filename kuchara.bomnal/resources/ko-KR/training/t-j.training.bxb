@@ -4,9 +4,9 @@ train (t-j3povfn1bj5qlvutks7owpw3e) {
   last-modified (1572409012333)
 }
 train (t-j3xcyeo5shsr7dpykuhh78t3p) {
-  utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 가까운 위치 먼저 띄워줘\n")
-  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572442836113)
+  utterance ("[g:RestructureTimeViewToTheaterViewWithMovie:continue:TimeOrderedScheduleWithMovie] 가까운 위치 먼저 띄워줘\n")
+  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9TMogqDFzDAwHypITFFbxUqMflnVLKSFCuCGDRim0xYmzhhcsLXfHaj65FtsgaMOkSHdgt7hkP4euczbLL9PKf57k1OWQIkzokdP)
+  last-modified (1572462493042)
 }
 train (t-j452bfn3trd08x0d87uqsjhb1) {
   utterance ("[g:GenreEnum] (다큐멘터리)[v:GenreEnum:다큐멘터리]\n")

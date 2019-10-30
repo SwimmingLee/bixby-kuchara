@@ -50,7 +50,7 @@ module.exports.function = function filterMovieWithNationAndTiOSM (timeOrderedSch
     }
   }
 
-  if(typeof result.movieOrderedSchedule.movie == 'undefined') {
+  if(result.movieOrderedSchedule.length == 0) {
     throw fail.checkedError('There is no theater data', 'NoDataError', {})
   }
 

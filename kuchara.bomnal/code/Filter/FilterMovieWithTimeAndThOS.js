@@ -73,7 +73,7 @@ module.exports.function = function filterMovieWithTimeAndThOS (theaterOrderedSch
     }
   }
 
-  if(typeof result.theater.theaterInfo == 'undefined') {
+  if(result.theater.length == 0) {
     throw fail.checkedError('There is no theater data', 'NoDataError', {})
   }
   

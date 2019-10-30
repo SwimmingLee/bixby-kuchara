@@ -14,9 +14,9 @@ train (t-a1ho9fo6zuumgdutk0x99msns) {
   last-modified (1572434329117)
 }
 train (t-a38hhmtc83kibq3lww6nkcugx) {
-  utterance ([g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 영화관 순으로 보여줘)
-  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572442002628)
+  utterance ([g:RestructureTimeViewToTheaterViewWithMovie:continue:TimeOrderedScheduleWithMovie] 영화관 순으로 보여줘)
+  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9TMogqDFzDAwHypITFFbxUqMflnVLKSFCuCGDRim0xYmzhhcsLXfHaj65FtsgaMOkSHdgt7hkP4euczbLL9PKf57k1OWQIkzokdP)
+  last-modified (1572463972561)
 }
 train (t-a4371e3qj0rao7tpp3ou2xd8m) {
   utterance ("[g:FilterMovieWithMovieNameAndTiOSM:continue:TimeOrderedScheduleWithMovie] (cgv)[v:Brand:cgv] (빼)[v:ExceptExpression:true]라\n")
@@ -36,7 +36,7 @@ train (t-a6eqwm21gscnl3a1iyw3w780b) {
 train (t-a9fq78niv8d8wiqnrunjsw5w1) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순으로 알려줘\n")
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
-  last-modified (1572349700236)
+  last-modified (1572467020532)
 }
 train (t-a9s03x72vqfivvxqt0nl5wdvh) {
   utterance ("[g:RoomPropertyEnum] (수퍼플렉스쥐)[v:RoomPropertyEnum:'슈퍼플렉스 G']\n")

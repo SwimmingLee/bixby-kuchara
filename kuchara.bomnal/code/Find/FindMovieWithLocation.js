@@ -24,16 +24,34 @@ module.exports.function = function findMovieWithLocation (namedPointStructure) {
   let timeOrderedScheduleWithMovie = {
     movieOrderedSchedule: []
   };
+  console.log (response);
   response.forEach(function(mosElement){
     let rp = mosElement.theaterSchedule.roomProperty;
-    let db = mosElement.theaterSchedule.dubbing;
+    // let db = mosElement.theaterSchedule.dubbing;
+    let db = false;
     let list = getUriList(rp, db);
     mosElement.theaterSchedule.roomPropertyUriList = [];
     list.forEach(function(el) {
       mosElement.theaterSchedule.roomPropertyUriList.push({roomPropertyUri: el});
     })
+    
     timeOrderedScheduleWithMovie.movieOrderedSchedule.push(mosElement)
   });
+
+  let checkedMOS = [];
+
+  console.log(timeOrderedScheduleWithMovie)
+  // timeOrderedScheduleWithMovie.movieOrderedSchedule.every(function(el){
+  //   if(typeof el.theaterSchedule == 'undefined'){
+  //     return true;
+  //   } else if(typeof el.theaterInfo == 'undefined'){
+  //     return true;
+  //   } else if(typeof el.movie == 'undefined'){
+  //     return true;
+  //   }
+  //   checkedMOS.push(el);
+  // })
+  // timeOrderedScheduleWithMovie.movieOrderedSchedule = checkedMOS;
 
   return timeOrderedScheduleWithMovie;
 }

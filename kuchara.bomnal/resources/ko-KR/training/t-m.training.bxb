@@ -23,6 +23,11 @@ train (t-m650jj782aeag0vqy1kkerkfy) {
   plan (Y2BikM8uTc5ILErUS8rPzUvM0QvKz88NKMovSC0qqXTNK80lrIARCBkYeICYCYiBbAA=)
   last-modified (1572434959209)
 }
+train (t-m696q8wgvkgpiisv98zea8vjw) {
+  utterance ([g:FindMovieWithLocation] 송파 CGV 상영 시간표 보자)
+  plan (XcrNCsJADATgqX0T8Sb0MTz5BxV6jpvABrsbCNk+v7XgpYeZOcyHHudPS5mchreVSvPw0iIPZ3HhMWXhNsukkW+2qOC0wxetvD0/crVEoVZx3Kk7FeGnaY0xvKVoLjigW4O1O+C/Xw==)
+  last-modified (1572464171949)
+}
 train (t-m97n7wyt3bamuguksd9n814xo) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] (서면)[v:geo.SearchTerm]에 영화 차자도")
   plan (bY07C8IwFIVPfVU7qouLg6Bu/Q8ubj6gBefYXJqgbSBN2s3fbogIJZQQuPnOd0+QYP+yhWCapU9V1eyd5oKYIX3TnDTxrBDE7ZtwDLSzrPlFtZIe0gg/nGp+Vw3WgegzbAOaCdX5xK2437AL8iuryNXJ2mRG28JYTTiEzexFQ96ylW1akuqVYPVnJ2tUY8uSGoPNAPx0gvodGTFdiJx0hQQRRhhj4s4UM8SYYwF4Gnn+o7F7wV/0Jjgjcv4Y+AI=)

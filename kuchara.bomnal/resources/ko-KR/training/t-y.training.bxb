@@ -41,7 +41,8 @@ train (t-yi4978yfprond4wktd94zytms) {
 train (t-yjonhyh7k8lile838265sepo6) {
   utterance ("[g:RestructureTimeViewToTheaterView:continue:TimeOrderedSchedule] 영화관 순 보기\n")
   plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572444009809)
+  enabled (false)
+  last-modified (1572467368953)
 }
 train (t-ykyvp139ncg6f1cino82s8s43) {
   utterance ("[g:FilterMovieWithMovieNameAndThOSM:continue:TheaterOrderedScheduleWithMovie] (프렌드존)[v:MovieName](만)[v:ExceptExpression:false] 보게 해줘\n")

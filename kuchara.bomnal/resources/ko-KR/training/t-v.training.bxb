@@ -71,7 +71,7 @@ train (t-vpa3zv1a090zc1cdyj40fn4n0) {
 train (t-vpzvsv4t7o13857l5o7qj4fyr) {
   utterance ("[g:RestructureTheaterViewToTimeView:continue:TheaterOrderedSchedule] 시간순서대로 보여줘\n")
   plan (XYxNCoAgFISfdZOgbR0lKGlvOqCkCS+l66dEGxfzs/hmqKfhzNoqVtMRw6X8JF3AwgYMs2kLkz1obpgVd+KsU2ZIC5XAu8MjY93WRmN7+lHtb0eiiIoLoj9f)
-  last-modified (1572349730515)
+  last-modified (1572462024742)
 }
 train (t-vr2rvp30qrh8t3ngoqw34yccv) {
   utterance ("[g:FindMovieWithMovieAndPos,r:ShowMoviePoster] 인기있는 영화는 뭐있어?\n")

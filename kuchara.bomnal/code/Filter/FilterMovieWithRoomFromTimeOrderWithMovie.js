@@ -32,7 +32,7 @@ module.exports.function = function filterMovieWithRoomFromTimeOrderWithMovie (ti
     }
   }
 
-  if(typeof result.movieOrderedSchedule.movie == 'undefined') {
+  if(result.movieOrderedSchedule.length == 0) {
     throw fail.checkedError('There is no theater data', 'NoDataError', {})
   }
 

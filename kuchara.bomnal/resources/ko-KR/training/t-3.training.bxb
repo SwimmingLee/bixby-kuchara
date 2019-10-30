@@ -39,9 +39,9 @@ train (t-3aqp2ugtnm1y7u6sb0ebg8yxl) {
   last-modified (1572436141844)
 }
 train (t-3axusl7mhc5khikpdw9bukq7a) {
-  utterance ("[g:RestructureTimeViewToTheaterView] 가까운 영화관 별로 정렬\n")
-  plan (XYzBCoAgGIN/602CrvYoQUl304GSJvwpvX4GdfGwjcG3UU/jUYzTrOWe4qmDVA46g2e2YNjVONgSQFODLbgyF5MLQ/mIzeNW6du+hYb2t1LtaUeiiqoLoj8f)
-  last-modified (1572410139133)
+  utterance ("[g:RestructureTimeViewToTheaterViewWithMovie:continue:TimeOrderedScheduleWithMovie] 가까운 영화관 별로 정렬\n")
+  plan (dU1LCoAgFHzVcQLXXSKCklqbDih9hJfW9TMogqDFzDAwHypITFFbxUqMflnVLKSFCuCGDRim0xYmzhhcsLXfHaj65FtsgaMOkSHdgt7hkP4euczbLL9PKf57k1OWQIkzokdP)
+  last-modified (1572462409949)
 }
 train (t-3btcp7dzizz8kxuud3rksfyx2) {
   utterance ("[g:RoomPropertyEnum] (더부띠끄에스)[v:RoomPropertyEnum:더부티크S]\n")

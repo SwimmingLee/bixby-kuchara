@@ -58,7 +58,7 @@ module.exports.function = function filterMovieWithRoomFromTheaterOrder (theaterO
     }
   }
 
-  if(typeof result.theater.theaterInfo == 'undefined') {
+  if(result.theater.length == 0) {
     throw fail.checkedError('There is no theater data', 'NoDataError', {})
   }
 
