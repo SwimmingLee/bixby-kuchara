@@ -6,7 +6,7 @@
 기존의 앱을 이용한 영화 예매 방식에서, 사용자는 **최적의 영화 시간**을 찾기 위해 여러번의 클릭과 복수의 앱을 이동하며 최적의 시간을 찾아야 했어요.
 동네영화관에서는 자동으로 주변 영화관에서 상영하는 영화를 보여주고, 사용자가 원하는 영화를 클릭하기만 하면 근처 영화관의 상영 시간표를 모아서 한번에 검색해주는 방식으로 그 불편함을 해결할 수 있어요.
 
-<img src= "/kuchara.bomnal/assets/images/Bixby-user-scenario.png" width="100%" height="100%" >
+<img src= "/documents/Bixby_user_scenario.png" width="100%" height="100%" >
 
 <br>
 
@@ -31,7 +31,7 @@
 	User	| (원하는 상영 시간 클릭)
 	Bixby	| "선택하신 영화는 오늘 왕십리CGV에서 상영되는 영화 겨울왕국 2입니다. 웹으로 이동하여 예매를 완료해주세요."
 
-<img src= "/kuchara.bomnal/assets/images/Bixby-use-scenario.png" width="100%" height="100%" >
+<img src= "/documents/Bixby_use_scenario.png" width="100%" height="100%" >
 
 <br>
 
@@ -198,6 +198,6 @@
 
 ***
 
-<img src= "/kuchara.bomnal/assets/images/Icon.png" width="10%" height="10%" >
+<img src= "/documents/Icon.png" width="10%" height="10%" >
 
 <br>
