@@ -68,7 +68,7 @@ def CGVCrawl(theaterObj):
     url = 'http://www.cgv.co.kr/common/showtimes/iframeTheater.aspx?areacode={}&theatercode={}&date=20191010'.format(region, cinema)
     driver.get(url)
 
-    WebDriverWait(driver, 10).until(
+    WebDriverWait(driver, 10).until( 
         EC.presence_of_element_located((By.CSS_SELECTOR, '.item-wrap > .item > .on'))
     )
     req = driver.page_source
@@ -224,7 +224,8 @@ def LotteCinemaCrawl(theaterObj):
     day = calenderArea.input
     day = day.get('value')
     year, month, day = day.split('-')
-    movieDict['scheduleDate'] = month*100 + day
+    movieDict['scheduleDate'] = int(month)*100 + int(day)
+    print(movieDict['scheduleDate'])
 
     movieSchedule = bs.find('div', {'class':re.compile('time_aType .*')})
     # 영화 리스트가 없으면 함수를 바로 끝낸다.

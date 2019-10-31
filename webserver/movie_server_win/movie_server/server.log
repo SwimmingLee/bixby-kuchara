@@ -53,3 +53,1300 @@ cgv서산
 lottecinema서산
 [31/Oct/2019 06:18:36] "GET /movie_api/searchMovieListWithPos/?latitude=37.098241&longitude=126.226451 HTTP/1.1" 200 3323
 [31/Oct/2019 06:19:20] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=-121.891&latitude=37.3346 HTTP/1.1" 200 29822
+cgv동대문
+Internal Server Error: /movie_api/searchTimeOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 44, in SearchTimeOrderedScheduleWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 52, in MovieCrawl
+    CGVCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 69, in CGVCrawl
+    driver.get(url)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=78.0.3904.70)
+
+[31/Oct/2019 06:27:47] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083 HTTP/1.1" 500 99225
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 31, 2019 - 06:28:31
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+megabox동대문
+82년생 김지영
+터미네이터: 다크 페이트
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+빅 위시
+엔젤 오브 마인
+lottecinema황학
+cgv피카디리1958
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+프렌드 존
+cgv성신여대입구
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+cgv대학로
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+아이다호
+쿠엔틴 타란티노 8
+스탠 바이 미
+프렌드 존
+경계선
+텔 잇 투 더 비즈
+cgv왕십리
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+빅 위시
+프렌드 존
+빅 2: 황금열쇠 대소동
+나쁜 녀석들: 더 무비
+cgv명동역 씨네라이브러리
+날씨의 아이
+82년생 김지영
+말레피센트 2
+조커
+아이다호
+쿠엔틴 타란티노 8
+우먼 인 할리우드
+스탠 바이 미
+하이 라이프
+경계선
+텔 잇 투 더 비즈
+니나 내나
+피의 연대기
+cgv명동
+터미네이터: 다크 페이트
+82년생 김지영
+lottecinema에비뉴엘(명동)
+lottecinema청량리
+cgv미아
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+빅 위시
+빅 2: 황금열쇠 대소동
+cgv압구정
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+아이다호
+쿠엔틴 타란티노 8
+우먼 인 할리우드
+스탠 바이 미
+하이 라이프
+경계선
+메기
+텔 잇 투 더 비즈
+니나 내나
+퍼펙트 스트레인저
+스노우 화이트
+판소리 복서
+벌새
+[31/Oct/2019 06:30:10] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083 HTTP/1.1" 200 273399
+[31/Oct/2019 06:31:59] "GET /movie_api/searchMovieListWithPos/?longitude=127.0135295&latitude=37.569057 HTTP/1.1" 200 9159
+long:37.569057, lat:127.0135295, movieName:말레피센트 2
+[31/Oct/2019 06:32:12] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EB%A7%90%EB%A0%88%ED%94%BC%EC%84%BC%ED%8A%B8+2 HTTP/1.1" 200 2028
+[31/Oct/2019 06:34:22] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083 HTTP/1.1" 200 273399
+[31/Oct/2019 06:35:34] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083 HTTP/1.1" 200 273399
+[31/Oct/2019 06:36:17] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057 HTTP/1.1" 200 273399
+[31/Oct/2019 06:36:33] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083 HTTP/1.1" 200 273399
+[31/Oct/2019 06:37:25] "HEAD / HTTP/1.0" 200 156
+[31/Oct/2019 06:39:04] "GET /movie_api/searchMovieListWithPos/?longitude=127.013702&latitude=37.569083 HTTP/1.1" 200 9159
+long:37.569083, lat:127.013702, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 06:39:11] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 7378
+long:37.569057, lat:127.0135295, movieName:메기
+[31/Oct/2019 06:40:03] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EB%A9%94%EA%B8%B0 HTTP/1.1" 200 38
+long:37.569057, lat:127.0135295, movieName:엔젤 오브 마인
+[31/Oct/2019 06:40:11] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EC%97%94%EC%A0%A4+%EC%98%A4%EB%B8%8C+%EB%A7%88%EC%9D%B8 HTTP/1.1" 200 757
+long:37.569057, lat:127.0135295, movieName:니나 내나
+[31/Oct/2019 06:40:17] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EB%8B%88%EB%82%98+%EB%82%B4%EB%82%98 HTTP/1.1" 200 38
+long:37.569057, lat:127.0135295, movieName:피의 연대기
+[31/Oct/2019 06:40:23] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%ED%94%BC%EC%9D%98+%EC%97%B0%EB%8C%80%EA%B8%B0 HTTP/1.1" 200 38
+long:37.569057, lat:127.0135295, movieName:쿠엔틴 타란티노 8
+[31/Oct/2019 06:40:27] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EC%BF%A0%EC%97%94%ED%8B%B4+%ED%83%80%EB%9E%80%ED%8B%B0%EB%85%B8+8 HTTP/1.1" 200 38
+long:37.569057, lat:127.0135295, movieName:벌새
+[31/Oct/2019 06:40:32] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EB%B2%8C%EC%83%88 HTTP/1.1" 200 38
+long:37.569057, lat:127.0135295, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 06:40:35] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 7378
+long:37.569083, lat:127.013702, movieName:빅 2: 황금열쇠 대소동
+[31/Oct/2019 06:41:45] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%EB%B9%85+2:+%ED%99%A9%EA%B8%88%EC%97%B4%EC%87%A0+%EB%8C%80%EC%86%8C%EB%8F%99 HTTP/1.1" 200 38
+long:37.569083, lat:127.013702, movieName:빅 2: 황금열쇠 대소동
+[31/Oct/2019 06:41:52] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%EB%B9%85+2:+%ED%99%A9%EA%B8%88%EC%97%B4%EC%87%A0+%EB%8C%80%EC%86%8C%EB%8F%99 HTTP/1.1" 200 38
+long:37.569057, lat:127.0135295, movieName:빅 위시
+[31/Oct/2019 06:41:58] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EB%B9%85+%EC%9C%84%EC%8B%9C HTTP/1.1" 200 716
+long:37.569057, lat:127.0135295, movieName:조커
+[31/Oct/2019 06:42:02] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2378
+long:37.569057, lat:127.0135295, movieName:빅 2: 황금열쇠 대소동
+[31/Oct/2019 06:42:11] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EB%B9%85+2:+%ED%99%A9%EA%B8%88%EC%97%B4%EC%87%A0+%EB%8C%80%EC%86%8C%EB%8F%99 HTTP/1.1" 200 38
+long:37.569083, lat:127.013702, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 06:42:29] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 7378
+long:37.569057, lat:127.0135295, movieName:쿠엔틴 타란티노 8
+[31/Oct/2019 06:42:39] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EC%BF%A0%EC%97%94%ED%8B%B4+%ED%83%80%EB%9E%80%ED%8B%B0%EB%85%B8+8 HTTP/1.1" 200 38
+long:37.569057, lat:127.0135295, movieName:메기
+cgv동대문
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+빅 2: 황금열쇠 대소동
+[31/Oct/2019 06:42:58] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%EB%A9%94%EA%B8%B0 HTTP/1.1" 200 38
+long:37.569057, lat:127.0135295, movieName:프렌드 존
+[31/Oct/2019 06:43:10] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0135295&latitude=37.569057&movieName=%ED%94%84%EB%A0%8C%EB%93%9C+%EC%A1%B4 HTTP/1.1" 200 1142
+long:37.569083, lat:127.013702, movieName:벌새
+megabox동대문
+82년생 김지영
+터미네이터: 다크 페이트
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+빅 위시
+엔젤 오브 마인
+lottecinema황학
+cgv피카디리1958
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+프렌드 존
+cgv성신여대입구
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+[31/Oct/2019 06:45:51] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%EB%B2%8C%EC%83%88 HTTP/1.1" 200 38
+long:37.569083, lat:127.013702, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 06:45:54] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 8689
+long:37.569083, lat:127.013702, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 06:47:18] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 8689
+long:37.569083, lat:127.013702, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 06:48:55] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 8689
+long:37.569083, lat:127.013702, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 06:50:59] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 8689
+long:37.569083, lat:127.013702, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 06:53:00] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.013702&latitude=37.569083&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 8689
+cgv서산
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+빅 위시
+빅 2: 황금열쇠 대소동
+체크 히어로
+람보: 라스트 워
+lottecinema서산
+82년생 김지영
+Internal Server Error: /movie_api/searchMovieListWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 219, in SearchMovieListWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 50, in MovieCrawl
+    LotteCinemaCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 318, in LotteCinemaCrawl
+    MovieScheduleEle.save()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+[31/Oct/2019 07:14:41] "GET /movie_api/searchMovieListWithPos/?latitude=37.098241&longitude=126.226451 HTTP/1.1" 500 266618
+[31/Oct/2019 07:14:44] "GET /movie_api/searchMovieListWithPos/?latitude=37.098241&longitude=126.226451 HTTP/1.1" 200 3323
+long:35.598241, lat:127.026451, movieName:조커
+cgv정읍
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+빅 2: 황금열쇠 대소동
+lottecinema전주평화
+82년생 김지영
+Internal Server Error: /movie_api/searchTheaterOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 94, in SearchTheaterOrderedScheduleWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 50, in MovieCrawl
+    LotteCinemaCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 318, in LotteCinemaCrawl
+    MovieScheduleEle.save()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+[31/Oct/2019 07:14:52] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?latitude=35.598241&longitude=127.026451&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 500 256591
+long:35.598241, lat:127.026451, movieName:조커
+cgv전주효자
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+빅 위시
+빅 2: 황금열쇠 대소동
+cgv서전주
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+cgv전주고사
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+프렌드 존
+[31/Oct/2019 07:15:10] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?latitude=35.598241&longitude=127.026451&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2415
+[31/Oct/2019 07:15:21] "GET /movie_api/searchTheaterWithPos/?latitude=37.498241&longitude=127.026451 HTTP/1.1" 200 3356
+lottecinema브로드웨이(신사)
+82년생 김지영
+Internal Server Error: /movie_api/searchMovieListWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 219, in SearchMovieListWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 50, in MovieCrawl
+    LotteCinemaCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 318, in LotteCinemaCrawl
+    MovieScheduleEle.save()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+[31/Oct/2019 07:15:27] "GET /movie_api/searchMovieListWithPos/?longitude=127.029248&latitude=37.511168 HTTP/1.1" 500 259671
+cgv강남
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+megabox강남대로
+82년생 김지영
+터미네이터: 다크 페이트
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+cgv압구정
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+아이다호
+쿠엔틴 타란티노 8
+우먼 인 할리우드
+스탠 바이 미
+하이 라이프
+경계선
+메기
+텔 잇 투 더 비즈
+니나 내나
+퍼펙트 스트레인저
+스노우 화이트
+판소리 복서
+벌새
+megabox강남
+82년생 김지영
+터미네이터: 다크 페이트
+날씨의 아이
+매튜 본의 백조의 호수
+<b>매튜 본의 백조의 호수</b>에 대한 영화 정보를 찾는 중입니다.
+말레피센트 2
+조커
+가장 보통의 연애
+엔젤 오브 마인
+두번할까요
+cgv청담씨네시티
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+가장 보통의 연애
+프렌드 존
+megabox센트럴
+82년생 김지영
+터미네이터: 다크 페이트
+날씨의 아이
+매튜 본의 백조의 호수
+말레피센트 2
+조커
+가장 보통의 연애
+megabox코엑스
+82년생 김지영
+터미네이터: 다크 페이트
+날씨의 아이
+매튜 본의 백조의 호수
+말레피센트 2
+조커
+가장 보통의 연애
+더 킹: 헨리 5세
+우먼 인 할리우드
+경계선
+람보: 라스트 워
+메기
+100일 동안 100가지로 100퍼센트 행복찾기
+<b>100일 동안 100가지로 100퍼센트 행복찾기</b>에 대한 영화 정보를 찾는 중입니다.
+엔젤 오브 마인
+하이 라이프
+니나 내나
+와일드 로즈
+<b>와일드 로즈</b>에 대한 영화 정보를 찾는 중입니다.
+텔 잇 투 더 비즈
+버티고
+<b>버티고</b>에 대한 영화 정보를 찾는 중입니다.
+미드 90
+<b>미드 90</b>에 대한 영화 정보를 찾는 중입니다.
+북간도의 십자가
+<b>북간도의 십자가</b>에 대한 영화 정보를 찾는 중입니다.
+스노우 화이트
+cgv건대입구
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+[31/Oct/2019 07:15:56] "GET /movie_api/searchMovieListWithPos/?longitude=127.029248&latitude=37.511168 HTTP/1.1" 200 10387
+[31/Oct/2019 07:16:09] "GET /movie_api/searchMovieListWithPos/?longitude=127.029248&latitude=37.511168 HTTP/1.1" 200 10387
+long:37.511168, lat:127.029248, movieName:벌새
+[31/Oct/2019 07:16:13] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.029248&latitude=37.511168&movieName=%EB%B2%8C%EC%83%88 HTTP/1.1" 200 697
+[31/Oct/2019 07:16:23] "GET /movie_api/searchMovieListWithPos/?latitude=37.098241&longitude=126.226451 HTTP/1.1" 200 3323
+cgv인천공항
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+megabox영종
+82년생 김지영
+터미네이터: 다크 페이트
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+[31/Oct/2019 07:16:39] "GET /movie_api/searchMovieListWithPos/?latitude=37.598241&longitude=126.226451 HTTP/1.1" 200 1964
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[31/Oct/2019 07:45:28] "GET / HTTP/1.1" 200 5584
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[31/Oct/2019 07:45:29] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[31/Oct/2019 07:45:30] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[31/Oct/2019 07:45:30] "GET /favicon.ico HTTP/1.1" 404 6652
+[31/Oct/2019 08:23:58] "GET / HTTP/1.0" 200 156
+[31/Oct/2019 09:26:29] "GET / HTTP/1.1" 200 5584
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+[31/Oct/2019 09:26:29] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+[31/Oct/2019 09:26:29] "GET /favicon.ico HTTP/1.1" 404 6652
+[31/Oct/2019 09:26:34] "GET /movies HTTP/1.1" 301 0
+[31/Oct/2019 09:26:35] "GET /movies/ HTTP/1.1" 200 41953
+----------------------------------------
+Exception happened during processing of request from ('37.200.64.50', 54603)
+----------------------------------------
+cgv보령
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+빅 위시
+람보: 라스트 워
+cgv군산
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+빅 2: 황금열쇠 대소동
+[31/Oct/2019 09:27:45] "GET /movie_api/searchMovieListWithPos/?latitude=36.15546&longitude=126.100255 HTTP/1.1" 200 2961
+Forbidden (CSRF cookie not set.): /movie_api/searchMovieListWithPos/
+[31/Oct/2019 09:28:16] "PUT /movie_api/searchMovieListWithPos/?latitude=36.15546&longitude=126.100255 HTTP/1.1" 403 2868
+Forbidden (CSRF cookie not set.): /movie_api/searchMovieListWithPos/
+[31/Oct/2019 09:28:19] "PUT /movie_api/searchMovieListWithPos/?latitude=36.15546&longitude=126.100255 HTTP/1.1" 403 2868
+[31/Oct/2019 09:28:35] "GET /movie_api/searchMovieListWithPos/?latitude=36.15546&longitude=126.100255 HTTP/1.1" 200 2961
+cgv보령
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+cgv군산
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+빅 2: 황금열쇠 대소동
+[31/Oct/2019 09:48:30] "GET /movie_api/searchMovieListWithPos/?latitude=36.15546&longitude=126.100255 HTTP/1.1" 200 2646
+[31/Oct/2019 10:21:29] "GET / HTTP/1.1" 200 159
+----------------------------------------
+Exception happened during processing of request from ('198.108.67.48', 13800)
+----------------------------------------
+cgv보령
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+cgv군산
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[31/Oct/2019 14:13:51] "GET /movie_api/searchMovieListWithPos/?latitude=36.15546&longitude=126.100255 HTTP/1.1" 200 2284
+[31/Oct/2019 14:19:14] "GET /movie_api/searchMovieListWithPos/?latitude=36.15546&longitude=126.100255 HTTP/1.1" 200 2284
+cgv보령
+날씨의 아이
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+cgv군산
+날씨의 아이
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+조커
+[31/Oct/2019 15:18:16] "GET /movie_api/searchMovieListWithPos/?latitude=36.15546&longitude=126.100255 HTTP/1.1" 200 2284
+cgv보령
+날씨의 아이
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+조커
+가장 보통의 연애
+람보: 라스트 워
+cgv군산
+날씨의 아이
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+조커
+[31/Oct/2019 15:56:13] "GET /movie_api/searchMovieListWithPos/?latitude=36.15546&longitude=126.100255 HTTP/1.1" 200 2284
+megabox강남대로
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+megabox강남
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+매튜 본의 백조의 호수
+두번할까요
+cgv강남
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+가장 보통의 연애
+lottecinema브로드웨이(신사)
+82년생 김지영
+Internal Server Error: /movie_api/searchMovieListWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 219, in SearchMovieListWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 50, in MovieCrawl
+    LotteCinemaCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 318, in LotteCinemaCrawl
+    MovieScheduleEle.save()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+[31/Oct/2019 18:41:05] "GET /movie_api/searchMovieListWithPos/?longitude=127.036326&latitude=37.499464 HTTP/1.1" 500 247642
+cgv청담씨네시티
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+가장 보통의 연애
+프렌드 존
+cgv압구정
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+아이다호
+쿠엔틴 타란티노 8
+스탠 바이 미
+하이 라이프
+메기
+벌새
+megabox코엑스
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+매튜 본의 백조의 호수
+가장 보통의 연애
+람보: 라스트 워
+경계선
+메기
+엔젤 오브 마인
+니나 내나
+버티고
+와일드 로즈
+스노우 화이트
+megabox센트럴
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+[31/Oct/2019 18:44:48] "GET /movie_api/searchMovieListWithPos/?longitude=127.036326&latitude=37.499464 HTTP/1.1" 200 7402
+long:37.499464, lat:127.036326, movieName:엔젤 오브 마인
+[31/Oct/2019 18:45:02] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036326&latitude=37.499464&movieName=%EC%97%94%EC%A0%A4+%EC%98%A4%EB%B8%8C+%EB%A7%88%EC%9D%B8 HTTP/1.1" 200 38
+long:37.499464, lat:127.036326, movieName:조커
+[31/Oct/2019 18:46:06] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036326&latitude=37.499464&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+long:37.499464, lat:127.036326, movieName:엔젤 오브 마인
+[31/Oct/2019 18:46:15] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036326&latitude=37.499464&movieName=%EC%97%94%EC%A0%A4+%EC%98%A4%EB%B8%8C+%EB%A7%88%EC%9D%B8 HTTP/1.1" 200 38
+long:37.499464, lat:127.036326, movieName:니나 내나
+[31/Oct/2019 18:46:48] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036326&latitude=37.499464&movieName=%EB%8B%88%EB%82%98+%EB%82%B4%EB%82%98 HTTP/1.1" 200 38
+long:37.499464, lat:127.036326, movieName:조커
+[31/Oct/2019 18:46:55] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036326&latitude=37.499464&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+[31/Oct/2019 18:50:40] "GET /movie_api/searchMovieListWithPos/?longitude=127.036314&latitude=37.499464 HTTP/1.1" 200 7402
+long:37.499464, lat:127.036314, movieName:벌새
+[31/Oct/2019 18:50:45] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036314&latitude=37.499464&movieName=%EB%B2%8C%EC%83%88 HTTP/1.1" 200 38
+long:37.499464, lat:127.036314, movieName:조커
+[31/Oct/2019 18:50:53] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036314&latitude=37.499464&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+long:37.499464, lat:127.036314, movieName:조커
+[31/Oct/2019 18:51:31] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036314&latitude=37.499464&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+[31/Oct/2019 18:55:28] "GET /movie_api/searchMovieListWithPos/?longitude=127.036276&latitude=37.499497 HTTP/1.1" 200 7402
+long:37.499497, lat:127.036276, movieName:조커
+[31/Oct/2019 18:55:34] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036276&latitude=37.499497&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+[31/Oct/2019 18:55:44] "GET /movie_api/searchTheaterWithMoviePos/?movieName=%EC%A1%B0%EC%BB%A4&longitude=127.036276&latitude=37.499497 HTTP/1.1" 200 1527
+long:37.499497, lat:127.036276, movieName:조커
+megabox강남대로
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+megabox강남
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+매튜 본의 백조의 호수
+cgv강남
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+가장 보통의 연애
+lottecinema브로드웨이(신사)
+82년생 김지영
+Internal Server Error: /movie_api/searchTheaterOrderedScheduleWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 94, in SearchTheaterOrderedScheduleWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 50, in MovieCrawl
+    LotteCinemaCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 318, in LotteCinemaCrawl
+    MovieScheduleEle.save()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+[31/Oct/2019 18:57:28] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036276&latitude=37.499497&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 500 255569
+long:37.499497, lat:127.036276, movieName:스탠 바이 미
+[31/Oct/2019 18:57:36] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036276&latitude=37.499497&movieName=%EC%8A%A4%ED%83%A0+%EB%B0%94%EC%9D%B4+%EB%AF%B8 HTTP/1.1" 200 38
+long:37.499497, lat:127.036276, movieName:조커
+[31/Oct/2019 18:57:43] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036276&latitude=37.499497&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+long:37.499497, lat:127.036276, movieName:조커
+cgv청담씨네시티
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+가장 보통의 연애
+프렌드 존
+[31/Oct/2019 19:00:02] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.036276&latitude=37.499497&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+[31/Oct/2019 19:00:10] "GET /movie_api/searchTheaterWithMoviePos/?movieName=%EC%A1%B0%EC%BB%A4&longitude=127.036276&latitude=37.499497 HTTP/1.1" 200 1527
+[31/Oct/2019 19:00:20] "GET /movie_api/searchTheaterWithMoviePos/?movieName=%EC%A1%B0%EC%BB%A4&longitude=127.036276&latitude=37.499497 HTTP/1.1" 200 1527
+[31/Oct/2019 19:00:34] "GET /movie_api/searchTheaterWithMoviePos/?movieName=%EC%A1%B0%EC%BB%A4&longitude=127.036276&latitude=37.499497 HTTP/1.1" 200 1527
+megabox강남대로
+터미네이터: 다크 페이트
+82년생 김지영
+megabox강남
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+cgv강남
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+가장 보통의 연애
+lottecinema브로드웨이(신사)
+82년생 김지영
+Internal Server Error: /movie_api/searchMovieListWithPos/
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py", line 219, in SearchMovieListWithPos
+    MovieCrawl(reqtheater)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 50, in MovieCrawl
+    LotteCinemaCrawl(theaterObj)
+  File "/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py", line 318, in LotteCinemaCrawl
+    MovieScheduleEle.save()
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 209, in execute
+    res = self._query(query)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/cursors.py", line 315, in _query
+    db.query(q)
+  File "/home/swim/.venv/movieapi/lib/python3.5/site-packages/MySQLdb/connections.py", line 226, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1264, "Out of range value for column 'scheduleDate' at row 1")
+[31/Oct/2019 19:15:20] "GET /movie_api/searchMovieListWithPos/?longitude=127.0362&latitude=37.499487 HTTP/1.1" 500 246824
+cgv청담씨네시티
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+가장 보통의 연애
+프렌드 존
+cgv압구정
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+아이다호
+쿠엔틴 타란티노 8
+스탠 바이 미
+하이 라이프
+메기
+벌새
+megabox코엑스
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+람보: 라스트 워
+경계선
+메기
+엔젤 오브 마인
+니나 내나
+버티고
+와일드 로즈
+스노우 화이트
+megabox센트럴
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+[31/Oct/2019 19:15:39] "GET /movie_api/searchMovieListWithPos/?longitude=127.0362&latitude=37.499487 HTTP/1.1" 200 6788
+long:37.499487, lat:127.0362, movieName:와일드 로즈
+[31/Oct/2019 19:15:51] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0362&latitude=37.499487&movieName=%EC%99%80%EC%9D%BC%EB%93%9C+%EB%A1%9C%EC%A6%88 HTTP/1.1" 200 38
+long:37.499487, lat:127.0362, movieName:조커
+[31/Oct/2019 19:15:57] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0362&latitude=37.499487&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/crawling.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 31, 2019 - 19:18:17
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+cgv인천공항
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+megabox영종
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+가장 보통의 연애
+[31/Oct/2019 19:19:16] "GET /movie_api/searchMovieListWithPos/?latitude=37.598241&longitude=126.226451 HTTP/1.1" 200 1964
+[31/Oct/2019 19:19:19] "GET /movie_api/searchMovieListWithPos/?latitude=37.598241&longitude=126.226451 HTTP/1.1" 200 1964
+long:35.598241, lat:127.026451, movieName:조커
+cgv정읍
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+lottecinema전주평화
+1031
+82년생 김지영
+터미네이터: 다크 페이트
+날씨의 아이
+조커
+말레피센트 2
+cgv전주효자
+날씨의 아이
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+조커
+cgv서전주
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+cgv전주고사
+날씨의 아이
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+조커
+프렌드 존
+[31/Oct/2019 19:19:30] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?latitude=35.598241&longitude=127.026451&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 1486
+long:37.499487, lat:127.0362, movieName:조커
+[31/Oct/2019 19:20:36] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0362&latitude=37.499487&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+long:37.499487, lat:127.0362, movieName:조커
+[31/Oct/2019 19:21:10] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0362&latitude=37.499487&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2429
+megabox목포
+터미네이터: 다크 페이트
+82년생 김지영
+cgv목포
+날씨의 아이
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+[31/Oct/2019 19:25:39] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=-121.891&latitude=37.3346 HTTP/1.1" 200 8739
+[31/Oct/2019 19:26:01] "GET /movie_api/searchMovieListWithPos/?longitude=-121.891&latitude=37.3346 HTTP/1.1" 200 1358
+long:37.3346, lat:-121.891, movieName:날씨의 아이
+megabox목포하당(포르모)
+터미네이터: 다크 페이트
+82년생 김지영
+말레피센트 2
+조커
+가장 보통의 연애
+cgv목포평화광장
+날씨의 아이
+터미네이터: 다크 페이트
+말레피센트 2
+82년생 김지영
+조커
+엔젤 오브 마인
+[31/Oct/2019 19:26:15] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=-121.891&latitude=37.3346&movieName=%EB%82%A0%EC%94%A8%EC%9D%98+%EC%95%84%EC%9D%B4 HTTP/1.1" 200 1506
+long:37.3346, lat:-121.891, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 19:26:26] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=-121.891&latitude=37.3346&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 3636
+long:37.3346, lat:-121.891, movieName:말레피센트 2
+[31/Oct/2019 19:26:30] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=-121.891&latitude=37.3346&movieName=%EB%A7%90%EB%A0%88%ED%94%BC%EC%84%BC%ED%8A%B8+2 HTTP/1.1" 200 2100
+long:37.3346, lat:-121.891, movieName:82년생 김지영
+[31/Oct/2019 19:26:34] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=-121.891&latitude=37.3346&movieName=82%EB%85%84%EC%83%9D+%EA%B9%80%EC%A7%80%EC%98%81 HTTP/1.1" 200 3915
+long:37.3346, lat:-121.891, movieName:말레피센트 2
+[31/Oct/2019 19:26:43] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=-121.891&latitude=37.3346&movieName=%EB%A7%90%EB%A0%88%ED%94%BC%EC%84%BC%ED%8A%B8+2 HTTP/1.1" 200 2100
+[31/Oct/2019 19:26:50] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=-121.891&latitude=37.3346 HTTP/1.1" 200 8739
+[31/Oct/2019 19:27:01] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=-121.891&latitude=37.3346 HTTP/1.1" 200 8739
+long:37.499487, lat:127.0362, movieName:조커
+megabox강남대로
+터미네이터: 다크 페이트
+82년생 김지영
+megabox강남
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+말레피센트 2
+조커
+cgv강남
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+가장 보통의 연애
+lottecinema브로드웨이(신사)
+1031
+82년생 김지영
+터미네이터: 다크 페이트
+조커
+가장 보통의 연애
+cgv청담씨네시티
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+가장 보통의 연애
+프렌드 존
+[31/Oct/2019 19:32:56] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0362&latitude=37.499487&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2643
+long:37.499487, lat:127.0362, movieName:람보: 라스트 워
+[31/Oct/2019 19:33:02] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0362&latitude=37.499487&movieName=%EB%9E%8C%EB%B3%B4:+%EB%9D%BC%EC%8A%A4%ED%8A%B8+%EC%9B%8C HTTP/1.1" 200 38
+long:37.499487, lat:127.0362, movieName:조커
+[31/Oct/2019 19:33:33] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0362&latitude=37.499487&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2643
+[31/Oct/2019 19:34:42] "GET /movies/ HTTP/1.1" 200 41953
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[31/Oct/2019 19:34:42] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[31/Oct/2019 19:34:43] "GET /favicon.ico HTTP/1.1" 404 6652
+long:37.499487, lat:127.0362, movieName:조커
+[31/Oct/2019 19:37:13] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0362&latitude=37.499487&movieName=%EC%A1%B0%EC%BB%A4 HTTP/1.1" 200 2643
+/home/swim/workspace/bixby-kuchara/webserver/movie_server_win/movie_server/movies/movieapi.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 31, 2019 - 19:39:47
+Django version 2.2.6, using settings 'movie_server.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+cgv압구정
+날씨의 아이
+터미네이터: 다크 페이트
+82년생 김지영
+조커
+아이다호
+쿠엔틴 타란티노 8
+스탠 바이 미
+하이 라이프
+메기
+벌새
+megabox코엑스
+터미네이터: 다크 페이트
+megabox센트럴
+82년생 김지영
+터미네이터: 다크 페이트
+82년생 김지영
+날씨의 아이
+날씨의 아이
+말레피센트 2
+[31/Oct/2019 19:43:28] "GET /movie_api/searchMovieListWithPos/?longitude=127.0359803&latitude=37.4994991 HTTP/1.1" 200 4508
+조커
+가장 보통의 연애
+람보: 라스트 워
+경계선
+메기
+엔젤 오브 마인
+니나 내나
+버티고
+와일드 로즈
+스노우 화이트
+[31/Oct/2019 19:43:29] "GET /movie_api/searchMovieListWithPos/?longitude=127.0359803&latitude=37.4994991 HTTP/1.1" 200 6788
+[31/Oct/2019 19:43:30] "GET /movie_api/searchTimeOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991 HTTP/1.1" 200 99231
+[31/Oct/2019 19:43:51] "GET /movie_api/searchMovieListWithPos/?longitude=127.0359803&latitude=37.4994991 HTTP/1.1" 200 6788
+long:37.4994991, lat:127.0359803, movieName:스노우 화이트
+[31/Oct/2019 19:43:58] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EC%8A%A4%EB%85%B8%EC%9A%B0+%ED%99%94%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 749
+long:37.4994991, lat:127.0359803, movieName:말레피센트 2
+[31/Oct/2019 19:44:06] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EB%A7%90%EB%A0%88%ED%94%BC%EC%84%BC%ED%8A%B8+2 HTTP/1.1" 200 1718
+long:37.4994991, lat:127.0359803, movieName:날씨의 아이
+[31/Oct/2019 19:44:11] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EB%82%A0%EC%94%A8%EC%9D%98+%EC%95%84%EC%9D%B4 HTTP/1.1" 200 5192
+long:37.4994991, lat:127.0359803, movieName:경계선
+[31/Oct/2019 19:44:15] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EA%B2%BD%EA%B3%84%EC%84%A0 HTTP/1.1" 200 785
+long:37.4994991, lat:127.0359803, movieName:프렌드 존
+[31/Oct/2019 19:44:20] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%ED%94%84%EB%A0%8C%EB%93%9C+%EC%A1%B4 HTTP/1.1" 200 984
+long:37.4994991, lat:127.0359803, movieName:스탠 바이 미
+[31/Oct/2019 19:44:27] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EC%8A%A4%ED%83%A0+%EB%B0%94%EC%9D%B4+%EB%AF%B8 HTTP/1.1" 200 847
+long:37.4994991, lat:127.0359803, movieName:벌새
+[31/Oct/2019 19:44:35] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EB%B2%8C%EC%83%88 HTTP/1.1" 200 697
+long:37.4994991, lat:127.0359803, movieName:엔젤 오브 마인
+[31/Oct/2019 19:44:40] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EC%97%94%EC%A0%A4+%EC%98%A4%EB%B8%8C+%EB%A7%88%EC%9D%B8 HTTP/1.1" 200 775
+long:37.4994991, lat:127.0359803, movieName:니나 내나
+[31/Oct/2019 19:44:45] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EB%8B%88%EB%82%98+%EB%82%B4%EB%82%98 HTTP/1.1" 200 743
+long:37.4994991, lat:127.0359803, movieName:메기
+[31/Oct/2019 19:44:49] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EB%A9%94%EA%B8%B0 HTTP/1.1" 200 1119
+long:37.4994991, lat:127.0359803, movieName:쿠엔틴 타란티노 8
+[31/Oct/2019 19:44:53] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0359803&latitude=37.4994991&movieName=%EC%BF%A0%EC%97%94%ED%8B%B4+%ED%83%80%EB%9E%80%ED%8B%B0%EB%85%B8+8 HTTP/1.1" 200 880
+long:37.499487, lat:127.0362, movieName:터미네이터: 다크 페이트
+[31/Oct/2019 19:46:07] "GET /movie_api/searchTheaterOrderedScheduleWithPos/?longitude=127.0362&latitude=37.499487&movieName=%ED%84%B0%EB%AF%B8%EB%84%A4%EC%9D%B4%ED%84%B0:+%EB%8B%A4%ED%81%AC+%ED%8E%98%EC%9D%B4%ED%8A%B8 HTTP/1.1" 200 9901

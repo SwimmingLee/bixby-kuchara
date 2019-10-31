@@ -89,7 +89,7 @@ def SearchTheaterOrderedScheduleWithPos(request):
     searchCnt = 0
     processes = []
     for orderCnt, theaterOrder in enumerate(theaterOrderedSchedule):
-        if (searchCnt < 2 or theaterOrder[1] <= 5000) and orderCnt < 5:
+        if theaterOrder[1] <= 5000 or (searchCnt < 2 and orderCnt < 5):
             reqtheater = Theaters.objects.get(id=theaterOrder[0])
             MovieCrawl(reqtheater)
             movieObj = Movies.objects.filter(movieName__exact=movieName)
