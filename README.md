@@ -260,3 +260,4 @@
 <img src= "/kuchara.bomnal/assets/images/Icon.png" width="10%" height="10%" >
 
 <br>
+
