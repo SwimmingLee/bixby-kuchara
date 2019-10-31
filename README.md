@@ -198,6 +198,6 @@
 
 ***
 
-<img src= "/documents/Icon.png" width="10%" height="10%" >
+<img src= "/documents/Bixby_Icon.png" width="10%" height="10%" >
 
 <br>
